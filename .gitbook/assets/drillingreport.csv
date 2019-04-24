@@ -1,0 +1,1858 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-UFMpXZiU8/kG0aZl62l3OFZi0gwlVRLYrsamBbXttDRSbDmQk1ZyKj5R11ghzrHB/NaIPBuLauI34mVpsuxx5w==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-94eca081886beb7440fa7236f4fd103f.css" />
+  
+    <link crossorigin="anonymous" media="all" integrity="sha512-eqxTRxKT94LInlg/McScBezWtiFHXzx2NUh8bTSXsscsE8e7zxJE3tueMuDN+7DpHHo3ipfX6wnDuoechvkHAA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-6a52a05624a8e37c96244b9669fd07a4.css" />
+    
+    
+    
+    
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>q-tutorials/DrillingReport.csv at master · maana-io/q-tutorials</title>
+    <meta name="description" content="A collection of tutorial projects and datasets for learning how to use the Maana Knowledge Platform - maana-io/q-tutorials">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars3.githubusercontent.com/u/35998092?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="maana-io/q-tutorials" /><meta property="og:url" content="https://github.com/maana-io/q-tutorials" /><meta property="og:description" content="A collection of tutorial projects and datasets for learning how to use the Maana Knowledge Platform - maana-io/q-tutorials" />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzQyNjI0ODE4OjQ3ZWE3ZGU3MGEwNjQ2ODljNzYzZDBkYmZiYzgwYjdiYTQ5ZjVjMTE2YWRiYmQyODRhZDYxYmQ3NTI1ODAzODA=--7932efdddd2be87d6d432d1fd5aa28a932261df4">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="BA89:5D46:20D9A7D:32F486D:5C7C5BF8" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="BA89:5D46:20D9A7D:32F486D:5C7C5BF8" /><meta name="octolytics-dimension-region_edge" content="sea" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="38739863" /><meta name="octolytics-actor-login" content="bookRa" /><meta name="octolytics-actor-hash" content="3377af98d4e42618b09cc1c0b07b22f5b04bd01ab6e1d2bdf7d9eedd4e05ee4f" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta class="js-ga-set" name="userId" content="8bc8b73304ab3590c34a9053edf7c8a5">
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="bookRa">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="MTJhMDA1NWEyNzllOGE3ZTgwMjUwMzEwZGQ3NDdhOGUyODQ5YWEzMDJlZDZlNmM2OTRlOGVkYWY4ZGE0ZDE0OXx7InJlbW90ZV9hZGRyZXNzIjoiMTk4LjIzMy4yMDQuMjAyIiwicmVxdWVzdF9pZCI6IkJBODk6NUQ0NjoyMEQ5QTdEOjMyRjQ4NkQ6NUM3QzVCRjgiLCJ0aW1lc3RhbXAiOjE1NTE2NTM4ODMsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,MARKETPLACE_SOCIAL_PROOF,MARKETPLACE_PLAN_RESTRICTION_EDITOR,NOTIFY_ON_BLOCK,RELATED_ISSUES,MARKETPLACE_BROWSING_V2">
+
+  <meta name="html-safe-nonce" content="4a644162d78afb4a5be36b1754e00958a98f3ea6">
+
+  <meta http-equiv="x-pjax-version" content="d9aabe6bfbc512330bb3ee88a27fc183">
+  
+
+      <link href="https://github.com/maana-io/q-tutorials/commits/master.atom" rel="alternate" title="Recent Commits to q-tutorials:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/maana-io/q-tutorials git https://github.com/maana-io/q-tutorials.git">
+
+  <meta name="octolytics-dimension-user_id" content="35998092" /><meta name="octolytics-dimension-user_login" content="maana-io" /><meta name="octolytics-dimension-repository_id" content="120362480" /><meta name="octolytics-dimension-repository_nwo" content="maana-io/q-tutorials" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="120362480" /><meta name="octolytics-dimension-repository_network_root_nwo" content="maana-io/q-tutorials" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="true" />
+
+
+    <link rel="canonical" href="https://github.com/maana-io/q-tutorials/blob/master/maana-entity-extractor/DrillingReport.csv" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production emoji-size-boost page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 ">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <nav class="d-flex" aria-label="Global">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="120362480" data-scoped-search-url="/maana-io/q-tutorials/search" data-unscoped-search-url="/search" action="/maana-io/q-tutorials/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search or jump to…"
+          data-unscoped-placeholder="Search or jump to…"
+          data-scoped-placeholder="Search or jump to…"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search or jump to…"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=JdFultvLDt7+tJVeE9qe1D47Ikmr74XTeAD68NLXLHaQ4FwdZUpOZIyYICDE6znyEeM5YsnTbKmoZr2+JTPk9A=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
+      <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+    </li>
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+                Issues
+</a>            </li>
+              <li class="position-relative">
+                <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
+                   Marketplace
+</a>                  
+              </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </nav>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:unread" data-channel="notification-changed:38739863" href="/notifications">
+        <span class="mail-status unread"></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown">
+    <details class="details-overlay details-reset d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink"
+         aria-label="Create new…"
+         data-ga-click="Header, create new, icon:add">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw">
+        
+<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="maana-io/q-tutorials">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="/maana-io/q-tutorials/issues/new" data-ga-click="Header, create new issue" >
+      New issue
+    </a>
+
+
+      </details-menu>
+    </details>
+  </li>
+
+  <li class="dropdown">
+
+    <details class="details-overlay details-reset d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1"
+        aria-label="View profile and more"
+        data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@bookRa" class="avatar float-left mr-1" src="https://avatars1.githubusercontent.com/u/38739863?s=40&amp;v=4" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw">
+        <div class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/bookRa" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">bookRa</strong></a></div>
+        <div role="none" class="dropdown-divider"></div>
+
+        <div class="px-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
+          
+<div class="js-user-status-container user-status-compact" data-team-hovercards-enabled>
+  <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
+    <summary class="btn-link no-underline js-toggle-user-status-edit toggle-user-status-edit width-full" aria-haspopup="dialog" role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:35998092,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:38739863,&quot;client_id&quot;:&quot;820088771.1542350227&quot;,&quot;originating_request_id&quot;:&quot;BA89:5D46:20D9A7D:32F486D:5C7C5BF8&quot;,&quot;originating_url&quot;:&quot;https://github.com/maana-io/q-tutorials/blob/master/maana-entity-extractor/DrillingReport.csv&quot;}}" data-hydro-click-hmac="b6015df07b59916c0e59aa7ce9fa252ce52b51ef6fde17845a6c3dba298389a4">
+      <div class="f6 d-inline-block v-align-middle  user-status-emoji-only-header pl-0 circle lh-condensed user-status-header " style="max-width: 29px">
+        <div class="user-status-emoji-container flex-shrink-0 mr-1">
+          <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
+        </div>
+      </div>
+      <div class="d-inline-block v-align-middle user-status-message-wrapper f6 lh-condensed ws-normal pt-1">
+          <span class="link-gray">Set your status</span>
+      </div>
+</summary>    <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="SLUg/gh4FpLFJ33LCZNRus9il5+g55Dv5tHMtvJRzWYkMJBxj7jOLJKGkRkB+nyATtgeWVg5Zg8yQcBBE43zBw==" />
+        <div class="Box-header bg-gray border-bottom p-3">
+          <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
+            <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+          </button>
+          <h3 class="Box-title f5 text-bold text-gray-dark">Edit status</h3>
+        </div>
+        <input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
+        <input type="hidden" name="organization_id" class="js-user-status-org-id-field" value="">
+        <div class="px-3 py-2 text-gray-dark">
+          <div class="js-characters-remaining-container js-suggester-container position-relative mt-2">
+            <div class="input-group d-table form-group my-0 js-user-status-form-group">
+              <span class="input-group-button d-table-cell v-align-middle" style="width: 1%">
+                <button type="button" aria-label="Choose an emoji" class="btn-outline btn js-toggle-user-status-emoji-picker bg-white btn-open-emoji-picker">
+                  <span class="js-user-status-original-emoji" hidden></span>
+                  <span class="js-user-status-custom-emoji"></span>
+                  <span class="js-user-status-no-emoji-icon" >
+                    <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
+                  </span>
+                </button>
+              </span>
+              <input type="text" autocomplete="off" autofocus data-maxlength="80" class="js-suggester-field d-table-cell width-full form-control js-user-status-message-field js-characters-remaining-field" placeholder="What's happening?" name="message" required value="" aria-label="What is your current status?">
+              <div class="error">Could not update your status, please try again.</div>
+            </div>
+            <div class="suggester-container">
+              <div class="suggester js-suggester js-navigation-container" data-url="/autocomplete/user-suggestions" data-no-org-url="/autocomplete/user-suggestions" data-org-url="/suggestions" hidden>
+              </div>
+            </div>
+            <div style="margin-left: 53px" class="my-1 text-small label-characters-remaining js-characters-remaining" data-suffix="remaining" hidden>
+              80 remaining
+            </div>
+          </div>
+          <include-fragment class="js-user-status-emoji-picker" data-url="/users/status/emoji"></include-fragment>
+          <div class="overflow-auto" style="max-height: 33vh">
+            <div class="user-status-suggestions js-user-status-suggestions">
+              <h4 class="f6 text-normal my-3">Suggestions:</h4>
+              <div class="mx-3 mt-2 clearfix">
+                  <div class="float-left col-6">
+                      <button type="button" value=":palm_tree:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png">🌴</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message" style="border-left: 1px solid transparent">
+                          On vacation
+                        </div>
+                      </button>
+                      <button type="button" value=":face_with_thermometer:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.png">🤒</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message" style="border-left: 1px solid transparent">
+                          Out sick
+                        </div>
+                      </button>
+                  </div>
+                  <div class="float-left col-6">
+                      <button type="button" value=":house:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png">🏠</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message" style="border-left: 1px solid transparent">
+                          Working from home
+                        </div>
+                      </button>
+                      <button type="button" value=":dart:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message" style="border-left: 1px solid transparent">
+                          Focusing
+                        </div>
+                      </button>
+                  </div>
+              </div>
+            </div>
+            <div class="user-status-limited-availability-container">
+              <div class="form-checkbox my-0">
+                <input type="checkbox" name="limited_availability" value="1" class="js-user-status-limited-availability-checkbox" data-default-message="I may be slow to respond." aria-describedby="limited-availability-help-text-truncate-true" id="limited-availability-truncate-true">
+                <label class="d-block f5 text-gray-dark mb-1" for="limited-availability-truncate-true">
+                  Busy
+                </label>
+                <p class="note" id="limited-availability-help-text-truncate-true">
+                  When others mention you, assign you, or request your review,
+                  GitHub will let them know that you have limited availability.
+                </p>
+              </div>
+            </div>
+          </div>
+          <include-fragment class="js-user-status-org-picker" data-url="/users/status/organizations"></include-fragment>
+        </div>
+        <div class="d-flex flex-items-center flex-justify-between p-3 border-top">
+          <button type="submit" disabled class="width-full btn btn-primary mr-2 js-user-status-submit">
+            Set status
+          </button>
+          <button type="button" disabled class="width-full js-clear-user-status-button btn ml-2 ">
+            Clear status
+          </button>
+        </div>
+</form>    </details-dialog>
+  </details>
+</div>
+
+        </div>
+        <div role="none" class="dropdown-divider"></div>
+
+        <a role="menuitem" class="dropdown-item" href="/bookRa" data-ga-click="Header, go to profile, text:your profile">Your profile</a>
+        <a role="menuitem" class="dropdown-item" href="/bookRa?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a>
+
+        <a role="menuitem" class="dropdown-item" href="/bookRa?tab=projects" data-ga-click="Header, go to projects, text:your projects">Your projects</a>
+
+        <a role="menuitem" class="dropdown-item" href="/bookRa?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a>
+          <a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a>
+
+        <div role="none" class="dropdown-divider"></div>
+        <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
+        <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="y5r/J1bS+RXj671wvamXxbJKlFksFcfIwyY4SMdkoC1Z1larzs5Ybh/ixn5y0bbqqvDX4qQhqtQ/FltgpVdXIg==" />
+          
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+            Sign out
+          </button>
+</form>      </details-menu>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="OXitCE9ULjFg+RikLEhFY2FZnbQtiAUbft+Hr0OT68KrNASE10iPSpzwY6rjMGRMeePeD6W8aAeC7+SHIaAczQ==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+
+</div>
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+  
+
+
+  
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+
+
+
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="DIDpu+cK9xR0nMhVxtchXK2f6K/EX7xzBPjbADz2ITJhA79Wv/UFOwQTaIkMvtwcz0y5CWqPYFWgUwiqN5T5hA==" />      <input type="hidden" name="repository_id" id="repository_id" value="120362480" class="form-control" />
+
+      <details class="details-reset details-overlay select-menu float-left">
+        <summary class="btn btn-sm btn-with-count select-menu-button" data-ga-click="Repository, click Watch settings, action:blob#show">
+          <span data-menu-button>
+              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+              Watch
+          </span>
+        </summary>
+        <details-menu class="select-menu-modal position-absolute mt-5" style="z-index: 99;">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+          </div>
+          <div class="select-menu-list">
+            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Not watching</span>
+                <span class="description">Be notified only when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Watch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="release_only" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Releases only</span>
+                <span class="description">Be notified of new releases, and when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch releases
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Watching</span>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Ignoring</span>
+                <span class="description">Never be notified.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                  Stop ignoring
+                </span>
+              </div>
+            </button>
+          </div>
+        </details-menu>
+      </details>
+      <a class="social-count js-social-count"
+        href="/maana-io/q-tutorials/watchers"
+        aria-label="8 users are watching this repository">
+        8
+      </a>
+</form>
+  </li>
+
+  <li>
+      <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/maana-io/q-tutorials/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="VspTfkZICM0ax96tUEovMJkQ9sOPPxoAtMfBx3N39KEH1xaiSLO28LCJFr3oh+0Ld2/rMbzV/aW8oZotNaTN9w==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar maana-io/q-tutorials"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/maana-io/q-tutorials/stargazers"
+           aria-label="4 users starred this repository">
+          4
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/maana-io/q-tutorials/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="axGT1h3Nu3yWC1oi7sWsr9a3WVWiX263Nr1phXsBHhNt1siyaTO0rBnHbDv27zKz+Zrsb7We5x1bkwG35s6QCQ==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star maana-io/q-tutorials"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/maana-io/q-tutorials/stargazers"
+           aria-label="4 users starred this repository">
+          4
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <details class="details-reset details-overlay details-overlay-dark d-inline-block float-left"
+            data-deferred-details-content-url="/maana-io/q-tutorials/fork?fragment=1">
+            <summary class="btn btn-sm btn-with-count"
+              title="Fork your own copy of maana-io/q-tutorials to your account"
+              data-ga-click="Repository, show fork modal, action:blob#show; text:Fork">
+              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              Fork
+            </summary>
+            <details-dialog class="anim-fade-in fast Box Box--overlay d-flex flex-column">
+              <div class="Box-header">
+                <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+                  <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+                </button>
+                <h3 class="Box-title">Fork q-tutorials</h3>
+              </div>
+              <div class="overflow-auto text-center">
+                <include-fragment>
+                  <div class="octocat-spinner my-3" aria-label="Loading..."></div>
+                  <p class="f5 text-gray">If this dialog fails to load, you can visit <a href="/maana-io/q-tutorials/fork">the fork page</a> directly.</p>
+                </include-fragment>
+              </div>
+            </details-dialog>
+          </details>
+
+    <a href="/maana-io/q-tutorials/network/members" class="social-count"
+       aria-label="9 users forked this repository">
+      9
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/maana-io/hovercard" href="/maana-io">maana-io</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/maana-io/q-tutorials">q-tutorials</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /maana-io/q-tutorials" href="/maana-io/q-tutorials">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /maana-io/q-tutorials/issues" href="/maana-io/q-tutorials/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /maana-io/q-tutorials/pulls" href="/maana-io/q-tutorials/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /maana-io/q-tutorials/projects" href="/maana-io/q-tutorials/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /maana-io/q-tutorials/wiki" href="/maana-io/q-tutorials/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse alerts security people /maana-io/q-tutorials/pulse" href="/maana-io/q-tutorials/pulse">
+      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+      Insights
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_settings repo_branch_settings hooks integration_installations repo_keys_settings issue_template_editor /maana-io/q-tutorials/settings" href="/maana-io/q-tutorials/settings">
+      <svg class="octicon octicon-gear" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 8.77v-1.6l-1.94-.64-.45-1.09.88-1.84-1.13-1.13-1.81.91-1.09-.45-.69-1.92h-1.6l-.63 1.94-1.11.45-1.84-.88-1.13 1.13.91 1.81-.45 1.09L0 7.23v1.59l1.94.64.45 1.09-.88 1.84 1.13 1.13 1.81-.91 1.09.45.69 1.92h1.59l.63-1.94 1.11-.45 1.84.88 1.13-1.13-.92-1.81.47-1.09L14 8.75v.02zM7 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+      Settings
+</a>
+</nav>
+
+
+  </div>
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+    
+
+
+
+  
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/maana-io/q-tutorials/blob/512b79dec698e61b8ac411b3da2196f91dd06a25/maana-entity-extractor/DrillingReport.csv">Permalink</a>
+
+    <!-- blob contrib key: blob_contributors:v21:2c626414ff4f58a809833e41d8fa7c71 -->
+
+    
+
+    <div class="file-navigation">
+      
+<details class="details-reset details-overlay select-menu branch-select-menu float-left">
+  <summary class="btn btn-sm select-menu-button css-truncate"
+           data-hotkey="w"
+           
+           title="Switch branches or tags">
+    <i>Branch:</i>
+    <span class="css-truncate-target">master</span>
+  </summary>
+
+  <details-menu class="select-menu-modal position-absolute" style="z-index: 99;" src="/maana-io/q-tutorials/ref-list/master/maana-entity-extractor/DrillingReport.csv?source_action=show&amp;source_controller=blob" preload>
+    <include-fragment class="select-menu-loading-overlay anim-pulse">
+      <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
+    </include-fragment>
+  </details-menu>
+</details>
+
+      <div class="BtnGroup float-right">
+        <a href="/maana-io/q-tutorials/find/master"
+              class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+              data-pjax
+              data-hotkey="t">
+          Find file
+        </a>
+        <clipboard-copy for="blob-path" class="btn btn-sm BtnGroup-item">
+          Copy path
+        </clipboard-copy>
+      </div>
+      <div id="blob-path" class="breadcrumb">
+        <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/maana-io/q-tutorials"><span>q-tutorials</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/maana-io/q-tutorials/tree/master/maana-entity-extractor"><span>maana-entity-extractor</span></a></span><span class="separator">/</span><strong class="final-path">DrillingReport.csv</strong>
+      </div>
+    </div>
+
+
+    
+  <div class="commit-tease d-flex flex-column">
+      <div class="d-flex flex-justify-between ">
+        <span class="pr-md-4">
+          <img class="avatar" width="20" height="20" alt="" src="https://camo.githubusercontent.com/aade08e140cf7a16af26f01f77a0ef213a5dc160/68747470733a2f2f302e67726176617461722e636f6d2f6176617461722f36343664333835626130643964633637326635363930336136636330646261663f643d68747470732533412532462532466769746875622e6769746875626173736574732e636f6d253246696d6167657325324667726176617461727325324667726176617461722d757365722d3432302e706e6726723d6726733d313430" data-canonical-src="https://0.gravatar.com/avatar/646d385ba0d9dc672f56903a6cc0dbaf?d=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=g&amp;s=140" />
+          <span class="user-mention">John Loverich</span>
+            <a data-pjax="true" title="Adding the entity-extractor tutorial." class="message" href="/maana-io/q-tutorials/commit/aecc5f1ef69a2a44a115806dd875a5773acc444a">Adding the entity-extractor tutorial.</a>
+        </span>
+        <span class="d-inline-block flex-shrink-0 v-align-bottom ">
+          <a class="commit-tease-sha pr-2" href="/maana-io/q-tutorials/commit/aecc5f1ef69a2a44a115806dd875a5773acc444a" data-pjax>
+            aecc5f1
+          </a>
+          <relative-time datetime="2019-01-23T21:32:08Z">Jan 23, 2019</relative-time>
+        </span>
+      </div>
+
+    <div class="commit-tease-contributors flex-auto">
+      
+<details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark float-left mr-2" id="blob_contributors_box">
+  <summary
+      class="btn-link"
+      aria-haspopup="dialog"
+      
+      
+      >
+    
+    <span><strong>0</strong> contributors</span>
+  </summary>
+  <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast " aria-label="Users who have contributed to this file">
+    <div class="Box-header">
+      <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <h3 class="Box-title">Users who have contributed to this file</h3>
+    </div>
+    
+        <ul class="list-style-none overflow-auto">
+        </ul>
+
+  </details-dialog>
+</details>
+      
+    </div>
+  </div>
+
+        
+
+<div class="flash flash-warn mt-3 ">
+    <div class="float-right">
+      <a href="/maana-io/q-tutorials/network/alerts" class="btn mb-2 float-right" data-octo-click="vuln_alert_review">See security alerts</a>
+    </div>
+  <div >
+      <h5 class="mb-1" style="display-inline"><svg height="18" class="octicon octicon-alert mr-1" viewBox="0 0 16 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>We found potential security vulnerabilities in your dependencies.</h5>
+    <p class="text-small">
+        You can see this message because you have been granted <a href="/maana-io/q-tutorials/settings/alerts">access to vulnerability alerts for this repository</a>.
+      <br>
+      <a href="/settings/notifications">Manage your notification settings</a> or <a href="https://help.github.com/articles/about-security-alerts-for-vulnerable-dependencies" target="_blank">learn more about vulnerability alerts.</a>
+    </p>
+  </div>
+</div>
+
+
+
+
+
+    <div class="file ">
+      
+<div class="file-header ">
+  
+  <div class="file-info float-left ">
+      622 lines (400 sloc)
+      <span class="file-info-divider"></span>
+    60.6 KB
+  </div>
+
+  <div class="file-actions d-flex ">
+
+    <div class="BtnGroup">
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/maana-io/q-tutorials/raw/master/maana-entity-extractor/DrillingReport.csv">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/maana-io/q-tutorials/blame/master/maana-entity-extractor/DrillingReport.csv">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/maana-io/q-tutorials/commits/master/maana-entity-extractor/DrillingReport.csv">History</a>
+    </div>
+
+
+    <div>
+            <a class="btn-octicon tooltipped tooltipped-nw"
+               href="https://desktop.github.com"
+               aria-label="Open this file in GitHub Desktop"
+               data-ga-click="Repository, open with desktop, type:mac">
+                <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+            </a>
+
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/maana-io/q-tutorials/edit/master/maana-entity-extractor/DrillingReport.csv" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="7z3MB8Q4l7O+q4Rc3kv+3v9SMXaeJE4gb8kSzvyuzRW7sPKMzDdPGefUGtyfJDuBavflwRU9JWVgQQmq3FTGpg==" />
+              <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+                aria-label="Edit this file" data-hotkey="e" data-disable-with>
+                <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+              </button>
+</form>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/maana-io/q-tutorials/delete/master/maana-entity-extractor/DrillingReport.csv" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="FAf6uo0YbaToie/YeXLd0zzL7f4uTY+wOZ4Da8AxUZ0EyzMGSAdRzZA3zm95LY25aKyCybL6m42qMpsIUbEkzA==" />
+            <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+              aria-label="Delete this file" data-disable-with>
+              <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+            </button>
+</form>    </div>
+  </div>
+</div>
+
+      
+
+  <div itemprop="text" class="blob-wrapper data type-csv ">
+      <div class="blob-interaction-bar">
+  <svg class="octicon octicon-search" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+  <input type="text" name="filter" class="form-control js-csv-filter-field blob-filter" autocapitalize="off"
+         placeholder="Search this file…" aria-label="Search this file…">
+</div>
+
+  <div class="markdown-body">
+    <table class="js-csv-data csv-data js-file-line-container">
+      <thead>
+        <tr id="LC1" class="js-file-line">
+          <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+            <th>id</th>
+            <th>well</th>
+            <th>date</th>
+            <th>comment</th>
+            <th>drillingProblem</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr id="LC2" class="js-file-line">
+            <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+              <td>DP_0001</td>
+              <td>177000010301</td>
+              <td>2004-01-29</td>
+              <td>01/29/06 Installed blk/TEC flange. Tested to 10K w/N2. Staged blk master valve assy to the + 40 deck. WOW. Tested SCSSV to 15K. Pulled BPV. Installed 2/way check valve. Tested same to 10K w/N2. 
+01/30/06 Tested tree to 8000 psi. Pulled 2/way check. Pumped 285 bbls diesel. Locked opened SCSSV w/11000 psi.
+01/31/06 Set production packer with 200 psi. Tested production packer on backside to 3300 psi, ok. Tested SCSSV to 10,000 psi for 30 minutes. Performed negative test on SCSSV, ok.
+02/01/06 Flowed and cleaned well.
+02/02/06 Flowed and cleaned well.
+02/03/06 Flowed and cleaned well.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC3" class="js-file-line">
+            <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+              <td>DP_0002</td>
+              <td>177000010301</td>
+              <td>2004-06-27</td>
+              <td>06/27/04: WOW, SERVICE TREE VALVES.
+06/28/04: REPAIR TREE VALVES.
+06/29/04: REPAIR SSV-1. WORK TO ALIGN DRIFT ON SSV-1.
+06/30/04: TEST REPAIRED TREE VALVES. MADE GAGE RUN.
+07/01/04: OPEN  &quot;51&quot; SAND SLEEVE, FLOW WELL.
+07/02/04: VERIFY SLEEVE COMPLETELY OPEN, DEMOB. 
+07/03/04: 
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC4" class="js-file-line">
+            <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+              <td>DP_0003</td>
+              <td>177000010302</td>
+              <td>2004-06-20</td>
+              <td>06/20/04:
+06/21/04:
+06/22/04:
+06/23/04: RECOMPLETE (SLIDING SLEEVE)  Travel TO LOCATION AND PRE-LOAD
+06/24/04: Travel TO LOCATION AND PRE-LOAD
+06/25/04: CREW CHANGE, WOW, R/U SLICKLINE
+06/26/04: WOW, CRANE SAFETY STAND DOWN
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC5" class="js-file-line">
+            <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+              <td>DP_0004</td>
+              <td>177000010302</td>
+              <td>2004-06-27</td>
+              <td>06/27/04 - WOW
+06/28/04 - Start RU equipment.
+06/29/04 - PU on tbg to 6000#. Test lub to 6000#. Set CIBP @ 12030&#39; MD. POOH. Test 13-3/8&quot; x 9-5/8&quot; annulus to 1500# for 15 min. Good test.
+06/30/04 - Dump bail 50&#39; of 16.4 ppg Class H cmt @ 12000&#39;. Pressure tested 7-5/8&quot; x 2-7/8&quot; annulus to 1500 psi for 15 mins. Tested good. Tested 2-7/8&quot; CIBP &amp; 50&#39; of cmt to 5800 psi for 15 mins. Good test. Tested lub to 6000 psi. RIH w/perf gun to 11946&#39; WLM.Pressured up tbg to 5500 psi &amp; fired gun. Pressured up tbg to 5500 psi &amp; fired gun. Pressure dropped to 5000 psi on tbg. POOH &amp; RD EL.
+07/01/04 - M&amp;P 10 bbls of 16.4 Class H cmt, displ w/66.5 of SW to spot a 500&#39; plug in tbg &amp; tbg X 5-1/2&quot; annulus from 11460&#39; - 11960&#39;. Final pump pressure 4400 psi. RD WL.
+07/02/04 - Test the 2-7/8&quot; x 7-5/8&quot; annulus to 1000 psi, charted 15 min, bled of pressure. RIH w/ spf perf gun. Tagged TOC @ 11460&#39; RKB. PU to 4000 psi &amp; fired gun. M&amp;P 21 bbls (109 sxs) of 16.4 Class H cmt. Displace w/42.5 bbls of SW for a balanced plug f/7350&#39; - 7850&#39; rkb in tbg &amp; prod. annulus.
+07/03/04 - Pressure test cmt plug to 4500 psi for 15 min. Good test. PU on production annulus to 1000 psi for 15 min. Good test. Bleed off pressure. PU to 600 psi. RIH cut tbg @ 1000&#39;. Perf the 7-5/8 &amp; 9-5/8&quot; @ 990&#39;. Circ down the 7-5/8&quot; taking returns out the 7-5/8&quot; x 9-5/8&quot; annulus until clean. Circ out the 9-5/8&quot; x 13-3/8&quot; annulus 1 volume (58 bbls) @ 1 bpm.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC6" class="js-file-line">
+            <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+              <td>DP_0005</td>
+              <td>177000015801</td>
+              <td>2004-06-06</td>
+              <td>06/06/04:	Repaired valve on tree.  Attempted to set BPV; SCSSV leaking.  RU &amp; attempted to set plug.  POOH.
+06/07/04:	Set &quot;DX&quot; plug @ 526&#39; &amp; tested.  Set &quot;DX&quot; plug @ 389&#39;.  POOH.  Repaired tree &amp; restack.  Pulled &quot;DX&quot; plugs.  Opened well &amp; flowed. Well pressure @ 0 psi in minute. Recovered 3 bbls condensate.
+06/08/04:	RU WL.  TIH w/1.89&quot; gauge to top of plug @ 10032&#39;.  POOH.  TIH w/imp blk; tagged fluid level @ 369&#39;.  POOH. Opened well to tank.  Slight blow. RU CT.  Tested BOPs 250/5000 psi.  TIH w/jetting assy; jetted f/2000&#39; w/N2.  POOH.  RU SL.  TIH w/&quot;BO&quot; shifting tool &amp; closed sleeve @ 10032&#39;.  POOH.  TIH w/Kobe prong to 10112&#39; WLM.  POOH TIH w/2&quot; GS to 10111&#39;.  POOH w/&quot;AA&quot; stop.  TIH to 10111&#39;.  POOH w DD plug.  Left packing from DD plug in hole. TIH w/2&quot; GS to 10111&#39;; unable to latch AD2 stop.  TIH w/spear; unable to pull rubber packing.  Suspend operation. RD CT.
+06/09/04:	RD SL.  ND BOPs &amp; NU tree.  WOW to move off location.
+06/10/04:	WOW to move off location.
+06/11/04:	Moved off location.
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC7" class="js-file-line">
+            <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+              <td>DP_0006</td>
+              <td>177000015801</td>
+              <td>2004-05-30</td>
+              <td>5/30/04 - WOW.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC8" class="js-file-line">
+            <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+              <td>DP_0007</td>
+              <td>177002004401</td>
+              <td>2004-06-06</td>
+              <td>06/06/04:  JU to 5&#39; air gap and started pumping pre-load.  																		
+06/07/04:  Held preload.  Monitored penetration on legs. JU into position and placed walkway to platform. MU BOPE, riser, and installed crown valve on well. Wood Group installed ESD system to well. Ran all chicksan line sections and MU same to choke manifold, flow cross, gas buster from lift boat deck to platform side.  																		
+06/08/04:  Installed rental casing valve on 10-3/4&quot; production casing spool. MU chicksan lines to same. Pumped and filled 1-1/2&quot; coil tubing reel with 37 bbls of 8.6 ppg sea water with 3% KCL. RU high pressure pump hose to BOP. Fuction tested BOP. Shell tested blowout preventer and 3-1/16&quot; 10K rental crown valve to 250/5,000 PSI and recorded on chart.  Pressured up on 2&quot; chicksan lines and manifold testing to 250/8,000 PSI. 																		
+06/09/04:  WOW. 																		
+06/10/04:  RD and changed out HR 5100 coil tubing injector head with HR 480 and rigged up same to 1-1/2 &quot; coil. Fuction tested controls on injector.  Cut 25&#39; of coil, installed connector and pull tested to 15,000 lbs and pressure tested to 5,000 psi.  MU jet blaster BHA, NU and secured head. RU and tested Bowen connection and pipe rams to 250 psi low and 3,500 psi high. Opened manumatic with 450 psi SITP. Casing pressure was 640 PSI. Worked coil up and down attempting to get past hanger. 																		
+06/11/04:  Pulled BHA above tree and SI well. MU new BHA and skirted wash tip. Re-stabbed injector, made up Bowen connecton and tested to 3,500 PSI. Opened well manumatic and top manual rental valve. CIH with 1-1/2&quot; coil. RIH w/ 1-1/2&quot; coil with skirted wash nozzle pumping 0.25 BPM, while bleeding off tubing pressure of 450 PSI to gas buster. Stopped running in with coil and continued pumping at 0.25 BPM with 8.6 PPG seawater with 3% KCL. Began pumping nitrogen at 250 SCF/min. CIH w/ coil to 4,600&#39; CTM (4,644&#39; RKB) pumping 0.50 BPM with 280 scf/min. Continued pumping 0.50 BPM increasing nitrogen to 380 SCF/min until returns seen at gas buster. CIH w/ CT, checking weights to 13,300&#39; CTM (13,344&#39; RKB). Adjusting nitrogen and fluid rates as needed to sustain returns. Lost complete returns at 13,300&#39; CTM (13,344&#39; RKB). Increased rate to 380 scf/min and reduced fluid to less than 1/4 BPM. Continued to pump until returns at gas buster. CIH w/ CT to 14,200&#39; CTM (14,244&#39; RKB), returns decreasing to no returns at gas buster. Stopped RIH w/ CT and could not get returns back. Pulled up to 10,000&#39; CTM (10,044&#39; RKB). Continued pumping at 250 SCF/min with 0.25 BPM monitoring for returns at gas buster. 																		
+06/12/04:  CIH to 15,750&#39; CTM (15,794&#39; RKB).  Lost returns and pump lost prime at 350 SCF\min.  POOH to 14,300&#39; CTM (14,344&#39; RKB) and established returns.  RIH  to 15,750&#39; CTM (15,794&#39; RKB) and lost returns.  POOH to 14,768&#39; CTM (14,812&#39; RKB) and increased nitrogen to 450 SCF/min and established returns.  RIH to 16,821&#39; CTM (16,865&#39; RKB).  Sat down with 1,000 lbs over, worked coil and made no hole. Lost returns.  Pulled into tubing at 16,800&#39; CTM (16,844&#39; RKB) and attempted to establish circulation.  Pump lost prime.  Started pumping at 450 SCF/min + 0.3 BPM foam.  POOH to 13,600&#39; CTM (13,644&#39; RKB), could not establish circulation. POOH to 11,300&#39; CTM (11,344&#39; RKB) pumping at 490 SCF/min + 0.3 BPM foam and started receiving erratic returns.  Staged in hole maintaining returns pumping 430 SCF/min + 0.3 BPM filtered sea water with 3% KCL.  Tagged up at 16,675&#39; CTM (16,719&#39; RKB).  PU and attempted to work deeper 4 times. Tagged up 146&#39; high to previous trip, packer set 147&#39; above EOT. Casing pressure 1,150 psi, high for day was 1,250 psi.  																		
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC9" class="js-file-line">
+            <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+              <td>DP_0008</td>
+              <td>177002004401</td>
+              <td>2004-05-30</td>
+              <td>5/30 - WOW.
+5/31 - RU WL.  MU blind box.  Found fluid at 700&#39;.  POOH.  RIH with swab cup assembly (unable to get through SCSSV at 410&#39;).  POOH (tool packed with sand).  RIH with sand bailer to 14966&#39;.  Set down &amp; worked to 15002&#39;.  POOH (small amount of sand in bailer).  RD WL.  Installed tree cap.  SWI.  Lease OCS-G 14532, Well No. JA002 operations completed 20040531.  Modify perforations procedure unsuccessful.  FINAL REPORT.
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC10" class="js-file-line">
+            <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+              <td>DP_0009</td>
+              <td>177002006502</td>
+              <td>2006-10-28</td>
+              <td>10/28-RIH w/ 2-1/2 kickover w/ pulling tool, pulled @ 8133 WLM, pumped 1 bbl SW, RIH w/ same and pulled dummies from 7513, 6919, 6425, and 5870 WLM.  
+10/29-WOW
+This was missed during the confusion following the hurricanes.  The APM to install gas lift was approved 12/6/2004.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC11" class="js-file-line">
+            <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+              <td>DP_0010</td>
+              <td>177002006502</td>
+              <td>2006-10-30</td>
+              <td>10/30-RIH and pulled dummies from 5282, 4567, 3752, 2879, 1755 ELM, RIH w/ kickover tool and installed gas lift valves @  1755, 2879, 3752, 4567, 5282 WLM.  
+10/31-RIH w/ kickover tool, set gas lift valves 2 5870, 6425, 6919, attempted to set @ 7513 WLM , came back w/ GL valve in tool.  RD WL.
+11/01-11/02 WOW
+11/03-ran and set new gas lift valves @ 7513 and 8133 WLM, pressure tested tbg to 1200 psi, test good, no increase in csg prss, opened well to test, opened well to gas lift.  FINAL REPORT
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC12" class="js-file-line">
+            <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+              <td>DP_0011</td>
+              <td>177004005201</td>
+              <td>2006-02-19</td>
+              <td>02/19/2006: Rig arrived on location.
+02/20/2006: Began preloading.
+02/21/2006:  Continued to preload.
+02/22/2006:  Continued to preload.
+02/23/2006:  Continued to preload.
+02/24/2006:  Finished preloading.  WOW to tie-up workboat.
+02/25/2006:  Drove 24&quot; DP to 506&#39; (238&#39; penetration).  Installed +10&#39; valve.  NU diverter.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC13" class="js-file-line">
+            <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+              <td>DP_0012</td>
+              <td>177004005201</td>
+              <td>2006-03-05</td>
+              <td>3/5 -  POOH. R/U WL &amp; tested lubricator to 1000 psi. RIH w/GR/CCL &amp; gauge ring to 10,665&#39;and confirmed TOL 9,649&#39;. Logged from 10,665&#39; to 9500&#39;. POOH. TIH to 10,635&#39;. 
+3/6 - Continued to RIH with GR/CCL/USIT and displaced hole w/ 16.6 ppg ZnBr.
+3/7 - Tested 5-1/2&quot; casing. POOH. Set &quot;QL&quot; Sump Packer @ 10,515&#39;. 
+3/8 -  WOW.
+3/9 - R/U and tested BOP&#39;s.
+3/10 - M/U perforating assembly &amp; TIH w/ sump packer @10,515&#39;. Snapped in &amp; out sump packer @ 10,515&#39;. Spaced out &amp; R/U Control head. Guns fired &amp; perforated from 10,488&#39; to 10,510&#39; in the &quot;Valve H&quot; Sand. Cycled tool &amp; reversed out. Spotted pill in annulus. Monitored static well. Cycled downhole valve and ruptured disc.
+3/11 - POOH L/D perforating assembly. All shots fired. Downloaded BHP gauges. GIH w/screen assembly and TIH. Snapped in &amp; out of sump packer @10,515&#39;. WOW.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC14" class="js-file-line">
+            <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+              <td>DP_0013</td>
+              <td>177004006901</td>
+              <td>2006-03-07</td>
+              <td>03/07/06 - Arrived on location. Pre-loaded.  03/08/06 -WOW.  03/09/06 - WOW.  03/10/06 - Installed +10&#39; valve.   03/11/06 - Functioned diverter.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC15" class="js-file-line">
+            <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+              <td>DP_0014</td>
+              <td>177004006901</td>
+              <td>2006-03-05</td>
+              <td>3/05/06 - 3/06/06:  WORKING ON WELL J-3.
+3/07/06:  BEGIN R/U ON WELL.
+3/08/06:  R/U RISER &amp; HYDRIL.  WOW - HIGH WIND &amp; SEAS.
+3/09/06:  CONT WOW.
+3/10/06:  TEST HYDRIL TO 250/1000 PSI ON CHART.  RIH W/ OS TO 295&#39;MD.  LATCHED 
+          RETRIEVABLE PLUG.  POOH.  RIH W/ JB &amp; GR TO 800&#39;MD.
+3/11/06:  W/O ON ORDERS FROM BP HOUSTON OFFICE.
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC16" class="js-file-line">
+            <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+              <td>DP_0015</td>
+              <td>177004007801</td>
+              <td>2006-02-26</td>
+              <td>2/26/06:  WOW.
+2/27/06:  R/U WL &amp; TEST LUBRICATOR TO 250/5000 PSI.  RIH W/ 2.25&quot; GR &amp; SAT DOWN @ 
+          579&#39;RKB.  POOH.  HAD IMPRESSION OF SCSSV FLAPPER.  PRESSURE UP TO 4500 PSI 
+          ON TBG.  MONITOR CSG W/ 50 PSI.  TREE LEAKING; W/O B&amp;B.
+2/28/06:  SHUT SCSSV.  BLED DOWN &amp; R/U TO SET BPV.
+3/01/06:  N/D DOWN TREE.  N/U UP 2-WAY VALVES.  R/U &amp; PULL BPV.  SET 2-WAY CHECK.  
+          R/U PUMP &amp; TEST TO 250/10,000 PSI; GOOD TEST.  R/U &amp; PULL 2-WAY CHECK.  R/U 
+          WL &amp; TEST LUBRICATOR TO 250/5000 PSI.  RIH W/ 1-3/4&quot; BAILER TO SCSSV, 
+          FLAPPER CLOSED.  PRESSURE UP TO 4500 PSI IN TBG TO OPEN.  RIH TO 1563&#39;MD, 
+          WORKED BAILER.  HAD SAMPLE OF SAND &amp; SCALE.
+3/02/06:  PUMPED 7 BBLS DOWN TBG, SCSSV EQUALIZED.  LATCH SCSSV; UNABLE TO PULL.  
+3/03/06 - 3/04/06:  W/O ON CTU &amp; EQUIPMENT.
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC17" class="js-file-line">
+            <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+              <td>DP_0016</td>
+              <td>177004007801</td>
+              <td>2006-03-09</td>
+              <td>03/05/06 - TIH and tagged top of cement retainer at 4954&#39;. PU perf-o-log lubricator and tested to 5000# and held. RIH with GR/CCL and verified EZSV depth at 4954&#39;. POOH and LD same. Circulated hole clean with 8.6 bbls of seawater. Displaced 8.6 seawater from well with 8.6 filtered KCL. POOH and LD scrapper assemblies.
+03/06/06 -  Found leaking ram inner seals. Installed all new seals. Function tested rams - no leaks on BOPs or control valves. 
+03/07/06 - RU and tested BOPs. RIH with Halliburton TCP assembly to 4954&#39; MD. Set champ packer at 4836&#39; MD. RU surface equipment and tested lines to 3600# - good test. Perforated H-4 Sand from 4902&#39; to 4949&#39; and monitored well. Diverted well to production. Well loaded up. Cycled omni valve to reverse position. Reversed out drill pipe contents.
+03/08/06 - POOH with Halliburton tools and TCP assembly. LD same. TIH with bit and tagged fill at 4936&#39; MD. Washed sand from 4936&#39; to top of EZSV at 4954&#39;. POOH and LD bit.
+03/09/06 - TIH with GP assembly and tagged at 4954&#39;. WOW. 
+03/10/06 - Set gravel pack packer at 4804&#39; with 3600#. Performed push/pull test. Shifted to reverse position and reversed out ball. Pumped gravel pack and attempted to pull up to reversed position, stuck seals - unable to free.
+03/11/06 - Attempted to pull free from packer - all attempts failed.
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC18" class="js-file-line">
+            <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+              <td>DP_0017</td>
+              <td>177004009101</td>
+              <td>2006-03-09</td>
+              <td>03/05/06 - Tested BOPs as per MMS and ERT 250/5000. P/UP 4-1/8&quot; bit, brush and scraper. GIH with 2-3/8&quot; work string rabbiting same. Tagged at 8132&#39; MD. Washed and reamed from 8132&#39; to 8234&#39;. Pumped caustic sweep pill and circulated hole clean. POOH.
+03/06/06 - MU 7&quot; scraper. TIH to 8227&#39;. Circulated hole clean with seawater. Pumped 25 bbls caustic sweep and displaced hole with 4 percent KCL seawater. POOH and LD 5&quot; brush scraper and 4-1/8&quot; bit. RU E-line. GIH with gauge ring, junk basket and gamma ray and tagged 8237&#39; WLM. Logged from 8237&#39; to 7100&#39; WLM and from 4900&#39; to 4500&#39; WLM. POOH.
+03/07/06 - GIH and set CIBP at 8171&#39; WLM. RU and tested casing to 3500 psi for 30 min. on chart - good test.  TIH with TCP assembly. Tagged CIBP at 8171&#39; MD. Spaced out and put guns on depth. Fired TCP guns and perforated K-2 Sand from 8135&#39; to 8166&#39;. Shut in well and monitored pressure. Circulated bottom and lost 13 bbls to formation. Attempted to bullhead into formation - unsuccessful. Tubing pressure 200 psi and casing pressure 420 psi.
+03/08/06 - Maintained constant pressure on well to prevent further influx while WOW.
+03/09/06 - WOW. Let well stabilize. Circulated 9.3Cal/BR2. Shut down and monitored pressure. Well static. POOH with TCP assembly.
+03/10/06 - TIH with bit and tapered string, tagged at 8129&#39; DPM. Washed from 8129&#39; to 8171&#39; DPM and pumped HEC sweep. POOH. TIH with gravel pack assembly.
+03/11/06 - Dropped 1 1/4&quot; ball and set packer at 8066&#39;. Pickled pipe with 15 percent HCL. Performed gravel pack.
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC19" class="js-file-line">
+            <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+              <td>DP_0018</td>
+              <td>177004009101</td>
+              <td>2006-03-09</td>
+              <td>03/08/06 MOL. R/U on lines. Tested to 5000 psi. Filled tubing &amp; casing w/9.3 ppg CaCl2.
+         Established injetion rate down tubing while monitoring casing pressure. 
+         Pressures @ .5 BPM = 200 psi, 1 BPM = 250 psi, 1.5 BPM = 300 psi, 2 BPM = 475
+         psi w/csg pressure dropped to 500 psi.
+03/09/06 WOW. High seas.
+03/10/06 WOW. High seas.
+03/11/06 Tested surface to 5000 psi. Pumped 19 bbls of 16.2 ppg Liquid Stone cement.
+         Squeezed 8300&#39; Sand &amp; 8400&#39; Sand perforations. ETOC @ 9770&#39;. </td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC20" class="js-file-line">
+            <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+              <td>DP_0019</td>
+              <td>177004015302</td>
+              <td>2006-03-10</td>
+              <td>03/05/06 - Tested BOP&#39;s.  
+03/06/06 - Finished testing BOP&#39;s.  RIH with cement mill &amp; milled from 16646&#39; to 17704&#39;.  C&amp;CM.
+03/07/06 - Tested casing to 1000 psi.  Ran CBL from 17708&#39; to 13000&#39;. 
+03/08/06 - RIH with brush/scraper/magnet assembly &amp; drill from 17704&#39; to 17706&#39;.
+03/09/06 - WOW.
+03/10/06 - Displaced well with 9.0 ppg CaCl2.
+03/11/06 - Finished displacing well with 9.0 ppg CaCl2.  Tested casing to 1000 psi.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC21" class="js-file-line">
+            <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+              <td>DP_0020</td>
+              <td>177004015302</td>
+              <td>2006-03-05</td>
+              <td>3/05/06:  R/U CTU &amp; TEST BOPS TO 250/10000 PSI FOR 5 MINS ON CHART; GOOD TEST.  M/U 
+          BHP &amp; RIH W/ PULLING INSERT.  R/D CTU &amp; R/U SL.
+3/06/06:  TEST SL LUBRICATOR TO 250/5000 PSI.  RIH W/ BAILER TO 14274&#39;MD &amp; WORKED 
+          BAILER.  RIH W/ 2.25&quot; GR TO 14247&#39;RKB.  ATTEMPTED TO INJECT INTO TBG W/ 10 
+          BBLS.  PRESSURE UP TO 3000 PSI &amp; HOLD.  BLED OFF PRESSURE. R/U CTU.  RIH W/ 
+          WASH NOZZLE TO 14000&#39;.  BEGAN WASHING OPERATIONS.
+3/07/06:  CONT WASHING W/ CTU DOWN TO PERFS.  MIX &amp; SPOTTED 5 BBL CMT PLUG F/ 14603&#39; 
+          TO 14400&#39;RKB. CBU.  POOH.  CLOSED WELL W/ 1100 PSI ON TBG &amp; 0 PSI CP.  POH 
+          W/ CTU.
+3/08/06:  WOW &amp; PERFORMING GENERATOR REPAIRS.
+3/09/06:  WOW - WINDS &amp; SEAS HIGH.  GENERATORS REPAIR &amp; TESTED OK.
+3/10/06:  WOW.
+3/11/06:  WOW.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC22" class="js-file-line">
+            <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+              <td>DP_0021</td>
+              <td>177004020601</td>
+              <td>2006-03-05</td>
+              <td>3/05/06 - 3/06/06:  WORKING ON BATCH WELLWORK AT WD 70 H PLATFORM.
+3/07/06:  N/D 3-1/2&quot; TREE TOP FLANGES ON LS &amp; SS.  R/U SL &amp; TEST TO 4000 PSI.  RIH &amp; 
+          LATCH PLUG @ 477&#39;.  
+3/08/06:  ATTEMPTING TO PULL PLUG.  SHEAR OFF &amp; POOH.  R/U ON LS &amp; RIH W/ 2&quot; PULLING 
+          TOOL.  LATCH PLUG @ 512&#39;MD.  
+3/09/06:  WOW - WINDS &amp; SEAS HIGH.
+3/10/06:  WOW - WINDS &amp; SEAS HIGH.
+3/11/06:  R/U SL &amp; TEST LUB TO 4000 PSI.  MADE GAUGE RUN TO 12175&#39;MD.  TAG TOP OF 
+          PLUG &amp; BEAT DOWN.  RIH W/ GS PULLING TOOL &amp; LATCH PLUG.  PULL SAME FREE.  
+          RIH W/ GAUGE &amp; TAG DM PLUG @ 2381&#39;MD.  POOH.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC23" class="js-file-line">
+            <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+              <td>DP_0022</td>
+              <td>177004020601</td>
+              <td>2006-03-12</td>
+              <td>03/12 - WOW.
+03/13 - WOW.  RU BOPs.
+03/14 - RU pump line &amp; BOP control line.
+03/15 - Re-rigging unit.
+03/16 - Re-rigging unit.
+03/17 - RU HWO unit.
+03/18 - RU BOP control lines.  Changed both sets of pipe rams from 3-1/2&quot; to 2-7/8&quot;.  Teseted BOPs.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC24" class="js-file-line">
+            <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+              <td>DP_0023</td>
+              <td>177004020801</td>
+              <td>2006-03-19</td>
+              <td>3/12/06:  WOW.
+3/13/06:  WOW.
+3/14/06:  WOW.
+3/15/06:  R/U &amp; TEST PUMP LINES TO 250/5000 PSI.  TESTED BTM CMT PLUG @ 14603&#39; TO 
+          14400&#39; TO 1600 PSI FOR 15 MINS ON CHART; GOOD TEST.  R/U SL.
+3/16/06:  TEST LUB TO 250/5000 PSI.  MADE GR RUN TO 14168&#39; (TOC).  POOH.  R/D SL.  
+3/17/06 - 3/18/06:  WORKING ON WELL E-2.
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC25" class="js-file-line">
+            <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+              <td>DP_0024</td>
+              <td>177004020801</td>
+              <td>2006-03-19</td>
+              <td>03/12-WOW.  RU cement unit, RU &amp; tested BOPE , tested lines to 5500 psi, ok.  SM, Tested BOPs w/ cement unit, 250/5000 psi, annular 250/3500 psi.  
+03/13-Finished testing BOPE.  RD test equipment.  TIH w/ RTTS tool to 11140, Circ @ 11140.  Set RTTS tool @ 11227, w/ 70k down on pkr, SM, RU lines.  Broke circ, tested lines to 6700 psi, put 1000 psi on BS, held same.  Tested 9-5/8 &amp; 7 liner w/ 11.1 PPG mud to 5680 psi on chart 30 mins, ok.  Released RTTS tool, RD lines, checked flow, pumped slug, LD. 
+03/14-POOH, LD.  SM, TIH w/ multi arm 80 finger 8-1/4 caliper, logged 13-3/8 csg from 11185- top of  9-5/8 liner, logged 11185 to surface, TIH and repeated from 11000  10000.  RD WL.  
+03/15-RIH w/ new BHA worked thru 9-5/8 liner top @ 11185 &amp; 7 liner @ 15306, tagged bridge @ 16263.  Washed &amp; reamed ratty cement from 16263-16575.  Drilled dart, wiper rubber &amp; cement from 16575-16667.  Drilled shoe &amp; reamed 1667-16713, reamed 5 at a time and pulled back to she each time due to hole packing off &amp; torquing up while back reaming.  Raised mud wt from 11.5 to 11.7 PPG while reaming to bottom 2 16713.  Max gs 400 units.  
+03/16-Pumped 35 bbls wtd sweep &amp; 45 bbls HI VIS sweep around 2 16715, circ until sweep inside 7 liner shoe, reamed back into csg.  C&amp;C mud @ 16665.  Checked flow, pumped slug, POOH.
+03/17-RIH w/ RTTS &amp; by-pass to 16216, RU 2 TIWs &amp; testing lines.  Broke circ, set RTTS, opened by-pass and broke circ w/ cmt unit.  Tested lines to 6000 psi, closed by-pass &amp; put 1000 psi on BS, tested formation to 5100 psi on chart 2/ 11.7 PPG mud, EMW=18.0.  Bled back 5 bbls.  RD lines unset RTTS tool, RD.  Pumped slug &amp; POOH, LD.  
+03/18-RIH w/ BHA to 9133, checked flow, slugged pipe POOH to change MWD. 
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC26" class="js-file-line">
+            <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+              <td>DP_0025</td>
+              <td>177004025001</td>
+              <td>2006-03-19</td>
+              <td>03/19 - Arrived on location.  RU CT.  Tested CT BOPs (250/5000 psi).  RIH pumping N2.  Stopped CT @ 2000&#39;.  20 bbl returned.  SD N2.  WHP 500 psi.  POOH w/ CT, WHP 1600 psi on 11/64&quot; choke (58 bbl returned).  Well made gas, oil &amp; traces of water.  SWI &amp; RD CT.  SIP 3200 psi.
+03/20 - WOW.
+03/21 - Installed autoclave valve w/ fitting on tree for down hole valve. Initial completion operations completed.  FINAL REPORT. </td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC27" class="js-file-line">
+            <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+              <td>DP_0026</td>
+              <td>177004025001</td>
+              <td>2006-03-23</td>
+              <td>3/19 - WOW
+3/20 - Rigging up
+3/21 - N/D DHT N/U riser &amp; BOP&#39;s begin testing
+3/22 -  Complete BOP tests 250/7000 psi TIH tag storm packer at 371&#39; displace hole w/new mud.  Try to establish injection down DP &amp; casing annulus w/ no success
+3/23 - R/U SL test lub to 2500 psi RIH pull storm packer
+3/24 - R/U CT unit test BOP&#39;s 250/7000 psi RIH washing out old mud to 12590&#39;
+3/25  - POH P/U perf gun assy RIH perforate DP f/12618&#39; - 12628&#39;</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC28" class="js-file-line">
+            <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+              <td>DP_0027</td>
+              <td>177004025901</td>
+              <td>2006-03-20</td>
+              <td>03/22/2006:  Skidded rig over to Well No. A001.  Broke bolts on tubing spool.  Removed old tubing spool and installed rebuilt spool.  Checked DHT and casing pressures.  Stacked up 11&quot; X 10M riser and BOP stack.  NU and tested BOP&#39;s to 250/7500 psi.
+03/23/2006:  Finished testing BOP&#39;s.  WOW to offload equipment from workboat.
+03/24/2006:  PU drill collars and backloaded equipment to workboat.  RIH and tagged cement at 400&#39;.  LD 10&#39; drill pipe.  Washed down and drilled cement from 405&#39; to 509&#39;.
+03/25/2006:  Continued drilling cement to 580&#39;.  POOH.  GIH with cement mill and to 580&#39; Milled on EZSV.  POOH.  MU rock bit.  GIH and milled on packer to 3348&#39;.
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC29" class="js-file-line">
+            <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+              <td>DP_0028</td>
+              <td>177004025903</td>
+              <td>2006-03-19</td>
+              <td>3/19/06 Continued with well clean up. SIW. Monitored SITIPs &amp; closed SCSSV. RIH w/ crown plug &amp; pressured up to 3500 psi to set whole HES jar down same. POOH. Tested above crown plug 250/6500 psi. Bled off work over riser &amp; tested below crown plug @ 3000 psi. RD equipment.
+3/20/06 TLP Marco Polo flowed well. WOW.
+3/21/06 SIW. Repositioned rig to decrease angle &amp; unlatched SSTT from tubing hanger. PU 2&#39; &amp; closed upper annular. Displaced choke line &amp; production riser to 10.5 ppg brine taking returns to power well.
+3/22/06 MU 5-7/8&quot; DP. TIH w/ mill &amp; wash tool on 5-7/8&quot; DP. SIW. Checked pressure under blind/shear rams, opened same. Landed out in ITC cavity &amp; pumped Hi-Vis sweep down DP.
+3/23/06 Opened rams once above blind/shear rams closed same &amp; circulated out Hi-Vis pill through choke &amp; kill lines. Completed circulation. Shut in choke &amp; kills &amp; attempted to reach TLP with no success. Latched up SSTT &amp; changed out URT. Latched fitting &amp; trouble shooted leak on SSTT. Latched up ITC to SSTT. RIH w/ same w/ 5-7/8&quot; DP. Checked pressure under blind/shear rams (zero psi), opened blind shear rams &amp; worked ITC &amp; SSTT through BOPs. Landed out ITC &amp; confirmed in position. Pressure tested ITC below to 6500 psi &amp; unlatched SSTT from ITC. Closed blind/shear rams &amp; pressure tested top of ITC to 6500 psi. Displaced choke, kill, boost, bop &amp; riser from 10.5 ppg Brine to SW.
+3/24/06 - 3/25/06 WOW.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC30" class="js-file-line">
+            <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+              <td>DP_0029</td>
+              <td>177004025903</td>
+              <td>2006-03-26</td>
+              <td>3/19/06 Conducted safety meeting &amp; JSA. Offloaded acid. RU equipment. WOW. SDFN.
+3/20/06 Conducted safety meeting &amp; JSA. RU CT injector head &amp; TIH. CBU &amp; circulated hole clean. POOH. SDFN.
+3/21/06 RIH w/ CT &amp; attempted to pump into T-10 perfs with Inversperse solvent. Could not pump in. Circulated out solvent &amp; put acid on spot. Could not pump in the acid. Circulated out the acid &amp; caught acid &amp; solvent in tanks for disposal. POOH. SDFN.
+3/22/06 - 3/25/06 Conducted safety meeting &amp; JSA. RIH w/ wash nozzle to T-10 perfs &amp; washed with acid. Could not pump in. Circulated out acid for disposal. POOH. SDFN.
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC31" class="js-file-line">
+            <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+              <td>DP_0030</td>
+              <td>177004036603</td>
+              <td>2007-03-25</td>
+              <td>3/26/06 - 3/28/06 WOW.
+3/29/06 Functioned BOPs on both yellow &amp; blue pods. RD test lines. POOH.
+3/30/06 TIH w/ SPS wash tool assembly &amp; CIW WB retrieving tool to 3650&#39;. Closed blind/shear rams on BOPs. Ran flying lead on Oceaneering Deployment Sled to seafloor &amp; attempted to move Sled closer to Subsea Tree w/ ROV. ROV had thruster problems.
+3/31/06 Returned to surface w/ ROV &amp; trouble shooted thrusters. Attempted to MU HFL J-plate to tree, could not. ROV torque tool malfunctioned.
+4/1/06 TIH w/ wash assembly, WB pulled tool from 3800&#39; &amp; dropped 2.125&quot; bypass ball. Verified positions of valves on well w/ ROV. Washed wellhead. Landed out retrieving tool in WB @ 3919&#39;, had no indication of pins shearing. POOH. LD wear bushing &amp; retrieving tool. PU 3-1/2&quot; tubing. Installed control line on DHPT gauge &amp; tested same to 10000 psi, ok. TIH w/ 3-1/2&quot; production string.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC32" class="js-file-line">
+            <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+              <td>DP_0031</td>
+              <td>177004036603</td>
+              <td>2007-05-27</td>
+              <td>5/20/2007  WORKED ON BOP AND STUMP TESTED SAME, RIG UP AND RUN BOP AND RISER.
+5/21/2007  RUNNING BOP AND MARINE RISER
+5/22/2007  RAN MARINE RISER AND BOP, LATCH UP TO PARKING PILE. 
+5/23/2007  LATCHED BOP &amp; RISER TO PARKING PILE, P/U AND R/B 4 1/2&quot; DP AND MI
+           SPEEDWELL CLEANOUT ASSYS.
+5/24/2007  P/U &amp; R/B 4 1/2&quot; DP/WOW
+5/25/2007  WOW/SET TUBING HEAD SPOOL IF WEATHER PERMITS
+5/26/2007  WOW/SET TUBING HEAD SPOOL IF WEATHER PERMITS
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC33" class="js-file-line">
+            <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+              <td>DP_0032</td>
+              <td>177004036603</td>
+              <td>2007-05-27</td>
+              <td>5/27/2007  WOW/SET THS AS WEATHER PERMITS
+5/28/2007  WOW/TBG RUN TEST W/FRANKS/HANDOFF F6 THS/DESCEND &amp; SETUP FOR INSTALLATION
+5/29/2007  INSTALL F6 THS/PU F5 THS/TRANSIT TO F5/SHUTDOWN WOW
+5/30/2007  SHUTDOWN WOWTRANSIT TO F5/SET SAME/TEST
+5/31/2007  WAIT ON CURRENT/JUMP ROV/UNLATCH/TRANSIT/LATCH
+6/1/2007   TRANSIT TO F6/LATCH/TEST BOPS/DISPLACE/DRL FASDRIL/RIH/CIRC/DRL 
+           LC+/DISPLACE/POH
+6/2/2007   DISPLACE/DRL FASDRIL/W&amp;R TO 13,597&#39;
+</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC34" class="js-file-line">
+            <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+              <td>DP_0033</td>
+              <td>177004037001</td>
+              <td>2007-09-10</td>
+              <td>9/9/07  RIH w/ production tubing &amp; tubing assembly.
+9/10/07  RIH w/ production tubing &amp; tubing assembly.  Began displacing 14.8 ppg ZnBr2 out of well.
+9/11/07  Continued to displace 14.8 ppg ZnBr2 out of well.  Pressure tested hanger seals &amp; casing annulus to 1000 psi.  Installed FMC BPV.
+9/12/07  NU 10K tree.  FMC attempted to test void space.  Re-tested to 10K psi.  RU lubricator &amp; tested tree to 10K psi through lubricator.  Appeared 2-way check valve leaking.  Redressed 2-way check valve 4 times, tested tree to 10K psi. Functioned SCSSV.  Pulled 2-way check valve.  RU WL &amp; tested lubricator to 7000 psi.  RIH w/ nipple locator w/ swedge &amp; worked through tight area from 12659&#39; to 12673&#39; WLM.
+9/13/07  RIH &amp; set down @ 12800&#39;.  PU hole tight, beat &amp; pulled up to 1000 lbs.  POOH.  RD WL &amp; equipment.  Prepared rig to skid.
+9/14/07  Prepared to demobilize rig.
+9/15/07  Rig MO location.  WOW to move CT on location.</td>
+              <td>8430958162958</td>
+          </tr>
+          <tr id="LC35" class="js-file-line">
+            <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+              <td>DP_0034</td>
+              <td>177004037001</td>
+              <td>2006-09-21</td>
+              <td>09/16/07 - No activity.
+09/17/07 - RIH and cut 7-5/8&quot; casing @ 330&#39; BML.  POOH.  Circulated 15 bbls down 7-5/8&quot; casing and out 10-3/4&quot; casing.  
+09/18/07 - No activity.
+09/19/07 - WOW
+09/20/07 - WOW
+09/21/07 - WOW
+09/22/07 - WOW</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC36" class="js-file-line">
+            <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+              <td>DP_0035</td>
+              <td>177004038401</td>
+              <td>2006-03-19</td>
+              <td>03/19/06  ND BOPs.  Removed 7-1/16&quot; 5M x 11&quot; 5M tbg head.  NU BOPs to 11&quot; 5M WH.  TIH w/7-5/8&quot; cup tester to 60&#39;.  Tested BOPs against cmt plug to 1500 psi.  LD cup testers.  TIH w/7-5/8&quot; cutting assy f/148&#39; to 2276&#39;.  Spaced out to 2300&#39;; cut 7-5/8&quot; csg.  POOH w/cutter &amp; csg.
+03/20/06  TIH w/7-5/8&quot; spear to 37&#39;.  Attempted to pull on csg; unsuccessful.  POOH.  RIH w/7-5/8&quot; mech. cutter; cut @ 67&#39; RKB.  POOH.  Latched 7-5/8&quot; csg w/spear @ 37&#39;; pulled free.  POOH; LD fish.  TIH w/spear to 67&#39;; POOH to fish.  Disengaged spear f/csg.  LD 7-5/8&quot; csg.  TIH w/spear assy w/6.767&quot; grapple &amp; pack off; latched 7-5/8&quot; csg @ 1198&#39;.  Attempted to free same; unsuccessful.
+03/21/06  Cont. jarring on fish.  TIH w/7-5/8&quot; cutter to 1950&#39;; cut 7-5/8&quot; csg @ 1950&#39;.  POOH.  TIH w/spear assy to 1198&#39;; engaged fish - POOH w/fish.  Released 7-5/8&quot; csg f/spear.  TIH w/spear &amp; grapple; engaged fish @ 1949&#39;.  Attempted to jar on fish; unsuccessful.  POOH.
+03/22/06  Pumped 40 bbls Hi-Vis sweep.  Displaced hole w/9.4 ppg mud.  Washed over 7-5/8&quot; csg f/2015&#39; to 2087&#39;.
+03/23/06  Cont. washing over 7-5/8&quot; csg f/2087&#39; to 2183&#39;.   Pumped 30 bbls Hi-Vis sweep; circ out same.  TIH w/spear assy &amp; grapple.  Engaged spear into fish @ 1949&#39;; attempted to jar on fish - unsuccessful.  POOH w/spear assy.
+03/24/06  TIH w/7-5/8&quot; cutting assy; cut csg @ 2183&#39;.  POOH.  TIH w/spear assy &amp; grapple; engaged fish @ 1949&#39;.  POOH w/cut csg.  TIH w/OEDP to 2587&#39;.  CBU.  Pumped 172 sxs (177 cu.ft.) Cl. &quot;H&quot; cmt.  POOH.  Tested BOPs.
+03/25/06  Fin. testing BOPs 250/5000 psi.   
+FINAL</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC37" class="js-file-line">
+            <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+              <td>DP_0036</td>
+              <td>177004038401</td>
+              <td>2006-08-07</td>
+              <td>8/1 - Arrived on location 20040801.  RU SL.  Tested lubricator to 5000 psi.  Opened well (1650 psi on tubing).  Pumped open SCSSV with 4000 psi.  RIH with gauge ring &amp; tagged up at 574&#39; (unable to go deeper).  RIH with GS &amp; prong &amp; attempted to latch with no success.  POOH &amp; LD prong.  TIH with fishing tool string &amp; attempted to latch (no success).  RD SL.  
+8/2 - RU SL.  RIH with IB (fish not seated in SCSSV).  Chased fish to 2552&#39;.  Started POOH (hung up in SCSSV &amp; lost tools).  RIH &amp; tagged tools at 2647&#39;.  POOH (retrieved tools).  RIH &amp; chased fish from 2647&#39; to 2881&#39;.  RIH with gauge ring &amp; pushed fish to 2982&#39;.  RIH with bailer to 3071&#39;.  RU pump on tubing.  Attempted to establish injection rate.  
+8/4 - RU SL.  RIH with gauge ring to 3075&#39; &amp; pushed fish to 8090&#39;.  POOH.  RD SL.  
+8/5 - RU EL.  RIH with CIBP &amp; set same at 8063&#39;.  POOH.  RD EL.  
+8/6 - RIH with dump bailer &amp; dumped 23&#39; of cement on top of CIBP (TOC at 8040&#39;).  
+8/7 - RU on SS.  Tested CIBP to 1000 psi.  RU on 13-3/8&quot; x 9-5/8&quot; annulus &amp; tested same to 500 psi.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC38" class="js-file-line">
+            <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+              <td>DP_0037</td>
+              <td>177004042902</td>
+              <td>2006-08-01</td>
+              <td>8/1 - RU on LS.  Mixed &amp; pumped 40 sacks of Class H cement &amp; displaced same (TOC at 7500&#39;).  RU pump on SS.  Attempted to establish injection rate.  Bled tubing &amp; casing to 450 psi.  RU on LS.  Tested to 1000 psi.  RU SL.  TIH with RS pulling tool &amp; latched fish at 7400&#39;.  POOH.  LD fish.  RD SL.  RU pump on SS.  Attempted to establish injection rate.  
+8/2 - TIH with BP &amp; set same at 7315&#39;.  POOH.  Bled SS &amp; casing to 0 psi.  Tested CIBP to 1000 psi.  TIH with gun &amp; perforated the SS from 7310&#39; to 7308&#39;.  RD EL.  Displaced with SW.  Pumped down SS.  
+8/3 - TIH with gun &amp; perforated the SS from 7310&#39; to 7308&#39;.  POOH.  RD EL.  Mixed &amp; pumped 125 sacks of Class H cement for a 300&#39; balanced plug from 7310&#39; to 7010&#39; in the 2-3/8&quot; x 2-3/8&quot;-9-5/8&quot; annulus &amp; in 2-3/8&quot; LS &amp; SS.  RU pump.  Attempted to test LS to 1000 psi.  RU EL.  TIH with B-box &amp; set down in GLM at 3858&#39;.  POOH.  LD B-box.  TIH with IB &amp; set down at 3858&#39; (impression of GLV).  RD from LS.  RU SS.  TIH with IB &amp; tagged TOC at 6920&#39;.  POOH (no impression).  RU pump.  Pumped down SS with gauges in LS &amp; 9-5/8&quot; annulus &amp; chart on SS.  Pumped 3 bbls SW.  Pressured to 1000 psi (all 3 strings communicating).  Tested SS, LS &amp; annulus to 1000 psi.  RU EL on LS.  TIH with blind box &amp; tapped on GLV at 3858&#39;.  RD EL on LS.  RU on SS.  TIH with gun &amp; perforated the SS from 2500&#39; to 2498&#39;.  POOH.  RD EL.  Mixed &amp; pumped 102 sacks of Class H cement &amp; spotted a balanced plug from 2500&#39; to 2000&#39; in 2-3/8&quot; x 2-3/8&quot; x 9-5/8&quot; annulus &amp; in 2-3/8&quot; LS &amp; SS.  
+8/4 - Attempted to test LS (communicating with SS &amp; annulus).  RU EL.  TIH with IB &amp; set down at 3858&#39;.  POOH (impression of GLV).  RU SS.  TIH with IB &amp; set down at 5763&#39;.  POOH (no impression).  RU SL.  RU SS.  TIH &amp; set CIBP at 2510&#39;.  Mixed &amp; pumped 102 sacks of Class H cement for a balanced plug from 2500&#39; to 2200&#39; in 2-3/8&quot; x 9-5/8&quot; annulus &amp; in 2-3/8&quot; LS &amp; SS.
+8/5 - Tested LS, SS &amp; 9-5/8&quot; casing to 1000 psi.  RU SL.  TIH with jet cutter &amp; cut LS at 750&#39;.  POOH.  RD to SS.  RU EL.  TIH with jet cutter &amp; cut SS at 775&#39;.  POOH.  RD EL.  Circulated.  Displaced with SW.    
+8/6 - Pulled tree.  POOH.  RU EL.  TIH with JB &amp; tagged at TOF at 539&#39;.  POOH.  RD EL.  Backloaded tubing.  
+8/7 - ND casing head &amp; attempted to pull same (head stuck).  RU EL.  TIH with GR &amp; tagged TOF at 539&#39;.  POOH.  LD GR.  TIH with jet cutter &amp; cut 9-5/8&quot; casing at 535&#39;.  POOH.  RD EL.  RU crane &amp; verified cut.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC39" class="js-file-line">
+            <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+              <td>DP_0038</td>
+              <td>177004042902</td>
+              <td>2004-08-01</td>
+              <td>8/1  TIH with scraper &amp; brush to 10213.  Circulated with 8.6 CaCl.  POOH.
+8/2  RU EL.  GIH with CCL/GR/neutron tools &amp; logged from 10228&#39; to 7000&#39;.  POOH.  PU perforating guns &amp; perforated the V2 Sand from 10222 to 10202.  POOH.  Made 2nd perforating run &amp; perforated the V2 Sand from 10202&#39; to 10184&#39;.  POOH.  RD WL.  
+8/3  TIH with packer plug retrieving tool to 10170&#39;.  Displaced well with 8.6 CaCl.  Pumped hi-vis pill.  Stung into packer plug &amp; sheared out.  Monitored well.  POOH.  
+8/4  Continued POOH (no recovery of plug).  Tested BOP&#39;s.  TIH to 10190&#39;.  Worked over plug but could not latch.  Attempted to latch fish with no success.  POOH.  
+8/5  Monitored well.  TIH with bailer to 10232.  Surged bailer &amp; had no indication that bailer had made any hole.  POOH.  
+8/6  TIH with burning shoe, jars &amp; drill collars &amp; tagged fish at 10232&#39;.  Pumped sweep &amp; reversed out same.  POOH (no recovery).
+8/7  TIH with overshot &amp; grapple to 10232&#39;.  Attempted to latch packer plug with no success.  POOH.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC40" class="js-file-line">
+            <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+              <td>DP_0039</td>
+              <td>177000010301</td>
+              <td>2004-07-12</td>
+              <td>07/12/04  Arrived on location.  JU &amp; preloaded.
+07/13/04  RU CT.  Tested BOPs.  TIH with blind box &amp; tagged TOF @ 11991&#39; CTM.  Set hip-tripper on fish.  Beat down on fish several times - no movement.  POOH with CT.
+07/14/04  TIH with fishing assembly / wire grab &amp; tagged TOF @ 11981&#39; CTM.  Set 6K down on fish several times in attempt to grab wire - no success.  TIH with fishing assembly &amp; tagged fish @ 11991&#39; CTM.  Burned over fish &amp; pushed to 12310&#39; CTM.  POOH &amp; LD burning shoe (full of wire).  Blew reel dry.  Tested break to 1000 psi.  TIH while blowing N2.
+07/15/04  TIH to 10000 &amp; blew dry (recovered fluid).  POOH.  Monitored well (no flow).  TIH with CT &amp; blew jet from perfs.  Tagged fluid @ 6000-7000&#39;.  SD @ 9000&#39; - blew dry.  TIH &amp; tagged up @ 12018&#39; &amp; worked thru.  PUH to 12050&#39; CTM - blew dry.  Injected N2 (annulus pressure = 500 psi).  POOH.  Monitored well.  Well unloaded 6 bbls water &amp; made some gas.  Pressure fell to 0 psi &amp; stopped flowing.  RU SL.  TIH with SP tool &amp; tagged up @ 11935&#39; WLM.  POOH.  TIH with blind box / impression block &amp; tagged fish @ 11935&#39;.  Attempted several times to beat down.  POOH (impression block showed frayed wire).  RD SL.  RU CT.  TIH with blind box &amp; tagged fish @ 12010&#39;.  Beat down on fish.  POOH.
+07/16/04  POOH with CT.  Jacked down &amp; moved off location.  Recompletion / fish recovery operations completed.  FINAL REPORT.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC41" class="js-file-line">
+            <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+              <td>DP_0040</td>
+              <td>177000010302</td>
+              <td>2004-07-01</td>
+              <td>6/27 - Pumped 30 bbls. of 5.2% KCL down LS.  RU EL.  RIH with CIBP &amp; GR/CCL &amp; set down same at 10437&#39;.  POOH.  RU SL.  RIH with blind box to 10410&#39; &amp; beat down on plug (no movement).  POOH.  RU SL.  RIH with bailer to 10410&#39; &amp; bailed (recovered small amount of sand).  RU EL.  RIH with CIBP &amp; GR/CCL &amp; set down same at 10437&#39; (top of plug at 10436&#39;).  POOH.  RU EL with dump bailer &amp; dumped 5&#39; of cement to 10431&#39;.  
+6/28 - Pumped 14 bbls. in LS &amp; attempted to test plug to 10431&#39;.  Pumped in at 150 psi with pressure on SS at 2550 psi &amp; casing pressure at 0 psi.  Pressure tested flowline of LS from well to header to 1500 psi.  
+6/29 - RU SL.  RIH with ponytail to 10374&#39;.  POOH.  Pressured up on production casing to 800 psi.  RU SL.  RIH with hole finder &amp; set down at 10396&#39; (sheared pin).  Pumped 1 bbl. with hole full of fluid.  Attempted POOH (hole finder stuck).  Jarred up.  Dropped 5&#39; go-devil on wire &amp; cut wire above rope socket (all wire recovered).  RU WL.  RIH with pulling tool to 10325&#39; &amp; latched go-devil.  POOH with same.  
+6/30 - RU SL.  RIH with impression block &amp; tagged fish at 10330&#39;.  RIH &amp; latched &amp; pulled fish at 10313&#39;.  Pulled up to 4200# with jars with no success.  Pumped 30 bbls. of KCL down tubing while pulling up to 6300#.  RU cutter &amp; RIH with same.  Cut wire &amp; POOH (did not recover cutter).  
+7/1 - RU SL.  RIH with PS4 plug &amp; set same at 10140&#39;.  Attempted to test PS4 plug with no success.  Pumped 10 bbls. KCL in tubing.  RU EL.  RIH with tubing punch gun &amp; perforated the Sig(P) 1 Sand from 10097&#39; to 10107&#39;.  Began unloading well to gas buster.  
+7/2 - Flowed water on fully opened choke with no gas show.  SWI.  Lease OCS 00780, Well No. D002 operations completed 20040702.  FINAL REPORT.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC42" class="js-file-line">
+            <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+              <td>DP_0041</td>
+              <td>177000015801</td>
+              <td>2004-07-03</td>
+              <td>07/05/04:	Skid f/Well #A-8.  RU SL.  Tested lub to 500 psi.  Opened SCSSV.  GIH w/GS pulling tool to 1665&#39; SLM.  POOH.
+07/06/04:	Attempted to pull plug; unsuccessful.  RIH w/1-1/2&quot; imp. blk. POOH.  RIH w/RS pulling tool; latched onto D&amp;D stop.  POOH.  GIH w/RS to 3039&#39;; pulled D&amp;D pack off stop.  POOH.  GIH w/GR to 4368&#39;.  POOH.  RD SL.  RU EL. GIH w/EL;  Cut tbg @ 4343&#39; WLM.  
+07/07/04:	Circ.  SI well &amp; monitored pressure.  Circ thru open choke.  Monitored well. Well static. Installed BPV.  ND tree.  NU BOPs.
+07/08/04:	Installed XO on 2-3/8&quot; tbg.  RU &amp; tested BOPs 250/5000 psi.  NU bell nipple.
+07/09/04:	MU X-O on 2-2/3&quot; tbg &amp; MU into tbg hgr.  Circ thru choke.  LD tbg, hgr &amp; SCSSV.  C&amp;C.  RIH w/2-3/8&quot; tbg to 4343&#39; WLM.  Circ.  Pumped 30 sxs (32 cu.ft.) Cl. &quot;H&quot; cmt to set a 200&#39; balanced cmt plug f/4343&#39; to 4143&#39; WLM.  POOH.  Opened well &amp; monitored; well static.  POOH &amp; LD tubing.
+07/10/04:	Tested BOPs 250/5000 psi.  RIH w/5&quot; X-line washpipe.  Cut 2-3/8&quot; tbg @ 1648&#39;.  POOH &amp; LD fish.    POOH.
+</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC43" class="js-file-line">
+            <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+              <td>DP_0042</td>
+              <td>177002004401</td>
+              <td>2004-07-01</td>
+              <td>6/29 - Arrived on location 20040629.  RU WL.  Tested lubricator to 2500 psi.  Pressured up on tubing to open downhole valves.  RIH with gauge ring on SS to 5641&#39;.  POOH.  RIH with TA tool to 654&#39;.  Locked SCSSV.  RIH with gauge ring to insure valve locked open.  RU on LS.  RIH with gauge ring to 5816&#39;.  POOH.  RU TA tool.  Attempted to lock open SCSSV but was unable to locate with tool.  RIH with paraffin cutter &amp; worked cutter through SCSSV several times.  RIH with TA tool but was unable to locate SCSSV.  POOH (found tool string unscrewed above jars).  RIH with RS tool to 5764&#39; &amp; latched tool string.  RIH with scratcher &amp; attempted to cut more paraffin (tool string stuck in SCSSV).  Worked tool string.  Pulled out of rope socket.  RIH with RS tool to 5764&#39; &amp; attempted to latch fish with no success.  Pumped 3% KCL down LS.  RU on SS &amp; pumped 3% KCL down same.  Set BPV&#39;s in SS &amp; LS.  RD tree.  
+6/30 - NU BOP&#39;s.  Pulled BPV&#39;s.  Set 2-way check.  Attempted to test BOP&#39;s with no success (unable to hold pressure).  Pulled BPV&#39;s.  RU EL.  RU dual string handling tools.  RU on LS.  RIH with chemical cutter to 5658&#39; &amp; cut tubing below dual packer.  RU on SS.  RIH with chemical cutter to 5640&#39; &amp; attempted to cut tubing with no success (tool failed to fire).  POOH.  RU on SS.  RIH with chemical cutter to 5640&#39; &amp; cut tubing on SS.  POOH.  RU on LS.  Pulled 75000# on dual strings.  RIH with chemical cutter to 5600&#39;.  
+7/1 - Cut LS with 75000# pull on same.  POOH with cutter.  RU dual tubing tongs.  POOH with dual strings &amp; hanger.
+7/2 - Continued POOH with 16 GLM&#39;s, 2 SCSSV&#39;s. 4 pup joints, 3 nipples.  RD dual tubing tongs.  Tested BOP&#39;s.  TIH with fishing tool assembly on 3-1/2&quot; DP.  
+7/3 - Tagged fish at 5603&#39; &amp; latched same.  Jarred fish free &amp; POOH with same.  Re-dressed grapple &amp; overshot.  TIH with fishing assembly to 5675&#39;.  Latched fish &amp; POOH with same.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC44" class="js-file-line">
+            <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+              <td>DP_0043</td>
+              <td>177002004401</td>
+              <td>2004-07-01</td>
+              <td>07/03/2004:  Drill from 11708&#39; to 11970&#39;.  
+07/04/2004:  Drill from 11970&#39; to 12280&#39;.
+07/05/2004:  Drill from 12280&#39; to 12530&#39;.
+07/06/2004:  Drill from 12530&#39; to 12610&#39;.  POOH.  PU new bit and BHA.  TIH.
+07/07/2004:  Wash / ream to 12610&#39;.  Drill from 12610&#39; to 12710&#39;.  Circ / cond.  RU E/L.  RIH w/ triple combo log.
+07/08/2004:  Cont RIH w/ triple combo log to bottom (TD).  Log up - tool stuck at 12450&#39;.  Wait on fishing tools.  RIH w/ stripping over WL.  Change out bails.  Continue stripping over WL.
+07/09/2004:  Finish stripping over SL to 12450&#39;.  Workd down over fish.  POOH w/ SL.  Circ / cond.  POOH to shoe.  RD W/L.  LD fish.  Remove from overshot.  MU hole opener assembly.
+07/10/2004:  TIH w/ hole opener assy to 9946&#39;.  Service rig and top drive.  Shut down to change out transformer.
+</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC45" class="js-file-line">
+            <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+              <td>DP_0044</td>
+              <td>177002006502</td>
+              <td>2004-06-26</td>
+              <td>06/26/04  Test BOPE to 250/5000 psi.
+06/27/04  Finish testing BOP&#39;s.  Set GP Packer.  Problems with same.
+06/28/04  &quot;Fish&quot; GP Packer.
+06/29/04  &quot;Fish&quot; GP Packer.
+06/30/04  Recovery of GP Packer.  GP screen still to be recovered.  Washover &quot;fish&quot;.
+07/01/04  &quot;Fishing&quot;
+07/02/04  &quot;Fishing&quot;.    Recovered same.
+07/03/04  Tagged sump packer with tapered mill.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC46" class="js-file-line">
+            <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+              <td>DP_0045</td>
+              <td>177004005201</td>
+              <td>2004-05-09</td>
+              <td>5/9 - Arrived on location 20040509.  RU SL with lubricator, tool string, &amp; gauge ring.  RIH with same &amp; tagged SCSSV at 211&#39;.  RU SL with dummy &amp; gauge ring.  Tested lubricator to 8000 psi.  Pressured up to 3200 psi to open SCSSV.  RIH 3 times through safety valve from 190&#39; to 230&#39; (SCSSV fully open).  Set down at 10475&#39;.  POOH.  RU SL with dump bailer, hammer sub with shear pin &amp; glass disc.  RIH &amp; set down at 10475&#39;.  Dumped acid.  POOH.
+5/10 - RU SL.  RIH with impression block to 10475&#39; &amp; set down.  POOH (no indication of fluid level).  RU SL &amp; dumped acid at 10475&#39;.  POOH.  RU SL with bailer of 10% HCL.  RIH &amp; dumped at 10568&#39;.  POOH.  
+5/11 - RU SL with impression block &amp; RIH to 10475&#39;.  Tagged &amp; POOH (impression of vertical scars on edge of lead).  RU SL with gauge ring &amp; RIH to 10568&#39;.  POOH.   RIH to get impression at 10568&#39;.  POOH (impression of clean fishing neck).  RU SL with GR pulling tool with brass pin.  RIH &amp; latched X-lock with choke at 10568&#39;.  POOH with same.  RU SL with gauge ring &amp; RIH to 11150&#39;.  POOH.  Brought well on production.
+5/12 - RD all SL equipment.  Lease OCS-G 16104, Well No. 001 operations completed 20040512.  FINAL REPORT.      
+</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC47" class="js-file-line">
+            <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+              <td>DP_0046</td>
+              <td>177004006901</td>
+              <td>2004-06-22</td>
+              <td>6/22-Equipment on location.  SM, RU N2 unit, TIH 2.3&quot; gauge, tagged @ 10738&#39;WLM, unable to get past 10768&#39; MD.  POOH.  RIH w/ standing valve, set nipple @ 10768&#39; - RIH w/ ck set tool then junk basket.  Opened well, bled off pressure, filled tbg w/ H2O.
+6/23-SM, continued to fill tbg with H2O.  Well on vacuum, removed bull plug &amp; opened csg wing valve, well on huge vacuum.  SM, RU pump in Sub on lub.  RIH w/ perforator to 10683&#39; WLM, pumping N2, POOH, gun did not activate.  Fluid level w/650 psi @ 9997&#39;. 
+6/24-SM, Tested csg to 1500 psi w/ N2.  Bled to 0 psi.  RU WL, RIH &amp; pulled junk basket, check set tool and standing valve.  Checked and re-ran.  Put 2000 psi on tbg, perforated, injected w/ gas lift, POOH w/ junk basket, POOH w/ standing valve, redressed, RIH w/ standing valve.  RIH w/ junk basket.
+6/25- RIH, perforated, unable to POOH.  shot hole 18&#39; above standing valve.  POOH, perforating gun parted, fish left in hole.  Perforator packed w/ sand.  RIH w/ IB, sat down @ 9300&#39;, POOH. Opened well to production, tbg bled down to 0 psi, SI well.  TIH w/ bailer, find sand @ 9530&#39;, began continuous bailing.  SDFN.
+6/26-SM, bailed sand, RD equipment, SD to evaluate.  SUSPENDED.
+</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC48" class="js-file-line">
+            <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+              <td>DP_0047</td>
+              <td>177004007801</td>
+              <td>2004-06-13</td>
+              <td>06/13/04:  RU and tested CTU BOPs to 250/5000 psi.
+06/14/04:  MU and tested 1.84 mill assembly with mud motor at surface a 1/4 bpm.  Tested break.  TIH with coil to 11568&#39; MD.  Milled to 11696&#39; MD.  Pumped hi vis pills.  Circulated sweeps out of screans.  Worked coil up an down.
+06/15/04:  POOH.  RD CTU.  Attempted to engage TOF with 15K over.  OS pulled free.  POOH.  
+06/16/04:  TIH with short catch overshot and latched fiah at 11541&#39; MD.  RU E-line and tested equipment to 250/5000 psi.  TIH with E-line and jet cutter to 11681&#39; MD.  Logged and fire cutter at 11656&#39; ME.  PU and pulled 40K over.  Set down and worked DP to break cut.  POOH with DP.
+06/17/04:  POOH with WS and overshot, had fish.  Shucked overshot and LD fish.  ND bell nipple and NU flange.  RU e-line and tested lubricator to 250/4500 psi.  TIH and logged with GRN/CCL/PNC logging tool from 11638&#39; to 8700&#39; MD.  RD e-line lubricator.  ND flange and NU bell nipple.
+06/18/04:  TIH with WS and MS.  Tagged sand a 11640&#39; MD.  Washed down to 11652&#39; MD.  Revered out complete wellbore volume, had sand in returns.  POOH with WS and MS.  MU 5&quot; scrape/brush assembly.  Spaced out with 2-7/8&quot; DP.  MU 7&quot; scraper assembly.  Spaced out with DP.  MU 9-5/8&quot; scraper/brush assembly.
+06/19/04:  TIH with bit and scraper assemblies to TOF at 11653&#39; MD.  Reversed out clean.  POOH with scrapers and DP.  MU and set tested plug.  Tested BOPs to 250/5000 psi.
+</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC49" class="js-file-line">
+            <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+              <td>DP_0048</td>
+              <td>177004009101</td>
+              <td>2004-05-30</td>
+              <td>05/30/04 - TIH with overshot and 6-1/2&quot; grapple to 7446&#39;. Worked over fish and latched. POOH with fish - recovered 100% of fish.
+05/31/04 thru 06/05/04 - Drilled to 12655&#39;. Slugged pipe and POOH.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC50" class="js-file-line">
+            <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
+              <td>DP_0049</td>
+              <td>177004015302</td>
+              <td>2004-05-23</td>
+              <td>5/23/04: Log w/ CBL from 13169-11596 ELM. POOH. RIH. Set sump pkr @ 13020&#39;. POOH. TIH w/ TCP assy.
+5/24/04: TIH w/ TCP assy. Perf from 12975-13010&#39;. POOH w/ TCP assy.
+5/25/04: TIH w/ GP assy. Set pkr @ 12860&#39;. Pump pickle. Reverse out.
+5/26/04: Attempt to get circ rates. Unable to get returns. Decided to do Frac in Squeeze position. Spot mini-frac. Performed SRT. Redesigned Frac Pac. Perform Frac Pac on M-60 sand.
+5/27/04: Set pkr plug in gravel pack pkr @ 12860&#39;. Perf M-50 sand from 12680-12850&#39;. Monitor well. Attempt to PU on DP. Jars hit. Work stuck pipe without success.
+5/28/04: Work pkr free. POOH slowly. Test BOPE. RU fishing equipment.
+5/29/04: TIH. Circ &amp; monitor. Wash &amp; burn over TCP guns/centralizers from 12752-12916&#39; DPM. Pump sweeps &amp; CBU.
+</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC51" class="js-file-line">
+            <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
+              <td>DP_0050</td>
+              <td>177004020601</td>
+              <td>2004-05-23</td>
+              <td>05/23/04:  RU to test BOP&#39;s.  Pulled BPV.   Made several attempts to high test BOP&#39;s to 5000 psi; visually inspected BOP&#39;s and surface equipment - no leaks.  Tightened hold-down pins to max. - hanger not holding (leaking 75# per 5 min. average).  RU and tested choke manifold, top drive safety valves, and stand pipe to 250 psi low/5000 psi high.  (Received 24-hour BOP test waiver from John McCarroll at 9:30 a.m. to pull tubing and replace tubing hanger.)  RU slickline and tested lubricator to 1000 psi.  Pulled DX plug at 358&#39; WLM.  RU E/L and tested lubricator to 1500 psi.  Backed out hold-down pins on tubing head - pull tested 2 7/8&quot; production tubing to 15,000#.  .  Pumped down hole from 450-1300&#39; &amp; tool stopped - gauge &amp; spang jars packed w/paraffin.  RD E/L.  Ran barbed scratcher to 3000&#39; WLM.  Ran 2 &quot; gauge to 12,600&#39;.  Cut tubing at 12,600&#39; WLM.
+05/24/04:  POOH, LD 2-7/8&quot; production tubing.  Set storm pkr. @ 315&#39;.  PU BOP&#39;s. (Received 24-hour BOP test waiver from John McCarroll.)
+05/25/04:  Installed new tubing head and tested void to 2500 psi.  NU stack on wellhead.  Tested BOP&#39;s 250/5000.  POOH w/storm pkr.  TIH with
+3 &quot; drill pipe to latch remaining fish.
+05/26/04:  Latched onto fish @ 12,570&#39; and jarred; unable to pull.  Serviced rig.  R/U EL.  RIH w/gauge ring to 12,715&#39;.  Punched tubing 12,712-15&#39;; could not pull.  Fired string shot @ 12,700&#39;; could not pull.
+05/27/04:  Worked pipe and attempted to pull free; could not pull.  WIH w/chemical cutter and fired @ 12,685&#39; - pipe free.  POOH (TOF @ 12,685&#39; WLM).  R/D EL.  POOH w/fish; recovered 111.77&#39; of 2 7/8&quot; tubing.  WIH w/overshot and latched onto fish @ 12,685&#39;.
+05/28/04:  Jarred on fish; pulled free.  POOH w/fish (tubing and pkr.).  WIH w/bit to 12,834&#39;; washed to 12,851&#39; and lost returns.  Mixed LCM pill and circ. - almost full returns.  Washed to 12,880&#39;, circulating LCM pills - full returns.  Washed and reamed to 12,925&#39;.
+05/29/04:  Tagged CIBP @ 12,953&#39;.  Pumped LCM sweep.  POOH to 11,779&#39; - hole taking 18 BPH.  TIH to 12,700&#39; and pumped LCM.  Monitored hole.  POOH.  WIH w/casing scraper to 12,953&#39; (PBTD) - no fill.  Attempted to circ. - bit plugged.  POOH to 12,500&#39; and attempted to circ. - bit plugged.  POOH.
+</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC52" class="js-file-line">
+            <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
+              <td>DP_0051</td>
+              <td>177004020801</td>
+              <td>2004-05-16</td>
+              <td>05/16/04:  RU and repaired drive pipe.  Tested to 50 psi.  ND tree and NU BOP.  NU shooting nipple. RU e-line and tested stack and lubricator to 250/1000 psi.  RIH with 4.5&quot; casing cutter and cut 5-1/2&quot; casing at 1175&#39; MD.  POOH.  RIH and set cement retainer at 975&#39; MD.  POOH and RD e-line.  RD shooting and RU work basket.  RIH and stung into retainer at 975&#39; MD.  Broke circulation.  Mixed and pumped 113 sxs Class H cement for a 300&#39; cement plug in 5-1/2&quot; x 9-5/8&quot; annulus from 1175&#39; to 875&#39; MD and a 400&#39; plug in the 5-1/2&quot; casing leaving 200&#39; below retainer from 1175&#39; to 975&#39; MD and 200&#39; above retainer from 975&#39; to 775&#39; MD.  Displaced with 3 bbls SW.  Circulated hole clean.  POOH and WOC.  Tested plug in 5-1/2&quot; to 1000 psi.  RU e-line and tested lubricator to 500 psi.  RIH and tagged TOC at 768&#39; MD.  RIH and cut production casing at 500&#39; MD (397&#39; BML).  POOH and RD e-line.
+05/17/04:  Circulated hole clean.  ND stack and RU slings, unable to pull 5-1/2&quot; casing.  RU e-line and tested lubricator to 500 psi.  RIH and cut casing at 496&#39; MD.  POOH and RD e-line. Unable to pull casing.  RIH with collar splitter and set off at 491&#39; MD.  POOH and RD e-line.  CBU.  RD shooting nipple.  RU jack.  Cut 5-1/2&quot; casing below slips.  Removed 13-5/8&quot; x 11&quot; casing head.  PU and  12&#39; of 9-5/8&quot; casing came with, external corrosion.  POOH with 5-1/2&quot; casing.  Removed corroded 9-5/8&quot; casing and 5-1/2&quot; slips form 13-5/8&quot; casing head.  NU casing head.  RU e-line.  RIH through 9-5/8&quot; stub with GR/JB.  Set down on heavy mud at 17&#39;.  POOH and RD e-line.  NU BOP and work basket. 
+05/18/04:  RIH with GR/JB to 25&#39; MD.  POOH RD e-line.  RD workbasket.  ND BOP and spool to 13-3/8&quot; casing head.  Washed and pumped out 30&quot; dive pipe.  RU 3&quot; air pumps and pumped 30&quot; drive pipe down past 9-5/8&quot; casing stub.  Found top 15&#39; of stub to be &quot;honeycombed&quot; mass.  Fabricated hook from 1&quot; pipe and fished junk out of hole.  RIH and flared stub out.  RU e-line.  RIH with 8.25&quot; GR/JB and worked into casing stub.  RIH and tagged 5-1/2&quot; casing stub at 496&#39; MD.  POOH.  
+05/19/04:  RIH and set cement retainer for the 9-5/8&quot; casing at 469&#39; MD.  POOH and RD e-line.  NU BOP and RU work basket.  RIH with worksting and stung into retainer.  Tested cement plug in 5-1/2&quot; x 9-5/8&quot; annulus to 500 psi.  Stung out of retainer and broke circulation.  Mixed and pumped 120 sxs of Class H cement for a 300&#39; plug from 469&#39; to 169&#39; MD (366&#39; to 66&#39; BML).  Circulated hole clean and WOC.  RD equipment.  RIH with workstring and tagged TOC at 156&#39; MD (53&#39; BML).  POOH with workstring.  RD work basket.  ND BOP.  Installed steel plat on wellhead.
+Well No. 006 is temporarily abandoned.
+</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC53" class="js-file-line">
+            <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
+              <td>DP_0052</td>
+              <td>177004025001</td>
+              <td>2006-02-26</td>
+              <td>02/19/2006 Drilled to 9601&#39;.  Circulated out gas. Drilled to 9835&#39;. 
+02/20/2006 Drilled to 9883&#39;. Pumped sweep. Circulated. Made short trip from 9883&#39; - 8782&#39;. TIH; hole slick, no fill. Pumped sweep. CBU. Flow checked well; static. Pumped slug. POOH. LD bit &amp; mule shoe. Pulled wear bushing. 
+02/21/2006 Tested BOPs. Installed wear bushing. TIH to 8700&#39; &amp; serviced top drive. Drilled to 9926&#39;. Circulated. Drilled to 10000&#39;. Pumped Hi-Vis sweep. Drilled to 10151&#39;. CBU. Drilled to 10200&#39;.
+02/22/2006 Circulated. Drilled to 10430&#39;; TD. Pumped sweep. Circulated out. Made short trip to 8793&#39;; hole took proper fill, no excess drag. C&amp;CM. POOH. 
+02/23/2006 RU EL &amp; lubricator; tested same to 500 psi. RIH from 10426&#39; - 8782&#39; &amp; logged wellbore. POOH. Held PJSM. Shot SW cores. TIH to 10000&#39; &amp; checked pick-up weight. TIH to 10260&#39;; tool taking weight. Attempted to pick-up tool; stuck. Attempted to free tool. 
+02/24/2006 Worked WL. Held PJSM. Removed WL &amp; RU strip pver WL. TIH w/ fishing BHA &amp; stripped over WL. TOF @ 10232&#39;. Worked pipe &amp; WL in hole @ 8661&#39;. CBU @ 8661&#39;.  TIH &amp; stripped over WL @ 8772&#39;. Latched on to fish @ 10237&#39; &amp; pressured up on DP. CBU @ 10237&#39;. 
+02/25/2006 TIH to 8670&#39; w/ 8-1/2&quot; hole opender assembly. Cut 162&#39; of drill line. Serviced tops drive &amp; welded up hole in brake flanges. </td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC54" class="js-file-line">
+            <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
+              <td>DP_0053</td>
+              <td>177004025901</td>
+              <td>2006-03-01</td>
+              <td>2/26 - RIH and logged from 6103&#39; to 4200&#39;. RIH with JB/GR to 6079&#39;. RIH with sump packer and set at 5968&#39;. PU 20&#39; gun 4 SPF, RIH with 20&#39;gun to 5968&#39;. Tagged and stuck gun in sump packer. POOH (left gun in hole). RD WL.
+2/27 - PU overshot assembly and latched onto fish at 5939&#39; DPM. NU lubricator, wireline equipment and tested same to 1000 psi. RIH and perforated from 5942&#39; to 5962&#39;. RD and opened well. TIH with tubing to 878&#39; and well started flowing. Shut in well and started bull heading 8.6 ppg KCL fluid down tubing.
+2/28 - Lubricated and bled well. Circulated with 9.5 ppg KCL fluid. Shut well in.
+3/1 - Opened well and monitored for 15 minutes (Well static). RIH with 2-7/8&quot; tubing to 5978&#39;. Tagged, latched and stung into packer. Pressured up 1500 psi on packer. RIH with GP assembly and tubing to top of sump packer at 5968&#39;.
+3/2 - Performed GP job and tested backside to 1000 psi. Reversed out 1-1/2 volume tubing capacity (no sand recovered in returns). Released from GP (Well static). POOH and tested tubing with 5000 psi.
+3/3 - Installed SCSSV. Spaced out and installed tubing hanger. Worked SCSSV and tested to 10,000 psi. Pumped 23,000 cubic ft. of nitrogen to displace 29 bbls fluid out of casing, no returns and closed SCSSV. Opened SCSSV. Pressured up 1000 psi on casing and re-tested backside. Started pumping nitrogen down tubing into formation and finished displacing 100,000 cu.ft. of nitrogen. Final pressure was 2000 psi on tubing. Closed SCSSV. ND BOPs.  NU tree.
+3/4 - Installed stric-lan testers. Pulled two-way check valve. Tested SCSSV to 6000 psi. Started flowing well to well testers.
+</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC55" class="js-file-line">
+            <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
+              <td>DP_0054</td>
+              <td>177004025903</td>
+              <td>2006-02-27</td>
+              <td>02/26/06 - Checked pressure on Well A-7; A-7 long string tubing 1600 psi, production casing 1500 psi, void 0 psi and short string tubing 500 psi. Pressure test viod to 3500 psi. Bled production casing from 1500 psi to 0 psi. Broke off flow line and installed flange. Hook up to gas buster and tank. Hooked up A-7 to flow to gas buster. Opened well to flow and bled tubing pressure from 1600 psi to 0 psi.
+02/27/06  RU slickline on long string. Pressure tested lubricator to 4000 psi. RIH with 1 37/32 gauge ring and tagged top of SCSSV at 289 WLM. POOH. RIH with 2 GS pulling tool and 6 prong tagged top of SCSSV at 289 WLM and stabbed SCSSV. Monitored tubing pressure and produced fluids. SI well. RIH with SCSSV and set valve. POOH. RIH with check set tool found ok. Tested SCSSV and bled down from 1400 psi to 0 psi  good test. RU on long string and RIH with B&amp;B BPV and attempted to set valve  stuck above lower master valve.
+02/28/06  RU slickline on short string. Pressure tested lubricator to 4000 psi. RIH with GS pulling tool and prong to 252 WLM. Stabbed DX plug and pressure increased to 600 psi  unable to latch plug. POOH. Pressured up on tubing to 1000 psi with seawater. Removed prong and RIH with GS pulling tool to 252 WLM. Latched plug and jarred on plug by hand. Plug pulled loose and blew down hole.
+03/01/06  RU slickline on short string and pressure tested lubricator to 4000 psi. RIH with 1-3/4 impression block to 300 WLM. Tagged top of fish at 300 WLM. RIH with 2 RS pulling tool to 300 WLM. Latched tool string and POOH. Recovered complete tool string and DX plug from 300 WLM. Set 1.875 interface DX plug st 252 WLM. RIH with 2 check set tool, tagged top of DX plug and jarred down. Bled tubing pressure from 1200 psi to 0 psi  monitored pressure.
+03/02/06  All pressure at 0 psi. Cut bolts on tree above bottom master valve and pulled tree above master valve. Recovered BPV out of tree. Set ISA BPVs in tubing hanger, long string and short string. Cleaned hanger and control lines. All o-ring seals cut.
+03/03/06  Installed o-ring seals on control line hangers and tubing seal cups. Made up bottom master valve on tubing hanger. Pressure test void to 5000 psi for 1 hour  good test. Installed the remainder of dual tree. Pressure test voids to 5000 psi  good test. Opened SCSSV and tested control line to 4500 psi. Secured tree. Opened well to flow and monitored. Shut in well and RD wireline equipment.
+</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC56" class="js-file-line">
+            <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
+              <td>DP_0055</td>
+              <td>177004036603</td>
+              <td>2006-03-03</td>
+              <td>02/26/2006:  Continued to run production tubing.  MU SCSSV and connected control line.  Stung into packer and tested backside to 2000 psi.  LD excess tubing and spaced out.  Installed hanger and tied-in control line.  Tested control line to 10,000 pis.  Stung into packer.   RU slickline.  Mage gauge run to 10,750&#39;.  POOH with slickline, left gauge and spang jars in hole.  MU slickline fishing tools to retrieve fish.
+02/27/2006:  TIH with fishing tool on slickline and fished out gauge ring.  RD slickline.  Pulled hanger to floor to dress with HP connection.  TIH with X test plug and set at 10,439&#39;.  Attempted to test tubing to 8000 psi, not holding.  POOH to redress test tool, found the X tool parted and left bottom part of plug in tubing.  Made gauge run to 3,900&#39;; and tagged tool left in hole.  GIH with spear and latched onto lower half of plug at 4,200&#39;.  POOH with full recovery.  Redressed head.  GIH and set PX plug at 10,439&#39;.
+02/28/2006:  Tested production tubing to 8000 psi.  RIH with slickline and retreived both prong and PX plug at 10,439&#39;.  Circulated 8.5 ppg inhibited KCL packer fluid.  Landed tubing.  Tested backside to 2000 psi.  Set BPV.
+03/01/2006:  ND BOP&#39;s.  NU tree.  Pulled BPV and installed 2 way check.  Tested tree to 8000 psi.  Tested SCSSV control line to 10,000 psi.  RU chicksans to choke on tree.  Tested lines to 250/8000 psi.
+03/02/2006:  Pressured up to 3000 psi on TCP guns.  Established underbalance to the formation.  Fired guns and perforated the LR Sand from 11,919&#39; to 11,933&#39;.  Unloaded well to rig&#39;s gas buster.  SI well.  Closed SCSSV and bled down pressure.  Installed BPV.  Closed all tree valves.  Skidded rig over to Well No. A009.
+Final Report.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC57" class="js-file-line">
+            <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
+              <td>DP_0056</td>
+              <td>177004036603</td>
+              <td>2006-02-28</td>
+              <td>02/26/06 - RIH with washing tool &amp; washed from 213&#39; to 2023&#39;.  CBU.
+02/27/06 - Washed from 2023&#39; to 4410&#39; &amp; tagged fish.  Displaced 2-7/8&quot; tubing with 11.6 CaCl2.  Displaced 1-1/2&quot; tubing with SW.  POOH.  
+02/28/06 - RIH with overshot &amp; grapple.  Latched fish &amp; pulled same free.  
+03/01/06 - Pulled with overshot assembly.  SI well.  Lost overshot crossover &amp; half of hydraulic disconnect.
+03/02/06 - RIH with pulling tool &amp; tagged TOF @ 4407&#39;.  Latched fish.  Attempted to pull with no success.
+03/03/06 - RIH with overshot &amp; engaged fish.
+03/04/06 - Pulled out of hole with overshot &amp; recovered fish.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC58" class="js-file-line">
+            <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
+              <td>DP_0057</td>
+              <td>177004037001</td>
+              <td>2006-02-27</td>
+              <td>02/26/06 - Milled to 11838&#39; (could not mill through).  POOH.  
+02/27/06 - Milled from 7790&#39; to 7798&#39;.  
+02/28/06 - RIH with spear &amp; latched fish at 8190&#39;.  POOH.  Tested BOP&#39;s.  
+03/01/06 - Made several attempts to pull fish with no success.
+03/02/06 - Milled from 7840&#39; to 8089&#39;.  POOH 
+03/03/06 - RIH with burning shoe to 5000&#39; (lost returns).  POOH (good returns above 5000&#39;).  
+03/04/06 - RIH &amp; milled from 6390&#39; to 8204&#39; (TOF).</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC59" class="js-file-line">
+            <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
+              <td>DP_0058</td>
+              <td>177004038401</td>
+              <td>2005-11-27</td>
+              <td>11/27/2005 - Finished POOH.  TIH with fishing assembly and recovered screen.  TIH with washpipe and muleshoe.  Washed out mill out extension in sump packer.  Swept hole with HEC pill.
+11/28/2005  - Finished sweeping hole and displaced with completion fluid.  POOH and tested BOPs.  TIH with GP assembly.
+ 
+11/29/2005 -  Finished TIH with GP assembly.  Snapped in and out of sump packer.  Set gravel pack packer at 8903.  Reversed out HEC and pickled workstring.  Pumped acid treatment, established injection rates, and gravel packed well with 4109# sand (reversed out 2300#).  POOH and RD GP.  RU to run production tubing.
+11/30/2005  TIH with tubing, tagged packer and spaced out.  Unstung from packer and circulating around 9.8 ppg inhibited packer fluid.
+12/1/2005 - Circulate around packer fluid.  RU N2 and displaced 40 bbls of tubing volume.  Landed out tubing and installed BPV.  ND stack and NU tree.  RU SL and tested same.
+12/2/2005  Pressure up on top of SCSSV and opened same.  Made GR run.  Opened well to test.  Flowed well.  Closed SCSSV and bled off pressure.  Closed valves and RD testers.  Installed BPV and tree cap.  LD workstring  and backloading to boat.  FINAL REPORT.</td>
+              <td>8749285959175</td>
+          </tr>
+          <tr id="LC60" class="js-file-line">
+            <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
+              <td>DP_0059</td>
+              <td>177004042902</td>
+              <td>2006-03-05</td>
+              <td>03/05/2006 - Finished POOH.  Tested lubricator to 500 psi.  RIH with triple combo, ran uplog, tools stuck at 8320&#39;, unable to work tools free.  Waiting on fishing tools.
+03/06/2006 - RD lubricator.  RIH with 3-1/2&quot; DP stripping over WL to 7850&#39;.
+03/07/2006 - C&amp;CM.  TIH stripping over WL, broke circulation and pumped out overshot 1 stand above fish.  Set down at 8247&#39;.  Made several attempts to work past 8247&#39; and latch fish.  Worked over fish and latched at 8320&#39;.  POOH with fish stripping over WL.
+03/08/2006 - POOH with fish stripping over WL.  Recovered entire fish.  LD logging tools and fishing assembly.  TIH with 4-1/2&quot; hole opener assembly.
+03/09/2006 - TIH with 4-1/2&quot; hole opener assembly to 5-1/2&quot; liner at 6797&#39;.  C&amp;CM.  Made short trip to casing shoe at 7900&#39; and monitored well.  Running 3-1/2&quot; liner.
+03/10/2006 - Continued running liner.  Stuck pipe at 8405&#39; - worked pipe.  
+03/11/2006 - Continued displacing pill. Completed running 3-1/2&quot; liner and cemented.  Tested 3-1/2&quot; to 500 psi.  Tested annulus to 820 psi.  TIH with 7-5/8&quot; cement retainer.  NOTE - on 03/10/2006 at 1230 hrs Guy Thibodeaux (MMS) granted a 3 day extension on BOP testing.</td>
+              <td>8749285959175</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+  </div>
+
+    </div>
+
+  
+
+  <details class="details-reset details-overlay details-overlay-dark">
+    <summary data-hotkey="l" aria-label="Jump to line"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+        <button type="submit" class="btn" data-close-dialog>Go</button>
+</form>    </details-dialog>
+  </details>
+
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2019 <span title="0.48646s from unicorn-6b864d6549-9bkjg">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon mr-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-3xoVN5Gv/jGY+cP8LfhoI54EFBhCVRxuPhpXkuVdbL932EmZ7UP6IjvKD9/S0Vg+HqEqHwmuC5inZCFyWNyAww==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-b740280f.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-1+v+rVM59IoO5f104NM9+sFi0q+4gFq8p6VZaBIUNfQN2mjkIHZ9ifdyWHfu6mrVDYW0kOgTn8DlQYX5fRBNNg==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-1586c334.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark" open>
+    <summary aria-haspopup="dialog" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>
+
