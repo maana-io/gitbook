@@ -1,4 +1,4 @@
-# 12: Admin
+# Admin
 
 \[TBD\]
 

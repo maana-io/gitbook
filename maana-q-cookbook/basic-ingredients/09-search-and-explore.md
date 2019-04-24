@@ -1,4 +1,4 @@
-# 09: Search and Explore
+# Search and Explore
 
 \[TBD\]
 

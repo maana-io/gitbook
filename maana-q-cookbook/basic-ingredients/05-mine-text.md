@@ -1,4 +1,4 @@
-# 05: Mine Text
+# Mine Text
 
 \[TBD\]
 

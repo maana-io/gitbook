@@ -1,4 +1,4 @@
-# 11: Publish Knowledge Services
+# Publish Knowledge Services
 
 \[TBD\]
 

@@ -1,4 +1,4 @@
-# 10: Connect Knowledge Services
+# Connect Knowledge Services
 
 ### Assumptions:
 

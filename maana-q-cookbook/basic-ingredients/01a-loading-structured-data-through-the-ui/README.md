@@ -1,4 +1,4 @@
-# 01A: Loading Structured Data through the UI
+# Loading Structured Data through the UI
 
 \[TBD\]
 

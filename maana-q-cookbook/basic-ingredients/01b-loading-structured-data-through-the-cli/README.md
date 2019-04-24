@@ -1,4 +1,4 @@
-# 01B: Loading Structured Data through the CLI
+# Loading Structured Data through the CLI
 
 \[TBD\]
 

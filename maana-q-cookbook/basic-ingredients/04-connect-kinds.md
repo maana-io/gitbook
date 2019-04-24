@@ -1,4 +1,4 @@
-# 04: Connect Kinds
+# Connect Kinds
 
 \[TBD\]
 

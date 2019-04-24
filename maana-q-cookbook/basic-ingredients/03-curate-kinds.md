@@ -1,4 +1,4 @@
-# 03: Curate Kinds
+# Curate Kinds
 
 \[TBD\]
 

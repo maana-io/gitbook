@@ -1,4 +1,4 @@
-# 06: Classify Text
+# Classify Text
 
 \[TBD\]
 

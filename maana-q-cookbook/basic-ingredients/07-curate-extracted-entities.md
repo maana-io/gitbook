@@ -1,4 +1,4 @@
-# 07: Curate Extracted Entities
+# Curate Extracted Entities
 
 \[TBD\]
 

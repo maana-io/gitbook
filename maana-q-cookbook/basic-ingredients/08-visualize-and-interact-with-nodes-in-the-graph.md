@@ -1,4 +1,4 @@
-# 08: Visualize & Interact with Nodes in the Graph
+# Visualize & Interact with Nodes in the Graph
 
 \[TBD\]
 
