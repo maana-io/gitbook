@@ -2,7 +2,7 @@
 
 ## About this Tutorial
 
-The entity extractor calls the [NER service](), but allows the user to specify a kind as input. The results are stored in kinds and [links](). The following mutation uses extractAndLink to both extract, store data and create links. 
+The entity extractor calls the [NER service](../../product-guide/reference-guide/q-platform-and-microservices/maana-platform-services/named-entity-recognition-ner.md), but allows the user to specify a kind as input. The results are stored in kinds and [links](../../product-guide/reference-guide/technical-design-and-architecture/links.md). The following mutation uses extractAndLink to both extract, store data and create links. 
 
 {% file src="../../.gitbook/assets/drillingreport.csv" caption="Drilling Report" %}
 

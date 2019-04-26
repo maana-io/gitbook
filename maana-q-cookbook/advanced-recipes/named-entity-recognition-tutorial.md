@@ -1,6 +1,6 @@
 # Named Entity Recognition Tutorial
 
-This tutorial goes through some sample sequences of events to recognize an entity within a string. For more detailed information about NER's capabilities, go to its [information page]().
+This tutorial goes through some sample sequences of events to recognize an entity within a string. For more detailed information about NER's capabilities, go to its [information page](../../product-guide/reference-guide/q-platform-and-microservices/maana-platform-services/named-entity-recognition-ner.md).
 
 **Begin Here:**
 

@@ -210,10 +210,7 @@
     * [Fact Recognition Tutorial](maana-q-cookbook/advanced-recipes/fact-recognition-tutorials/fact-recognition.md)
     * [Fact Recognition Bot Tutorial](maana-q-cookbook/advanced-recipes/fact-recognition-tutorials/creating-a-fact-recognition-bot.md)
   * [Creating a Managed Graph from a GraphQL Definition: Drilling Problems](maana-q-cookbook/advanced-recipes/creating-a-managed-graph-from-a-graphql-definition-drilling-problems.md)
-  * [Creating an Entity Extractor](maana-q-cookbook/advanced-recipes/creating-an-entity-extractor.md)
   * [Creating a Generic Graph](maana-q-cookbook/advanced-recipes/creating-a-generic-graph.md)
-  * [Creating a Named Entity Recognition \(NER\) Service](maana-q-cookbook/advanced-recipes/creating-a-named-entity-recognition-ner-service.md)
-  * [Creating a NLTK service](maana-q-cookbook/advanced-recipes/creating-a-nltk-service.md)
 
 ## REFERENCE SECTION
 
