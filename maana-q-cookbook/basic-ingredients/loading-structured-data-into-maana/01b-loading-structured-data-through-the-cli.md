@@ -1,7 +1,5 @@
 # Loading Structured Data through the CLI
 
-\[TBD\]
-
 ### Steps for loading data into Maana via CLI
 
 1.  Navigate to [https://github.com/maana-io/Q-tutorials](https://github.com/maana-io/Q-tutorials)

@@ -1,7 +1,5 @@
 # Loading Structured Data into Maana
 
-\[This content was on a separate page in UE. It looks like the content on both pages could possibly be merged.\]
-
 To load structured data into Maana:
 
 * Create or select the workspace where you want to load data. 
@@ -49,5 +47,5 @@ Loading data into a **Raw Data Kind** triggers automatic parsing by Maana bots, 
 
 ![Relations between Kinds](https://gitbooktrainingmaterials.blob.core.windows.net/images/image018.png)
 
-Maana also offers the option to load multiple files via [CLI](https://github.com/maana-io/q-cli).  See section “5.9 CLI capabilities” for instructions.  
+Maana also offers the option to load multiple files via [CLI](https://github.com/maana-io/q-cli).  See section [the following section](01b-loading-structured-data-through-the-cli.md) for instructions.  
 
