@@ -1,7 +1,5 @@
 # Mine Text
 
-\[TBD\]
-
 Text forms a huge part of the type of data that Maana Q users will interact with, especially when building out the KG. Text will primarily exist in the form of Fields in structured files or entire unstructured documents. The primary reason to mine text in Maana is to create an association of key terms/entities and labels \(groups of things\) in order to answer complex questions. The answers to these complex questions today are usually spread across various silo'd structured data sources and unstructured sources and often in text form.
 
 Consider this text as an example:
@@ -10,9 +8,9 @@ Consider this text as an example:
 
 As a user, I would like Maana's bots to automatically:
 
-* mine this text and identify mentions of entities \(incl. values\), and facts
-* classify it into the right category
+* Mine this text and identify mentions of entities \(incl. values\), and facts
+* Classify it into the right category
 
-I would like to have the option to trigger text mining services manually if needed. In addition, I'd like to see status indicators to show the progress of text mining so that I know when it's finished.   
+At this point, the option to trigger text mining services manually if needed becomes useful. Operational requirements seek to observe status indicators which show the progress of text mining.  
 
 

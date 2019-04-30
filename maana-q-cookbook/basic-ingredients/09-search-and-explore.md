@@ -1,7 +1,5 @@
 # Search and Explore
 
-\[TBD\]
-
 The Knowledge Graph \(KG\) can contain millions of kinds and billions of instances. It is unrealistic to assume a user can, and would want to, work with the entire KG at once. Instead they work with just the parts of the KG related to the problem they are trying to solve or the question they are trying to answer. In v3, users create a Workspace into which they select just the subset of Kinds and Services that they need to build their solution. They use the Knowledge Graph Editor \(KGE\) to select, connect, curate, and populate the graph of kinds and services that form their Workspace.
 
 The user also needs to be able to visualize the instances/entities contained in the kinds and services that comprise their Workspace and to construct more complex queries that allow them to answer questions based on the content of the KG. In deciding how we make these capabilities available to the user through the Knowledge Portal, we need to consider three primary use cases:

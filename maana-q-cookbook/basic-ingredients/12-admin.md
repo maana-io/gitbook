@@ -1,7 +1,5 @@
 # Admin
 
-\[TBD\]
-
 As a system admin, I want to...
 
 * Perform system bootstrap during setup/install, consolidated in a single service call
