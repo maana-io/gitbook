@@ -1,4 +1,4 @@
 # Basic Ingredients
 
-\[TBD\] Intro Summary
+The following "Basic Ingredients" section helps you navigate the basic and most common set of functionalities Maana Q provides. These include Loading Structured and unstructured data via the user interface \("Knowledge Portal"\) of from teh command line. Next you will learn to Curate and Connect "Kinds" which is the core of the Maana Q Type system. A series of NLP services have been provided given the many common application use cases requiring such capabilities. Of course, it is crucial that once the solution space has been modeled and data loaded, interactive visualization of the Knowledge Graph becomes necessary. Searching, exploring and connecting out knowledge services all lead to the core feature of publishing a new knowledge service using the composition of all the aforementioned facilities. Finally, you will be introduced to Administrative functions and the example solution folder structure supporting the cookbook tutorial recipes. Enjoy the journey.
 
