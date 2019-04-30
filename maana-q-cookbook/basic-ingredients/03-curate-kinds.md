@@ -1,12 +1,10 @@
 # Curate Kinds
 
-\[TBD\]
+For the instance data ingested by Maana, the Loader Service creates a new Kind, "MvApiListCSV," which provides an _interpretation_ of the raw data. The MvApiListCSV kind structure mirrors that of the file and its instances are indexed in KindDB to enable search and linking capabilities.
 
-The loader then creates a new Kind, "MvApiListCSV," that provides an _interpretation_ of the raw data. Its structure mirrors that of the file and its instances are indexed in KindDB.
+If the Loader Service experiences a problem with the file interpretation, the "File" Kind is marked in error requiring corrective measures in the file.
 
-If there is a problem with the interpretation, the File Kind is marked in error and you may be able to take corrective steps.
-
-As the Kind and its instances are loaded into the KindDB, various "bots" will begin indexing and mining the content to extract meaning and connect to existing Knowledge Graphs
+As the File Kind and its instances are loaded into Maana Q, various "Bots" begin indexing and mining the content to extract meaning and connect to existing Knowledge Graphs.
 
 The "raw data" and its "raw interpretation" represent a ground truth. However, it is likely you will want to improve the Kind and Field names, manage connections to other KGs, and create new Kinds from one or more Fields.
 
