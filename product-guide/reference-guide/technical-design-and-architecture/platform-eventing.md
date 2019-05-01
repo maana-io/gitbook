@@ -1,4 +1,4 @@
 # Platform Eventing
 
-\[TBD\] @?
+\[TBD\]
 

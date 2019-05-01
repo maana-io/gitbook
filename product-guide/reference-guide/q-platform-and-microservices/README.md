@@ -1,6 +1,6 @@
 # Leveraging Microservices
 
-\[TBD\] @
+\[TBD\]
 
 
 
