@@ -205,7 +205,7 @@ and, lastly, `data/raw/Edge.json`:
 
 ## **2. Build the Docker Container** <a id="2-build-the-docker-container"></a>
 
-This service requires the docker container be started, the data models be merged corresponding tables created in the database, and seed data converted and imported. 1. Use NPM to help manage these actions:
+This service requires the docker container be started, the data models merged with corresponding tables created in the database, and seed data converted and imported. 1. Use NPM to help manage these actions:
 
 ```text
 npm init -y
