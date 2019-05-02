@@ -1,6 +1,6 @@
 # Connect Kinds
 
-Let's now upload another file. "mv\_war\_main.csv", once uploaded by dragging and dropping the file onto the Knowledge Graph \(KG\) Canvas, will add an interpreted File Kind onto the Knowledge Graph but renamed to "Drilling Report". 
+Let's now upload another file. "mv\_war\_main.csv". Once the file is uploaded by dragging and dropping the file onto the Knowledge Graph \(KG\) Canvas, Maana Q will add an interpreted File Kind onto the Knowledge Graph renamed to "Drilling Report". 
 
 Select the existing Kind "Well", edit its schema from the Context panel and change the Field type for the "APIWellNumber" field to the Kind "Drilling Report". Save the schema.
 
