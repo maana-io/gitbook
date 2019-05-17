@@ -2,7 +2,7 @@
 description: Adding services and clients to Auth0
 ---
 
-# Authentication & Authorization
+# Auth0 Authentication & Authorization
 
 ## Maana Services API
 
