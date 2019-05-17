@@ -8,7 +8,7 @@ Bots are designed for doing small and mundane tasks like mutations, for example,
 
 ![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LVdnxVOMd0zDJQAgSCd%2F-LWJAwRVXZ47tMS7kZag%2F-LWJEdCQNM5ctwdhqbGp%2Fimage.png?alt=media&token=dd6385ec-2364-49d7-b7f9-7ef1e6ad2ce6)
 
-![Example Screen](../../../.gitbook/assets/image%20%2890%29.png)
+![Example Screen](../../../.gitbook/assets/image%20%2892%29.png)
 
 ## Assistants
 

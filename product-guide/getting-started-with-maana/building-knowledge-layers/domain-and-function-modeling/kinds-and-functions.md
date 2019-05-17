@@ -93,11 +93,11 @@ The screenshot below shows the anatomy of a function
 
 Like Kinds, Functions can also be edited via in-node editing \(see screenshot below\)
 
-![Double click on node to enable in-node editing](../../../../.gitbook/assets/image%20%2852%29.png)
+![Double click on node to enable in-node editing](../../../../.gitbook/assets/image%20%2854%29.png)
 
 However, by selecting the function and clicking on the info \(i\) tab in the context panel, you won't be able to edit the schema or field modifiers \(list or mandatory\). Here you will be able to access the id for the function and modify the function name, description and graphqlOperationType \(Query or Mutation\). 
 
-![Function options through the info tab in the context panel](../../../../.gitbook/assets/image%20%2821%29.png)
+![Function options through the info tab in the context panel](../../../../.gitbook/assets/image%20%2823%29.png)
 
 ### Field Modifiers
 

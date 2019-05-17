@@ -2,5 +2,5 @@
 
 \[TBD\] @Darrell
 
-![Data Scientist](../../../.gitbook/assets/image%20%2818%29.png)
+![Data Scientist](../../../.gitbook/assets/image%20%2820%29.png)
 

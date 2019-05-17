@@ -31,7 +31,7 @@ Services in the Maana platform can be split into three types:
 
 
 
-![](../../../.gitbook/assets/image%20%2815%29.png)
+![](../../../.gitbook/assets/image%20%2817%29.png)
 
 ## Service Interactions  <a id="interactions"></a>
 

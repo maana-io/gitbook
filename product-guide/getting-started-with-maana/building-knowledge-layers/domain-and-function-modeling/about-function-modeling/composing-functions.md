@@ -21,7 +21,7 @@ Interacting with Functions allows you to quickly iterate through a solution. The
 Click and drag from an "out" node to an "in" node to connect two fields from two functions
 {% endhint %}
 
-![](../../../../../.gitbook/assets/image%20%2831%29.png)
+![](../../../../../.gitbook/assets/image%20%2833%29.png)
 
 #### Explorer Panel <a id="FunctionComposition-ExplorerPanel"></a>
 
@@ -32,7 +32,7 @@ This gives a quick view into the structure of the PQ decomposition. It allows tr
 The Function defaults to showing only the first level deep but allows expanding to deeper levels. The Explorer panel does not render the children until expanded to avoid infinite recursion problems.  
 
 
-![Explorer panel showing the hierarchy for functions](../../../../../.gitbook/assets/image%20%2841%29.png)
+![Explorer panel showing the hierarchy for functions](../../../../../.gitbook/assets/image%20%2843%29.png)
 
 
 

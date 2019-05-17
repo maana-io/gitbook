@@ -2,7 +2,7 @@
 
 The workspace features several areas with specific functionality that enables you to create, manage, visualize and explore Knowledge Graphs and their components.
 
-![Screenshot labeling areas of a Workspace](../../../.gitbook/assets/image%20%2842%29.png)
+![Screenshot labeling areas of a Workspace](../../../.gitbook/assets/image%20%2844%29.png)
 
 {% hint style="info" %}
 **Note**:  Generally, anything you do in a workspace should be auto-saved.  If you ever find that you're losing work, ensure that you begin manually saving your work by first clicking on the Info icon to reveal the ID window in the Context Panel, and clicking on the Save Changes icon.  Then, contact Maana support to resolve your issue with auto-save.
@@ -29,7 +29,7 @@ Select or navigate a hierarchical list of:
 * Uploading a file or groups of files into the Workspace.
 * Removing or deleting items from your Workspace.
 
-![Example of the Explorer Panel](../../../.gitbook/assets/image%20%2849%29.png)
+![Example of the Explorer Panel](../../../.gitbook/assets/image%20%2851%29.png)
 
 ## The Canvas Area
 
@@ -57,12 +57,12 @@ Use the **Context Panel** to create Kind names, Property Toggles and edit Schema
     * Modify Kinds and their properties
     * Delete or completely remove Kinds from the Knowledge Graph.
 
-![Example: Information Tab](../../../.gitbook/assets/image%20%2883%29.png)
+![Example: Information Tab](../../../.gitbook/assets/image%20%2885%29.png)
 
 * **Relations Tab** - Creation of relationships between Kinds or Entities within Kinds.
   * Used to create relations between Kinds or entities within Kinds.
 
-![Example: Relations Tab](../../../.gitbook/assets/image%20%2884%29.png)
+![Example: Relations Tab](../../../.gitbook/assets/image%20%2886%29.png)
 
 * **Bots Management Tab** - Used for to see if any bots are running for a selected Kind, and change the run state of the bots \(stop if already running, start if not running, navigate to assistant for required input before starting run\). Also see the start time, end time, and error state of bots for the selected kind.
 

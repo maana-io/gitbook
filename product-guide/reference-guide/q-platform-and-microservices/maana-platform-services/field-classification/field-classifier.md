@@ -145,7 +145,7 @@ There are also additional fields, the "Type" field is the original graphql type 
 
 ![Figure 3: A new column is added to OperatorCSV with Ids to the Person kind.](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LWw6tnPhfTFBfqSswID%2F-LWw7qdXLSpqr0dK7wZe%2Fimage.png?alt=media&token=7392d4bd-b1e7-476b-8ecb-d54e2a9dfe52)
 
-![Figure 4: The Person kind is populated with new entries from the OperatorCSV &quot;contact&quot; field.](../../../../../.gitbook/assets/image%20%2847%29.png)
+![Figure 4: The Person kind is populated with new entries from the OperatorCSV &quot;contact&quot; field.](../../../../../.gitbook/assets/image%20%2849%29.png)
 
 ### More Information
 

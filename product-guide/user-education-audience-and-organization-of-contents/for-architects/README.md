@@ -14,7 +14,7 @@ Enterprise Architect
 
 
 
-![NEED TO UPDATE ARCHITECT ROLE](../../../.gitbook/assets/image%20%2817%29.png)
+![NEED TO UPDATE ARCHITECT ROLE](../../../.gitbook/assets/image%20%2819%29.png)
 
 
 
