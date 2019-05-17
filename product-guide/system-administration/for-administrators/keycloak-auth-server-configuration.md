@@ -43,7 +43,7 @@ The following prerequisites are assumed to have been fulfilled:
 
 The following diagram illustrates how Maana Q communicates using your keycloak server:
 
-![](../../../.gitbook/assets/maana_auth_diagram.png)
+![](../../../.gitbook/assets/maana_auth_diagram-1.png)
 
 ## Configuring the Keycloak Server
 
@@ -76,6 +76,8 @@ This section is largely up to the server administrator. But it is recommended th
 Themes \(login skins\) are left default, and can be customized locally on the server. 
 
 #### Tokens \(tab\) 
+
+Set 'Default Signature Algorithm' to 'RS256'
 
 Token lifetimes can be configured here \(and at the client level\), but default settings are recommended. Specifically, token lifetime for CLI tokens should considered \(and usually longer\), as the workflow for CLI is usually slower and more arduous. It is recommended this is not adjusted until initial configuration is verified.
 
@@ -129,13 +131,9 @@ This will create the client used to enforce access to the Maana Q intance's API 
 
 4. Set 'Access Type' to 'confidential'
 
-5. Set 'Valid Redirect URIs' to ======\(TBD Bryan\)
+5. Click 'Save'
 
-6. Set 'Web Origins to: ======\(TBD Bryan\)
-
-7. Click 'Save'
-
-8. Click 'Client Scopes' and check to make sure the Client Scope created last section is added to the 'Assigned Default Clien Scopes'
+6. Click 'Client Scopes' and check to make sure the Client Scope created last section is added to the 'Assigned Default Clien Scopes'
 
 ### Creating the Maana KPortal \(UI\) client
 
@@ -212,17 +210,17 @@ Open Devtools&gt;Network \(or similar tool\) to view network requests. If at any
 1. Login to Maana K Portal, complete user authentication step \(i.e., login\). 
    1. NOTE: If you can login to Maana Q KPortal and are redriected to the page showing the organization catalog, workspaces, tutorials, etc. this means you were able to 1\) obtain a token from the keycloak server on behalf of the Maana KPortal client, and 2\) verify this via the Maana API using the public key from the JWKS endpoint.
 2. Attempt creating a new workspace or opening an existing workspace.
-3. Attempt msignin via CLI.
+3. In KPortal profile, select 'Get CLI Auth Token' \(login may be required\). Copy the CLI token for use in next step.
+4. In Maana CLI, attempt msignin via CLI.
+5. If msignin succeeds, attemp mrefreshauth.
 
-These three steps should validate, generally, that the keycloak server is configured correctly.
+These steps should validate, generally, that the keycloak server is configured correctly.
 
 ## Troubleshooting Authentication Issues
 
 Misconfiguration between Maana Q environment and Keycloak server is the most common source of problems. If you can localize an issue, check the environment/server configuration specific to this area.
 
 If your environment/keycloak configuration appears correct, check settings in the realm and clients. 
-
-
 
 ### HTTP 401 Status in Maana Q instance logs
 
@@ -234,13 +232,13 @@ If these errors are associated with the 'maana-gateway' service, they are relate
 
 Symptoms: You are having trouble getting callbacks/redirects from the login screen to KPortal. In this case you may not see HTTP 401 status codes, and could see a 'hanging' redirect call, or blank screen.
 
-Recommended Action: It can be useful set 'Valid Redirect URIs' and 'Web Origins' to \* \(allow all\) in the Maana KPortal client in the keycloak server. This will allow you to determine if your redirect URI or web origin settings are incorrect.  \*\*Do this only in a secured or dev environement, as this can comprise the security of the resources secured by the clients.
+Recommended Action: It can be useful set 'Valid Redirect URIs' and 'Web Origins' to \* \(allow all\) in the Maana KPortal client in the keycloak server. This will allow you to determine if your redirect URI or web origin settings are incorrect.  \*\*Do this only in a secured or dev environment, as this can comprise the security of the resources secured by the clients.
 
 ### Cannot Login to CLI
 
 These are one-time use authorization codes, a new CLI token must be generated in the KPortal UI for each CLI login attempt. Consider generating another CLI login token in the UI.
 
-Ensure you have actually copied the CLI auth token to the clip-board and are pasting it correctly into the CLI.
+Ensure you have actually copied the CLI auth token to the clip-board and are pasting it correctly into the CLI. Alternatively, you can paste the CLI token as a second argument to msignin to see the token itself.
 
 Record/Read error messages. 
 
