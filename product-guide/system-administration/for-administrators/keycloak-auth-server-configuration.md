@@ -4,6 +4,8 @@ description: How to configure a Keycloak server to secure access to a Maana Q in
 
 # Keycloak Auth Server Configuration
 
+
+
 ## Overview
 
 This document describes the steps for correctly configuring a keycloak server to secure access to a Maana Q instance. 
@@ -47,6 +49,22 @@ The following diagram illustrates how Maana Q communicates using your keycloak s
 
 ## Configuring the Keycloak Server
 
+Throughout this section, we note that particular Maana Q environment variables will need to be configured to match certain values you specify in your keycloak server configuration. It will be helpful to keep a list of these in a scratch pad--you can copy the list below and fill it in as you go through the guide:
+
+* REACT\_APP\_PORTAL\_AUTH\_DOMAIN= 
+* REACT\_APP\_PORTAL\_AUTH\_IDENTIFIER=
+* REACT\_APP\_PORTAL\_AUTH\_CLIENT\_ID= 
+* REACT\_APP\_CLI\_AUTH\_CLIENT\_ID= 
+* REACT\_APP\_CLI\_AUTH\_DOMAIN= 
+* API\_AUTH\_DOMAIN= 
+* API\_AUTH\_CLIENT\_ID= 
+* AUTH\_AUDIENCE= 
+* AUTH\_JWKS\_URL= 
+* AUTH\_ISSUER= 
+* AUTH\_ALGORITHM=
+
+ At the end of this guide there is a table you can use to check your list, and instructions for testing.
+
 ### Ensure Realm is Created and Accessible
 
 Login to admin console. 
@@ -77,7 +95,7 @@ Themes \(login skins\) are left default, and can be customized locally on the se
 
 #### Tokens \(tab\) 
 
-Set 'Default Signature Algorithm' to 'RS256'
+Set 'Default Signature Algorithm' to 'RS256'. **\*\*Set AUTH\_ALGORITHM environment variable in the Maana Q instance with this value.**
 
 Token lifetimes can be configured here \(and at the client level\), but default settings are recommended. Specifically, token lifetime for CLI tokens should considered \(and usually longer\), as the workflow for CLI is usually slower and more arduous. It is recommended this is not adjusted until initial configuration is verified.
 
@@ -93,25 +111,25 @@ Setting a 'client scope' and paired 'mapper' is how to set the 'audience' \('aud
 
 ![Adding a Client Scope](../../../.gitbook/assets/keycloak_addclientscope.png)
 
-5. Now click 'Save'. You should see your screen refresh, displaying the newly created scope:
+4. Now click 'Save'. You should see your screen refresh, displaying the newly created scope:
 
 ![Newly Created Client Scope](../../../.gitbook/assets/keycloakdonecreatingclientscope.png)
 
-6. Under the 'Mappers' tab, select 'Create'. 
+5. Under the 'Mappers' tab, select 'Create'. 
 
-7. In the 'Create Protocol Mapper' page, set the 'Name' to \[clientScopeName\]\_mapper. Set the 'Mapper Type' to 'Audience'. Now, specify the value of 'Included Custom Audience': **this value and AUTH\_AUDIENCE environment variable in the Maana Q instance must be configured to match.** \(Verify that 'Add to access token' is ON\):
+6. In the 'Create Protocol Mapper' page, set the 'Name' to \[clientScopeName\]\_mapper. Set the 'Mapper Type' to 'Audience'. Now, specify the value of 'Included Custom Audience': **this value and AUTH\_AUDIENCE environment variable in the Maana Q instance must be configured to match.** \(Verify that 'Add to access token' is ON\):
 
 ![Creating a protocol mapper](../../../.gitbook/assets/keycloakcreateprotocolmapper.png)
 
-8. Click 'Save'
+7. Click 'Save'
 
-9. Now, click again 'Client Scopes' under the 'Configure' panel on the left-hand side of the console.
+8. Now, click again 'Client Scopes' under the 'Configure' panel on the left-hand side of the console.
 
-10. Click 'Default Client Scopes'. You should see the client scope you just created under the 'Available Client Scopes':
+9. Click 'Default Client Scopes'. You should see the client scope you just created under the 'Available Client Scopes':
 
 ![](../../../.gitbook/assets/keycloakdefaultclientscopes.png)
 
- 11. Add your client to the 'Assigned Default Client Scopes':
+10. Add your client to the 'Assigned Default Client Scopes':
 
 ![](../../../.gitbook/assets/keycloakassigneddefaultclientscope.png)
 
@@ -133,7 +151,7 @@ This will create the client used to enforce access to the Maana Q intance's API 
 
 5. Click 'Save'
 
-6. Click 'Client Scopes' and check to make sure the Client Scope created last section is added to the 'Assigned Default Clien Scopes'
+6. Click 'Client Scopes' and check to make sure the Client Scope created last section is added to the 'Assigned Default Client Scopes'
 
 ### Creating the Maana KPortal \(UI\) client
 
@@ -144,7 +162,7 @@ This will create the client used to enforce access to the Maana Q intance's UI \
 3. Click 'Save' and you will see the window for the client similar to last section.
 4. Set 'Implicit Flow Enabled' ON. 
 5. Set 'Standard Flow Enabled'  OFF.
-6. Set 'Valid Redirect URIs' to 'https://\[host\]:\[port\]/callback'
+6. Set 'Valid Redirect URIs' to 'https://\[host\]:\[port\]/callback' -- see also \[Keycloak Redirect URL Security\] in the references section.
 7. Set 'Web Origins' to 'https://\[host\]:\[port\]'
 8. Click 'Save'
 
@@ -155,7 +173,7 @@ This will create the client used to enforce access to the Maana Q intance's UI \
 3. Click 'Save' and you will see the window for the client similar to last section.
 4. \('Standard Flow Enabled should be ON\)
 5. \('Implicit Flow Enabled' should be OFF\). 
-6. Set 'Valid Redirect URIs' to 'https://\[host\]:\[port\]/user'
+6. Set 'Valid Redirect URIs' to 'https://\[host\]:\[port\]/user' -- see also \[Keycloak Redirect URL Security\] in the references section.
 7. Set 'Web Origins' to 'https://\[host\]:\[port\]'
 8. Click 'Save'
 
@@ -165,7 +183,7 @@ Keycloak uses an OIDC certs endpoint to retrieve the JSON Webtoken Keys Set \(JW
 
 By default, the keycloak server should expose its JWKS on 'https://\[your-keycloak-host\]:\[port\#\]/auth/realms/\[your-realm-name\]/openid-connect/certs'
 
-Ensure you can get your JWKS by hitting this endpoint on your keycloak server. It should respond with JSON output similar to this:bitbuc
+Ensure you can get your JWKS by hitting this endpoint on your keycloak server. It should respond with JSON output similar to this:
 
 ```text
 {
@@ -181,6 +199,8 @@ Ensure you can get your JWKS by hitting this endpoint on your keycloak server. I
   ]
 }
 ```
+
+If this works, **set the AUTH\_JWKS\_URL with this URL**.
 
 If you receive a 404 or a response that doesn't include a key for an RS\*\*\* algorigthm \(as shown above\) review and correct your realm 'Keys' configuration before you proceed.
 
@@ -202,6 +222,8 @@ Before attempting to deploy/finalize, please ensure the following configurations
 | AUTH\_ISSUER | 'https://\[your-keycloak-host\]:\[port\#\]/auth/realms/[\[](https://keycloakdev.knowledge.maana.io:8443/auth/realms/maanaDev)your-realm-name\]' |
 | AUTH\_ALGORITHM | Must be RSA-type, and value must match value in Realm&gt;Keys&gt; \[RS\*\*\*\]. For example 'RS256'. |
 |  |  |
+
+\*\*Make sure the Maana Q environment has its AUTH\_PROVIDER evironment variable set as: AUTH\_PROVIDER=keycloak
 
 ## Testing Functionality Between Keycloak Server and Maana Q 
 
@@ -232,7 +254,7 @@ If these errors are associated with the 'maana-gateway' service, they are relate
 
 Symptoms: You are having trouble getting callbacks/redirects from the login screen to KPortal. In this case you may not see HTTP 401 status codes, and could see a 'hanging' redirect call, or blank screen.
 
-Recommended Action: It can be useful set 'Valid Redirect URIs' and 'Web Origins' to \* \(allow all\) in the Maana KPortal client in the keycloak server. This will allow you to determine if your redirect URI or web origin settings are incorrect.  \*\*Do this only in a secured or dev environment, as this can comprise the security of the resources secured by the clients.
+Recommended Action: It can be useful set 'Valid Redirect URIs' and 'Web Origins' to \* \(allow all\) in the Maana KPortal client in the keycloak server. This will allow you to determine if your redirect URI or web origin settings are incorrect.  \*\*Do this only in a secured or dev environment, as this can comprise the security of the resources secured by the client[.](https://stackoverflow.com/questions/45352880/keycloak-invalid-parameter-redirect-uri?rq=1)
 
 ### Cannot Login to CLI
 
@@ -256,7 +278,7 @@ Verify correct configuration of CLI client in keycloak server.
 
 \[Keycloak OIDC\] Keycloak Documentation. OIDC endpoints. Retrieved on 5.20.19 from [https://www.keycloak.org/docs/3.2/server\_admin/topics/identity-broker/oidc.html](https://www.keycloak.org/docs/3.2/server_admin/topics/identity-broker/oidc.html)
 
-
+\[Keycloak Redirect URL Security\] Keycloak Documentation. Unspecific Redirect URIs. Retrieved on 5.21. from [https://www.keycloak.org/docs/2.5/server\_admin/topics/threat/redirect.html](https://www.keycloak.org/docs/2.5/server_admin/topics/threat/redirect.html)
 
 ---Prepared by Logan Gore, Maana.io, 5.20.19
 
