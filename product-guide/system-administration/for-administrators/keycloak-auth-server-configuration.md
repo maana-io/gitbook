@@ -39,7 +39,7 @@ The following prerequisites are assumed to have been fulfilled:
 
 **Issuer:** The domain which issues an access token. This value must be present in a JSON Web Token issued by keycloak, as it will be verified when attempting to access the Maana Q API. For a keycloak server, this will usually be formatted like so: 'https://\[your-keycloak-host\]/\[port\#\]/auth/realms/\[your-realm-name\].
 
-\*For more comprehensive definitions, see \[Keycloak Concepts\] in _References_ section.
+**\*For more comprehensive definitions, see \[Keycloak Concepts\] in References section at the end of this guide.**
 
 ## Maana Q Authentication Flow Diagram
 
@@ -49,7 +49,7 @@ The following diagram illustrates how Maana Q communicates using your keycloak s
 
 ## Configuring the Keycloak Server
 
-Throughout this section, we note that particular Maana Q environment variables will need to be configured to match certain values you specify in your keycloak server configuration. It will be helpful to keep a list of these in a scratch pad--you can copy the list below and fill it in as you go through the guide:
+Throughout this section, we note that particular Maana Q environment variables will need to be configured to match certain values you specify in your keycloak server configuration. It will be helpful to keep a list of these in a scratch pad--you can copy the list below and fill it in as you go through the guide \(this will be referred to as your 'environment variable list'\):
 
 * REACT\_APP\_PORTAL\_AUTH\_DOMAIN= 
 * REACT\_APP\_PORTAL\_AUTH\_IDENTIFIER=
@@ -58,12 +58,13 @@ Throughout this section, we note that particular Maana Q environment variables w
 * REACT\_APP\_CLI\_AUTH\_DOMAIN= 
 * API\_AUTH\_DOMAIN= 
 * API\_AUTH\_CLIENT\_ID= 
+* API\_AUTH\_CLIENT\_IDENTIFIER=
 * AUTH\_AUDIENCE= 
 * AUTH\_JWKS\_URL= 
 * AUTH\_ISSUER= 
 * AUTH\_ALGORITHM=
 
- At the end of this guide there is a table you can use to check your list, and instructions for testing.
+ At the end of this guide, there is a table you can use to check your list and instructions for testing.
 
 ### Ensure Realm is Created and Accessible
 
@@ -77,13 +78,13 @@ Successful login should give you a page similar to this:
 
 ![](../../../.gitbook/assets/realmappearance.png)
 
+DO NOT CHANGE YOUR REALM NAME.
 
+If you can access your realm, set **REACT\_APP\_PORTAL\_AUTH\_DOMAIN, API\_AUTH\_DOMAIN** and **REACT\_APP\_CLI\_AUTH\_DOMAIN** to 'https://\[your-keycloak-host\]:\[port\#\]' in your environment variable list.
+
+Now, set **REACT\_APP\_PORTAL\_AUTH\_IDENTIFIER** and **API\_AUTH\_IDENTIFIER** in your environment variable list with the value in the 'Name' box.
 
 ### Additional Realm Configuration
-
-#### General \(tab\)
-
-Name: **\*\*Realm name and REACT\_APP\_PORTAL\_AUTH\_IDENTIFIER environment variable in the Maana Q instance must be configured to match.**
 
 #### Login \(tab\)
 
@@ -95,7 +96,9 @@ Themes \(login skins\) are left default, and can be customized locally on the se
 
 #### Tokens \(tab\) 
 
-Set 'Default Signature Algorithm' to 'RS256'. **\*\*Set AUTH\_ALGORITHM environment variable in the Maana Q instance with this value.**
+Set 'Default Signature Algorithm' to 'RS256'. \(Click 'Save'\)
+
+**\*\*Set AUTH\_ALGORITHM with this value in your environment variable list.**
 
 Token lifetimes can be configured here \(and at the client level\), but default settings are recommended. Specifically, token lifetime for CLI tokens should considered \(and usually longer\), as the workflow for CLI is usually slower and more arduous. It is recommended this is not adjusted until initial configuration is verified.
 
@@ -117,19 +120,23 @@ Setting a 'client scope' and paired 'mapper' is how to set the 'audience' \('aud
 
 5. Under the 'Mappers' tab, select 'Create'. 
 
-6. In the 'Create Protocol Mapper' page, set the 'Name' to \[clientScopeName\]\_mapper. Set the 'Mapper Type' to 'Audience'. Now, specify the value of 'Included Custom Audience': **this value and AUTH\_AUDIENCE environment variable in the Maana Q instance must be configured to match.** \(Verify that 'Add to access token' is ON\):
+6. In the 'Create Protocol Mapper' page, set the 'Name' to \[clientScopeName\]\_mapper. 
+
+7. Set the 'Mapper Type' to 'Audience'. 
+
+8. Specify the value of 'Included Custom Audience'. \*\***Set AUTH\_AUDIENCE with this value in your environment variable list.** \(Verify that 'Add to access token' is ON\):
 
 ![Creating a protocol mapper](../../../.gitbook/assets/keycloakcreateprotocolmapper.png)
 
-7. Click 'Save'
+9. Click 'Save'
 
-8. Now, click again 'Client Scopes' under the 'Configure' panel on the left-hand side of the console.
+10. Now, click again 'Client Scopes' under the 'Configure' panel on the left-hand side of the console.
 
-9. Click 'Default Client Scopes'. You should see the client scope you just created under the 'Available Client Scopes':
+11. Click 'Default Client Scopes'. You should see the client scope you just created under the 'Available Client Scopes':
 
 ![](../../../.gitbook/assets/keycloakdefaultclientscopes.png)
 
-10. Add your client to the 'Assigned Default Client Scopes':
+12. Add your client to the 'Assigned Default Client Scopes':
 
 ![](../../../.gitbook/assets/keycloakassigneddefaultclientscope.png)
 
@@ -142,7 +149,7 @@ Done.
 This will create the client used to enforce access to the Maana Q intance's API gateway.
 
 1. Click 'Clients' in the left-hand panel. In the 'Clients' window click 'Create'.
-2. In the 'Add Client' window specify the 'Client ID' value. \*\***this value and API\_AUTH\_CLIENT\_ID environment variable in the Maana Q instance must be configured to match.** For this example we will use 'maanaAPI'.
+2. In the 'Add Client' window specify the 'Client ID' value. \*\***Set API\_AUTH\_CLIENT\_ID with this value in your environment variable list.** For this example we will use 'maanaAPI'.
 3. Click 'Save' and you will see the window for the client:
 
 ![Newly created client](../../../.gitbook/assets/keycloakclientwindowapi.png)
@@ -151,37 +158,35 @@ This will create the client used to enforce access to the Maana Q intance's API 
 
 5. Click 'Save'
 
-6. Click 'Client Scopes' and check to make sure the Client Scope created last section is added to the 'Assigned Default Client Scopes'
-
 ### Creating the Maana KPortal \(UI\) client
 
 This will create the client used to enforce access to the Maana Q intance's UI \(and therefore the access tokens\).
 
 1. Click 'Clients' in the left-hand panel. In the 'Clients' window click 'Create'.
-2. In the 'Add Client' window specify the 'Client ID' value. \*\***this value and REACT\_APP\_PORTAL\_AUTH\_CLIENT\_ID environment variable in the Maana Q instance must be configured to match.** For this example we will use 'maanaKPortal'.
+2. In the 'Add Client' window specify the 'Client ID' value. \*\***Set REACT\_APP\_PORTAL\_AUTH\_CLIENT\_ID with this value in your environment variable list.** For this example we will use 'maanaKPortal'.
 3. Click 'Save' and you will see the window for the client similar to last section.
-4. Set 'Implicit Flow Enabled' ON. 
-5. Set 'Standard Flow Enabled'  OFF.
-6. Set 'Valid Redirect URIs' to 'https://\[host\]:\[port\]/callback' -- see also \[Keycloak Redirect URL Security\] in the references section.
-7. Set 'Web Origins' to 'https://\[host\]:\[port\]'
+4. Set 'Standard Flow Enabled'  OFF.
+5. Set 'Implicit Flow Enabled' ON.
+6. Set 'Valid Redirect URIs' to 'https://\[maana-q-host\]:\[maana-q-UI-port\]/callback' -- see also \[Keycloak Redirect URL Security\] in the references section.
+7. Set 'Web Origins' to 'https://\[maana-q-host\]:\[maana-q-UI-port\]'
 8. Click 'Save'
 
 ### Creating the Maana CLI client
 
 1. Click 'Clients' in the left-hand panel. In the 'Clients' window click 'Create'.
-2. In the 'Add Client' window specify the 'Client ID' value. \*\***this value and REACT\_APP\_CLI\_AUTH\_CLIENT\_ID environment variable in the Maana Q instance must be configured to match.** For this example we will use 'maanaCLI'.
+2. In the 'Add Client' window specify the 'Client ID' value. \*\***Set REACT\_APP\_CLI\_AUTH\_CLIENT\_ID with this value in your environment variable list.** For this example we will use 'maanaCLI'.
 3. Click 'Save' and you will see the window for the client similar to last section.
 4. \('Standard Flow Enabled should be ON\)
 5. \('Implicit Flow Enabled' should be OFF\). 
-6. Set 'Valid Redirect URIs' to 'https://\[host\]:\[port\]/user' -- see also \[Keycloak Redirect URL Security\] in the references section.
-7. Set 'Web Origins' to 'https://\[host\]:\[port\]'
+6. Set 'Valid Redirect URIs' to 'https://\[maana-q-host\]:\[maana-q-UI-port\]/user' -- see also \[Keycloak Redirect URL Security\] in the references section.
+7. Set 'Web Origins' to 'https://\[maana-q-host\]:\[maana-q-UI-port\]'
 8. Click 'Save'
 
 ### Try your JWKS URL
 
 Keycloak uses an OIDC certs endpoint to retrieve the JSON Webtoken Keys Set \(JWKS\). This URL must be provided to the Maana Q environment so tokens can be verified by the API. 
 
-By default, the keycloak server should expose its JWKS on 'https://\[your-keycloak-host\]:\[port\#\]/auth/realms/\[your-realm-name\]/openid-connect/certs'
+By default, the keycloak server should expose its JWKS on 'https://\[your-keycloak-host\]:\[port\#\]/auth/realms/\[your-realm-name\]/protocol/openid-connect/certs'
 
 Ensure you can get your JWKS by hitting this endpoint on your keycloak server. It should respond with JSON output similar to this:
 
@@ -200,47 +205,50 @@ Ensure you can get your JWKS by hitting this endpoint on your keycloak server. I
 }
 ```
 
-If this works, **set the AUTH\_JWKS\_URL with this URL**.
+If this works, **set the AUTH\_JWKS\_URL with this URL in your environment variable list**.
 
-If you receive a 404 or a response that doesn't include a key for an RS\*\*\* algorigthm \(as shown above\) review and correct your realm 'Keys' configuration before you proceed.
+If you receive a 404 or a response that doesn't include a key for an RS\*\*\* algorithm \(as shown above\) review and correct your realm 'Keys' configuration before you proceed.
 
 ### Verify Correctness Between Maana Q Environment and Keycloak Config 
 
 Before attempting to deploy/finalize, please ensure the following configurations are correct:
 
-| Maana Q Environment Variable | Keycloak Server Config Value |
-| :--- | :--- |
-| REACT\_APP\_PORTAL\_AUTH\_DOMAIN | 'https://\[your-keycloak-host\]:\[port\#\]' |
-| REACT\_APP\_PORTAL\_AUTH\_IDENTIFIER | keycloak realm name |
-| REACT\_APP\_PORTAL\_AUTH\_CLIENT\_ID | keycloak maana k-portal client name |
-| REACT\_APP\_CLI\_AUTH\_CLIENT\_ID | keycloak maana CLI client name |
-| REACT\_APP\_CLI\_AUTH\_DOMAIN | 'https://\[your-keycloak-host\]:\[port\#\]' |
-| API\_AUTH\_DOMAIN | keycloak maana API client name |
-| API\_AUTH\_CLIENT\_ID | keycloak realm name |
-| AUTH\_AUDIENCE | 'Included Custom Audience' value specified in the Protocol Mapper used for the Client Scope created and added to Assigned Default Client Scope.  |
-| AUTH\_JWKS\_URL | 'https://\[your-keycloak-host\]:\[port\#\]/auth/realms/\[your-realm-name\]/openid-connect/certs' |
-| AUTH\_ISSUER | 'https://\[your-keycloak-host\]:\[port\#\]/auth/realms/[\[](https://keycloakdev.knowledge.maana.io:8443/auth/realms/maanaDev)your-realm-name\]' |
-| AUTH\_ALGORITHM | Must be RSA-type, and value must match value in Realm&gt;Keys&gt; \[RS\*\*\*\]. For example 'RS256'. |
-|  |  |
+| Maana Q Environment Variable | Keycloak Server Config Value |  |
+| :--- | :--- | :--- |
+| REACT\_APP\_PORTAL\_AUTH\_DOMAIN | 'https://\[your-keycloak-host\]:\[port\#\]' |  |
+| REACT\_APP\_PORTAL\_AUTH\_IDENTIFIER | keycloak realm name |  |
+| REACT\_APP\_PORTAL\_AUTH\_CLIENT\_ID | keycloak maana k-portal client name |  |
+| REACT\_APP\_CLI\_AUTH\_CLIENT\_ID | keycloak maana CLI client name |  |
+| REACT\_APP\_CLI\_AUTH\_DOMAIN | 'https://\[your-keycloak-host\]:\[port\#\]' |  |
+| API\_AUTH\_DOMAIN | 'https://\[your-keycloak-host\]:\[port\#\]' |  |
+| API\_AUTH\_CLIENT\_ID | keycloak maana API client name |  |
+| API\_AUTH\_CLIENT\_IDENTIFIER | keycloak realm name |  |
+| AUTH\_AUDIENCE | 'Included Custom Audience' value specified in the Protocol Mapper used for the Client Scope created and added to Assigned Default Client Scope.  |  |
+| AUTH\_JWKS\_URL | 'https://\[your-keycloak-host\]:\[port\#\]/auth/realms/\[your-realm-name\]/protocol/openid-connect/certs' |  |
+| AUTH\_ISSUER | 'https://\[your-keycloak-host\]:\[port\#\]/auth/realms/[\[](https://keycloakdev.knowledge.maana.io:8443/auth/realms/maanaDev)your-realm-name\]'  \*\*Please check to make sure this matches EXACTLY--an unnessesary trailing "/", for instance, will lead to a 401 for incorrect issuer. |  |
+| AUTH\_ALGORITHM | Must be RSA-type, and value must match value in Realm&gt;Keys&gt; \[RS\*\*\*\]. For example 'RS256'. |  |
+|  |  |  |
 
-\*\*Make sure the Maana Q environment has its AUTH\_PROVIDER evironment variable set as: AUTH\_PROVIDER=keycloak
+These values can now be used for environment configuration on the Maana Q instance.
+
+\*\*Make sure the Maana Q environment has its AUTH\_PROVIDER evironment variable set as: **AUTH\_PROVIDER=keycloak**
 
 ## Testing Functionality Between Keycloak Server and Maana Q 
 
 Open Devtools&gt;Network \(or similar tool\) to view network requests. If at anytime you encounter a problem \(or see a 401 in the network tab\), attempt to reproduce, isolate, and record the network requests/resonses associated with the problematic call/s.
 
 1. Login to Maana K Portal, complete user authentication step \(i.e., login\). 
-   1. NOTE: If you can login to Maana Q KPortal and are redriected to the page showing the organization catalog, workspaces, tutorials, etc. this means you were able to 1\) obtain a token from the keycloak server on behalf of the Maana KPortal client, and 2\) verify this via the Maana API using the public key from the JWKS endpoint.
+   1. NOTE: If you can login to Maana Q KPortal and are redriected to the page showing the organization catalog, work spaces, tutorials, etc. this means you were able to 1\) obtain a token from the keycloak server on behalf of the Maana KPortal client, and 2\) verify this via the Maana API using the public key from the JWKS endpoint.
 2. Attempt creating a new workspace or opening an existing workspace.
 3. In KPortal profile, select 'Get CLI Auth Token' \(login may be required\). Copy the CLI token for use in next step.
-4. In Maana CLI, attempt msignin via CLI.
-5. If msignin succeeds, attemp mrefreshauth.
+4. In Maana CLI, attempt 'msignin' via CLI.
+5. If 'msignin' succeeds, attempt 'mrefreshauth'.
 
 These steps should validate, generally, that the keycloak server is configured correctly.
 
 ## Troubleshooting Authentication Issues
 
-Misconfiguration between Maana Q environment and Keycloak server is the most common source of problems. If you can localize an issue, check the environment/server configuration specific to this area.
+Incorrect configuration between Maana Q environment and Keycloak server is the most common source of problems. If you can localize an issue, check the environment/server configuration specific to this area.
 
 If your environment/keycloak configuration appears correct, check settings in the realm and clients. 
 
@@ -260,7 +268,7 @@ Recommended Action: It can be useful set 'Valid Redirect URIs' and 'Web Origins'
 
 These are one-time use authorization codes, a new CLI token must be generated in the KPortal UI for each CLI login attempt. Consider generating another CLI login token in the UI.
 
-Ensure you have actually copied the CLI auth token to the clip-board and are pasting it correctly into the CLI. Alternatively, you can paste the CLI token as a second argument to msignin to see the token itself.
+Ensure you have actually copied the CLI auth token to the clip-board and are pasting it correctly into the CLI. Alternatively, you can paste the CLI token as a second argument to 'msignin' to see the token itself.
 
 Record/Read error messages. 
 
