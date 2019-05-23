@@ -78,7 +78,7 @@ Successful login should give you a page similar to this:
 
 ![](../../../.gitbook/assets/realmappearance.png)
 
-DO NOT CHANGE YOUR REALM NAME.
+**DO NOT CHANGE YOUR REALM NAME. THIS MAY PUT YOUR REALM INTO AN UNRECOVERABLE STATE. THE KEYCLOAK ADMIN SHOULD CREATE A NEW REALM IF YOU NEED A DIFFERENT NAME.**
 
 If you can access your realm, set **REACT\_APP\_PORTAL\_AUTH\_DOMAIN, API\_AUTH\_DOMAIN** and **REACT\_APP\_CLI\_AUTH\_DOMAIN** to 'https://\[your-keycloak-host\]:\[port\#\]' in your environment variable list.
 
