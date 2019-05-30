@@ -96,11 +96,13 @@ Themes \(login skins\) are left default, and can be customized locally on the se
 
 #### Tokens \(tab\) 
 
-Set 'Default Signature Algorithm' to 'RS256'. \(Click 'Save'\)
+1. Set 'Default Signature Algorithm' to 'RS256'. **\*\*Set AUTH\_ALGORITHM with this value in your environment variable list.**
+2. Set SSO Session Idle to 12 hours.
+3. Set SSO Session Max to 1 day.
 
-**\*\*Set AUTH\_ALGORITHM with this value in your environment variable list.**
+\(Click 'Save'\)
 
-Token lifetimes can be configured here \(and at the client level\), but default settings are recommended. Specifically, token lifetime for CLI tokens should considered \(and usually longer\), as the workflow for CLI is usually slower and more arduous. It is recommended this is not adjusted until initial configuration is verified.
+See the **Adjusting Token Lifespans** section for greater discussion on token lifespans.
 
 ### Create Client Scope and Mapper
 
@@ -180,7 +182,8 @@ This will create the client used to enforce access to the Maana Q intance's UI \
 5. \('Implicit Flow Enabled' should be OFF\). 
 6. Set 'Valid Redirect URIs' to 'https://\[maana-q-host\]:\[maana-q-UI-port\]/user' -- see also \[Keycloak Redirect URL Security\] in the references section.
 7. Set 'Web Origins' to 'https://\[maana-q-host\]:\[maana-q-UI-port\]'
-8. Click 'Save'
+8. Under 'Advanced Settings' \(usually at the bottom of the client page\) set the 'Access Token Lifespan' to 10 hours. See the **Adjusting Token Lifespans** section for greater discussion around this.
+9. Click 'Save'
 
 ### Try your JWKS URL
 
@@ -245,6 +248,30 @@ Open Devtools&gt;Network \(or similar tool\) to view network requests. If at any
 5. If 'msignin' succeeds, attempt 'mrefreshauth'.
 
 These steps should validate, generally, that the keycloak server is configured correctly.
+
+## Adjusting Token Lifespans
+
+Token lifespans can be configured on the realm- or the client-level. Although lifespans are within the purview of the keycloak admin, certain token lifespans will impact the usability of the Maana Q platform or CLI. 
+
+Go to **Realm Settings &gt; Tokens** to see your realm token settings.
+
+### Access Tokens
+
+Specifically, the CLI token lifespan should be long enough to perform long-running CLI operations, as there is no auto-refresh functionality in the CLI \(refresh is command-based\). Recommendation is 10 hours. This can be configured under **Clients &gt; \[MaanaCLIClient\] &gt; Settings &gt; Advanced Settings &gt; Access Token Lifespan.** 
+
+### Refresh Tokens
+
+Go to **Realm Settings &gt; Tokens** to see your realm token settings.
+
+Keycloak refresh token lifespans are controlled via two settings within the realm: **SSO Session Idle** and **SSO Session Max**. 
+
+**SSO Session Idle** is a 'renewable' lifespan for refresh tokens. This correlates directly with refresh token expiration and applies to all clients. Access tokens may be refreshed within this time frame, and once refreshed, it restarts/clears the idle time. 
+
+**SSO Session Max** is a 'hard' lifespan for a refresh token. Even if a refresh token is continuously 'bumping' its **SSO Session Idle**, it will expire once the **SSO Session Max** time has been reached. 
+
+In short, **SSO Session Idle** dictates how frequently you must refresh, **SSO Session Max** dictates for how long you can continue to refresh.
+
+\*\*In General, **SSO Session Idle** should be longer than CLI access token lifespan to support expected behavior in Maana CLI. **SSO Session Max** should be longer than both the **Access Token Lifespan** and the **SSO Session Idle**.
 
 ## Troubleshooting Authentication Issues
 
