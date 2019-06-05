@@ -24,7 +24,7 @@ The various queries can be used as part of function composition, so the output o
 
 ### EX 1: The query below extracts the relation "Alex","bought","bike": <a id="ex-1-the-query-below-extracts-the-relation-alex-bought-bike"></a>
 
-![Figure 1: Results for running extractTriples with &quot;Alex bought a bike&quot; input](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LXKvn2SxcezDYn0CGUx%2F-LXKwd41bWDCs4Pgq9W3%2Fimage.png?alt=media&token=d1aa02b0-6f4f-40a4-91c4-959d29d8082f)
+![Figure 1: Results for running extractTriples with &quot;Alex bought a bike&quot; input](../../../.gitbook/assets/extractByTriples.png)
 
 1. Drag "extractByPattern" onto the graph.
 2. ExtractByPattern applies a filter on top of extractTriples.
