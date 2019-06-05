@@ -31,7 +31,7 @@ The various queries can be used as part of function composition, so the output o
 
 ### EX 2: Using Patterns List to Return Triples  <a id="ex-2-using-patterns-list-to-return-triples"></a>
 
-In the example below the patterns list is used to only return triples \(subject, action, object\) that match the given pattern class. In the query below the pattern to match is {predicate : \["purchase"\], subjectPatterns : \["ANY"\], objectPatterns : \["ANY"\]} which is a filter that will match an action similar to "purchase", in this case "bought" and then match any subject and object.
+In the example below the patterns list is used to only return triples \(subject, action, object\) that match the given pattern class. In the query below the pattern to match is {predicate : \["purchase"\], subjectPattern : \["ANY"\], objectPattern : \["ANY"\]} which is a filter that will match an action similar to "purchase", in this case "bought" and then match any subject and object.
 
 ![Figure 2: extractByPattern query run in the function graph.](../../../.gitbook/assets/extractByPattern.png)
 
