@@ -42,5 +42,5 @@ In the example below the patterns list is used to only return triples \(subject,
 
 In the example below, the query will match "John" to "Larry", "went" to "goes", "safeway" to "gerks", "pizza" to "bike" and "Lynwood" to "Issaquah".
 
-![Figure 3: extractByExample query run in the function graph.](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LXKvn2SxcezDYn0CGUx%2F-LXKwoGkKB5aLN7cbfo_%2Fimage.png?alt=media&token=5806b8ee-e348-4c4a-802d-dbe51e6c35eb)
+![Figure 3: extractByExample query run in the function graph.](../../../.gitbook/assets/extractByExample.png)
 
