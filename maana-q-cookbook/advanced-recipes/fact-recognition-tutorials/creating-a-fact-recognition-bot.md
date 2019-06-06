@@ -101,7 +101,7 @@ You need to provide example\(s\) and your associated mapping\(s\). The example w
 The example sentence is compared to a data source and results are extracted and stored in a kind. The interface for this capability is implemented with 2 different mutations: 1. You need to specify the kindId \(the source of the text where data will be extracted from\), storageKindId \(the location where the extracted data will be stored\), the fieldName \(the name of the field in kindId to be used\), the example sentence \(example\) and the mapping to tell how the different terms in the example sentence map to the kind.
 
 ```text
-extractByExample(kindId: ID, fieldId: ID, storageKindId: ID, fieldName: String, storageKindName: String, kindName: String, mapping: [CorrespondenceInput], example: String): [ID]
+extractByExample(kindId: ID, fieldId: ID, fieldName: String, kindName: String, exampleInfo: ExampleInfoInput!): [ID]
 ```
 
 2. Instead of an example, mapping and storageKind a "exampleKind" is provided which contains the same information. The exampleKind contains a list of examples, their mappings and the target kind. The results are stored in their respective kinds:
