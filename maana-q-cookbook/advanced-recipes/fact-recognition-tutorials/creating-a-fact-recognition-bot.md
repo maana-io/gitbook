@@ -131,7 +131,7 @@ mutation {
 
 3. The result should be several entries in the "PurchaseEvent" kind - as below:
 
-![](../../../.gitbook/assets/image%20%2852%29.png)
+![](../../../.gitbook/assets/FrBotPurchaseEvent.png)
 
 ### Mutation 2 <a id="mutation-2"></a>
 
