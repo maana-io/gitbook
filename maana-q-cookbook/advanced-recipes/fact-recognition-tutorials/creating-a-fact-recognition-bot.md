@@ -37,21 +37,21 @@ In order to use the fact extraction service \(information extraction\) you need:
 
 The Pattern kind \(which can have any name\) can be created manually.
 
-1. Add a new kind to the workspace \(name it "Pattern"\), edit the schema to include "predicateLemmas" of type String with modifier LIST, "object" of type String with modifier LIST and "subject" of type String with modifier LIST.
+1. Add a new kind to the workspace \(name it "Pattern"\), edit the schema to include "predicate" of type String with modifier LIST, "object" of type String with modifier LIST and "subject" of type String with modifier LIST.
 2. Once the kind is created, functions for the kind should be visible in the service inventory. Your workspace should look like that below:
 
-![](../../../.gitbook/assets/image%20%2890%29.png)
+![](../../../.gitbook/assets/FrBotPatternKind.png)
 
 There will be a set of functions for every Kind in your workspace. These functions can be used to manipulate the Kinds.
 
-3. Drag the addPattern function onto the workspace. In this case set predicateLemmas to "buy" and set subject and object to "ANY" as below.
+3. Drag the addPattern function onto the workspace. In this case set predicate to "buy" and set subject and object to "ANY" as below.
 
-![](../../../.gitbook/assets/image%20%2840%29.png)
+![](../../../.gitbook/assets/FrBotAddPattern.png)
 
 Fill in the pattern information for the addPattern information.
 
 {% hint style="info" %}
-Remember, to set the predicateLemmas to a relation/relations that you expect to have in your data. "are" for example is a very common relation.
+Remember, to set the predicate to a relation/relations that you expect to have in your data. "are" for example is a very common relation.
 {% endhint %}
 
 #### Creating the kind to extract data from <a id="creating-the-kind-to-extract-data-from"></a>
@@ -60,7 +60,7 @@ Remember, to set the predicateLemmas to a relation/relations that you expect to 
 
 5. Next create a kind containing the text you wish to extract - call it "ThisKind". It should have a field called "Text", and should have an instance with the the value "Alex bought a bike".
 
-![](../../../.gitbook/assets/image%20%2864%29.png)
+![](../../../.gitbook/assets/FrBotAddThisKind.png)
 
 Add text to the "ThisKind" kind with the addThisKind function.
 
@@ -74,7 +74,7 @@ Add text to the "ThisKind" kind with the addThisKind function.
 
 1. Use the extractByPattern function, the fieldName is "Text", but that should be the name of the field containing the text you want to extract.\) Notice that below, kind ID's are used and not names. "kindId" refers to the ID for "ThisKind" and "patternID" refers to the ID for "Pattern".
 
-![](../../../.gitbook/assets/image%20%2842%29.png)
+![](../../../.gitbook/assets/FrBotExtractByPattern.png)
 
 Result of running the extractByPattern function on the "Pattern" and "ThisKind" kinds
 
