@@ -82,7 +82,7 @@ Result of running the extractByPattern function on the "Pattern" and "ThisKind" 
 
 #### How to see the results? <a id="how-to-see-the-results"></a>
 
-The results are stored in the system kind \(kind automatically generated at startup\) called PatternMatchResult. All patterns are appended to this kind with links back to the original data and to the pattern that was used to extract the data. For this particular case, the result is the following "subject","predicate","object" in the PatternMatchResult Kind:
+The results are stored in the Fact Recognition Bot service kind called PatternMatchResult. All patterns are appended to this kind with links back to the original data and to the pattern that was used to extract the data. For this particular case, the result is the following "subject","predicate","object" in the PatternMatchResult Kind:
 
 ![](../../../.gitbook/assets/image%20%2827%29.png)
 
