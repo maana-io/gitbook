@@ -3,7 +3,7 @@
 ## About this Tutorial <a id="about-this-tutorial"></a>
 
 The Fact Recognition Bot uses the Fact Recognition service to extract facts from kinds and store them in Maana.
-
+<a href="../../../.gitbook/assets/wellremarks.csv" download>WellRemarks.csv</a>
 [WellRemarks.csv](../../../.gitbook/assets/wellremarks.csv)
 {% file src="../../../.gitbook/assets/wellremarks.csv" caption="WellRemarks.csv" %}
 
