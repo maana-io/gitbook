@@ -31,7 +31,7 @@ The result should look like that in the figure below.
 In order to use the fact extraction service \(information extraction\) you need:
 
 1. A kind containing text fields from which you will extract facts \(shown below as ThisKind\).
-2. A kind that contains the desired patterns you wish to extract \(shown below as Pattern\). The schema of the pattern kind is 3 string lists named predicateLemmas, subject and object. The predicateLemmas is a list of predicates "\[buys,bought,are\]", the service expands these predicates to include related words. The predicateLemmas can have any values, the subject and object however, are restricted to values accepted in the entity extractor - the catch all is "\["ANY"\]", but can more generally be "\["PERSON","LOCATION","ORGANIZATION",...\]"
+2. A kind that contains the desired patterns you wish to extract \(shown below as Pattern\). The schema of the pattern kind is 3 string lists named predicate, subject and object. The predicate is a list of predicates "\[buys,bought,are\]", the service expands these predicates to include related words. The predicate can have any values, the subject and object however, are restricted to values accepted in the entity extractor - the catch all is "\["ANY"\]", but can more generally be "\["PERSON","LOCATION","ORGANIZATION",...\]"
 
 #### Creating The Patterns Kind <a id="creating-the-patterns-kind"></a>
 
