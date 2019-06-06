@@ -122,7 +122,11 @@ With those two kinds created we can perform the first query and see the results.
 2. In this query, the mapping is specified as an list of name/value GraphQL objects:
 
 ```text
-mutation a {extractByExample(  kindId: "bbcb2d1f-1c0c-4d81-adff-39de27d8fc52", #your SimplefactsCSV Kind Id    fieldName : "Text",    mapping : [      {name : "name", value : "Carl"},      {name : "object", value : "fish"},      {name : "price", value : "5 dollars"},      { name : "location", value : "store"}      ],    example : "Carl bought a fish for 5 dollars at the store",    storageKindId : "e81846a4-ca93-4947-b8f2-57fb92ecb957" #your PurchaseEvent Kind Id    )}
+mutation {
+  extractByExample(kindId : "63a9d2ab-6f58-4b55-8460-85d49a28f280", fieldName: "text", exampleInfo: {mapping : [{name : "name", value : "Carl"}, {name : "object", value : "fish"}, {name : "price", value : "5 dollars"}, { name : "location", value : "store"}], example : "Carl bought a fish for 5 dollars at the store", kindId : "f16d22a6-7aaa-41dd-a9db-5cba714a7df5"}) {
+    id
+  }
+}
 ```
 
 3. The result should be several entries in the "PurchaseEvent" kind - as below:
