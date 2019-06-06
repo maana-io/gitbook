@@ -25,5 +25,7 @@ The entity extractor calls the [NER service](../../product-guide/reference-guide
 
 ![](../../.gitbook/assets/image%20%2831%29.png)
 
-Many other entities are extracted based on the entities defined in the maana-ner service include Person, Location and Organization. The extracted data can now be used as part of a larger pipeline.
+Many other entities are extracted based on the entities defined in the maana-ner service include Person, Location and Organization. The extracted data can now be used as part of a larger pipeline.  To grab the extractions you need to call the getExtractions query and provide a kindId, fieldName and instanceId as shown below
+
+[](../../.gitbook/assets/EntityExtractorGetExtractions.png)
 
