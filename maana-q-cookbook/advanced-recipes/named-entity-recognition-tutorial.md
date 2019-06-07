@@ -4,7 +4,7 @@ This tutorial goes through some sample sequences of events to recognize an entit
 
 **Begin Here:**
 
-Create new Workspace Import NER Service \[TBD\]_Link to how to Import_ and expand 'Inventory' \(bottom left\)
+Create a new Workspace. Import NER Service \(by searching for service name and dragging to Inventory\) and expand 'Inventory' \(bottom left\)
 
 ![Figure 1: Expend &apos;Inventory&apos;: &apos;Services&apos; -&amp;gt; &apos;Maana Named Entity Recognition&apos;](../../.gitbook/assets/image%20%285%29.png)
 
