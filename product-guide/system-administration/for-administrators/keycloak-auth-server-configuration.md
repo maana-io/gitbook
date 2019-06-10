@@ -82,7 +82,7 @@ Successful login should give you a page similar to this:
 
 If you can access your realm, set **REACT\_APP\_PORTAL\_AUTH\_DOMAIN, API\_AUTH\_DOMAIN** and **REACT\_APP\_CLI\_AUTH\_DOMAIN** to 'https://\[your-keycloak-host\]:\[port\#\]' in your environment variable list.
 
-Now, set **REACT\_APP\_PORTAL\_AUTH\_IDENTIFIER** and **API\_AUTH\_IDENTIFIER** in your environment variable list with the value in the 'Name' box.
+Now, set **REACT\_APP\_PORTAL\_AUTH\_IDENTIFIER** and **API\_AUTH\_CLIENT\_IDENTIFIER** in your environment variable list with the value in the 'Name' box.
 
 ### Additional Realm Configuration
 
