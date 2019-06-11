@@ -12,7 +12,7 @@ Is there a Maana best practice?
 
 Yes, please take a look at our tutorial here:
 
-{% page-ref page="../../product-guide/reference-guide/q-platform-and-microservices/deployment/deploying-with-azure-kubernetes/README.md" %}
+{% page-ref page="../../product-guide/reference-guide/q-platform-and-microservices/deployment/deploying-with-kubernetes/README.md" %}
 
 ## 
 
