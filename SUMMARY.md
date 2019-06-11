@@ -194,6 +194,7 @@
   * [Publish Knowledge Services](maana-q-cookbook/basic-ingredients/11-publish-knowledge-services.md)
   * [Admin](maana-q-cookbook/basic-ingredients/12-admin.md)
   * [Solution Folder Structure](maana-q-cookbook/basic-ingredients/solution-folder-structure.md)
+  * [Depoloy a Service using Kubernetes](maana-q-cookbook/basic-ingredients/deploying-to-kubernetes.md)
 * [Advanced Recipes](maana-q-cookbook/advanced-recipes/README.md)
   * [Meta-Learning Tutorial](maana-q-cookbook/advanced-recipes/meta-learning-tutorial/README.md)
     * [Meta-Learning: Build classifier and classify data](maana-q-cookbook/advanced-recipes/meta-learning-tutorial/metalearning-build-classifier-and-classify-data.md)
