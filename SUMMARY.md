@@ -123,7 +123,7 @@
       * [Registering Standalone Services](product-guide/reference-guide/q-platform-and-microservices/creating-services/external-services.md)
     * [Deployment](product-guide/reference-guide/q-platform-and-microservices/deployment/README.md)
       * [Using Docker and Docker-Compose](product-guide/reference-guide/q-platform-and-microservices/deployment/deploying-with-docker-and-docker-compose.md)
-      * [Deploying with Kubernetes](product-guide/reference-guide/q-platform-and-microservices/deployment/deploying-with-azure-kubernetes/README.md)
+      * [Deploying with Kubernetes](product-guide/reference-guide/q-platform-and-microservices/deployment/deploying-with-kubernetes/README.md)
     * [Maana Platform Intrinsic Services](product-guide/reference-guide/q-platform-and-microservices/maana-platform-services/README.md)
       * [Fact Recognition and FR-Bot](product-guide/reference-guide/q-platform-and-microservices/maana-platform-services/fact-recognition-and-fr-bot.md)
       * [Physical Quantity](product-guide/reference-guide/q-platform-and-microservices/maana-platform-services/physical-quantity.md)
