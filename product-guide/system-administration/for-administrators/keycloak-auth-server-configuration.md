@@ -99,6 +99,7 @@ Themes \(login skins\) are left default, and can be customized locally on the se
 1. Set 'Default Signature Algorithm' to 'RS256'. **\*\*Set AUTH\_ALGORITHM with this value in your environment variable list.**
 2. Set SSO Session Idle to 12 hours.
 3. Set SSO Session Max to 1 day.
+4. Set Client Login Timeout to 10 minutes.
 
 \(Click 'Save'\)
 
