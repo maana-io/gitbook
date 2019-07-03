@@ -7,9 +7,9 @@ As mentioned earlier, your Workspace is the key to utilizing the Computational K
 * Select the **Workspaces** tab at the top of the Maana portal,
 * Select the blue circle with the "**+**" icon in it located in the upper left of your screen.  Your screen should now display a new Workspace that you have created, named **Untitled**, similar to the one shown in the example found below.
 
-![Example: Workspaces Tab &amp; Blue +](https://gitbooktrainingmaterials.blob.core.windows.net/images/Workspaces%20Tab%20%281%29.png)
+![Example: Workspaces Tab &amp; Blue +](https://maanaimages.blob.core.windows.net/maana-q-documentation/Workspaces%20Tab%20%281%29.png)
 
-![Example: New Workspace](../../../.gitbook/assets/image%20%2867%29.png)
+![Example: New Workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/Untitled%20with%20Arrow.png)
 
 {% hint style="info" %}
 **Note**:  To close your Workspace, select the "-" button located in the upper right corner of your screen.
@@ -23,7 +23,9 @@ Selecting the icon for the **Untitled** Workspace will open a secondary menu bar
 **Note**:  As soon as you create a Workspace, it is instantly considered to be a Service.  If you want to start interact with that Service, you can do so by clicking on the workspace and clicking on the info icon.  This will result in the ID window popping up on the right-hand side of the screen \(for renaming\) and the GraphiQL window popping up across the bottom of the screen \(for querying\).
 {% endhint %}
 
-![Screenshot of new Workspace](../../../.gitbook/assets/image%20%2835%29.png)
+![Screenshot of new Workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/Screen%20Shot%202019-02-07%20at%202.26.42%20PM.png)
+
+
 
 ## My Workspaces
 

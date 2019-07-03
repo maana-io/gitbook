@@ -10,7 +10,7 @@ NOTE:
 
 Changing kind B back to the original state re-enables successful query execution.
 
-![RC2-010 Kind field type changes allowed but breaks ability to query the kind](../../../.gitbook/assets/rc2-010.png)
+![RC2-010 Kind field type changes allowed but breaks ability to query the kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/RC2-010.png)
 {% endtab %}
 
 {% tab title="Repro Steps" %}

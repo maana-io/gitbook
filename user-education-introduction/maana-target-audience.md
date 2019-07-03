@@ -16,7 +16,7 @@ It may come as a surprise to you that Maana is not a platform meant only for Dev
 
 Here is how we specifically defined the different audiences that the Maana Q Platform is meant to cater to:
 
-![Maana Target Audience](../.gitbook/assets/maana-audience.png)
+![Maana Target Audience](https://maanaimages.blob.core.windows.net/maana-q-documentation/maana-audience.png)
 
 If you're someone who most closely identifies as an Analyst in the image above, then you're probably someone who is familiar with things like: 
 

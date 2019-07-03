@@ -11,5 +11,5 @@
 3. Then choose the Interpreted Kinds they require, and select **Add to KG** to add to the Knowledge Graph.
 4. The Interpreted Kinds will appear in blue in the Knowledge Graph after they have been added, together with the inbound/outbound relations to other kinds \(refer to the example provided below\).
 
-![Steps 1-4](https://gitbooktrainingmaterials.blob.core.windows.net/images/INTERPRETED%20KINDS.png)
+![Steps 1-4](https://maanaimages.blob.core.windows.net/maana-q-documentation/INTERPRETED%20KINDS.png)
 

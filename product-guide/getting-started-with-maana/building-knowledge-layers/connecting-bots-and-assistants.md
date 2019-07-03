@@ -6,9 +6,9 @@ Bots are designed for doing small and mundane tasks like mutations, for example,
 
 ### Loosely Coordinating Services
 
-![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LVdnxVOMd0zDJQAgSCd%2F-LWJAwRVXZ47tMS7kZag%2F-LWJEdCQNM5ctwdhqbGp%2Fimage.png?alt=media&token=dd6385ec-2364-49d7-b7f9-7ef1e6ad2ce6)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/b1.png)
 
-![Example Screen](../../../.gitbook/assets/image%20%2892%29.png)
+![Example Screen](https://maanaimages.blob.core.windows.net/maana-q-documentation/b2.png)
 
 ## Assistants
 
@@ -18,7 +18,7 @@ Some of our Assistants can be very useful in extracting information from data an
 
 ### Concepts for Assistants
 
-![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LVdnxVOMd0zDJQAgSCd%2F-LWJAwRVXZ47tMS7kZag%2F-LWJEylHHAzBtucZb2BT%2Fimage.png?alt=media&token=97893772-1830-4faf-8830-e6f566704b4e)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/b3.png)
 
 ### Field Classification Assistant
 
@@ -29,7 +29,7 @@ The field classification assistant allows users to accept or ignore Types sugges
 * 92% of instances of Phone\_Number field below has been identified as Type Phone
 * ~8% have been identified as NULL
 
-![Example Screen](../../../.gitbook/assets/image%20%282%29.png)
+![Example Screen](https://maanaimages.blob.core.windows.net/maana-q-documentation/b4.png)
 
 ## Future Assistants in the Pipeline
 

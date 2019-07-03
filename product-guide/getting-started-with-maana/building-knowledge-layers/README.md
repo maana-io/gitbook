@@ -4,13 +4,13 @@ The Solution Lifecycle is the process that walks you through deconstructing the 
 
 The image below is a high-level map to visualize the entire Solution Lifecycle. This map is referenced throughout this documentation as a go-by so you know where you are in the process.
 
-![Diagram of the Solution Lifecycle](../../../.gitbook/assets/image%20%2811%29.png)
+![Diagram of the Solution Lifecycle](https://maanaimages.blob.core.windows.net/maana-q-documentation/k1.png)
 
 ### 1. Problem Decomposition <a id="1-problem-decomposition"></a>
 
 Problem decomposition allows us to move from a general business objective to user requirements. To define the problem domain, Maana works recursively through a problem decomposition process. Taking the business objective and breaking it down to determine the required concepts, queries and mutations needed.
 
-![Problem Decomposition](../../../.gitbook/assets/image%20%2855%29.png)
+![Problem Decomposition](https://maanaimages.blob.core.windows.net/maana-q-documentation/k2.png)
 
 Learn more about problem-questions and the decomposition process here:
 
@@ -20,7 +20,7 @@ Learn more about problem-questions and the decomposition process here:
 
 In this step, you'll assemble the concepts and functions into a solution graph.
 
-![Domain &amp; Function Modeling](../../../.gitbook/assets/image%20%2863%29.png)
+![Domain &amp; Function Modeling](https://maanaimages.blob.core.windows.net/maana-q-documentation/k3.png)
 
 Learn more about domain and functional modeling here:
 
@@ -30,7 +30,7 @@ Learn more about domain and functional modeling here:
 
 Here, you'll implement the computational layer that solves the original business objective.
 
-![Connecting to Data](../../../.gitbook/assets/image%20%2898%29.png)
+![Connecting to Data](https://maanaimages.blob.core.windows.net/maana-q-documentation/k4.png)
 
 Learn more about how to hydrate your models from various data sources here:
 
@@ -40,7 +40,7 @@ Learn more about how to hydrate your models from various data sources here:
 
 The Maana SDK offers several service templates for popular languages to aid developers and data scientists in the task of creating and deploying Maana-ready microservices that can then be easily added to the platform via URL as reusable building blocks of the solution. 
 
-![Build the Knowledge Microservices and the accompanying App, then Deploy the App](../../../.gitbook/assets/image%20%2845%29.png)
+![Build the Knowledge Microservices and the accompanying App, then Deploy the App](https://maanaimages.blob.core.windows.net/maana-q-documentation/k5.png)
 
 Learn more about how to build, deploy and import Knowledge Microservices here:
 

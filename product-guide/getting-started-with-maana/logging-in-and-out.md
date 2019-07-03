@@ -2,7 +2,9 @@
 
 {% tabs %}
 {% tab title="Logging In to Maana" %}
-![Log in screen](https://gitbooktrainingmaterials.blob.core.windows.net/images/image%20%283%29.png)
+![Log in screen](https://maanaimages.blob.core.windows.net/maana-q-documentation/image%20%283%29.png)
+
+
 
 ## To Log In <a id="to-log-in"></a>
 
@@ -16,7 +18,7 @@ If single sign-on \(SSO\) is enabled by your IT, enter your email address and se
 * "Subscribe to Links" allows new [Links](../reference-guide/technical-design-and-architecture/links.md) to automatically appear in the browser, as opposed to refreshing to see them \(may result in lower performance\).
 * Log out
 
-![Profile, Theme, and Log Out Screen](../../.gitbook/assets/screen-shot-2019-04-02-at-11.51.45-am.png)
+![Profile, Theme, and Log Out Screen](https://maanaimages.blob.core.windows.net/maana-q-documentation/joe%20analyst.png)
 {% endtab %}
 
 {% tab title="Logging Out of Maana" %}
@@ -24,7 +26,7 @@ If single sign-on \(SSO\) is enabled by your IT, enter your email address and se
 
 Go to the top right section of the Maana screen, select the the **Profile** icon, and then the **Log out** option.
 
-![Log Out Screen](https://gitbooktrainingmaterials.blob.core.windows.net/images/image%20%288%29.png)
+![Log Out Screen](https://maanaimages.blob.core.windows.net/maana-q-documentation/image%20%288%29.png)
 {% endtab %}
 {% endtabs %}
 

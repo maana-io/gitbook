@@ -14,7 +14,7 @@ Enterprise Architect
 
 
 
-![NEED TO UPDATE ARCHITECT ROLE](../../../.gitbook/assets/image%20%2819%29.png)
+![NEED TO UPDATE ARCHITECT ROLE](https://maanaimages.blob.core.windows.net/maana-q-documentation/a3.png)
 
 
 

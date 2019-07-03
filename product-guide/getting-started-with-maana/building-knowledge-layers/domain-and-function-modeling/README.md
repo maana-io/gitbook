@@ -4,7 +4,9 @@
 
 {% page-ref page="about-function-modeling/" %}
 
-![](../../../../.gitbook/assets/image.png)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/k7.png)
+
+
 
 
 

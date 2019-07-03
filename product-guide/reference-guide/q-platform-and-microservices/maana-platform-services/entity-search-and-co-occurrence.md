@@ -418,7 +418,7 @@ mutation addLink(
 
 ### The Workspace should look like this with links from each Entity kinds to SurfaceForm kind: <a id="EntityCooccurrenceSearch-TheWorkspaceshouldlooklikethiswithlinksfromeachEntitykindstoSurfaceFormkind:"></a>
 
-![](https://confluence.corp.maana.io/download/attachments/39423745/EntitySearchKinds.png?version=2&modificationDate=1538695226306&api=v2)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/f5.png)
 
 ### When the above setup is done, use one of the following: <a id="EntityCooccurrenceSearch-Whentheabovesetupisdone,useoneofthefollowing:"></a>
 

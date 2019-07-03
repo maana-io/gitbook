@@ -29,7 +29,7 @@ This leads to both the inclusion of redundant fields in the generated kinds, and
 * The UnitOfMeasure kind includes isPower, hasPrefix, isSSimple, isCompatable or isUnitless fields.
 * The simpleUnitOfMeasure kind should includs a isUnitless field.
 
-![Screenshot of Result](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LZGHSN5CEioYduG7stF%2F-LZGLfnFtju4nTlxPR4I%2Fimage.png?alt=media&token=d8a0511a-ee45-4d9e-8273-6b8dd7311356)
+![Screenshot of Result](https://maanaimages.blob.core.windows.net/maana-q-documentation/image%20%281%29.png)
 {% endtab %}
 {% endtabs %}
 

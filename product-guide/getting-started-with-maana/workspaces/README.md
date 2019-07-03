@@ -8,9 +8,13 @@ A workspace is a dedicated place within the Maana portal where you can build, vi
 * **Shared Workspaces** – This area displays the workspaces that multiple users share.
 * **Workspace Templates** – This area can be used to create a new workspace from an existing template.
 
-![Example of Workspaces](https://gitbooktrainingmaterials.blob.core.windows.net/images/image%20%287%29.png)
+![Example of Workspaces](https://maanaimages.blob.core.windows.net/maana-q-documentation/image%20%287%29.png)
+
+
 
 Think of the workspace as your notebook, like actual physical place that you make notes in and think of a knowledge graph as a page in that notebook.  A workspace is a unit of work \(a container\) for kinds and functions. Each workspace is also a service, callable via GraphQL. And, each workspace can have knowledge graphs and function graphs.
 
-![Hierarchy of platform concepts](../../../.gitbook/assets/image%20%2875%29.png)
+![Hierarchy of platform concepts](https://maanaimages.blob.core.windows.net/maana-q-documentation/pic1.png)
+
+
 

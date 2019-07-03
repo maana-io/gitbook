@@ -14,7 +14,7 @@ Next, you'll begin to interpret your PQ by asking questions like, "Should you ge
 
 
 
-![](../../../../.gitbook/assets/image%20%2858%29.png)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/k6.png)
 
 ### What are the benefits of this approach?
 

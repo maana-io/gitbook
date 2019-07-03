@@ -4,7 +4,7 @@ It may come as a surprise to you that Maana is not a platform meant only for Dev
 
 In the graphic below and in the pages that follow, you will find Role specific information and recommendations that will help to inform your role and your activities on the Platform.
 
-![NEED TO UPDATE ARCHITECT ROLE](../../.gitbook/assets/image%20%2824%29.png)
+![NEED TO UPDATE ARCHITECT ROLE](https://maanaimages.blob.core.windows.net/maana-q-documentation/a1.png)
 
 
 

@@ -4,7 +4,9 @@
 {% tab title="Description" %}
 An error is thrown when adding a service through the Admin Panel using the URL of a Workspace saved as a service. The service requires authentication which is not supported by the platform presently. As this is a service that was added manually, the platform treats it as external service and cannot optimize to bypass authentication.
 
-![](../../../.gitbook/assets/rc2-012.png)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/RC2-012.png)
+
+
 
 `Workaround: In GraphQL, use the addService mutation on maana-portal (or maana-catalog) by including isManaged: true in the request.`
 {% endtab %}

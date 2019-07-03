@@ -2,7 +2,9 @@
 
 \[TBD\] @Steven
 
-![Analyst Role](../../../.gitbook/assets/image%20%2830%29.png)
+![Analyst Role](https://maanaimages.blob.core.windows.net/maana-q-documentation/a2.png)
+
+
 
 
 

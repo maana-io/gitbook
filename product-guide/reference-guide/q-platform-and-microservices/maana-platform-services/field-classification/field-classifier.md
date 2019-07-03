@@ -125,11 +125,11 @@ In simple terms, the Field Classifier\(FC\) Assistant provides a visual guide to
 * Possible classifications will show up as links in the "OperatorCSV" kind.
 * Critically, the data has two interesting classifications, "Person" and "Organization" for the fields "contact" and "business".
 
-![Figure 1: View after uploading CSV and Clicking on kind link](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LWw6tnPhfTFBfqSswID%2F-LWw7YSe2ETAFDbuHDqo%2Fimage.png?alt=media&token=be11a8cf-53ef-4607-ba63-97fd51a7da79)
+![Figure 1: View after uploading CSV and Clicking on kind link](https://maanaimages.blob.core.windows.net/maana-q-documentation/f1.png)
 
 * Make sure the "OperatorCSV" is selected then in the assistants panel, select "Maana Field Classifier", this brings up the user interface for the field classifier. In the upper left hand corner it should say "OperatorCSV".
 
-![Figure 2: Field Classifier Assistant applied to OperatorCSV kind](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LWw6tnPhfTFBfqSswID%2F-LWw7jFS2Y92k1gE4Q1R%2Fimage.png?alt=media&token=3c32ef7d-7a9b-4b2b-bc64-ba9ef354727d)
+![Figure 2: Field Classifier Assistant applied to OperatorCSV kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/f2.png)
 
 * Scroll down to the fieldId "contact".
 * To the right there should be a "proposedType" of "Person" along with 2 buttons, "Add All" and "Add Matching".
@@ -143,9 +143,9 @@ There are also additional fields, the "Type" field is the original graphql type 
 * The Percent column gives an estimate of the percentage of records that matched a given classification, this is an estimate as only 1000 columns of the original data are used to produce the estimate.
 * When the "Add Matching" or "Add All" buttons are clicked the data from "contact" say, is added to the "Person" kind inside Maana. The Ids for those instances are stored in the new "contactPerson" column. In this way, multiple different kinds can refer to the same "Person," we then have a common location for "Person" data and associations between different data sources.
 
-![Figure 3: A new column is added to OperatorCSV with Ids to the Person kind.](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LWw6tnPhfTFBfqSswID%2F-LWw7qdXLSpqr0dK7wZe%2Fimage.png?alt=media&token=7392d4bd-b1e7-476b-8ecb-d54e2a9dfe52)
+![Figure 3: A new column is added to OperatorCSV with Ids to the Person kind.](https://maanaimages.blob.core.windows.net/maana-q-documentation/f3.png)
 
-![Figure 4: The Person kind is populated with new entries from the OperatorCSV &quot;contact&quot; field.](../../../../../.gitbook/assets/image%20%2849%29.png)
+![Figure 4: The Person kind is populated with new entries from the OperatorCSV &quot;contact&quot; field.](https://maanaimages.blob.core.windows.net/maana-q-documentation/f4.png)
 
 ### More Information
 

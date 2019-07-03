@@ -4,5 +4,5 @@ Developers are mainly responsible for connecting the data and then creating the 
 
 Once the data is connected, Developers must then decide if they’re going to build their knowledge microservice from scratch, or if they will wrap an existing service. Upon deployment of the knowledge microservice, they connect any bots and assistants, then finish up by building out the Knowledge App.
 
-![Developers](../../../.gitbook/assets/image%20%2836%29.png)
+![Developers](https://maanaimages.blob.core.windows.net/maana-q-documentation/a5.png)
 

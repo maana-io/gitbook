@@ -8,7 +8,7 @@ Successful build efforts begin by focusing on a certain domain of the business a
 
 ### Example of a Domain Model
 
-![A domain model representing an expert&apos;s knowledge of a specific domain](../../../../.gitbook/assets/image%20%2887%29.png)
+![A domain model representing an expert&apos;s knowledge of a specific domain](https://maanaimages.blob.core.windows.net/maana-q-documentation/well%20interv.png)
 
 ### Why Domain Modeling? <a id="why-domain-modeling"></a>
 

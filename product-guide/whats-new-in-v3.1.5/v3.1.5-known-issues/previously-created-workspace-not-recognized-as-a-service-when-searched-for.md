@@ -6,11 +6,11 @@ When Searching for a workspace using ID it only shows the workspace and not the 
 
 When searching for a workspace by name it doesn't show anything at all.
 
-![Workspaces Screen](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LZLxmIKZ6PDqMGgJwM8%2F-LZLyBslV9vVoxZa3_Gq%2Fimage.png?alt=media&token=57f9d30d-e3b7-44dd-a118-dc32633c531f)
+![Workspaces Screen](https://maanaimages.blob.core.windows.net/maana-q-documentation/workspace%20screen.png)
 
 
 
-![Services Screen](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LZLxmIKZ6PDqMGgJwM8%2F-LZLxnveeE5KiCGQQs5X%2Fimage.png?alt=media&token=56a06952-0f97-429f-8ddd-aff5bc696d9a)
+![Services Screen](https://maanaimages.blob.core.windows.net/maana-q-documentation/services%20screen.png)
 {% endtab %}
 
 {% tab title="Repro Steps" %}

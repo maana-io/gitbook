@@ -4,7 +4,7 @@
 {% tab title="Description" %}
 As a result of boilerplate auto-generation, one is unable to distinguish provenance of kinds and functions when 2 kinds have the same name. Function execution fails resulting in CKG errors.
 
-![](../../../.gitbook/assets/rc2009.png)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/RC2009.png)
 {% endtab %}
 
 {% tab title="Repro Steps" %}

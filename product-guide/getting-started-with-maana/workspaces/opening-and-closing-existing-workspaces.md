@@ -8,7 +8,9 @@ Go to the **Workspaces** tab in the horizontal menu at the top of the screen and
 **Note**: The secondary ribbon menu under the **Workspaces** tab shows the Workspaces that are currently open. Selecting any of the names in that area will take you to the respective workspace.
 {% endhint %}
 
-![Screenshot of the Workspace toolbar](https://gitbooktrainingmaterials.blob.core.windows.net/images/image006.png)
+![Screenshot of the Workspace toolbar](https://maanaimages.blob.core.windows.net/maana-q-documentation/image006.png)
+
+
 
 ## Close an Existing Workspace
 

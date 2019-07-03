@@ -54,7 +54,7 @@ GraphQL is strongly typed and introspective, featuring documentation that is bui
 
 #### Maana Platform Architecture and GraphQL
 
-![](https://gitbooktrainingmaterials.blob.core.windows.net/images/image%20%289%29.png)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/image%20%289%29.png)
 
 For more information on using on Graph QL, please refer to the link provided below:
 

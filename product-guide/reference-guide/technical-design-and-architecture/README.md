@@ -2,13 +2,13 @@
 
 ### Maana High Level Computational Knowledge Graph Architecture
 
-![Maana High Level Architecture](../../../.gitbook/assets/maana-architecture-highlevel.png)
+![Maana High Level Architecture](https://maanaimages.blob.core.windows.net/maana-q-documentation/g1.png)
 
 Maana enables the development of complex solutions using a visual authoring environment, with preferred languages, frameworks, and tools, which can then be deployed to run at scale.
 
 ### Maana System Services Architecture
 
-![Maana System Services Architecture](../../../.gitbook/assets/maana-architecture-services.png)
+![Maana System Services Architecture](https://maanaimages.blob.core.windows.net/maana-q-documentation/g2.png)
 
 * Maana Knowledge Gateway
   * Stateless \(scaleout\)
@@ -30,7 +30,7 @@ Maana enables the development of complex solutions using a visual authoring envi
 
 ### Maana Solution Services Cluster Architecture
 
-![Maana Solution Services Clusters Architecture](../../../.gitbook/assets/maana-architecture-services-cluster.png)
+![Maana Solution Services Clusters Architecture](https://maanaimages.blob.core.windows.net/maana-q-documentation/g3.png)
 
 
 

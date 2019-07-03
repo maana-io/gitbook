@@ -2,5 +2,5 @@
 
 \[TBD\] @?
 
-![](../../../../.gitbook/assets/image%20%2818%29.png)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/c3.png)
 

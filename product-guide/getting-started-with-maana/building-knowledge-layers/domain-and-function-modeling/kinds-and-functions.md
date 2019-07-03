@@ -24,19 +24,19 @@ Kinds in Maana fall into four categories
 
 Raw Data Kinds have data that represents files \(csv, jpeg or png\) or documents \(pdf\) that have been uploaded into Maana \(via the portal or CLI\) and their corresponding metadata.
 
-![Raw Data Kind](https://gitbooktrainingmaterials.blob.core.windows.net/images/RAW%20DATA%20KINDS%20%281%29.png)
+![Raw Data Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/RAW%20DATA%20KINDS%20%281%29.png)
 
 ### Interpreted Data Kinds <a id="interpreted-data-kinds"></a>
 
 Interpreted Data Kinds are generated from Raw Data Kinds following being parsed by Maana Bots/Microservices.
 
-![Interpreted Data Kind](https://gitbooktrainingmaterials.blob.core.windows.net/images/INTERPRETED%20DATA%20KINDS.png)
+![Interpreted Data Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/INTERPRETED%20DATA%20KINDS.png)
 
 ### Manually Created Kinds <a id="manually-created-kinds"></a>
 
 Manually Created Kinds are defined by you and the schema you desire/define.
 
-![Manually Created Kind](https://gitbooktrainingmaterials.blob.core.windows.net/images/MANUALLY%20CREATED%20KINDS.png)
+![Manually Created Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/MANUALLY%20CREATED%20KINDS.png)
 
 ### Types \(Kinds\) Imported Via an Added Service
 
@@ -44,23 +44,23 @@ External services that have a graphQL endpoint will likely have type definitions
 
 **Note**: Kinds can be displayed in full or compact mode, and you can toggle between them.
 
-![Toggling between kinds](https://gitbooktrainingmaterials.blob.core.windows.net/images/compact%20size%20KINDS.png)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/compact%20size%20KINDS.png)
 
 ### The Structure of a Kind <a id="the-structure-of-a-kind"></a>
 
 The screenshot presented below is an example of how a Kind might appear to you.​
 
-![Structure of a kind](https://gitbooktrainingmaterials.blob.core.windows.net/images/KIND%20STRUCTURES.png)
+![Structure of a kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/KIND%20STRUCTURES.png)
 
 To edit the properties of the Kind \(name only\), double click on the Kind node to access in-node editing. 
 
 You can also use the Context Panel mentioned earlier \(refer to example presented below\). Save changes to your Kind by using the blue save icon found at the top of the context panel.
 
-![Editing properties of a kind in the Context Panel](https://gitbooktrainingmaterials.blob.core.windows.net/images/KIND%20EDIT.png)
+![Editing properties of a kind in the Context Panel](https://maanaimages.blob.core.windows.net/maana-q-documentation/KIND%20EDIT.png)
 
 To edit the Kind schema, use in-node editing or the Context Panel \(refer to example presented below\). Save changes to your Kind by using the blue save icon found at the top of the context panel.
 
-![Editing properties of a kind in Context Panel](https://gitbooktrainingmaterials.blob.core.windows.net/images/KIND%20SCHEMA%20EDIT.png)
+![Editing properties of a kind in Context Panel](https://maanaimages.blob.core.windows.net/maana-q-documentation/KIND%20SCHEMA%20EDIT.png)
 
 ## Understanding Maana Functions
 
@@ -89,15 +89,15 @@ It's important to note that though these can be incredibly useful in building ou
 
 The screenshot below shows the anatomy of a function
 
-![Function node](../../../../.gitbook/assets/image%20%283%29.png)
+![Function node](https://maanaimages.blob.core.windows.net/maana-q-documentation/n1.png)
 
 Like Kinds, Functions can also be edited via in-node editing \(see screenshot below\)
 
-![Double click on node to enable in-node editing](../../../../.gitbook/assets/image%20%2854%29.png)
+![Double click on node to enable in-node editing](https://maanaimages.blob.core.windows.net/maana-q-documentation/n2.png)
 
 However, by selecting the function and clicking on the info \(i\) tab in the context panel, you won't be able to edit the schema or field modifiers \(list or mandatory\). Here you will be able to access the id for the function and modify the function name, description and graphqlOperationType \(Query or Mutation\). 
 
-![Function options through the info tab in the context panel](../../../../.gitbook/assets/image%20%2823%29.png)
+![Function options through the info tab in the context panel](https://maanaimages.blob.core.windows.net/maana-q-documentation/n3.png)
 
 ### Field Modifiers
 
