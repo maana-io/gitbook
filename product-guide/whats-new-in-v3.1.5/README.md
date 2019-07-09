@@ -1,6 +1,6 @@
-# What's New in v3.1.5
+# What's New in 3.2.0
 
-There are a number of new features and capabilities added to Maana Q v3.1.5.  Read more about those here:
+There are a number of new features and capabilities added to Maana Q 3.2.0.  Read more about those here:
 
 ## Ability to create a new Function and compose Functions within a KG
 
@@ -93,6 +93,6 @@ Shows a Refresh Snack on User Login when there is a new version of MAANA availab
 This version supports backup and restore and all workspaces and data will be preserved across subsequent releases.
 
 {% hint style="warning" %}
-A list of known 3.1.5 issues can be found [here](v3.1.5-known-issues/).
+A list of known 3.2.0 issues can be found [here](v3.1.5-known-issues/).
 {% endhint %}
 
