@@ -1,4 +1,4 @@
-# RC1-028: Q loader - does not process a XLSX file
+# Q loader - does not process a XLSX file
 
 {% tabs %}
 {% tab title="Description" %}

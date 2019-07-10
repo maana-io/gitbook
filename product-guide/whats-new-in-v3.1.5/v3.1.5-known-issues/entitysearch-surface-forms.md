@@ -4,7 +4,7 @@ description: >-
   forms are linked by multiple entities.
 ---
 
-# RC1-001: EntitySearch - Surface Forms
+# EntitySearch - Surface Forms
 
 {% tabs %}
 {% tab title="Description" %}

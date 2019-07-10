@@ -1,4 +1,4 @@
-# RC2-006: Functions using self-recursive types produces an error
+# Functions using self-recursive types produces an error
 
 {% tabs %}
 {% tab title="Description" %}

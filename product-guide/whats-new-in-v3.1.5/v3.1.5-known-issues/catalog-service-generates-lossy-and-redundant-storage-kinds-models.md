@@ -1,4 +1,4 @@
-# RC1-027: Catalog service generates lossy and redundant storage kinds/models
+# Catalog service generates lossy and redundant storage kinds/models
 
 {% tabs %}
 {% tab title="Description" %}

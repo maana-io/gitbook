@@ -1,4 +1,4 @@
-# RC1-018: CKG Current Limitations
+# CKG Current Limitations
 
 ## Same kind cannot be used for Input and Output type
 

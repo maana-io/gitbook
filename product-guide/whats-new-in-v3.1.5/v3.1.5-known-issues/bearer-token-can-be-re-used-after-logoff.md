@@ -1,4 +1,4 @@
-# RC1-010: Bearer token can be re-used after logoff
+# Bearer token can be re-used after logoff
 
 {% tabs %}
 {% tab title="Description" %}

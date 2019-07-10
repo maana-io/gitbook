@@ -1,4 +1,4 @@
-# RC2-001: Implement pagination fetching for Kind previews
+# Implement pagination fetching for Kind previews
 
 {% tabs %}
 {% tab title="Description" %}

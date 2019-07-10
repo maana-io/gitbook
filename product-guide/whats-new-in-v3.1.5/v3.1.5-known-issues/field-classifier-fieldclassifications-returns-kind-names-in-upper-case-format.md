@@ -1,4 +1,4 @@
-# RC1-017: Field-classifier: 'fieldClassifications' returns kind names in upper case format
+# Field-classifier: 'fieldClassifications' returns kind names in upper case format
 
 {% tabs %}
 {% tab title="Description" %}

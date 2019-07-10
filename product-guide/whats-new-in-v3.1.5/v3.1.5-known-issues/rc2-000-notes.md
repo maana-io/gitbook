@@ -1,4 +1,4 @@
-# RC2-000-Notes
+# GraphQL support
 
 {% hint style="info" %}
 Maana only supports GraphQL scalar types.
