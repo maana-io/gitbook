@@ -1,18 +1,34 @@
-# Opening and Closing Existing Workspaces
+# Public and Template Workspaces
 
-## Open an Existing Workspace
+## Public Workspaces
 
-Go to the **Workspaces** tab in the horizontal menu at the top of the screen and select a workspace from **My Workspaces**, a shared workspace from the **Shared Workspaces** group, or a template from the **Workspace Templates** group.
+Public Workspaces are Workspaces that are available to anyone to view and change. Set a Workspace as public if you want to collaborate on it with other people.
 
-{% hint style="info" %}
-**Note**: The secondary ribbon menu under the **Workspaces** tab shows the Workspaces that are currently open. Selecting any of the names in that area will take you to the respective workspace.
-{% endhint %}
+To set a Workspace as public, open the Workspace and toggle on the isPublic option. Click the save button.
 
-![Screenshot of the Workspace toolbar](https://maanaimages.blob.core.windows.net/maana-q-documentation/image006.png)
+![Toggle on the isPublic option](../../../.gitbook/assets/screen-shot-2019-07-10-at-2.17.41-pm.png)
 
+The Workspace is now set as public. It will show up under the Public Workspaces section of the Workspaces tab.
 
+![My Really Cool Workspace is now public!](../../../.gitbook/assets/screen-shot-2019-07-10-at-2.20.40-pm.png)
 
-## Close an Existing Workspace
+Now anyone can view and edit this Workspace!
 
-Go to the **Workspaces** tab in the horizontal menu at the top of the screen and select a workspace name in the secondary horizontal menu. Select the minus sign to the right of the list of workspace names.
+## Template Workspaces
+
+Template Workspaces are Workspaces that are available to anyone to clone but cannot be edited. Set a Workspace as a template if you want it to be used as a starting point for other people when they create new Workspaces.
+
+To set a Workspace as a template, open the Workspace and toggle on the isTemplate option. Click the save button.
+
+![Toggle on the isTemplate option](../../../.gitbook/assets/screen-shot-2019-07-10-at-2.26.17-pm.png)
+
+The Workspace is now set as a template. It will show up under the Workspace Templates section of the Workspaces tab.
+
+![My Really Cool Workspace is now a template!](../../../.gitbook/assets/screen-shot-2019-07-10-at-2.27.38-pm.png)
+
+Now the Workspace is available for anyone to clone!
+
+For more information on cloning see:
+
+{% page-ref page="workspace-cloning.md" %}
 

@@ -34,7 +34,7 @@ A Workspace template is basically a Workspace designed to be cloned. Any Workspa
 
 Learn more:
 
-{% page-ref page="../getting-started-with-maana/workspaces/workspace-templates.md" %}
+{% page-ref page="../getting-started-with-maana/workspaces/opening-and-closing-existing-workspaces.md" %}
 
 ## Expanded support for changing Field types in Kind Schema 
 

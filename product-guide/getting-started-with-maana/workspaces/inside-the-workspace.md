@@ -189,58 +189,42 @@ The Run pane has a special purpose. It is used to run Functions with provided sa
 
 ![Example Run panel with a required field, list field, and optional field.](../../../.gitbook/assets/screen-shot-2019-07-09-at-5.13.29-pm.png)
 
-There are many nuances to be aware of when running a Function. See Running Functions for more details:
+Running a Function has many options and nuances of which to be aware. These are explored in more detail at the link below:
 
 {% page-ref page="../building-knowledge-layers/domain-and-function-modeling/about-function-modeling/running-functions.md" %}
 
 ## The Inventory Panel
 
-The Inventory Panel can be thought of as the pallet containing all of the Microservices, Files, Kinds, and pre-populated Core System Services that can be brought into the workspace.
+The Inventory Panel can be thought of as the pallet containing everything in the Workspace. It contains the services, files, documents, Kinds, Functions, and Instances that have been created within the Workspace or brought in to the Workspace from another service. It is organized by type as shown below.
 
-![Example: Relations Tab](https://maanaimages.blob.core.windows.net/maana-q-documentation/Relations%20Tab.png)
-
-
-
-### **Inventory Panel** activities include:
-
-* Creating a New Knowledge Graph using the listed **Services**.
-* Querying a Knowledge Graph using the listed **Services**.
-* Uploading a file or group of files into the Workspace from the listed **Services**.
-* Removing a Knowledge Graph from the Workspace.
+![Example of the Inventory Panel](../../../.gitbook/assets/screen-shot-2019-07-10-at-11.01.27-am.png)
 
 {% hint style="info" %}
-**Note**:  The contents of the Inventory Panel are specifically bound to each individual workspace. So, if you create a new workspace and you want its inventory to mirror that of another workspace, you will need to repeat any efforts you undertook to populate the Inventory Panel of the original workspace.
+Notice the Auto-Generated groups under Kinds and Functions. These are Kinds and Functions that are automatically created for the Kinds created within the Workspace. The Functions can be used to create, read, update, or delete Instances of the Kinds created in the Workspace.
 {% endhint %}
 
-{% hint style="info" %}
-**Note**:  The limit on the number of Services that can be added to a single workspace is 1000.
-{% endhint %}
+Files, documents, Kinds, Functions, services, and Instances can be brought into the Workspace by dragging them from the Search results and dropping them into the Inventory. In a complex Workspace, there could be hundreds of things in the inventory. The search box at the top allows searching the inventory by name.
 
 ## The Assistant Panel
 
-The Assistant Panel allows you to visualize Kinds and data associated with those Kinds like Instances, Entities and Values. Raw Data Kinds can be explored quickly using the Assistant panel, as each entity detected in the data file can be filtered using a “search as you type” capability.
+The Assistant Panel will show Assistants based on the current context. In 3.2.0, the context is just the current selection in the Workspace. Selecting an Assistant from the drop down menu will provide additional functionality. For example, when selecting a CSV file there is a File Viewer Assistant that will show the contents of the file in a table. When selecting a Kind, there is a Data Preview Assistant that will show all of the Instances in the Kind.
 
-![Example: Inventory Panel](https://maanaimages.blob.core.windows.net/maana-q-documentation/image010.png)
+Some Assistants include:
 
+* File Preview - Shows when a file is selected. Preview a file.
+  * CSV, TXT, PDF, and Images are supported
+* Data Preview - Shows when a Kind is selected. Preview instances in the Kind.
+* Function Results - Shows when a Function  is selected. Displays the results when running a Function.
+* GraphQL IDE - Shows when a Workspace is selected. Allows executing GraphQL queries against the Workspace service \(such as querying for instances of a Kind\)
+* Maana Field Classifier Assistant - Works with Kinds. Displays classifications of fields in the Kind based on Instances in the Kind. Allows changing the type based on the classification. \(this Assistant must be added to the Workspace to show up\)
 
+![Example showing the &quot;GraphQL IDE&quot; Assistant with a Workspace selected](../../../.gitbook/assets/screen-shot-2019-07-10-at-11.44.21-am.png)
 
-### Assistant **Panel** activities include:
-
-* Visualization of the **Kinds** and **Data** associated with other Kinds - such as Instances, Entities and Values.
-
-The Assistant panel can also be used to query a Knowledge Graph using GraphQL \(see below\).
-
-## Workspace Buttons
-
-This is a map of the various options \(as icons\) offered within the Maana KG screen. The activities mentioned in the following pages utilize or mention a number of these icons, so we would suggest that the User take a moment to familiarize themselves with their function and location on the screen.​
-
-\[TBD\]\[NEED IMAGE - Broken on original GitBook.\]
-
-![Example: Assistant Panel](https://maanaimages.blob.core.windows.net/maana-q-documentation/image011.png)
+{% hint style="info" %}
+Assistants that are provided as a service \(such as the Maana Field Classifier Assistant\) must be added to the Workspace \(by dragging and dropping from Search into the Inventory panel\) before they will be available for selection in the Assistants panel.
+{% endhint %}
 
 
-
-![Example: Assistant Panel](https://maanaimages.blob.core.windows.net/maana-q-documentation/image012.png)
 
 
 
