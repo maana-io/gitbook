@@ -306,6 +306,12 @@ Record/Read error messages.
 
 Verify correct configuration of CLI client in keycloak server. 
 
+## Configuring Identity Providers
+
+If you plan on using a keycloak-supported identity provider such as Microsoft AD, please use the following link to learn about the process:
+
+[https://www.keycloak.org/docs/latest/server\_admin/index.html\#\_identity\_broker](https://www.keycloak.org/docs/latest/server_admin/index.html#_identity_broker)
+
 ## References
 
 \[Keycloak\] Keycloak Documentation. Retrieved on 5.20.19 from [https://www.keycloak.org/documentation.html](https://www.keycloak.org/documentation.html)
