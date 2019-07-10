@@ -159,7 +159,11 @@ This will create the client used to enforce access to the Maana Q intance's API 
 
 4. Set 'Access Type' to 'confidential'
 
-5. Click 'Save'
+5. Set 'Valid Redirect URIs' to 'https://\[maana-q-host\]:\[maana-q-UI-port\]/callback' -- see also \[Keycloak Redirect URL Security\] in the references section.
+
+6. Set 'Web Origins' to 'https://\[maana-q-host\]:\[maana-q-UI-port\]'
+
+7. Click 'Save'
 
 ### Creating the Maana KPortal \(UI\) client
 
