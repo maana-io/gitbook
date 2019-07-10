@@ -22,7 +22,7 @@ This document assumes you are the admin for the keycloak server or Maana Q insta
 
 The following prerequisites are assumed to have been fulfilled: 
 
-1. Keycloak server is deployed in a manner allowing network access between the keycloak server and the Maana Q instance.
+1. Keycloak server is deployed in a manner allowing network access between the keycloak server and the Maana Q instance. Here is a link for getting started with keycloak: [https://www.keycloak.org/docs/latest/getting\_started/index.html](https://www.keycloak.org/docs/latest/getting_started/index.html)
 2. Keycloak server is accessible via admin account, i.e. admin can access the keycloak admin console.
 3. Admin has created a 'realm' for configuration.
 4. IT/admin have an identity provider in-place to support user logins, be it via configuring the keycloak server leverage a third-party provider like Microsoft, or via the keycloak server directly.
@@ -314,17 +314,19 @@ If you plan on using a keycloak-supported identity provider such as Microsoft AD
 
 ## References
 
-\[Keycloak\] Keycloak Documentation. Retrieved on 5.20.19 from [https://www.keycloak.org/documentation.html](https://www.keycloak.org/documentation.html)
+\[Keycloak\] Keycloak Documentation. [https://www.keycloak.org/documentation.html](https://www.keycloak.org/documentation.html)
 
-\[Keycloak Concepts\] Keycloak Documentation. Core Concepts and Terms. Retrieved on 5.15.19 from [https://www.keycloak.org/docs/2.5/server\_admin/topics/overview/concepts.html](https://www.keycloak.org/docs/2.5/server_admin/topics/overview/concepts.html)
+\[Keycloak Concepts\] Keycloak Documentation. Core Concepts and Terms. [https://www.keycloak.org/docs/latest/server\_admin/index.html\#core-concepts-and-terms](https://www.keycloak.org/docs/latest/server_admin/index.html#core-concepts-and-terms)
 
-\[Keycloak Create Ream\] Keycloak Documentation. Creating a Realm. Retrieved on 5.15.19 from [https://www.keycloak.org/docs/3.2/server\_admin/topics/realms/create.html](https://www.keycloak.org/docs/3.2/server_admin/topics/realms/create.html)
+\[Keycloak Create Ream\] Keycloak Documentation. Creating a Realm. [https://www.keycloak.org/docs/latest/getting\_started/index.html\#\_create-realm](https://www.keycloak.org/docs/latest/getting_started/index.html#_create-realm)
 
-\[Keycloak Offline Access\] Keycloak Documentation. Offline Token Access. Retrieved on 5.15.19 from [https://www.keycloak.org/docs/3.2/server\_admin/topics/sessions/offline.html](https://www.keycloak.org/docs/3.2/server_admin/topics/sessions/offline.html)
+\[Keycloak Offline Access\] Keycloak Documentation. Offline Token Access. [https://www.keycloak.org/docs/latest/server\_admin/index.html\#\_offline-access](https://www.keycloak.org/docs/latest/server_admin/index.html#_offline-access)
 
-\[Keycloak OIDC\] Keycloak Documentation. OIDC endpoints. Retrieved on 5.20.19 from [https://www.keycloak.org/docs/3.2/server\_admin/topics/identity-broker/oidc.html](https://www.keycloak.org/docs/3.2/server_admin/topics/identity-broker/oidc.html)
+\[Keycloak OIDC\] Keycloak Documentation. OIDC endpoints. [https://www.keycloak.org/docs/latest/server\_admin/index.html\#openid-connect-v1-0-identity-providers](https://www.keycloak.org/docs/latest/server_admin/index.html#openid-connect-v1-0-identity-providers)
 
-\[Keycloak Redirect URL Security\] Keycloak Documentation. Unspecific Redirect URIs. Retrieved on 5.21. from [https://www.keycloak.org/docs/2.5/server\_admin/topics/threat/redirect.html](https://www.keycloak.org/docs/2.5/server_admin/topics/threat/redirect.html)
+\[Keycloak Redirect URL Security\] Keycloak Documentation. Unspecific Redirect URIs. [https://www.keycloak.org/docs/latest/server\_admin/index.html\#threat-model-mitigation](https://www.keycloak.org/docs/latest/server_admin/index.html#threat-model-mitigation) [https://www.keycloak.org/docs/latest/server\_admin/index.html\#\_unspecific-redirect-uris](https://www.keycloak.org/docs/latest/server_admin/index.html#_unspecific-redirect-uris)
+
+
 
 ---Prepared by Logan Gore, Maana.io, 5.20.19
 
