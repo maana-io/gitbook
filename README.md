@@ -10,7 +10,7 @@ Maana organizes the world’s industrial data and human expertise into digital k
 
 Maana is a pioneer of digital knowledge technology, enabling enterprise-wide digital transformation through unsurpassed interoperability of tools without creating new silos.
 
-Learn more about Maana on our [website](www.maana.io).
+Learn more about Maana on our [website](https://www.maana.io).
 
 \*\*\*\*
 
