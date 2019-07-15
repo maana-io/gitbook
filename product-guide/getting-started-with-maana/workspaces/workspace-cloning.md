@@ -23,7 +23,7 @@ You are now free to edit the Workspace without affecting the original.
 
 ![The cloned Workspace has been renamed to &quot;My Even Cooler Workspace&quot; ](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Renamed%20Cloned%20Workspace.png)
 
-Any Public Workspaces can also be cloned.
+Any Public Workspace can also be cloned.
 
 ![Cloning a public Workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Cloning%20a%20Public%20Workspace.png)
 
