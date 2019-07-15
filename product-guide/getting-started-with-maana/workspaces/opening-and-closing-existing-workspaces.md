@@ -6,11 +6,11 @@ Public Workspaces are Workspaces that are available to anyone to view and change
 
 To set a Workspace as public, open the Workspace and toggle on the isPublic option. Click the save button.
 
-![Toggle on the isPublic option](../../../.gitbook/assets/screen-shot-2019-07-10-at-2.17.41-pm.png)
+![Toggle on the isPublic option](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Setting%20isPublic%20Flag.png)
 
 The Workspace is now set as public. It will show up under the Public Workspaces section of the Workspaces tab.
 
-![My Really Cool Workspace is now public!](../../../.gitbook/assets/screen-shot-2019-07-10-at-2.20.40-pm.png)
+![My Really Cool Workspace is now public!](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/New%20Public%20Workspace.png)
 
 Now anyone can view and edit this Workspace!
 
@@ -20,11 +20,11 @@ Template Workspaces are Workspaces that are available to anyone to clone but can
 
 To set a Workspace as a template, open the Workspace and toggle on the isTemplate option. Click the save button.
 
-![Toggle on the isTemplate option](../../../.gitbook/assets/screen-shot-2019-07-10-at-2.26.17-pm.png)
+![Toggle on the isTemplate option](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Setting%20isTemplate%20Flag.png)
 
 The Workspace is now set as a template. It will show up under the Workspace Templates section of the Workspaces tab.
 
-![My Really Cool Workspace is now a template!](../../../.gitbook/assets/screen-shot-2019-07-10-at-2.27.38-pm.png)
+![My Really Cool Workspace is now a template!](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/New%20Workspace%20Template.png)
 
 Now the Workspace is available for anyone to clone!
 

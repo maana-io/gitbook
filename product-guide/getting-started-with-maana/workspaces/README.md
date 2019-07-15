@@ -8,7 +8,7 @@ A workspace is a dedicated place within the Q portal where you can build, visual
 * **Public Workspaces** – This area displays the workspaces that are available for anyone to view or edit.
 * **Workspace Templates** – This area can be used to create a new workspace from an existing template.
 
-![](../../../.gitbook/assets/screen-shot-2019-07-08-at-3.17.23-pm.png)
+![Workspace Page Overview](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Workspaces%20Page.png)
 
 {% hint style="info" %}
 Only the first 100 Workspaces are shown in each section. If you are unable to find the Workspace you are looking for, try searching for it by name using the Search within the appropriate section.
@@ -22,7 +22,7 @@ Within the Workspaces view you can:
 
 Think of the workspace as your notebook, like actual physical place that you make notes in and think of a knowledge graph as a page in that notebook.  A workspace is a unit of work \(a container\) for kinds and functions. Each workspace is also a service, callable via GraphQL. And, each workspace can have knowledge graphs and function graphs.
 
-![Hierarchy of platform concepts](https://maanaimages.blob.core.windows.net/maana-q-documentation/pic1.png)
+![Hierarchy of platform concepts](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Workspace%20as%20a%20Notebook.png)
 
 
 

@@ -14,7 +14,7 @@ Microsoft's Edge browser is now officially supported!
 
 Workspaces can now be cloned on the Workspaces page by clicking the clone workspace icon. 
 
-![Click the Clone Workspace icon to create a clone of the Workspace](../../.gitbook/assets/screen-shot-2019-07-09-at-11.15.28-am.png)
+![Click the Clone Workspace icon to create a clone of the Workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Cloning%20a%20Workspace.png)
 
 Cloning a workspace creates a new workspace with copies of all of the Kinds, Functions, and Knowledge Graphs that were created in the original Workspace. References to these Kinds and Functions will be updated to refer to the copies created in the new Workspace.
 

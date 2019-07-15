@@ -8,21 +8,19 @@ Go to the web address provided by IT admin. Login using one of the 2 methods des
 
 ### Auth0
 
-![Log in screen for Auth0](../../.gitbook/assets/screen-shot-2019-07-08-at-1.42.19-pm.png)
-
-
+![Log in screen for Auth0](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Auth0%20Login%20Screen.png)
 
 If single sign-on \(SSO\) is enabled by your IT, enter your email address and select **LOG IN**. Otherwise, enter your email and password and select **LOG IN.** 
 
 ### Keycloak
 
-![Log in screen for Keycloak](../../.gitbook/assets/screen-shot-2019-07-08-at-1.44.31-pm.png)
+![Log in screen for Keycloak](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Keycloak%20Login%20Screen.png)
 
 Enter your email or username and password and select **Log In**.
 
 If Keycloak is configured to support logging in using a Microsoft account \(or other provider\), it will be shown on the right. Click the link and you will be taken to a sign in page for the selected provider. Microsoft is shown below.
 
-![Microsoft sign in page](../../.gitbook/assets/screen-shot-2019-07-08-at-1.55.24-pm.png)
+![Microsoft sign in page](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Microsoft%20Sign%20in%20Screen.png)
 
 Complete the sign in process to access Q.
 
@@ -36,10 +34,6 @@ Once logged in, you can:
 * Log out
 
 This is accessible from the User menu in the top right corner of the screen.
-
-![User menu icon](../../.gitbook/assets/screen-shot-2019-07-08-at-2.02.30-pm.png)
-
-![User menu options](../../.gitbook/assets/screen-shot-2019-07-08-at-2.01.56-pm.png)
 {% endtab %}
 
 {% tab title="Logging Out of Q" %}
@@ -50,6 +44,10 @@ Select the the **User menu** icon in the top right corner of the screen followed
 ![Select Logout to log out of Q](../../.gitbook/assets/screen-shot-2019-07-08-at-2.01.56-pm.png)
 {% endtab %}
 {% endtabs %}
+
+
+
+
 
 
 
