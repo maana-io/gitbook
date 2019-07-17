@@ -70,7 +70,7 @@ Learn more:
 
 {% page-ref page="../getting-started-with-maana/workspaces/deleting-a-workspace.md" %}
 
-{% page-ref page="../reference-guide/q-platform-and-microservices/creating-services/deleting-a-service.md" %}
+{% page-ref page="../getting-started-with-maana/services/deleting-a-service.md" %}
 
 ## As fast as lightning
 
