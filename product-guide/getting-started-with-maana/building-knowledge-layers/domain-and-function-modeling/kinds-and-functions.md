@@ -6,7 +6,7 @@ Kinds are the term that Maana uses for the concepts used to build their Knowledg
 
 | **Term** | **Definition** | **Example** |
 | :--- | :--- | :--- |
-| **Kinds** | Kinds are concepts | People, Ship, Wells, Invoice, etc. |
+| **Kinds** | Kinds are concepts | People, Ship, Well, Location, Invoice, etc. |
 | **Fields** | Properties within a concept | Fields related to People: name, age, gender, height, weight, etc. |
 | **Field Type** | Scalar or another Kind | Scalars: ID, String, Int, Float, Boolean. A list of all custom scalars can be found [here](../../../reference-guide/technical-design-and-architecture/custom-scalars-supported-by-maana-q-platform.md). |
 | **Instances** | Values for entities within a concept | People Instance: Paul Smith, 19, male, 6'0", 200 lbs, etc. |
@@ -15,42 +15,44 @@ Kinds are the term that Maana uses for the concepts used to build their Knowledg
 
 Kinds in Maana fall into four categories
 
-1. **Raw Data Kinds**
+1. **Raw Data Instances**
 2. **Interpreted Data Kinds**
 3. **Manually Created Kinds**
 4. **Types imported via an added service**
 
-### Raw Data Kinds <a id="raw-data-kinds"></a>
+### Raw Data Instances <a id="raw-data-kinds"></a>
 
-Raw Data Kinds have data that represents files \(csv, jpeg or png\) or documents \(pdf\) that have been uploaded into Maana \(via the portal or CLI\) and their corresponding metadata.
+Raw Data Instances have data that represents files \(csv, jpeg or png\) or documents \(pdf\) that have been uploaded into Maana \(via the portal or CLI\) and their corresponding metadata.
 
-![Raw Data Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/RAW%20DATA%20KINDS%20%281%29.png)
+![Raw Data Instance](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Raw%20Data%20Instance.png)
 
 ### Interpreted Data Kinds <a id="interpreted-data-kinds"></a>
 
-Interpreted Data Kinds are generated from Raw Data Kinds following being parsed by Maana Bots/Microservices.
+Interpreted Data Kinds are generated from Raw Data Instances following being parsed by Maana Bots/Microservices. Currently only CSV files will have Interpreted Data Kinds generated from them.
 
-![Interpreted Data Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/INTERPRETED%20DATA%20KINDS.png)
+![Interpreted Data Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Interpreted%20Data%20Kind.png)
 
 ### Manually Created Kinds <a id="manually-created-kinds"></a>
 
 Manually Created Kinds are defined by you and the schema you desire/define.
 
-![Manually Created Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/MANUALLY%20CREATED%20KINDS.png)
+![Manually created Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Manually%20Created%20Kind.png)
 
 ### Types \(Kinds\) Imported Via an Added Service
 
 External services that have a graphQL endpoint will likely have type definitions that when imported into the Maana platform will be represented as Kinds. The Kind names will be preceded with the service name to help disambiguate between Kinds from different services but with the same name.
 
-**Note**: Kinds can be displayed in full or compact mode, and you can toggle between them.
+![Imported &quot;Person&quot; Kind from &quot;Maana Entity Extractor&quot; service](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Imported%20Kind.png)
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/compact%20size%20KINDS.png)
+**Note**: Nodes can be displayed in full or compact mode, and you can toggle between them.
+
+![Nodes in the collapsed view](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Collapsed%20Nodes.png)
 
 ### The Structure of a Kind <a id="the-structure-of-a-kind"></a>
 
 The screenshot presented below is an example of how a Kind might appear to you.​
 
-![Structure of a kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/KIND%20STRUCTURES.png)
+![Structure of a Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Structure%20of%20a%20Kind.png)
 
 To edit the properties of the Kind \(name only\), double click on the Kind node to access in-node editing. 
 

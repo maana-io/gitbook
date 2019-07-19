@@ -21,6 +21,6 @@ An alternative way to delete a Workspace is from within the Workspace itself. Se
 You will be presented with the same confirmation dialog as above.
 
 {% hint style="info" %}
-You are only allowed to delete Workspaces that you created
+You are only allowed to delete Workspaces that you created.
 {% endhint %}
 

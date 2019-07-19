@@ -1,6 +1,6 @@
 # Building The Knowledge Layer
 
-The Solution Lifecycle is the process that walks you through deconstructing the high level problem-question you're trying to answer, then building out the domain/function modeling that will enable you to create a solution graph. With your solution graph, you'll then move on to connecting to your data. Next, you'll build out or import relevant knowledge microservices and finally build a knowledge app.
+The Solution Lifecycle is the process that walks you through deconstructing the high level problem-question you're trying to answer, then building out the domain/function modeling that will enable you to create a solution graph. With your solution graph, you'll then move on to connecting to your data. Next, you'll build out or import relevant knowledge services and finally build a knowledge app.
 
 The image below is a high-level map to visualize the entire Solution Lifecycle. This map is referenced throughout this documentation as a go-by so you know where you are in the process.
 
