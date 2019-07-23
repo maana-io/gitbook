@@ -1,4 +1,4 @@
-# Understanding Kinds and Functions
+# Understanding Kinds
 
 ## Understanding Maana Kinds <a id="understanding-maana-kinds"></a>
 
@@ -9,7 +9,7 @@ Kinds are the term that Maana uses for the concepts used to build their Knowledg
 | **Kinds** | Kinds are concepts | People, Ship, Well, Location, Invoice, etc. |
 | **Fields** | Properties within a concept | Fields related to People: name, age, gender, height, weight, etc. |
 | **Field Type** | Scalar or another Kind | Scalars: ID, String, Int, Float, Boolean. A list of all custom scalars can be found [here](../../../reference-guide/technical-design-and-architecture/custom-scalars-supported-by-maana-q-platform.md). |
-| **Instances** | Values for entities within a concept | People Instance: Paul Smith, 19, male, 6'0", 200 lbs, etc. |
+| **Instances** | Values for entities within a Kind | People Instance: Paul Smith, 19, male, 6'0", 200 lbs, etc. |
 | **Values** | A particular size, measure or number within an entity | Values for Paul: 19 yrs. old, 200 lbs., , 6'0", etc. |
 | **Relations** | Connections/dependencies that can be established between fields of different Kinds | Married to Linda Smith, related to family name Smith. |
 
@@ -54,57 +54,136 @@ The screenshot presented below is an example of how a Kind might appear to you.â
 
 ![Structure of a Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Structure%20of%20a%20Kind.png)
 
-To edit the properties of the Kind \(name only\), double click on the Kind node to access in-node editing. 
+Let's go through each of the different parts of the Kind node in more detail.
 
-You can also use the Context Panel mentioned earlier \(refer to example presented below\). Save changes to your Kind by using the blue save icon found at the top of the context panel.
+#### Kind Schema
 
-![Editing properties of a kind in the Context Panel](https://maanaimages.blob.core.windows.net/maana-q-documentation/KIND%20EDIT.png)
+The Kind Schema portion of the node contains all of the fields and their types \(including modifiers\) within the Kind's schema. Instances of the Kind will have fields matching the schema. The Field column contains the name of the Field, the Type column contains the type the values of the Field. When Instances are added to the Kind, the values in each of the fields must match the Type definition of the field. For example, a number can't be put in a field that has a type set to String.
 
-To edit the Kind schema, use in-node editing or the Context Panel \(refer to example presented below\). Save changes to your Kind by using the blue save icon found at the top of the context panel.
+There are also two modifiers indicated in the Type column: required and list. If the Type has an exclamation mark \(!\), the field is required to have a value. If the Type is surrounded in square brackets \(\[\]\), the field value is a list. Note that both can be present. Thus \[STRING!\]! means the field is a list of Strings, where each value in the list cannot be null and the list itself must not be null.
 
-![Editing properties of a kind in Context Panel](https://maanaimages.blob.core.windows.net/maana-q-documentation/KIND%20SCHEMA%20EDIT.png)
+#### Kind Links
 
-## Understanding Maana Functions
+The Kind Links portion of a node contains relations between the Kind and other Kinds and Instances. The Field column contains the type of relation. It is displayed in the form &lt;field name&gt;.&lt;relation name&gt;. The Type column contains the name of the Kind or Instance that the Link points to. 
 
-Functions are the term that Maana uses for the problem-question used to build their Knowledge Graphs. Remember the example of "Given x, what is y"? These functions allow you to define x and y and connect them to other functions in meaningful ways to form the computational portion of your solutions and your knowledge graph. In graphQL speak, functions are either queries or mutations.
+For example, the first Link in the screenshot above has **id.hasClassification** in the Field column. This means, the Link exists on the **id** field and the relation is of type **hasClassification**. 
 
-Functions in Maana fall into two general categories
+{% hint style="info" %}
+Relations are defined as Instances of the Relation Kind.
+{% endhint %}
 
-1. **Authored functions** 
-2. **Imported functions**
+The Type of the first Link is **Categorical**. This means that the Link points to the Categorical Kind.
 
-### Authored Functions
+When you put this all together, this Link has the meaning: the **Locationcsv** Kind's **id** field has a classification of **Categorical**.
 
-These are created by you by clicking on the "sigma" icon in any knowledge or function graph within a workspace. 
+Links are most often created automatically by Bots running within the Q platform.
 
-You can edit the schema \(including field modifiers\) of these functions at any given time, although there may be consequences depending on what else they are connected to. 
+For more details on Links, see
 
-You can also define the implementation of these functions by clicking through the name of the function which is also a hyperlink and opening its function graph.
+{% page-ref page="../../../reference-guide/technical-design-and-architecture/links.md" %}
 
-### Imported Functions
+For more details on Bots, see
 
-These are queries or mutations that authors of a service \(accessed via a graphQL endpoint\) have made available for others \(like yourself\) to leverage. 
+{% page-ref page="../connecting-bots-and-assistants.md" %}
 
-It's important to note that though these can be incredibly useful in building out your solution, you _cannot_ edit the schema or the implementation \(underlying logic\) of these functions.
+#### Inbound Relations
 
-### The Structure of a Function <a id="the-structure-of-a-kind"></a>
+Inbound relations connect to the ports on the left side of the Kind node. There are two types of relations \(ports\) on the left side: Kind level and Field/Link level.
 
-The screenshot below shows the anatomy of a function
+Kind level relations connect to the topmost port on the left side \(next to the collapse/expand toggle\). Any incoming relations to the Kind will have an edge in the graph from a port on the other Kind to this port.
 
-![Function node](https://maanaimages.blob.core.windows.net/maana-q-documentation/n1.png)
+![Example incoming Kind level relation](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Kind%20Level%20Incoming%20Relation.png)
 
-Like Kinds, Functions can also be edited via in-node editing \(see screenshot below\)
+Field level relations connect to the port next to the field that is part of the relation. Link level relations connect to the port next to the Link that is part of the relation.
 
-![Double click on node to enable in-node editing](https://maanaimages.blob.core.windows.net/maana-q-documentation/n2.png)
+![Example incoming Link level relation](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Link%20Level%20Incoming%20Relation.png)
 
-However, by selecting the function and clicking on the info \(i\) tab in the context panel, you won't be able to edit the schema or field modifiers \(list or mandatory\). Here you will be able to access the id for the function and modify the function name, description and graphqlOperationType \(Query or Mutation\). 
+{% hint style="info" %}
+In collapsed mode, all edges indicating relations move to the Kind level \(top\) port.
+{% endhint %}
 
-![Function options through the info tab in the context panel](https://maanaimages.blob.core.windows.net/maana-q-documentation/n3.png)
+![Edges indicating relations move to the top port when nodes are collapsed](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Collapsed%20Nodes.png)
 
-### Field Modifiers
+#### Outbound Relations
 
-There are two field level modifiers available in Maana functions
+Just like there are two types of inbound relations, there are two types of outbound relations: Kind and Field/Link. The outbound relations of a Kind node connect to the ports on the right side of the node.
 
-1. List - indicates that the field is a list of values
-2. Mandatory - indicates that the field is _required_ for the function to execute 
+Kind level relations are indicated by edges in the graph that connect to the top right port \(next to the expand/collapse button\).
+
+Field level relations connect to the port next to the field that is part of the relation. Link level relations connect to the port next to the Link that is part of the relation.
+
+![Example of an outbound field level relation](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Field%20Level%20Outgoing%20Relation.png)
+
+Field level relations indicate that a field has a type that is a Kind.
+
+{% hint style="info" %}
+Note there is a difference in style between edges in the graph that indicate field level relations \(blue\) and the edges that indicate link level relations \(gray\).
+{% endhint %}
+
+#### Relation Indicators
+
+The fields and links with relations have an indicator in the port.
+
+![The Link indicator in the port](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Link%20Indicator%20in%20Node.png)
+
+This indicates a Link to another Kind or Instance. Hovering the mouse over the port with display a preview of the Kind or Instance that is on the other end of the Link.
+
+![Example Kind preview on hover](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Link%20Hover%20Kind.png)
+
+Clicking the link icon in the port will automatically add the linked Kind to the graph.
+
+### In-node Editing
+
+To edit the properties of the Kind, click on the pencil icon in the top right corner. \(An alternative way to enter edit mode is to double click on the node.\) This opens the in-node editing view.
+
+![Kind node in-node editing view](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Kind%20Node%20In-Node%20Editing%20View.png)
+
+{% hint style="info" %}
+You can only edit Kind nodes that were created in the currently open Workspace.
+{% endhint %}
+
+Here you can change the name of the Kind, the name of the fields, the types of the fields, and the modifiers applied to each field. You can also add or remove fields from the Kind. Clicking the Save button will save any modifications. Clicking the Cancel button will discard the changes.
+
+{% hint style="info" %}
+If the Kind has any Instances, you will only be able modify the Type of the fields between _compatible_ types. Compatible types are String, ID, JSON, and any Kind type.
+{% endhint %}
+
+### Editing in the Schema Editor Assistant
+
+The Schema Editor Assistant allows editing of a Kind's schema with some additional options not available in in-node editing. To open the Schema Editor Assistant, select the Kind to edit and choose Schema Editor in the Assistants panel.
+
+![Editing a Kind&apos;s schema in the Schema Editor Assistant](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Schema%20Editor.png)
+
+Here you will be able to perform the same actions that you can in in-node editing \(modifying the Name, Type, and Modifiers of each field, along with adding or removing fields\) but you will find some additional fields as well. Most of the fields are not currently used, however there are a couple that can provide some additional functionality.
+
+* **Description** - This field allows adding a description of the field. Note that this is only shown in the Schema Editor.
+* **Read Only** - Selecting this will make the field unmodifiable in both the Schema Editor and the in-node editing. \(Note that the **Read Only** flag itself remains modifiable so that you can make the field editable again if needed\).
+
+![Example of setting a field to Read Only](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Read%20Only%20Field.png)
+
+Save changes by clicking the save icon in the top left or discard changes by clicking the cancel icon.
+
+### Editing in the Context Panel
+
+The Information pane of the Context panel allows viewing and editing some additional properties of the Kind.
+
+![Example of the Information pane of a Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Information%20Pane%20-%20Kind.png)
+
+The following properties are editable:
+
+* **name:** the name of the Kind. This is the same name when editing in-node.
+* **description:** Use this to provide more information about the Kind that would help someone else understand the concept the Kind represents. \(This is only shown in this location in the UI\)
+* **thumbnailUrl:** This allows specifying a different URL for the thumbnail image. Note that the thumbnail image is only shown here in the UI.
+* **isPublic**: Not currently used
+* **nameField:** When viewing Instances of the Kind \(whether in the Workspace or in search results\), this tells the UI the name of the field whose value should be used as the name of the Instance. \(Basically, which field to use as the name for the Instance\). If this is left unset, the UI will try to determine the name of the Instance automatically. If it fails, it will default to the ID.
+
+The un-editable properties include:
+
+* **id**: the ID of the Kind
+* **serviceId:** The ID of the service the Kind comes from
+* **isManaged:** Not currently used
+
+The Information pane also includes a quick view of the schema of the Kind, similar to what you would see in the Kind node on the graph.
+
+![Schema view in the Information pane](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Information%20Pane%20Schema%20View%20-%20Kind.png)
 

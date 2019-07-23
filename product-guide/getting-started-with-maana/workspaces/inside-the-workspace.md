@@ -70,11 +70,11 @@ Kinds and Functions must have unique names within a Workspace and they must adhe
 Fields within Kinds and Functions must have unique names and they must adhere to the GraphQL naming conventions.
 {% endhint %}
 
-For more info see:
+For more info about Kinds and Functions see the following links:
 
-{% page-ref page="../../reference-guide/technical-design-and-architecture/kinds-and-fields/creating-kinds.md" %}
+{% page-ref page="../building-knowledge-layers/domain-and-function-modeling/kinds-and-functions.md" %}
 
-{% page-ref page="../../reference-guide/technical-design-and-architecture/function-modeling/create-a-new-function.md" %}
+{% page-ref page="../building-knowledge-layers/domain-and-function-modeling/understanding-functions.md" %}
 
 #### Duplicate Kinds, Functions, and Instances
 
