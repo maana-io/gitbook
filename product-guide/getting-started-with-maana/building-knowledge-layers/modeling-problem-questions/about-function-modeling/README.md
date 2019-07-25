@@ -10,7 +10,7 @@ Functions have three main parts:
 * **Outputs** are the result of the calculations.
 * **Implementation** is the part that does the calculations. A function's implementation can be part of a service that is running somewhere, or it can be build up within Maana Q from many different functions.
 
-Learn more about the basics of functions [here](../kinds-and-functions.md).
+Learn more about the basics of functions [here](../../understanding-functions.md).
 
 ## Example Problem-Question \(Functions\)
 

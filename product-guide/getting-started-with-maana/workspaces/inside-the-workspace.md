@@ -72,9 +72,9 @@ Fields within Kinds and Functions must have unique names and they must adhere to
 
 For more info about Kinds and Functions see the following links:
 
-{% page-ref page="../building-knowledge-layers/domain-and-function-modeling/kinds-and-functions.md" %}
+{% page-ref page="../building-knowledge-layers/kinds-and-functions.md" %}
 
-{% page-ref page="../building-knowledge-layers/domain-and-function-modeling/understanding-functions.md" %}
+{% page-ref page="../building-knowledge-layers/understanding-functions.md" %}
 
 #### Duplicate Kinds, Functions, and Instances
 
@@ -118,7 +118,7 @@ Only Functions created in the current Workspace can have their composition viewe
 
 Function composition is a whole topic in itself. See the following link for a detailed description of Function Composition:
 
-{% page-ref page="../building-knowledge-layers/domain-and-function-modeling/about-function-modeling/composing-functions.md" %}
+{% page-ref page="../building-knowledge-layers/modeling-problem-questions/about-function-modeling/composing-functions.md" %}
 
 #### Navigating Links between Kinds and Instances
 
@@ -157,7 +157,7 @@ Use the **Context Panel** has panes to view or edit properties of Kinds, Functio
 
 ### **Information pane**
 
-The Information pane allows viewing and modifying properties of everything in the Workspace, including Kinds, Functions, Instances, Knowledge Graphs, Services, and the Workspace itself.
+The Information pane allows viewing and modifying properties of everything in the Workspace, including Kinds, Functions, Instances, Knowledge Graphs, services, and the Workspace itself.
 
 ![Information pane for a Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Kind%20Info%20Pane.png)
 
@@ -166,7 +166,7 @@ Properties that are not editable are disabled. Changes made in this view can be 
 ![Save and Discard buttons at the top of the Information pane](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Save%20Discard%20Icons%20Info%20Pane.png)
 
 {% hint style="info" %}
-Only Kinds and Functions created within the current Workspace are editable in the Information pane. Kinds and Functions brought in from other Services are not. 
+Only Kinds and Functions created within the current Workspace are editable in the Information pane. Kinds and Functions brought in from other services are not. 
 {% endhint %}
 
 ### Links pane
@@ -189,7 +189,7 @@ The Run pane has a special purpose. It is used to run Functions with provided sa
 
 Running a Function has many options and nuances of which to be aware. These are explored in more detail at the link below:
 
-{% page-ref page="../building-knowledge-layers/domain-and-function-modeling/about-function-modeling/running-functions.md" %}
+{% page-ref page="../building-knowledge-layers/modeling-problem-questions/about-function-modeling/running-functions.md" %}
 
 ## The Inventory Panel
 

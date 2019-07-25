@@ -14,7 +14,7 @@ Problem decomposition allows us to move from a general business objective to use
 
 Learn more about problem-questions and the decomposition process here:
 
-{% page-ref page="what-are-problem-questions/" %}
+{% page-ref page="what-are-problem-questions.md" %}
 
 ### 2. Domain and Function Modeling <a id="2-domain-and-function-modeling"></a>
 
@@ -24,7 +24,7 @@ In this step, you'll assemble the concepts and functions into a solution graph.
 
 Learn more about domain and functional modeling here:
 
-{% page-ref page="domain-and-function-modeling/" %}
+{% page-ref page="domain-and-function-modeling.md" %}
 
 ### 3. Connect to Data <a id="3-connect-to-data"></a>
 

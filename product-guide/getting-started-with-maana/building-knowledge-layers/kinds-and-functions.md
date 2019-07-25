@@ -8,7 +8,7 @@ Kinds are the term that Maana uses for the concepts used to build their Knowledg
 | :--- | :--- | :--- |
 | **Kinds** | Kinds are concepts | People, Ship, Well, Location, Invoice, etc. |
 | **Fields** | Properties within a concept | Fields related to People: name, age, gender, height, weight, etc. |
-| **Field Type** | Scalar or another Kind | Scalars: ID, String, Int, Float, Boolean. A list of all custom scalars can be found [here](../../../reference-guide/technical-design-and-architecture/custom-scalars-supported-by-maana-q-platform.md). |
+| **Field Type** | Scalar or another Kind | Scalars: ID, String, Int, Float, Boolean. A list of all custom scalars can be found [here](../../reference-guide/technical-design-and-architecture/custom-scalars-supported-by-maana-q-platform.md). |
 | **Instances** | Values for entities within a Kind | People Instance: Paul Smith, 19, male, 6'0", 200 lbs, etc. |
 | **Values** | A particular size, measure or number within an entity | Values for Paul: 19 yrs. old, 200 lbs., , 6'0", etc. |
 | **Relations** | Connections/dependencies that can be established between fields of different Kinds | Married to Linda Smith, related to family name Smith. |
@@ -38,11 +38,19 @@ Manually Created Kinds are defined by you and the schema you desire/define.
 
 ![Manually created Kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Manually%20Created%20Kind.png)
 
-### Types \(Kinds\) Imported Via an Added Service
+{% hint style="info" %}
+Manually Created Kinds and Interpreted Data Kinds become GraphQL Types in the Workspace service.
+{% endhint %}
 
-External services that have a graphQL endpoint will likely have type definitions that when imported into the Maana platform will be represented as Kinds. The Kind names will be preceded with the service name to help disambiguate between Kinds from different services but with the same name.
+### Imported Kinds
+
+Services that have a GraphQL endpoint will likely have type definitions. When the service is added to Q these will be represented as Kinds. The Kind names will be preceded with the service name to help disambiguate same named Kinds from different services.
 
 ![Imported &quot;Person&quot; Kind from &quot;Maana Entity Extractor&quot; service](https://maanaimages.blob.core.windows.net/maana-q-documentation/Product%20Guide/Imported%20Kind.png)
+
+{% hint style="info" %}
+Imported Kinds are not editable in Q
+{% endhint %}
 
 **Note**: Nodes can be displayed in full or compact mode, and you can toggle between them.
 
@@ -58,9 +66,9 @@ Let's go through each of the different parts of the Kind node in more detail.
 
 #### Kind Schema
 
-The Kind Schema portion of the node contains all of the fields and their types \(including modifiers\) within the Kind's schema. Instances of the Kind will have fields matching the schema. The Field column contains the name of the Field, the Type column contains the type the values of the Field. When Instances are added to the Kind, the values in each of the fields must match the Type definition of the field. For example, a number can't be put in a field that has a type set to String.
+The Kind Schema portion of the node contains all of the fields and their types \(including modifiers\) within the Kind's schema. Instances of the Kind will have fields matching the schema. The Field column contains the name of the Field, the Type column contains the type of the Field. When Instances are added to the Kind, the values in each of the fields must match the Type definition of the field. For example, a number can't be put in a field that has a type set to String.
 
-There are also two modifiers indicated in the Type column: required and list. If the Type has an exclamation mark \(!\), the field is required to have a value. If the Type is surrounded in square brackets \(\[\]\), the field value is a list. Note that both can be present. Thus \[STRING!\]! means the field is a list of Strings, where each value in the list cannot be null and the list itself must not be null.
+There are also two modifiers indicated in the Type column: required and list. If the Type has an exclamation mark \(**!**\), the field is required to have a value. If the Type is surrounded in square brackets \(**\[\]**\), the field value is a list. Note that both can be present. Thus **\[STRING!\]!** means the field is a list of Strings, where each value in the list cannot be null and the list itself must not be null.
 
 #### Kind Links
 
@@ -80,11 +88,11 @@ Links are most often created automatically by Bots running within the Q platform
 
 For more details on Links, see
 
-{% page-ref page="../../../reference-guide/technical-design-and-architecture/links.md" %}
+{% page-ref page="../../reference-guide/technical-design-and-architecture/links.md" %}
 
 For more details on Bots, see
 
-{% page-ref page="../connecting-bots-and-assistants.md" %}
+{% page-ref page="connecting-bots-and-assistants.md" %}
 
 #### Inbound Relations
 
@@ -142,10 +150,14 @@ To edit the properties of the Kind, click on the pencil icon in the top right co
 You can only edit Kind nodes that were created in the currently open Workspace.
 {% endhint %}
 
-Here you can change the name of the Kind, the name of the fields, the types of the fields, and the modifiers applied to each field. You can also add or remove fields from the Kind. Clicking the Save button will save any modifications. Clicking the Cancel button will discard the changes.
+Here you can change the name of the Kind, the name of the fields, the types of the fields, and the modifiers applied to each field. The first two buttons to the right of the type column toggle the required and list modifiers on the field, respectively. You can also add or remove fields from the Kind. Clicking the Save button will save any modifications. Clicking the Cancel button will discard the changes.
 
 {% hint style="info" %}
 If the Kind has any Instances, you will only be able modify the Type of the fields between _compatible_ types. Compatible types are String, ID, JSON, and any Kind type.
+{% endhint %}
+
+{% hint style="warning" %}
+Changing the fields of a Kind will affect anywhere that references the Kind. This could potentially cause problems in the places that use the Kind \(such as in Functions\).
 {% endhint %}
 
 ### Editing in the Schema Editor Assistant
