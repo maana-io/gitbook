@@ -1,6 +1,6 @@
 # Domain & Function Modeling
 
-{% page-ref page="modeling-problem-questions/about-domain-modeling.md" %}
+{% page-ref page="modeling-problem-questions/about-domain-modeling/" %}
 
 {% page-ref page="modeling-problem-questions/about-function-modeling/" %}
 
