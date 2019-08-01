@@ -72,7 +72,7 @@ Fields within Kinds and Functions must have unique names and they must adhere to
 
 For more info about Kinds and Functions see the following links:
 
-{% page-ref page="../building-knowledge-layers/kinds-and-functions.md" %}
+{% page-ref page="../building-knowledge-layers/kinds-and-functions/" %}
 
 {% page-ref page="../building-knowledge-layers/understanding-functions.md" %}
 

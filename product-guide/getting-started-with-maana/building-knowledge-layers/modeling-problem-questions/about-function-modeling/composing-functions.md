@@ -11,7 +11,7 @@ Let's compose the Functions that make up the solution to the problem-question we
 > PQ: Given an actor and a year, what was the highest grossing film of the year that the actor was in?
 
 {% hint style="info" %}
-Make sure you are familiar with Functions and Kinds before continuing. See [Understanding Kinds](../../kinds-and-functions.md) and [Understanding Functions](../../understanding-functions.md).
+Make sure you are familiar with Functions and Kinds before continuing. See [Understanding Kinds](../../kinds-and-functions/) and [Understanding Functions](../../understanding-functions.md).
 {% endhint %}
 
 Since the Function composition process should be done at the same time as the problem-question decomposition, we will go through each of the steps we did during problem-question decomposition and show the corresponding Function composition step. For reference, here is the complete problem-question decomposition we came up with before.

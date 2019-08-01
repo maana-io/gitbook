@@ -8,7 +8,7 @@ Kinds are the term that Maana uses for the concepts used to build their Knowledg
 | :--- | :--- | :--- |
 | **Kinds** | Kinds are concepts | People, Ship, Well, Location, Invoice, etc. |
 | **Fields** | Properties within a concept | Fields related to People: name, age, gender, height, weight, etc. |
-| **Field Type** | Scalar or another Kind | Scalars: ID, String, Int, Float, Boolean. A list of all custom scalars can be found [here](../../reference-guide/technical-design-and-architecture/custom-scalars-supported-by-maana-q-platform.md). |
+| **Field Type** | Scalar or another Kind | Scalars: ID, String, Int, Float, Boolean. A list of all custom scalars can be found [here](../../../reference-guide/technical-design-and-architecture/custom-scalars-supported-by-maana-q-platform.md). |
 | **Instances** | Values for entities within a Kind | People Instance: Paul Smith, 19, male, 6'0", 200 lbs, etc. |
 | **Values** | A particular size, measure or number within an entity | Values for Paul: 19 yrs. old, 200 lbs., , 6'0", etc. |
 | **Relations** | Connections/dependencies that can be established between fields of different Kinds | Married to Linda Smith, related to family name Smith. |
@@ -88,11 +88,11 @@ Links are most often created automatically by Bots running within the Q platform
 
 For more details on Links, see
 
-{% page-ref page="../../reference-guide/technical-design-and-architecture/links.md" %}
+{% page-ref page="../../../reference-guide/technical-design-and-architecture/links.md" %}
 
 For more details on Bots, see
 
-{% page-ref page="connecting-bots-and-assistants.md" %}
+{% page-ref page="../connecting-bots-and-assistants.md" %}
 
 #### Inbound Relations
 

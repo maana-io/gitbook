@@ -24,8 +24,6 @@ In this step, you'll assemble the concepts and functions into a solution graph.
 
 Learn more about domain and functional modeling here:
 
-{% page-ref page="domain-and-function-modeling.md" %}
-
 ### 3. Connect to Data <a id="3-connect-to-data"></a>
 
 Here, you'll implement the computational layer that solves the original business objective.
