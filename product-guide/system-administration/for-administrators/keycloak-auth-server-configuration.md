@@ -310,7 +310,23 @@ Verify correct configuration of CLI client in keycloak server.
 
 If you plan on using a keycloak-supported identity provider such as Microsoft AD, please use the following link to learn about the process:
 
-[https://www.keycloak.org/docs/latest/server\_admin/index.html\#\_identity\_broker](https://www.keycloak.org/docs/latest/server_admin/index.html#_identity_broker)
+[https://www.keycloak.org/docs/latest/server\_admin/index.html\#\_identity\_broker](https://www.keycloak.org/docs/latest/server_admin/index.html#_identity_broker)  
+  
+**WARNING:** If you are using ONLY a third-party IDP for login and therefore have no use for the default username/password boxes displayed by Keycloak, it is recommended a custom 'theme' be used to remove access to these fields. This will also prevent a known issue with keycloak SSO logins where a user account can be put into a bad state by the following steps:
+
+1. NEW user \(one with no user instance stored in the keycloak server\) attempts to login through the user/pass credentials boxes, at which point this fails \(because they were supposed to use SSO login button\).
+2. Then in the SAME BROWSER TAB clicks the SSO signin
+3. The result is that a user is added to the keycloak server user list with no identity provider link.
+
+At this point the user account will be in a permanently broken state, requiring the admin to manually remove them from the user list so they can perform a clean login. 
+
+## Themes/Skins
+
+Appearance of keycloak login screens can be adjusted between default theme for keycloak and a custom theme uploaded to the keycloak server and displayed during user login. 
+
+Here is an external resource for this:
+
+[https://medium.com/@auscunningham/create-a-custom-theme-for-keycloak-8781207be604](https://medium.com/@auscunningham/create-a-custom-theme-for-keycloak-8781207be604)
 
 ## References
 
