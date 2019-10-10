@@ -146,12 +146,27 @@
   * [Performance & Scalability](product-guide/system-administration/performance-and-scalability.md)
   * [Security](product-guide/system-administration/security.md)
 
+## Training
+
+* [Basics](training/basics/README.md)
+  * [Introduction](training/basics/introduction.md)
+  * [Hello, world!](training/basics/hello-world.md)
+  * [Working with lists](training/basics/working-with-lists.md)
+* [Methodology](training/methodology/README.md)
+  * [Use Case Selection](training/methodology/use-case-selection.md)
+  * [Kickoff Session](training/methodology/kickoff-session.md)
+  * [Problem Questions and Decomposition](training/methodology/problem-questions-and-decomposition.md)
+  * [Collaboration](training/methodology/collaboration.md)
+* [Advanced](training/advanced/README.md)
+  * [Developer Steel Thread](training/advanced/developer-steel-thread.md)
+  * [Design Patterns](training/advanced/design-patterns.md)
+
 ## MAANA Q COOKBOOK
 
 * [About the Cookbook](maana-q-cookbook/about-the-cookbook.md)
 * [Basic Ingredients](maana-q-cookbook/basic-ingredients/README.md)
-  * [Loading Structured Data into Maana](maana-q-cookbook/basic-ingredients/loading-structured-data-into-maana/README.md)
-    * [Loading Structured Data through the CLI](maana-q-cookbook/basic-ingredients/loading-structured-data-into-maana/01b-loading-structured-data-through-the-cli.md)
+  * [Loading Structured Data into Maana](maana-q-cookbook/basic-ingredients/loading-structured-data-into-maana.md)
+  * [Loading Structured Data through the CLI](maana-q-cookbook/basic-ingredients/01b-loading-structured-data-through-the-cli.md)
   * [Loading Unstructured Data into Maana](maana-q-cookbook/basic-ingredients/loading-unstructured-data-into-maana.md)
   * [Curate Kinds](maana-q-cookbook/basic-ingredients/03-curate-kinds.md)
   * [Connect Kinds](maana-q-cookbook/basic-ingredients/04-connect-kinds.md)
@@ -164,6 +179,13 @@
   * [Publish Knowledge Services](maana-q-cookbook/basic-ingredients/11-publish-knowledge-services.md)
   * [Admin](maana-q-cookbook/basic-ingredients/12-admin.md)
   * [Solution Folder Structure](maana-q-cookbook/basic-ingredients/solution-folder-structure.md)
+  * [How do I deploy my dockerized service to AKS?](maana-q-cookbook/basic-ingredients/how-do-i-deploy-my-dockerized-service-to-aks.md)
+  * [Where can I find common Kinds for reuse and interop?](maana-q-cookbook/basic-ingredients/where-can-i-find-common-kinds-for-reuse-and-interop.md)
+  * [What is best practice for shared state across multiple knowledge services?](maana-q-cookbook/basic-ingredients/what-is-best-practice-for-shared-state-across-multiple-knowledge-services.md)
+  * [How can I specialize another service's Kinds?](maana-q-cookbook/basic-ingredients/how-can-i-specialize-another-services-kinds-1.md)
+  * [What is the tool you use to hit GraphQL endpoints locally?](maana-q-cookbook/basic-ingredients/what-is-the-tool-you-use-to-hit-graphql-endpoints-locally.md)
+  * [Is there a GraphQL bandwidth limit?](maana-q-cookbook/basic-ingredients/is-there-a-graphql-bandwidth-limit.md)
+  * [What are the best practices for tagging?](maana-q-cookbook/basic-ingredients/what-are-the-best-practices-for-tagging.md)
 * [Advanced Recipes](maana-q-cookbook/advanced-recipes/README.md)
   * [Meta-Learning Tutorial](maana-q-cookbook/advanced-recipes/meta-learning-tutorial/README.md)
     * [Meta-Learning: Build classifier and classify data](maana-q-cookbook/advanced-recipes/meta-learning-tutorial/metalearning-build-classifier-and-classify-data.md)
@@ -180,22 +202,6 @@
     * [Fact Recognition Bot Tutorial](maana-q-cookbook/advanced-recipes/fact-recognition-tutorials/creating-a-fact-recognition-bot.md)
   * [Creating a Managed Graph from a GraphQL Definition: Drilling Problems](maana-q-cookbook/advanced-recipes/creating-a-managed-graph-from-a-graphql-definition-drilling-problems.md)
   * [Creating a Generic Graph](maana-q-cookbook/advanced-recipes/creating-a-generic-graph.md)
-
-## REFERENCE SECTION
-
-* [About GraphQL](reference-section/about-graphql.md)
-* [Report A Bug](reference-section/report-a-bug.md)
-* [Maana FAQs](reference-section/maana-faqs/README.md)
-  * [What kind of questions can I ask here?](reference-section/maana-faqs/what-kind-of-questions-can-i-ask-here.md)
-  * [How can I use Slack and Stackoverflow?](reference-section/maana-faqs/how-can-i-use-slack-and-stackoverflow.md)
-  * [How do I deploy my dockerized service to AKS?](reference-section/maana-faqs/how-do-i-deploy-my-dockerized-service-to-aks.md)
-  * [Where can I find common Kinds for reuse and interop?](reference-section/maana-faqs/where-can-i-find-common-kinds-for-reuse-and-interop.md)
-  * [What is best practice for shared state across multiple knowledge services?](reference-section/maana-faqs/what-is-best-practice-for-shared-state-across-multiple-knowledge-services.md)
-  * [How can I specialize another service's Kinds?](reference-section/maana-faqs/how-can-i-specialize-another-services-kinds-1.md)
-  * [What is the tool you use to hit GraphQL endpoints locally?](reference-section/maana-faqs/what-is-the-tool-you-use-to-hit-graphql-endpoints-locally.md)
-  * [Is there a GraphQL bandwidth limit?](reference-section/maana-faqs/is-there-a-graphql-bandwidth-limit.md)
-  * [Will public Stack Overflow users be able to see my Team?](reference-section/maana-faqs/will-public-stack-overflow-users-be-able-to-see-my-team.md)
-  * [What are the best practices for tagging?](reference-section/maana-faqs/what-are-the-best-practices-for-tagging.md)
 
 ## Licenses
 
