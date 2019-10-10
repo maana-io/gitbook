@@ -133,7 +133,6 @@
     * [File Processing](product-guide/reference-guide/technical-design-and-architecture/file-processing.md)
     * [Custom scalars supported by Maana Q](product-guide/reference-guide/technical-design-and-architecture/custom-scalars-supported-by-maana-q-platform.md)
   * [Error Guide](product-guide/reference-guide/error-guide.md)
-* [Glossary](product-guide/glossary.md)
 * [System Administration](product-guide/system-administration/README.md)
   * [Administrator's Guide](product-guide/system-administration/for-administrators/README.md)
     * [Service Startup, Stabilizing, Backup & Restore](product-guide/system-administration/for-administrators/service-startup-stabilizing-backup-and-restore.md)
@@ -145,6 +144,7 @@
     * [Upgrading the Platform Configuration](product-guide/system-administration/for-administrators/upgrading-the-platform-configuration.md)
   * [Performance & Scalability](product-guide/system-administration/performance-and-scalability.md)
   * [Security](product-guide/system-administration/security.md)
+* [Glossary](product-guide/glossary.md)
 
 ## Training
 
