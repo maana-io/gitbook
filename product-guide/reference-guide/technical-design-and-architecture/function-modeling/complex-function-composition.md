@@ -8,7 +8,7 @@
 
 For example: Get the distance between the depot \(location\) and the closest well. Then, get the closest well, and then get the distance from the depot of that well.
 
-![](../../../../.gitbook/assets/image%20%2874%29.png)
+![](../../../../.gitbook/assets/image%20%2886%29.png)
 
 ## Making a more complicated function implementation
 
