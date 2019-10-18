@@ -7,7 +7,7 @@ A quick overview of all sections in the product guide:
   A short summary and description of Q's new features and capabilities   
 
 * \*\*\*\*[**Getting Started**](getting-started-with-maana/) ****A quick start guide to using Maana Q. Learn the basics of the platform via a simple walkthrough. 
-* \*\*\*\*[**Role Guides** ](user-education-audience-and-organization-of-contents/)Provides a graphic explanation of how each Role \(Analyst, Architect, Developer, Data Scientist, and Tester\) factors in to the Maana SDLC, and also includes a series of Tabs with links pointing to each Role's most essential resources throughout the User Education documentation   
+* \*\*\*\*[**Role Guides** ]()Provides a graphic explanation of how each Role \(Analyst, Architect, Developer, Data Scientist, and Tester\) factors in to the Maana SDLC, and also includes a series of Tabs with links pointing to each Role's most essential resources throughout the User Education documentation   
 * \*\*\*\*[**Reference Guide** ](reference-guide/)The most comprehensive publicly available inventory of Mana's Q Product, including detailed documentation on:
   * Leveraging Microservices
   * Exploring the Knowledge Portal
