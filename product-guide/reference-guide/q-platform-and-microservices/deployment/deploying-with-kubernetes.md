@@ -4,12 +4,6 @@
 
 This document provides instructions for how to deploy a graphQL microservice using Kubernetes and then register it with the Maana Q Catalog service. These steps should be used whenever you wish to make a new service available for use within the Maana Q platform.
 
-## Using the CLI
-
-For typical microservices, i.e., those with a single Docker image, the Maana Q CLI offers a simplified command, `mdeploy`, to streamline deployments.  See the [documentation](https://github.com/maana-io/q-cli#mdeploy) for details.
-
-The sections below are for more advanced users that want full control over the deployment process or have special circumstances.  
-
 ## BEFORE YOU BEGIN
 
 This section describes a collection of prerequisites which you will need to complete before deploying a new microservice. These prerequisites usually will need to be performed only once.
@@ -117,29 +111,6 @@ You should shut down your service when you are done using it. This prevents you 
 kubectl delete svc $MY_SVC_NAME
 # Stop the load balancer
 kubectl delete deployment $MY_SVC_NAME
-```
-
-### How Do I Deploy a Multi-Container Service \(Docker-Compose\)?
-
-```text
-# Docker
-docker-compose -f docker-compose-prod.yml up --no-start 
-docker tag maana-q-lambda-server services.azurecr.io/maana-q-lambda-server:v1
-docker push services.azurecr.io/maana-q-lambda-server
-
-# Cleanup previous kubectl
-kubectl delete deployment maana-q-lambda-server
-kubectl delete service maana-q-lambda-server-lb
-
-# Convert compose into suitable K8 manifests
-kompose convert -f docker-compose-prod.yml -o kompose
-
-# Deploy
-kubectl apply -f kompose
-kubectl expose deployment maana-q-lambda-server --type=LoadBalancer --port=4000  --target-port=4000 --name=maana-q-lambda-server-lb
-
-# Cleanup
-rm kompose
 ```
 
 ### How Do I Register My Service With the Maana Catalog?
