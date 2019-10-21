@@ -2,7 +2,7 @@
 description: 'Short Intro to Q. Basic operations of Q - Logging in, creating a workspace'
 ---
 
-# Introduction
+# Appendix
 
 ![](../../.gitbook/assets/image%20%2833%29.png)
 

@@ -152,7 +152,7 @@
   * [Maana Cheat Sheet](training/outline/maana-cheat-sheet.md)
 * [Basics](training/basics/README.md)
   * [Basic Orientation](training/basics/basic-orientation.md)
-  * [Introduction](training/basics/introduction.md)
+  * [Appendix](training/basics/introduction.md)
   * [Hello, world!](training/basics/hello-world.md)
   * [Working with lists](training/basics/working-with-lists.md)
 * [Methodology](training/methodology/README.md)
