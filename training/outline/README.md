@@ -79,7 +79,8 @@
         for using Azure services like maana-azure-speech-to-text, maana-azure-translation)</td>
     </tr>
     <tr>
-      <td style="text-align:left">Top down approach</td>
+      <td style="text-align:left"><a href="../methodology/problem-questions-and-decomposition.md">Top down approach</a>
+      </td>
       <td style="text-align:left">Articulate the key element of Maana&apos;s methodology, i.e., Top Down
         Problem Decomposition</td>
       <td style="text-align:left">&#x2022; Problem decompositionTop down thinking</td>
