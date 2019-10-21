@@ -15,12 +15,6 @@
       </th>
       <th style="text-align:left"><b>Material Covered</b>
       </th>
-      <th style="text-align:left">
-        <p><b> Automated </b>
-        </p>
-        <p><b>  Exercise</b>
-        </p>
-      </th>
     </tr>
   </thead>
   <tbody>
@@ -30,7 +24,6 @@
       <td style="text-align:left">Basic product orientation This lesson will teach you Maana terminology
         and how to navigate through the software</td>
       <td style="text-align:left">Basic operation of Q - Logging in, creating a workspace</td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="../basics/hello-world.md">Hello World</a>
@@ -42,8 +35,6 @@
       </td>
       <td style="text-align:left">&#x2022; What is a workspace? &#x2022; Creating/renaming function &#x2022;
         Adding function field &#x2022; Importing a service to a workspace</td>
-      <td
-      style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="../basics/using-kinds-and-function-to-build-a-knowledge-graph.md">Computational Knowledge Graph</a>
@@ -55,8 +46,6 @@
       </td>
       <td style="text-align:left">Introduction to kinds Functional programming 101 &#x2022; inputs and outputs
         &#x2022; side effects and pure functions &#x2022; Compositionality</td>
-      <td
-      style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="../basics/working-with-lists.md">Working with Lists</a>
@@ -69,17 +58,25 @@
       <td style="text-align:left">&#x2022; Introduction to the concept of &quot;map&quot; in functional
         programming &#x2022; Automatic caching &#x2022; Limitation of mapping &#x2022;
         Zipping</td>
-      <td style="text-align:left">Yes</td>
     </tr>
     <tr>
-      <td style="text-align:left">How to build a simple NLP engine in 5 minutes</td>
+      <td style="text-align:left"><a href="../basics/microservices-examples/nlp.md">NLP Example</a>
+      </td>
       <td style="text-align:left">
         <p>Learn how to compose functions from multiple microservices. We&apos;ll
           build a model that will extract key entities from a textual source.</p>
         <p>This lesson will recap everything learned so far</p>
       </td>
       <td style="text-align:left">Using helper utility functions like word counting</td>
-      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="../basics/microservices-examples/audio-translation.md">Audio translation</a>
+      </td>
+      <td style="text-align:left">Audio transcription and translation (using maana-media, maana-audio, example
+        for using Azure services like maana-azure-speech-to-text, maana-azure-translation)</td>
+      <td
+      style="text-align:left">Audio transcription and translation (using maana-media, maana-audio, example
+        for using Azure services like maana-azure-speech-to-text, maana-azure-translation)</td>
     </tr>
     <tr>
       <td style="text-align:left">Knowledge Modeling Patterns</td>
@@ -88,23 +85,11 @@
       <td style="text-align:left">&#x2022; Problem decompositionTop down thinking &#x2022; Reuse &#x2022;
         Naming convention &#x2022; Combining concepts Encapsulation &#x2022; Specialization
         &#x2022; Modeling inheritance</td>
-      <td style="text-align:left">Yes</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Audio translation</td>
-      <td style="text-align:left">Audio transcription and translation (using maana-media, maana-audio, example
-        for using Azure services like maana-azure-speech-to-text, maana-azure-translation)</td>
-      <td
-      style="text-align:left">Audio transcription and translation (using maana-media, maana-audio, example
-        for using Azure services like maana-azure-speech-to-text, maana-azure-translation)</td>
-        <td
-        style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Constraint satisfaction</td>
       <td style="text-align:left">Build a constraint satisfaction model</td>
       <td style="text-align:left">&#x2022; Using templates &#x2022; High order patterns</td>
-      <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Learning</td>
@@ -113,7 +98,6 @@
         solution that improves over time</td>
       <td style="text-align:left">&#x2022; What is ORDL? &#x2022; What are examples of observation, reasoning,
         decision and learning functions?</td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">Collaboration</td>
@@ -126,7 +110,6 @@
       <td style="text-align:left">&#x2022; Team collaboration &#x2022; Using workspaces to break down areas
         of development &#x2022; The role of the Knowledge Architect &#x2022; Function
         interfaces as contracts</td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">Developer Steel Thread</td>
@@ -138,7 +121,6 @@
       </td>
       <td style="text-align:left">Maana CLI - mcreate, mdeploy Basic Kubernetes concepts Development pattern
         for creating GraphQL wrapping services for existing libraries</td>
-      <td style="text-align:left">No</td>
     </tr>
   </tbody>
 </table>
