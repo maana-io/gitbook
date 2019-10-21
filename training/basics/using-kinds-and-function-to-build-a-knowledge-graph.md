@@ -1,4 +1,8 @@
-# Using Kinds and Function to build a knowledge graph
+---
+description: Computational Knowledge Graph
+---
+
+# CKG
 
 Major concepts:
 

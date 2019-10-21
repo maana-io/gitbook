@@ -46,7 +46,8 @@
       style="text-align:left">Yes</td>
     </tr>
     <tr>
-      <td style="text-align:left">Computational Knowledge Graph</td>
+      <td style="text-align:left"><a href="../basics/using-kinds-and-function-to-build-a-knowledge-graph.md">Computational Knowledge Graph</a>
+      </td>
       <td style="text-align:left">
         <p>Create a function composition using kinds</p>
         <p>With a hands on exercise, we demonstrate the computation knowledge graph,
@@ -58,7 +59,8 @@
       style="text-align:left">Yes</td>
     </tr>
     <tr>
-      <td style="text-align:left">Working with Lists</td>
+      <td style="text-align:left"><a href="../basics/working-with-lists.md">Working with Lists</a>
+      </td>
       <td style="text-align:left">It is very often that we have to perform a certain operation on multiple
         items. To simplify the process of parallel computing, Maana Q allows you
         to execute functions on multiple items while efficiently caching the result.
