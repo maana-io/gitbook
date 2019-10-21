@@ -11,6 +11,7 @@ description: Computational Knowledge Graph
 * [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
 * [ ] Case description \(**pending**\)
 * [ ] Revisit content below \(**pending**\)
+* [ ] Possibly add here use case shared by Logan at Show and Tell \(google maps visualization of crime vs. real estate in Sacramento - deciding where to buy property looking at the map\). Need to check if assistant service that is needed can be deployed to cstraining01 \(**pending**\)
 
 ---------------------------------------------------------------------------------------------------------------
 
