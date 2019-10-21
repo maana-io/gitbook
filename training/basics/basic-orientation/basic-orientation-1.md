@@ -4,7 +4,11 @@ description: 'Short Intro to Q. Basic operations of Q - Logging in, creating a w
 
 # Appendix
 
+---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
+We might revisit this if time allows, check with Donald / Roie. 
+
+---------------------------------------------------------------------------------------------------------------
 
 ![](../../../.gitbook/assets/image%20%2833%29.png)
 
