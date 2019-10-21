@@ -79,12 +79,17 @@
         for using Azure services like maana-azure-speech-to-text, maana-azure-translation)</td>
     </tr>
     <tr>
+      <td style="text-align:left">Top down approach</td>
+      <td style="text-align:left">Articulate the key element of Maana&apos;s methodology, i.e., Top Down
+        Problem Decomposition</td>
+      <td style="text-align:left">&#x2022; Problem decompositionTop down thinking</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Knowledge Modeling Patterns</td>
       <td style="text-align:left">Learn how to recognize and capture common patterns, such as concept specialization,
         enumeration</td>
-      <td style="text-align:left">&#x2022; Problem decompositionTop down thinking &#x2022; Reuse &#x2022;
-        Naming convention &#x2022; Combining concepts Encapsulation &#x2022; Specialization
-        &#x2022; Modeling inheritance</td>
+      <td style="text-align:left">&#x2022; Reuse &#x2022; Naming convention &#x2022; Combining concepts
+        Encapsulation &#x2022; Specialization &#x2022; Modeling inheritance</td>
     </tr>
     <tr>
       <td style="text-align:left">Constraint satisfaction</td>
