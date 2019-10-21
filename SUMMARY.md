@@ -163,7 +163,7 @@
 * [Methodology](training/methodology/README.md)
   * [Use Case Selection](training/methodology/use-case-selection.md)
   * [Kickoff Session](training/methodology/kickoff-session.md)
-  * [Problem Questions and Decomposition](training/methodology/problem-questions-and-decomposition.md)
+  * [Top Down Approach](training/methodology/problem-questions-and-decomposition.md)
   * [Collaboration](training/methodology/collaboration.md)
 * [Advanced](training/advanced/README.md)
   * [Developer Steel Thread](training/advanced/developer-steel-thread.md)
