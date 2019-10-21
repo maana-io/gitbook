@@ -1,16 +1,25 @@
 # Outline
 
+## Q Training Experience at a Glance
+
 ![Maana Q Training at a Glance](../../.gitbook/assets/image%20%2891%29.png)
+
+## Detailed Training Agenda
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Lesson Name</th>
-      <th style="text-align:left">Goal</th>
-      <th style="text-align:left">Material Covered</th>
+      <th style="text-align:left"><b>Lesson Name</b>
+      </th>
+      <th style="text-align:left"><b>Goal</b>
+      </th>
+      <th style="text-align:left"><b>Material Covered</b>
+      </th>
       <th style="text-align:left">
-        <p>Automated</p>
-        <p>Exercise</p>
+        <p><b> Automated </b>
+        </p>
+        <p><b>  Exercise</b>
+        </p>
       </th>
     </tr>
   </thead>
