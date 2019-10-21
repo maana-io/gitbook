@@ -8,7 +8,3 @@ The System Information Page contains the versions of all of the running componen
 
 Please include these when [reporting a bug](../../reference-section/report-a-bug.md).
 
-
-
-
-

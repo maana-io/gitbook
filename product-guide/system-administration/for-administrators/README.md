@@ -1,6 +1,6 @@
 # Administrator's Guide
 
-This System Administrator's Guide documents relevant information such as: the deployment, configuration, and administration of Maana Knowledge Platform. It is meant for  administrators with a basic understanding of the system.
+This System Administrator's Guide documents relevant information such as: the deployment, configuration, and administration of Maana Knowledge Platform. It is meant for administrators with a basic understanding of the system.
 
 ![System Administrator&apos;s Role](../../../.gitbook/assets/image%20%2861%29.png)
 

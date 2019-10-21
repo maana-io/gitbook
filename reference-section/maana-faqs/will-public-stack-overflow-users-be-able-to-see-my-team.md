@@ -2,7 +2,7 @@
 
 ## Question
 
-#### Will public Stack Overflow users be able to see my Team?
+### Will public Stack Overflow users be able to see my Team?
 
 Stack Overflow for Teams is intended to be a private space for your team to ask questions without worry it'll be made public. But you might still have some questions about how it works.
 

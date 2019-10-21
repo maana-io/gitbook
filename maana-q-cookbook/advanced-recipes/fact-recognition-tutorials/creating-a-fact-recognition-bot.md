@@ -21,9 +21,8 @@ The result should look like that in the figure below.
 
 ![](../../../.gitbook/assets/image%20%2856%29.png)
 
-7. The triples are extracted from the kind specified by 'kindId' in the provided fieldName and then stored in the kind 'PatternMatchResult'.
-
-8. Search for the kind PatternMatchResult to see the entries from the extraction.
+1. The triples are extracted from the kind specified by 'kindId' in the provided fieldName and then stored in the kind 'PatternMatchResult'.
+2. Search for the kind PatternMatchResult to see the entries from the extraction.
 
 ![](../../../.gitbook/assets/image%20%2857%29.png)
 
@@ -45,7 +44,7 @@ The Pattern kind \(which can have any name\) can be created manually.
 
 There will be a set of functions for every Kind in your workspace. These functions can be used to manipulate the Kinds.
 
-3. Drag the addPattern function onto the workspace. In this case set predicateLemmas to "buy" and set subject and object to "ANY" as below.
+1. Drag the addPattern function onto the workspace. In this case set predicateLemmas to "buy" and set subject and object to "ANY" as below.
 
 ![](../../../.gitbook/assets/image%20%2840%29.png)
 
@@ -57,29 +56,26 @@ Remember, to set the predicateLemmas to a relation/relations that you expect to 
 
 #### Creating the kind to extract data from <a id="creating-the-kind-to-extract-data-from"></a>
 
-4. Next, upload a csv file where at least one of the fields contains text with relations in it - or you can create a kind manually and add the text "Alex bought a bike".
-
-5. Next create a kind containing the text you wish to extract - call it "ThisKind". It should have a field called "Text", and should have an instance with the the value "Alex bought a bike".
+1. Next, upload a csv file where at least one of the fields contains text with relations in it - or you can create a kind manually and add the text "Alex bought a bike".
+2. Next create a kind containing the text you wish to extract - call it "ThisKind". It should have a field called "Text", and should have an instance with the the value "Alex bought a bike".
 
 ![](../../../.gitbook/assets/image%20%2864%29.png)
 
 Add text to the "ThisKind" kind with the addThisKind function.
 
-6. After you have have created the 2 kinds you can run the fact recognition bot.
+1. After you have have created the 2 kinds you can run the fact recognition bot.
 
 #### Running extractByPattern <a id="running-extractbypattern"></a>
 
-7. First, search for the "Maana Fact Recognition Bot" and drag it to the services inventory.
-
-8. Drag the extractByPattern function onto the workspace.
-
-1. Use the extractByPattern function, the fieldName is "Text", but that should be the name of the field containing the text you want to extract.\) Notice that below, kind ID's are used and not names. "kindId" refers to the ID for "ThisKind" and "patternID" refers to the ID for "Pattern".
+1. First, search for the "Maana Fact Recognition Bot" and drag it to the services inventory.
+2. Drag the extractByPattern function onto the workspace.
+3. Use the extractByPattern function, the fieldName is "Text", but that should be the name of the field containing the text you want to extract.\) Notice that below, kind ID's are used and not names. "kindId" refers to the ID for "ThisKind" and "patternID" refers to the ID for "Pattern".
 
 ![](../../../.gitbook/assets/image%20%2842%29.png)
 
 Result of running the extractByPattern function on the "Pattern" and "ThisKind" kinds
 
-2. This will extract facts from the kind "ThisKind" in field "Text" using the patterns defined in "Pattern". The results of the query will be a bot action. The extracted facts will be stored in the kind "PatternMatchResults" and links back to "ExtractTestKind" and "TriplePatterns" will also be generated.
+1. This will extract facts from the kind "ThisKind" in field "Text" using the patterns defined in "Pattern". The results of the query will be a bot action. The extracted facts will be stored in the kind "PatternMatchResults" and links back to "ExtractTestKind" and "TriplePatterns" will also be generated.
 
 #### How to see the results? <a id="how-to-see-the-results"></a>
 
@@ -105,7 +101,7 @@ The example sentence is compared to a data source and results are extracted and 
 extractByExample(kindId: ID, fieldId: ID, storageKindId: ID, fieldName: String, storageKindName: String, kindName: String, mapping: [CorrespondenceInput], example: String): [ID]
 ```
 
-2. Instead of an example, mapping and storageKind a "exampleKind" is provided which contains the same information. The exampleKind contains a list of examples, their mappings and the target kind. The results are stored in their respective kinds:
+1. Instead of an example, mapping and storageKind a "exampleKind" is provided which contains the same information. The exampleKind contains a list of examples, their mappings and the target kind. The results are stored in their respective kinds:
 
 ```text
 extractByExampleKind(kindId: ID, fieldId: ID, exampleKindId: ID, kindName: String, fieldName: String, exampleKindName: String): [ID]
@@ -116,17 +112,17 @@ In order to experiment with these tools:
 1. Upload the file simpleFacts.csv \(attached under the heading of this section\) into Maana and store the Id of the associated Kind it creates.
 2. Create a kind to store the results in, name this kind "PurchaseEvent" and it should have the schema "{name : "STRING", object : "STRING", price : "STRING", location : "STRING"}.
 
-### Mutation 1  <a id="mutation-1"></a>
+### Mutation 1 <a id="mutation-1"></a>
 
 With those two kinds created we can perform the first query and see the results. 1. Below the kindId should be the Id for "SimplefactsCSV" and the storageKindId should be the id for "PurchaseEvent".
 
-2. In this query, the mapping is specified as an list of name/value GraphQL objects:
+1. In this query, the mapping is specified as an list of name/value GraphQL objects:
 
 ```text
 mutation a {extractByExample(  kindId: "bbcb2d1f-1c0c-4d81-adff-39de27d8fc52", #your SimplefactsCSV Kind Id    fieldName : "Text",    mapping : [      {name : "name", value : "Carl"},      {name : "object", value : "fish"},      {name : "price", value : "5 dollars"},      { name : "location", value : "store"}      ],    example : "Carl bought a fish for 5 dollars at the store",    storageKindId : "e81846a4-ca93-4947-b8f2-57fb92ecb957" #your PurchaseEvent Kind Id    )}
 ```
 
-3. The result should be several entries in the "PurchaseEvent" kind - as below:
+1. The result should be several entries in the "PurchaseEvent" kind - as below:
 
 ![](../../../.gitbook/assets/image%20%2852%29.png)
 
@@ -138,13 +134,13 @@ In order to perform the second mutation you need to create an additional kind to
 {  example :  STRING,  mapping : STRING,  required : [STRING],  kind : STRING,  kindId : STRING}
 ```
 
-2. Create an instance of the "exampleContainer" with the following mutation below, where kindId is the id of the purchaseEvent kind:
+1. Create an instance of the "exampleContainer" with the following mutation below, where kindId is the id of the purchaseEvent kind:
 
 ```text
 mutation e {addexampleContainer(  input: {    example: "Carl bought a fish for 5 dollars at the store.",    mapping : "{\"name\" : \"Carl\", \"object\" : \"fish\", \"price\" : \"5 dollars\", \"location\" : \"store\"}", #This has to be a serialized (stringified) JSON    required : ["name","object"],    kindId : "2215a0af-99de-49af-8892-a518cb77e17f" #Your purchaseEvent Kind ID    }    )}
 ```
 
-3. After the instance is created, the following query can be performed: Upload a new file [otherFacts.csv](https://github.com/maana-io/q-tutorials/blob/master/maana-fact-recognition-bot/otherFacts.csv) and use the kindId generated there, in the mutation below \(if you do not use a new kind, the same facts will be extracted and no new entries will be added\):
+1. After the instance is created, the following query can be performed: Upload a new file [otherFacts.csv](https://github.com/maana-io/q-tutorials/blob/master/maana-fact-recognition-bot/otherFacts.csv) and use the kindId generated there, in the mutation below \(if you do not use a new kind, the same facts will be extracted and no new entries will be added\):
 
 ```text
 mutation {  extractByExampleKind(    kindId : "bbcb2d1f-1c0c-4d81-adff-39de27d8fc52", #your otherFactscsv Kind ID    exampleKindId : "5f006487-74a5-4797-beba-17d0a5cb5a5e", #your exampleContainer Kind ID    fieldName : "text"    )    }
@@ -154,7 +150,7 @@ mutation {  extractByExampleKind(    kindId : "bbcb2d1f-1c0c-4d81-adff-39de27d8f
 
 Result after the extractByExampleKind function is run.
 
-4. The result will be several entries in the "PurchaseEvent" kind. These can be viewed as below:
+1. The result will be several entries in the "PurchaseEvent" kind. These can be viewed as below:
 
 ![](../../../.gitbook/assets/image%20%2894%29.png)
 

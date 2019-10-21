@@ -2,7 +2,7 @@
 
 ## Question
 
-#### Question about using Stackoverflow
+### Question about using Stackoverflow
 
 How do I ask a question in Slack and have it appear in Slackoverflow?
 

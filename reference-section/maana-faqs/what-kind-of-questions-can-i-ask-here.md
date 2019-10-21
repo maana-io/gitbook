@@ -2,7 +2,7 @@
 
 ## Question
 
-#### What kind of questions can I ask here?
+### What kind of questions can I ask here?
 
 Stack Overflow has a fairly strict standard for [on topic questions](https://stackoverflow.com/help/on-topic). Do those standards apply to this Team?
 

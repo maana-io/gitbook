@@ -4,9 +4,9 @@
 
 Logs on the Maana Q platform are aggregated to a Graylog stack running in the cluster. This provides a wholistic view of the platform, rather than a snapshot view of a single service or container.
 
-### Accessing the logs  <a id="accessing-the-logs"></a>
+### Accessing the logs <a id="accessing-the-logs"></a>
 
-For Azure clusters, access Graylog via https://{host}:8443/graylog/ui/.
+For Azure clusters, access Graylog via [https://{host}:8443/graylog/ui/](https://{host}:8443/graylog/ui/).
 
 * Example: [https://latest.knowledge.maana.io:8443/graylog/ui/](https://latest.knowledge.maana.io:8443/graylog/ui/)​
 * Credentials \(recommend changing the default\): admin:admin
@@ -112,6 +112,6 @@ app.use(
 )
 ```
 
-[  
+[    
 ](https://maana-ue.gitbook.io/product/role-guide/administrator-guide/service-startup-stabilizing-and-metrics)
 

@@ -120,7 +120,7 @@ You can use your service in the Maana Q portal, however you will need to registe
 * Log into the Maana Q Portal
 * Navigate to the Admin panel
 * Click on the "Add" button on the bottom of the page.
-* Fill out the name and endpoint fields with the name and IPAddress \(including port number\) for your service.  For example:
+* Fill out the name and endpoint fields with the name and IPAddress \(including port number\) for your service. For example:
 
   ```ruby
   Name : My Wonderful Service

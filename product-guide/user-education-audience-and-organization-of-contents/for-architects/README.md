@@ -12,9 +12,5 @@ Integration Architect
 
 Enterprise Architect
 
-
-
 ![NEED TO UPDATE ARCHITECT ROLE](https://maanaimages.blob.core.windows.net/maana-q-documentation/a3.png)
-
-
 

@@ -2,7 +2,7 @@
 
 ## About this Tutorial
 
-The entity extractor calls the [NER service](../../product-guide/reference-guide/q-platform-and-microservices/maana-platform-services/named-entity-recognition-ner.md), but allows the user to specify a kind as input. The results are stored in kinds and [links](../../product-guide/reference-guide/technical-design-and-architecture/links.md). The following mutation uses extractAndLink to both extract, store data and create links. 
+The entity extractor calls the [NER service](../../product-guide/reference-guide/q-platform-and-microservices/maana-platform-services/named-entity-recognition-ner.md), but allows the user to specify a kind as input. The results are stored in kinds and [links](../../product-guide/reference-guide/technical-design-and-architecture/links.md). The following mutation uses extractAndLink to both extract, store data and create links.
 
 {% file src="../../.gitbook/assets/drillingreport \(1\).csv" %}
 
@@ -17,11 +17,11 @@ The entity extractor calls the [NER service](../../product-guide/reference-guide
 
 ![](../../.gitbook/assets/image%20%2839%29.png)
 
-7. After the BotAction has completed, the kind will now have several "hasEntity" links that link to the kinds where the entities are stored:
+1. After the BotAction has completed, the kind will now have several "hasEntity" links that link to the kinds where the entities are stored:
 
 ![](../../.gitbook/assets/image%20%2825%29.png)
 
-8. Clicking on the PhysicalQuantity link to produce the Physical Quantity kind, and then making sure the Physical Quantity kind is selected, the following view should be visible - showing the extracted Physical Quantity data.
+1. Clicking on the PhysicalQuantity link to produce the Physical Quantity kind, and then making sure the Physical Quantity kind is selected, the following view should be visible - showing the extracted Physical Quantity data.
 
 ![](../../.gitbook/assets/image%20%2831%29.png)
 

@@ -35,5 +35,3 @@ Once the service is saved, the snack will change to say it has been saved.
 Saving a service can take some time. The service schema must be introspected and Kinds and Functions created from it. While navigation away from the page is possible while the service is saving, the service and its Kinds and Functions will not be available in Q until the service has finished saving.
 {% endhint %}
 
-
-

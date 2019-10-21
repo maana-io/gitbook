@@ -6,5 +6,3 @@ In the graphic below and in the pages that follow, you will find Role specific i
 
 ![NEED TO UPDATE ARCHITECT ROLE](https://maanaimages.blob.core.windows.net/maana-q-documentation/a1.png)
 
-
-

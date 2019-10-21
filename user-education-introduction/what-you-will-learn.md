@@ -8,7 +8,7 @@
 4. **Learn** from the outcome of the decision in order to make better recommendations.
 5. Repeat from step 1
 
-Formally known as the ORDL loop, the above sequence of process steps provides a general framework for problem solving and subsequent solution development. 
+Formally known as the ORDL loop, the above sequence of process steps provides a general framework for problem solving and subsequent solution development.
 
 ## Problem-Question \(PQ\) Decomposition
 
