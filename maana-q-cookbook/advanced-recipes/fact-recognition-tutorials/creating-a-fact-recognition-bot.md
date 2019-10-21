@@ -152,7 +152,7 @@ Result after the extractByExampleKind function is run.
 
 1. The result will be several entries in the "PurchaseEvent" kind. These can be viewed as below:
 
-![](../../../.gitbook/assets/image%20%2894%29.png)
+![](../../../.gitbook/assets/image%20%2895%29.png)
 
 Result shown in the PurchaseEvent kind.
 
