@@ -148,7 +148,8 @@
 
 ## Training
 
-* [Outline](training/outline.md)
+* [Outline](training/outline/README.md)
+  * [Maana Cheat Sheet](training/outline/maana-cheat-sheet.md)
 * [Basics](training/basics/README.md)
   * [Introduction](training/basics/introduction.md)
   * [Hello, world!](training/basics/hello-world.md)
