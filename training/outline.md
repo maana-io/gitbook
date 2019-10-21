@@ -98,15 +98,16 @@
     <tr>
       <td style="text-align:left"><a href="methodology/collaboration.md">Collaboration</a>
       </td>
-      <td style="text-align:left">
-        <p>Learn how team members might collaborate when building a solution on Q.
-          How is work defined? How is testing done? How does integration take place?</p>
-        <p>Learn how team members might collaborate when building a solution on Q.
-          How is work defined? How is testing done? How does integration take place</p>
+      <td style="text-align:left"><em>Learn how team members might collaborate when building a solution on Q.</em>
       </td>
       <td style="text-align:left">&#x2022; Team collaboration &#x2022; Using workspaces to break down areas
         of development &#x2022; The role of the Knowledge Architect &#x2022; Function
         interfaces as contracts</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="methodology/kickoff-session.md">Project Execution</a>

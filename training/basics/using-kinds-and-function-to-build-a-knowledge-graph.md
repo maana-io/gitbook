@@ -4,6 +4,15 @@ description: Computational Knowledge Graph
 
 # CKG
 
+---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
+
+* [x] Power Point Slides \(**not needed**\)
+* [ ] Workspaces \(can use **Function Graph from News / Wiki Analysis** [https://lastknowngood.knowledge.maana.io/workspace/f3a0dae1-e7ab-4a08-8511-8f24bc6e6974](https://lastknowngood.knowledge.maana.io/workspace/f3a0dae1-e7ab-4a08-8511-8f24bc6e6974), to explain Functions, **Domain Model** to explain the concept of Kinds is **pending**\)
+* [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
+* [ ] Case description \(**pending**\)
+
+---------------------------------------------------------------------------------------------------------------
+
 Major concepts:
 
 **Kind** - represents a specific interpretation of a concept which have a collection of fields used to describe their attributes. Ex: a kind called ‘City’ may consist of name, latitude, longitude 
