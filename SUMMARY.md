@@ -148,9 +148,7 @@
 
 ## Training
 
-* [Outline](training/outline/README.md)
-  * [Maana Cheat Sheet](training/outline/maana-cheat-sheet.md)
-* [Untitled](training/untitled.md)
+* [Outline](training/outline.md)
 * [Basics](training/basics/README.md)
   * [Orientation](training/basics/basic-orientation/README.md)
     * [Appendix](training/basics/basic-orientation/basic-orientation-1.md)
@@ -160,13 +158,16 @@
   * [Microservices Examples](training/basics/microservices-examples/README.md)
     * [NLP](training/basics/microservices-examples/nlp.md)
     * [Audio Translation](training/basics/microservices-examples/audio-translation.md)
+  * [Maana Cheat Sheet](training/basics/maana-cheat-sheet.md)
 * [Methodology](training/methodology/README.md)
   * [Use Case Selection](training/methodology/use-case-selection.md)
-  * [Kickoff Session](training/methodology/kickoff-session.md)
   * [Top Down Approach](training/methodology/problem-questions-and-decomposition.md)
   * [Collaboration](training/methodology/collaboration.md)
+  * [Project Execution](training/methodology/kickoff-session.md)
 * [Advanced](training/advanced/README.md)
   * [Developer Steel Thread](training/advanced/developer-steel-thread.md)
+  * [Constraint Satisfaction](training/advanced/constraint-satisfaction.md)
+  * [Learning](training/advanced/learning.md)
   * [Design Patterns](training/advanced/design-patterns.md)
 
 ## MAANA Q COOKBOOK
