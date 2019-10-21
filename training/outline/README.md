@@ -25,14 +25,16 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">Basic Orientation</td>
+      <td style="text-align:left"><a href="../basics/basic-orientation/">Basic Orientation</a>
+      </td>
       <td style="text-align:left">Basic product orientation This lesson will teach you Maana terminology
         and how to navigate through the software</td>
       <td style="text-align:left">Basic operation of Q - Logging in, creating a workspace</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left">Hello World</td>
+      <td style="text-align:left"><a href="../basics/hello-world.md">Hello World</a>
+      </td>
       <td style="text-align:left">
         <p>Create a microservice with one implemented function</p>
         <p>This lesson is a hands-on exercise to familiarize you with Maana core
@@ -44,7 +46,7 @@
       style="text-align:left">Yes</td>
     </tr>
     <tr>
-      <td style="text-align:left">Using Kinds and Function to build a knowledge graph</td>
+      <td style="text-align:left">Computational Knowledge Graph</td>
       <td style="text-align:left">
         <p>Create a function composition using kinds</p>
         <p>With a hands on exercise, we demonstrate the computation knowledge graph,
