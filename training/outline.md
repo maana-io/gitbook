@@ -21,16 +21,21 @@
     <tr>
       <td style="text-align:left"><a href="basics/basic-orientation/">Orientation</a>
       </td>
-      <td style="text-align:left">Basic product orientation This lesson will teach you Maana terminology
-        and how to navigate through the software</td>
+      <td style="text-align:left">
+        <p>Basic product orientation</p>
+        <p></p>
+        <p><em>This lesson will teach you Maana terminology and how to navigate through the software</em>
+        </p>
+      </td>
       <td style="text-align:left">Basic operation of Q - Logging in, creating a workspace</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="basics/hello-world.md">Hello, World</a>!</td>
       <td style="text-align:left">
         <p>Create a microservice with one implemented function</p>
-        <p>This lesson is a hands-on exercise to familiarize you with Maana core
-          terminology</p>
+        <p></p>
+        <p><em>This lesson is a hands-on exercise to familiarize you with Maana core terminology</em>
+        </p>
       </td>
       <td style="text-align:left">&#x2022; What is a workspace? &#x2022; Creating/renaming function &#x2022;
         Adding function field &#x2022; Importing a service to a workspace</td>
@@ -40,8 +45,9 @@
       </td>
       <td style="text-align:left">
         <p>Create a function composition using kinds</p>
-        <p>With a hands on exercise, we demonstrate the computation knowledge graph,
-          a technology which sets Maana apart</p>
+        <p></p>
+        <p><em>With a hands on exercise, we demonstrate the computation knowledge graph, a technology which sets Maana apart</em>
+        </p>
       </td>
       <td style="text-align:left">Introduction to kinds Functional programming 101 &#x2022; inputs and outputs
         &#x2022; side effects and pure functions &#x2022; Compositionality</td>
@@ -49,11 +55,8 @@
     <tr>
       <td style="text-align:left"><a href="basics/working-with-lists.md">Working with Lists</a>
       </td>
-      <td style="text-align:left">It is very often that we have to perform a certain operation on multiple
-        items. To simplify the process of parallel computing, Maana Q allows you
-        to execute functions on multiple items while efficiently caching the result.
-        Maana Q runs the function in parallel using all the available computation
-        resource</td>
+      <td style="text-align:left"><em>It is very often that we have to perform a certain operation on multiple items. To simplify the process of parallel computing, Maana Q allows you to execute functions on multiple items while efficiently caching the result. Maana Q runs the function in parallel using all the available computation resource</em>
+      </td>
       <td style="text-align:left">&#x2022; Introduction to the concept of &quot;map&quot; in functional
         programming &#x2022; Automatic caching &#x2022; Limitation of mapping &#x2022;
         Zipping</td>
@@ -64,7 +67,9 @@
       <td style="text-align:left">
         <p>Learn how to compose functions from multiple microservices. We&apos;ll
           build a model that will extract key entities from a textual source.</p>
-        <p>This lesson will recap everything learned so far</p>
+        <p></p>
+        <p><em>This lesson will recap everything learned so far</em>
+        </p>
       </td>
       <td style="text-align:left">Using helper utility functions like word counting</td>
     </tr>
