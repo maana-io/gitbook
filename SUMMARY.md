@@ -151,6 +151,7 @@
 * [Outline](training/outline/README.md)
   * [Maana Cheat Sheet](training/outline/maana-cheat-sheet.md)
 * [Basics](training/basics/README.md)
+  * [Using Kinds and Function to build a knowledge graph](training/basics/using-kinds-and-function-to-build-a-knowledge-graph.md)
   * [Orientation](training/basics/basic-orientation/README.md)
     * [Appendix](training/basics/basic-orientation/basic-orientation-1.md)
   * [Hello, world!](training/basics/hello-world.md)
