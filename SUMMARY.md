@@ -148,6 +148,7 @@
 
 ## Training
 
+* [Outline](training/outline.md)
 * [Basics](training/basics/README.md)
   * [Introduction](training/basics/introduction.md)
   * [Hello, world!](training/basics/hello-world.md)
