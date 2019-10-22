@@ -27,38 +27,38 @@
         <p><em>This lesson will teach you Maana terminology and how to navigate through the software</em>
         </p>
       </td>
-      <td style="text-align:left">Basic operation of Q - Logging in, creating a workspace</td>
+      <td style="text-align:left">&#x2022; Q Familiarization &#x2022; Logging in, creating a workspace</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="basics/hello-world.md">Hello, World</a>!</td>
       <td style="text-align:left">
-        <p>Create a microservice with one implemented function</p>
+        <p>Create your first Q model</p>
         <p></p>
         <p><em>This lesson is a hands-on exercise to familiarize you with Maana core terminology</em>
         </p>
       </td>
-      <td style="text-align:left">&#x2022; What is a workspace? &#x2022; Creating/renaming function &#x2022;
-        Adding function field &#x2022; Importing a service to a workspace</td>
+      <td style="text-align:left">&#x2022; Creating/renaming function &#x2022; Adding function field &#x2022;
+        Importing a service to a workspace</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="basics/using-kinds-and-function-to-build-a-knowledge-graph.md">Computational Knowledge Graph</a>
       </td>
       <td style="text-align:left">
-        <p>Create a function composition using kinds</p>
+        <p>Create Kinds and Functions</p>
         <p></p>
-        <p><em>With a hands on exercise, we demonstrate the computation knowledge graph, a technology which sets Maana apart</em>
+        <p><em>With a hands on exercise, we demonstrate the elements of a Computational Knowledge Graph, a technology which sets Maana apart</em>
         </p>
       </td>
-      <td style="text-align:left">Introduction to kinds Functional programming 101 &#x2022; inputs and outputs
-        &#x2022; side effects and pure functions &#x2022; Compositionality</td>
+      <td style="text-align:left">&#x2022; Introduction to Kinds &#x2022; Functional programming 101 &#x2022;
+        inputs and outputs &#x2022; Side effects and pure functions &#x2022; Compositionality</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="basics/working-with-lists.md">Working with Lists</a>
       </td>
-      <td style="text-align:left">Execute functions on multiple items efficiently using Maana Q.
+      <td style="text-align:left">Execute functions on large datasets using Q.
         <br /><em><br />This lesson will teach you concepts and skills to work with lists minimizing development effort and maximizing software performance</em>
       </td>
-      <td style="text-align:left">&#x2022; Introduction to the concept of &quot;map&quot; in functional
+      <td style="text-align:left">&#x2022; Introduction to the concept of &quot;mapping&quot; in functional
         programming &#x2022; Automatic caching &#x2022; Limitation of mapping &#x2022;
         Zipping</td>
     </tr>
@@ -66,27 +66,24 @@
       <td style="text-align:left"><a href="basics/microservices-examples/nlp.md">NLP Example</a>
       </td>
       <td style="text-align:left">
-        <p>Learn how to compose functions from multiple microservices. We&apos;ll
-          build a model that will extract key entities from a textual source.</p>
+        <p>Learn how to compose functions from multiple microservices.</p>
         <p></p>
-        <p><em>This lesson will recap everything learned so far with a hands-on example.</em>
+        <p><em>We&apos;ll build a model that will extract key entities from a textual source..</em>
         </p>
       </td>
-      <td style="text-align:left">Using helper utility functions like word counting</td>
+      <td style="text-align:left">&#x2022; Using helper utility functions like word counting</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="basics/microservices-examples/audio-translation.md">Audio translation</a>
       </td>
       <td style="text-align:left">
-        <p>Learn how to compose functions from multiple microservices. We&apos;ll
-          build a model that will perform audio transcription by converting speech
-          to text.</p>
+        <p>Learn how to compose functions from multiple microservices.</p>
         <p></p>
-        <p><em>This lesson will recap everything learned so far with a hands-on example. </em>
+        <p><em>We&apos;ll build a model that will perform audio transcription by converting speech to text.</em>
         </p>
       </td>
-      <td style="text-align:left">Audio transcription and translation (using maana-media, maana-audio, example
-        for using Azure services like maana-azure-speech-to-text, maana-azure-translation)</td>
+      <td style="text-align:left">&#x2022; Audio transcription and translation using maana-media, maana-audio,
+        &#x2022; Azure services such as maana-azure-speech-to-text, maana-azure-translation</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="methodology/use-case-selection.md">Use Case Selection</a>
