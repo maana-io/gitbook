@@ -55,7 +55,8 @@
     <tr>
       <td style="text-align:left"><a href="basics/working-with-lists.md">Working with Lists</a>
       </td>
-      <td style="text-align:left"><em>It is very often that we have to perform a certain operation on multiple items. To simplify the process of parallel computing, Maana Q allows you to execute functions on multiple items while efficiently caching the result. Maana Q runs the function in parallel using all the available computation resource</em>
+      <td style="text-align:left">Execute functions on multiple items efficiently using Maana Q.
+        <br /><em><br />This lesson will teach you concepts and skills to work with lists minimizing development effort and maximizing software performance</em>
       </td>
       <td style="text-align:left">&#x2022; Introduction to the concept of &quot;map&quot; in functional
         programming &#x2022; Automatic caching &#x2022; Limitation of mapping &#x2022;
@@ -68,7 +69,7 @@
         <p>Learn how to compose functions from multiple microservices. We&apos;ll
           build a model that will extract key entities from a textual source.</p>
         <p></p>
-        <p><em>This lesson will recap everything learned so far</em>
+        <p><em>This lesson will recap everything learned so far with a hands-on example.</em>
         </p>
       </td>
       <td style="text-align:left">Using helper utility functions like word counting</td>
@@ -76,10 +77,15 @@
     <tr>
       <td style="text-align:left"><a href="basics/microservices-examples/audio-translation.md">Audio translation</a>
       </td>
+      <td style="text-align:left">
+        <p>Learn how to compose functions from multiple microservices. We&apos;ll
+          build a model that will perform audio transcription by converting speech
+          to text.</p>
+        <p></p>
+        <p><em>This lesson will recap everything learned so far with a hands-on example. </em>
+        </p>
+      </td>
       <td style="text-align:left">Audio transcription and translation (using maana-media, maana-audio, example
-        for using Azure services like maana-azure-speech-to-text, maana-azure-translation)</td>
-      <td
-      style="text-align:left">Audio transcription and translation (using maana-media, maana-audio, example
         for using Azure services like maana-azure-speech-to-text, maana-azure-translation)</td>
     </tr>
     <tr>
@@ -91,23 +97,18 @@
     <tr>
       <td style="text-align:left"><a href="methodology/problem-questions-and-decomposition.md">Top down approach</a>
       </td>
-      <td style="text-align:left">Articulate the key element of Maana&apos;s methodology, i.e., Top Down
-        Problem Decomposition</td>
-      <td style="text-align:left">&#x2022; Problem decompositionTop down thinking</td>
+      <td style="text-align:left"><em>Articulate the key element of Maana&apos;s methodology, i.e., Top Down Problem Decomposition</em>
+      </td>
+      <td style="text-align:left">&#x2022; Problem decomposition via problem questions</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="methodology/collaboration.md">Collaboration</a>
       </td>
-      <td style="text-align:left"><em>Learn how team members might collaborate when building a solution on Q.</em>
+      <td style="text-align:left"><em>Learn how team members might collaborate when building a solution on Q.   </em>
       </td>
       <td style="text-align:left">&#x2022; Team collaboration &#x2022; Using workspaces to break down areas
         of development &#x2022; The role of the Knowledge Architect &#x2022; Function
         interfaces as contracts</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="methodology/kickoff-session.md">Project Execution</a>
@@ -120,9 +121,11 @@
       </td>
       <td style="text-align:left">
         <p>Wrapping existing libraries - Getting started with the Maana CLI (Project
-          creation, deployment) and using them in Q</p>
-        <p>You&apos;ll learn how to easily onboard existing libraries and code to
-          your Q projects</p>
+          creation, deployment) and using them in Q.
+          <br />
+        </p>
+        <p><em>You&apos;ll learn how to easily onboard existing libraries and code to your Q projects</em>
+        </p>
       </td>
       <td style="text-align:left">Maana CLI - mcreate, mdeploy Basic Kubernetes concepts Development pattern
         for creating GraphQL wrapping services for existing libraries</td>
@@ -144,11 +147,17 @@
     <tr>
       <td style="text-align:left"><a href="advanced/learning.md">Learning</a>
       </td>
-      <td style="text-align:left">This lesson teaches you how to apply an ORDL model as a team (together
-        with SMEs, BAs, knowledge architects, developers, testers) to create a
-        solution that improves over time</td>
+      <td style="text-align:left">
+        <p>Build an ORDL model<em><br /></em>
+        </p>
+        <p><em>This lesson teaches you how to apply an ORDL model as a team (together with SMEs, BAs, knowledge architects, developers, testers) to create a solution that improves over time</em>
+        </p>
+      </td>
       <td style="text-align:left">&#x2022; What is ORDL? &#x2022; What are examples of observation, reasoning,
         decision and learning functions?</td>
     </tr>
   </tbody>
 </table>
+
+
+
