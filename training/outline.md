@@ -93,7 +93,7 @@
       <td style="text-align:left">
         <p>Familiarize with a methodology to rank and select Maana Q Use Cases.</p>
         <p></p>
-        <p><em>We&apos;ll look at examples of prior Use Case selection analyses performed at Chevron.</em>
+        <p><em>We&apos;ll look at examples of prior Use Case selection analyses performed.</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Use Case ranking spreadsheet and &apos;Fit 4 Maana&apos; workspace</td>
