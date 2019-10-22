@@ -2,7 +2,7 @@
 
 ## Q Training Experience at a Glance
 
-![Maana Q Training at a Glance](../.gitbook/assets/image%20%2891%29.png)
+![](../.gitbook/assets/visual-outline%20%281%29.png)
 
 ## Detailed Training Agenda
 
