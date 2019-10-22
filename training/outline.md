@@ -102,17 +102,22 @@
       <td style="text-align:left"><a href="methodology/problem-questions-and-decomposition.md">Top down approach</a>
       </td>
       <td style="text-align:left">
-        <p></p>
+        <p>Familiarize with Maana&apos;s methodology to decompose problems</p>
         <p>&lt;em&gt;&lt;/em&gt;</p>
-        <p><em>Articulate the key element of Maana&apos;s methodology, i.e., Top Down Problem Decomposition</em>
+        <p><em>We&apos;ll look at examples of breaking down a large business problem into smaller components, which can be worked on independently. </em>
         </p>
       </td>
-      <td style="text-align:left">&#x2022; Problem decomposition via problem questions</td>
+      <td style="text-align:left">&#x2022; Problem decomposition via problem questions &#x2022; Modularization
+        and Interconnectedness</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="methodology/collaboration.md">Collaboration</a>
       </td>
-      <td style="text-align:left"><em>Learn how team members might collaborate when building a solution on Q.   </em>
+      <td style="text-align:left">
+        <p>Maana Q as a Collaborative Environment</p>
+        <p>&lt;em&gt;&lt;/em&gt;</p>
+        <p><em>Best strategies for team collaboration when building a solution on Q.   </em>
+        </p>
       </td>
       <td style="text-align:left">&#x2022; Team collaboration &#x2022; Using workspaces to break down areas
         of development &#x2022; The role of the Knowledge Architect &#x2022; Function
@@ -121,8 +126,13 @@
     <tr>
       <td style="text-align:left"><a href="methodology/kickoff-session.md">Project Execution</a>
       </td>
-      <td style="text-align:left">TBD</td>
-      <td style="text-align:left">TBD</td>
+      <td style="text-align:left">
+        <p>Project execution approach and stages .</p>
+        <p></p>
+        <p><em>We&apos;ll look at recommendations for pilots, short-term and production projects</em>
+        </p>
+      </td>
+      <td style="text-align:left">&#x2022; Team structure &#x2022; Relevant aspects of SCRUM and Agile</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="advanced/developer-steel-thread.md">Developer Steel Thread</a>
