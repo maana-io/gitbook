@@ -138,15 +138,16 @@
       <td style="text-align:left"><a href="advanced/developer-steel-thread.md">Developer Steel Thread</a>
       </td>
       <td style="text-align:left">
-        <p>Wrapping existing libraries - Getting started with the Maana CLI (Project
-          creation, deployment) and using them in Q.
-          <br />
-        </p>
-        <p><em>You&apos;ll learn how to easily onboard existing libraries and code to your Q projects</em>
+        <p>Get started with Maana Command Line Interface (CLI) for advanced development.</p>
+        <p></p>
+        <p><em>We&apos;ll look at advanced development techniques in the context of Q solutions. </em>
+          <br
+          /><em>You&apos;ll learn how to easily onboard existing libraries and code to your Q projects</em>
         </p>
       </td>
-      <td style="text-align:left">Maana CLI - mcreate, mdeploy Basic Kubernetes concepts Development pattern
-        for creating GraphQL wrapping services for existing libraries</td>
+      <td style="text-align:left">&#x2022; Maana CLI - mcreate, mdeploy &#x2022; Basic Kubernetes concepts
+        &#x2022; Development pattern for creating GraphQL wrapping services for
+        existing libraries</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="advanced/design-patterns.md">Design Patterns</a>
