@@ -24,7 +24,7 @@
       <td style="text-align:left">
         <p>Basic product orientation</p>
         <p></p>
-        <p><em>This lesson will teach you Maana terminology and how to navigate through the software</em>
+        <p><em>This lesson will teach you about Maana, Its terminology and how to navigate through the software platform</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Q Familiarization &#x2022; Logging in, creating a workspace</td>
@@ -32,13 +32,13 @@
     <tr>
       <td style="text-align:left"><a href="basics/hello-world.md">Hello, World</a>!</td>
       <td style="text-align:left">
-        <p>Create your first Q model</p>
+        <p>Introduction to Microservices</p>
         <p></p>
-        <p><em>This lesson is a hands-on exercise to familiarize you with Maana core terminology</em>
+        <p><em>This lesson is a hands-on exercise to create your first Q model.</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Creating/renaming function &#x2022; Adding function field &#x2022;
-        Importing a service to a workspace</td>
+        Importing a microservice to a workspace</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="basics/using-kinds-and-function-to-build-a-knowledge-graph.md">Computational Knowledge Graph</a>
@@ -55,26 +55,28 @@
     <tr>
       <td style="text-align:left"><a href="basics/working-with-lists.md">Working with Lists</a>
       </td>
-      <td style="text-align:left">Execute functions on large datasets using Q.
+      <td style="text-align:left">Execute functions efficiently using Q.
         <br /><em><br />This lesson will teach you concepts and skills to work with lists minimizing development effort and maximizing software performance</em>
       </td>
-      <td style="text-align:left">&#x2022; Introduction to the concept of &quot;mapping&quot; in functional
-        programming &#x2022; Automatic caching &#x2022; Limitation of mapping &#x2022;
-        Zipping</td>
+      <td style="text-align:left">&#x2022; Introduction to the concept of Mapping in functional programming
+        &#x2022; Automatic caching &#x2022; Limitation of Mapping &#x2022; Zipping</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/microservices-examples/nlp.md">NLP Example</a>
+      <td style="text-align:left">
+        <p>Microservice Example 1:</p>
+        <p><a href="basics/microservices-examples/nlp.md">NLP</a>
+        </p>
       </td>
       <td style="text-align:left">
         <p>Learn how to compose functions from multiple microservices.</p>
         <p></p>
-        <p><em>We&apos;ll build a model that will extract key entities from a textual source..</em>
+        <p><em>We&apos;ll build a Natural Language Processing model that will extract key entities from a textual source.</em>
         </p>
       </td>
-      <td style="text-align:left">&#x2022; Using helper utility functions like word counting</td>
+      <td style="text-align:left">&#x2022; Using helper utility functions such as word counting</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/microservices-examples/audio-translation.md">Audio translation</a>
+      <td style="text-align:left">Microservice Example 2: <a href="basics/microservices-examples/audio-translation.md">Audio translation</a>
       </td>
       <td style="text-align:left">
         <p>Learn how to compose functions from multiple microservices.</p>
@@ -88,13 +90,22 @@
     <tr>
       <td style="text-align:left"><a href="methodology/use-case-selection.md">Use Case Selection</a>
       </td>
-      <td style="text-align:left">TBD</td>
-      <td style="text-align:left">TBD</td>
+      <td style="text-align:left">
+        <p>Familiarize with a methodology to rank and select Maana Q Use Cases.</p>
+        <p></p>
+        <p><em>We&apos;ll look at examples of prior Use Case selection analyses performed at Chevron.</em>
+        </p>
+      </td>
+      <td style="text-align:left">&#x2022; Use Case ranking spreadsheet and &apos;Fit 4 Maana&apos; workspace</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="methodology/problem-questions-and-decomposition.md">Top down approach</a>
       </td>
-      <td style="text-align:left"><em>Articulate the key element of Maana&apos;s methodology, i.e., Top Down Problem Decomposition</em>
+      <td style="text-align:left">
+        <p></p>
+        <p>&lt;em&gt;&lt;/em&gt;</p>
+        <p><em>Articulate the key element of Maana&apos;s methodology, i.e., Top Down Problem Decomposition</em>
+        </p>
       </td>
       <td style="text-align:left">&#x2022; Problem decomposition via problem questions</td>
     </tr>
