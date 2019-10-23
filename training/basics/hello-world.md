@@ -17,3 +17,27 @@ last[What is a workspace? ](https://app.gitbook.com/@maana/s/q/product-guide/get
 
 ![](../../.gitbook/assets/image%20%2817%29.png)
 
+Step by Step Instructions:
+
+1. Create a new knowledge graph
+2. In the knowledge graph, create a function
+3. Name the function, "sayHello"
+4. Inside the function, create a field called "input" of type string
+5. Expand the sayHello function
+6. We will use a pre-existing service called "Greetings" to create a sub function
+7. Go to the search bar and type in Greetings
+8. Drag and drop "Greetings" to Inventory
+9. Expand "Greetings" in Inventory to locate the "helloWorld" function
+10. Drag and drop "helloWorld" from Inventory to the Canvas
+11. Wire input and output
+12. sayHello function is now complete
+13. To test the functionality we just created, locate sayHello function in the Explorer panel and hit Run in the Context Panel 
+14. Provide an input
+15. In the Assistant Panel, we see the result.
+
+Link to recording:
+
+[https://maanainc.app.box.com/file/544979268134](https://maanainc.app.box.com/file/544979268134)
+
+
+
