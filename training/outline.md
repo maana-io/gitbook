@@ -2,7 +2,7 @@
 
 ## Q Training Experience at a Glance
 
-![](../.gitbook/assets/visual-outline%20%281%29.png)
+![](../.gitbook/assets/image%20%2840%29.png)
 
 ## Detailed Training Agenda
 
