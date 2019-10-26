@@ -176,11 +176,9 @@
         decision and learning functions?</td>
     </tr>
   </tbody>
-</table>[What to Expect \(2:44 min video\)](https://maanaimages.blob.core.windows.net/q-svc-data/Maana%20Training%20Teaser.mov)
+</table>
 
 
-
-{% embed url="https://maanaimages.blob.core.windows.net/q-svc-data/maana-ai-image-suggest-thumbnail.jpg" %}
 
 
 
