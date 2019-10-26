@@ -180,3 +180,9 @@
 
 
 
+{% embed url="https://maanaimages.blob.core.windows.net/q-svc-data/maana-ai-image-suggest-thumbnail.jpg" %}
+
+
+
+
+
