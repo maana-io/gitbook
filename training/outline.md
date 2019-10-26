@@ -176,7 +176,7 @@
         decision and learning functions?</td>
     </tr>
   </tbody>
-</table>
+</table>What to Expect \(2:44 min video\)
 
 
 
