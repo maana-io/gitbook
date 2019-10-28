@@ -20,7 +20,7 @@ The main interface to Maana Metalearning is through the graphIQL endpoint, which
 * accuracy: The minimum target accuracy to try to achieve. 
 * kindId: The kind id of the data to train on which exists in Maana. 
 * excludeFields: \(optional\) If there are any fields the user wishes to exclude from the feature set to train on, they are listed here. 
-* featureFields: \(optional\) Opposite excludeFields, the user may specify only those elds which are to be trained on, rather than only those to exclude. 
+* featureFields: \(optional\) Opposite excludeFields, the user may specify only those fields which are to be trained on, rather than only those to exclude. 
 * candidateModels: This is a list of classification algorithms to try. The models available are generally those in scikit learn\[9\]. candidatePreprocessors: This is a list of preprocessors to try, from scikit learn. Additionally, the preprocessor 'noop' is allowed, which specifies that no preprocessor is to be used. 
 * folds: \(optional\) The number of cross-validation folds to use. Defaults to 10. 
 * modelProfilingEpisode: This is the number of runs to do in phase 1. It is the number of times a pipeline is to be tried before moving on. Recommended is 4 
