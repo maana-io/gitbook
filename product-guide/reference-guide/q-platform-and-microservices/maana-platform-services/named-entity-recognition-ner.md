@@ -40,7 +40,7 @@ This service is important as part of a pipeline where
 
 NER is a dependency \[TBD\]_Link to explain service dependencies?_ of [Field Classier](field-classification/field-classifier.md) and [Entity Extractor](entity-extractor.md).
 
-### How do run/invoke it? Query Examples
+### How do I run/invoke it? Query Examples
 
 #### Extract
 
