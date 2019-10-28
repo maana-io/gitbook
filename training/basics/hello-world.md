@@ -16,7 +16,7 @@ description: "What is a workspace?\_Creating/renaming function. Adding function 
 
 **Case Description:**
 
-This is a hands-on example that will get you started with MaanaQ. In this case, learn how to create your own sayHello function and wire it to a function from the inventory. Get Maana to greet you!
+This is a hands-on example that will get you started with MaanaQ. In this case, learn how to create your own sayHello function, add a function field, and import a service from the inventory to your workspace. Get MaanaQ to greet you!
 
 **Step by Step Instructions:**
 
