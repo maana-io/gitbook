@@ -9,7 +9,7 @@ description: "What is a workspace?\_Creating/renaming function. Adding function 
 * [x] Power Point Slides \(**not needed**\)
 * [x] Workspaces \([https://lastknowngood.knowledge.maana.io/workspace/4b67f284-30b5-4826-8937-3573b405788d](https://lastknowngood.knowledge.maana.io/workspace/4b67f284-30b5-4826-8937-3573b405788d) - Look for 'Hello' function\)
 * [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
-* [x] Case description \(**not applicable**\)
+* [x] Case description \(**pending**\)
 * [x] Recording \(**completed**\)
 
 ---------------------------------------------------------------------------------------------------------------
