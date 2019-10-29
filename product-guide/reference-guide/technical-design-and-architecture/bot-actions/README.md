@@ -2,7 +2,7 @@
 
 Maana Knowledge Services form a network of GraphQL endpoints, exposing their types, queries, and mutations for direct access, as well as publishing and subscribing to network events. The Maana Q platform manages these services, providing authentication, reliable messaging, \(automatic\) graph persistence \(with search and querying\), scaling, monitoring, and a rich UX.
 
-Knowledge Services can become Knowledge "Bots" by offering and using "bot actions," which allows the service to interact more directly to you. You can configure, start, stop, and schedule bot actions. Services can report on status and progress for potentially **long-running**, **asynchronous operations**, as well as report any errors or messages.
+Knowledge Services can become Knowledge "Bots" by offering and using "bot actions," which allows the service to interact more directly with you. You can configure, start, stop, and schedule bot actions. Services can report on status and progress for potentially **long-running**, **asynchronous operations**, as well as report any errors or messages.
 
 There are two primary scenarios: 
 
