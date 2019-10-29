@@ -125,6 +125,14 @@
       </td>
       <td style="text-align:left">yes</td>
     </tr>
+    <tr>
+      <td style="text-align:left">Advanced</td>
+      <td style="text-align:left">Optimization</td>
+      <td style="text-align:left">Well Optimization</td>
+      <td style="text-align:left"><a href="https://cstraining01.knowledge.maana.io/workspace/48beeeb0-d3f4-479b-b8cf-fcc02f548254">https://cstraining01.knowledge.maana.io/workspace/48beeeb0-d3f4-479b-b8cf-fcc02f548254</a>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
   </tbody>
 </table>
 
