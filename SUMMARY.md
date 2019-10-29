@@ -6,7 +6,6 @@
   * [Maana Target Audience](user-education-introduction/maana-target-audience.md)
 * [Platform Features](platform-features/README.md)
   * [Knowledge Portal](platform-features/knowledge-portal.md)
-  * [Q Assistant API](platform-features/q-assistant-api.md)
   * [Command Line](platform-features/command-line.md)
   * [Knowledge Applications](platform-features/knowledge-applications.md)
   * [Computational Knowledge Graph](platform-features/computational-knowledge-graph.md)
