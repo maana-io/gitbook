@@ -79,22 +79,23 @@
     <tr>
       <td style="text-align:left">Methodology</td>
       <td style="text-align:left">Collaboration</td>
-      <td style="text-align:left">?</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Deduction</td>
+      <td style="text-align:left"><a href="https://lastknowngood.knowledge.maana.io/workspace/68a6ac48-f1ea-41bb-9ba5-6fbccb795ff2">https://lastknowngood.knowledge.maana.io/workspace/68a6ac48-f1ea-41bb-9ba5-6fbccb795ff2</a>
+      </td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">Methodology</td>
       <td style="text-align:left">Project Execution</td>
-      <td style="text-align:left">?</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">N/A</td>
+      <td style="text-align:left">we will have slides for this</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">Advanced</td>
       <td style="text-align:left">Developer Steel Thread</td>
-      <td style="text-align:left">?</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">N/A</td>
+      <td style="text-align:left">we will have a video for this</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -112,7 +113,7 @@
     <tr>
       <td style="text-align:left">Advanced</td>
       <td style="text-align:left">Learning</td>
-      <td style="text-align:left">?</td>
+      <td style="text-align:left">@Linh is working on this</td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
