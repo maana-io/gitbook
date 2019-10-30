@@ -18,9 +18,9 @@ The assistant client is available as an NPM package at [https://www.npmjs.com/pa
 
 `develop` branch on github will contain latest updates to the client and can be obtained by installing the npm package with a `@beta` tag. 
 
-### Undocumented Surface Area in 3.2.1
+### Helper Surface Area in 3.2.1
 
-There are several pieces of API surface area that are not 'officially' supported and remain undocumented.
+There are several pieces of API surface area that are not documented, but are used as helper functions for documented surface area. 
 
 These are explained below:
 
@@ -43,6 +43,10 @@ This is a helper method used to revoke consent for these notifications.
 **getEventEmitter**
 
 Returns the even emitter object used to handle subscriptions within the client.
+
+### Undocumented \(experimental\) Surface Area in 3.2.1
+
+These are officially unsupported in 3.2.1 and subject to change as they are experimental. 
 
 **refreshServiceSchema**
 
