@@ -4,7 +4,7 @@
 
 * [x] Power Point Slides \(**not needed**\)
 * [x] Workspaces \([https://lastknowngood.knowledge.maana.io/workspace/d5a3e4bd-3a8a-46cb-a06e-a96539cc6359 ](https://lastknowngood.knowledge.maana.io/workspace/d5a3e4bd-3a8a-46cb-a06e-a96539cc6359%20)\)
-* [ ] Step-by-Step Instructions for Learning Assistant \(**completed**\)
+* [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
 * [x] Case description \(**completed**\)
 * [ ] Recording \(**pending**\)
 * [ ] Gif \(**pending**\)
@@ -38,4 +38,8 @@ _2._  Next create a function called "getPeopleWithAgeFromPeople". Create an inpu
 1. Expand "getPeopleWithAgeFromPeople", create a function called "getPersonWithAgeFromPerson" with an input called person of type Person. Make this input mandatory by clicking the "!" The output is of type PersonWithAge. Wire the input and output.
 2. Go back to the top level decomposition and locate the function called, "filterPeopleOver21". Expand it and create a new function called, "filterPersonIsOver21" with an input called personWithAge of type PersonWithAgeInput. The output is of type PersonWithAge. Wire the input and output.
 3. Go back to the top level decomposition and locate the function called, "filterNullPeopleWithAge". Expand it. In the search bar, locate the lambda service called "filterNullPeopleWithAge", drag and drop it to the canvas. Wire the input and output.
+
+**Step4:** Testing
+
+1. Go to the "allPersons" function and run it the context panel on the right side of the screen. Select "input" and expand it. Select take and offset and set both to 0. In the Assistant Panel see the list of all people we are considering. Next go to the top level function called "allPeopleOver21" , run it. A list of those individuals who are 21 or older is returned in the Assistant Panel.
 
