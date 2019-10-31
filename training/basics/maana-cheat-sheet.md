@@ -4,8 +4,8 @@
 
 **Material Development Checklist**
 
-* [ ] Platform team to review, comment and identify sections pending \(**pending**\)
-* [ ] CS incorporate feedback from Platform and publish \(**pending**\)
+* [x] Platform team to review, comment and identify sections pending \(**complete**\)
+* [x] CS incorporate feedback from Platform and publish \(**complete**\)
 
 ---------------------------------------------------------------------------------------------------------------
 

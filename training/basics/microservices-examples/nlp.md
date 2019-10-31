@@ -11,6 +11,7 @@ description: Natural Language Processing
 * [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
 * [x] Case description \(**completed**\)
 * [x] Recording \(**completed**\)
+* [ ] Gif \(**pending**\)
 
 ---------------------------------------------------------------------------------------------------------------
 
