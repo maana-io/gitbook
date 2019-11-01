@@ -2,7 +2,7 @@
 description: Problem Decomposition
 ---
 
-# Function Decomposition
+# Problem Decomposition
 
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 

@@ -163,7 +163,7 @@
   * [Maana Cheat Sheet](training/basics/maana-cheat-sheet.md)
 * [Methodology](training/methodology/README.md)
   * [Use Case Selection](training/methodology/use-case-selection.md)
-  * [Function Decomposition](training/methodology/problem-questions-and-decomposition.md)
+  * [Problem Decomposition](training/methodology/problem-questions-and-decomposition.md)
   * [Collaboration](training/methodology/collaboration.md)
   * [Project Execution](training/methodology/kickoff-session.md)
 * [Advanced](training/advanced/README.md)
