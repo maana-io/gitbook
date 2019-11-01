@@ -11,5 +11,7 @@
 
 Powerpoint Slides:
 
-[https://maanainc.box.com/s/trllan6ge0agta44dhr8dq0xse068zzj](https://maanainc.box.com/s/trllan6ge0agta44dhr8dq0xse068zzj)
+{% embed url="https://maanainc.box.com/s/trllan6ge0agta44dhr8dq0xse068zzj" %}
+
+Add an exercise - breakout session - incomplete workspace, fill in the blanks by breaking into teams.
 
