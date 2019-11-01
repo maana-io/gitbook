@@ -2,10 +2,10 @@
 
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
-* [x] Power Point Slides \(**not needed**\)
-* [x] Workspaces \(**not needed**\)
-* [x] Step-by-Step Instructions for Learning Assistant \(**we will be using video**\)
-* [x] Case description \(**not needed**\)
+* [ ] Power Point Slides \(**pending**\)
+* [ ] Workspaces \(**pending**\)
+* [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
+* [ ] Case description \(**pending**\)
 
 ---------------------------------------------------------------------------------------------------------------
 
