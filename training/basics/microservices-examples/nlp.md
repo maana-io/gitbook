@@ -7,7 +7,7 @@ description: Natural Language Processing
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
 * [ ] Power Point Slides \(**not needed**\)
-* [x] Workspaces \([https://lastknowngood.knowledge.maana.io/workspace/45458995-e4e0-410c-915f-dacb1f155357](https://lastknowngood.knowledge.maana.io/workspace/45458995-e4e0-410c-915f-dacb1f155357)\)
+* [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
 * [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
 * [x] Case description \(**completed**\)
 * [x] Recording \(**completed**\)
