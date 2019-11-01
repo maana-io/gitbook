@@ -14,7 +14,7 @@
 | Methodology | Project Execution | N/A | we will have slides for this |  |
 | Advanced | Developer Steel Thread | N/A | we will have a video for this |  |
 | Advanced | Constraint Satisfaction | Deduction \(Given a suspect who to Indict\) | [https://lastknowngood.knowledge.maana.io/workspace/68a6ac48-f1ea-41bb-9ba5-6fbccb795ff2](https://lastknowngood.knowledge.maana.io/workspace/68a6ac48-f1ea-41bb-9ba5-6fbccb795ff2) | yes |
-| Advanced | Learning | @Linh is working on this |  |  |
+| Advanced | Learning | @Linh is working on this | [https://cstraining01.knowledge.maana.io/workspace/512a43c7-660c-43d8-b525-42ab0c1a5a61](https://cstraining01.knowledge.maana.io/workspace/512a43c7-660c-43d8-b525-42ab0c1a5a61) |  |
 | Advanced | Design Patterns | Design Patterns | [https://lastknowngood.knowledge.maana.io/workspace/846810b0-3081-4114-8e35-80604ea63635](https://lastknowngood.knowledge.maana.io/workspace/846810b0-3081-4114-8e35-80604ea63635) | yes |
 | Additional Use Cases | Optimization | Well Optimization | [https://cstraining01.knowledge.maana.io/workspace/48beeeb0-d3f4-479b-b8cf-fcc02f548254](https://cstraining01.knowledge.maana.io/workspace/48beeeb0-d3f4-479b-b8cf-fcc02f548254) |  |
 | Additional Use Cases | 3rd party integration | Google Maps + Crime rate + Real Estate  | TBD \(blocked by 3.2.1 upgrade\) |  |
