@@ -167,8 +167,8 @@
   * [Collaboration](training/methodology/collaboration.md)
   * [Project Execution](training/methodology/kickoff-session.md)
 * [Advanced](training/advanced/README.md)
-  * [Developer Steel Thread](training/advanced/developer-steel-thread.md)
-  * [Constraint Satisfaction](training/advanced/constraint-satisfaction.md)
+  * [Develop Custom Miscroservice](training/advanced/developer-steel-thread.md)
+  * [Wrapping and Mapping](training/advanced/constraint-satisfaction.md)
   * [Learning](training/advanced/learning.md)
   * [Design Patterns](training/advanced/design-patterns.md)
 
