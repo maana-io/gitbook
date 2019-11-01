@@ -35,8 +35,8 @@ Training goals:
 
 1. Prepare labeled data, unlabeled data, and test data. 
 2. Train a model.
-3. Let the model makes prediction on a pool of unlabeled data to evaluate itself. 
-4. Let the model asks SMEs for help \(student to teacher approach\)
+3. Let the model make prediction on a pool of unlabeled data to evaluate itself. 
+4. Let the model ask SMEs for help \(student to teacher approach\)
    * option 1: the model asks random questions from the pool of unlabeled data. 
    * option 2: the model asks "smart" questions \(based on active learning technique\).
 5. SMEs answer questions. 
