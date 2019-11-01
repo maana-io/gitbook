@@ -11,6 +11,8 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
+**Link to Workspace:** [**https://lastknowngood.knowledge.maana.io/workspace/5df7b12c-98bf-4093-a6a7-49417669241b**](https://lastknowngood.knowledge.maana.io/workspace/5df7b12c-98bf-4093-a6a7-49417669241b)\*\*\*\*
+
 **Case Description:**
 
 In this example, we use MaanaQ to aid us in ensuring only those individuals who are above 21 are allowed to enter the MaanaQ bar. This example lets us do just that. In the process, learn how to work with lists. While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. In this use case use Maana Q to execute functions such as on multiple items while efficiently caching the result. Maana Q runs the function in parallel using all the available computation resource. We have a list of people and their birthdays. Let's find out who can enter and enjoy the party!
