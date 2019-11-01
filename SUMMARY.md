@@ -157,7 +157,7 @@
   * [Hello, world!](training/basics/hello-world.md)
   * [Intro to kinds and functions](training/basics/using-kinds-and-function-to-build-a-knowledge-graph.md)
   * [Working with lists](training/basics/working-with-lists.md)
-  * [Microservices Examples](training/basics/microservices-examples/README.md)
+  * [Function Composition Examples](training/basics/microservices-examples/README.md)
     * [NLP](training/basics/microservices-examples/nlp.md)
     * [Audio Translation](training/basics/microservices-examples/audio-translation.md)
   * [Maana Cheat Sheet](training/basics/maana-cheat-sheet.md)
