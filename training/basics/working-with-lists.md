@@ -3,7 +3,7 @@
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
 * [x] Power Point Slides \(**not needed**\)
-* [x] Workspaces \([https://lastknowngood.knowledge.maana.io/workspace/d5a3e4bd-3a8a-46cb-a06e-a96539cc6359 ](https://lastknowngood.knowledge.maana.io/workspace/d5a3e4bd-3a8a-46cb-a06e-a96539cc6359%20)\)
+* [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
 * [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
 * [x] Case description \(**completed**\)
 * [x] Recording \(**completed\)**

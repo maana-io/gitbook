@@ -7,7 +7,7 @@ description: Computational Knowledge Graph
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
 * [x] Power Point Slides \(**not needed**\)
-* [ ] Workspaces \(geoCoordinates ws [https://lastknowngood.knowledge.maana.io/workspace/cab6866a-ccf9-40c7-a23c-5f24995ca0cc](https://lastknowngood.knowledge.maana.io/workspace/cab6866a-ccf9-40c7-a23c-5f24995ca0cc)\)
+* [ ] Workspaces \( [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\) 
 * [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
 * [ ] Case description \(**pending**\)
 * [ ] Revisit content below \(**pending**\)
