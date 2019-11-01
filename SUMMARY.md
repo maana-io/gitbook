@@ -155,7 +155,7 @@
     * [Use Cases](training/basics/basic-orientation/use-cases.md)
     * [Appendix](training/basics/basic-orientation/basic-orientation-1.md)
   * [Hello, world!](training/basics/hello-world.md)
-  * [CKG](training/basics/using-kinds-and-function-to-build-a-knowledge-graph.md)
+  * [Intro to kinds and functions](training/basics/using-kinds-and-function-to-build-a-knowledge-graph.md)
   * [Working with lists](training/basics/working-with-lists.md)
   * [Microservices Examples](training/basics/microservices-examples/README.md)
     * [NLP](training/basics/microservices-examples/nlp.md)
