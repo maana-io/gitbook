@@ -4,7 +4,7 @@
 
 _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/maana-q-documentation/Maana%20Training%20Teaser.mov) _where Donald Thompson \(Founder, President & CTO, MAANA\), provides an overview of what to expect at training..._
 
-![](../.gitbook/assets/image%20%2840%29.png)
+![](../.gitbook/assets/image%20%2842%29.png)
 
 ## Detailed Training Agenda
 

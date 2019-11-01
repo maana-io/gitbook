@@ -29,13 +29,13 @@ Given the following sentence, “Mike lives in London and has just started worki
 
 **Step by Step Instructions:** 
 
-Step 1: Create new workspace and rename 
+**Step 1:** Create new workspace and rename 
 
 1. Click on the + icon in the workspace tab, on the left hand side 
 2. In the workspace details panel give the workspace a new name -&gt; “Simple NLP Engine” 
 3. Click the save icon  
 
-Step 2: Create “top level” function 
+**Step 2:** Create “top level” function 
 
 1. Above the canvas click on the create function button, a green function box will appear.  
 2. Give the function a name e.g “extractPeoplePlacesOrganizationsFromDocuments”.  Ensure that you use the camelCase naming convention to differentiate between functions and kinds.  A function requires inputs and outputs to be defined.   
@@ -45,7 +45,7 @@ Step 2: Create “top level” function
 6. Specify the output which again is a list of Strings.  Ensure that that the ! Icon is selected and also the list icon since the aim is to obtain a list of entities in the output. 
 7. Click Save 
 
-Step 3: Open the Function Graph and import services to be used 
+**Step 3:** Open the Function Graph and import services to be used 
 
 1. Click on the 4 arrows located in the top right hand corner of the function box. This will take us to a canvas where we can begin to “wire up” our function. _Note that the search bar struggles to find manna-natural-compromise so it is required to search only for maana and then scroll._ 
 2. In the search bar in the top menu type “maana”, when the search has completed select services and scroll to find the maana-natural-compromise service.   
@@ -58,7 +58,7 @@ Maana-utilities -&gt; union
 
 To explore what functions are available you can click on the arrow next to the Services in the inventory panel and continue down to see what functions are available. 
 
-4: Add the People, places and Organizations functions and Wire them up! 
+**Step 4:** Add the People, places and Organizations functions and wire them up.
 
 1. Ensure you are in the input / output canvas for the extractPeoplePlacesOrganizations function 
 2. Select the People function from the maana-natural-compromise service and drag it onto the canvas.   
@@ -67,7 +67,7 @@ To explore what functions are available you can click on the arrow next to the S
 5. Drag the “wire” to the input box of the organizations function.  The inputs are always on the left of a function box with outputs on the right. 
 6. . Repeat this step for the other 2 functions, people and places. 
 
-Step 5: Add the union function and wire them up! 
+**Step 5:** Add the union function and wire them up! 
 
 Since we have 3 functions that have 3 separate outputs we need to aggregate these into a single list.  The union function allows us to achieve this but since the union function only accepts 2 lists we will need 2 union functions to produce our single list.  
 
@@ -78,9 +78,7 @@ Since we have 3 functions that have 3 separate outputs we need to aggregate thes
 5. The places function is to be wired to the second union function along with the output of the first union function. 
 6. Click on the output box of the second union function and wire to the output box. 
 
-Congratulations, you have now completed the creation of a simple NLP Engine 
-
-Step 6: Test the top level function and examine the output 
+**Step 6:** Test the top level function and examine the output 
 
 1. Click on “New Knowledge Graph” in the top left panel to return to the top canvas where our Top level function resides. 
 2. Click on the extractPeoplePlacesOrganizationsFromDocuments function box to highlight it 
@@ -89,6 +87,10 @@ Step 6: Test the top level function and examine the output
 5. “Mike lives in London and has just started working for Maana Inc” 
 6. Click Run. Below the main canvas you will see an “assistants” panel \(expand it if it is not visible\). The functions outputs will be displayed here if the function ran successfully 
 7. Expand the arrows until you see the data that has been returned. 
+
+
+
+**Recording:** [**https://maanainc.app.box.com/folder/91127313218**](https://maanainc.app.box.com/folder/91127313218)\*\*\*\*
 
 
 

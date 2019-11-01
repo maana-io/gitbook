@@ -11,9 +11,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
-Link to workspace:
-
-{% embed url="https://lastknowngood.knowledge.maana.io/workspace/37ae5256-9486-455c-b4a9-a4d76784a5ad" %}
+**Link to workspace**: [https://lastknowngood.knowledge.maana.io/workspace/37ae5256-9486-455c-b4a9-a4d76784a5ad](https://lastknowngood.knowledge.maana.io/workspace/37ae5256-9486-455c-b4a9-a4d76784a5ad)
 
 
 
@@ -76,5 +74,5 @@ Step 4: Test the top level function with GraphQL IDE
 
 4.Observe output 
 
-Recording: [https://maanainc.app.box.com/folder/91255070799](https://maanainc.app.box.com/folder/91255070799)
+**Recording**: [https://maanainc.app.box.com/folder/91255070799](https://maanainc.app.box.com/folder/91255070799)
 

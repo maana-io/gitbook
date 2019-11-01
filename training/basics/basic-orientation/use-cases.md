@@ -4,7 +4,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | Basics | Orientation | ? | [https://intprojectsdev01.knowledge.maana.io/login](https://intprojectsdev01.knowledge.maana.io/login) | no |
 | Basics | Hello world | hello world | [https://lastknowngood.knowledge.maana.io/workspace/4b67f284-30b5-4826-8937-3573b405788d](https://lastknowngood.knowledge.maana.io/workspace/4b67f284-30b5-4826-8937-3573b405788d) | yes |
-| Basics | CKG | news/wiki analysis | [https://lastknowngood.knowledge.maana.io/workspace/f3a0dae1-e7ab-4a08-8511-8f24bc6e6974](https://lastknowngood.knowledge.maana.io/workspace/f3a0dae1-e7ab-4a08-8511-8f24bc6e6974) | yes |
+| Basics | Intro to Kinds and Functions | geoCoordinates | [https://lastknowngood.knowledge.maana.io/workspace/cab6866a-ccf9-40c7-a23c-5f24995ca0cc](https://lastknowngood.knowledge.maana.io/workspace/cab6866a-ccf9-40c7-a23c-5f24995ca0cc) | yes |
 | Basics | Working with lists | MaanaQ bar: All people over 21 | [https://lastknowngood.knowledge.maana.io/workspace/d5a3e4bd-3a8a-46cb-a06e-a96539cc6359](https://lastknowngood.knowledge.maana.io/workspace/d5a3e4bd-3a8a-46cb-a06e-a96539cc6359) | yes |
 | Basics | NLP | Entity Extraction \( company, people, places\) with Natural Compose | [https://lastknowngood.knowledge.maana.io/workspace/45458995-e4e0-410c-915f-dacb1f155357](https://lastknowngood.knowledge.maana.io/workspace/45458995-e4e0-410c-915f-dacb1f155357) | no |
 | Basics | Audio Translation | YouTube | [https://lastknowngood.knowledge.maana.io/workspace/37ae5256-9486-455c-b4a9-a4d76784a5ad](https://lastknowngood.knowledge.maana.io/workspace/37ae5256-9486-455c-b4a9-a4d76784a5ad) | no |

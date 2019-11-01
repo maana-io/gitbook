@@ -6,7 +6,7 @@
 * [x] Workspaces \(**not applicable**\)
 * [x] Step-by-Step Instructions for Learning Assistant \(**not applicable**\)
 * [x] Case description \(**not applicable**\)
-* [x] Videos **\(pending\)**
+* [x] Videos **\(WIP\)**
 
 ---------------------------------------------------------------------------------------------------------------
 
