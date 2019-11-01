@@ -15,9 +15,7 @@ description: Natural Language Processing
 
 ---------------------------------------------------------------------------------------------------------------
 
-**Link to Workspace**
-
-[https://lastknowngood.knowledge.maana.io/workspace/45458995-e4e0-410c-915f-dacb1f155357](https://lastknowngood.knowledge.maana.io/workspace/45458995-e4e0-410c-915f-dacb1f155357)
+**Link to Workspace:** [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)
 
 
 

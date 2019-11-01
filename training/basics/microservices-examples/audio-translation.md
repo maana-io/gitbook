@@ -11,7 +11,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
-**Link to workspace**: [https://lastknowngood.knowledge.maana.io/workspace/37ae5256-9486-455c-b4a9-a4d76784a5ad](https://lastknowngood.knowledge.maana.io/workspace/37ae5256-9486-455c-b4a9-a4d76784a5ad)
+**Link to workspace**: [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)
 
 
 

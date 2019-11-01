@@ -3,13 +3,15 @@
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
 * [ ] Power Point Slides \(**pending - check if needed**\)
-* [ ] Workspaces **\(WIP\)**
+* [ ] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)**\)**
 * [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
 * [ ] Case description \(**pending**\)
 
 ---------------------------------------------------------------------------------------------------------------
 
-Link to Workspace: [https://cstraining01.knowledge.maana.io/workspace/512a43c7-660c-43d8-b525-42ab0c1a5a61](https://cstraining01.knowledge.maana.io/workspace/512a43c7-660c-43d8-b525-42ab0c1a5a61)
+Link to Workspace: [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)
+
+
 
 Use case description: 
 

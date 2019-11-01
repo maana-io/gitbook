@@ -7,7 +7,7 @@ description: Problem Decomposition
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
 * [ ] Power Point Slides \(**pending, could use Slide 77 on** [**https://maanainc.app.box.com/file/444706275394**](https://maanainc.app.box.com/file/444706275394)\)
-* [x] Workspaces \(**Car Assistant:** [**https://cstraining01.knowledge.maana.io/workspace/1065fc6b-8beb-4ba1-9b24-0c03b7825cfd**](https://cstraining01.knowledge.maana.io/workspace/1065fc6b-8beb-4ba1-9b24-0c03b7825cfd) ****\)
+* [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
 * [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
 * [ ] Case description \(**pending**\)
 
@@ -150,21 +150,5 @@ Car Selection workspace?
 
 **Step by Step Instructions:**
 
-1. Create a new knowledge graph
-2. In the knowledge graph, create a function
-3. Name the function, "sayHello"
-4. Inside the function, create a field called "input" of type string
-5. Expand the sayHello function
-6. We will use a pre-existing service called "Greetings" to create a sub function
-7. Go to the search bar and type in Greetings
-8. Drag and drop "Greetings" to Inventory
-9. Expand "Greetings" in Inventory to locate the "helloWorld" function
-10. Drag and drop "helloWorld" from Inventory to the Canvas
-11. Wire input and output
-12. sayHello function is now complete
-13. To test the functionality we just created, locate sayHello function in the Explorer panel and hit Run in the Context Panel 
-14. Provide an input
-15. In the Assistant Panel, we see the result.
-
-Link to recording:
+**Link to recording:**
 
