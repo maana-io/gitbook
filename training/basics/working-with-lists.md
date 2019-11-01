@@ -6,7 +6,7 @@
 * [x] Workspaces \([https://lastknowngood.knowledge.maana.io/workspace/d5a3e4bd-3a8a-46cb-a06e-a96539cc6359 ](https://lastknowngood.knowledge.maana.io/workspace/d5a3e4bd-3a8a-46cb-a06e-a96539cc6359%20)\)
 * [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
 * [x] Case description \(**completed**\)
-* [ ] Recording \(**pending**\)
+* [x] Recording \(**completed\)**
 * [ ] Gif \(**pending**\)
 
 ---------------------------------------------------------------------------------------------------------------
