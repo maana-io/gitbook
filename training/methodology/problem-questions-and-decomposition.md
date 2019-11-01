@@ -2,7 +2,7 @@
 description: Problem Decomposition
 ---
 
-# Top Down Approach
+# Function Decomposition
 
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
