@@ -137,7 +137,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Team structure &#x2022; Relevant aspects of SCRUM and Agile</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="advanced/developer-steel-thread.md">Developer Steel Thread</a>
+      <td style="text-align:left"><a href="advanced/developer-steel-thread.md">Developing Custom Microservices</a>
       </td>
       <td style="text-align:left">
         <p>Get started with Maana Command Line Interface (CLI) for advanced development.</p>
@@ -160,7 +160,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         Encapsulation &#x2022; Specialization &#x2022; Modeling inheritance</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="advanced/constraint-satisfaction.md">Constraint satisfaction</a>
+      <td style="text-align:left"><a href="advanced/constraint-satisfaction.md">Wrap-and-Map Microservices</a>
       </td>
       <td style="text-align:left">Build a constraint satisfaction model</td>
       <td style="text-align:left">&#x2022; Using templates &#x2022; High order patterns</td>
