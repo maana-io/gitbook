@@ -35,7 +35,7 @@ This is a hands-on example that will get you started with MaanaQ. In this case, 
 
 Link to recording:
 
-[https://maanainc.app.box.com/file/544979268134](https://maanainc.app.box.com/file/544979268134)
+[Hello World](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/Hello%20World%20Step%20by%20Step.mov)
 
 
 
