@@ -84,7 +84,7 @@ Step 4: Test the top level function with GraphQL IDE
 
 [step 4a - graphQL IDE](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%204a%20-%20graphQL%20IDE.gif)
 
-step 4b output
+[step 4b output](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%204b%20output.gif)
 
 
 
