@@ -74,5 +74,17 @@ Step 4: Test the top level function with GraphQL IDE
 
 4.Observe output 
 
-**Recording**: [https://maanainc.app.box.com/folder/91255070799](https://maanainc.app.box.com/folder/91255070799)
+**Recordings:**
+
+[step 2 - top level func](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%202%20-%20top%20level%20func.gif)
+
+[step 3a - import services and functions](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%203a%20-%20import%20services%20and%20functions.gif)
+
+[step 3b - wire functions](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%203b%20-%20wire%20functions.gif)
+
+[step 4a - graphQL IDE](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%204a%20-%20graphQL%20IDE.gif)
+
+step 4b output
+
+
 
