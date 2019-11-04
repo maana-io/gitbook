@@ -88,7 +88,7 @@ Since we have 3 functions that have 3 separate outputs we need to aggregate thes
 
 
 
-**Recording:** [**https://maanainc.app.box.com/folder/91127313218**](https://maanainc.app.box.com/folder/91127313218)\*\*\*\*
+\*\*\*\*[**Recordings**](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/)\*\*\*\*
 
 
 
