@@ -88,7 +88,15 @@ Since we have 3 functions that have 3 separate outputs we need to aggregate thes
 
 
 
-\*\*\*\*[**Recordings**](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/)\*\*\*\*
+**Recordings:**
+
+[Step 4-5 Create Top Level Func](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Step%204-5%20Create%20Top%20Level%20Func.gif)
+
+[Steps 5-7 Func graph and importing services](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Steps%205-7%20Func%20graph%20and%20importing%20services.gif)
+
+[Steps 8-9 service functions and wiring](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Steps%208-9%20service%20functions%20and%20wiring.gif)
+
+[Steps 10-12 union wiring to output](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/steps%2010-12%20union%20wiring%20to%20output.gif)
 
 
 
