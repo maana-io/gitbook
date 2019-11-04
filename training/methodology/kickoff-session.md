@@ -9,7 +9,5 @@
 
 --------------------------------------------------------------------------------------------------------------
 
-Powerpoint Slides:
-
-[https://maanainc.box.com/s/7bdu2yhrdn1htaukeoe6pq8bvja5pdci](https://maanainc.box.com/s/7bdu2yhrdn1htaukeoe6pq8bvja5pdci)
+[Powerpoint Slides](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_ppt/The%20Maana%20Way%20-%20HL%20Methodology.pptx)
 
