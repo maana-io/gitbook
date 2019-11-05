@@ -21,6 +21,14 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left"><b>DAY 1 </b>
+      </td>
+      <td style="text-align:left"><b>Familiarize with key concepts of Computational Knowledge Graph Technology</b>
+      </td>
+      <td style="text-align:left"><b>BASICS</b>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left"><a href="basics/basic-orientation/">Orientation</a>
       </td>
       <td style="text-align:left">
@@ -43,7 +51,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         Importing a microservice to a workspace</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/using-kinds-and-function-to-build-a-knowledge-graph.md">Computational Knowledge Graph</a>
+      <td style="text-align:left"><a href="basics/using-kinds-and-function-to-build-a-knowledge-graph.md">Introduction to Kinds and Functions</a>
       </td>
       <td style="text-align:left">
         <p>Create Kinds and Functions</p>
@@ -65,7 +73,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
     </tr>
     <tr>
       <td style="text-align:left">
-        <p>Microservice Example 1:</p>
+        <p>Function Composition Example 1:</p>
         <p><a href="basics/microservices-examples/nlp.md">NLP</a>
         </p>
       </td>
@@ -78,7 +86,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Using helper utility functions such as word counting</td>
     </tr>
     <tr>
-      <td style="text-align:left">Microservice Example 2: <a href="basics/microservices-examples/audio-translation.md">Audio translation</a>
+      <td style="text-align:left">Function Composition Example 2: <a href="basics/microservices-examples/audio-translation.md">Audio translation</a>
       </td>
       <td style="text-align:left">
         <p>Learn how to compose functions from multiple microservices.</p>
@@ -88,6 +96,14 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       </td>
       <td style="text-align:left">&#x2022; Audio transcription and translation using maana-media, maana-audio,
         &#x2022; Azure services such as maana-azure-speech-to-text, maana-azure-translation</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>DAY 2</b>
+      </td>
+      <td style="text-align:left"><b>Familiarize with a new way of thinking</b>
+      </td>
+      <td style="text-align:left"><b>METHODOLOGY</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="methodology/use-case-selection.md">Use Case Selection</a>
@@ -101,7 +117,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Use Case ranking spreadsheet and &apos;Fit 4 Maana&apos; workspace</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="methodology/problem-questions-and-decomposition.md">Top down approach</a>
+      <td style="text-align:left"><a href="methodology/problem-questions-and-decomposition.md">Problem Decomposition</a>
       </td>
       <td style="text-align:left">
         <p>Familiarize with Maana&apos;s methodology to decompose problems</p>
@@ -137,6 +153,14 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Team structure &#x2022; Relevant aspects of SCRUM and Agile</td>
     </tr>
     <tr>
+      <td style="text-align:left"><b>DAY 3</b>
+      </td>
+      <td style="text-align:left"><b>Learn skills and techniques to enhance Maana solution development</b>
+      </td>
+      <td style="text-align:left"><b>ADVANCED TOPICS</b>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left"><a href="advanced/developer-steel-thread.md">Developing Custom Microservices</a>
       </td>
       <td style="text-align:left">
@@ -152,15 +176,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         existing libraries</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="advanced/design-patterns.md">Design Patterns</a>
-      </td>
-      <td style="text-align:left">Learn how to recognize and capture common patterns, such as concept specialization,
-        enumeration</td>
-      <td style="text-align:left">&#x2022; Reuse &#x2022; Naming convention &#x2022; Combining concepts
-        Encapsulation &#x2022; Specialization &#x2022; Modeling inheritance</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="advanced/constraint-satisfaction.md">Wrap-and-Map Microservices</a>
+      <td style="text-align:left"><a href="advanced/constraint-satisfaction.md">Wrapping and Mapping</a>
       </td>
       <td style="text-align:left">Build a constraint satisfaction model</td>
       <td style="text-align:left">&#x2022; Using templates &#x2022; High order patterns</td>
@@ -176,6 +192,30 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       </td>
       <td style="text-align:left">&#x2022; What is ORDL? &#x2022; What are examples of observation, reasoning,
         decision and learning functions?</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="advanced/design-patterns.md">Design Patterns</a>
+      </td>
+      <td style="text-align:left">Learn how to recognize and capture common patterns, such as concept specialization,
+        enumeration</td>
+      <td style="text-align:left">&#x2022; Reuse &#x2022; Naming convention &#x2022; Combining concepts
+        Encapsulation &#x2022; Specialization &#x2022; Modeling inheritance</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>DAY 4</b>
+      </td>
+      <td style="text-align:left"><b>USE CASE KICKOFF (Part 1)</b>
+      </td>
+      <td style="text-align:left"><b>Group work on Use Case Development</b>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>DAY 5</b>
+      </td>
+      <td style="text-align:left"><b>USE CASE KICKOFF (Part 2)</b>
+      </td>
+      <td style="text-align:left"><b>Group work on Use Case Development</b>
+      </td>
     </tr>
   </tbody>
 </table>
