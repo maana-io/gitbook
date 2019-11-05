@@ -1,3 +1,7 @@
+---
+description: Maana Training and Use Case Kickoff
+---
+
 # Outline
 
 ## Q Training Experience at a Glance
