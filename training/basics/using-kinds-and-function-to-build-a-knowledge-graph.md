@@ -2,7 +2,7 @@
 description: Computational Knowledge Graph
 ---
 
-# Intro to kinds and functions
+# Introduction to kinds and functions
 
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
