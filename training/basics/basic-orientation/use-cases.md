@@ -9,7 +9,7 @@
 | Basics | NLP | Entity Extraction \( company, people, places\) with Natural Compose | [https://lastknowngood.knowledge.maana.io/workspace/45458995-e4e0-410c-915f-dacb1f155357](https://lastknowngood.knowledge.maana.io/workspace/45458995-e4e0-410c-915f-dacb1f155357) | no |
 | Basics | Audio Translation | YouTube | [https://lastknowngood.knowledge.maana.io/workspace/7e63d287-493d-4754-b518-9548b0b0b127](https://lastknowngood.knowledge.maana.io/workspace/7e63d287-493d-4754-b518-9548b0b0b127) | no |
 | Methodology | Use Case Selection | FitForMaana | [https://cstraining01.knowledge.maana.io/workspace/590b64de-1b1c-4d53-90ee-58a088115fa7](https://cstraining01.knowledge.maana.io/workspace/590b64de-1b1c-4d53-90ee-58a088115fa7) | no |
-| Methodology | TopDownApproach | Car Assistant | [https://cstraining01.knowledge.maana.io/workspace/1065fc6b-8beb-4ba1-9b24-0c03b7825cfd](https://cstraining01.knowledge.maana.io/workspace/1065fc6b-8beb-4ba1-9b24-0c03b7825cfd) | no |
+| Methodology | Problem Decomposition | Car Assistant | [https://cstraining01.knowledge.maana.io/workspace/1065fc6b-8beb-4ba1-9b24-0c03b7825cfd](https://cstraining01.knowledge.maana.io/workspace/1065fc6b-8beb-4ba1-9b24-0c03b7825cfd) | no |
 | Methodology | Collaboration | Deduction | [https://lastknowngood.knowledge.maana.io/workspace/68a6ac48-f1ea-41bb-9ba5-6fbccb795ff2](https://lastknowngood.knowledge.maana.io/workspace/68a6ac48-f1ea-41bb-9ba5-6fbccb795ff2) |  |
 | Methodology | Project Execution | N/A | we will have slides for this |  |
 | Advanced | Developer Steel Thread | N/A | we will have a video for this |  |
