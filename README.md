@@ -6,7 +6,7 @@
 
 **About Maana**
 
-Maana organizes the world’s industrial data and human expertise into digital knowledge to enable millions of experts to make better decisions affecting the global economy and human civilization.  Using our Knowledge Platform™ and its proprietary Computational Knowledge Graph™, Fortune Global 500 industrial companies drive answers to operational questions that direct the future.
+Maana organizes the world’s industrial data and human expertise into digital knowledge to enable millions of experts to make better decisions affecting the global economy and human civilization.  Using our Knowledge Platform™ and its proprietary Computational Knowledge Graph™, Fortune Global 500 industrial companies drive answers to operational questions that direct the future. 
 
 Maana is a pioneer of digital knowledge technology, enabling enterprise-wide digital transformation through unsurpassed interoperability of tools without creating new silos.
 

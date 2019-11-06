@@ -7,7 +7,8 @@
 * [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
 * [x] Case description \(**completed**\)
 * [x] Recording \(**completed**\)
-* [ ] Gifs **\(pending\)**
+* [x] Gifs **\(completed\)**
+* [ ] **Azure import \(pending\)**
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -20,22 +21,16 @@ This is a hands-on example that will get you started with MaanaQ. In this case, 
 1. Create a new knowledge graph
 2. In the knowledge graph, create a function
 3. Name the function, "sayHello"
-4. Inside the function, create a field called "input" of type string
-5. Expand the sayHello function
-6. We will use a pre-existing service called "Greetings" to create a sub function
-7. Go to the search bar and type in Greetings
-8. Drag and drop "Greetings" to Inventory
-9. Expand "Greetings" in Inventory to locate the "helloWorld" function
-10. Drag and drop "helloWorld" from Inventory to the Canvas
-11. Wire input and output
-12. sayHello function is now complete
-13. To test the functionality we just created, locate sayHello function in the Explorer panel and hit Run in the Context Panel 
-14. Provide an input
-15. In the Assistant Panel, we see the result.
+4. Inside the function, create a field called "input" of type string and click save
+5. Expand the sayHello function. We will use a pre-existing service called "Greetings" to create a sub function. Go to the search bar and type in Greetings. Drag and drop "Greetings" to Inventory
+6. Expand "Greetings" in Inventory to locate the "helloWorld" function. Drag and drop "helloWorld" from Inventory to the Canvas. Wire input and output. sayHello function is now complete.
+7. To test the functionality we just created, locate sayHello function in the Explorer panel and hit Run in the Context Panel . Provide an input. In the Assistant Panel, we see the result.
 
-Link to recording:
+Link to recording on Box: [https://maanainc.app.box.com/folder/92505838024](https://maanainc.app.box.com/folder/92505838024)
 
-[Hello World](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/Hello%20World%20Step%20by%20Step.mov)
+
+
+Link to Gif on Box: [https://maanainc.app.box.com/folder/92505735615](https://maanainc.app.box.com/folder/92505735615)
 
 
 

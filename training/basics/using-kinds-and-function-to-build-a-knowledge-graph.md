@@ -10,8 +10,11 @@ description: Computational Knowledge Graph
 * [x] Workspaces \( [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\) 
 * [x] Step-by-Step Instructions for Learning Assistant \(Complete\)
 * [x] Case description \(**complete**\)
-* [ ] Revisit content below \(**pending**\)
-* [ ] Possibly add here use case shared by Logan at Show and Tell \(google maps visualization of crime vs. real estate in Sacramento - deciding where to buy property looking at the map\). Need to check if assistant service that is needed can be deployed to cstraining01 \(**pending**\)
+* [ ] Revisit "Major Concepts" section below \(**pending**\)
+* [ ] Possibly add here use case shared by Logan at Show and Tell \(google maps visualization of crime vs. real estate in Sacramento - deciding where to buy property looking at the map\). Need to check if assistant service that is needed can be deployed to cstraining01 \(**pending**
+* [x] Recording \(**completed**\)
+* [x] Gifs **\(completed\)**
+* [ ] **Azure import \(pending\)**
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -101,13 +104,15 @@ Pre requisites
 
 
 
-Link to Step by Step Recordings:
+Link to Step by Step Recordings on Box:
 
 [https://maanainc.app.box.com/folder/92358696747](https://maanainc.app.box.com/folder/92358696747)
 
 
 
+Link to Gif on Box:
 
+[https://maanainc.app.box.com/folder/92356121508](https://maanainc.app.box.com/folder/92356121508)
 
 
 
