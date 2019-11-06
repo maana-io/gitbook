@@ -48,7 +48,7 @@ Examples of "extract" query to run with default Model.
 
 {% tabs %}
 {% tab title="Query" %}
-```graphql
+```
 query Extract {
   extract(
     source: [
@@ -71,7 +71,7 @@ query Extract {
 {% endtab %}
 
 {% tab title="Result" %}
-```graphql
+```
 {
   "data": {
     "extract": [
@@ -220,7 +220,7 @@ NER also gives the option of using a custom CRF model. Given a URL that points t
 
 {% tabs %}
 {% tab title="Query" %}
-```graphql
+```
 query ExtractWithModelOrRegex {
   extract(
     source: "Daily update notification made to BSEE Houma District, Bobby Nelson.",
@@ -238,7 +238,7 @@ There is also a capability to use customer’s Token-Regex rules if specify path
 {% endtab %}
 
 {% tab title="Result" %}
-```graphql
+```
 {
   "data": {
     "extract": [
@@ -273,7 +273,7 @@ There is also a capability to use customer’s Token-Regex rules if specify path
 
 {% tabs %}
 {% tab title="Query" %}
-```graphql
+```
 query BatchExtract {
   extractBatch(
     sources: [
@@ -291,7 +291,7 @@ query BatchExtract {
 {% endtab %}
 
 {% tab title="Result" %}
-```graphql
+```
 {
   "data": {
     "extractBatch": [
@@ -360,7 +360,7 @@ query BatchExtract {
 
 {% tabs %}
 {% tab title="Query" %}
-```graphql
+```
 query IsSurfaceForm {
   isSurfaceForm(source: "Seattle", entityName: "Location")
 }
@@ -368,7 +368,7 @@ query IsSurfaceForm {
 {% endtab %}
 
 {% tab title="Result" %}
-```graphql
+```
 {
   "data": {
     "isSurfaceForm": true
@@ -382,7 +382,7 @@ query IsSurfaceForm {
 
 {% tabs %}
 {% tab title="Query" %}
-```graphql
+```
 query IsSurfaceFormWithModel {
   isSurfaceForm(
     source: "BOEM"
@@ -394,7 +394,7 @@ query IsSurfaceFormWithModel {
 {% endtab %}
 
 {% tab title="Result" %}
-```graphql
+```
 {
   "data": {
     "isSurfaceForm": true
@@ -410,7 +410,7 @@ This query returns the parsed entity name if the source text is exactly as entit
 
 {% tabs %}
 {% tab title="Query" %}
-```graphql
+```
 query Parse {
   parse(
     source: "Forrest Gump"
@@ -421,7 +421,7 @@ query Parse {
 {% endtab %}
 
 {% tab title="Result" %}
-```graphql
+```
 {
   "data": {
     "parse": "Forrest Gump"
@@ -433,7 +433,7 @@ query Parse {
 
 {% tabs %}
 {% tab title="Query" %}
-```graphql
+```
 query Parse {
   parse(
     source: "I visited my friend Forrest Gump"
@@ -444,7 +444,7 @@ query Parse {
 {% endtab %}
 
 {% tab title="Result" %}
-```graphql
+```
 {
   "data": {
     "parse": ""

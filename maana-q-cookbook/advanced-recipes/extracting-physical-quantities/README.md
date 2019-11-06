@@ -6,7 +6,7 @@ This service is used for extracting physical quantities, or measured quantities,
 
 This sequence of queries extracts pressure measurements from the sample sentence, converts them into head \(in feet of sea water\) and checks to see if the result is greater than an a provided alarm threshold:
 
-```text
+```
 query IS_OVERPRESSURE(
   $SOURCE:String!,
   $DENSITY_OF_SEAWATER:PhysicalQuantityInput!,
@@ -33,7 +33,7 @@ The service uses a constructive pattern matching algorithm to parse physical qua
 
 ## Schema <a id="schema"></a>
 
-```text
+```
 type Info {
   # A unique identifier for the service
   id: ID!
@@ -650,7 +650,7 @@ schema {
 For example:
 {% endhint %}
 
-```text
+```
 query FOO{ foo{ ... FooFragment }}
 query BAR( $FOO: FooInput ){ ... BarFragment }
 ```
@@ -872,7 +872,7 @@ Means, execute the query FOO, storing the result in the variable $FOO, and then 
 
 ### GraphQL Fragments <a id="graphql-fragments"></a>
 
-```text
+```
 fragment PhysicalDimensionFragment on PhysicalDimension {
   name
   aliases

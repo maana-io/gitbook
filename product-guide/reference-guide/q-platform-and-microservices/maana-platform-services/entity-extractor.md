@@ -18,7 +18,7 @@ For each entity mention discovered, the extractor creates links between the orig
 
 The entity extractor service is invoked manually to extract entities. After importing the service\[TBD\]_Link to how to import services_ bring the mutation _extractAndLink_ into the workspace and invoke it on a file/CSV kind with an applicable _text_  field. Because this mutation returns a [Bot Action](../../technical-design-and-architecture/bot-actions/), query relevant BotAction fields:
 
-```graphql
+```
 mutation
 {
   extractAndLink(kindName:"MY_FILE_KIND.CSV",fieldName:"myTextField"){

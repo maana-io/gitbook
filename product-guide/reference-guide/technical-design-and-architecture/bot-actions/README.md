@@ -21,36 +21,34 @@ You can invoke a query or mutation either explicitly \(e.g. train a classifier o
 
 One of the primary use cases for BotActions is to support potentially long-running, asynchronous operations. The underlying GraphQL model for queries and mutations is synchronous. For example, the operation:
 
-```python
+```
 search(term: String!): [Document!]!
 ```
 
 can be queried as:
 
-```python
-const SEARCH_QUERY = gql`query search($term: String!) {
-  search(term: $term) {
-    id
-    name
+    const SEARCH_QUERY = gql`query search($term: String!) {
+      search(term: $term) {
+        id
+        name
+        ...
+      }
+    }`
+
+
     ...
-  }
-}`
- 
- 
-...
- 
- 
-const documents = await client.query({
-  query: SEARCH_QUERY,
-  variables: {term: "Kratos"}
-})
-```
+
+
+    const documents = await client.query({
+      query: SEARCH_QUERY,
+      variables: {term: "Kratos"}
+    })
 
 It is thus expected that the set of documents found by the search operation will be returned as part of a single call, despite it being _Invoked_ asynchronously.
 
 This is fine for short-lived operations \(e.g. &lt; 1 minute\), but, in practice, some queries \(or mutations\) can take several minutes, hours, or even days \(e.g. complex Spark or TensorFlow jobs\). In such cases, we'd like a [future-like](https://en.wikipedia.org/wiki/Futures_and_promises) mechanism in which we are given some sort of _token_ that can be used to coordinate access to progress and results. To accomplish this, we propose the following pattern:
 
-```python
+```
 searchAction(term: String!, resultKey: String!): BotAction!
 searchResult(resultKey: String!): [Document!]!
 ```
@@ -63,7 +61,7 @@ The service must also provide a separate query that returns the actual results t
 
 ### Schema <a id="BotActions-Schema"></a>
 
-```python
+```
 enum BotActionStatus {
   PENDING # initial
   IN_PROGRESS
@@ -98,7 +96,7 @@ type BotAction {
 
 ### Sample Query <a id="BotActions-SampleQuery"></a>
 
-```python
+```
 query botAction($id: ID!) {
   botAction(id: $id) {
     name

@@ -55,7 +55,7 @@ Copy the definition the service from the GraphQL SDL panel which one can then pa
 3. Use the CLI mcreate command to generate a boilerplate Maana Knowledge Microservice in a preferred language.
 4. Add the workspace as a project to my graphqlconfig, e.g.:
 
-```text
+```
 projects:
   logic:
     schemaPath: schema.graphql
