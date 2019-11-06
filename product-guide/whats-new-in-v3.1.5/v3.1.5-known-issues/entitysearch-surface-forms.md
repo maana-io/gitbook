@@ -11,7 +11,7 @@ description: >-
 **1. Given at least 1 document and 2 entities called "BookRefA" and "BookRefB".  
 2. Given these surface forms:**
 
-```python
+```
       { id: "SF1", name: "a Vice President" }
       { id: "SF2", name: "the Vice President" }
       { id: "SF3", name: "the President" }
@@ -32,7 +32,7 @@ NOTE: SF4 has two linked entities
 
 #### 4. Given the document's contents in JSON:
 
-```python
+```
 {
     "c": "Docpcavm",
     "id": "Docmdmlh",
@@ -42,7 +42,7 @@ NOTE: SF4 has two linked entities
 
 #### 5. Execute an EntitySearch query using all entities and all surface forms:
 
-```python
+```
 query entitySearch_allEntities_docs(
   $docId: ID!
   $docTextId: ID!
@@ -79,7 +79,7 @@ See description, then read below:
 {% tab title="Expected Result" %}
 RefB1 should have 4 locations:
 
-```python
+```
 {
   "data": {
     "entitySearch": [
@@ -121,7 +121,7 @@ RefB1 has 2 locations only for "all other" missing "and other":
 NOTE: RefA3 found the "and other" at 3,7 locations
 {% endhint %}
 
-```python
+```
 {
   "data": {
     "entitySearch": [

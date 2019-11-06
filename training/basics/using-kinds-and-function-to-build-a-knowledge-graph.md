@@ -50,3 +50,87 @@ There are two ways to create the kinds of data used as the building blocks for y
 1. [The Data-First Approach](https://app.gitbook.com/@maana/s/q/~/edit/drafts/-Lss1wojMQWwITyvTgMq/v/3.2.1/product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/kind-approaches#data-first-approach)
 2. [The Model-First Approach](https://app.gitbook.com/@maana/s/q/~/edit/drafts/-Lss1wojMQWwITyvTgMq/v/3.2.1/product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/kind-approaches#data-first-approach) 
 
+-----------------------------------
+
+**Use Case Description:**  
+
+The aim of this lesson is to introduce Kinds and Functions by creating a means by which to calculate the distance between to Geo Coordinates.  Additionally we will extend the example to accommodate names of places.  In order to carry out the computations we will leverage a service already part of our Maana Q deployment.   
+
+**Step by Step Instructions**
+
+Pre requisites 
+
+* Workspace created 
+* Services, distance-lambda-demo added to inventory 
+* GeoCoordinate Kind and Distance Kind created 
+
+**Step 1:** Create Kinds  
+
+* Above the canvas click on the create kind button, a blue box will appear 
+* Create a GeoCoordinate kind with properties; 
+* lat  FLOAT 
+* long FLOAT 
+* Repeat to create a Distance kind with properties; 
+* value FLOAT 
+* distanceUnit STRING 
+
+**Step 2:** Create “top level” function 
+
+* Above the canvas click on the create function button, a green function box will appear.  
+* Give the function a name e.g “distanceBetweenCoordinates”.  
+* Add an inputs by clicking on the line below the “field” heading  
+* origin GEOCOORDINATE 
+* target GEOCOORDINATE 
+* Specify the as type Distance 
+* Click Save!  
+
+**Step 3:** Create Function Calculation for distanceBetweenCoordinates  
+
+* Click on the 4 arrows located in the top right hand corner of the function box. This will take us to a canvas where we can begin to “wire up” our function 
+* From the inventory locate the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
+* Drag the function onto the canvas 
+* Connect the inputs and output 
+
+**Step 4:** Test the distanceBetweenCoordinates Function 
+
+* Click on Top Level PQ and select the distanceBetweenGeoCoordinates Function 
+* In the right hand panel add an origin and target \(be sure to add the ID field\) 
+* Click Run 
+* Observe the results in the function results panel at the bottom of the screen  
+
+**Step 5:** Add distanceBetweenAddresses Function 
+
+* Click on Top Level PQ and add the function, distanceBetweenAddresses 
+* Inputs:  
+* origin STRING 
+* target STRING 
+* Output: 
+* Distance 
+
+**Step 6:** Add getGeoCoordinatesByName function to distanceBetweenAddresses Function 
+
+* Open the distanceBetweenAddresses function and add a new function, getGeoCoordinatesByName 
+* Inputs: 
+* name STRING  
+* Output: 
+* GEOCOORDINATE 
+* Open this function and add getGeoCoordinatesByName function from the lambda-distance-demo service 
+* Wire the inputs and output 
+
+**Step 7:** Add a second getGeoCoordinatesByName function and finish 
+
+* From the inventory expand the functions list 
+* Drag getGeoCoordinatesByName onto the canvas 
+* Wire the inputs of both instances 
+* Add the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
+* Wire the inputs and output 
+
+**Step 8:** Test the distanceBetweenAddresses 
+
+* Click on Top Level PQ and highlight the function 
+* In the right hand panel enter values for origin and target 
+* Origin = “London” 
+* Target = “Birmingham” 
+* Click run 
+* Observe the results in the function results panel. 
+

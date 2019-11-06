@@ -8,7 +8,7 @@ In this tutorial, you will walk step-by-step for creating a managed graph from a
 
 Use the GraphQL command line interface \(CLI\) with the Maana plugin:
 
-```text
+```
 npm i -g graphql-cli graphql-cli-maana
 ```
 
@@ -22,7 +22,7 @@ Maana has included a `.graphqlconfig` file preconfigured for this tutorial.
 
 **Optionally**, to create a configuration from scratch, create a CKG project and GraphQL endpoint, as in:
 
-```text
+```
 gql init
 ? Enter project name (Enter to skip): ckg
 ? Local schema file path: ckg.graphql
@@ -68,7 +68,7 @@ After creating a new `.graphqlconfig` file connecting to a Maana API endpoint:
    * Example: Run `gql menv --shell bash` if you are using bash
    * You will see output similar to:
 
-     ```text
+     ```
      export MAANA_AUTH_TOKEN=<token here>
      # Run this command to configure your shell
      # eval $(gql menv --shell bash)
@@ -96,24 +96,24 @@ After creating a new project connecting to a Maana endpoint, you will need to se
 5. Copy the generated auth token that shows up below the button.
 6. In the terminal add an environment variable for the auth token.
 
-```text
+```
 # *nix based systems
 export MAANA_AUTH_TOKEN=<paste auth token here>
 ```
 
-```text
+```
 rem Windows command line
 set MAANA_AUTH_TOKEN=<paste auth token here>
 ```
 
-```text
+```
 # Windows power shell
 $Env:MAANA_AUTH_TOKEN = "<paste auth token here>"
 ```
 
 7. Add the authorization header to the Maana endpoint:
 
-```text
+```
      "ckg": {
       "schemaPath": "ckg.graphql",
        "extensions": {
@@ -138,7 +138,7 @@ Let Maana completely manage these types, creating the boilerplate queries, mutat
 
 You can use the GraphQL CLI with the Maana plugin command: `maddsvc` \("add service"\):
 
-```text
+```
 gql maddsvc "Drillng Problems" -s model.gql -p ckg
 Using endpoint default: {"url":"https://<maana host>:8443/graphql"}
 Read file: model.gql size: 483
@@ -160,13 +160,13 @@ Add another project to you graphql config using the following template to build 
 
 #### Template:
 
-```text
+```
 https://<maana host>:8443/service/<service id>/graphql
 ```
 
 #### Command:
 
-```text
+```
 gql add-project
 ? Enter project name for new project: db
 ? Local schema file path: db/schema.graphql
@@ -188,7 +188,7 @@ Again, you need to add the authorization header.
 
 Only a few types were specified for the **domain model**. Maana adds a set of boilerplate types and operations as part of a fully-managed service. The **schema** for this service can be retrieved by:
 
-```text
+```
 gql get-schema -p dp
 ```
 
@@ -196,7 +196,7 @@ gql get-schema -p dp
 
 Now that the model has been turned into a service, you can upload instance data to populate \("hydrate"\) the graph:
 
-```text
+```
 gql mload data/DrillingProblem.csv -p dp
 gql mload data/Location.csv -p dp
 gql mload data/DrillingReport.csv -p dp

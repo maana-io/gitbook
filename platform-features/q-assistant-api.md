@@ -52,7 +52,7 @@ These are officially unsupported in 3.2.1 and subject to change as they are expe
 
 Invokes a refresh of a service's schema in maana-catalog. Subsequenly, this method invokes `reloadServiceSchema` in order to update the workspace inventory. 
 
-```text
+```
 await AssistantAPIClient.refreshServiceSchema('serviceid...')
 ```
 
@@ -60,7 +60,7 @@ await AssistantAPIClient.refreshServiceSchema('serviceid...')
 
 Ensures consistence between a service's schema, as it exists in Maana, and what is reflected in the workspace's service inventory. This does NOT invoke a refresh of the service schema through catalog; ****instead, it is designed to help ensure valid workspace state given peripheral updates. 
 
-```text
+```
 await AssistantAPIClient.reloadServiceSchema('serviceid...')
 ```
 
@@ -68,7 +68,7 @@ await AssistantAPIClient.reloadServiceSchema('serviceid...')
 
 Creates a service. Minimum input is an object containing `name` , `endpointUrl` , and `serviceType` fields. The service `id` will be returned. 
 
-```text
+```
   const svc = await AssistantAPIClient.createService({
     name: 'mySvc',
     endpointUrl: 'http://192.....:...',
@@ -80,7 +80,7 @@ Creates a service. Minimum input is an object containing `name` , `endpointUrl` 
 
 Imports a service into the workspace inventory. Returns the service `id`
 
-```text
+```
 await AssistantAPIClient.importService('service id...'
 ```
 
@@ -88,7 +88,7 @@ await AssistantAPIClient.importService('service id...'
 
 This is used to execute an arbitrary graphql query/mutation against a service. The input is an object containing`serviceId`, `query`, and `variables` \(a javascript object consisting of name/value pairs\). The result object containing `data` and `errors` fields will be returned:
 
-```text
+```
   const result = await AssistantAPI.executeGraphql({
     serviceId: 'service id...',
     query: 'query{helloWorld}',

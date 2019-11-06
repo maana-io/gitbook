@@ -77,7 +77,7 @@ Backup and restore must be ran with the same build manifest in scope \(deploy.en
 
 Example **Backup** commands:
 
-```text
+```
 source deploy.env.sh
 
 bash ./backup_restore/do_backup.sh -b -d ~/maana/data -v -q ../cluster/deploy.env.sh -c core.yml
@@ -109,7 +109,7 @@ There are two parts to telling that the restore is complete. First, the user wil
 
 Example **Restore** commands:
 
-```text
+```
 source deploy.env.sh
 
 bash ./backup_restore/do_backup.sh -r 201808161855 -d ~/maana/data -v -q ../cluster/deploy.env.sh -c core.yml
@@ -123,7 +123,7 @@ Problem: do\_backup.sh fails to flush Redis and put Consul into maintenance mode
 
 After `do_backup.sh` scales down the necessary services, it will then flush the REDIS cache and put Consul into maintenance mode. These are done via scripted `ssh -A` calls to the nodes running those containers. If SSH keys are not configured correctly, you will see a series of log messages including:
 
-```text
+```
 Permission denied (publickey).
 ```
 
@@ -131,7 +131,7 @@ Solution:
 
 This can sometimes be resolved by adding the below lines to your `.ssh/config` file under the entry used for SSH access to the environment. Otherwise, contact IT or Support to ensure your user has access to SSH to all nodes.
 
-```text
+```
   AddKeysToAgent yes
   ForwardAgent yes
 ```
