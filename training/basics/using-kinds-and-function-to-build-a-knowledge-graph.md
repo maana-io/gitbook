@@ -7,15 +7,99 @@ description: Computational Knowledge Graph
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
 * [x] Power Point Slides \(**not needed**\)
-* [ ] Workspaces \( [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\) 
-* [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
-* [ ] Case description \(**pending**\)
+* [x] Workspaces \( [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\) 
+* [x] Step-by-Step Instructions for Learning Assistant \(Complete\)
+* [x] Case description \(**complete**\)
 * [ ] Revisit content below \(**pending**\)
 * [ ] Possibly add here use case shared by Logan at Show and Tell \(google maps visualization of crime vs. real estate in Sacramento - deciding where to buy property looking at the map\). Need to check if assistant service that is needed can be deployed to cstraining01 \(**pending**\)
 
 ---------------------------------------------------------------------------------------------------------------
 
 
+
+**Use Case Description:**  
+
+The aim of this lesson is to introduce Kinds and Functions by creating a means by which to calculate the distance between to Geo Coordinates.  Additionally we will extend the example to accommodate names of places.  In order to carry out the computations we will leverage a service already part of our Maana Q deployment.   
+
+**Step by Step Instructions**
+
+Pre requisites 
+
+1. Workspace created 
+2. Services, distance-lambda-demo added to inventory 
+3. GeoCoordinate Kind and Distance Kind created 
+
+**Step 1:** Create Kinds  
+
+1. Above the canvas click on the create kind button, a blue box will appear 
+2. Create a GeoCoordinate kind with properties; 
+   * lat  FLOAT 
+   * long FLOAT 
+3. Repeat to create a Distance kind with properties; 
+   * value FLOAT 
+   * distanceUnit STRING 
+
+**Step 2:** Create “top level” function 
+
+1. Above the canvas click on the create function button, a green function box will appear.  
+2. Give the function a name e.g “distanceBetweenCoordinates”.  
+3. Add an inputs by clicking on the line below the “field” heading  
+   * origin GEOCOORDINATE 
+   * target GEOCOORDINATE 
+   * Specify the as type Distance 
+4. Click Save
+
+**Step 3:** Create Function Calculation for distanceBetweenCoordinates  
+
+1. Click on the 4 arrows located in the top right hand corner of the function box. This will take us to a canvas where we can begin to “wire up” our function 
+2. From the inventory locate the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
+3. Drag the function onto the canvas 
+4. Connect the inputs and output 
+
+**Step 4:** Test the distanceBetweenCoordinates Function 
+
+1. Click on Top Level PQ and select the distanceBetweenGeoCoordinates Function 
+2. In the right hand panel add an origin and target \(be sure to add the ID field\) 
+3. Click Run 
+4. Observe the results in the function results panel at the bottom of the screen  
+
+**Step 5:** Add distanceBetweenAddresses Function 
+
+1. Click on Top Level PQ and add the function, distanceBetweenAddresses 
+2. Inputs:  
+   * origin STRING 
+   * target STRING 
+3. Output: 
+   * Distance 
+
+**Step 6:** Add getGeoCoordinatesByName function to distanceBetweenAddresses Function 
+
+1. Open the distanceBetweenAddresses function and add a new function, getGeoCoordinatesByName 
+2. Inputs: 
+   * name STRING  
+3. Output: 
+   * GEOCOORDINATE 
+4. Open this function and add getGeoCoordinatesByName function from the lambda-distance-demo service 
+5. Wire the inputs and output 
+
+**Step 7:** Add a second getGeoCoordinatesByName function and finish 
+
+1. From the inventory expand the functions list 
+2. Drag getGeoCoordinatesByName onto the canvas 
+3. Wire the inputs of both instances 
+4. Add the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
+5. Wire the inputs and output 
+
+**Step 8:** Test the distanceBetweenAddresses 
+
+1. Click on Top Level PQ and highlight the function 
+2. In the right hand panel enter values for origin and target 
+   * Origin = “London” 
+   * Target = “Birmingham” 
+3. Click run 
+4. Observe the results in the function results panel. 
+
+----------------------
 
 Using Kinds and Function to build a knowledge graph
 
@@ -52,85 +136,5 @@ There are two ways to create the kinds of data used as the building blocks for y
 
 -----------------------------------
 
-**Use Case Description:**  
-
-The aim of this lesson is to introduce Kinds and Functions by creating a means by which to calculate the distance between to Geo Coordinates.  Additionally we will extend the example to accommodate names of places.  In order to carry out the computations we will leverage a service already part of our Maana Q deployment.   
-
-**Step by Step Instructions**
-
-Pre requisites 
-
-* Workspace created 
-* Services, distance-lambda-demo added to inventory 
-* GeoCoordinate Kind and Distance Kind created 
-
-**Step 1:** Create Kinds  
-
-* Above the canvas click on the create kind button, a blue box will appear 
-* Create a GeoCoordinate kind with properties; 
-* lat  FLOAT 
-* long FLOAT 
-* Repeat to create a Distance kind with properties; 
-* value FLOAT 
-* distanceUnit STRING 
-
-**Step 2:** Create “top level” function 
-
-* Above the canvas click on the create function button, a green function box will appear.  
-* Give the function a name e.g “distanceBetweenCoordinates”.  
-* Add an inputs by clicking on the line below the “field” heading  
-* origin GEOCOORDINATE 
-* target GEOCOORDINATE 
-* Specify the as type Distance 
-* Click Save!  
-
-**Step 3:** Create Function Calculation for distanceBetweenCoordinates  
-
-* Click on the 4 arrows located in the top right hand corner of the function box. This will take us to a canvas where we can begin to “wire up” our function 
-* From the inventory locate the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
-* Drag the function onto the canvas 
-* Connect the inputs and output 
-
-**Step 4:** Test the distanceBetweenCoordinates Function 
-
-* Click on Top Level PQ and select the distanceBetweenGeoCoordinates Function 
-* In the right hand panel add an origin and target \(be sure to add the ID field\) 
-* Click Run 
-* Observe the results in the function results panel at the bottom of the screen  
-
-**Step 5:** Add distanceBetweenAddresses Function 
-
-* Click on Top Level PQ and add the function, distanceBetweenAddresses 
-* Inputs:  
-* origin STRING 
-* target STRING 
-* Output: 
-* Distance 
-
-**Step 6:** Add getGeoCoordinatesByName function to distanceBetweenAddresses Function 
-
-* Open the distanceBetweenAddresses function and add a new function, getGeoCoordinatesByName 
-* Inputs: 
-* name STRING  
-* Output: 
-* GEOCOORDINATE 
-* Open this function and add getGeoCoordinatesByName function from the lambda-distance-demo service 
-* Wire the inputs and output 
-
-**Step 7:** Add a second getGeoCoordinatesByName function and finish 
-
-* From the inventory expand the functions list 
-* Drag getGeoCoordinatesByName onto the canvas 
-* Wire the inputs of both instances 
-* Add the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
-* Wire the inputs and output 
-
-**Step 8:** Test the distanceBetweenAddresses 
-
-* Click on Top Level PQ and highlight the function 
-* In the right hand panel enter values for origin and target 
-* Origin = “London” 
-* Target = “Birmingham” 
-* Click run 
-* Observe the results in the function results panel. 
+\*\*\*\*
 
