@@ -42,7 +42,7 @@ Return the field classification for a given kind with kind id given by id. The r
 
 #### fieldClassifications
 
-```text
+```
 query {
   fieldClassifications(id: "295ac75b-54d2-4b51-9562-8ecd92808a42") {
     name
@@ -56,7 +56,7 @@ query {
 
 Classify the fields of a kind and kickoff and publish a 'fieldClassified' event \[TBD\]_Eventing Link_. Again, id in the classifyFields function is the kindId. This mutation returns a [Bot Action]().
 
-```text
+```
 mutation {
   classifyFields(kindId: "295ac75b-54d2-4b51-9562-8ecd92808a42") {
     id
@@ -84,7 +84,7 @@ copyFieldAsKind takes the following parameters
 
 An example mutation is shown below. `testDataKind` is a CSV file kind in which the column "C3" has been classified as a "PhoneNumber" and now can be added onto the PhoneNumber Kind. 
 
-```text
+```
 mutation {
   copyFieldAsKind(
     kindId: testDataKindId

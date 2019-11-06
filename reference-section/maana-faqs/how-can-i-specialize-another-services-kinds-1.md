@@ -10,13 +10,13 @@ We'd like to take advantage of shared schema, resolvers, and persistence \(scope
 
 For example, service Core provides Email, which consists of only an address, and the common OpenCRUD boilerplate.
 
-```text
+```
 Core.Email { address: String }
 ```
 
 I would like my new service to rely on this service while defining Email that adds a type property \(e.g., work, personal\) and also has OpenCRUD boilerplate.
 
-```text
+```
 MyService.Email { email: Core.Email, type: String }
 ```
 

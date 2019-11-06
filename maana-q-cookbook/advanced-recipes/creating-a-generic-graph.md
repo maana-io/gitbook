@@ -16,7 +16,7 @@ This section describes how this service was assembled such that it could be recr
 
 For convenience, the following commands should be installed globally:
 
-```text
+```
 npm i -g create-react-app prisma graphql-yoga lerna graphql-cli graphql-cli-maana
 ```
 
@@ -24,26 +24,26 @@ npm i -g create-react-app prisma graphql-yoga lerna graphql-cli graphql-cli-maan
 
 1. Create a root directory to contain the project tree:
 
-```text
+```
 mkdir maana-graph
 cd maana-graph
 ```
 
 2. Unify the build of the three servies using [Lerna](https://github.com/maana-io/q-tutorials/blob/master/maana-graph):
 
-```text
+```
 lerna init
 ```
 
 3. Lerna requires that the subprojects reside in a specific location:
 
-```text
+```
 mkdir packages
 ```
 
 #### maana-graph-model: Model service using Prisma <a id="maana-graph-model-model-service-using-prisma"></a>
 
-```text
+```
 cd packages
 prisma init maana-graph-model
 # select 'Create new database'
@@ -59,13 +59,13 @@ Edit the `prisma.yml` and `docker-compose.yml` files to change the network ports
 
 1. Create a folder to hold all the models for the domain, which will be merged together:
 
-```text
+```
 mkdir models
 ```
 
 2. Create and edit `models/graph.gql` to hold the domain model:
 
-```text
+```
 enum VertexType {
   Empty
   Special
@@ -131,13 +131,13 @@ type Edge {
 
 1. Create a `data` folder to hold both _raw_ source data and converted _NDF_ data:
 
-```text
+```
 mkdir -p data/raw
 ```
 
 2. Add the following test data to `data/raw/Graph.json`:
 
-```text
+```
 [
   {
     "id": "test-g00",
@@ -150,7 +150,7 @@ mkdir -p data/raw
 
 and `data/raw/Vertex.json`:
 
-```text
+```
 [
   {
     "id": "test-v00",
@@ -186,7 +186,7 @@ and `data/raw/Vertex.json`:
 
 and, lastly, `data/raw/Edge.json`:
 
-```text
+```
 [
   {
     "id": "test-e00",
@@ -207,14 +207,14 @@ and, lastly, `data/raw/Edge.json`:
 
 This service requires the docker container be started, the data models merged with corresponding tables created in the database, and seed data converted and imported. 1. Use NPM to help manage these actions:
 
-```text
+```
 npm init -y
 npm i -D babel-cli gql-merge npm-run-all
 ```
 
 2. And add the following scripts:
 
-```text
+```
 "scripts": {
     "merge": "gql-merge models/**/*.gql > datamodel.graphql",
     "convert": "gql mload data/raw -n data/ndf -p model",
@@ -230,7 +230,7 @@ npm i -D babel-cli gql-merge npm-run-all
 
 Now implement a \(GraphQL-based\) logic layer that uses the domain model \(GraphQL persistence layer\) per [Prisma's guidance](https://www.prisma.io/docs/tutorials/build-graphql-servers/development/build-a-graphql-server-with-prisma-ohdaiyoo6c). You could just expose the model service directly, but this has a number of [disadvantages](https://www.prisma.io/docs/tutorials/build-graphql-servers/development/build-a-graphql-server-with-prisma-ohdaiyoo6c#why-not-use-the-prisma-api-directly-from-your-client-applications).
 
-```text
+```
 mkdir -p packages/maana-graph-logic/src
 cd packages/maana-graph-logic
 npm init -y
@@ -242,7 +242,7 @@ npm add -D npm-run-all
 
 Let's configure two different GraphQL projects \(endpoints\): our model service and our logic service. These should be configured in `.graphconfig.yml`:
 
-```text
+```
 projects:
   model:
     schemaPath: src/generated/prisma.graphql
@@ -260,7 +260,7 @@ projects:
 
 Anytime the the model schema changes \(and is redeployed\), you'll need to update your local copy:
 
-```text
+```
 gql get-schema -p model
 ```
 
@@ -270,7 +270,7 @@ Instead of surfacing all the raw database operations directly, provide an abstra
 
 Edit `src/schema.graphql` so that it has the following "business logic":
 
-```text
+```
 # import VertexType, VertexSubtype, EdgeType from "./generated/prisma.graphql"
 # import Graph, Vertex, Edge from "./generated/prisma.graphql"
 
@@ -310,106 +310,104 @@ type Mutation {
 
 Edit `src/index.js` to create the server and implement the resolvers:
 
-```text
-const { GraphQLServer } = require("graphql-yoga");
-const { Prisma, forwardTo } = require("prisma-binding");
+    const { GraphQLServer } = require("graphql-yoga");
+    const { Prisma, forwardTo } = require("prisma-binding");
 
-const PRISMA_ENDPOINT = "http://localhost:4468";
-const SERVER_PORT = 8068;
+    const PRISMA_ENDPOINT = "http://localhost:4468";
+    const SERVER_PORT = 8068;
 
-const resolvers = {
-  Query: {
-    graph: (_, { id }, context, info) =>
-      context.prisma.query.graph(
-        {
-          where: { id }
-        },
-        info
-      ),
-    vertex: (_, { id }, context, info) =>
-      context.prisma.query.vertex(
-        {
-          where: { id }
-        },
-        info
-      ),
-    edge: (_, { id }, context, info) =>
-      context.prisma.query.edge(
-        {
-          where: { id }
-        },
-        info
+    const resolvers = {
+      Query: {
+        graph: (_, { id }, context, info) =>
+          context.prisma.query.graph(
+            {
+              where: { id }
+            },
+            info
+          ),
+        vertex: (_, { id }, context, info) =>
+          context.prisma.query.vertex(
+            {
+              where: { id }
+            },
+            info
+          ),
+        edge: (_, { id }, context, info) =>
+          context.prisma.query.edge(
+            {
+              where: { id }
+            },
+            info
+          )
+      },
+      Mutation: {
+        createGraph: (_, { name }, context, info) =>
+          context.prisma.mutation.createGraph({ data: { name } }, info),
+        createVertex: (
+          _,
+          { name, x = 0.0, y = 0.0, style, substyle, graphId },
+          context,
+          info
+        ) =>
+          context.prisma.mutation.createVertex(
+            {
+              data: {
+                name,
+                x,
+                y,
+                style,
+                substyle,
+                graph: { connect: { id: graphId } }
+              }
+            },
+            info
+          ),
+        createEdge: (
+          _,
+          { graphId, name, fromVertex, toVertex, style },
+          context,
+          info
+        ) =>
+          context.prisma.mutation.createEdge(
+            {
+              data: {
+                name,
+                style,
+                graph: { connect: { id: graphId } },
+                fromVertex: { connect: { id: fromVertex } },
+                toVertex: { connect: { id: toVertex } }
+              }
+            },
+            info
+          )
+      }
+    };
+
+    const server = new GraphQLServer({
+      typeDefs: "src/schema.graphql",
+      resolvers,
+      context: req => ({
+        ...req,
+        prisma: new Prisma({
+          typeDefs: "src/generated/prisma.graphql",
+          endpoint: PRISMA_ENDPOINT
+        })
+      })
+    });
+
+    const options = {
+      port: SERVER_PORT
+    };
+
+    server.start(options, () =>
+      console.log(
+        `GraphQL server is running on http://localhost:${options.port || 4000}`
       )
-  },
-  Mutation: {
-    createGraph: (_, { name }, context, info) =>
-      context.prisma.mutation.createGraph({ data: { name } }, info),
-    createVertex: (
-      _,
-      { name, x = 0.0, y = 0.0, style, substyle, graphId },
-      context,
-      info
-    ) =>
-      context.prisma.mutation.createVertex(
-        {
-          data: {
-            name,
-            x,
-            y,
-            style,
-            substyle,
-            graph: { connect: { id: graphId } }
-          }
-        },
-        info
-      ),
-    createEdge: (
-      _,
-      { graphId, name, fromVertex, toVertex, style },
-      context,
-      info
-    ) =>
-      context.prisma.mutation.createEdge(
-        {
-          data: {
-            name,
-            style,
-            graph: { connect: { id: graphId } },
-            fromVertex: { connect: { id: fromVertex } },
-            toVertex: { connect: { id: toVertex } }
-          }
-        },
-        info
-      )
-  }
-};
-
-const server = new GraphQLServer({
-  typeDefs: "src/schema.graphql",
-  resolvers,
-  context: req => ({
-    ...req,
-    prisma: new Prisma({
-      typeDefs: "src/generated/prisma.graphql",
-      endpoint: PRISMA_ENDPOINT
-    })
-  })
-});
-
-const options = {
-  port: SERVER_PORT
-};
-
-server.start(options, () =>
-  console.log(
-    `GraphQL server is running on http://localhost:${options.port || 4000}`
-  )
-);
-```
+    );
 
 ### **6. Sample Graph** <a id="6-sample-graph"></a>
 
-```text
+```
 mutation createGraph {
   createGraph(name: "Graph #00") {
     id
@@ -471,7 +469,7 @@ A custom user interface has been provided that allows for the creation and editi
 
 This is implemented as a small React app built around the [react-digraph](https://github.com/uber/react-digraph) component.
 
-```text
+```
 cd packages
 create-react-app maana-graph-assist
 cd maana-graph-assist
@@ -482,7 +480,7 @@ npm i apollo-boost react-apollo graphql graphql-tag
 
 Edit \`src/index.js' to reflect the following changes:
 
-```text
+```
 import React from "react";
 import ReactDOM from "react-dom";
 import { ApolloProvider } from "react-apollo";
@@ -498,7 +496,7 @@ const LOGIC_ENDPOINT = "http://localhost:8068";
 
 The main application, `src/App.js`, renders the user interface and communicates via GraphQL to the logic service:
 
-```text
+```
 import React, { Component } from "react";
 import { ApolloConsumer, Query, Mutation } from "react-apollo";
 import ApolloClient from "apollo-boost";
