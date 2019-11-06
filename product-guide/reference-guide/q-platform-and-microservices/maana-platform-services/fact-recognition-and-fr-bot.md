@@ -20,7 +20,7 @@ As with other Maana Knowledge services the various queries of Fact Recognition c
 
 {% tabs %}
 {% tab title="Query 1" %}
-```graphql
+```
 query {
     extractTriples(text: "Alex bought a bike") {
         predicatePhrase {
@@ -38,7 +38,7 @@ query {
 {% endtab %}
 
 {% tab title="Result 1" %}
-```text
+```
 {
   "data": {
     "extractTriples": [
@@ -62,7 +62,7 @@ query {
 
 {% tabs %}
 {% tab title="Query 2" %}
-```graphql
+```
 query {
     extractByPattern(text : "John went to Lynwood and bought a pizza", patterns : [{predicateLemmas : ["purchase"], subjectEntityPattern : ["ANY"], objectEntityPattern : ["ANY"]}]) {
     predicateMatch {
@@ -87,7 +87,7 @@ query {
 {% endtab %}
 
 {% tab title="Result 2" %}
-```text
+```
 {
   "data": {
     "extractByPattern": [
@@ -117,7 +117,7 @@ query {
 
 {% tabs %}
 {% tab title="Query 3" %}
-```graphql
+```
 query {
     extractByExample(example : "John went to safeway and bought a pizza in Lynwood", text : "Larry goes to Gerks and purchased a bike in Issaquah") {
         predicateCorrespondences {
@@ -135,7 +135,7 @@ query {
 {% endtab %}
 
 {% tab title="Result 3" %}
-```text
+```
 {
     "data": {
         "extractByExample": [

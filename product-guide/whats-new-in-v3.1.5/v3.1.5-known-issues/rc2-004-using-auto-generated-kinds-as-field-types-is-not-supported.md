@@ -9,7 +9,7 @@
 {% tab title="Actual Result" %}
 * Opening Workspace Service in GraphIQL will not expose KindDB Model and CKGErrors resolver will produce error that looks like:
 
-  ```text
+  ```
   {
     "data": {
       "CKGErrors": [

@@ -18,7 +18,7 @@ Function removed from the explorer, inventory and related function graph also re
 {% tab title="Actual Result" %}
 Function removed, but CKGErrors return error:
 
-```python
+```
 {
   "data": {
     "CKGErrors": [

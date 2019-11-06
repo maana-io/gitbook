@@ -39,7 +39,7 @@ For our Star Wars example, the [starWarsSchema.js](https://github.com/graphql/gr
 
 The most basic type in the system will be `Human`, representing characters like Luke, Leia, and Han. All humans in our type system will have a name, so we define the `Human` type to have a field called "name". This returns a String, and we know that it is not null \(since all `Human`s have a name\), so we will define the "name" field to be a non-nullable String. Using a shorthand notation that we will use throughout the spec and documentation, we would describe the human type as:
 
-```text
+```
 type Human {
   name: String
 }
@@ -49,7 +49,7 @@ This shorthand is convenient for describing the basic shape of a type system; th
 
 A common pattern in many APIs, and indeed in GraphQL is to give objects an ID that can be used to refetch the object. So let's add that to our Human type. We'll also add a string for their home planet.
 
-```text
+```
 type Human {
   id: String
   name: String
@@ -59,13 +59,13 @@ type Human {
 
 Since we're talking about the Star Wars trilogy, it would be useful to describe the episodes in which each character appears. To do so, we'll first define an enum, which lists the three episodes in the trilogy:
 
-```text
+```
 enum Episode { NEWHOPE, EMPIRE, JEDI }
 ```
 
 Now we want to add a field to `Human` describing what episodes they were in. This will return a list of `Episode`s:
 
-```text
+```
 type Human {
   id: String
   name: String
@@ -76,7 +76,7 @@ type Human {
 
 Now, let's introduce another type, `Droid`:
 
-```text
+```
 type Droid {
   id: String
   name: String
@@ -91,7 +91,7 @@ If we look, we note that there's common functionality between humans and droids;
 
 Our type system so far is:
 
-```text
+```
 enum Episode { NEWHOPE, EMPIRE, JEDI }
 
 interface Character {
@@ -122,7 +122,7 @@ One question we might ask, though, is whether any of those fields can return `nu
 
 Note that while in our current implementation, we can guarantee that more fields are non-null \(since our current implementation has hard-coded data\), we didn't mark them as non-null. One can imagine we would eventually replace our hardcoded data with a backend service, which might not be perfectly reliable; by leaving these fields as nullable, we allow ourselves the flexibility to eventually return null to indicate a backend error, while also telling the client that the error occurred.
 
-```text
+```
 enum Episode { NEWHOPE, EMPIRE, JEDI }
 
 interface Character {
@@ -153,7 +153,7 @@ We're missing one last piece: an entry point into the type system.
 
 When we define a schema, we define an object type that is the basis for all queries. The name of this type is `Query` by convention, and it describes our public, top-level API. Our `Query` type for this example will look like this:
 
-```text
+```
 type Query {
   hero(episode: Episode): Character
   human(id: String!): Human
@@ -181,7 +181,7 @@ For our Star Wars example, the [starWarsQueryTests.js](https://github.com/graphq
 
 An example query on the above schema would be:
 
-```text
+```
 query HeroNameQuery {
   hero {
     name
@@ -191,7 +191,7 @@ query HeroNameQuery {
 
 The initial line, `query HeroNameQuery`, defines a query with the operation name `HeroNameQuery` that starts with the schema's root query type; in this case, `Query`. As defined above, `Query` has a `hero` field that returns a `Character`, so we'll query for that. `Character` then has a `name` field that returns a `String`, so we query for that, completing our query. The result of this query would then be:
 
-```text
+```
 {
   "hero": {
     "name": "R2-D2"
@@ -201,7 +201,7 @@ The initial line, `query HeroNameQuery`, defines a query with the operation name
 
 Specifying the `query` keyword and an operation name is only required when a GraphQL document defines multiple operations. We therefore could have written the previous query with the query shorthand:
 
-```text
+```
 {
   hero {
     name
@@ -211,7 +211,7 @@ Specifying the `query` keyword and an operation name is only required when a Gra
 
 Assuming that the backing data for the GraphQL server identified R2-D2 as the hero. The response continues to vary based on the request; if we asked for R2-D2's ID and friends with this query:
 
-```text
+```
 query HeroNameAndFriendsQuery {
   hero {
     id
@@ -226,7 +226,7 @@ query HeroNameAndFriendsQuery {
 
 then we'll get back a response like this:
 
-```text
+```
 {
   "hero": {
     "id": "2001",
@@ -251,7 +251,7 @@ then we'll get back a response like this:
 
 One of the key aspects of GraphQL is its ability to nest queries. In the above query, we asked for R2-D2's friends, but we can ask for more information about each of those objects. So let's construct a query that asks for R2-D2's friends, gets their name and episode appearances, then asks for each of _their_ friends.
 
-```text
+```
 query NestedQuery {
   hero {
     name
@@ -268,7 +268,7 @@ query NestedQuery {
 
 which will give us the nested response
 
-```text
+```
 {
   "hero": {
     "name": "R2-D2",
@@ -309,7 +309,7 @@ which will give us the nested response
 
 The `Query` type above defined a way to fetch a human given their ID. We can use it by hardcoding the ID in the query:
 
-```text
+```
 query FetchLukeQuery {
   human(id: "1000") {
     name
@@ -319,7 +319,7 @@ query FetchLukeQuery {
 
 to get
 
-```text
+```
 {
   "human": {
     "name": "Luke Skywalker"
@@ -329,7 +329,7 @@ to get
 
 Alternately, we could have defined the query to have a query parameter:
 
-```text
+```
 query FetchSomeIDQuery($someId: String!) {
   human(id: $someId) {
     name
@@ -343,7 +343,7 @@ Notice that the key in the response is the name of the field, by default. It is 
 
 We can do that with field aliases, as demonstrated in this query:
 
-```text
+```
 query FetchLukeAliased {
   luke: human(id: "1000") {
     name
@@ -353,7 +353,7 @@ query FetchLukeAliased {
 
 We aliased the result of the `human` field to the key `luke`. Now the response is:
 
-```text
+```
 {
   "luke": {
     "name": "Luke Skywalker"
@@ -365,7 +365,7 @@ Notice the key is "luke" and not "human", as it was in our previous example wher
 
 This is particularly useful if we want to use the same field twice with different arguments, as in the following query:
 
-```text
+```
 query FetchLukeAndLeiaAliased {
   luke: human(id: "1000") {
     name
@@ -378,7 +378,7 @@ query FetchLukeAndLeiaAliased {
 
 We aliased the result of the first `human` field to the key `luke`, and the second to `leia`. So the result will be:
 
-```text
+```
 {
   "luke": {
     "name": "Luke Skywalker"
@@ -391,7 +391,7 @@ We aliased the result of the first `human` field to the key `luke`, and the seco
 
 Now imagine we wanted to ask for Luke and Leia's home planets. We could do so with this query:
 
-```text
+```
 query DuplicateFields {
   luke: human(id: "1000") {
     name
@@ -406,7 +406,7 @@ query DuplicateFields {
 
 but we can already see that this could get unwieldy, since we have to add new fields to both parts of the query. Instead, we can extract out the common fields into a fragment, and include the fragment in the query, like this:
 
-```text
+```
 query UseFragment {
   luke: human(id: "1000") {
     ...HumanFragment
@@ -424,7 +424,7 @@ fragment HumanFragment on Human {
 
 Both of those queries give this result:
 
-```text
+```
 {
   "luke": {
     "name": "Luke Skywalker",
@@ -441,7 +441,7 @@ The `UseFragment` and `DuplicateFields` queries will both get the same result, b
 
 We defined the type system above, so we know the type of each object in the output; the query can ask for that type using the special field `__typename`, defined on every object.
 
-```text
+```
 query CheckTypeOfR2 {
   hero {
     __typename
@@ -452,7 +452,7 @@ query CheckTypeOfR2 {
 
 Since R2-D2 is a droid, this will return
 
-```text
+```
 {
   "hero": {
     "__typename": "Droid",
@@ -463,7 +463,7 @@ Since R2-D2 is a droid, this will return
 
 This was particularly useful because `hero` was defined to return a `Character`, which is an interface; we might want to know what concrete type was actually returned. If we instead asked for the hero of Episode V:
 
-```text
+```
 query CheckTypeOfLuke {
   hero(episode: EMPIRE) {
     __typename
@@ -474,7 +474,7 @@ query CheckTypeOfLuke {
 
 We would find that it was Luke, who is a Human:
 
-```text
+```
 {
   "hero": {
     "__typename": "Human",
@@ -493,7 +493,7 @@ For our Star Wars example, the file [starWarsValidationTests.js](https://github.
 
 To start, let's take a complex valid query. This is the `NestedQuery` example from the above section, but with the duplicated fields factored out into a fragment:
 
-```text
+```
 query NestedQueryWithFragment {
   hero {
     ...NameAndAppearances
@@ -516,7 +516,7 @@ And this query is valid. Let's take a look at some invalid queries!
 
 When we query for fields, we have to query for a field that exists on the given type. So as `hero` returns a `Character`, we have to query for a field on `Character`. That type does not have a `favoriteSpaceship` field, so this query:
 
-```text
+```
 # INVALID: favoriteSpaceship does not exist on Character
 query HeroSpaceshipQuery {
   hero {
@@ -529,7 +529,7 @@ is invalid.
 
 Whenever we query for a field and it returns something other than a scalar or an enum, we need to specify what data we want to get back from the field. Hero returns a `Character`, and we've been requesting fields like `name` and `appearsIn` on it; if we omit that, the query will not be valid:
 
-```text
+```
 # INVALID: hero is not a scalar, so fields are needed
 query HeroNoFieldsQuery {
   hero
@@ -538,7 +538,7 @@ query HeroNoFieldsQuery {
 
 Similarly, if a field is a scalar, it doesn't make sense to query for additional fields on it, and doing so will make the query invalid:
 
-```text
+```
 # INVALID: name is a scalar, so fields are not permitted
 query HeroFieldsOnScalarQuery {
   hero {
@@ -551,7 +551,7 @@ query HeroFieldsOnScalarQuery {
 
 Earlier, it was noted that a query can only query for fields on the type in question; when we query for `hero` which returns a `Character`, we can only query for fields that exist on `Character`. What happens if we want to query for R2-D2s primary function, though?
 
-```text
+```
 # INVALID: primaryFunction does not exist on Character
 query DroidFieldOnCharacter {
   hero {
@@ -563,7 +563,7 @@ query DroidFieldOnCharacter {
 
 That query is invalid, because `primaryFunction` is not a field on `Character`. We want some way of indicating that we wish to fetch `primaryFunction` if the `Character` is a `Droid`, and to ignore that field otherwise. We can use the fragments we introduced earlier to do this. By setting up a fragment defined on `Droid` and including it, we ensure that we only query for `primaryFunction` where it is defined.
 
-```text
+```
 query DroidFieldInFragment {
   hero {
     name
@@ -578,7 +578,7 @@ fragment DroidFields on Droid {
 
 This query is valid, but it's a bit verbose; named fragments were valuable above when we used them multiple times, but we're only using this one once. Instead of using a named fragment, we can use an inline fragment; this still allows us to indicate the type we are querying on, but without naming a separate fragment:
 
-```text
+```
 query DroidFieldInInlineFragment {
   hero {
     name
@@ -599,7 +599,7 @@ For our Star Wars example, the file [starWarsIntrospectionTests.js](https://gith
 
 We designed the type system, so we know what types are available, but if we didn't, we can ask GraphQL, by querying the `__schema` field, always available on the root type of a Query. Let's do so now, and ask what types are available.
 
-```text
+```
 query IntrospectionTypeQuery {
   __schema {
     types {
@@ -611,7 +611,7 @@ query IntrospectionTypeQuery {
 
 and we get back:
 
-```text
+```
 {
   "__schema": {
     "types": [
@@ -670,7 +670,7 @@ Wow, that's a lot of types! What are they? Let's group them:
 
 Now, let's try and figure out a good place to start exploring what queries are available. When we designed our type system, we specified what type all queries would start at; let's ask the introspection system about that!
 
-```text
+```
 query IntrospectionQueryTypeQuery {
   __schema {
     queryType {
@@ -682,7 +682,7 @@ query IntrospectionQueryTypeQuery {
 
 and we get back:
 
-```text
+```
 {
   "__schema": {
     "queryType": {
@@ -696,7 +696,7 @@ And that matches what we said in the type system section, that the `Query` type 
 
 It is often useful to examine one specific type. Let's take a look at the `Droid` type:
 
-```text
+```
 query IntrospectionDroidTypeQuery {
   __type(name: "Droid") {
     name
@@ -706,7 +706,7 @@ query IntrospectionDroidTypeQuery {
 
 and we get back:
 
-```text
+```
 {
   "__type": {
     "name": "Droid"
@@ -716,7 +716,7 @@ and we get back:
 
 What if we want to know more about Droid, though? For example, is it an interface or an object?
 
-```text
+```
 query IntrospectionDroidKindQuery {
   __type(name: "Droid") {
     name
@@ -727,7 +727,7 @@ query IntrospectionDroidKindQuery {
 
 and we get back:
 
-```text
+```
 {
   "__type": {
     "name": "Droid",
@@ -738,7 +738,7 @@ and we get back:
 
 `kind` returns a `__TypeKind` enum, one of whose values is `OBJECT`. If we asked about `Character` instead:
 
-```text
+```
 query IntrospectionCharacterKindQuery {
   __type(name: "Character") {
     name
@@ -749,7 +749,7 @@ query IntrospectionCharacterKindQuery {
 
 and we get back:
 
-```text
+```
 {
   "__type": {
     "name": "Character",
@@ -762,7 +762,7 @@ We'd find that it is an interface.
 
 It's useful for an object to know what fields are available, so let's ask the introspection system about `Droid`:
 
-```text
+```
 query IntrospectionDroidFieldsQuery {
   __type(name: "Droid") {
     name
@@ -779,7 +779,7 @@ query IntrospectionDroidFieldsQuery {
 
 and we get back:
 
-```text
+```
 {
   "__type": {
     "name": "Droid",
@@ -830,7 +830,7 @@ Those are our fields that we defined on `Droid`!
 
 Similarly, both `friends` and `appearsIn` have no name, since they are the `LIST` wrapper type. We can query for `ofType`on those types, which will tell us what these are lists of.
 
-```text
+```
 query IntrospectionDroidWrappedFieldsQuery {
   __type(name: "Droid") {
     name
@@ -851,7 +851,7 @@ query IntrospectionDroidWrappedFieldsQuery {
 
 and we get back:
 
-```text
+```
 {
   "__type": {
     "name": "Droid",
@@ -912,7 +912,7 @@ and we get back:
 
 Let's end with a feature of the introspection system particularly useful for tooling; let's ask the system for documentation!
 
-```text
+```
 query IntrospectionDroidDescriptionQuery {
   __type(name: "Droid") {
     name
@@ -923,7 +923,7 @@ query IntrospectionDroidDescriptionQuery {
 
 yields
 
-```text
+```
 {
   "__type": {
     "name": "Droid",

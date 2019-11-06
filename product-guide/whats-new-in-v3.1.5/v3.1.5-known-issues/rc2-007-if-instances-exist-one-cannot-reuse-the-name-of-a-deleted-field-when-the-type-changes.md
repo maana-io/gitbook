@@ -27,7 +27,7 @@ Instance data is added.
 {% tab title="Actual Results" %}
 error
 
-```text
+```
 [io.maana.ckg.server.xyzUID] 
 Error handling request: {"message":"Variable \"$addInstanceInput\" 
 got invalid value {\"kindId\":\"xyzUUID\"

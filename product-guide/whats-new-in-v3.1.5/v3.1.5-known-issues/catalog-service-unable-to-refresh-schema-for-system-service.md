@@ -6,7 +6,7 @@ An error should not be received for this case.
 {% endtab %}
 
 {% tab title="Repro Steps" %}
-```text
+```
 POST https://ci04.corp.maana.io:8443/service/io.maana.catalog/graphql HTTP/1.1
  Accept: application/json
  Content-Type: application/json
@@ -35,7 +35,7 @@ POST https://ci04.corp.maana.io:8443/service/io.maana.catalog/graphql HTTP/1.1
 {% tab title="Actual Result" %}
 200 OK with unexpected error message.
 
-```text
+```
 HTTP/1.1 200 OK
 access-control-allow-credentials: true
 access-control-expose-headers: Authorization

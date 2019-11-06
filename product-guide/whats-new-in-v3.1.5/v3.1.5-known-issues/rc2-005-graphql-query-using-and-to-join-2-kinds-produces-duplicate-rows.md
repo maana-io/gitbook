@@ -41,7 +41,7 @@ Suggest the use of "distinct" clause in the query to eliminate the duplicates an
 
 NOTE: Regardless of ordering
 
-```text
+```
 IND01, South Street Park, , Indianapolis, IN, US
 IND02, South Street Park I, , Indianapolis, IN, US
 ```
@@ -56,7 +56,7 @@ No Duplicates in the query results.
 
 NOTE: Regardless of ordering
 
-```text
+```
 IND01, South Street Park, , Indianapolis, IN, US
 IND02, South Street Park I, , Indianapolis, IN, US
 ```
@@ -69,7 +69,7 @@ Rows are duplicated twice: \(because there are 2 Schools in "IN" state regardles
 
 NOTE: Regardless of ordering
 
-```text
+```
 IND01, South Street Park, , Indianapolis, IN, US
 IND01, South Street Park, , Indianapolis, IN, US
 IND02, South Street Park I, , Indianapolis, IN, US
