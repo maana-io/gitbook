@@ -99,6 +99,18 @@ Pre requisites
 3. Click run 
 4. Observe the results in the function results panel. 
 
+
+
+Link to Step by Step Recordings:
+
+[https://maanainc.app.box.com/folder/92358696747](https://maanainc.app.box.com/folder/92358696747)
+
+
+
+
+
+
+
 ----------------------
 
 Using Kinds and Function to build a knowledge graph
