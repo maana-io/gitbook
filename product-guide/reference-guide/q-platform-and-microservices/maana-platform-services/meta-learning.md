@@ -39,7 +39,7 @@ In this simple example,  a classifier is trained on a kind personal data to pred
 
 {% tabs %}
 {% tab title="Input 1" %}
-```
+```graphql
  mutation training
     {
       trainClassifierKind(
@@ -63,7 +63,7 @@ In this simple example,  a classifier is trained on a kind personal data to pred
 {% endtab %}
 
 {% tab title="Output 1" %}
-```
+```graphql
 {
 
    "data": {
@@ -81,7 +81,7 @@ The saved model \(with `trainedModelId: "<modelId>"`is then used to classify a s
 
 {% tabs %}
 {% tab title="Input 2" %}
-```
+```graphql
 mutation classify_inst {
 
   classifyInstance(input: {
@@ -97,7 +97,7 @@ mutation classify_inst {
 {% endtab %}
 
 {% tab title="Output 2" %}
-```
+```graphql
 {
 
   "data": {
