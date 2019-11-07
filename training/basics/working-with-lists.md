@@ -25,9 +25,9 @@
 
 **Step1:** Create a function called  'combineTwoLists' with inputs 'a' of type String list and 'b' of type String list . Make both mandatory by clicking on '!' icon. To create a list, click on 'list' icon. Output is of type String list. Click Save.
 
-**Step2:** Expand on the 'combineTwoLists'  function. Here we will use the Maana Lambda Assistant to implement a function to perform the scalar addition to the list. To do that, search for Maana Lambda Assistant in the search bar. Drag and drop it to the Inventory. Maana Lambda Assistant is now activated in the Assistant panel.
+**Step2:** Expand on the 'combineTwoLists'  function. Next we will use Maana Q Scalars, a maana pre-built service suite. Search for Maana Q Scalars in the search bar. Drag and drop it to the Inventory. 
 
-Step 3: Use the following code to implement the function. 
+**Step 3:** Expand Services and look for  StringListConcat. Drag this to the canvas. Wire the inputs and outputs. 
 
 
 
