@@ -39,7 +39,7 @@ Step 3: Use the following code to implement the function.
 
 **Case Description:** In this example, we use MaanaQ to aid us in ensuring only those individuals who are above 21 are allowed to enter the MaanaQ bar. This example lets us do just that. In the process, learn how to perform various functions on lists. Use Maana Q to execute functions on multiple items while efficiently caching the result. Maana Q runs the function in parallel using all the available computation resource. We have a list of people and their birthdays. Let's find out who can enter and enjoy the party!
 
-**Link to Workspace:** [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)
+**Link to Workspace:** 
 
 **Step by Step Instructions**
 
