@@ -13,9 +13,9 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
-## **Basics for Working With Lists**
+## **Intro to Working With Lists**
 
-**Case Description :** While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. A group of multiple items is called a list or an array. In this exercise we take you through two examples:  1. Adding a scalar to a list   2.Multiplying two lists together.  Let's get started!
+**Case Description :** While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. A group of multiple items is called a list or an array. In this exercise we take you through two examples that use Maana Q Scalars in built service to help demonstrate:  1. Combining \(concatenating\) two lists  2. Adding '2' to lists together.  Let's get started!
 
 **Link to Workspace:**
 
@@ -23,9 +23,9 @@
 
 **Step by Step Instructions:**
 
-**Step1:** Create a function called  'addScalarToList' with inputs 'number' of type INT list and 'scalar' of type INT. Output is on type INT list. Click Save
+**Step1:** Create a function called  'combineTwoLists' with inputs 'a' of type String list and 'b' of type String list . Make both mandatory by clicking on '!' icon. To create a list, click on 'list' icon. Output is of type String list. Click Save.
 
-**Step2:** Expand on the 'addScalarToList' function. Here we will use the Maana Lambda Assistant to implement a function to perform the scalar addition to the list. To do that, search for Maana Lambda Assistant in the search bar. Drag and drop it to the Inventory. Maana Lambda Assistant is now activated in the Assistant panel.
+**Step2:** Expand on the 'combineTwoLists'  function. Here we will use the Maana Lambda Assistant to implement a function to perform the scalar addition to the list. To do that, search for Maana Lambda Assistant in the search bar. Drag and drop it to the Inventory. Maana Lambda Assistant is now activated in the Assistant panel.
 
 Step 3: Use the following code to implement the function. 
 
