@@ -152,6 +152,7 @@
 * [Outline](training/outline.md)
 * [Basics](training/basics/README.md)
   * [Orientation](training/basics/basic-orientation/README.md)
+    * [Connecting to Maana](training/basics/basic-orientation/connecting-to-maana.md)
     * [Use Cases](training/basics/basic-orientation/use-cases.md)
     * [Appendix](training/basics/basic-orientation/basic-orientation-1.md)
   * [Hello, world!](training/basics/hello-world.md)
