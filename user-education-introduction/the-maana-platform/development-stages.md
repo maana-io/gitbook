@@ -62,7 +62,7 @@ Communication to a Maana system requires the use of authentication. This is conf
 
 The service being development must be registered with Maana. This is typically done programmatically using the Maana CLI by specifying a **manifest** that describes the service and its dependencies. For example:
 
-```
+```text
 {  id: "io.maana.azure.crawler",  name: "Maana Azure Storage Crawler Service",  dockerRegistry: null,  hostedUrl: null,}
 ```
 
@@ -70,7 +70,7 @@ The result of registering a new service with Maana is that CKG will generate a d
 
 The full GraphQL schema for a service manifest is:
 
-```
+```text
 # from io.maana.systemtype ServiceManifest {  id: ID!  name: String  description: Text  registeredOn: DateTime  registeredBy: User  dockerRegistry: Url  hostedUrl: Url  modelSdl: String}
 ```
 

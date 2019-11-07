@@ -23,7 +23,7 @@ It should also be possible to find **co-occurrences** of multiple such entities 
 
 To support surface forms users must define a surface form kind with the following schema.
 
-```
+```text
 type SurfaceForm {
   # required
   id: ID! # surface form id (e.g., "Big Apple@en-us"); language code can be omitted
@@ -37,7 +37,7 @@ A link should then be established between an instance of an entity and its surfa
 
 ### Example:
 
-```
+```text
 mutation
 {
     addLink(input:{
@@ -56,7 +56,7 @@ The link allows the Maana Q platform to automatically infer the surface forms wh
 
 ### GraphQL <a id="EntityCooccurrenceSearch-GraphQL"></a>
 
-```
+```text
 input EntitySurfaceFormsInput {
   # The entity (i.e., a Kind instance)
   kindId: ID! # kind id of the entity, e.g. id of City kind
@@ -120,7 +120,7 @@ type Mutation {
 * If only a kind id is specified, all entities \(using their defined surface forms\*\) are search for.
   * Example:  Use all defined surface forms associated with the kind \(an entity\) with id "6c2a72f4-df82-42d3-9a67-cd7d9a5a99ed"
 
-```
+```text
 {
   entitySearch(input:{
     scopeKindId: "88dd0992-b5e3-4272-b0f4-763d0d975f8e"
@@ -148,7 +148,7 @@ type Mutation {
 * If a kind id and instance id\(s\) are provided, then only those entities are searched for \(using their defined surface forms\*\).
   * Example:  Use all defined surface forms associated with the specified instances "A1" and "A2" of the kind \(an entity\) with id "6c2a72f4-df82-42d3-9a67-cd7d9a5a99ed"
 
-```
+```text
 {
   entitySearch(input:{
     scopeKindId: "88dd0992-b5e3-4272-b0f4-763d0d975f8e"
@@ -175,7 +175,7 @@ type Mutation {
 * Explicit surface forms may only be used when providing only one instance id. The instance id must belong to an existing entity.
 * * Example:  Use all specified surface forms \["HF", "H. Ford"\] to search on the specific instance "A1" of the kind \(an entity\) with id "6c2a72f4-df82-42d3-9a67-cd7d9a5a99ed"
 
-```
+```text
 {
   entitySearch(input:{
     scopeKindId: "88dd0992-b5e3-4272-b0f4-763d0d975f8e"
@@ -206,7 +206,7 @@ NOTE: A kind defining surface forms must be pre-defined with instances in kinds 
 
 ### Example: Corpus and Entities
 
-```
+```text
 # Document / Corpus kind
 const movieNews = [
   { id: "MN01", bodyText: "George Lucas directed Star Wars (1977). Star Wars stars Harrison Ford, Mark Hamill, and Carrie Fisher." },
@@ -248,7 +248,7 @@ const directors = [
 * Corpus kind id of "MovieNews": "a96afffe-0b73-425e-b9aa-3531ec8c3d0c"
 * Field id of the field containing text in the MovieNews kind is: "89d1e030-25be-412b-81e9-54588fa17042"
 
-```
+```text
 const entitySurfaceForms = [
   { kindId:"6c2a72f4-df82-42d3-9a67-cd7d9a5a99ed", instanceId: "A1", surfaceForms: ["Harrison Ford", "H. Ford"]},
   { kindId:"15cb20fb-63ca-472e-8c6e-0d7c0e873039", instanceId: "M1", surfaceForms: ["Star Wars (1977)", "Star Wars"]},
@@ -267,7 +267,7 @@ const entityCooccurrences = kindDb.entitySearch(entitySearch)
 
 ### Results <a id="EntityCooccurrenceSearch-Results"></a>
 
-```
+```text
 [{
   "scopeKindId": "a96afffe-0b73-425e-b9aa-3531ec8c3d0c", # id of "MovieNews" kind
   "scopeFieldId": "89d1e030-25be-412b-81e9-54588fa17042", # field id of "bodyText" of "MovieNews" kind
@@ -292,7 +292,7 @@ const entityCooccurrences = kindDb.entitySearch(entitySearch)
 
 ## How To setup the above example? <a id="EntityCooccurrenceSearch-HowTosetuptheaboveexample?"></a>
 
-```
+```text
 # Here is the model.gql file:
 type MovieNews {
   id: ID!
@@ -322,7 +322,7 @@ type Director {
 
 ### Given the above model, add some instances to kinds using these mutations: <a id="EntityCooccurrenceSearch-Giventheabovemodel,addsomeinstancestokindsusingthesemutations:"></a>
 
-```
+```text
 # Documents or Corpus
 mutation addMovieNewss {
   addMovieNewss(
@@ -396,7 +396,7 @@ In this example, we will set up these links:
 5. From Director's D2 to SurfaceForm SF5
 6. From Director's D2 to SurfaceForm SF6
 
-```
+```text
 # Here is the addLink mutation you can use:
 mutation addLink(
   $fromKindId: ID!
@@ -427,7 +427,7 @@ mutation addLink(
 
 #### Run "EntitySearch" on given entities \(using all their defined surface forms\): <a id="EntityCooccurrenceSearch-Run&quot;EntitySearch&quot;ongivenentities(usingalltheirdefinedsurfaceforms):"></a>
 
-```
+```text
 # Here is the query:
 query entitySearch_allEntities(
   $corpusId: ID!
@@ -474,7 +474,7 @@ fragment entitySearchResultInfo on EntitySearchResult {
 
 **Ran the above "EntitySearch" query, the result is:**
 
-```
+```text
 # Here is the result:
 {
   "data": {
@@ -543,7 +543,7 @@ fragment entitySearchResultInfo on EntitySearchResult {
 
 #### Run "EntitySearchAction" mutation to create a bot: <a id="EntityCooccurrenceSearch-Run&quot;EntitySearchAction&quot;mutationtocreateabot:"></a>
 
-```
+```text
 mutation addESAction {
   entitySearchAction(
     resultKey: "resultA" # choose a unique string for resultKey
@@ -574,7 +574,7 @@ fragment botActionInfo on BotAction {
 
 **The bot id is returned from the above mutation:**
 
-```
+```text
 {
   "data": {
     "entitySearchAction": {
@@ -592,7 +592,7 @@ fragment botActionInfo on BotAction {
 
 **When the bot completes, run a query to get the entity search result:**
 
-```
+```text
 query getESBot_byId($id: ID!) {
   botAction(id: $id) {
     ...botActionInfo
@@ -612,7 +612,7 @@ fragment botActionInfo on BotAction {
 
 **The result of "botAction" is:**
 
-```
+```text
 {
   "data": {
     "botAction": {

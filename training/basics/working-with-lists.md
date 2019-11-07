@@ -7,15 +7,39 @@
 * [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
 * [x] Case description \(**completed**\)
 * [x] Recording \(**completed\)**
-* [ ] Gif \(**pending**\)
+* [x] Gif \(**complete**\)
+* [ ] Azure upload \(pending\)
+* [ ] Basics Use Case, Workspace, Step by Step, Recordings and gif \(WIP\)
 
 ---------------------------------------------------------------------------------------------------------------
 
+## **Basics for Working With Lists**
+
+**Case Description :** While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. A group of multiple items is called a list or an array. In this exercise we take you through two examples:  1. Adding a scalar to a list   2.Multiplying two lists together.  Let's get started!
+
+**Link to Workspace:**
+
+\*\*\*\*[**https://cstrainingstable.knowledge.maana.io/workspace/b77bd930-d71a-47da-bf89-f1ecb566fe41**](https://cstrainingstable.knowledge.maana.io/workspace/b77bd930-d71a-47da-bf89-f1ecb566fe41)\*\*\*\*
+
+**Step by Step Instructions:**
+
+**Step1:** Create a function called  'addScalarToList' with inputs 'number' of type INT list and 'scalar' of type INT. Output is on type INT list. Click Save
+
+**Step2:** Expand on the 'addScalarToList' function. Here we will use the Maana Lambda Assistant to implement a function to perform the scalar addition to the list. To do that, search for Maana Lambda Assistant in the search bar. Drag and drop it to the Inventory. Maana Lambda Assistant is now activated in the Assistant panel.
+
+Step 3: Use the following code to implement the function. 
+
+
+
+\*\*\*\*
+
+\*\*\*\*
+
+## **Working With Lists Example**
+
+**Case Description:** In this example, we use MaanaQ to aid us in ensuring only those individuals who are above 21 are allowed to enter the MaanaQ bar. This example lets us do just that. In the process, learn how to perform various functions on lists. Use Maana Q to execute functions on multiple items while efficiently caching the result. Maana Q runs the function in parallel using all the available computation resource. We have a list of people and their birthdays. Let's find out who can enter and enjoy the party!
+
 **Link to Workspace:** [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)
-
-**Case Description:**
-
-In this example, we use MaanaQ to aid us in ensuring only those individuals who are above 21 are allowed to enter the MaanaQ bar. This example lets us do just that. In the process, learn how to work with lists. While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. In this use case use Maana Q to execute functions such as on multiple items while efficiently caching the result. Maana Q runs the function in parallel using all the available computation resource. We have a list of people and their birthdays. Let's find out who can enter and enjoy the party!
 
 **Step by Step Instructions**
 

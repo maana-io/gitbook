@@ -6,7 +6,7 @@ Maana Physical Quantity Service is used for extracting physical quantities \( a.
 
 This sequence of queries extracts pressure measurements from the sample sentence, converts them into head \(in feet of sea water\) and checks to see if the result is greater than an a provided alarm threshold.:
 
-```
+```text
 query IS_OVERPRESSURE(
   $SOURCE:String!,
   $DENSITY_OF_SEAWATER:PhysicalQuantityInput!,
@@ -39,7 +39,7 @@ Queries of this kind facilitate equational reasoning with real world measurement
 
 **NOTE on Variables**: Some examples require execution of a sequence of queries, storing intermediate results in variables to be passed to later stages. For clarity, we name the earlier stages of computation with the same name as the variable to which they are bound. For example:
 
-```
+```text
 query FOO{ foo{ ... FooFragment }}query BAR( $FOO: FooInput ){ ... BarFragment }
 ```
 
@@ -264,7 +264,7 @@ Visit the Maana Cookbook for a [hands-on tutorial on how to use the Physical Qua
 
 ### GraphQL Fragments <a id="graphql-fragments"></a>
 
-```
+```text
 fragment PhysicalDimensionFragment on PhysicalDimension {
   name
   aliases

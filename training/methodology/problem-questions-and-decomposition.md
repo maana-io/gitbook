@@ -10,6 +10,9 @@ description: Problem Decomposition
 * [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
 * [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
 * [ ] Case description \(**pending**\)
+* [ ] Recording \(pending\)
+* [ ] gif \(pending\)
+* [ ] Azure upload \(pending\)
 
 ---------------------------------------------------------------------------------------------------------------
 
