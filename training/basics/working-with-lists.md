@@ -19,7 +19,7 @@
 
 **Link to Workspace:**
 
-\*\*\*\*[**https://cstrainingstable.knowledge.maana.io/workspace/b77bd930-d71a-47da-bf89-f1ecb566fe41**](https://cstrainingstable.knowledge.maana.io/workspace/b77bd930-d71a-47da-bf89-f1ecb566fe41)\*\*\*\*
+\*\*\*\*[**https://cstrainingstable.knowledge.maana.io/workspace/cdd1250e-191a-4a20-b370-bd1c452beb5f**](https://cstrainingstable.knowledge.maana.io/workspace/cdd1250e-191a-4a20-b370-bd1c452beb5f)\*\*\*\*
 
 **Step by Step Instructions:**
 
