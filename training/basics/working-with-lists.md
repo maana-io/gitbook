@@ -29,7 +29,19 @@
 
 **Step 3:** Test the function by going to the top level function i.e. 'combineTwoLists'. In the explorer panel, enter in two strings. Click on run. View the function results in the Assistant Panel.
 
+**Step 4:** 
 
+**Step 5:**
+
+**Step 6:**
+
+**Link to Recordings on Box**:  
+
+\*\*\*\*[**https://maanainc.app.box.com/folder/92631123910**](https://maanainc.app.box.com/folder/92631123910)\*\*\*\*
+
+**Link to Gif on Box:**
+
+\*\*\*\*[**https://maanainc.app.box.com/folder/92635424308**](https://maanainc.app.box.com/folder/92635424308)\*\*\*\*
 
 \*\*\*\*
 
