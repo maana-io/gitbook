@@ -25,7 +25,7 @@ CKGErrors doesn't return errors.
 {% tab title="Actual Result" %}
 Kind removed from the inventory and explorer, but can see reference to the removed kind in the kind2 and CKGErrors shows error:
 
-```
+```python
 {
   "data": {
     "CKGErrors": [

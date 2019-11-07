@@ -4,7 +4,7 @@
 
 A Knowledge solution usually consists of multiple microservices \(in Python, C\#, JavaScript, Scala, ...\) and a UI application \(in React, Angular, Django, ...\).  The following basic structure is recommend:
 
-```
+```text
 /my_solution
   /application
   /services

@@ -19,7 +19,7 @@ A service is created.
 {% tab title="Actual Result" %}
 UI:
 
-```
+```python
 Failed to save the service: GraphQL error: Error/s in apollo-link operation: [{"message":"Response not successful: Received status code 401","locations":[{"line":2,"column":3}],"path":["addService"]}]
 
 ```

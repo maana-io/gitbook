@@ -80,25 +80,27 @@ One of the primary use cases for BotActions is to support potentially long-runni
 
 For example, the operation:
 
-```
+```javascript
 search(term: String!): [Document!]!
 ```
 
 can be queried as:
 
-    const SEARCH_QUERY = gql`query search($term: String!) {  
-         search(term: $term) {    
-              id    
-              name     
-              ...  
-              }
-    }`
+```javascript
+const SEARCH_QUERY = gql`query search($term: String!) {  
+     search(term: $term) {    
+          id    
+          name     
+          ...  
+          }
+}`
 
-    ...
-    const documents = await client.query({  
-        query: SEARCH_QUERY,  
-        variables: {term: "Kratos"}
-    })
+...
+const documents = await client.query({  
+    query: SEARCH_QUERY,  
+    variables: {term: "Kratos"}
+})
+```
 
 It is thus expected that the set of documents found by the search operation will be returned as part of a single call, despite it being _Invoked_ asynchronously. 
 
@@ -106,7 +108,7 @@ This is fine for short-lived operations \(i.e., &lt; 1 minute\), but, in practic
 
 To accomplish this, use the following pattern:
 
-```
+```javascript
 searchAction(term: String!, resultKey: String!): BotAction!searchResult(resultKey: String!): [Document!]! 
 ```
 

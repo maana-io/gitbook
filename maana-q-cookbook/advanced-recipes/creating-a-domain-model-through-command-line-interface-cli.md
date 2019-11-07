@@ -10,7 +10,7 @@ Here is a step-by-step example of an end-to-end flow of creating a domain model,
 
 ### Installation
 
-```
+```text
 npm i -g graphql-cli graphql-cli-maana
 ```
 
@@ -33,7 +33,7 @@ For consistency and simplicity, we recommend you use the same name for the **Maa
 
 1. Create a CKG project and GraphQL endpoint, as in:
 
-```
+```text
 gql init
 ? Enter project name (Enter to skip): ckg
 ? Local schema file path: ckg.graphql
@@ -79,7 +79,7 @@ After creating a new `.graphqlconfig` file connecting to a Maana API endpoint:
    * Example: Run `gql menv --shell bash` if you are using bash
    * You will see output similar to:
 
-     ```
+     ```text
      export MAANA_AUTH_TOKEN=<token here>
      # Run this command to configure your shell
      # eval $(gql menv --shell bash)
@@ -107,24 +107,24 @@ After creating a new project connecting to a Maana endpoint, you will need to se
 5. Copy the generated auth token that shows up below the button
 6. In the terminal add an environment variable for the auth token
 
-```
+```text
 # *nix based systems
 export MAANA_AUTH_TOKEN=<paste auth token here>
 ```
 
-```
+```text
 rem Windows command line
 set MAANA_AUTH_TOKEN=<paste auth token here>
 ```
 
-```
+```text
 # Windows power shell
 $Env:MAANA_AUTH_TOKEN = "<paste auth token here>"
 ```
 
 7. Add the authorization header to the Maana endpoint:
 
-```
+```text
      "ckg": {
       "schemaPath": "ckg.graphql",
        "extensions": {
@@ -145,7 +145,7 @@ $Env:MAANA_AUTH_TOKEN = "<paste auth token here>"
 
 1. Let's first define a simple schema to use, e.g., model.gql:
 
-```
+```text
 type Person {
   id: ID!
   name: String!
@@ -166,7 +166,7 @@ Now that you've defined your model, you would like Maana to manage it for you \(
   
 1. Execute the **maddsvc** \("add service"\) command, which takes the **service name** and the **GraphQL model** definition \(i.e., your types, queries, mutations, and subscriptions\):
 
-```
+```text
 gql maddsvc Basic -s basic/model.gql -p ckg
 Using endpoint default: {"url":"https://<maana host>:8443/graphql"}
 Read file: basic/model.gql size: 136
@@ -187,13 +187,13 @@ Add another project to you graphql config using the following template to build 
 
 #### Template:
 
-```
+```text
 https://<maana host>:8443/service/<service id>/graphql
 ```
 
 #### Command:
 
-```
+```text
 gql add-project
 ? Enter project name for new project: basic
 ? Local schema file path: basic/schema.graphql
@@ -215,7 +215,7 @@ Adding the following endpoints to your config:  basic
 
 Only a few types were specified for the **domain model**. Maana adds a set of boilerplate types and operations as part of a fully-managed service. The **schema** for this service can be retrieved by:
 
-```
+```text
 gql get-schema -p basic
 ```
 
@@ -225,7 +225,7 @@ gql get-schema -p basic
 
 #### Ex: person.csv
 
-```
+```text
 "id","name","dob","employer"
 "P00","Han Solo","1942-07-13","E00"
 "P01","George Lucas","1944-05-14","E00"
@@ -233,14 +233,14 @@ gql get-schema -p basic
 
 #### Ex: employer.csv
 
-```
+```text
 "id","name","ceo"
 "E00","Lucasfilm Ltd.","P01"
 ```
 
 #### Ex: person.json
 
-```
+```text
 [
   {
     "id": "P00",
@@ -259,7 +259,7 @@ gql get-schema -p basic
 
 #### Ex: employer.json
 
-```
+```text
 [
   {
     "id": "E00",
@@ -273,7 +273,7 @@ gql get-schema -p basic
 
 The above CSV and JSON data can be loaded by using the 'load' GraphQL CLI command, passing the mutation to call, the data file, field mappings \(if any\). delimeters, etc.
 
-```
+```text
 gql mload basic/person.json -p basic
 gql mload basic/employer.json -p basic
 ```
@@ -286,7 +286,7 @@ This is exactly the same format as you would use in GraphiQL ---- try cut-and-pa
 
 #### basicOps.gql
 
-```
+```text
 fragment personDetail on Person {
   name
   dob
@@ -329,7 +329,7 @@ query allEmployers {
 
 These queries can be invoked from the command line, such as:
 
-```
+```text
 gql query basic/basicOps.gql -p basic -o allEmployers
 gql query basic/basicOps.gql -p basic -o person --variables "{\"id\":\"P01\"}"
 ```

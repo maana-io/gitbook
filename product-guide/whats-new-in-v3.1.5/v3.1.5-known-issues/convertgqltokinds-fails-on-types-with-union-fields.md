@@ -13,7 +13,7 @@ There is no path in convertGQLtoKinds for processing Unions.  Fields that are un
 {% tab title="Expected Result" %}
 The Kinds and Functions are created for the Service schema; the service is added to the system.
 
-```
+```text
 function getTypeInformation(type, kinds) {
   const isNoNull = type instanceof GraphQLNonNull
   const isList = (isNoNull ? type.ofType : type) instanceof GraphQLList

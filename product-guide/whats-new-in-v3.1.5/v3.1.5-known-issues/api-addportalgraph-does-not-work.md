@@ -8,7 +8,7 @@ Given "addPortalGraph" does not work.  Use "addPortalGraphs" as a temporary solu
 {% tab title="Repro Steps" %}
 From QA regression test, this mutation used to work with all valid args:
 
-```
+```text
 mutation addFunctionGraph(
   $wsId: ID!
   $name: String!
@@ -29,7 +29,7 @@ mutation addFunctionGraph(
 
 The schema is:
 
-```
+```text
 addPortalGraph(input: AddPortalGraphInput!): PortalGraph
 ```
 {% endtab %}

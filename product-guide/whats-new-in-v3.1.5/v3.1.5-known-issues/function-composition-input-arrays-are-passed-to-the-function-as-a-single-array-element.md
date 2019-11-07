@@ -16,7 +16,7 @@ Function composition input is not treated as array when it should.
 
 4. Where there should actually be 2 elements to the array \[\[\],\[\]\] instead there is 1 \[\] \(indicating the input was treated as a single string\).  The graphql result from the same query:
 
-```
+```text
 query {
   extractBatch(sources : ["John lives in Seattle", "Sergey lives in New York"]){     entityName     surfaceForm   }
 }

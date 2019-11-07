@@ -8,7 +8,7 @@ What is missing, however, is a way to query/filter instances of a particular Kin
 
 As a motivating example, consider the familiar movies domain schema:
 
-```
+```text
 type Movie {
   id: ID!
   name: String! # e.g., "Cold Sweat"
@@ -40,7 +40,7 @@ type MovieActor {
 
 Consider the following additions to KindDB schema \(sketch\):
 
-```
+```text
 # Arbitrary filters applied to field values
 type FieldFilter {
   fieldId: ID!
@@ -66,7 +66,7 @@ type KindQuery {
 
 And a new root query:
 
-```
+```text
 query(tenantId: ID!, input: KindQuery): InstanceSet
 ```
 
@@ -74,7 +74,7 @@ Consider the following exploration/query cases:
 
 #### Movies with a specific release year \(i.e., simple value filter\)
 
-```
+```text
 const query = {
   kindId: 'Movie', // should be id, obviously
   filters: [{
@@ -87,7 +87,7 @@ const query = {
 
 #### Movies released in a decade \(i.e., value range filter\)
 
-```
+```text
 const query = {
   kindId: 'Movie',
   filters: [{
@@ -104,7 +104,7 @@ const query = {
 
 #### Movies with a specific genre \(i.e., simple value filter through join\)
 
-```
+```text
 const query = {
   kindId: 'Movie',
   and:[{
@@ -122,7 +122,7 @@ const query = {
 
 #### Movies with a specific actor \(i.e., simple value filter through join\)
 
-```
+```text
 const query = {
   kindId: 'Movie',
   and:[{
@@ -145,7 +145,7 @@ const query = {
 
 #### Combination \(e.g., 1970s action movies with Charles Bronson\)
 
-```
+```text
 const query = {
   kindId: 'Movie',
   filters: [{
@@ -188,7 +188,7 @@ const query = {
 
 The following query fetches actors that co-occur in action moves with Harrison ford, excluding Harrison Ford from the resulting list.
 
-```
+```text
 const query = {
   kindId: 'Actor',
   filters: [{
@@ -236,7 +236,7 @@ This requires
 
 Example
 
-```
+```text
 const query = {
   kindId: 'Movie',
   filters: [{
@@ -266,7 +266,7 @@ Aggregate and none aggregate ops can not be mixed in a projection.
 
 You can allow "distinct"; it always occurs after the projection as a result it will not affect aggregate ops.
 
-```
+```text
 enum AggregateOp {
   MIN,
   MAX,

@@ -95,19 +95,19 @@ You can also extract data by example \(slot filling\) using structure mapping. I
 
 You need to provide example\(s\) and your associated mapping\(s\). The example would be "Carl bought a fish for 5 dollars at the store", the mapping is:
 
-```
+```text
 { "name": "Carl", "object": "fish", "price": "5 dollars", "location": "store" }
 ```
 
 The example sentence is compared to a data source and results are extracted and stored in a kind. The interface for this capability is implemented with 2 different mutations: 1. You need to specify the kindId \(the source of the text where data will be extracted from\), storageKindId \(the location where the extracted data will be stored\), the fieldName \(the name of the field in kindId to be used\), the example sentence \(example\) and the mapping to tell how the different terms in the example sentence map to the kind.
 
-```
+```text
 extractByExample(kindId: ID, fieldId: ID, storageKindId: ID, fieldName: String, storageKindName: String, kindName: String, mapping: [CorrespondenceInput], example: String): [ID]
 ```
 
 2. Instead of an example, mapping and storageKind a "exampleKind" is provided which contains the same information. The exampleKind contains a list of examples, their mappings and the target kind. The results are stored in their respective kinds:
 
-```
+```text
 extractByExampleKind(kindId: ID, fieldId: ID, exampleKindId: ID, kindName: String, fieldName: String, exampleKindName: String): [ID]
 ```
 
@@ -122,7 +122,7 @@ With those two kinds created we can perform the first query and see the results.
 
 2. In this query, the mapping is specified as an list of name/value GraphQL objects:
 
-```
+```text
 mutation a {extractByExample(  kindId: "bbcb2d1f-1c0c-4d81-adff-39de27d8fc52", #your SimplefactsCSV Kind Id    fieldName : "Text",    mapping : [      {name : "name", value : "Carl"},      {name : "object", value : "fish"},      {name : "price", value : "5 dollars"},      { name : "location", value : "store"}      ],    example : "Carl bought a fish for 5 dollars at the store",    storageKindId : "e81846a4-ca93-4947-b8f2-57fb92ecb957" #your PurchaseEvent Kind Id    )}
 ```
 
@@ -134,19 +134,19 @@ mutation a {extractByExample(  kindId: "bbcb2d1f-1c0c-4d81-adff-39de27d8fc52", #
 
 In order to perform the second mutation you need to create an additional kind to store the example and mapping information. 1. Create a new kind and call it "exampleContainer". The "exampleContainer" should have schema:
 
-```
+```text
 {  example :  STRING,  mapping : STRING,  required : [STRING],  kind : STRING,  kindId : STRING}
 ```
 
 2. Create an instance of the "exampleContainer" with the following mutation below, where kindId is the id of the purchaseEvent kind:
 
-```
+```text
 mutation e {addexampleContainer(  input: {    example: "Carl bought a fish for 5 dollars at the store.",    mapping : "{\"name\" : \"Carl\", \"object\" : \"fish\", \"price\" : \"5 dollars\", \"location\" : \"store\"}", #This has to be a serialized (stringified) JSON    required : ["name","object"],    kindId : "2215a0af-99de-49af-8892-a518cb77e17f" #Your purchaseEvent Kind ID    }    )}
 ```
 
 3. After the instance is created, the following query can be performed: Upload a new file [otherFacts.csv](https://github.com/maana-io/q-tutorials/blob/master/maana-fact-recognition-bot/otherFacts.csv) and use the kindId generated there, in the mutation below \(if you do not use a new kind, the same facts will be extracted and no new entries will be added\):
 
-```
+```text
 mutation {  extractByExampleKind(    kindId : "bbcb2d1f-1c0c-4d81-adff-39de27d8fc52", #your otherFactscsv Kind ID    exampleKindId : "5f006487-74a5-4797-beba-17d0a5cb5a5e", #your exampleContainer Kind ID    fieldName : "text"    )    }
 ```
 

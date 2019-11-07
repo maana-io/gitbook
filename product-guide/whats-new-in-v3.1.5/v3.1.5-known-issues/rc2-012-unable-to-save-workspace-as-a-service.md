@@ -25,7 +25,7 @@ The service is successfully created.
 {% tab title="Actual Results" %}
 Error is thrown as follows:
 
-```
+```text
 Failed to save the service: GraphQL error: 
 Error/s in apollo-link operation: 
 [{"message":"Response not successful: 
