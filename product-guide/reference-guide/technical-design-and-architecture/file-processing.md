@@ -21,7 +21,7 @@ In response, various **bots inspect** newly discovered files to **harvest** vari
 * A new relation: HasFileMetadata / IsFileMetadataOf
 * Links are added of this relation in a strongly typed way: 
 
-```
+```text
 {
   fromKind: File,
   fromInstance: 123,

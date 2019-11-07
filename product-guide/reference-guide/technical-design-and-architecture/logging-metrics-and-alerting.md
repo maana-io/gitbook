@@ -58,7 +58,7 @@ All clusters currently expose access to [Grafana](https://grafana.com/) on port 
 
 For your metrics to be available from Grafana, you must identify your service by adding a label to the docker compose file.
 
-```
+```text
 maana-core:
   image: ${DOCKERPREFIX-maanainc/}maana-core:latest
   labels:
@@ -76,25 +76,25 @@ The MetricsPort label declares the port on which the metrics server is exposed.
 
 Import the metrics functions:
 
-```
+```text
 import { initMetrics, counter } from 'io.maana.shared'
 ```
 
 Initialize metrics exactly once in your service, call initMetrics with a service name:
 
-```
+```text
 initMetrics(SELF)
 ```
 
 Add counters for each of the metrics you wish to track, they can be declared where they are used, provide a name and a description:
 
-```
+```text
 const graphqlRequestCounter = counter('graphqlRequests', 'GraphQL request count')
 ```
 
 Increment the counter when the event occurs:
 
-```
+```text
 graphqlRequestCounter.inc()
 // or
 graphqlRequestCounter.inc(7)
@@ -102,7 +102,7 @@ graphqlRequestCounter.inc(7)
 
 This is an example of inserting a piece of middleware into express to track all requests through an endpoint:
 
-```
+```text
 app.use(
   '/graphql',
   (req, res, next) => {

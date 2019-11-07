@@ -30,7 +30,7 @@ Meta-Learning service explores the decision space, builds up and tests pipelines
 
 ![Figure 3: Train Classifier from kind SmallCensusCSV](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LXKyuuNj95-UqghaQwM%2F-LXKzHbAUWRe56519g5t%2Fimage.png?alt=media&token=a84b26da-dbba-4080-bef0-fd97bd740499)
 
-```
+```text
 mutation smallcensus {
   trainClassifierKind(input:{
     accuracy:0.5,
@@ -73,7 +73,7 @@ mutation smallcensus {
 
 ![Figure 9: Classify instance](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LXKyuuNj95-UqghaQwM%2F-LXKzhVrXPKFgYn3po4j%2Fimage.png?alt=media&token=e6b01e69-7ddc-4b8c-ba87-debd2c07a99a)
 
-```
+```text
 mutation classify {
   classifyInstance(input: {
     trainedModelId: "SmallCensusModel",
@@ -94,7 +94,7 @@ Using mutation ClassifyKind, you can use a trained model to classify a kind and 
 
 ![Figure 11: Classify Kind](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LWSKjuJIsK0lFXCaEtL%2F-LXKyuuNj95-UqghaQwM%2F-LXKzqBMN4aCt3SrSzsp%2Fimage.png?alt=media&token=dc890ac3-a838-40fd-a9fa-9bb669773505)
 
-```
+```text
 mutation classify
 {
   classifyKind(input:

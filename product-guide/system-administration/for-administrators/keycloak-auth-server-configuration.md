@@ -197,7 +197,7 @@ By default, the keycloak server should expose its JWKS on 'https://\[your-keyclo
 
 Ensure you can get your JWKS by hitting this endpoint on your keycloak server. It should respond with JSON output similar to this:
 
-```
+```text
 {
   "keys": [
     {
