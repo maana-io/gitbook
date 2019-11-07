@@ -11,7 +11,7 @@
 
 Step Instructions:
 
-**Step 1:** Familiarize with the spreadsheet below. This includes a methodology for scoring use cases in Maana. 
+**Step 1:** Familiarize with the spreadsheet below. This includes a methodology for scoring use cases in Maana. \[Not clear\]
 
 **Step 2:** Look at the Heat Map tab, Business and Technology Metrics table and understand how these values are derived. For this you would need to look at the Use Cases tab. 
 
@@ -30,4 +30,6 @@ Step Instructions:
 **Step 8**: Now look at the workspace below, compare to your approach and to the Excel sheet [https://cstrainingstable.knowledge.maana.io/workspace/a325799f-7d19-4732-9588-d8d716357ef0](https://cstrainingstable.knowledge.maana.io/workspace/a325799f-7d19-4732-9588-d8d716357ef0)
 
 **Step 9**: Conclude on advantages and disadvantages on implementing this model in Maana as opposed to Excel. 
+
+\[**Not sufficient info on how to look at the Excel File**\]
 

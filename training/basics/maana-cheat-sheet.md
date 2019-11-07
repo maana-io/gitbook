@@ -11,7 +11,7 @@
 
 Print this one pager to aid in learning as you go through the training
 
-[Maana Cheat-Sheet](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_ppt/Cheat%20Sheet%20%282%29.docx)
+[Maana Cheat Sheet](https://maanainc.app.box.com/file/553860131062)
 
-
+![](../../.gitbook/assets/screen-shot-2019-11-07-at-2.54.49-pm.png)
 

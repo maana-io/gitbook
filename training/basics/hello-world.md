@@ -32,5 +32,19 @@ Link to recording on Box: [https://maanainc.app.box.com/folder/92505838024](http
 
 Link to Gif on Box: [https://maanainc.app.box.com/folder/92505735615](https://maanainc.app.box.com/folder/92505735615)
 
+\*\*\*\*
 
+**--**
+
+**Feedback**
+
+Some of the context is missing, create Workspace. All actions without acompanying gifs, need more explanation.
+
+Only Maana employees can access, embed them. 
+
+Looked at videos, Create Knowledge Graph
+
+Context on how to get to Step 1. Create a Workspace, link to that... 
+
+---
 

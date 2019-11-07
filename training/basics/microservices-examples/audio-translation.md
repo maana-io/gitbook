@@ -7,7 +7,8 @@
 * [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
 * [x] Case description \(**completed**\)
 * [x] Recording \(**completed**\)
-* [ ] Gif \(**pending**\)
+* [x] Gif \(**completed\)**
+* [ ] Azure upload \(pending\)
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -21,13 +22,7 @@ This example demonstrates how the Maana Q platform can be leveraged to extract a
 
 **Step by Step Instructions:** 
 
-Step 1: Create new workspace and rename 
-
-1. Click on the + icon in the workspace tab, on the left hand side 
-2. In the workspace details panel give the workspace a new name -&gt; “Audio Translation” 
-3. Click the save icon  
-
-Step 2: Create “top level” function 
+**Step 1:** Create “top level” function 
 
 Above the canvas click on the create function button, a green function box will appear.  
 
@@ -36,7 +31,7 @@ Above the canvas click on the create function button, a green function box will 
 3. Edit the function to have youtubeUrl and targetFolder as inputs with the above kinds as types 
 4. Click Save
 
-Step 3: Import services to be used and wire up the functions 
+**Step 2:** Import services to be used and wire up the functions 
 
 1. search for “maana” in the top search bar 
 2. drag the following services into the inventory 
@@ -51,7 +46,7 @@ Step 3: Import services to be used and wire up the functions
 11. Wire up the functions in the following order 
 12. audio splitting -&gt; transcribeAudio -&gt; translate \(with language as 2nd input\) 
 
-Step 4: Test the top level function with GraphQL IDE 
+**Step 3:** Test the top level function with GraphQL IDE 
 
 1. Click on the workspace, the graphQL editor will appear in the bottom panel 
 2. Type the following into the left hand pane of the editor 
@@ -74,7 +69,9 @@ Step 4: Test the top level function with GraphQL IDE
 
 4.Observe output 
 
-**Recordings:**
+\*\*\*\*
+
+**Recordings \(Anastasia WIP\):**
 
 [step 2 - top level func](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%202%20-%20top%20level%20func.gif)
 

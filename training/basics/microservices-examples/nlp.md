@@ -88,7 +88,7 @@ Since we have 3 functions that have 3 separate outputs we need to aggregate thes
 
 
 
-**Recordings:**
+**Recordings \(Anastasia WIP\):**
 
 [Step 4-5 Create Top Level Func](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Step%204-5%20Create%20Top%20Level%20Func.gif)
 
