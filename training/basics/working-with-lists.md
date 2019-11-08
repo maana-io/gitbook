@@ -13,7 +13,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
-## **Intro to Working With Lists**
+## **Part 1: Introduction to Working with Lists**
 
 **Case Description :** While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. A group of multiple items is called a list or an array. In this exercise we take you through two examples that use Maana Q Scalars in built service to help demonstrate:  1. Combining \(concatenating\) two lists  2. Adding '2' to lists together.  Let's get started!
 
@@ -43,11 +43,7 @@
 
 \*\*\*\*[**https://maanainc.app.box.com/folder/92635424308**](https://maanainc.app.box.com/folder/92635424308)\*\*\*\*
 
-\*\*\*\*
-
-\*\*\*\*
-
-## **Working With Lists Example**
+## **Part 2: Working with Lists Example**
 
 **Case Description:** In this example, we use MaanaQ to aid us in ensuring only those individuals who are above 21 are allowed to enter the MaanaQ bar. This example lets us do just that. In the process, learn how to perform various functions on lists. Use Maana Q to execute functions on multiple items while efficiently caching the result. Maana Q runs the function in parallel using all the available computation resource. We have a list of people and their birthdays. Let's find out who can enter and enjoy the party!
 

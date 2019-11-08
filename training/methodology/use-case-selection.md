@@ -11,7 +11,7 @@ description: >-
 * [x] Power Point Slides \(**not needed**\)
 * [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
 * [x] Step-by-Step Instructions for Learning Assistant \(**pending**\)
-* [x] Case description \(**Refer to pdf in Fit for Maana Workspace above**\)
+* [x] Case description \(**Below**\)
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -41,17 +41,17 @@ The objectives of this exercise are:
 
 **Step 4:** Look also at the **Score Card tab** and understand how these parameters influence the Business and Technical Scores. 
 
-**Step 4:** Perform a sensitivity analysis changing weigh factors in the Score Card and analyze the impact on Business and Technical Scores. 
+**Step 5:** Perform a sensitivity analysis changing weigh factors in the Score Card and analyze the impact on Business and Technical Scores. 
 
-**Step 5:** Reflect on the usability of this spreadsheet. How easy would it be to add or reduce the categories on the Score Card without impacting formulas and the heat map? How long would it take you to develop this type of Excel sheet on your own? What are the limitations of this Excel file?
+**Step 6:** Reflect on the usability of this spreadsheet. How easy would it be to add or reduce the categories on the Score Card without impacting formulas and the heat map? How long would it take you to develop this type of Excel sheet on your own? What are the limitations of this Excel file?
 
 ### Now let's go to Maana...  
 
-**Step 6:** Now in Maana, create a new workspace and draft a problem decomposition architecture to tackle the same functionality as the Excel sheet. What would be a good candidate for a top Problem Question? 
+**Step 7:** Now in Maana, create a new workspace and draft a problem decomposition architecture to tackle the same functionality as the Excel sheet. What would be a good candidate for a top Problem Question? 
 
-**Step 7:** What Kinds and Functions would be required?
+**Step 8:** What Kinds and Functions would be required?
 
-**Step 8**: Now look at the workspace below, compare to your approach and to the Excel sheet [https://cstrainingstable.knowledge.maana.io/workspace/a325799f-7d19-4732-9588-d8d716357ef0](https://cstrainingstable.knowledge.maana.io/workspace/a325799f-7d19-4732-9588-d8d716357ef0)
+**Step 9**: Now look at the workspace below, compare to your approach and to the Excel sheet [https://cstrainingstable.knowledge.maana.io/workspace/a325799f-7d19-4732-9588-d8d716357ef0](https://cstrainingstable.knowledge.maana.io/workspace/a325799f-7d19-4732-9588-d8d716357ef0)
 
-**Step 9**: Revisit the observations made on Step 6 \(On the MS Excel approach\) and conclude on advantages and disadvantages on implementing this model in Maana as opposed to Excel.
+**Step 10**: Revisit the observations made on Step 6 \(On the MS Excel approach\) and conclude on advantages and disadvantages on implementing this model in Maana as opposed to Excel.
 

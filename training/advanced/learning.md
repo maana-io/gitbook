@@ -9,10 +9,6 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
-Link to Workspace: [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)
-
-
-
 Use case description: 
 
 
