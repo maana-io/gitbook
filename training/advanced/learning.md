@@ -11,6 +11,8 @@
 
 ### Use case description: 
 
+**Basic Learning Technique \(Passive\)**
+
 Story:  Persona is a chain restaurant owner who is interested in knowing how his customers feel about his restaurant... This person went to Yelp to see the reviews written on his restaurant. He got the data from the internet, someone helped me crawl this website and extract my reviews. 
 
 I decided to classify these reviews into 2 groups, positive and negative. This is, I made reviews with more than 4 stars positive and those with less than that as negative. 
@@ -57,7 +59,25 @@ Training goals:
 
       The point here is to show that asking "smart" questions can improve model quality faster than asking random questions. 
 
+**Advanced Learning Technique \(Active\)**
 
+After you train the model... 
+
+SME gives complex observations, the model comes back with questions on sentences it has less confidence on... 
+
+PredictAll is a function where the user inputs a new test set and the function returns classification of those entries... datasets with low confidence are passed on to the askSmarkQuestion Function...
+
+answer question is connected to a UI... Speeds up the process of feedback... 
+
+
+
+You can show the LabeledSentence Kind
+
+
+
+
+
+questions back to the user on those cases where confidence is low. 
 
 Text classification, e.g. 
 
