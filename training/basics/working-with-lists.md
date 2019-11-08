@@ -37,7 +37,7 @@ GIF [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTrain
 
 **Step 5:** Expand 'addTwoToAListOfNumbers'.  We will use Manna prebuilt services called Constants and Math. So locate these in the search bar. Drag them to the inventory.
 
-**Step 6:** Create a new function here called 'addTwoToNumber' with input called 'number' of type INT. Output is of type INT. Make these mandatory, Click Save. Wire the input and output. 
+**Step 6:** Create a new function under expansion of 'addTwoToAListOfNumbers' called 'addTwoToNumber' with input called 'number' of type INT. Output is of type INT. Make these mandatory, Click Save. Wire the input and output. 
 
 **Step 7:** Expand the function 'addTwoToNumber'. In the inventory panel, under Services, locate Constants. Expand it and locate the function 'two'. Drag 'two' to the canvas.
 
