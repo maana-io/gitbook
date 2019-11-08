@@ -43,6 +43,8 @@ GIF [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTrain
 
 **Step 9:** Wire inputs and outputs.  There are three wirings - 1. 'Input' function's 'INT' to 'Math:intAddition' function's 'a' 2. 'Constant:two' function's INT to 'Math:intAddition' function's 'b' 3. 'Math:intAddition' function's output INT to the function 'Output'
 
+**Step 10:** Test the function by going to the top level function called 'addTwoToNumber'. In the explorer panel, enter in a list of numbers. Click on run. View the function results in the Assistant Panel.
+
 
 
 ## **Part 2: Working with Lists Example**
