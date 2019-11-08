@@ -6,6 +6,8 @@
 
 -------------------------------------------------------------------------------------------------------
 
+presenter: ****Roie
+
 **Use Case Description:**  
 
 This example demonstrates how the Maana Q platform can be leveraged to extract and transcribe \(and translate\) audio from a video.  In this case we use YouTube as our video source.   With video content being more wide spread the ability to extract knowledge from them could prove vitally important.  Imagine a set of Dr, Patient video consultation or a set of video lectures and what knowledge would be contained in them. 

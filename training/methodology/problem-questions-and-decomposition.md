@@ -15,6 +15,12 @@ description: Problem Decomposition
 
 -------------------------------------------------------------------------------------------------------
 
+presenter: Anastasia/Javier + Donald \(ORDL/AI platform\)
+
+Need PPT - look back on Day1
+
+agenda on day 2
+
 ## Methodology
 
 **Key concepts from Systems Engineering**  

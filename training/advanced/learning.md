@@ -9,6 +9,8 @@
 
 -------------------------------------------------------------------------------------------------------
 
+presenter: Javier/Linh
+
 ### Use case description: 
 
 **Basic Learning Technique \(Passive\)**

@@ -8,6 +8,8 @@ description: Familiarize with Maana's User Interface and Perform Basic Operation
 
 Powerpoint slides - WIP by Anastasia.
 
+Seeded ppt :AI, etc.
+
 ## Basic UI Navigation Videos:
 
 {% embed url="https://maanainc.app.box.com/folder/91141575129" %}

@@ -11,6 +11,8 @@ description: Natural Language Processing
 
 -------------------------------------------------------------------------------------------------------
 
+presenter: ****Mike
+
 **Use Case Description:**  
 
 Important and useful information could be located within written documents and as part of a solution the need to extract key entities from these documents is required.  This example demonstrates how the Maana Q platform can be utilized to extract key “entities”, in this case People, Places and Organizations from raw, inputted text.  

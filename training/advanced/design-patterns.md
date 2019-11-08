@@ -1,5 +1,7 @@
 # Design Patterns
 
+presenter: Roie
+
 **Case Description:**
 
 In this example, we use MaanaQ to introduce concepts and different design patterns for creating the domain models. 

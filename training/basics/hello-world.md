@@ -10,6 +10,8 @@ description: Build your first Maana case
 
 -------------------------------------------------------------------------------------------------------
 
+presenter: Anastasia
+
 **Case Description:**
 
 This is a hands-on example that will get you started with MaanaQ. In this case, learn how to create your own sayHello function, add a function field, and import a service from the inventory to your workspace. Get MaanaQ to greet you!
