@@ -112,6 +112,8 @@ lesson 2 step 4 test distance calc
 
 [GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%204%20test%20distance%20calc.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step4_testDistanceCalculation.mov)
 
+![](../../.gitbook/assets/lesson-2-step-4-test-distance-calc.gif)
+
 lesson 2 step 5 distance by addess func
 
 [GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%205%20distance%20by%20addess%20func.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step5_distanceByAddressFunction.mov)
@@ -127,6 +129,8 @@ lesson 2 step 7 - duplicate and wire
 lesson 2 step 8 final test
 
 [GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%208%20final%20test.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step8_finalTest.mov)
+
+![](../../.gitbook/assets/lesson-2-step-8-final-test.gif)
 
 \*\*\*\*
 
