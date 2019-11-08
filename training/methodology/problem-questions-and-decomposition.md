@@ -4,23 +4,20 @@ description: Problem Decomposition
 
 # Problem Decomposition
 
----------------------------------------------------------------------------------------------------------------**Material Development Checklist**
+-------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
 * [ ] Power Point Slides \(**pending, could use Slide 77 on** [**https://maanainc.app.box.com/file/444706275394**](https://maanainc.app.box.com/file/444706275394)\)
-* [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
 * [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
 * [ ] Case description \(**pending**\)
 * [ ] Recording \(pending\)
 * [ ] gif \(pending\)
 * [ ] Azure upload \(pending\)
 
----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 **Case Description:**
 
 This is a hands-on example that will teach principle of Top Down approach. In this case, learn how to create and application that will rank car makers based on reliability and brand image.
-
-
 
 **Artificial Intelligence**
 

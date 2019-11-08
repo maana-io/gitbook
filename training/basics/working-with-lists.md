@@ -1,17 +1,11 @@
 # Working with Lists
 
----------------------------------------------------------------------------------------------------------------**Material Development Checklist**
+-------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
-* [x] Power Point Slides \(**not needed**\)
-* [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
-* [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
-* [x] Case description \(**completed**\)
-* [x] Recording \(**completed\)**
-* [x] Gif \(**complete**\)
 * [ ] Azure upload \(pending\)
 * [ ] Basics Use Case, Workspace, Step by Step, Recordings and gif \(WIP\)
 
----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 ## **Part 1: Introduction to Working with Lists**
 
@@ -19,31 +13,35 @@
 
 **Link to Workspace:**
 
-\*\*\*\*[**https://cstrainingstable.knowledge.maana.io/workspace/cdd1250e-191a-4a20-b370-bd1c452beb5f**](https://cstrainingstable.knowledge.maana.io/workspace/cdd1250e-191a-4a20-b370-bd1c452beb5f)\*\*\*\*
+\*\*\*\*[**https://cstrainingstable.knowledge.maana.io/workspace/7b395a75-8b1f-4288-a866-7b7bbc781dae**](https://cstrainingstable.knowledge.maana.io/workspace/7b395a75-8b1f-4288-a866-7b7bbc781dae)\*\*\*\*
 
 **Step by Step Instructions:**
 
 **Step1:** Create a function called  'combineTwoLists' with inputs 'a' of type String list and 'b' of type String list . Make both mandatory by clicking on '!' icon. To create a list, click on 'list' icon. Output is of type String list. Click Save.
 
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step1.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step1.mov)
+
+![](../../.gitbook/assets/workingwithlists_intro_step1.gif)
+
 **Step2:** Expand on the 'combineTwoLists'  function. Next we will use Maana Q Scalars, a maana pre-built service suite. Search for Maana Q Scalars in the search bar. Drag and drop it to the Inventory. In the Inventory panel, expand Services -&gt;Maana Q Scalars and look for  'StringListConcat'. Drag this to the canvas. Wire the inputs and outputs. 
+
+GIF [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step2.mov)
 
 **Step 3:** Test the function by going to the top level function i.e. 'combineTwoLists'. In the explorer panel, enter in two strings. Click on run. View the function results in the Assistant Panel.
 
-**Step 4: WIP**
+GIF [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step3.mov)
 
-**Step 5:WIP**
+**Step 4:** In the same knowledge graph, create a new function called 'addTwoToAListOfNumbers' with input called 'listOfNumbers' of type INT list and make it mandatory. The output is a list of type INT. Make it mandatory. Click Save.
 
-**Step 6:WIP**
+**Step 5:** Expand 'addTwoToAListOfNumbers'.  We will use Manna prebuilt services called Constants and Math. So locate these in the search bar. Drag them to the inventory.
 
-**Recording**
+**Step 6:** Create a new function here called 'addTwoToNumber' with input called 'number' of type INT. Output is of type INT. Make these mandatory, Click Save. Wire the input and output. 
 
-**Link to Recordings on Box**:  
+**Step 7:** Expand the function 'addTwoToNumber'. In the inventory panel, under Services, locate Constants. Expand it and locate the function 'two'. Drag 'two' to the canvas.
 
-\*\*\*\*[**https://maanainc.app.box.com/folder/92631123910**](https://maanainc.app.box.com/folder/92631123910)\*\*\*\*
+**Step 7:** In the inventory panel, under Services, locate Math. Expand it and locate the function 'intAddition'. Drag 'intAddition' to the canvas.
 
-**Link to Gif on Box:**
 
-\*\*\*\*[**https://maanainc.app.box.com/folder/92635424308**](https://maanainc.app.box.com/folder/92635424308)\*\*\*\*
 
 ## **Part 2: Working with Lists Example**
 
@@ -57,51 +55,103 @@
 
 1. Create a new function and name it "allPeopleOver21". The output type is PersonWith Age and a list \(a.k.a. array\).
 
+WorkingWithLists\_Step1\_TopPQ
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step1_TopPQ.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step1_TopPQ.mov)
+
+![](../../.gitbook/assets/workingwithlists_step1_toppq.gif)
+
 **Step2:** Decompose top level function
 
 1. Expand the top level function, "allPeopleOver21". Now we will create several functions. For the first function, look for "allPersons" in the search bar, drag and drop it to the canvas. 
 
 _Note: This function has two inputs "take" and "offset", both INT type. Take is the number of elements to return from the function, and offset is what element to start on. For example, if you have a list \[a,b,c\], take=1, offset=0 will return \[a\]. Another example, in the list \[a,b,c\], take=2, offset=1 will return \[b,c\]._ 
 
+WorkingWithLists\_Step2.1\_allPersons
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step2.1_allPersons.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.1_allPersons.mov)
+
+![](../../.gitbook/assets/workingwithlists_step2.1_allpersons.gif)
+
 _2._  Next create a function called "getPeopleWithAgeFromPeople". Create an input field called people of type Person and make it a list. The output is a list of type PersonWithAge. Wire the input and output.
+
+WorkingWithLists\_Step2.2\_getPeopleWithAge\_andWire
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step2.2_getPeopleWithAge_andWire.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.2_getPeopleWithAge_andWire.mov)
+
+![](../../.gitbook/assets/workingwithlists_step2.2_getpeoplewithage_andwire.gif)
 
 3. Next create a function called "filterPeopleOver21". Create an input called peopleWithAge, make it a list. The output is a list of type PersonWithAge. Wire the input and output.
 
+WorkingWithLists\_Step2.3\_filterPeopleOver21
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step2.3_filterPeopleOver21.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.3_filterPeopleOver21.mov)
+
+![](../../.gitbook/assets/workingwithlists_step2.3_filterpeopleover21.gif)
+
 4. Next create a function called "filterNullPeopleWithAge". Create an input called peopleWithAge, make it a list. The output is a list of type PersonWithAge. Wire the input and output.
+
+WorkingWithLists\_Step2.4\_filterNullPeople
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step2.4_filterNullPeople.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.4_filterNullPeople.mov)
+
+
+
+
 
 **Step3:** Second level of decomposition
 
 1. Expand "getPeopleWithAgeFromPeople", create a function called "getPersonWithAgeFromPerson" with an input called person of type Person. Make this input mandatory by clicking the "!" The output is of type PersonWithAge. Wire the input and output.
-2. Go back to the top level decomposition and locate the function called, "filterPeopleOver21". Expand it and create a new function called, "filterPersonIsOver21" with an input called personWithAge of type PersonWithAgeInput. The output is of type PersonWithAge. Wire the input and output.
-3. Go back to the top level decomposition and locate the function called, "filterNullPeopleWithAge". Expand it. In the search bar, locate the lambda service called "filterNullPeopleWithAge", drag and drop it to the canvas. Wire the input and output.
+
+WorkingWithLists\_Step3.1\_expand\_getPeopleWithAge
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step3.1_expand_getPeopleWithAge.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step3.1_expand_getPeopleWithAge.mov)
+
+
+
+1. Go back to the top level decomposition and locate the function called, "filterPeopleOver21". Expand it and create a new function called, "filterPersonIsOver21" with an input called personWithAge of type PersonWithAgeInput. The output is of type PersonWithAge. Wire the input and output.
+
+WorkingWithLists\_Step3.2\_expand\_filterpeopleover21
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step3.2_expand_filterpeopleover21.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step3.2_expand_filterpeopleover21.mov)
+
+1. Go back to the top level decomposition and locate the function called, "filterNullPeopleWithAge". Expand it. In the search bar, locate the lambda service called "filterNullPeopleWithAge", drag and drop it to the canvas. Wire the input and output.
+
+WorkingWithLists\_Step3.3\_expand\_filterNull
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step3.3_expand_filterNull.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step3.3_expand_filterNull.mov)
+
+![](../../.gitbook/assets/workingwithlists_step3.3_expand_filternull.gif)
 
 **Step4:** Testing
 
 1. Go to the "allPersons" function and run it the context panel on the right side of the screen. Select "input" and expand it. Select take and offset and set both to 0. In the Assistant Panel see the list of all people we are considering. Next go to the top level function called "allPeopleOver21" , run it. A list of those individuals who are 21 or older is returned in the Assistant Panel.
 
-Recordings
-
-\*\*\*\*
-
-**Part 2**
-
-[WorkingWithLists\_Step1\_TopPQ](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step1_TopPQ.gif)
-
-[WorkingWithLists\_Step2.1\_allPersons](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.1_allPersons.mov)
-
-[WorkingWithLists\_Step2.2\_getPeopleWithAge\_andWire](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.2_getPeopleWithAge_andWire.mov)
-
-[WorkingWithLists\_Step2.3\_filterPeopleOver21](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.3_filterPeopleOver21.mov)
-
-[WorkingWithLists\_Step2.4\_filterNullPeople](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.4_filterNullPeople.mov)
-
-[WorkingWithLists\_Step3.1\_expand\_getPeopleWithAge](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step3.1_expand_getPeopleWithAge.mov)
-
-[WorkingWithLists\_Step3.2\_expand\_filterpeopleover21](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step3.2_expand_filterpeopleover21.mov)
-
-[WorkingWithLists\_Step3.3\_expand\_filterNull](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step3.3_expand_filterNull.mov)
-
 [WorkingWithLists\_Step4\_Testing](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step4_Testing.mov)
+
+GIF [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step4_Testing.mov)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

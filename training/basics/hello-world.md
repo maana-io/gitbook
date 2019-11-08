@@ -1,16 +1,14 @@
+---
+description: Build your first Maana case
+---
+
 # Hello, world!
 
----------------------------------------------------------------------------------------------------------------**Material Development Checklist**
+-------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
-* [x] Power Point Slides \(**not needed**\)
-* [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
-* [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
-* [x] Case description \(**completed**\)
-* [x] Recording \(**completed**\)
-* [x] Gifs **\(completed\)**
 * [ ] **Azure import \(pending\)**
 
----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 **Case Description:**
 

@@ -8,7 +8,7 @@ description: Maana Training and Use Case Kickoff
 
 _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/maana-q-documentation/Maana%20Training%20Teaser.mov) _where Donald Thompson \(Founder, President & CTO, MAANA\), provides an overview of what to expect at training..._
 
-![](../.gitbook/assets/image%20%2843%29.png)
+![](../.gitbook/assets/image%20%2844%29.png)
 
 ## Detailed Training Agenda
 
@@ -48,7 +48,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">
         <p>Introduction to Microservices</p>
         <p></p>
-        <p><em>This lesson is a hands-on exercise to create your first Q model.</em>
+        <p><em>This lesson will guide you in creating your first Q model</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Creating/renaming function &#x2022; Adding function field &#x2022;
@@ -60,7 +60,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">
         <p>Create Kinds and Functions</p>
         <p></p>
-        <p><em>With a hands on exercise, we demonstrate the elements of a Computational Knowledge Graph, a technology which sets Maana apart</em>
+        <p><em>This lesson will demonstrate the elements of a Computational Knowledge Graph, a technology which sets Maana apart</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Introduction to Kinds &#x2022; Functional programming 101 &#x2022;
@@ -84,7 +84,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">
         <p>Learn how to compose functions from multiple microservices.</p>
         <p></p>
-        <p><em>We&apos;ll build a Natural Language Processing model that will extract key entities from a textual source.</em>
+        <p><em>This lesson will show you a Natural Language Processing model which extracts key entities from a textual source.</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Using helper utility functions such as word counting</td>
@@ -95,7 +95,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">
         <p>Learn how to compose functions from multiple microservices.</p>
         <p></p>
-        <p><em>We&apos;ll build a model that will perform audio transcription by converting speech to text.</em>
+        <p><em>This lesson will show you an Audio Transcription model which can convert speech onto text</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Audio transcription and translation using maana-media, maana-audio,
@@ -110,27 +110,27 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="methodology/use-case-selection.md">Use Case Selection</a>
-      </td>
-      <td style="text-align:left">
-        <p>Familiarize with a methodology to rank and select Maana Q Use Cases.</p>
-        <p></p>
-        <p><em>We&apos;ll look at examples of prior Use Case selection analyses performed.</em>
-        </p>
-      </td>
-      <td style="text-align:left">&#x2022; Use Case ranking spreadsheet and &apos;Fit 4 Maana&apos; workspace</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><a href="methodology/problem-questions-and-decomposition.md">Problem Decomposition</a>
       </td>
       <td style="text-align:left">
         <p>Familiarize with Maana&apos;s methodology to decompose problems</p>
         <p>&lt;em&gt;&lt;/em&gt;</p>
-        <p><em>We&apos;ll look at examples of breaking down a large business problem into smaller components, which can be worked on independently. </em>
+        <p><em>This lesson will teach you how to break down large business problems into smaller components, to be worked on independently</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Problem decomposition via problem questions &#x2022; Modularization
         and Interconnectedness</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="methodology/use-case-selection.md">Use Case Selection</a>
+      </td>
+      <td style="text-align:left">
+        <p>Familiarize with a methodology to rank and select Maana Q Use Cases.</p>
+        <p></p>
+        <p><em>This lesson will demonstrate how to apply Problem Decomposition</em>
+        </p>
+      </td>
+      <td style="text-align:left">&#x2022; Use Case ranking spreadsheet and &apos;Fit 4 Maana&apos; workspace</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="methodology/collaboration.md">Collaboration</a>
@@ -138,7 +138,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">
         <p>Maana Q as a Collaborative Environment</p>
         <p>&lt;em&gt;&lt;/em&gt;</p>
-        <p><em>Best strategies for team collaboration when building a solution on Q.   </em>
+        <p><em>This lesson will tackle best strategies for team collaboration when building a solution on Q</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Team collaboration &#x2022; Using workspaces to break down areas
@@ -149,9 +149,9 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left"><a href="methodology/kickoff-session.md">Project Execution</a>
       </td>
       <td style="text-align:left">
-        <p>Project execution approach and stages .</p>
+        <p>Project execution approach and stages</p>
         <p></p>
-        <p><em>We&apos;ll look at recommendations for pilots, short-term and production projects</em>
+        <p><em>This lesson will explore recommendations for pilots, short-term and production projects</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Team structure &#x2022; Relevant aspects of SCRUM and Agile</td>
@@ -170,9 +170,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">
         <p>Get started with Maana Command Line Interface (CLI) for advanced development.</p>
         <p></p>
-        <p><em>We&apos;ll look at advanced development techniques in the context of Q solutions. </em>
-          <br
-          /><em>You&apos;ll learn how to easily onboard existing libraries and code to your Q projects</em>
+        <p><em>This lesson will touch on advanced development techniques in the context of Q solutions</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; Maana CLI - mcreate, mdeploy &#x2022; Basic Kubernetes concepts
@@ -191,7 +189,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">
         <p>Build an ORDL model<em><br /></em>
         </p>
-        <p><em>This lesson teaches you how to apply an ORDL model as a team (together with SMEs, BAs, knowledge architects, developers, testers) to create a solution that improves over time</em>
+        <p><em>This lesson will teach you key concepts to create a solution that improves over time</em>
         </p>
       </td>
       <td style="text-align:left">&#x2022; What is ORDL? &#x2022; What are examples of observation, reasoning,

@@ -6,18 +6,9 @@ description: >-
 
 # Use Case Selection
 
----------------------------------------------------------------------------------------------------------------**Material Development Checklist**
-
-* [x] Power Point Slides \(**not needed**\)
-* [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
-* [x] Step-by-Step Instructions for Learning Assistant \(**pending**\)
-* [x] Case description \(**Below**\)
-
----------------------------------------------------------------------------------------------------------------
-
 ### **Introduction**
 
-There is a large variety of methodologies to identify and rank the best opportunity our of a portfolio of prospects.  Across business and technical contexts, decision makers are often confronted with multiple factors which combined might make an opportunity more desirable than another.
+There is a large variety of methodologies to identify and rank the best opportunity out of a portfolio of prospects.  Across business and technical contexts, decision makers are often confronted with multiple factors which combined might make an opportunity more desirable than another.
 
 Selecting Use Cases to develop in Maana is in fact, a similar type of problem. Interestingly, this problem can also be tackled in Maana, since the emphasis of the technology is that of integration of knowledge in support of decision making. 
 

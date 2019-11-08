@@ -4,20 +4,12 @@ description: Natural Language Processing
 
 # NLP
 
----------------------------------------------------------------------------------------------------------------**Material Development Checklist**
+-------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
 * [ ] Power Point Slides \(**not needed**\)
-* [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
-* [x] Step-by-Step Instructions for Learning Assistant \(**completed**\)
-* [x] Case description \(**completed**\)
-* [x] Recording \(**completed**\)
 * [ ] Gif \(**pending**\)
 
----------------------------------------------------------------------------------------------------------------
-
-**Link to Workspace:** [https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)
-
-
+-------------------------------------------------------------------------------------------------------
 
 **Use Case Description:**  
 

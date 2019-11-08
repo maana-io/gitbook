@@ -1,16 +1,8 @@
+---
+description: Familiarize with Maana's User Interface and Perform Basic Operations
+---
+
 # Orientation
-
----------------------------------------------------------------------------------------------------------------**Material Development Checklist**
-
-* [x] Power Point Slides \(**WIP**\)
-* [x] Workspaces \(**not applicable**\)
-* [x] Step-by-Step Instructions for Learning Assistant \(**not applicable**\)
-* [x] Case description \(**not applicable**\)
-* [x] Videos **\(WIP\)**
-
-\*\*\*\*
-
----------------------------------------------------------------------------------------------------------------
 
 ## Logging In
 

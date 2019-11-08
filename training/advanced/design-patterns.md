@@ -1,14 +1,5 @@
 # Design Patterns
 
----------------------------------------------------------------------------------------------------------------**Material Development Checklist**
-
-* [x] Power Point Slides \(**not needed**\)
-* [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
-* [x] Step-by-Step Instructions for Learning Assistant \(**pending**\)
-* [x] Case description \(**pending**\)
-
----------------------------------------------------------------------------------------------------------------
-
 **Case Description:**
 
 In this example, we use MaanaQ to introduce concepts and different design patterns for creating the domain models. 
