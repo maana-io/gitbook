@@ -30,7 +30,7 @@ Branch of A.I. involving symbolic descriptions and logical inference
 
 Maana Q is partially based on the ideas put forward in Minsky's Society of Mind for a powerful cognitive architecture in which many specialist subsystems are coordinated to form an overall intelligent system 
 
-![](../../.gitbook/assets/image%20%2830%29.png)
+![](../../.gitbook/assets/image%20%2831%29.png)
 
 ## Methodology
 
