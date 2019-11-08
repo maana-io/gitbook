@@ -123,5 +123,5 @@ Then, another window will appear:
 
 Please save this code somewhere safe where you are the only one who can see it. This is for the event that you have to login without your device \(Google Authenticator, SMS\)
 
-Check the box, and it should take you to the portal.
+Check the box, then click Continue and it should take you to the portal.
 
