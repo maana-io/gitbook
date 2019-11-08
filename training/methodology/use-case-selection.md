@@ -1,21 +1,43 @@
+---
+description: >-
+  'Fit 4 Maana': Use Maana to build a decision tool to support use case
+  selection
+---
+
 # Use Case Selection
 
 ---------------------------------------------------------------------------------------------------------------**Material Development Checklist**
 
-* [ ] Power Point Slides \(**not needed**\)
-* [ ] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
-* [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
+* [x] Power Point Slides \(**not needed**\)
+* [x] Workspaces \([https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases](https://app.gitbook.com/@maana/s/q/v/3.2.1/training/basics/basic-orientation/use-cases)\)
+* [x] Step-by-Step Instructions for Learning Assistant \(**pending**\)
 * [x] Case description \(**Refer to pdf in Fit for Maana Workspace above**\)
 
 ---------------------------------------------------------------------------------------------------------------
 
-Step Instructions:
+### **Introduction**
 
-**Step 1:** Familiarize with the spreadsheet below. This includes a methodology for scoring use cases in Maana. \[Not clear\]
+There is a large variety of methodologies to identify and rank the best opportunity our of a portfolio of prospects.  Across business and technical contexts, decision makers are often confronted with multiple factors which combined might make an opportunity more desirable than another.
 
-**Step 2:** Look at the Heat Map tab, Business and Technology Metrics table and understand how these values are derived. For this you would need to look at the Use Cases tab. 
+Selecting Use Cases to develop in Maana is in fact, a similar type of problem. Interestingly, this problem can also be tackled in Maana, since the emphasis of the technology is that of integration of knowledge in support of decision making. 
 
-{% file src="../../.gitbook/assets/use-case-qualification-scores.xlsx" caption="Excel file for qualification of Use Cases" %}
+This exercise details a methodology which can be used to select Use Cases 'Fit for Maana'. It follows a typical approach common in different organizations to rank prospects in a 'heat-map type of representation' which can be used for communication and decision making. 
+
+The objectives of this exercise are:
+
+* Demonstrate a practical method to rank use cases for Maana, emphasizing key success factors, which can be customized as needed. 
+* Articulate problem decomposition methodologies in Maana. 
+* Provide a 'bridge' for MS Excel users to build Maana models.
+
+### **Instructions:**
+
+**Step 1:** Open the MS Excel file below. This contains a relatively simple methodology for selecting use cases in Maana based on Technical and Business Metrics. 
+
+{% file src="../../.gitbook/assets/fit4maanaexercise-excel.xlsx" caption="Fit 4 Maana - MS Excel" %}
+
+**Step 2:** Go to the **Heat Map tab**, and familiarize with the dimensions of the matrix. 
+
+Business and Technology Metrics table and understand how these values are derived. For this you would need to look at the Use Cases tab. 
 
 **Step 3:** Look also at the Score Card tab and understand how these parameters influence the Business and Technical Scores. 
 
