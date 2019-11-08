@@ -15,20 +15,6 @@ description: Problem Decomposition
 
 -------------------------------------------------------------------------------------------------------
 
-**Case Description:**
-
-This is a hands-on example that will teach principle of Top Down approach. In this case, learn how to create and application that will rank car makers based on reliability and brand image.
-
-**Artificial Intelligence**
-
-**Knowledge and Reasoning**
-
-Branch of A.I. involving symbolic descriptions and logical inference
-
-Maana Q is partially based on the ideas put forward in Minsky's Society of Mind for a powerful cognitive architecture in which many specialist subsystems are coordinated to form an overall intelligent system 
-
-![](../../.gitbook/assets/image%20%2831%29.png)
-
 ## Methodology
 
 **Key concepts from Systems Engineering**  
@@ -148,7 +134,93 @@ Car Selection workspace?
       1. The relationship between an Employer and Employee is one of Employment
       2. It is insufficient to model this situation as Employer has Employees \(and the reciprocal Employee has Employers\), since we likely wish to capture job title/position, start/end dates, department, manager, salary, etc.
 
+\*\*\*\*
+
+**Case Description:**
+
+This is a hands-on example that will teach principle of Top Down approach. In this case, learn how to create and application that will rank car makers based on reliability and brand image.
+
 **Step by Step Instructions:**
+
+1. Step 1 Top Level Problem 
+
+   1. Create a new workspace
+   2. Search for following kinds and bring them onto your workspace
+      1. Vehicle
+      2. ScoredVehicle
+      3. BrandWords
+
+   Note: Vehicle and BranWords kinds are already preloaded with the data
+
+   3. Explore content of Vehicle kind
+
+   Explore content of BrandWords kind
+
+Let us create a top-level problem question
+
+Say we have a list of carmakers and we want to know what are the top 5 best-ranked cars are. 
+
+Our top level question will be givenCarMakersWhatAreTheTopNBestRankedCars
+
+By phrasing it this way its is clear what the inputs and the outputs should be for this function. \(E.g. inputs are carMakers and topN and the output is RankedCars\)
+
+Add following fields to givenCarMakersWhatAreTheTopNBestRankedCars function : 
+
+1. carMaker and specify a value to be a list of type Vehicle, 
+2. topN and specify the value to be required parameter and of type INT
+3. Specify the output to be a list of type ScoreVehicle
+
+Bring the following services:
+
+getNumberOfRecalls
+
+getVehicleSales
+
+To calculate Recall Score we need to know the following:
+
+List of Car Makers
+
+Number of recalls
+
+Vehicle sales
+
+To calculate Brand Image Score we need to know the following:
+
+List of Car Makers
+
+Entity Analysis
+
+To calculate the brand image score lets use the following 
+
+getBrandImageScore
+
+getVehicle Make
+
+ Input: Vehicle Maker
+
+ Create function getVehicleMake
+
+  Input parameters: vehicle of type Vehicle. Required parameter 
+
+ Output: string
+
+Go inside this function:
+
+Search for getVehicleMake in the search and bring it into your inventory. 
+
+Bring this service onto your workspace and wire it with inputs and outputs.
+
+brandImageScore
+
+Make 
+
+givenTheMakerWhatAreTheyKeyPhrasesFromNews
+
+ Input: Make
+
+ Output: String
+
+\*\*\*\*
 
 **Link to recording:**
 
