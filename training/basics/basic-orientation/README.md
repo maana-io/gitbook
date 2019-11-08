@@ -18,7 +18,23 @@ Powerpoint slides - WIP by Anastasia.
 
 ## Basic UI Navigation Videos:
 
-[https://maanainc.app.box.com/folder/91141575129](https://maanainc.app.box.com/folder/91141575129)
+{% embed url="https://maanainc.app.box.com/folder/91141575129" %}
+
+Creating and Closing Workspaces
+
+Creating and Renaming a Workspace
+
+Cloning Workspace Template
+
+Removing a kind from the workspace
+
+Adding a field to a kind
+
+Deleting a kind
+
+Deleting from Explorer and Inventory
+
+Modifying : Removing a field from a kind
 
 
 

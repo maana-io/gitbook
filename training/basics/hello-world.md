@@ -32,3 +32,35 @@ Link to recording on Box: [https://maanainc.app.box.com/folder/92505838024](http
 
 Link to Gif on Box: [https://maanainc.app.box.com/folder/92505735615](https://maanainc.app.box.com/folder/92505735615)
 
+Recordings:
+
+[Hello World Step 1](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step1.gif)
+
+![](../../.gitbook/assets/helloworld_step1.gif)
+
+[Hello World Step 2](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step2.gif)
+
+![](../../.gitbook/assets/helloworld_step2.gif)
+
+[Hello World Step 3](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step3.gif)
+
+![](../../.gitbook/assets/helloworld_step3.gif)
+
+[Hello World Step 4](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step4.gif)
+
+![](../../.gitbook/assets/helloworld_step4.gif)
+
+[Hello World Step 5](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step5.gif)
+
+![](../../.gitbook/assets/helloworld_step5.gif)
+
+[Hello World Step 6](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step6.gif)
+
+![](../../.gitbook/assets/helloworld_step6.gif)
+
+
+
+[Hello World Step 7](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step7.gif)
+
+![](../../.gitbook/assets/helloworld_step7.gif)
+
