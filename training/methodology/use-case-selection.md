@@ -35,23 +35,23 @@ The objectives of this exercise are:
 
 {% file src="../../.gitbook/assets/fit4maanaexercise-excel.xlsx" caption="Fit 4 Maana - MS Excel" %}
 
-**Step 2:** Go to the **Heat Map tab**, and familiarize with the dimensions of the matrix. 
+**Step 2:** Go to the **Heat Map tab**, and familiarize with the graphical representation of use case proposals ranked in the matrix. 
 
-Business and Technology Metrics table and understand how these values are derived. For this you would need to look at the Use Cases tab. 
+**Step 3:** Now, go to the **Proposals tab**, and familiarize with the table including Use Case description, and different types of scores. Look at the formulas on Business Metric Score \(Column V\) and Technology Metric Score \(Column W\) and see if you can get an idea on how these 2 results are derived. Note that results on Columns V and W are the actual scores plotted in the heat map. 
 
-**Step 3:** Look also at the Score Card tab and understand how these parameters influence the Business and Technical Scores. 
+**Step 4:** Look also at the **Score Card tab** and understand how these parameters influence the Business and Technical Scores. 
 
 **Step 4:** Perform a sensitivity analysis changing weigh factors in the Score Card and analyze the impact on Business and Technical Scores. 
 
-**Step 5:** List any limitations of this excel sheet. 
+**Step 5:** Reflect on the usability of this spreadsheet. How easy would it be to add or reduce the categories on the Score Card without impacting formulas and the heat map? How long would it take you to develop this type of Excel sheet on your own? What are the limitations of this Excel file?
 
-**Step 6:** Now in Maana, draft a problem decomposition architecture to tackle the same functionality as the Excel sheet. What would be a good candidate for a top PQ? What Kinds would be needed? 
+### Now let's go to Maana...  
 
-**Step 7:** What function s would be required?
+**Step 6:** Now in Maana, create a new workspace and draft a problem decomposition architecture to tackle the same functionality as the Excel sheet. What would be a good candidate for a top Problem Question? 
+
+**Step 7:** What Kinds and Functions would be required?
 
 **Step 8**: Now look at the workspace below, compare to your approach and to the Excel sheet [https://cstrainingstable.knowledge.maana.io/workspace/a325799f-7d19-4732-9588-d8d716357ef0](https://cstrainingstable.knowledge.maana.io/workspace/a325799f-7d19-4732-9588-d8d716357ef0)
 
-**Step 9**: Conclude on advantages and disadvantages on implementing this model in Maana as opposed to Excel. 
-
-\[**Not sufficient info on how to look at the Excel File**\]
+**Step 9**: Revisit the observations made on Step 6 \(On the MS Excel approach\) and conclude on advantages and disadvantages on implementing this model in Maana as opposed to Excel.
 
