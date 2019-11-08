@@ -35,6 +35,10 @@ Given the following sentence, “Mike lives in London and has just started worki
 6. Specify the output which again is a list of Strings.  Ensure that that the ! Icon is selected and also the list icon since the aim is to obtain a list of entities in the output. 
 7. Click Save 
 
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step1_topLevelFunction.mov)
+
+![](../../../.gitbook/assets/nlp_step1step_createtoplevelfunction.gif)
+
 **Step 3:** Open the Function Graph and import services to be used 
 
 1. Click on the 4 arrows located in the top right hand corner of the function box. This will take us to a canvas where we can begin to “wire up” our function. _Note that the search bar struggles to find manna-natural-compromise so it is required to search only for maana and then scroll._ 
@@ -48,6 +52,10 @@ Maana-utilities -&gt; union
 
 To explore what functions are available you can click on the arrow next to the Services in the inventory panel and continue down to see what functions are available. 
 
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step2_functionGraphAndImportingServices.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step2_%20functionGraphAndImportingServices.gif)
+
 **Step 4:** Add the People, places and Organizations functions and wire them up.
 
 1. Ensure you are in the input / output canvas for the extractPeoplePlacesOrganizations function 
@@ -56,6 +64,10 @@ To explore what functions are available you can click on the arrow next to the S
 4. To wire the functions up click on the right hand box of the input box.   
 5. Drag the “wire” to the input box of the organizations function.  The inputs are always on the left of a function box with outputs on the right. 
 6. . Repeat this step for the other 2 functions, people and places. 
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step3_serviceFunctionsAndWiring.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step3_serviceFunctionsAndWiring.gif)
 
 **Step 5:** Add the union function and wire them up! 
 
@@ -68,6 +80,12 @@ Since we have 3 functions that have 3 separate outputs we need to aggregate thes
 5. The places function is to be wired to the second union function along with the output of the first union function. 
 6. Click on the output box of the second union function and wire to the output box. 
 
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step4_unionWiringToOutput.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step4_UnionWiringToOutput.gif)
+
+
+
 **Step 6:** Test the top level function and examine the output 
 
 1. Click on “New Knowledge Graph” in the top left panel to return to the top canvas where our Top level function resides. 
@@ -77,6 +95,10 @@ Since we have 3 functions that have 3 separate outputs we need to aggregate thes
 5. “Mike lives in London and has just started working for Maana Inc” 
 6. Click Run. Below the main canvas you will see an “assistants” panel \(expand it if it is not visible\). The functions outputs will be displayed here if the function ran successfully 
 7. Expand the arrows until you see the data that has been returned. 
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step5_testing.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step5_testing.gif)
 
 
 

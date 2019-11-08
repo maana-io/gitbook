@@ -11,6 +11,24 @@
 
 ### Use case description: 
 
+Story:  Persona is a chain restaurant owner who is interested in knowing how his customers feel about his restaurant... This person went to Yelp to see the reviews written on his restaurant. He got the data from the internet, someone helped me crawl this website and extract my reviews. 
+
+I decided to classify these reviews into 2 groups, positive and negative. This is, I made reviews with more than 4 stars positive and those with less than that as negative. 
+
+I decided to train a Machine Learning model based on this dataset which I consider accurate. 
+
+A data scientist recommended to use Logistic Regression for this analysis. I created a function to train this model. The ID is the version. Every time I hit run, there will be a prediction model created. that fits my training data set. 
+
+67% is better than random guessing... 
+
+2nd STEP - Evaluate
+
+The restaurant owner gets involved again, he looks at the Evaluate Function and then what... It requires version ID number, run it.... Evaluate the model on Test, the dataset is small... 
+
+3rd Step predictOne
+
+4th Feedback the Model -&gt; This connects back to the training set. 
+
 Training goals:
 
 1. Show how SME feedback loop works:

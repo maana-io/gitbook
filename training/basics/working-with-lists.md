@@ -13,7 +13,7 @@
 
 **Link to Workspace:**
 
-\*\*\*\*[**https://cstrainingstable.knowledge.maana.io/workspace/7b395a75-8b1f-4288-a866-7b7bbc781dae**](https://cstrainingstable.knowledge.maana.io/workspace/7b395a75-8b1f-4288-a866-7b7bbc781dae)\*\*\*\*
+\*\*\*\*[**https://cstrainingstable.knowledge.maana.io/workspace/a1de4fe9-2b69-4108-921c-68b964d53628**](https://cstrainingstable.knowledge.maana.io/workspace/a1de4fe9-2b69-4108-921c-68b964d53628)\*\*\*\*
 
 **Step by Step Instructions:**
 
@@ -39,7 +39,9 @@ GIF [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTrain
 
 **Step 7:** Expand the function 'addTwoToNumber'. In the inventory panel, under Services, locate Constants. Expand it and locate the function 'two'. Drag 'two' to the canvas.
 
-**Step 8:** In the inventory panel, under Services, locate Math. Expand it and locate the function 'intAddition'. Drag 'intAddition' to the canvas.
+**Step 8:** In the inventory panel, under Services, locate Math. Expand it and locate   the function 'intAddition'. Drag 'intAddition' to the canvas.
+
+**Step 9:** Wire inputs and outputs.  There are three wirings - 1. 'Input' function's 'INT' to 'Math:intAddition' function's 'a' 2. 'Constant:two' function's INT to 'Math:intAddition' function's 'b' 3. 'Math:intAddition' function's output INT to the function 'Output'
 
 
 
