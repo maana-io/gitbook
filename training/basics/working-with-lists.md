@@ -29,11 +29,11 @@
 
 **Step 3:** Test the function by going to the top level function i.e. 'combineTwoLists'. In the explorer panel, enter in two strings. Click on run. View the function results in the Assistant Panel.
 
-**Step 4:** 
+**Step 4: WIP**
 
-**Step 5:**
+**Step 5:WIP**
 
-**Step 6:**
+**Step 6:WIP**
 
 **Link to Recordings on Box**:  
 
