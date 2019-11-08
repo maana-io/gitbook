@@ -28,11 +28,7 @@ Before you start, please refer to [Workspace](../../product-guide/getting-starte
 6. Expand "Greetings" in Inventory to locate the "helloWorld" function. Drag and drop "helloWorld" from Inventory to the Canvas. Wire input and output. sayHello function is now complete.
 7. To test the functionality we just created, locate sayHello function in the Explorer panel and hit Run in the Context Panel . Provide an input. In the Assistant Panel, we see the result.
 
-Link to recording on Box: [https://maanainc.app.box.com/folder/92505838024](https://maanainc.app.box.com/folder/92505838024)
-
-Link to Gif on Box: [https://maanainc.app.box.com/folder/92505735615](https://maanainc.app.box.com/folder/92505735615)
-
-Recordings:
+**Recordings:**
 
 Hello World Step 1
 

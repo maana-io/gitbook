@@ -114,7 +114,47 @@ Link to Gif on Box:
 
 [https://maanainc.app.box.com/folder/92356121508](https://maanainc.app.box.com/folder/92356121508)
 
+**Recordings:**
 
+lesson 2 Step 1 - Add Kinds
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20Step%201%20-%20Add%20Kinds.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step1_addKinds.mov)
+
+
+
+lesson 2 step 2 top level func
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%202%20top%20level%20func.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step2_topLevelFunction.mov)
+
+lesson 2 step 3 - wire up func
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%203%20-%20wire%20up%20func.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step3_wireUpFunction.mov)
+
+lesson 2 step 4 test distance calc
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%204%20test%20distance%20calc.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step4_testDistanceCalculation.mov)
+
+lesson 2 step 5 distance by addess func
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%205%20distance%20by%20addess%20func.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step5_distanceByAddressFunction.mov)
+
+lesson 2 step 6 create first step func
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%206%20create%20first%20step%20func.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step6_createFirstStepFunction.mov)
+
+lesson 2 step 7 - duplicate and wire
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%207%20-%20duplicate%20and%20wire%20.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step7_duplicateAndWire%20.mov)
+
+lesson 2 step 8 final test
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%208%20final%20test.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step8_finalTest.mov)
+
+
+
+\*\*\*\*
+
+\*\*\*\*
 
 ----------------------
 

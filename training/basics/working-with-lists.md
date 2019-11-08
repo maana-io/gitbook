@@ -35,6 +35,8 @@
 
 **Step 6:WIP**
 
+**Recording**
+
 **Link to Recordings on Box**:  
 
 \*\*\*\*[**https://maanainc.app.box.com/folder/92631123910**](https://maanainc.app.box.com/folder/92631123910)\*\*\*\*
@@ -78,6 +80,10 @@ _2._  Next create a function called "getPeopleWithAgeFromPeople". Create an inpu
 1. Go to the "allPersons" function and run it the context panel on the right side of the screen. Select "input" and expand it. Select take and offset and set both to 0. In the Assistant Panel see the list of all people we are considering. Next go to the top level function called "allPeopleOver21" , run it. A list of those individuals who are 21 or older is returned in the Assistant Panel.
 
 Recordings
+
+\*\*\*\*
+
+**Part 2**
 
 [WorkingWithLists\_Step1\_TopPQ](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step1_TopPQ.gif)
 
