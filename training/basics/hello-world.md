@@ -34,33 +34,47 @@ Link to Gif on Box: [https://maanainc.app.box.com/folder/92505735615](https://ma
 
 Recordings:
 
-[Hello World Step 1](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step1.gif)
+Hello World Step 1
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step7.gif)   [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step1.mov)
 
 ![](../../.gitbook/assets/helloworld_step1.gif)
 
-[Hello World Step 2](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step2.gif)
+Hello World Step 2
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step2.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step2.mov)
 
 ![](../../.gitbook/assets/helloworld_step2.gif)
 
-[Hello World Step 3](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step3.gif)
+Hello World Step 3
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step3.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step3.mov)
 
 ![](../../.gitbook/assets/helloworld_step3.gif)
 
 [Hello World Step 4](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step4.gif)
 
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step4.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step4.mov)
+
 ![](../../.gitbook/assets/helloworld_step4.gif)
 
-[Hello World Step 5](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step5.gif)
+Hello World Step 5
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step5.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step5.mov)
 
 ![](../../.gitbook/assets/helloworld_step5.gif)
 
-[Hello World Step 6](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step6.gif)
+Hello World Step 6
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step6.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step6.mov)
 
 ![](../../.gitbook/assets/helloworld_step6.gif)
 
 
 
-[Hello World Step 7](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step7.gif)
+Hello World Step 7
+
+[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step7.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step7.mov)
 
 ![](../../.gitbook/assets/helloworld_step7.gif)
 
