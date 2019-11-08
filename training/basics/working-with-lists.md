@@ -39,7 +39,7 @@ GIF [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTrain
 
 **Step 7:** Expand the function 'addTwoToNumber'. In the inventory panel, under Services, locate Constants. Expand it and locate the function 'two'. Drag 'two' to the canvas.
 
-**Step 7:** In the inventory panel, under Services, locate Math. Expand it and locate the function 'intAddition'. Drag 'intAddition' to the canvas.
+**Step 8:** In the inventory panel, under Services, locate Math. Expand it and locate the function 'intAddition'. Drag 'intAddition' to the canvas.
 
 
 
