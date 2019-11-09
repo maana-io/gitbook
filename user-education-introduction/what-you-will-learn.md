@@ -1,6 +1,6 @@
 # What You Will Learn
 
-## The "ORDL" pattern of problem solving
+## The "ORDL" framework for problem solving
 
 1. **Observe** the problem domain.
 2. **Reason** over the problem domain to make \(explicable\) recommendations.

@@ -154,7 +154,10 @@
 * [Advanced](training/advanced/README.md)
   * [Developing Custom Microservices](training/advanced/developer-steel-thread.md)
   * [Wrapping and Mapping](training/advanced/constraint-satisfaction.md)
-  * [Learning](training/advanced/learning.md)
+  * [Learning](training/advanced/learning/README.md)
+    * [Part 1 - Learning as part of ORDL](training/advanced/learning/part-1-learning-context-in-ordl.md)
+    * [Part 2 - Passive Learning](training/advanced/learning/part-2-passive-learning.md)
+    * [Part 3 - Active Learning](training/advanced/learning/part-3-active-learning.md)
   * [Design Patterns](training/advanced/design-patterns.md)
 
 ## MAANA Q COOKBOOK

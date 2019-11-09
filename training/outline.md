@@ -184,7 +184,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Using templates &#x2022; High order patterns</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="advanced/learning.md">Learning</a>
+      <td style="text-align:left"><a href="advanced/learning/">Learning</a>
       </td>
       <td style="text-align:left">
         <p>Build an ORDL model<em><br /></em>
