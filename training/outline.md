@@ -67,7 +67,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         inputs and outputs &#x2022; Side effects and pure functions &#x2022; Compositionality</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/working-with-lists/">Working with Lists</a>
+      <td style="text-align:left"><a href="basics/working-with-lists.md">Working with Lists</a>
       </td>
       <td style="text-align:left">Execute functions efficiently using Q.
         <br /><em><br />This lesson will teach you concepts and skills to work with lists minimizing development effort and maximizing software performance</em>

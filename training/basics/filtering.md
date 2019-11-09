@@ -14,7 +14,7 @@ WorkingWithLists\_Step1\_TopPQ
 
 [GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step1_TopPQ.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step1_TopPQ.mov)
 
-![](../../../.gitbook/assets/workingwithlists_step1_toppq.gif)
+![](../../.gitbook/assets/workingwithlists_step1_toppq.gif)
 
 **Step2:** Decompose top level function
 
@@ -26,7 +26,7 @@ WorkingWithLists\_Step2.1\_allPersons
 
 [GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step2.1_allPersons.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.1_allPersons.mov)
 
-![](../../../.gitbook/assets/workingwithlists_step2.1_allpersons.gif)
+![](../../.gitbook/assets/workingwithlists_step2.1_allpersons.gif)
 
 _2._  Next create a function called "getPeopleWithAgeFromPeople". Create an input field called people of type Person and make it a list. The output is a list of type PersonWithAge. Wire the input and output.
 
@@ -34,7 +34,7 @@ WorkingWithLists\_Step2.2\_getPeopleWithAge\_andWire
 
 [GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step2.2_getPeopleWithAge_andWire.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.2_getPeopleWithAge_andWire.mov)
 
-![](../../../.gitbook/assets/workingwithlists_step2.2_getpeoplewithage_andwire.gif)
+![](../../.gitbook/assets/workingwithlists_step2.2_getpeoplewithage_andwire.gif)
 
 3. Next create a function called "filterPeopleOver21". Create an input called peopleWithAge, make it a list. The output is a list of type PersonWithAge. Wire the input and output.
 
@@ -42,7 +42,7 @@ WorkingWithLists\_Step2.3\_filterPeopleOver21
 
 [GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step2.3_filterPeopleOver21.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.3_filterPeopleOver21.mov)
 
-![](../../../.gitbook/assets/workingwithlists_step2.3_filterpeopleover21.gif)
+![](../../.gitbook/assets/workingwithlists_step2.3_filterpeopleover21.gif)
 
 4. Next create a function called "filterNullPeopleWithAge". Create an input called peopleWithAge, make it a list. The output is a list of type PersonWithAge. Wire the input and output.
 
@@ -76,7 +76,7 @@ WorkingWithLists\_Step3.3\_expand\_filterNull
 
 [GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/Gifs%206/WorkingWithLists_Step3.3_expand_filterNull.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step3.3_expand_filterNull.mov)
 
-![](../../../.gitbook/assets/workingwithlists_step3.3_expand_filternull.gif)
+![](../../.gitbook/assets/workingwithlists_step3.3_expand_filternull.gif)
 
 **Step4:** Testing
 
