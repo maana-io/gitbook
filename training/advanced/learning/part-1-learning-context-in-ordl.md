@@ -4,5 +4,13 @@ description: Piping Consolidation Example
 
 # Part 1 - Learning as part of ORDL
 
-Details of Piping Consolidation
+### Introduction
+
+Piping is a key component of essentially every facility in oil & gas, Across the value chain, piping is a common asset which represents a significant portion of the Capital Expenditures in any given development project. In Operations, piping is also critical to operating expenses, reliable operations and operating expenses, to mention a few areas. 
+
+Most oil & gas operators maintain a catalog of Piping Classes \(_each class corresponding to one type of Piping, with specifications on operating pressures, temperatures, corrosion allowance, service, etc_.\). Often times, Business Units or Capital Projects in these operators create new classes leading to unnecessary proliferation. Proliferation of Piping Classes is a common problem in the industry, which has connection with sub-optimal capital allocation, increased procurement and warehousing costs and increased operational risks. 
+
+
+
+![](../../../.gitbook/assets/image%20%2847%29.png)
 
