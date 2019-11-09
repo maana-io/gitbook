@@ -138,7 +138,6 @@
 * [Basics](training/basics/README.md)
   * [Orientation](training/basics/basic-orientation/README.md)
     * [Connecting to Maana](training/basics/basic-orientation/connecting-to-maana.md)
-    * [Use Cases](training/basics/basic-orientation/use-cases.md)
   * [Hello, world!](training/basics/hello-world.md)
   * [Introduction to Kinds and Functions](training/basics/using-kinds-and-function-to-build-a-knowledge-graph.md)
   * [Working with Lists](training/basics/working-with-lists.md)
