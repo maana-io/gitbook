@@ -12,9 +12,9 @@ Most oil & gas operators maintain a catalog of Piping Classes \(_each class corr
 
 It is also common for Piping Subject Matter Experts to spend significant effort in manually consolidating piping classes across business units. The process can sometimes be subjective as well. This example corresponds to a Knowledge Application which is intended to support the work of Piping SMEs as they perform consolidation. 
 
-### ORDL Application
+### ORDL
 
-Observe: 
+Observe
 
 Reason
 
@@ -24,7 +24,7 @@ Learn
 
 ### Knowledge Model Architecture
 
-Observe: 
+The diagram below shows a representation of the architecture of a Knowledge Model of Piping Consolidation. 
 
 ![](../../../.gitbook/assets/image%20%2847%29.png)
 
