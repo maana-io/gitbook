@@ -1,5 +1,5 @@
 ---
-description: Basic Learning Technique
+description: Basic Learning technique explained through and example
 ---
 
 # Part 2 - Passive Learning
