@@ -20,25 +20,31 @@ It is also common for Piping Subject Matter Experts to spend significant effort 
 
 **Decide:** In this example, a Piping SME is the ultimate responsible for deciding when to consolidate 2 Piping Classes into 1. For that, the Knowledge Application calculates a Similarity Score for a given pair of Piping Classes. This similarity score is based on Business Rules and Machine Learning techniques. 
 
-**Learn:** Like many technical domains, the level of complexity of Piping Consolidation can be quite high. This is partly due to the multitude of factors which are involved, \(_e.g. Material Science, Process Engineering, Mechanical Engineering, Chemical Engineering, Manufacturing_\), and also to the degree of subjectivity and SME-experience which involves. For a Knowledge Application to be effective, it is therefore imperative 
+**Learn:** Like many technical domains, the level of complexity of Piping Consolidation can be quite high. This is partly due to the multitude of factors which are involved, \(_e.g. Material Science, Process Engineering, Mechanical Engineering, Chemical Engineering, Manufacturing_\), and also to the degree of subjectivity and SME-experience which involves. For a Knowledge Application to be effective, it is therefore imperative to 'learn' new rules of consolidation via the interaction of the user with the application. 
 
 ### Knowledge Model Architecture
 
-The diagram below shows a representation of the architecture of a Knowledge Model of Piping Consolidation. 
+The diagram below shows a representation of the architecture of a Knowledge Model of Piping Consolidation, drawing from the ORDL methodology. 
 
 ![Piping Consolidation  Knowledge Model Architecture](../../../.gitbook/assets/image%20%2849%29.png)
 
 ### Now, looking at this Knowledge Model in Maana... 
 
+These following steps will help illustrate how a Learning component is incorporated in a Knowledge Application. 
+
 **Step 1:** Open the Piping Consolidation Workspace and familiarize with the problem decomposition and Domain Model. 
+
+Workspace found at:
 
 [https://cstrainingstable.knowledge.maana.io/workspace/a2637150-eb0a-4f85-aca9-00ca7e018b1c](https://cstrainingstable.knowledge.maana.io/workspace/a2637150-eb0a-4f85-aca9-00ca7e018b1c)
 
-**Step 2:** Compare the model architecture in the Figure above, with that in the Knowledge Model. 
+**Step 2:** Compare the model architecture in the Figure above, with that in the Knowledge Model. Does it follow the same structure?
 
-**Step 3:** Now concentrate on the Function: **RemoveRedundantClasses**
+**Step 3:** Now concentrate on the Function: **RemoveRedundantClasses** \(one level down from the Top PQ\). This function is further decomposed on sequential steps which Generate Pairs of Piping Classes \(generateClassesPairs\), calculates Similarity \(calculateSimilarity\) and remove highly similar classes \(removeHighlySimilarClasses\). See figures below to get an understanding of this decomposition.  
 
 ![removeRedundantClasses inside of consolidateClassesinOperatingAsset](../../../.gitbook/assets/image%20%2834%29.png)
 
 ![removeRedundantClasses Decomposition](../../../.gitbook/assets/image%20%289%29.png)
+
+
 
