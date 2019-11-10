@@ -6,9 +6,7 @@ description: Familiarize with Maana's User Interface and Perform Basic Operation
 
 ## Logging In
 
-Powerpoint slides - WIP by Anastasia.
-
-Seeded ppt :AI, etc.
+[Introduction to Maana deck](https://maanainc.box.com/s/uwmxbz67bskyazikbm731urefncnqbp9)
 
 ## Basic UI Navigation Videos:
 
