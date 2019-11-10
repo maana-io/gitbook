@@ -12,7 +12,7 @@ There are several ways in which files can be ingested:
 
 A standard **FileAddedEvent** will be published when the system becomes aware of new files.
 
-![Graylog display of FileAddedEvent](../../../.gitbook/assets/image%20%2888%29.png)
+![Graylog display of FileAddedEvent](../../../.gitbook/assets/image%20%2890%29.png)
 
 ### File Type Detection <a id="FileProcessing-FileTypeDetection"></a>
 
