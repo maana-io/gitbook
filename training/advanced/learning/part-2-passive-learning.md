@@ -6,15 +6,13 @@ description: Basic Learning technique explained through and example
 
 ### **Introduction**
 
-Part 2 illustrates a Data Science 'Learning' technique which can be applied in different Knowledge Applications. Note that this example does not require in-depth knowledge in Data Science. 
+Part 2 illustrates a Data Science 'Learning' technique which can be applied in different Knowledge Applications. Note that this example does not require prior knowledge in Data Science. 
 
-\*\*\*\*
+In this example, Gordon Banks is the owner of a chain of restaurants. He is interested in knowing how people feel about his restaurants. While he has done surveys and receives ratings through different channels, he is interested in creating a predictive model, which can help him understand the true sentiment of customers behind online comments. Gordon recruited Ana Lewis, a Data Scientist who has now prior experience in the restaurant business.
 
-**Basic Learning Technique \(Passive\)**
+### Training a Model
 
-Story:  Persona is a chain restaurant owner who is interested in knowing how his customers feel about his restaurant... This person went to Yelp to see the reviews written on his restaurant. He got the data from the internet, someone helped me crawl this website and extract my reviews. 
-
-I decided to classify these reviews into 2 groups, positive and negative. This is, I made reviews with more than 4 stars positive and those with less than that as negative. 
+Ana started by compiling an initial training dataset of customer reviews over Yelp. She divided this  dataset in 2 groups. **Group 1: Positive comments** -  reviews with 4 stars or more. **Group 2: Negative comments** -  reviews with 3 stars or less. She went over this dataset with Gordon, verifying the veracity of the comments and her initial classification. 
 
 I decided to train a Machine Learning model based on this dataset which I consider accurate. 
 
