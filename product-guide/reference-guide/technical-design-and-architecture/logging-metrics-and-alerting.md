@@ -31,7 +31,7 @@ Viewing messages by log level can be cumbersome, in that log level is represente
 
 All services include a tag that can be used as a filter. For example tag:maana−admin as shown here:
 
-![Example Tag](../../../.gitbook/assets/image%20%2856%29.png)
+![Example Tag](../../../.gitbook/assets/image%20%2858%29.png)
 
 ## Reporting Issues <a id="reporting-issues"></a>
 
