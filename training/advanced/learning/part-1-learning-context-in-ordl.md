@@ -30,7 +30,7 @@ The diagram below shows a representation of the architecture of a Knowledge Mode
 
 ### Now, looking at this Knowledge Model in Maana... 
 
-These following steps will help illustrate how a Learning component is incorporated in a Knowledge Application. 
+These following steps will help illustrate how a Learning component is incorporated in a Knowledge Application. In this case, Piping SMEs provide feedback to the Knowledge Application. In some cases, where SMEs believe a given pair or pipes should not be consolidated, they would enter that information in a customized User Interface. This information will be routed to the backend, which will be weighed depending on the seniority and level of engagement of the user. 
 
 **Step 1:** Open the Piping Consolidation Workspace and familiarize with the problem decomposition and Domain Model. 
 
@@ -46,5 +46,9 @@ Workspace found at:
 
 ![removeRedundantClasses Decomposition](../../../.gitbook/assets/image%20%289%29.png)
 
+**Step 4:** Now, concentrate on the function **calculateSimilarity**. Compare the structure of this function to the Architecture Diagram at the beginning of this section. 
 
+![](../../../.gitbook/assets/image%20%2879%29.png)
+
+**Step 5:** The function calculateCompoundSimilarity would provide 
 
