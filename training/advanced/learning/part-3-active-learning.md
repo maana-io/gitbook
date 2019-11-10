@@ -1,3 +1,7 @@
+---
+description: Advanced Learning technique explained through and example
+---
+
 # Part 3 - Active Learning
 
 **Advanced Learning Technique \(Active\)**
