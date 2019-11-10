@@ -14,17 +14,13 @@ It is also common for Piping Subject Matter Experts to spend significant effort 
 
 ### Applying ORDL
 
-**Observe:** A Central Engineering Department in an oil & gas operator is responsible for creating a standard catalog of piping classes , for all Major Capital Projects \(MCPs\) and Operating Assets to use. Often times, Business Units create new classes leading to unnecessary proliferation. 
+**Observe:** A Central Engineering Department in an oil & gas operator is responsible for creating a standard catalog of piping classes , for all Major Capital Projects \(MCPs\) and Operating Assets to use. Often times, Business Units create new classes with unique identifiers \(Piping Class Codes\) which leads to unnecessary proliferation.
 
+**Reason:** Consolidation of Piping Classes could be looked under different lenses. **A first lens**, is of identifying **redundancies**. These are cases where 2 Piping Classes have the exact same specifications, but they are identified under different Piping Class ID. A **second lens**, is associated to **reliability**. SMEs might be interested in substituting unreliable Piping Classes, for the most similar ones which have better reliability. A **third lens** is cost. Piping Classes deemed as **cost inefficient** can also be substituted for similar classes which are less costly. 
 
+**Decide:** In this example, a Piping SME is the ultimate responsible for deciding when to consolidate 2 Piping Classes into 1. For that, the Knowledge Application calculates a Similarity Score for a given pair of Piping Classes. This similarity score is based on Business Rules and Machine Learning techniques. 
 
-business unit class specifications, which range in the dozens per each equipment class, like pipe class specifications**.**
-
-**Reason** According to Piping SMEs the process of consolidation can be decomposed into rules, i.e., piping with the same service, same corrosion allowance and same specifications can be considered as equivalent. 
-
-**Decide:** Ultimate decision on consolidation are to be made by SMEs.  
-
-**Learn** The process of consolidation can be explained in rules, but in reality a large part of the SME knowledge cannot be easily encoded.
+**Learn:** Like many technical domains, the level of complexity of Piping Consolidation can be quite high. This is partly due to the multitude of factors which are involved, \(_e.g. Material Science, Process Engineering, Mechanical Engineering, Chemical Engineering, Manufacturing_\), and also to the degree of subjectivity and SME-experience which involves. For a Knowledge Application to be effective, it is therefore imperative 
 
 ### Knowledge Model Architecture
 
