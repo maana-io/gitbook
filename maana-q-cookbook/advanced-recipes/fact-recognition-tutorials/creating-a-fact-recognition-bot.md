@@ -19,13 +19,13 @@ The simplest way to apply information extraction is to use the mutation extractT
 
 The result should look like that in the figure below.
 
-![](../../../.gitbook/assets/image%20%2875%29.png)
+![](../../../.gitbook/assets/image%20%2876%29.png)
 
 7. The triples are extracted from the kind specified by 'kindId' in the provided fieldName and then stored in the kind 'PatternMatchResult'.
 
 8. Search for the kind PatternMatchResult to see the entries from the extraction.
 
-![](../../../.gitbook/assets/image%20%2876%29.png)
+![](../../../.gitbook/assets/image%20%2877%29.png)
 
 ### Fact Extraction With Pattern Filter <a id="fact-extraction-with-pattern-filter"></a>
 
@@ -41,7 +41,7 @@ The Pattern kind \(which can have any name\) can be created manually.
 1. Add a new kind to the workspace \(name it "Pattern"\), edit the schema to include "predicateLemmas" of type String with modifier LIST, "object" of type String with modifier LIST and "subject" of type String with modifier LIST.
 2. Once the kind is created, functions for the kind should be visible in the service inventory. Your workspace should look like that below:
 
-![](../../../.gitbook/assets/image%20%28115%29.png)
+![](../../../.gitbook/assets/image%20%28116%29.png)
 
 There will be a set of functions for every Kind in your workspace. These functions can be used to manipulate the Kinds.
 
@@ -61,7 +61,7 @@ Remember, to set the predicateLemmas to a relation/relations that you expect to 
 
 5. Next create a kind containing the text you wish to extract - call it "ThisKind". It should have a field called "Text", and should have an instance with the the value "Alex bought a bike".
 
-![](../../../.gitbook/assets/image%20%2884%29.png)
+![](../../../.gitbook/assets/image%20%2885%29.png)
 
 Add text to the "ThisKind" kind with the addThisKind function.
 
@@ -128,7 +128,7 @@ mutation a {extractByExample(  kindId: "bbcb2d1f-1c0c-4d81-adff-39de27d8fc52", #
 
 3. The result should be several entries in the "PurchaseEvent" kind - as below:
 
-![](../../../.gitbook/assets/image%20%2870%29.png)
+![](../../../.gitbook/assets/image%20%2871%29.png)
 
 ### Mutation 2 <a id="mutation-2"></a>
 
@@ -156,7 +156,7 @@ Result after the extractByExampleKind function is run.
 
 4. The result will be several entries in the "PurchaseEvent" kind. These can be viewed as below:
 
-![](../../../.gitbook/assets/image%20%28120%29.png)
+![](../../../.gitbook/assets/image%20%28121%29.png)
 
 Result shown in the PurchaseEvent kind.
 
