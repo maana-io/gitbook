@@ -12,15 +12,19 @@ In this example, Gordon Banks is the owner of a chain of restaurants. He is inte
 
 ### Training a Model
 
-Ana started by compiling an initial training dataset of customer reviews over Yelp. She divided this  dataset in 2 groups. **Group 1: Positive comments** -  reviews with 4 stars or more. **Group 2: Negative comments** -  reviews with 3 stars or less. She went over this dataset with Gordon, verifying the veracity of the comments and her initial classification. 
+Ana started by compiling an initial dataset of customer reviews over Yelp. She divided this set into 2 piles randomly, which she called Training Dataset and Test Dataset. Further, she divided the Training Dataset in 2 groups. **Group 1: Positive comments** -  reviews with 4 stars or more. **Group 2: Negative comments** -  reviews with 3 stars or less. She went over this dataset with Gordon, verifying the veracity of the comments and her initial classification.
 
-I decided to train a Machine Learning model based on this dataset which I consider accurate. 
+Ana then went to Maana Q, and created a 'Training Function' which generates a predictive model Gordon can use to uncover the sentiment under a customer written comment. You can run this function by opening the workspace below, selecting **train,** and running it via the Maana Q User Interface \(see screenshot with output below\). 
 
-A data scientist recommended to use Logistic Regression for this analysis. I created a function to train this model. The ID is the version. Every time I hit run, there will be a prediction model created. that fits my training data set. 
+[https://cstrainingstable.knowledge.maana.io/workspace/96538995-2611-47b6-a650-51a9c66233d8](https://cstrainingstable.knowledge.maana.io/workspace/96538995-2611-47b6-a650-51a9c66233d8)
 
-67% is better than random guessing... 
+![](../../../.gitbook/assets/image%20%2885%29.png)
 
-2nd STEP - Evaluate
+While Gordon is not necessarily interested in this particular function, Ana tells him, a Logistic Regression model is the most appropriate Machine Learning approach given the dataset she looked at.  She also mentions that the performance or accuracy of this model is at 65% which is not great, but better than random guessing. Gordon is not thrilled, and asks Ana if he can see some predictions.
+
+### Evaluating the Accuracy of Predictions
+
+Ana tells Gordon, the next step is to run her Machine Learning model with a dataset the model has not seen. For that, she selected some other 
 
 The restaurant owner gets involved again, he looks at the Evaluate Function and then what... It requires version ID number, run it.... Evaluate the model on Test, the dataset is small... 
 
