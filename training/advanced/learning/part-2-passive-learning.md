@@ -1,4 +1,14 @@
+---
+description: Basic Learning Technique
+---
+
 # Part 2 - Passive Learning
+
+### **Introduction**
+
+Part 2 illustrates a Data Science 'Learning' technique which can be applied in different Knowledge Applications. Note that this example does not require in-depth knowledge in Data Science. 
+
+\*\*\*\*
 
 **Basic Learning Technique \(Passive\)**
 
