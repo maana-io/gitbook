@@ -4,15 +4,7 @@ description: Computational Knowledge Graph
 
 # Introduction to Kinds and Functions
 
--------------------------------------------------------------------------------------------------------**Material Development Checklist**
-
-* [ ] Revisit "Major Concepts" section below \(**pending**\)
-* [ ] Possibly add here use case shared by Logan at Show and Tell \(google maps visualization of crime vs. real estate in Sacramento - deciding where to buy property looking at the map\). Need to check if assistant service that is needed can be deployed to cstraining01 \(**pending**
-* [ ] **Azure import \(pending\)**
-
--------------------------------------------------------------------------------------------------------
-
-presenter: ****Roie
+Presenter: ****Roie Cohen
 
 **Use Case Description:**  
 
@@ -33,8 +25,15 @@ Pre requisites
    * lat  FLOAT 
    * long FLOAT 
 3. Repeat to create a Distance kind with properties; 
+
    * value FLOAT 
    * distanceUnit STRING 
+
+   [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step1_addKinds.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20Step%201%20-%20Add%20Kinds.gif)
+
+
 
 **Step 2:** Create “top level” function 
 
@@ -46,12 +45,20 @@ Pre requisites
    * Specify the as type Distance 
 4. Click Save
 
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step2_topLevelFunction.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%202%20top%20level%20func.gif)
+
 **Step 3:** Create Function Calculation for distanceBetweenCoordinates  
 
 1. Click on the 4 arrows located in the top right hand corner of the function box. This will take us to a canvas where we can begin to “wire up” our function 
 2. From the inventory locate the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
 3. Drag the function onto the canvas 
 4. Connect the inputs and output 
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step3_wireUpFunction.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%203%20-%20wire%20up%20func.gif)
 
 **Step 4:** Test the distanceBetweenCoordinates Function 
 
@@ -60,6 +67,10 @@ Pre requisites
 3. Click Run 
 4. Observe the results in the function results panel at the bottom of the screen  
 
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step4_testDistanceCalculation.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%204%20test%20distance%20calc.gif)
+
 **Step 5:** Add distanceBetweenAddresses Function 
 
 1. Click on Top Level PQ and add the function, distanceBetweenAddresses 
@@ -67,7 +78,11 @@ Pre requisites
    * origin STRING 
    * target STRING 
 3. Output: 
-   * Distance 
+   * Distance  
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step5_distanceByAddressFunction.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%205%20distance%20by%20addess%20func.gif)
 
 **Step 6:** Add getGeoCoordinatesByName function to distanceBetweenAddresses Function 
 
@@ -79,6 +94,10 @@ Pre requisites
 4. Open this function and add getGeoCoordinatesByName function from the lambda-distance-demo service 
 5. Wire the inputs and output 
 
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step6_createFirstStepFunction.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%206%20create%20first%20step%20func.gif)
+
 **Step 7:** Add a second getGeoCoordinatesByName function and finish 
 
 1. From the inventory expand the functions list 
@@ -86,6 +105,10 @@ Pre requisites
 3. Wire the inputs of both instances 
 4. Add the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
 5. Wire the inputs and output 
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step7_duplicateAndWire%20.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%207%20-%20duplicate%20and%20wire%20.gif)
 
 **Step 8:** Test the distanceBetweenAddresses 
 
@@ -96,43 +119,11 @@ Pre requisites
 3. Click run 
 4. Observe the results in the function results panel. 
 
-**Recordings:**
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step8_finalTest.mov)
 
-lesson 2 Step 1 - Add Kinds
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%208%20final%20test.gif)
 
-[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20Step%201%20-%20Add%20Kinds.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step1_addKinds.mov)
 
-lesson 2 step 2 top level func
-
-[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%202%20top%20level%20func.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step2_topLevelFunction.mov)
-
-lesson 2 step 3 - wire up func
-
-[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%203%20-%20wire%20up%20func.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step3_wireUpFunction.mov)
-
-lesson 2 step 4 test distance calc
-
-[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%204%20test%20distance%20calc.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step4_testDistanceCalculation.mov)
-
-![](../../.gitbook/assets/lesson-2-step-4-test-distance-calc.gif)
-
-lesson 2 step 5 distance by addess func
-
-[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%205%20distance%20by%20addess%20func.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step5_distanceByAddressFunction.mov)
-
-lesson 2 step 6 create first step func
-
-[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%206%20create%20first%20step%20func.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step6_createFirstStepFunction.mov)
-
-lesson 2 step 7 - duplicate and wire
-
-[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%207%20-%20duplicate%20and%20wire%20.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step7_duplicateAndWire%20.mov)
-
-lesson 2 step 8 final test
-
-[GIF](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%208%20final%20test.gif) [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step8_finalTest.mov)
-
-![](../../.gitbook/assets/lesson-2-step-8-final-test.gif)
 
 \*\*\*\*
 
