@@ -10,23 +10,25 @@ description: Familiarize with Maana's User Interface and Perform Basic Operation
 
 ## Basic UI Navigation Videos:
 
-{% embed url="https://maanainc.app.box.com/folder/91141575129" %}
+[Creating and Closing Workspaces](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Creating%20and%20Closing%20Workspaces.mov)
 
-Creating and Closing Workspaces
+[Creating and Renaming a Workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Creating%20and%20Renaming%20a%20Workspace.mov)
 
-Creating and Renaming a Workspace
+[Cloning Workspace Template](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Cloning%20Workspace%20Template.mov)
 
-Cloning Workspace Template
+[Removing a kind from the workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/%20Removing%20a%20kind%20from%20the%20workspace.mov)
 
-Removing a kind from the workspace
+[Adding a field to a kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Adding%20a%20field%20to%20a%20kind.mov)
 
-Adding a field to a kind
+[Deleting a kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Deleting%20a%20kind.mov)
 
-Deleting a kind
+[Deleting from Explorer and Inventory](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Deleting%20from%20Explorer%20and%20Inventory.mov)
 
-Deleting from Explorer and Inventory
+[Modifying : Removing a field from a kind](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Modifying%20%3A%20Removing%20a%20field%20from%20a%20kind.mov)
 
-Modifying : Removing a field from a kind
+[Searching for a Workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Searching%20for%20a%20Workspace.mov)
+
+[Sharing a Workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Sharing%20a%20Workspace.mov)
 
 
 
