@@ -58,7 +58,7 @@ mutation smallcensus {
 
 1. Following the link of features, pre-processor and labels you can see the kind that stores the detailed information:
 
-![Figure 6: Detailed information in Kinds](../../../.gitbook/assets/image%20%2892%29.png)
+![Figure 6: Detailed information in Kinds](../../../.gitbook/assets/image%20%2893%29.png)
 
 ![Figure 7: Preprocessor information in Kind](../../../.gitbook/assets/image%20%2825%29.png)
 
