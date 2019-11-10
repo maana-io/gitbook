@@ -12,23 +12,27 @@ In this example, Gordon Banks is the owner of a chain of restaurants. He is inte
 
 ### Training a Model
 
-Ana started by compiling an initial dataset of customer reviews over Yelp. She divided this set into 2 piles randomly, which she called Training Dataset and Test Dataset. Further, she divided the Training Dataset in 2 groups. **Group 1: Positive comments** -  reviews with 4 stars or more. **Group 2: Negative comments** -  reviews with 3 stars or less. She went over this dataset with Gordon, verifying the veracity of the comments and her initial classification.
+Ana started by compiling an initial dataset of customer reviews over Yelp. She divided this set into 2 piles randomly, which she called Training Dataset and Test Dataset \(which she put away and saved for later\). Further, she divided the Training Dataset in 2 groups. **Group 1: Positive comments** -  reviews with 4 stars or more. **Group 2: Negative comments** -  reviews with 3 stars or less. She went over this dataset with Gordon, verifying the veracity of the comments and her initial classification.
 
 Ana then went to Maana Q, and created a 'Training Function' which generates a predictive model Gordon can use to uncover the sentiment under a customer written comment. You can run this function by opening the workspace below, selecting **train,** and running it via the Maana Q User Interface \(see screenshot with output below\). 
 
 [https://cstrainingstable.knowledge.maana.io/workspace/96538995-2611-47b6-a650-51a9c66233d8](https://cstrainingstable.knowledge.maana.io/workspace/96538995-2611-47b6-a650-51a9c66233d8)
 
-![](../../../.gitbook/assets/image%20%2885%29.png)
+![](../../../.gitbook/assets/image%20%2886%29.png)
 
 While Gordon is not necessarily interested in this particular function, Ana tells him, a Logistic Regression model is the most appropriate Machine Learning approach given the dataset she looked at.  She also mentions that the performance or accuracy of this model is at 65% which is not great, but better than random guessing. Gordon is not thrilled, and asks Ana if he can see some predictions.
 
 ### Evaluating the Accuracy of Predictions
 
-Ana tells Gordon, the next step is to run her Machine Learning model with a dataset the model has not seen. For that, she selected some other 
+Ana told Gordon, the next step is to run her Machine Learning model with the Test Dataset, which was not used for training. For that, she created the **evaluate** function which she ran to show the results to Gordon. Most of the results looked as expected \(image below\), but the Test Dataset was fairly small, so Gordon was not convinced this model could work accurately for a large number of comments. 
 
-The restaurant owner gets involved again, he looks at the Evaluate Function and then what... It requires version ID number, run it.... Evaluate the model on Test, the dataset is small... 
+![](../../../.gitbook/assets/image%20%28127%29.png)
 
-3rd Step predictOne
+### Predicting the Sentiment of a New Comment
+
+After that, Ana suggested to Gordon to type a comment on his own \(free text\) and see what the model would predict. For that, she referred him to the **predictOne** function. Gordon typed on the Maana Q UI a random comment he thought of, clicked Run and then saw the output in the Function Results panel \(image below\). He tried a few more comment, and thought that in some cases the predicted sentiment was not accurate. He 
+
+![](../../../.gitbook/assets/image%20%2866%29.png)
 
 4th Feedback the Model -&gt; This connects back to the training set. 
 
