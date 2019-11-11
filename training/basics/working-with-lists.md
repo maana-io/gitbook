@@ -6,7 +6,7 @@ description: Execute functions efficiently using Maana Q
 
 Presenter: ****Kriti Chandhoke
 
-**Case Description :** While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. A group of multiple items is called a list or an array. In this exercise we take you through two examples that use Maana Q Scalars in built service to help demonstrate:  1. Combining \(concatenating\) two lists  2. Adding '2' to lists together.  Let's get started!
+**Case Description :** While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. A group of multiple items is called a list or an array. In this exercise we take you through two examples that use Maana Q Scalars in built service to help demonstrate:  1. Combining \(concatenating\) two lists  2. Adding '2' to list a.  Let's get started!
 
 **Link to Workspace:**
 
