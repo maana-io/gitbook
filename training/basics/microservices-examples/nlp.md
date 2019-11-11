@@ -4,14 +4,7 @@ description: Natural Language Processing
 
 # NLP
 
--------------------------------------------------------------------------------------------------------**Material Development Checklist**
-
-* [ ] Power Point Slides \(**not needed**\)
-* [ ] Gif \(**pending**\)
-
--------------------------------------------------------------------------------------------------------
-
-presenter: ****Mike
+Presenter: ****Mike
 
 **Use Case Description:**  
 
@@ -26,6 +19,8 @@ Given the following sentence, “Mike lives in London and has just started worki
 1. Click on the + icon in the workspace tab, on the left hand side 
 2. In the workspace details panel give the workspace a new name -&gt; “Simple NLP Engine” 
 3. Click the save icon  
+
+
 
 **Step 2:** Create “top level” function 
 
