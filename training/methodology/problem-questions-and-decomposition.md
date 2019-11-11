@@ -167,18 +167,18 @@ Add following fields to **givenCarMakersWhatAreTheTopNBestRankedCars** function 
 
 1. **carMaker** and specify a value to be a list of type Vehicle, 
 2. **topN** and specify the value to be required parameter and of type INT
-3. Specify the output to be a list of type ScoreVehicle
+3. Specify the output to be a list of type **ScoreVehicle**
 
 Go inside of **givenCarMakersWhatAreTheTopNBestRankedCars** function
 
-For us to know what are the topNbestRankedCars we need to know what is the score for each car maker. And then rank the desired amount of cars \( topN\) based on that score.
+To know what are the topNbestRankedCars we need to know what is the score for each car maker. And then rank the desired amount of cars \( topN\) based on that score.
 
-Let's create first function **scoreVehicle**:
+Step 3. Create function **scoreVehicle**:
 
 * Input parameters: **vehicle** of type Vehicle. Required parameter
 * Output: **ScoreVehicle**. Required parameter
 
-Let's go inside of **scoreVehicle** function.  To calculate the score for each vehicle brand we will be using two scores: recall score and the second is what is the general Brand Image score of that car maker in the news \(positive or negative\).
+Let's go inside of **scoreVehicle** function.  To calculate the score for each vehicle brand we will be using two scores: recall score and Brand Image score of that car maker from the news.
 
 Let's create 2 functions to do exactly that:
 
@@ -213,7 +213,7 @@ Let's create those two functions as well.
    1. Input : **score**. Type: float. Required parameter
    2. Output: float. Required parameter
 
-Lets wire those functions up as:
+Step 4. Wire those functions up as:
 
 * Input: Vehicle -&gt; **getNumberOfRecalls**: input
 * Input: Vehicle -&gt; **getVehicleSales**: input
@@ -224,41 +224,33 @@ Lets wire those functions up as:
 
 Now that the functions are wired, let's go inside of getNumberOfRecalls
 
+Step 5. Bring in services.
+
 We pre-wrote microservice that calculates a number of recalls, let's search for it. Find a service **getNumberOfRecall** and drag it into inventory. Drag it onto the workspace. Wire it with input and output. 
 
 Let’s go one level up. \(Hint look for **getRecallScore** function in the left panel\)
 
-Now let's go inside of **getVehicleSales** function.
+1. Now let's go inside of **getVehicleSales** function.
+2. Let's search for **getVehicleSales** service and bring it first to inventory and then onto the workspace.
+3. Wire the input and output.
+4. Let’s go one level up. To **getRecallScore** function
 
-Let's search for **getVehicleSales** service and bring it first to inventory and then onto the workspace.
+Go inside of **normalizerecallScoreBySales** function.
 
-Wire the input and output. 
+1. Let's search for **normalizeRecallScoreBySales** service and bring it first to inventory and then onto the workspace.
+2. Wire the input and output. 
+3. Let’s go one level up. To **getRecallScore** function
 
-Let’s go one level up. To **getRecallScore** function
+Go inside of **normalizeRecallScoreByScale** function.
 
-Now let's go inside of **normalizerecallScoreBySales** function.
-
-Let's search for **normalizeRecallScoreBySales** service and bring it first to inventory and then onto the workspace.
-
-Wire the input and output. 
-
-Let’s go one level up. To **getRecallScore** function
-
-Now lets go inside of **normalizeRecallScoreByScale** function.
-
-Let's search for **normalizeRecallScoreByScale** service and bring it first to inventory and then onto the workspace.
-
-Wire the input and output. 
+1. Let's search for **normalizeRecallScoreByScale** service and bring it first to inventory and then onto the workspace.
+2. Wire the input and output. 
 
 At this point, we are solved all that is needed for getting **RecallScore**.
 
 Let's go back to the **scoreVehicle** function.
 
-Now we need to decompose **getBrandImageScore** function.
-
-Let's go inside this function.
-
-To get a brand image score we know that some sentiment analysis needs to be performed.
+Now we need to decompose **getBrandImageScore** function. Let's go inside this function. To get a brand image score we know that some sentiment analysis needs to be performed.
 
 Let's create function: **EntityAnalysis**
 
@@ -282,11 +274,9 @@ For that create function **getVehicleMake**
 
 Let's go inside of this function
 
-Let's search for **getVehicleMake** service and bring it first to inventory and then onto workspace.
-
-Wire the input and output. 
-
-Let’s go one level up. To **EntityAnalysis** function
+1. Let's search for **getVehicleMake** service and bring it first to inventory and then onto workspace.
+2. Wire the input and output. 
+3. Let’s go one level up. To **EntityAnalysis** function
 
 The next step is to crawl the news and extract key phrases from them for the brand names that we just extracted.
 
@@ -297,19 +287,15 @@ For that crate function **keyPhrasesFromNews**
 
 Wire up the output of **getVehicle**&lt;Make and input of **keyPhrasesFromNews**
 
-Let's go inside of **keyPhrasesFromNews** function.
-
-Let's search for **allBrandWordss** and **randomKeyPhrases** services and bring them first to inventory and then onto the workspace.
-
-Wire it up so:
-
-**allBrandWordss**: output -&gt;**randomKeyPhrases**: input-&gt;output
-
-Let’s go one level up. To **EntityAnalysis** function
+1. Let's go inside of **keyPhrasesFromNews** function.
+2. Let's search for **allBrandWordss** and **randomKeyPhrases** services and bring them first to inventory and then onto the workspace.
+3. Wire it up so:
+   1. **allBrandWordss**: output -&gt;**randomKeyPhrases**: input-&gt;output
+4. Let’s go one level up. To **EntityAnalysis** function
 
 Now let's get **brandWords** 
 
-Bring **allBrandWordss** onto the workspace. 
+Bring **allBrandWordss** service onto the workspace. 
 
 Let's extract positive and negative words:
 
@@ -318,26 +304,20 @@ For that create function **getPositiveWords**
 * Input: **allKeyWords** of type BrandWords kind, list, Required parameter
 * Output: String, list, required parameter
 
-Let's go inside of this function
-
-Let's search for **getPositiveWords** service and bring it first to inventory and then onto the workspace.
-
-Wire the input and output. 
-
-Let’s go one level up. To **EntityAnalysis** function
+1. Let's go inside of this function
+2. Let's search for **getPositiveWords** service and bring it first to inventory and then onto the workspace.
+3. Wire the input and output. 
+4. Let’s go one level up. To **EntityAnalysis** function
 
 Create function **getNegativeWords**
 
 * Input: **allKeyWords** of type BrandWords kind, list, Required parameter
 * Output: String, list, required parameter
 
-Let's go inside of this function
-
-Let's search for **getNegativeWords** service and bring it first to inventory and then onto the workspace.
-
-Wire the input and output. 
-
-Let’s go one level up. To **EntityAnalysis** function
+1. Let's go inside of this function
+2. Let's search for **getNegativeWords** service and bring it first to inventory and then onto the workspace.
+3. Wire the input and output. 
+4. Let’s go one level up. To **EntityAnalysis** function
 
 Lets wire **allBrandWordss** output with inputs for **getPositiveWords** and **getNegativeWords**.
 
@@ -348,24 +328,19 @@ For that create function **calculatePositiveEntitiesScore**
 * Input: **entities** of type string, list, Required parameter
 * Output: String, list, required parameter
 
-Let's go inside of this function. Let's search for **calculatePositiveEntitiesScore** service and bring it first to inventory and then onto the workspace.
-
-Wire the input and output. 
-
-Let’s go one level up. To **EntityAnalysis** function
+1. Let's go inside of this function. Let's search for **calculatePositiveEntitiesScore** service and bring it first to inventory and then onto the workspace.
+2. Wire the input and output. 
+3. Let’s go one level up. To **EntityAnalysis** function
 
 Create function **calculateNegativeEntitiesScore**
 
 * Input: **entities** of type string, list, Required parameter
 * Output: String, list, required parameter
 
-Let's go inside this function
-
-Let's search for **calculateNegativeEntitiesScore** service and bring it first to inventory and then onto the workspace.
-
-Wire the input and output. 
-
-Let’s go one level up. To **EntityAnalysis** function
+1. Let's go inside this function
+2. Let's search for **calculateNegativeEntitiesScore** service and bring it first to inventory and then onto the workspace.
+3. Wire the input and output. 
+4. Let’s go one level up. To **EntityAnalysis** function
 
 Now wire up output of **keyPhrasesFromNews** and input \(entities\) of **calculatePositiveEntitiesScore** and **calculateNegativeEntitiesScore**, as well as output of **getPositiveWords** and **getNegativeWords** with respective input parameters in **calculatePositiveEntitiesScore** and **calculateNegativeEntitiesScore**.
 
@@ -419,11 +394,9 @@ Create function **rankCarsByCompoundScores**
   * **nCars** of type int
 * Output: of type **ScoredVehicle** kind, list, required parameter
 
-Let's go inside this function
-
-Let's search for **rankCarsByCompoundScore** service and bring it first to inventory and then onto the workspace.
-
-Wire the input and output. 
+1. Let's go inside this function
+2. Let's search for **rankCarsByCompoundScore** service and bring it first to inventory and then onto the workspace.
+3. Wire the input and output. 
 
 lets go to **givenCarMakersWhatAreTheTopNBestRankedCars** function.
 
@@ -431,17 +404,12 @@ Wire inputs and outputs.
 
 Let's go to the **Car Reliability** graph.
 
-Click on **givenCarMakersWhatAreTheTopNBestRankedCars** function. 
-
-Go to the right panel and click on the run button
-
-Check the checkbox for **carMaker** and select instance \(i.e. Toyota\)
-
-Check the checkbox for **topN** and enter 1
-
-Click run
-
-Observe the output of the function.
+1. Click on **givenCarMakersWhatAreTheTopNBestRankedCars** function. 
+2. Go to the right panel and click on the run button
+3. Check the checkbox for **carMaker** and select instance \(i.e. Toyota\)
+4. Check the checkbox for **topN** and enter 1
+5. Click run
+6. Observe the output of the function.
 
 Voila you just solved the business 
 
