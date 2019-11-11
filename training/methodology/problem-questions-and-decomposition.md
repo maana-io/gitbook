@@ -4,17 +4,6 @@ description: Familiarize with Maana's methodology to decompose problems
 
 # Problem Decomposition
 
--------------------------------------------------------------------------------------------------------**Material Development Checklist**
-
-* [ ] Power Point Slides \(**pending, could use Slide 77 on** [**https://maanainc.app.box.com/file/444706275394**](https://maanainc.app.box.com/file/444706275394)\)
-* [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
-* [ ] Case description \(**pending**\)
-* [ ] Recording \(pending\)
-* [ ] gif \(pending\)
-* [ ] Azure upload \(pending\)
-
--------------------------------------------------------------------------------------------------------
-
 Presenters: Javier, Donald, Anastasia
 
 ## **Computational Knowledge Graph Technology and Systems Engineering**  
@@ -48,8 +37,6 @@ Systems Engineering emphasis the key role of interfaces between specialized func
 One popular framework in Systems Engineering is: C - Conceive, D - Design, I - Implement, O - Operate. This emphasizes that Systems grow through different phases. The lack of a system approach often leads to failures, delays in interfaces between these distinct phases. CKG technologies applied through systems' lifecycle result in the persistence of contextual meaning of information from phase to phase. 
 
 ---
-
-Car Selection workspace?
 
 1. 1. Identifying the problems means **spelling out** **in detail** **the terms used to describe the problem**
    2. **Let's consider the question** "Which car should I buy?"
@@ -149,91 +136,316 @@ Car Selection workspace?
       1. The relationship between an Employer and Employee is one of Employment
       2. It is insufficient to model this situation as Employer has Employees \(and the reciprocal Employee has Employers\), since we likely wish to capture job title/position, start/end dates, department, manager, salary, etc.
 
-\*\*\*\*
-
 **Case Description:**
 
 This is a hands-on example that will teach principle of Top Down approach. In this case, learn how to create and application that will rank car makers based on reliability and brand image.
 
 **Step by Step Instructions:**
 
-1. Step 1 Top Level Problem 
+**Step 1.** Create a new workspace. 
 
-   1. Create a new workspace
-   2. Search for following kinds and bring them onto your workspace
-      1. Vehicle
-      2. ScoredVehicle
-      3. BrandWords
+Search for following kinds and bring them onto your workspace:
 
-   Note: Vehicle and BranWords kinds are already preloaded with the data
+* Vehicle
+* ScoredVehicle
+* BrandWords
 
-   3. Explore content of Vehicle kind
+Note: Vehicle and BranWords kinds are already preloaded with the data
 
-   Explore content of BrandWords kind
+* [ ] Explore content of Vehicle kind
+* [ ] Explore content of BrandWords kind
 
-Let us create a top-level problem question
+**Step 2.** Create a top-level problem question
 
 Say we have a list of carmakers and we want to know what are the top 5 best-ranked cars are. 
 
-Our top level question will be givenCarMakersWhatAreTheTopNBestRankedCars
+Our top level question will be **givenCarMakersWhatAreTheTopNBestRankedCars**
 
 By phrasing it this way its is clear what the inputs and the outputs should be for this function. \(E.g. inputs are carMakers and topN and the output is RankedCars\)
 
-Add following fields to givenCarMakersWhatAreTheTopNBestRankedCars function : 
+Add following fields to **givenCarMakersWhatAreTheTopNBestRankedCars** function : 
 
-1. carMaker and specify a value to be a list of type Vehicle, 
-2. topN and specify the value to be required parameter and of type INT
+1. **carMaker** and specify a value to be a list of type Vehicle, 
+2. **topN** and specify the value to be required parameter and of type INT
 3. Specify the output to be a list of type ScoreVehicle
 
-Bring the following services:
+Go inside of **givenCarMakersWhatAreTheTopNBestRankedCars** function
 
-getNumberOfRecalls
+For us to know what are the topNbestRankedCars we need to know what is the score for each car maker. And then rank the desired amount of cars \( topN\) based on that score.
 
-getVehicleSales
+Let's create first function **scoreVehicle**:
 
-To calculate Recall Score we need to know the following:
+* Input parameters: **vehicle** of type Vehicle. Required parameter
+* Output: **ScoreVehicle**. Required parameter
 
-List of Car Makers
+Let's go inside of **scoreVehicle** function.  To calculate the score for each vehicle brand we will be using two scores: recall score and the second is what is the general Brand Image score of that car maker in the news \(positive or negative\).
 
-Number of recalls
+Let's create 2 functions to do exactly that:
 
-Vehicle sales
+1. Create function **getRecallScore**
+   1. Input: **Vehicle**  of type vehicle kind. Required parameter
+   2. Output: float. Required parameter
+2. Create function **getBrandImageScore**
 
-To calculate Brand Image Score we need to know the following:
+Now, let's go inside of **getRecallScore** function.
 
-List of Car Makers
+To calculate the Recall score we need a number of recalls and a number of sales.
 
-Entity Analysis
+Let's create functions for that:
 
-To calculate the brand image score lets use the following 
+1. Create function **getNumberOfRecalls**
+   1. Input: **Vehicle** of type vehicle kind. Required parameter
+   2. Output: INT. Required parameter
+2. Create function **getVehicleSales**
+   1. Input: **Vehicle** of type vehicle kind. Required parameter
+   2. Output: INT. Required parameter
 
-getBrandImageScore
+Once we know those two scores  we then need to normalize them by sales and by scale. 
 
-getVehicle Make
+Let's create those two functions as well.
 
- Input: Vehicle Maker
+1. Create function **normalizerecallScoreBySales**
+   1. Input :
+      1. **numberofRecalls**. Type: INT Required parameter
+      2. **vehicleSales**. Type: INT Required parameter
+   2. Output: Float. Required parameter
+2. Create function **normalizeRecallScoreByScale**
+   1. Input : **score**. Type: float. Required parameter
+   2. Output: float. Required parameter
 
- Create function getVehicleMake
+Lets wire those functions up as:
 
-  Input parameters: vehicle of type Vehicle. Required parameter 
+* Input: Vehicle -&gt; **getNumberOfRecalls**: input
+* Input: Vehicle -&gt; **getVehicleSales**: input
+* **getNumberOfRecalls**: output -&gt; **normalizerecallScoreBySales**: input **numberofRecalls**
+* **getVehicleSales**: output -&gt; **normalizerecallScoreBySales**: input **vehicleSales**
+* **normalizerecallScoreBySales**: output -&gt; **normalizeRecallScoreByScale**: input **score**
+* **normalizeRecallScoreByScale**: output -&gt; Output 
 
- Output: string
+Now that the functions are wired, let's go inside of getNumberOfRecalls
 
-Go inside this function:
+We pre-wrote microservice that calculates a number of recalls, let's search for it. Find a service **getNumberOfRecall** and drag it into inventory. Drag it onto the workspace. Wire it with input and output. 
 
-Search for getVehicleMake in the search and bring it into your inventory. 
+Let’s go one level up. \(Hint look for **getRecallScore** function in the left panel\)
 
-Bring this service onto your workspace and wire it with inputs and outputs.
+Now let's go inside of **getVehicleSales** function.
 
-brandImageScore
+Let's search for **getVehicleSales** service and bring it first to inventory and then onto the workspace.
 
-Make 
+Wire the input and output. 
 
-givenTheMakerWhatAreTheyKeyPhrasesFromNews
+Let’s go one level up. To **getRecallScore** function
 
- Input: Make
+Now let's go inside of **normalizerecallScoreBySales** function.
 
- Output: String
+Let's search for **normalizeRecallScoreBySales** service and bring it first to inventory and then onto the workspace.
+
+Wire the input and output. 
+
+Let’s go one level up. To **getRecallScore** function
+
+Now lets go inside of **normalizeRecallScoreByScale** function.
+
+Let's search for **normalizeRecallScoreByScale** service and bring it first to inventory and then onto the workspace.
+
+Wire the input and output. 
+
+At this point, we are solved all that is needed for getting **RecallScore**.
+
+Let's go back to the **scoreVehicle** function.
+
+Now we need to decompose **getBrandImageScore** function.
+
+Let's go inside this function.
+
+To get a brand image score we know that some sentiment analysis needs to be performed.
+
+Let's create function: **EntityAnalysis**
+
+* Input: **Vehicle** of type vehicle kind. Required parameter
+* Output: Float. Required parameter
+
+Lets wire input and output.
+
+Let's go inside of **EntityAnalysis** function
+
+For this function we would need to have several pieces of information: what is the maker, service that crawls through the news articles, brand words that were annotated as positive or negative.
+
+Once we know the above we then can calculate positive and negative entity score and cumulative score for each brand.
+
+First, let's extract brand names.
+
+For that create function **getVehicleMake**
+
+* Input: **Vehicle** of type vehicle kind. Required parameter
+* Output: String, required parameter
+
+Let's go inside of this function
+
+Let's search for **getVehicleMake** service and bring it first to inventory and then onto workspace.
+
+Wire the input and output. 
+
+Let’s go one level up. To **EntityAnalysis** function
+
+The next step is to crawl the news and extract key phrases from them for the brand names that we just extracted.
+
+For that crate function **keyPhrasesFromNews**
+
+* Input: **make** of type String. Required parameter
+* Output: String, list, required parameter
+
+Wire up the output of **getVehicle**&lt;Make and input of **keyPhrasesFromNews**
+
+Let's go inside of **keyPhrasesFromNews** function.
+
+Let's search for **allBrandWordss** and **randomKeyPhrases** services and bring them first to inventory and then onto the workspace.
+
+Wire it up so:
+
+**allBrandWordss**: output -&gt;**randomKeyPhrases**: input-&gt;output
+
+Let’s go one level up. To **EntityAnalysis** function
+
+Now let's get **brandWords** 
+
+Bring **allBrandWordss** onto the workspace. 
+
+Let's extract positive and negative words:
+
+For that create function **getPositiveWords**
+
+* Input: **allKeyWords** of type BrandWords kind, list, Required parameter
+* Output: String, list, required parameter
+
+Let's go inside of this function
+
+Let's search for **getPositiveWords** service and bring it first to inventory and then onto the workspace.
+
+Wire the input and output. 
+
+Let’s go one level up. To **EntityAnalysis** function
+
+Create function **getNegativeWords**
+
+* Input: **allKeyWords** of type BrandWords kind, list, Required parameter
+* Output: String, list, required parameter
+
+Let's go inside of this function
+
+Let's search for **getNegativeWords** service and bring it first to inventory and then onto the workspace.
+
+Wire the input and output. 
+
+Let’s go one level up. To **EntityAnalysis** function
+
+Lets wire **allBrandWordss** output with inputs for **getPositiveWords** and **getNegativeWords**.
+
+The next step is to calculate positive and negative entity scores. 
+
+For that create function **calculatePositiveEntitiesScore**
+
+* Input: **entities** of type string, list, Required parameter
+* Output: String, list, required parameter
+
+Let's go inside of this function. Let's search for **calculatePositiveEntitiesScore** service and bring it first to inventory and then onto the workspace.
+
+Wire the input and output. 
+
+Let’s go one level up. To **EntityAnalysis** function
+
+Create function **calculateNegativeEntitiesScore**
+
+* Input: **entities** of type string, list, Required parameter
+* Output: String, list, required parameter
+
+Let's go inside this function
+
+Let's search for **calculateNegativeEntitiesScore** service and bring it first to inventory and then onto the workspace.
+
+Wire the input and output. 
+
+Let’s go one level up. To **EntityAnalysis** function
+
+Now wire up output of **keyPhrasesFromNews** and input \(entities\) of **calculatePositiveEntitiesScore** and **calculateNegativeEntitiesScore**, as well as output of **getPositiveWords** and **getNegativeWords** with respective input parameters in **calculatePositiveEntitiesScore** and **calculateNegativeEntitiesScore**.
+
+The last step in calculating the Brand image is to calculate the cumulative entity score. 
+
+Lets create function **combinerEntityScore**.
+
+* Input: 
+  * **positiveEntityScore** of type float, Required parameter
+  * **negativeEntityScore** of type float, Required parameter
+* Output: float, list, required parameter
+
+Wire up outputs of **calculatePositiveEntitiesScore** and **calculateNegativeEntitiesScore** with the inputs of **conbineEntityScore** function.
+
+Let's go inside of this function
+
+Let's search for **combineEntityScore** service and bring it first to inventory and then onto the workspace.
+
+Wire the input and output. 
+
+At this point, we are solved all that is needed for getting the BrandImage score.
+
+Let's go back to **scoreVehicle** function.
+
+Now that we have a recall score and brand image score calculated we need to calculate a compound score.
+
+Create function **updateCompoundScore**
+
+* Input: 
+  * **vehicle** of type vehicle, Required parameter
+  * **recallScore** of type float, Required parameter
+  * **brandImageScore** of type float, Required parameter
+* Output: of type **ScoredVehicle** kind, required parameter
+
+Let's go inside of this function
+
+Let's search for **updateCompoundScore** service and bring it first to inventory and then onto the workspace.
+
+Wire the input and output. 
+
+Let's go back to **scoreVehicle** function and wire input with inputs for getRecallScore and **getBrandImageScore**, and **updatedCompoundScore**; outputs of **getRecallScore** and **getBrandImageScore** with inputs for **updatedCompoundScore**. Output of **updateCompoundScore** with the output for **scoreVehicle** function.
+
+The last step is to rank the cars by just calculated score.
+
+For that lets go to **givenCarMakersWhatAreTheTopNBestRankedCars** function.
+
+Create function **rankCarsByCompoundScores**
+
+* Input: 
+  * **scoredCars** of type ScoredVehicle, Required parameter
+  * **nCars** of type int
+* Output: of type **ScoredVehicle** kind, list, required parameter
+
+Let's go inside this function
+
+Let's search for **rankCarsByCompoundScore** service and bring it first to inventory and then onto the workspace.
+
+Wire the input and output. 
+
+lets go to **givenCarMakersWhatAreTheTopNBestRankedCars** function.
+
+Wire inputs and outputs.
+
+Let's go to the **Car Reliability** graph.
+
+Click on **givenCarMakersWhatAreTheTopNBestRankedCars** function. 
+
+Go to the right panel and click on the run button
+
+Check the checkbox for **carMaker** and select instance \(i.e. Toyota\)
+
+Check the checkbox for **topN** and enter 1
+
+Click run
+
+Observe the output of the function.
+
+Voila you just solved the business 
+
+Now lets output score for all vehicles.
 
 \*\*\*\*
 
