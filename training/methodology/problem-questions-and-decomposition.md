@@ -27,30 +27,25 @@ Similarly, Maana's Computational Knowledge Graph \(CKG\) Technology is conducive
 
 ### **Top-Down Approach**
 
-Start by looking at the system as a whole to provide a thorough understanding of the system and its environment and interfaces, 
+In Systems Engineering it is fundamental to start by looking at the **system as a whole** in order to provide a thorough understanding of its components, its environment and interfaces, **System-level requirements** are often developed as a priority. This process is often followed by the i**dentification of likely sub-systems**, which are further broken down into assemblies and components. This process continues until a complete understanding is achieved of the system from top to bottom. This approach is documented on process standards such as ANSI/EIA-632.
 
-System-level requirements are developed, 
+A Top Down approach is key to ensuring any type of requirement low in the hierarchy can be traced up the top driver, and vice-versa. This level of interconnectedness is key to Systems Engineering approaches. 
 
-Likely subsystems can be then considered and requirements assigned to individual sub-systems. Sub-systems can be further broken down into assemblies, and then into components, 
-
-This process continues until a complete understanding is achieved of the system from top to bottom, this allows 
-
-1. additional requirements to be developed, 
-2. identification of interfaces between sub-systems.
-
-This approach is documented on process standards such as ANSI/EIA-632.
+In a similar manner, the methodology for decomposing a given problem in Maana Q, follows a Top Down approach where all subsequent decomposition steps maintain a relevance to the whole and a connection to the top. This architecture helps maintain coherency and also result in a more holistic approach to uncovering knock-on effects, interdependencies and system dynamics. 
 
 ### **Difference between System and System-of-Systems:** 
 
-A System-of-Systems is a group of individual Systems. In this case, each System is optimized for its own purpose. The System-of-Systems is most likely not optimized. This is essentially the same as local optimization, which is fairly common in oil & gas. In the contrary, in a System \(made out of Sub-Systems\) is optimized for its own purpose. This is the emphasis of Systems Engineering and a quality which is key in Maana's methodology.  
+A '**System-of-Systems'** is a group of individual Systems. In this case, each System is optimized for its own purpose. The System-of-Systems is most likely not optimized. In business terms, this is equivalent to '**Local Optimization'** which is a common symptom for deficient systems thinking. 
+
+ On the contrary, a **System \(made out of Sub-Systems\)** is optimized for its own purpose. This key concept of Systems Engineering is often overlooked in many domains. In a similar manner, the emphasis of CKG technologies is that of '**Global Optimization**' over 'Local Optimization', which is the result of modeling Systems and not a collection of isolated entities.  
 
 ### **Multi-disciplinary by Nature**
 
-Systems Engineering emphasis the key role of interfaces between specialized functions. 
+Systems Engineering emphasis the key role of interfaces between specialized functions. In a similar manner, CKG technologies foster the interaction of different roles. 
 
 ### **Lifecycle Thread**
 
-One popular framework in Systems Engineering is: C - Conceive, D - Design, I - Implement, O - Operate. This emphasizes that Systems grow through different phases. The lack of a system approach often leads to failures, delays in interfaces between these distinct phases. Here there's an argument of a Knowledge Layer carrying the contextual meaning of information from phase to phase. 
+One popular framework in Systems Engineering is: C - Conceive, D - Design, I - Implement, O - Operate. This emphasizes that Systems grow through different phases. The lack of a system approach often leads to failures, delays in interfaces between these distinct phases. CKG technologies applied through systems' lifecycle result in the persistence of contextual meaning of information from phase to phase. 
 
 ---
 
