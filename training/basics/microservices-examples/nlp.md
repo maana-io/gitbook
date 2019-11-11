@@ -36,62 +36,49 @@ Given the following sentence, “Mike lives in London and has just started worki
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step1Step_createTopLevelFunction.gif)
 
-
-
 **Step 3:** Open the Function Graph and import services to be used 
 
-1. Click on the 4 arrows located in the top right hand corner of the function box. This will take us to a canvas where we can begin to “wire up” our function. _Note that the search bar struggles to find manna-natural-compromise so it is required to search only for maana and then scroll._ 
-2. In the search bar in the top menu type “maana”, when the search has completed select services and scroll to find the maana-natural-compromise service.   
-3. Select this service and drag into the inventory panel located in the bottom left of the screen.  You have now added the maana-natual-compromise service to your workspace.   
-4. Repeat this process for the maana-utilities service. Services contain a collection of functions that we can use in our use case.  In this case we will use the following functions from the services; 
+1. In the search bar in the top menu, search for “maana-natural-compromise”, when the search has completed select services and scroll to find the maana-natural-compromise service.
+2. Select this service and drag into the inventory panel located in the bottom left of the screen.
 
-Maana-natural-compromise -&gt; people, organizations, places  
-
-Maana-utilities -&gt; union 
-
-To explore what functions are available you can click on the arrow next to the Services in the inventory panel and continue down to see what functions are available. 
+You have now added the maana-natual-compromise service to your workspace.
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step2_functionGraphAndImportingServices.mov)
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step3_serviceFunctionsAndWiring.gif)
 
-**Step 4:** Add the People, places and Organizations functions and wire them up.
+**Step 4: Import "maana Q Scalars" Service**
 
-1. Ensure you are in the input / output canvas for the extractPeoplePlacesOrganizations function 
-2. Select the People function from the maana-natural-compromise service and drag it onto the canvas.   
-3. Repeat this for the Places and Organizations functions. 
-4. To wire the functions up click on the right hand box of the input box.   
-5. Drag the “wire” to the input box of the organizations function.  The inputs are always on the left of a function box with outputs on the right. 
-6. . Repeat this step for the other 2 functions, people and places. 
+1. In the search bar in the top menu, search for “Maana Q Scalars”, when the search has completed select services and scroll to find the maana Q Scalars service.
+2. Select this service and drag into the inventory panel located in the bottom left of the screen.
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step3_serviceFunctionsAndWiring.mov)
+You have now added the "Maana Q Scalars" service to your workspace.
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step4_UnionWiringToOutput.gif)
+**Step 5:** **Expand the function**
 
+Click on the 4 arrows located in the top right hand corner of the function box. This will take us to a canvas where we can begin to “wire up” our function
 
+**Step 6: Add people, places and organizations functions**
 
-**Step 5:** Add the union function and wire them up! 
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step2_%20functionGraphAndImportingServices.gif)
 
-Since we have 3 functions that have 3 separate outputs we need to aggregate these into a single list.  The union function allows us to achieve this but since the union function only accepts 2 lists we will need 2 union functions to produce our single list.  
+**Step 7: Add stringListunion functions**
 
-1. Locate the union function within the maana-utiliites service and drag onto the canvas.  
-2. Repeat for a second union function. 
-3. To wire up the first union function click on the output of organizations and wire to the first union function.  
-4. Repeat this for the people function.   
-5. The places function is to be wired to the second union function along with the output of the first union function. 
-6. Click on the output box of the second union function and wire to the output box. 
+1. Locate the stringListUnion function within the maana Q Scalars service and drag onto the canvas. b 2.Repeat for a second stringListUnion function.
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step4_unionWiringToOutput.mov)
+**Step 8: Wire the functions**
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step5_testing.gif)
+1. To wire the functions up click on the right hand box of the input box.
+2. Drag the “wire” to the input box of the organizations function.
 
-**Step 6:** Test the top level function and examine the output 
+The inputs are always on the left of a function box with outputs on the right.
 
-1. Click on “New Knowledge Graph” in the top left panel to return to the top canvas where our Top level function resides. 
-2. Click on the extractPeoplePlacesOrganizationsFromDocuments function box to highlight it 
-3. In the details panel on the right hand side click the “play” icon 
-4. Click the check box and paste the following text next to it; 
-5. “Mike lives in London and has just started working for Maana Inc” 
-6. Click Run. Below the main canvas you will see an “assistants” panel \(expand it if it is not visible\). The functions outputs will be displayed here if the function ran successfully 
-7. Expand the arrows until you see the data that has been returned. 
+3.Repeat this step for the other 2 functions, people and places. 4.To wire up the first union function click on the output of organizations and wire to the first union function. 5.Repeat this for the people function.  
+6.The places function is to be wired to the second union function along with the output of the first union function 7.Click on the output box of the second union function and wire to the output box.
+
+\*\*\*\*
+
+\*\*\*\*
+
+\*\*\*\*
 
