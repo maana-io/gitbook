@@ -17,31 +17,42 @@ description: Familiarize with Maana's methodology to decompose problems
 
 Presenters: Javier, Donald, Anastasia
 
-### **Computational Knowledge Graph Technology and Systems Engineering**  
+## **Computational Knowledge Graph Technology and Systems Engineering**  
 
 In Systems Engineering, the most generic definition of a System is simply: _'the Solution to a Problem.'_  Whether a system exists in physical or digital domains, and regardless of different levels of complexity, this orientation towards 'problem-solving' is a common theme in systems engineering philosophies and processes. 
 
-Similarly, Maana's Computational Knowledge Graph \(CKG\) Technology is conducive for representing highly complex 'systems' with an orientation towards problem-solving and improved decision making. 
-
-Taking this comparison further, we identify 4 areas of overlap between Systems Engineering and CKG Technology. These are summarized in the figure below.
+Similarly, Maana's Computational Knowledge Graph \(CKG\) Technology is conducive for representing highly complex 'systems' with an orientation towards problem-solving and improved decision making. Taking this comparison further, we identify 4 areas of overlap between Systems Engineering and CKG Technology. These are summarized in the figure below.
 
 ![](../../.gitbook/assets/image%20%28127%29.png)
 
-**Top Down Approach:** 
+### **Top-Down Approach**
 
-1. Start by looking at the system as a whole to provide a thorough understanding of the system and its environment and interfaces, 
-2. System-level requirements are developed, 
-3. Likely subsystems can be then considered and requirements assigned to individual sub-systems. Sub-systems can be further broken down into assemblies, and then into components, 
-4. This process continues until a complete understanding is achieved of the system from top to bottom, this allows 
-   1. additional requirements to be developed, 
-   2. identification of interfaces between sub-systems.
-5. This approach is documented on process standards such as ANSI/EIA-632.
+Start by looking at the system as a whole to provide a thorough understanding of the system and its environment and interfaces, 
 
-**Difference between System and System-of-Systems:** A System-of-Systems is a group of individual Systems. In this case, each System is optimized for its own purpose. The System-of-Systems is most likely not optimized. This is essentially the same as local optimization, which is fairly common in oil & gas. In the contrary, in a System \(made out of Sub-Systems\) is optimized for its own purpose. This is the emphasis of Systems Engineering and a quality which is key in Maana's methodology.  
+System-level requirements are developed, 
 
-**Multi-disciplinary by Nature:** Systems Engineering emphasis the key role of interfaces between specialized functions. 
+Likely subsystems can be then considered and requirements assigned to individual sub-systems. Sub-systems can be further broken down into assemblies, and then into components, 
 
-**Lifecycle Thread**: One popular framework in Systems Engineering is: C - Conceive, D - Design, I - Implement, O - Operate. This emphasizes that Systems grow through different phases. The lack of a system approach often leads to failures, delays in interfaces between these distinct phases. Here there's an argument of a Knowledge Layer carrying the contextual meaning of information from phase to phase. 
+This process continues until a complete understanding is achieved of the system from top to bottom, this allows 
+
+1. additional requirements to be developed, 
+2. identification of interfaces between sub-systems.
+
+This approach is documented on process standards such as ANSI/EIA-632.
+
+### **Difference between System and System-of-Systems:** 
+
+A System-of-Systems is a group of individual Systems. In this case, each System is optimized for its own purpose. The System-of-Systems is most likely not optimized. This is essentially the same as local optimization, which is fairly common in oil & gas. In the contrary, in a System \(made out of Sub-Systems\) is optimized for its own purpose. This is the emphasis of Systems Engineering and a quality which is key in Maana's methodology.  
+
+### **Multi-disciplinary by Nature**
+
+Systems Engineering emphasis the key role of interfaces between specialized functions. 
+
+### **Lifecycle Thread**
+
+One popular framework in Systems Engineering is: C - Conceive, D - Design, I - Implement, O - Operate. This emphasizes that Systems grow through different phases. The lack of a system approach often leads to failures, delays in interfaces between these distinct phases. Here there's an argument of a Knowledge Layer carrying the contextual meaning of information from phase to phase. 
+
+---
 
 Car Selection workspace?
 
