@@ -6,11 +6,19 @@ description: Advanced Learning technique explained through and example
 
 ### **Introduction**
 
-One of the limitations of the Passive Learning technique in [Part 2 ](part-2-passive-learning.md)is the effort the SME \(the restaurant owner in Part 2 example\) needs to spend in labeling data used to further train the prediction model. 
+One of the limitations of the Passive Learning technique shown in [Part 2 ](part-2-passive-learning.md)is the effort the SME \(the restaurant owner in Part 2 example\) needs to spend in labeling data used to further train the prediction model. Active learning on the contrary, looks at minimizing the effort on labeling data so that SME's involvement is routed to areas in which the model needs it the most. 
 
-Active learning on the contrary, looks at minimizing the effort on labeling data so that SME's effort is routed to places where the model needs it the most. This is, if the model 
+### **How does it work**
 
-Limitation, time...
+Refer to the same workspace as Part 2: 
+
+[https://cstrainingstable.knowledge.maana.io/workspace/96538995-2611-47b6-a650-51a9c66233d8](https://cstrainingstable.knowledge.maana.io/workspace/96538995-2611-47b6-a650-51a9c66233d8)
+
+On the Main Functions Knowledge Graph, look at the 2 functions: **askSmartQuestions** and **answerSmartQuestions**. 
+
+![](../../../.gitbook/assets/image%20%2875%29.png)
+
+This is, the model predicted labels \(negative or positive sentiments in the restaurant example\), also include an indication of confidence. This parameter is often related for how close the new observation is to the training set. If confidence is low, the model will ask the user for feedback on those observations. If the confidence is high, the model would opt for not asking the SME for feedback. 
 
 What if the model can ask questions to the SME on items where it has low confidence...
 

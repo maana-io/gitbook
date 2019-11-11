@@ -26,7 +26,7 @@ It is also common for Piping Subject Matter Experts to spend significant effort 
 
 The diagram below shows a representation of the architecture of a Knowledge Model of Piping Consolidation, drawing from the ORDL methodology. 
 
-![Piping Consolidation  Knowledge Model Architecture](../../../.gitbook/assets/image%20%2852%29.png)
+![Piping Consolidation  Knowledge Model Architecture](../../../.gitbook/assets/image%20%2853%29.png)
 
 ### Now, looking at this Knowledge Model in Maana... 
 
@@ -48,7 +48,7 @@ Workspace found at:
 
 **Step 4:** Now, concentrate on the function **calculateSimilarity**. Compare the structure of this function to the Architecture Diagram at the beginning of this section. 
 
-![](../../../.gitbook/assets/image%20%2884%29.png)
+![](../../../.gitbook/assets/image%20%2886%29.png)
 
 **Step 5:** Note that the function **calculateCompoundSimilarity** includes an algorithm to merge the resulting similarity scores of the 3 methods used into one single result. The more feedback a given pair of Piping Classes receives, the more prevalent active learning would be in the compound score. 
 

@@ -1,12 +1,10 @@
+---
+description: Learn how to compose functions from multiple microservices
+---
+
 # Audio Translation
 
-**Material Development Checklist**
-
-* [ ] Azure upload \(pending\)
-
--------------------------------------------------------------------------------------------------------
-
-presenter: ****Roie
+Presenter: ****Roie
 
 **Use Case Description:**  
 
@@ -61,20 +59,6 @@ Above the canvas click on the create function button, a green function box will 
 3. Click Run 
 
 4.Observe output 
-
-\*\*\*\*
-
-**Recordings \(Anastasia WIP\):**
-
-[step 1 - top level func](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%202%20-%20top%20level%20func.gif)
-
-[step 2 - import services and functions](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%203a%20-%20import%20services%20and%20functions.gif)
-
-[step 3 - wire functions](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%203b%20-%20wire%20functions.gif)
-
-[step 4 - graphQL IDE](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%204a%20-%20graphQL%20IDE.gif)
-
-[step 5 - output](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/audioTranslation/step%204b%20output.gif)
 
 
 

@@ -4,7 +4,7 @@ description: Natural Language Processing
 
 # NLP
 
-Presenter: ****Mike
+Presenter: ****Mike Crooks
 
 **Use Case Description:**  
 
@@ -34,7 +34,9 @@ Given the following sentence, “Mike lives in London and has just started worki
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step1_topLevelFunction.mov)
 
-![](../../../.gitbook/assets/nlp_step1step_createtoplevelfunction.gif)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step1Step_createTopLevelFunction.gif)
+
+
 
 **Step 3:** Open the Function Graph and import services to be used 
 
@@ -51,7 +53,7 @@ To explore what functions are available you can click on the arrow next to the S
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step2_functionGraphAndImportingServices.mov)
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step2_%20functionGraphAndImportingServices.gif)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step3_serviceFunctionsAndWiring.gif)
 
 **Step 4:** Add the People, places and Organizations functions and wire them up.
 
@@ -64,7 +66,9 @@ To explore what functions are available you can click on the arrow next to the S
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step3_serviceFunctionsAndWiring.mov)
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step3_serviceFunctionsAndWiring.gif)
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step4_UnionWiringToOutput.gif)
+
+
 
 **Step 5:** Add the union function and wire them up! 
 
@@ -79,9 +83,7 @@ Since we have 3 functions that have 3 separate outputs we need to aggregate thes
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step4_unionWiringToOutput.mov)
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step4_UnionWiringToOutput.gif)
-
-
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step5_testing.gif)
 
 **Step 6:** Test the top level function and examine the output 
 
@@ -92,8 +94,4 @@ Since we have 3 functions that have 3 separate outputs we need to aggregate thes
 5. “Mike lives in London and has just started working for Maana Inc” 
 6. Click Run. Below the main canvas you will see an “assistants” panel \(expand it if it is not visible\). The functions outputs will be displayed here if the function ran successfully 
 7. Expand the arrows until you see the data that has been returned. 
-
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/Videos%206/NLP_step5_testing.mov)
-
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/nlp_gifs/gifs%207/NLP_step5_testing.gif)
 
