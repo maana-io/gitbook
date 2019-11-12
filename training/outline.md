@@ -133,7 +133,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Use Case ranking spreadsheet and &apos;Fit 4 Maana&apos; workspace</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="methodology/collaboration.md">Collaboration</a>
+      <td style="text-align:left"><a href>Collaboration</a>
       </td>
       <td style="text-align:left">
         <p>Maana Q as a Collaborative Environment</p>

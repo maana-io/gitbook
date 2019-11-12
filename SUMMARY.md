@@ -149,7 +149,6 @@
 * [Methodology](training/methodology/README.md)
   * [Problem Decomposition](training/methodology/problem-questions-and-decomposition.md)
   * [Use Case Selection](training/methodology/use-case-selection.md)
-  * [Collaboration](training/methodology/collaboration.md)
   * [Project Execution](training/methodology/kickoff-session.md)
 * [Advanced](training/advanced/README.md)
   * [Developing Custom Microservices](training/advanced/developer-steel-thread.md)
