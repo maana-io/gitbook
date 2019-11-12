@@ -38,8 +38,8 @@ One popular framework in Systems Engineering is: C - Conceive, D - Design, I - I
 
 ---
 
-1. 1. Identifying the problems means **spelling out** **in detail** **the terms used to describe the problem**
-   2. **Let's consider the question** "Which car should I buy?"
+1. Identifying the problems means **spelling out** **in detail** **the terms used to describe the problem**
+   1. **Let's consider the question** "Which car should I buy?"
       1. Identify the **given context**, and the **desired outcome**
          1. 1. Context: "I currently own a car valued at 20k and I have another 10k to spend. I would prefer it were an electric car, and I would like it to be red."
             2. Outcome: "a list of the top 5 recommended cars for me to buy"
@@ -71,7 +71,7 @@ One popular framework in Systems Engineering is: C - Conceive, D - Design, I - I
                1. the impure function now\(\): Time, which doesn't produce the same value every time it is called
                2. or the pure function ten\(\): Integer, which always produces the same value \(10\)
                   1.  This is also called a constant function
-   3. As we add details to our solution, we make it more coherent and defensible \(we provide more details to the "explanation" of this solution\)
+   2. As we add details to our solution, we make it more coherent and defensible \(we provide more details to the "explanation" of this solution\)
       1. This includes identifying all the **relevant properties and relations** a Kind has
       2. Each relation is also a Kind, this process is repeated until the level of detail is sufficient to reason about the problem \(We'll discuss more about defining Kinds in the Ontology Building section\)
 2. **Problem decomposition**
