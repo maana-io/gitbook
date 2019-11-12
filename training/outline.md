@@ -178,7 +178,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         existing libraries</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="advanced/constraint-satisfaction.md">Wrapping and Mapping</a>
+      <td style="text-align:left"><a href>Wrapping and Mapping</a>
       </td>
       <td style="text-align:left">Build a constraint satisfaction model</td>
       <td style="text-align:left">&#x2022; Using templates &#x2022; High order patterns</td>
