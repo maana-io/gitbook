@@ -23,7 +23,7 @@ Presenter: ****Kriti Chandhoke
 **Step2:** Expand on the 'combineTwoLists'  function. Next we will use Maana Q Scalars, a maana pre-built service suite. Search for Maana Q Scalars in the search bar. Drag and drop it to the Inventory. In the Inventory panel, expand Services -&gt;Maana Q Scalars and look for  'StringListConcat'. Drag this to the canvas. Wire the inputs and outputs. 
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step2.mov)  
-[https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining\_videos/working\_with\_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists\_Intro\_Step2.gif](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step2.gif) 
+[https://maanaimages.blob.core.windows.net/maana-q- Zx](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step2.gif)Adding, removing, merging, finding, filtering, reversing, map/reducing, ...[documentation/QTraining\_videos/working\_with\_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists\_Intro\_Step2.gif](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step2.gif) 
 
 
 
