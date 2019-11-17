@@ -8,6 +8,10 @@ The Assistant API allows interacting with a Workspace and the entities within th
 
 ![The Lambda Assistant allows writing a Function implementation in JavaScript](https://maanaimages.blob.core.windows.net/maana-q-documentation/What%27s%20New%203.2.1/lambda_assistant.gif)
 
+## Lambda Assistant and Service
+
+## Lesson Assistant and Service
+
 ## Snap to Grid
 
 The UI now supports toggling snap to grid for nodes. When turned on nodes will stay aligned with the grid lines. The grid lines now also move when panning and zooming!
@@ -43,6 +47,16 @@ Finally, anything that adds a node to the graph is much faster. This includes cr
 There is now an export button on the System Information page. This downloads all of the installed components and their versions in a CSV.
 
 ![Export component versions as a CSV](https://maanaimages.blob.core.windows.net/maana-q-documentation/What%27s%20New%203.2.1/component_version_export.gif)
+
+## New CLI Templates
+
+Use the Maana Q CLI's `mdeploy` command to bootstrap a Knowledge Service, Bot, or Application.
+
+### React \(JavaScript\) Knowledge Assistant \(Basic\)
+
+### React \(JavaScript\) Knowledge Assistant \(Advanced\)
+
+### React \(JavaScript\) Knowledge Application
 
 ## The Rest
 
