@@ -58,6 +58,10 @@ Use the Maana Q CLI's `mdeploy` command to bootstrap a Knowledge Service, Bot, o
 
 ### React \(JavaScript\) Knowledge Application
 
+## New Training Material
+
+To help you get started or advance your skills in becoming productive with Q, we have completely revamped our [training material](../training/outline.md#q-training-experience-at-a-glance), in conjunction with the new Lesson Assistant.
+
 ## The Rest
 
 As always, there are lots of bug fixes and improvements - notably faster Search and more robust Workspace cloning - included in this release.
