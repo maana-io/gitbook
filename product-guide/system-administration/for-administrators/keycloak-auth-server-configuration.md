@@ -4,8 +4,6 @@ description: How to configure a Keycloak server to secure access to a Maana Q in
 
 # Keycloak Auth Server Configuration
 
-
-
 ## Overview
 
 This document describes the steps for correctly configuring a keycloak server to secure access to a Maana Q instance. 
@@ -63,6 +61,7 @@ Throughout this section, we note that particular Maana Q environment variables w
 * AUTH\_JWKS\_URL= 
 * AUTH\_ISSUER= 
 * AUTH\_ALGORITHM=
+* AUTH\_PROVIDER=keycloak
 
  At the end of this guide, there is a table you can use to check your list and instructions for testing.
 
@@ -235,7 +234,7 @@ Before attempting to deploy/finalize, please ensure the following configurations
 | AUTH\_JWKS\_URL | 'https://\[your-keycloak-host\]:\[port\#\]/auth/realms/\[your-realm-name\]/protocol/openid-connect/certs' |  |
 | AUTH\_ISSUER | 'https://\[your-keycloak-host\]:\[port\#\]/auth/realms/[\[](https://keycloakdev.knowledge.maana.io:8443/auth/realms/maanaDev)your-realm-name\]'  \*\*Please check to make sure this matches EXACTLY--an unnessesary trailing "/", for instance, will lead to a 401 for incorrect issuer. |  |
 | AUTH\_ALGORITHM | Must be RSA-type, and value must match value in Realm&gt;Keys&gt; \[RS\*\*\*\]. For example 'RS256'. |  |
-|  |  |  |
+| AUTH\_PROVIDER | keycloak |  |
 
 These values can now be used for environment configuration on the Maana Q instance.
 

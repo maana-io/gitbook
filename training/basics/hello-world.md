@@ -1,19 +1,62 @@
 ---
-description: "What is a workspace?\_Creating/renaming function. Adding function field. Importing a service to a workspace"
+description: Build your first Maana Q case
 ---
 
 # Hello, world!
 
----------------------------------------------------------------------------------------------------------------**Material Development Checklist**
+**Case Description:**
 
-* [x] Power Point Slides \(**not needed**\)
-* [x] Workspaces \([https://lastknowngood.knowledge.maana.io/workspace/4b67f284-30b5-4826-8937-3573b405788d](https://lastknowngood.knowledge.maana.io/workspace/4b67f284-30b5-4826-8937-3573b405788d) - Look for 'Hello' function\)
-* [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
-* [x] Case description \(**not applicable**\)
+This is a hands-on example that will get you started with Maana Q. In this case, learn how to create your own sayHello function, add a function field, and import a service from the inventory to your workspace. Get Maana Q to greet you!
 
----------------------------------------------------------------------------------------------------------------
+Before you start, please refer to [Workspace](../../product-guide/getting-started-with-maana/workspaces/#what-is-a-workspace) if you do not what this is... 
 
-last[What is a workspace? ](https://app.gitbook.com/@maana/s/q/product-guide/getting-started-with-maana/workspaces#what-is-a-workspace)
+**Step by Step Instructions:**
 
-![](../../.gitbook/assets/image%20%2817%29.png)
+1. Once inside your newly created Workspace, create a Knowledge Graph\`
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step1.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step1.gif)
+
+2. In the Knowledge Graph you created, create a function
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step2.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step2.gif)
+
+3. Name the function, "sayHello"
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step3.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step3.gif)
+
+4. Inside the function, create a field called "input" of type string and click save
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step4.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step4.gif)
+
+5. Expand the sayHello function. We will use a pre-existing service called "Greetings" to create a sub function. Go to the search bar and type in Greetings. Drag and drop "Greetings" to Inventory
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step5.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step5.gif)
+
+6. Expand "Greetings" in Inventory to locate the "helloWorld" function. Drag and drop "helloWorld" from Inventory to the Canvas. Wire input and output. sayHello function is now complete.
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step6.mov) 
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step6.gif)
+
+
+
+7. To test the functionality we just created, locate sayHello function in the Explorer panel and hit Run in the Context Panel . Provide an input. In the Assistant Panel, we see the result.
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step7.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step7.gif)
+
+
+
+
 

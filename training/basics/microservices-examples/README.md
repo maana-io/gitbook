@@ -1,6 +1,6 @@
 ---
-description: Two examples of Maana-built Microservices (Eat your Vegetables!)
+description: Learn how to compose functions from multiple microservice
 ---
 
-# Microservices Examples
+# Function Composition Examples
 

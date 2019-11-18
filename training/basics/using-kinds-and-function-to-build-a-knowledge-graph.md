@@ -2,59 +2,126 @@
 description: Computational Knowledge Graph
 ---
 
-# CKG
+# Introduction to Kinds and Functions
 
----------------------------------------------------------------------------------------------------------------**Material Development Checklist**
+**Use Case Description:**  
 
-* [x] Power Point Slides \(**not needed**\)
-* [ ] Workspaces \(can use **Function Graph from News / Wiki Analysis** [https://lastknowngood.knowledge.maana.io/workspace/f3a0dae1-e7ab-4a08-8511-8f24bc6e6974](https://lastknowngood.knowledge.maana.io/workspace/f3a0dae1-e7ab-4a08-8511-8f24bc6e6974), to explain Functions, **Domain Model** to explain the concept of Kinds is **pending**\)
-* [ ] Step-by-Step Instructions for Learning Assistant \(**pending**\)
-* [ ] Case description \(**pending**\)
-* [ ] Revisit content below \(**pending**\)
-* [ ] Possibly add here use case shared by Logan at Show and Tell \(google maps visualization of crime vs. real estate in Sacramento - deciding where to buy property looking at the map\). Need to check if assistant service that is needed can be deployed to cstraining01 \(**pending**\)
+The aim of this lesson is to introduce Kinds and Functions by creating a means by which to calculate the distance between to Geo Coordinates.  Additionally we will extend the example to accommodate names of places.  In order to carry out the computations we will leverage a service already part of our Maana Q deployment.   
 
----------------------------------------------------------------------------------------------------------------
+**Step by Step Instructions**
+
+Pre requisites 
+
+1. Workspace created 
+2. Services, distance-lambda-demo added to inventory 
+3. GeoCoordinate Kind and Distance Kind created 
+
+**Step 1:** Create Kinds  
+
+1. Above the canvas click on the create kind button, a blue box will appear 
+2. Create a GeoCoordinate kind with properties; 
+   * lat  FLOAT 
+   * long FLOAT 
+3. Repeat to create a Distance kind with properties; 
+
+   * value FLOAT 
+   * distanceUnit STRING 
+
+   [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step1_addKinds.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20Step%201%20-%20Add%20Kinds.gif)
 
 
 
-[Additional Reading Material from Q Gitbook](../../product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/creating-kinds.md)
+**Step 2:** Create “top level” function 
+
+1. Above the canvas click on the create function button, a green function box will appear.  
+2. Give the function a name e.g “distanceBetweenCoordinates”.  
+3. Add an inputs by clicking on the line below the “field” heading  
+   * origin GEOCOORDINATE 
+   * target GEOCOORDINATE 
+   * Specify the as type Distance 
+4. Click Save
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step2_topLevelFunction.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%202%20top%20level%20func.gif)
+
+**Step 3:** Create Function Calculation for distanceBetweenCoordinates  
+
+1. Click on the 4 arrows located in the top right hand corner of the function box. This will take us to a canvas where we can begin to “wire up” our function 
+2. From the inventory locate the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
+3. Drag the function onto the canvas 
+4. Connect the inputs and output 
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step3_wireUpFunction.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%203%20-%20wire%20up%20func.gif)
+
+**Step 4:** Test the distanceBetweenCoordinates Function 
+
+1. Click on Top Level PQ and select the distanceBetweenGeoCoordinates Function 
+2. In the right hand panel add an origin and target \(be sure to add the ID field\) 
+3. Click Run 
+4. Observe the results in the function results panel at the bottom of the screen  
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step4_testDistanceCalculation.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%204%20test%20distance%20calc.gif)
+
+**Step 5:** Add distanceBetweenAddresses Function 
+
+1. Click on Top Level PQ and add the function, distanceBetweenAddresses 
+2. Inputs:  
+   * origin STRING 
+   * target STRING 
+3. Output: 
+   * Distance  
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step5_distanceByAddressFunction.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%205%20distance%20by%20addess%20func.gif)
+
+**Step 6:** Add getGeoCoordinatesByName function to distanceBetweenAddresses Function 
+
+1. Open the distanceBetweenAddresses function and add a new function, getGeoCoordinatesByName 
+2. Inputs: 
+   * name STRING  
+3. Output: 
+   * GEOCOORDINATE 
+4. Open this function and add getGeoCoordinatesByName function from the lambda-distance-demo service 
+5. Wire the inputs and output 
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step6_createFirstStepFunction.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%206%20create%20first%20step%20func.gif)
+
+**Step 7:** Add a second getGeoCoordinatesByName function and finish 
+
+1. From the inventory expand the functions list 
+2. Drag getGeoCoordinatesByName onto the canvas 
+3. Wire the inputs of both instances 
+4. Add the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
+5. Wire the inputs and output 
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step7_duplicateAndWire%20.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%207%20-%20duplicate%20and%20wire%20.gif)
+
+**Step 8:** Test the distanceBetweenAddresses 
+
+1. Click on Top Level PQ and highlight the function 
+2. In the right hand panel enter values for origin and target 
+   * Origin = “London” 
+   * Target = “Birmingham” 
+3. Click run 
+4. Observe the results in the function results panel. 
+
+[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step8_finalTest.mov)
+
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%208%20final%20test.gif)
 
 
-
-Major concepts:
-
-**Kind** - represents a specific interpretation of a concept which have a collection of fields used to describe their attributes. Ex: a kind called ‘City’ may consist of name, latitude, longitude 
 
 \*\*\*\*
-
-**Function**
-
-[Authored functions ](https://maana.gitbook.io/q/product-guide/getting-started-with-maana/building-knowledge-layers/understanding-functions#authored-functions)
-
-[Imported functions](https://maana.gitbook.io/q/product-guide/getting-started-with-maana/building-knowledge-layers/understanding-functions#imported-functions)
-
-\*\*\*\*
-
-**Function Input and Outputs**
-
-**Input Fields**
-
-The input fields of a Function represent the input that is expected to a Function. The Field column has the name of the field and the Type column has the type \(including modifiers\) that is expected as input to that field.
-
-There are also two modifiers indicated in the Type column: required and list. If the Type has an exclamation mark \(**!**\), the field is required to have a value. If the Type is surrounded in square brackets \(**\[\]**\), the field value is a list. Note that both can be present. Thus **\[STRING!\]!** means the field requires a list of Strings to be provided, where each value in the list cannot be null and the list itself must not be null.
-
-**Output Field**
-
-The output field represents the expected output from a Function. Only the type is editable on the output field and there is only one output. The output field type has the same modifiers as the input fields. In the screenshot above, the output is a String.
-
-
-
-**CKG \(**computational knowledge graph\) - separates the structure and computations to be performed from the data itself; It enables a fluidity of modeling, allowing data from any source or format to be seamlessly integrated, searched, analyzed, operationalized and re-purposed; Each resulting model is a combination of subject-matter expertise, relevant data, and the algorithms to be performed; It’s dynamic because it can represent conceptual and computational models; It’s designed to perform complex transformations and calculations at interactive speeds, making it a game-changing technology for agile development knowledge applications
-
-**Creating Kinds to Build a Knowledge Graph** 
-
-There are two ways to create the kinds of data used as the building blocks for your Knowledge Graph:
-
-1. The Data-First Approach
-2. The Model-First Approach
 

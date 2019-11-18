@@ -1,4 +1,6 @@
-# Basics
+---
+description: Learn what sets Maana apart through hands-on exercises
+---
 
-Test1
+# Basics
 

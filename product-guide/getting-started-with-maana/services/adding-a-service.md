@@ -1,4 +1,4 @@
-# Adding a Service
+# Adding a Service to the Catalog
 
 Is there a service that has Kinds and/or Functions you would like to use, but that doesn't exist yet in Q? This guide will show you how to add it.
 
