@@ -4,8 +4,6 @@ description: Familiarize with Maana's methodology to decompose problems
 
 # Problem Decomposition
 
-Presenters: Javier, Donald, Anastasia
-
 ## **Computational Knowledge Graph Technology and Systems Engineering**  
 
 In Systems Engineering, the most generic definition of a System is simply: _'the Solution to a Problem.'_  Whether a system exists in physical or digital domains, and regardless of different levels of complexity, this orientation towards 'problem-solving' is a common theme in systems engineering philosophies and processes. 
@@ -411,11 +409,5 @@ Let's go to the **Car Reliability** graph.
 5. Click run
 6. Observe the output of the function.
 
-Voila you just solved the business 
-
-Now lets output score for all vehicles.
-
-\*\*\*\*
-
-**Link to recording:**
+Voila you just solved the business problem. Now lets output score for all vehicles.
 

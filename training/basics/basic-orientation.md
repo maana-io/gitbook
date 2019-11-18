@@ -6,7 +6,7 @@ description: Familiarize with Maana's User Interface and Perform Basic Operation
 
 ## Logging In
 
-{% file src="../../../.gitbook/assets/orientation\_intro\_maana.pptx" caption="Maana Intro Deck" %}
+{% file src="../../.gitbook/assets/orientation\_intro\_maana.pptx" caption="Maana Intro Deck" %}
 
 ## Basic UI Navigation Videos:
 

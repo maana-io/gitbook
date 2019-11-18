@@ -135,10 +135,10 @@
 ## Training
 
 * [Pre-Read Material](training/pre-read-material.md)
+* [Connecting to Maana](training/connecting-to-maana.md)
 * [Outline](training/outline.md)
 * [Basics](training/basics/README.md)
-  * [Orientation](training/basics/basic-orientation/README.md)
-    * [Connecting to Maana](training/basics/basic-orientation/connecting-to-maana.md)
+  * [Orientation](training/basics/basic-orientation.md)
   * [Hello, world!](training/basics/hello-world.md)
   * [Introduction to Kinds and Functions](training/basics/using-kinds-and-function-to-build-a-knowledge-graph.md)
   * [Working with Lists](training/basics/working-with-lists.md)
@@ -146,7 +146,6 @@
   * [Function Composition Examples](training/basics/microservices-examples/README.md)
     * [NLP](training/basics/microservices-examples/nlp.md)
     * [Audio Translation](training/basics/microservices-examples/audio-translation.md)
-  * [Maana Cheat Sheet](training/basics/maana-cheat-sheet.md)
 * [Methodology](training/methodology/README.md)
   * [Problem Decomposition](training/methodology/problem-questions-and-decomposition.md)
   * [Use Case Selection](training/methodology/use-case-selection.md)

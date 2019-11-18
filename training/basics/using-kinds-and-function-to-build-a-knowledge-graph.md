@@ -4,8 +4,6 @@ description: Computational Knowledge Graph
 
 # Introduction to Kinds and Functions
 
-Presenter: ****Roie Cohen
-
 **Use Case Description:**  
 
 The aim of this lesson is to introduce Kinds and Functions by creating a means by which to calculate the distance between to Geo Coordinates.  Additionally we will extend the example to accommodate names of places.  In order to carry out the computations we will leverage a service already part of our Maana Q deployment.   

@@ -4,8 +4,6 @@ description: Build your first Maana Q case
 
 # Hello, world!
 
-Presenter: Anastasia Chueva
-
 **Case Description:**
 
 This is a hands-on example that will get you started with Maana Q. In this case, learn how to create your own sayHello function, add a function field, and import a service from the inventory to your workspace. Get Maana Q to greet you!

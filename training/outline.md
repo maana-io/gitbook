@@ -32,7 +32,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/basic-orientation/">Orientation</a>
+      <td style="text-align:left"><a href="basics/basic-orientation.md">Orientation</a>
       </td>
       <td style="text-align:left">
         <p>Basic product orientation</p>
@@ -131,19 +131,6 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Use Case ranking spreadsheet and &apos;Fit 4 Maana&apos; workspace</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href>Collaboration</a>
-      </td>
-      <td style="text-align:left">
-        <p>Maana Q as a Collaborative Environment</p>
-        <p>&lt;em&gt;&lt;/em&gt;</p>
-        <p><em>This lesson will tackle best strategies for team collaboration when building a solution on Q</em>
-        </p>
-      </td>
-      <td style="text-align:left">&#x2022; Team collaboration &#x2022; Using workspaces to break down areas
-        of development &#x2022; The role of the Knowledge Architect &#x2022; Function
-        interfaces as contracts</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><a href="methodology/kickoff-session.md">Project Execution</a>
       </td>
       <td style="text-align:left">
@@ -173,12 +160,6 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Maana CLI - mcreate, mdeploy &#x2022; Basic Kubernetes concepts
         &#x2022; Development pattern for creating GraphQL wrapping services for
         existing libraries</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;del&gt;&lt;/del&gt;<a href><del>Wrapping and Mapping</del></a>&lt;del&gt;&lt;/del&gt;</td>
-      <td
-      style="text-align:left">Build a constraint satisfaction model</td>
-        <td style="text-align:left">&#x2022; Using templates &#x2022; High order patterns</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="advanced/learning/">Learning</a>
