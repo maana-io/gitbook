@@ -134,6 +134,7 @@
 
 ## Training
 
+* [Pre-Read Material](training/pre-read-material.md)
 * [Outline](training/outline.md)
 * [Basics](training/basics/README.md)
   * [Orientation](training/basics/basic-orientation/README.md)
