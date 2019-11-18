@@ -1,6 +1,12 @@
+---
+description: >-
+  Review this material prior to training to gain familiarity with key concepts
+  used in the sessions
+---
+
 # Pre-Read Material
 
-Before you attend training, please go through this material
+Before you attend training, please go through this material \(Estimated Time: 2hr\)
 
 ### Graph 101
 
@@ -15,4 +21,8 @@ Before you attend training, please go through this material
 ### Familiarize with Maana UI
 
 \[Videos pending\]
+
+### GraphQL Basics
+
+
 
