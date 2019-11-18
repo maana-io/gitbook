@@ -10,7 +10,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
 
 ![](../.gitbook/assets/image%20%2849%29.png)
 
-## Detailed Training Agenda
+## Training Modules
 
 <table>
   <thead>
@@ -25,12 +25,11 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><b>DAY 1 </b>
+      <td style="text-align:left"><b>BASICS</b>
       </td>
       <td style="text-align:left"><b>Familiarize with key concepts of Computational Knowledge Graph Technology</b>
       </td>
-      <td style="text-align:left"><b>BASICS</b>
-      </td>
+      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="basics/basic-orientation/">Orientation</a>
@@ -102,12 +101,11 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         &#x2022; Azure services such as maana-azure-speech-to-text, maana-azure-translation</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>DAY 2</b>
+      <td style="text-align:left"><b>METHODOLOGY</b>
       </td>
       <td style="text-align:left"><b>Familiarize with a new way of thinking</b>
       </td>
-      <td style="text-align:left"><b>METHODOLOGY</b>
-      </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="methodology/problem-questions-and-decomposition.md">Problem Decomposition</a>
@@ -157,12 +155,11 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Team structure &#x2022; Relevant aspects of SCRUM and Agile</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>DAY 3</b>
+      <td style="text-align:left"><b>ADVANCED TOPICS</b>
       </td>
       <td style="text-align:left"><b>Learn skills and techniques to enhance Maana solution development</b>
       </td>
-      <td style="text-align:left"><b>ADVANCED TOPICS</b>
-      </td>
+      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="advanced/developer-steel-thread.md">Developing Custom Microservices</a>
@@ -178,10 +175,10 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         existing libraries</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href>Wrapping and Mapping</a>
-      </td>
-      <td style="text-align:left">Build a constraint satisfaction model</td>
-      <td style="text-align:left">&#x2022; Using templates &#x2022; High order patterns</td>
+      <td style="text-align:left">&lt;del&gt;&lt;/del&gt;<a href><del>Wrapping and Mapping</del></a>&lt;del&gt;&lt;/del&gt;</td>
+      <td
+      style="text-align:left">Build a constraint satisfaction model</td>
+        <td style="text-align:left">&#x2022; Using templates &#x2022; High order patterns</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="advanced/learning/">Learning</a>
@@ -202,22 +199,6 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         enumeration</td>
       <td style="text-align:left">&#x2022; Reuse &#x2022; Naming convention &#x2022; Combining concepts
         Encapsulation &#x2022; Specialization &#x2022; Modeling inheritance</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>DAY 4</b>
-      </td>
-      <td style="text-align:left"><b>USE CASE KICKOFF (Part 1)</b>
-      </td>
-      <td style="text-align:left"><b>Group work on Use Case Development</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>DAY 5</b>
-      </td>
-      <td style="text-align:left"><b>USE CASE KICKOFF (Part 2)</b>
-      </td>
-      <td style="text-align:left"><b>Group work on Use Case Development</b>
-      </td>
     </tr>
   </tbody>
 </table>

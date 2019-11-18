@@ -18,7 +18,7 @@ Ana then went to Maana Q, and created a 'Training Function' which generates a pr
 
 [https://cstrainingstable.knowledge.maana.io/workspace/96538995-2611-47b6-a650-51a9c66233d8](https://cstrainingstable.knowledge.maana.io/workspace/96538995-2611-47b6-a650-51a9c66233d8)
 
-![](../../../.gitbook/assets/image%20%2891%29.png)
+![](../../../.gitbook/assets/image%20%2892%29.png)
 
 While Gordon is not necessarily interested in this particular function, Ana tells him, a Logistic Regression model is the most appropriate Machine Learning approach given the dataset she looked at.  She also mentions that the performance or accuracy of this model is at 65% which is not great, but better than random guessing. Gordon is not thrilled, and asks Ana if he can see some predictions.
 
@@ -26,7 +26,7 @@ While Gordon is not necessarily interested in this particular function, Ana tell
 
 Ana told Gordon, the next step is to run her Machine Learning model with the Test Dataset, which was not used for training. For that, she created the **evaluate** function which she ran to show the results to Gordon. Most of the results looked as expected \(image below\), but the Test Dataset was fairly small, so Gordon was not convinced this model could work accurately for a large number of comments. 
 
-![](../../../.gitbook/assets/image%20%28134%29.png)
+![](../../../.gitbook/assets/image%20%28136%29.png)
 
 ### Predicting the Sentiment of a New Comment
 
@@ -48,7 +48,7 @@ After that, she asked Gordon to come back to the **predictOne** function, and en
 
 Through these steps, Gordon gained an understanding of how he can evaluate the accuracy of the model Ana created for him, and how he can improve its accuracy by providing feedback. Ana went to summarize the feedback loop mechanism in the figure below. 
 
-![](../../../.gitbook/assets/image%20%28123%29.png)
+![](../../../.gitbook/assets/image%20%28125%29.png)
 
 Can you think of any limitations of this Feedback Loop architecture?
 
