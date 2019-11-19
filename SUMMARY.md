@@ -146,6 +146,7 @@
   * [Function Composition Examples](training/basics/microservices-examples/README.md)
     * [NLP](training/basics/microservices-examples/nlp.md)
     * [Audio Translation](training/basics/microservices-examples/audio-translation.md)
+  * [Design Patterns](training/basics/design-patterns.md)
 * [Methodology](training/methodology/README.md)
   * [Problem Decomposition](training/methodology/problem-questions-and-decomposition.md)
   * [Use Case Selection](training/methodology/use-case-selection.md)
@@ -156,7 +157,6 @@
     * [Part 1 - Learning as part of ORDL](training/advanced/learning/part-1-learning-context-in-ordl.md)
     * [Part 2 - Passive Learning](training/advanced/learning/part-2-passive-learning.md)
     * [Part 3 - Active Learning](training/advanced/learning/part-3-active-learning.md)
-  * [Design Patterns](training/advanced/design-patterns.md)
 
 ## MAANA Q COOKBOOK
 
