@@ -58,5 +58,20 @@ Before you start, please refer to [Workspace](../../product-guide/getting-starte
 
 
 
+To recreate and test this example using your own code, replace Steps 4-6 above with the following:
+
+Step 4: Create a function called sayHelloCoded. Create a field called "name" of type STRING. Click save
+
+Step 5: Go to the Assistants panel and switch to Maana Lambda Assistant. 
+
+_Note: If you do not see it in the Assistant Panel, look for it in the search bar and drag it to the inventory. Dragging to the inventory will activate the Maana Lambda Assistant and it will be available in the Assistants Panel_ 
+
+Step 6: In the Assistant Panel, enter the following code:
+
+```text
+const {name} = input
+return "hello " + name
+```
+
 
 
