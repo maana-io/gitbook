@@ -58,7 +58,7 @@ Before you start, please refer to [Workspace](../../product-guide/getting-starte
 
 
 
-To recreate and test this example using your own code, replace Steps 4-6 above with the following:
+To recreate and test this example using your own code, replace Steps 4-7 above with the following:
 
 Step 4: Create a function called sayHelloCoded. Create a field called "name" of type STRING. Click save
 
@@ -70,4 +70,14 @@ return "hello " + name
 ```
 
 _Note: If you do not see it in the Assistant Panel, look for it in the search bar and drag it to the inventory. Dragging to the inventory will activate the Maana Lambda Assistant and it will be available in the Assistants Panel_ 
+
+_Step 6:  Test the function using  the Context Panel just like Step 7 above or use GraphiQL to query the function you have just created. To do this, select the Workspace. Switch to  GraphQL IDE in the Assistants. Enter in the following code in the left and run to see the results on the right._
+
+```text
+{
+  sayHelloCoded (name: "Maana")
+}
+```
+
+
 
