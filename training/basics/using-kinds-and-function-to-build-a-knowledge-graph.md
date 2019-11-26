@@ -40,7 +40,7 @@ Pre requisites
 3. Add an inputs by clicking on the line below the “field” heading  
    * origin GEOCOORDINATE 
    * target GEOCOORDINATE 
-   * Specify the as type Distance 
+   * Specify the type as Distance 
 4. Click Save
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step2_topLevelFunction.mov)
