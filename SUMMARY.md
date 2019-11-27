@@ -17,6 +17,7 @@
   * [Calculate and Transform](platform-features/calculate-and-transform.md)
   * [Learn and Reason](platform-features/learn-and-reason.md)
   * [Bots and Assistants](platform-features/bots-and-assistants.md)
+  * [AI Simulator Framework](platform-features/ai-simulator-framework.md)
 
 ## PRODUCT GUIDE
 
@@ -153,10 +154,16 @@
   * [Project Execution](training/methodology/kickoff-session.md)
 * [Advanced](training/advanced/README.md)
   * [Developing Custom Microservices](training/advanced/developer-steel-thread.md)
+  * [Inference](training/advanced/inference/README.md)
+    * [Logical Inference and Semantic Graphs](training/advanced/inference/logical-inference-and-semantic-graphs.md)
+    * [Logical Inference and AI Planning](training/advanced/inference/logical-inference-and-ai-planning.md)
+    * [Probabilistic Inference and Causal Networks](training/advanced/inference/probabilistic-inference-and-causal-networks.md)
   * [Learning](training/advanced/learning/README.md)
-    * [Part 1 - Learning as part of ORDL](training/advanced/learning/part-1-learning-context-in-ordl.md)
-    * [Part 2 - Passive Learning](training/advanced/learning/part-2-passive-learning.md)
-    * [Part 3 - Active Learning](training/advanced/learning/part-3-active-learning.md)
+    * [Learning as part of ORDL](training/advanced/learning/part-1-learning-context-in-ordl.md)
+    * [Passive Learning](training/advanced/learning/part-2-passive-learning.md)
+    * [Active Learning](training/advanced/learning/part-3-active-learning.md)
+    * [Reinforcement Learning: Q-Learning with Open AI Taxi](training/advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md)
+    * [Reinforcement Learning: Deep Q-Network \(DQN\) with Open AI Taxi](training/advanced/learning/reinforcement-learning-deep-q-network-dqn-with-open-ai-taxi.md)
 
 ## MAANA Q COOKBOOK
 

@@ -2,7 +2,7 @@
 description: Piping Consolidation Example
 ---
 
-# Part 1 - Learning as part of ORDL
+# Learning as part of ORDL
 
 ### Introduction
 

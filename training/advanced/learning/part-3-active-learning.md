@@ -2,7 +2,7 @@
 description: Advanced Learning technique explained through and example
 ---
 
-# Part 3 - Active Learning
+# Active Learning
 
 ### **Introduction**
 

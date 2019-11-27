@@ -2,7 +2,7 @@
 description: Basic Learning technique explained through and example
 ---
 
-# Part 2 - Passive Learning
+# Passive Learning
 
 ### **Introduction**
 
