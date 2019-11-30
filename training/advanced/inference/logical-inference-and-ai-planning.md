@@ -4,7 +4,7 @@ description: >-
   AI Simulator framework.
 ---
 
-# Logical Inference and AI Planning
+# Logical Inference and AI Planning with GOAP
 
 Goal-Oriented Action Planning \(GOAP\) is a simple, but popular AI planner that uses logical chaining to achieve goals by performing a sequence of actions that change the world state.  States are boolean conditions.  Actions can have associated costs and the planner will find the cheapest path.
 
