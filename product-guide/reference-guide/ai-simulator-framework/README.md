@@ -8,6 +8,8 @@ description: >-
 
 When developing solutions to complex problems, it often necessary to create simplified circumstances in which to develop and test.  We have provided a simulation host that can be extended to drive various popular and custom simulators, each with their own environments and protocols.  The purpose of the simulation host is to provide a general framework for using simulators with Q-based Agents that reason about and take beneficial actions.
 
+![](../../../.gitbook/assets/ai-simulator.png)
+
 Each simulator is free to redefine its Agent protocol to address the specific needs, therefore, the protocol is primarily a suggestion.  All simulators will follow the basic flow of:
 
 * `onReset` - allows the agent to initialize for a simulation run

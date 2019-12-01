@@ -6,7 +6,20 @@ The "Base" agent [workspace](https://lastknowngood.knowledge.maana.io/workspace/
 
 ## onReset
 
-Simulators will first call `onReset`, allowing you to perform any initialization you require and to return a opaque "context" blob \(in the form of a `String`\).  Generally, the context you return is a serialized Kind instance used to maintain the model state \(or a reference to it\).  This context object will be passed back to you on subsequence calls from the simulator.
+Simulators will first call `onReset`, allowing you to perform any initialization you require and to return a opaque "context" blob \(in the form of a `String`\).
+
+#### Input 
+
+* `stateSpace` is the number of dimensions of the state vector representing the simulation domain \(i.e., the world\)
+* `actionSpace` is the number of dimensions of the action vector representing how the agent affects the world \(i.e., does things\)
+* `modelId` is the preferred identity of the model to create \(if training\) or use \(if performing\)
+* `isTraining` indicates whether or not the simulation is running in Training or Performing mode, thus allowing the agent to perform accordingly
+
+#### Output
+
+* `String` representing the agent's serialized "context blob" that will be returned on all subsequent calls
+
+Generally, the context you return is a serialized Kind instance used to maintain the model state \(or a reference to it\).  This context object will be passed back to you on subsequence calls from the simulator.
 
 ## onStep
 

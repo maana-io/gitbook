@@ -171,6 +171,7 @@
     * [Active Learning](training/advanced/learning/part-3-active-learning.md)
     * [Reinforcement Learning: Q-Learning with Open AI Taxi](training/advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md)
     * [Reinforcement Learning: Deep Q-Network \(DQN\) with Open AI Taxi](training/advanced/learning/reinforcement-learning-deep-q-network-dqn-with-open-ai-taxi.md)
+    * [Challenge](training/advanced/learning/challenge.md)
 
 ## MAANA Q COOKBOOK
 
