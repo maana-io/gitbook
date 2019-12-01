@@ -1,4 +1,4 @@
-# Computational Knowledge Graph
+# Computational Knowledge Graph \(CKG\)
 
 The core of the Maana Knowledge Platform™ is the patented Maana Computational Knowledge Graph™.
 

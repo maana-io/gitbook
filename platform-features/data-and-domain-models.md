@@ -1,4 +1,4 @@
-# Data and Domain Models
+# KindDB
 
 Create models that represent both your business domains and data, whatever its source.
 

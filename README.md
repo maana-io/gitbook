@@ -1,8 +1,8 @@
 # Maana Q Documentation
 
-**Welcome to Maana Q!** Get familiar with Maana and its Knowledge Platform \(Q\) offering:
+**Welcome to Maana Q!** Get familiar with Maana and the Q Knowledge Platform
 
-\*\*\*\*
+![](.gitbook/assets/q-at-a-glance.png)
 
 **About Maana**
 
