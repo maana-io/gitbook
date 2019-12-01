@@ -26,3 +26,5 @@ Please see the official [GitHub repository](https://github.com/maana-io/maana-ai
 
 ## Install
 
+TODO: Docker [https://hub.docker.com/repository/docker/maanainc/maana-ai-simulator-app](https://hub.docker.com/repository/docker/maanainc/maana-ai-simulator-app)
+
