@@ -1,14 +1,14 @@
-# Q-Assistant-API
+# Q Assistant Client
 
-## What is the Q Assistant API?
+## What is the Q Assistant Client?
 
-The Q Assistant API is a client-side API exposed by the Q Knowledge Portal \(K Portal\) to service assistants. This API is exposed via the post-message protocol, as the assistants are embedded as HTML i-frames. 
+The Q Assistant Client is a client-side API exposed by the Q Knowledge Portal \(K Portal\) to service assistants. This API is exposed via the post-message protocol, as the assistants are embedded as HTML i-frames. 
 
 ### Post-Robot Communication
 
 K Portal uses the kraken/post-robot library to enrich the communication with the assistant. Post-robot allows for asynchronous, promise-based request/response style behavior between the assistant and the assistant API. Assistant web applications are expected to use post-robot in order to communicate with the API. To help accelerate assistant application development, Maana  publishes its own client library for communicating with the API. This will be covered next.
 
-### Q-Assistant-Client
+### NPM
 
 The Q assistant client is an NPM package to allow for more streamlined, explicit,  and cross-platform communication with the K Portal API.
 

@@ -1,2 +1,2 @@
-# AI Simulator Framework
+# Maana Q AI Simulator Framework
 

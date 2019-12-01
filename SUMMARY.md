@@ -7,17 +7,17 @@
   * [The Maana Platform](user-education-introduction/the-maana-platform/README.md)
     * [Development Stages](user-education-introduction/the-maana-platform/development-stages.md)
 * [Platform Features](platform-features/README.md)
-  * [Knowledge Portal](platform-features/knowledge-portal.md)
-  * [Q-Assistant-API](platform-features/q-assistant-api.md)
-  * [Command Line](platform-features/command-line.md)
-  * [Knowledge Applications](platform-features/knowledge-applications.md)
+  * [Intelligence Designer](platform-features/knowledge-portal.md)
   * [Computational Knowledge Graph](platform-features/computational-knowledge-graph.md)
   * [Data and Domain Models](platform-features/data-and-domain-models.md)
   * [Search and Query](platform-features/search-and-query.md)
   * [Calculate and Transform](platform-features/calculate-and-transform.md)
   * [Learn and Reason](platform-features/learn-and-reason.md)
   * [Bots and Assistants](platform-features/bots-and-assistants.md)
-  * [AI Simulator Framework](platform-features/ai-simulator-framework.md)
+  * [Knowledge Applications](platform-features/knowledge-applications.md)
+  * [Command Line](platform-features/command-line.md)
+  * [Q Assistant Client](platform-features/q-assistant-api.md)
+  * [Maana Q AI Simulator Framework](platform-features/ai-simulator-framework.md)
 
 ## PRODUCT GUIDE
 
