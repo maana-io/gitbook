@@ -1,8 +1,8 @@
 # Base Agent
 
-The "Base" agent [workspace](https://lastknowngood.knowledge.maana.io/workspace/c055ef97-f85b-4e91-bdf7-344d032bf697) is designed to get you started developing your own AI agent for use in simulations. Every simulator is different and usually have their own _base_ agents, such as the [Taxi-v3 Random Agent](simulators/openai-gym/taxi-v3-environment.md).
+The "Base" agent [workspace](https://lastknowngood.knowledge.maana.io/workspace/c055ef97-f85b-4e91-bdf7-344d032bf697) is designed to get you started developing your own AI agent for use in simulations. Every simulator is different and usually have their own _base_ agents, such as the [Taxi-v3 Random Agent](../simulators/openai-gym/taxi-v3-environment.md).
 
-![](../../../.gitbook/assets/base-agent.png)
+![](../../../../.gitbook/assets/base-agent.png)
 
 ## onReset
 

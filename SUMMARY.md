@@ -1,23 +1,6 @@
 # Table of contents
 
 * [Maana Q Documentation](README.md)
-* [Introduction](user-education-introduction/README.md)
-  * [What You Will Learn](user-education-introduction/what-you-will-learn.md)
-  * [Maana Target Audience](user-education-introduction/maana-target-audience.md)
-  * [The Maana Platform](user-education-introduction/the-maana-platform/README.md)
-    * [Development Stages](user-education-introduction/the-maana-platform/development-stages.md)
-* [Platform Features](platform-features/README.md)
-  * [Intelligence Designer](platform-features/knowledge-portal/README.md)
-    * [Bots and Assistants](platform-features/knowledge-portal/bots-and-assistants.md)
-    * [Search and Query](platform-features/knowledge-portal/search-and-query.md)
-    * [Q Assistant Client](platform-features/knowledge-portal/q-assistant-api.md)
-  * [Computational Knowledge Graph \(CKG\)](platform-features/computational-knowledge-graph/README.md)
-    * [Learn and Reason](platform-features/computational-knowledge-graph/learn-and-reason.md)
-    * [Calculate and Transform](platform-features/computational-knowledge-graph/calculate-and-transform.md)
-  * [KindDB](platform-features/data-and-domain-models.md)
-  * [Knowledge Applications](platform-features/knowledge-applications.md)
-  * [Command Line Interface \(CLI\)](platform-features/command-line.md)
-  * [Maana Q AI Simulator Framework](platform-features/ai-simulator-framework.md)
 
 ## PRODUCT GUIDE
 
@@ -120,7 +103,9 @@
     * [File Processing](product-guide/reference-guide/technical-design-and-architecture/file-processing.md)
     * [Custom scalars supported by Maana Q](product-guide/reference-guide/technical-design-and-architecture/custom-scalars-supported-by-maana-q-platform.md)
   * [AI Simulator Framework](product-guide/reference-guide/ai-simulator-framework/README.md)
-    * [Base Agent](product-guide/reference-guide/ai-simulator-framework/base-agent.md)
+    * [Agents](product-guide/reference-guide/ai-simulator-framework/agents/README.md)
+      * [Base Agent](product-guide/reference-guide/ai-simulator-framework/agents/base-agent.md)
+      * [Random Agent](product-guide/reference-guide/ai-simulator-framework/agents/random-agent.md)
     * [Simulators](product-guide/reference-guide/ai-simulator-framework/simulators/README.md)
       * [CARLA](product-guide/reference-guide/ai-simulator-framework/simulators/carla.md)
       * [OpenAI Gym](product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/README.md)
@@ -139,6 +124,23 @@
   * [Performance & Scalability](product-guide/system-administration/performance-and-scalability.md)
   * [Security](product-guide/system-administration/security.md)
 * [Glossary](product-guide/glossary.md)
+* [Introduction](user-education-introduction/README.md)
+  * [What You Will Learn](user-education-introduction/what-you-will-learn.md)
+  * [Maana Target Audience](user-education-introduction/maana-target-audience.md)
+  * [The Maana Platform](user-education-introduction/the-maana-platform/README.md)
+    * [Development Stages](user-education-introduction/the-maana-platform/development-stages.md)
+* [Platform Features](platform-features/README.md)
+  * [Intelligence Designer](platform-features/knowledge-portal/README.md)
+    * [Bots and Assistants](platform-features/knowledge-portal/bots-and-assistants.md)
+    * [Search and Query](platform-features/knowledge-portal/search-and-query.md)
+    * [Q Assistant Client](platform-features/knowledge-portal/q-assistant-api.md)
+  * [Computational Knowledge Graph \(CKG\)](platform-features/computational-knowledge-graph/README.md)
+    * [Learn and Reason](platform-features/computational-knowledge-graph/learn-and-reason.md)
+    * [Calculate and Transform](platform-features/computational-knowledge-graph/calculate-and-transform.md)
+  * [KindDB](platform-features/data-and-domain-models.md)
+  * [Knowledge Applications](platform-features/knowledge-applications.md)
+  * [Command Line Interface \(CLI\)](platform-features/command-line.md)
+  * [Maana Q AI Simulator Framework](platform-features/ai-simulator-framework.md)
 
 ## Training
 
