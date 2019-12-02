@@ -30,7 +30,7 @@ Print this one pager to aid in learning as you go through the training
 
 ### Familiarize with Maana UI
 
-\[Videos pending\]
+
 
 [Creating and Closing Workspaces](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Creating%20and%20Closing%20Workspaces.mov)
 
@@ -51,6 +51,14 @@ Print this one pager to aid in learning as you go through the training
 [Searching for a Workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Searching%20for%20a%20Workspace.mov)
 
 [Sharing a Workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Sharing%20a%20Workspace.mov)
+
+[Modifying/Removing from a function](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Modifying%20%3A%20Removing%20from%20a%20function.mov)
+
+[Deleting a function](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Deleting%20a%20function.mov)
+
+[Removing a function from a workspace](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/UI%20Navigation%20Tips/Removing%20a%20function%20from%20workspace.mov)
+
+
 
 ### GraphQL Basics
 
