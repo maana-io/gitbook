@@ -6,13 +6,72 @@ description: >-
 
 # Logical Inference and AI Planning with GOAP
 
-[Goal-Oriented Action Planning \(GOAP\)](http://alumni.media.mit.edu/~jorkin/goap.html) is a simple, but popular AI planner that uses logical chaining to achieve goals by performing a sequence of actions that change the world state \(from preconditions to postconditions\).  States are generally boolean conditions and actions can have associated costs and the planner will find the cheapest sequence.
+[Goal-Oriented Action Planning \(GOAP\)](http://alumni.media.mit.edu/~jorkin/goap.html) is a simple, but effective AI planner that uses logical chaining to achieve goals by performing a sequence of actions that change the world state \(from preconditions to postconditions\).  States are generally boolean conditions and actions can have associated costs and the planner will find the cheapest sequence.
+
+For a nice explanation and example, see the blog post "[Goal Oriented Action Planning for a Smarter AI](https://gamedevelopment.tutsplus.com/tutorials/goal-oriented-action-planning-for-a-smarter-ai--cms-20793)."
+
+
+
+### Example
+
+The best way to introduce the GOAP concepts is by way of an example.  We will use the [OpenAI Gym simulation](../../../product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/) environment [Taxi-v3](../../../product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/taxi-v3-environment.md).  Please familiarize yourself with the scenario, concepts, and goals of this simulation task.
+
+![The taxi agent must pickup and drop-off passengers.](../../../.gitbook/assets/taxi.png)
+
+Goal-Oriented Action Planning is an artificial intelligence system for agents that allows them to plan a sequence of actions to satisfy a particular goal. The particular sequence of actions depends not only on the goal but also on the current state of the world and the agent. This means that if the same goal is supplied for different agents or world states, you can get a completely different sequence of actions., which makes the AI more dynamic and realistic.
+
+We have an agent, a **taxi,** that moves around the city \(N,S,E,W\) and picks-up and drops-off passengers.  We can model this situation as the following boolean \(true/false\) states:
+
+* `AT_PICKUP_LOCATION`
+* `AT_DROPOFF_LOCATION`
+* `IS_WITH_PASSENGER`
+* `IS_DONE`
+
+The _world_, at any given time, will be represented as the set of states along with their values.
+
+The taxi is capable of taking the following actions:
+
+* `MOVE_TO_PICKUP_LOCATION`
+* `MOVE_TO_DROPOFF_LOCATION`
+* `PICKUP`
+* `DROPOFF`
+
+Each action has a **precondition** and a **postcondition** of the world.  For example, it is a precondition of PICKUP that the taxi is `AT_PICKUP_LOCATION=T` and `IS_WITH_PASSENGER=F`, while the postcondition \(i.e., after having performed the action\) will be `IS_WITH_PASSENGER=T`. 
+
+When we give the _goal_ as `IS_DONE=T`, the GOAP planner will consider the sequence of actions to perform in order to transform the world state from its current condition into the desired condition.  For example, if the taxi were not at the pickup location and not with the passenger, then the GOAP planner would suggest:
+
+1. `MOVE_TO_PICKUP_LOCATION`
+2. `PICKUP`
+3. `MOVE_TO_DROPOFF_LOCATION`
+4. `DROPOFF`
+
+In more realistic examples, many different agents might be acting with possibly conflicting goals, each action might have an associated cost, making it possible to find the least cost path sequence.
+
+Let's implement this scenario using the Maana Q AI Simulator framework.
 
 ## Setup
 
-For this exercise, we are going to use the [Maana Q AI Simulator framework](../../../product-guide/reference-guide/ai-simulator-framework/).  Please take a few minutes to familiarize yourself with its purpose and operation.  Clone the "Random Taxi-v3 Agent" workspace and configure your OpenAI Gym simulator for the Taxi-v3 environment using your cloned agent's service URI.  \(Leave the token field blank.\)
+You will need several things for this tutorial:
+
+#### Install the AI Simulator Framework
+
+* Please take a few minutes to familiarize yourself with the purpose and operation of the [Maana Q AI Simulator framework](../../../product-guide/reference-guide/ai-simulator-framework/).
+* Follow the installation instructions and confirm that you can login to the Q instance.
+
+#### Clone the GOAP Agent Workspace
+
+* Login to Q and find and clone the "**GOAP Taxi-v3 Agent**" workspace.
+* Rename it to "&lt;your name&gt; GOAP Taxi-v3 Agent".
+
+#### Test your agent
+
+* Copy the workspace's **service id** from the Workspace -&gt; Context Panel -&gt; Info.
+* Paste it into the **Agent URI** field of Simulator -&gt; OpenAI Gym -&gt; Control panel.
+* Press the "Run" button and confirm the successful operation.
 
 ## maana-ai-goap
+
+A standard Maana Q service provides a GOAP-based AI Planner, [maana-ai-goap](https://github.com/maana-io/maana-ai-goap).
 
 ## Functions
 

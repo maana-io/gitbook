@@ -40,3 +40,5 @@ $$
 P( Action = Move | Location = atOther ) = 100\%
 $$
 
+For more information, please see "[Update rules for parameter estimation in Bayesian networks](https://arxiv.org/pdf/1302.1519.pdf)" and "[Parameter Estimation in Bayesian Networks](https://courses.cs.ut.ee/2009/bayesian-networks/orasmaa-liin-chapter-6.pdf)."
+
