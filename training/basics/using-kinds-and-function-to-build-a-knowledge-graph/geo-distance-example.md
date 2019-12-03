@@ -1,8 +1,4 @@
----
-description: Computational Knowledge Graph
----
-
-# Introduction to Kinds and Functions
+# Geo-distance Example
 
 **Use Case Description:**  
 
@@ -122,6 +118,4 @@ Pre requisites
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%208%20final%20test.gif)
 
 
-
-\*\*\*\*
 

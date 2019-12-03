@@ -62,6 +62,10 @@ To recreate and test this example using your own code, replace Steps 4-7 above w
 
 Step 4: Create a function called sayHelloCoded. Create a field called "name" of type STRING. Click save
 
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorldExtended_Step%204.gif)
+
+[MOV recording](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorldExtended_Step%204.mov)
+
 Step 5: Go to the Assistants panel and switch to Maana Lambda Assistant. In the Assistant Panel, enter the following code:
 
 ```text
@@ -71,7 +75,11 @@ return "hello " + name
 
 _Note: If you do not see it in the Assistant Panel, look for it in the search bar and drag it to the inventory. Dragging to the inventory will activate the Maana Lambda Assistant and it will be available in the Assistants Panel_ 
 
-_Step 6:  Test the function using  the Context Panel just like Step 7 above or use GraphiQL to query the function you have just created. To do this, select the Workspace. Switch to  GraphQL IDE in the Assistants. Enter in the following code in the left and run to see the results on the right._
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorldExtended_Step5.gif)
+
+[MOV Recording](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorldExtended_Step5.mov)
+
+Step 6:  Test the function using  the Context Panel just like Step 7 above or use GraphiQL to query the function you have just created. To do this, select the Workspace. Switch to  GraphQL IDE in the Assistants. Enter in the following code in the left and run to see the results on the right.
 
 ```text
 {
@@ -79,5 +87,7 @@ _Step 6:  Test the function using  the Context Panel just like Step 7 above or u
 }
 ```
 
+![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorldExtended_Step6.gif)
 
+[MOV Recording](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorldExtended_Step6.mov)
 

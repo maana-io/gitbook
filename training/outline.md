@@ -54,7 +54,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         Importing a microservice to a workspace</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/using-kinds-and-function-to-build-a-knowledge-graph.md">Introduction to Kinds and Functions</a>
+      <td style="text-align:left"><a href="basics/using-kinds-and-function-to-build-a-knowledge-graph/">Introduction to Kinds and Functions</a>
       </td>
       <td style="text-align:left">
         <p>Create Kinds and Functions</p>
