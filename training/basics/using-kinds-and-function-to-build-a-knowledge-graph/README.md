@@ -4,11 +4,19 @@ description: Computational Knowledge Graph
 
 # Introduction to Kinds and Functions
 
-## Kinds
+## [Kinds](https://app.gitbook.com/@maana/s/q/v/3.2.1/product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/~/settings/share)
 
 **Kinds** represent a specific interpretation of a concept which have a collection of fields used to describe their attributes. Ex: a kind called ‘City’ may consist of name, latitude, longitude 
 
+Understand more about kinds [here](https://app.gitbook.com/@maana/s/q/v/3.2.1/product-guide/getting-started-with-maana/building-knowledge-layers/kinds-and-functions).
+
+## [Functions](https://app.gitbook.com/@maana/s/q/~/drafts/-LvBRj60Zf4rtd8JrBE7/v/3.2.1/product-guide/reference-guide/technical-design-and-architecture/function-modeling/create-a-new-function/~/settings/share)
+
+**Functions**  are used to represent problem-questions in Q. Consider, "Given x, what is y?" Functions allow you to define x and y and break the problem down further \(decompose it\) into smaller pieces. The Q UI allows connecting Functions together in meaningful ways to form the computational portion of your solutions. Functions are representations of GraphQL queries and mutations.
+
+Understand more about functions [here](https://app.gitbook.com/@maana/s/q/v/3.2.1/product-guide/getting-started-with-maana/building-knowledge-layers/understanding-functions).
 
 
-\*\*\*\*
+
+
 
