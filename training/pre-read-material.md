@@ -8,19 +8,13 @@ description: >-
 
 Before you attend training, please go through this material \(**Estimated Time: 2 hr**\)
 
-### What is AI?
-
-\[Power point pending\]
-
 ### Graph 101
-
-\[Power point pending\]
 
 ![](../.gitbook/assets/image%20%2885%29.png)
 
 ![](../.gitbook/assets/image%20%2894%29.png)
 
-### Familiarize with Maana terminology
+### Familiarize with Maana concepts and terminology
 
 Print this one pager to aid in learning as you go through the training
 
