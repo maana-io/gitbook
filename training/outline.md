@@ -108,7 +108,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="methodology/problem-questions-and-decomposition.md">Problem Decomposition</a>
+      <td style="text-align:left"><a href="methodology/problem-questions-and-decomposition/">Problem Decomposition</a>
       </td>
       <td style="text-align:left">
         <p>Familiarize with Maana&apos;s methodology to decompose problems</p>
