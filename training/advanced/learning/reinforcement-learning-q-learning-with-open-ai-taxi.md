@@ -8,12 +8,14 @@ description: >-
 
 This example is based on [this blog post](https://tiewkh.github.io/blog/qlearning-openaitaxi/).
 
-```text
+## makeModel
+
+```javascript
 const { hyperparameters } = input
 
-const id =  input.id | new Date(),
-const actionSpace = input.actionSpace | 6
-const stateSpace = input.stateSpace | 500
+const id = input.id || new Date()
+const actionSpace = input.actionSpace || 6
+const stateSpace = input.stateSpace || 500
 const tableSize = actionSpace * stateSpace
 const table = new Float32Array(tableSize)
 
@@ -27,66 +29,77 @@ const model = {
   epsilon: hyperparameters.max_epsilon
 }
 
-return JSON.stringify(model)
+return model
 ```
 
-```text
-const { newState, lastReward, lastAction, isDone, context, hyperparameters } = input
+## learn
+
+```javascript
+const { newState, lastReward, lastAction, step, model, hyperparameters } = input
 const { gamma, learning_rate } = hyperparameters
-const { lastState, model } = context
+const { lastState } = model
 
 // Table helper functions
-const offset = (state, action) = state * model.actionSpace + action
-const tableGet = (state, action) = model.table[offset(state, action)]
-const tableSet = (state, action, val) = model.table[offset(state, action)] = val
+const offset = (state, action) => state * model.actionSpace + action
+const tableGet = (state, action) => model.table[offset(state, action)]
+const tableSet = (state, action, val) => model.table[offset(state, action)] = val
+
+// Select the max action value for a given state
+const maxAction = state => {
+  const start = state * model.actionSpace
+  const end = start + model.actionSpace 
+  return Math.max(...model.table.slice(start, end))
+}
 
 // Get the current Q table value for the previous state / action pair
 const curVal = tableGet(lastState[0], lastAction[0])
 
-// Select the max action value for a given state
-const maxAction = state = {
-  const start = state * model.actionSpace
-  const end = start + model.actionSpace 
-  return Math.max(model.table.slice(start, end))
-}
-
 // Calculate new value using Bellman's equation
-const newVal = curVal + learning_rate + (lastReward[0] + gamma * maxAction(newState) - curVal)
+const newVal = curVal + learning_rate * (lastReward[0] + gamma * maxAction(newState[0]) - curVal)
 
 // Update the Q table
-tableSet(state, action, newVal)
+tableSet(lastState[0], lastAction[0], newVal)
 
-return context
+// Update the model (i.e., our state)
+model.steps += 1 
+model.lastState = newState
+
+return model
 ```
 
-```text
+## decide
+
+```javascript
 const { state, model, hyperparameters } = input
-const { epsilon } = hyperparameters
+const { min_epsilon, max_epsilon, steps_per_episode, decay_rate, gamma } = hyperparameters
 
-const exp_exp_tradeoff = Math.random()
-
+// Index of max value of an array of numbers
 const argMax = a => a.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
 
-const maxAction = state = {
+// Index of action for a state with the largest Q-value
+const argMaxAction = state => {
   const start = state * model.actionSpace
   const end = start + model.actionSpace 
   return argMax(model.table.slice(start, end))
 }
 
+// --- Explore vs exploit tradeoff
+
+// adjust the rate at which we explore vs exploit
+const episode = (model.steps % steps_per_episode) === 0
+const epsilon = min_epsilon + (max_epsilon - min_epsilon) * Math.exp(-decay_rate*episode)
+
 let action
-if (exp_exp_tradeoff > hyperparameters.epsilon) {
-  action = maxAction(state[0])
+if (Math.random() > epsilon) {
+  action = argMaxAction(state[0]) // exploit
 } else {
-  action = Math.floor(Math.random() * model.actionSpace)
+  action = Math.floor(Math.random() * model.actionSpace) // explore
 }
 
 return {
   id: new Date(),
   action: [action],
-  context: JSON.serialize({
-    lastAction: [action],
-    model
-  })
+  context: JSON.stringify(model)
 }
 ```
 
