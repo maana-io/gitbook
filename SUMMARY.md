@@ -149,6 +149,7 @@
 * [Basics](training/basics/README.md)
   * [Orientation](training/basics/basic-orientation.md)
   * [Hello, world!](training/basics/hello-world.md)
+  * [Optional vs. Required](training/basics/optional-vs.-required.md)
   * [Introduction to Kinds and Functions](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/README.md)
     * [Geo-distance Example](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/geo-distance-example.md)
     * [Calculate Age using DOB Example](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/calculate-age-using-dob-example.md)
