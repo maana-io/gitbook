@@ -60,7 +60,7 @@ Print this one pager to aid in learning as you go through the training
 
 
 
-### GraphQL Basics
+### [GraphQL Basics](https://app.gitbook.com/@maana/s/q/~/drafts/-LvBiGsXaXQBWDeU0s6k/v/3.2.1/product-guide/reference-guide/graphql)
 
-\[Ask Team\]
+
 

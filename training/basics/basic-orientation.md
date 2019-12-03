@@ -8,7 +8,7 @@ description: Familiarize with Maana's User Interface and Perform Basic Operation
 
 {% file src="../../.gitbook/assets/orientation\_intro\_maana.pptx" caption="Maana Intro Deck" %}
 
-## Logging In and Out
+## [Logging In and Out](https://app.gitbook.com/@maana/s/q/~/drafts/-LvBWhKF8Lo7twZrssmJ/v/3.2.1/product-guide/getting-started-with-maana/logging-in-and-out)
 
 
 
