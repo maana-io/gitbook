@@ -6,13 +6,13 @@ description: >-
 
 # Logical Inference and AI Planning with GOAP
 
+## Overview
+
 [Goal-Oriented Action Planning \(GOAP\)](http://alumni.media.mit.edu/~jorkin/goap.html) is a simple, but effective AI planner that uses logical chaining to achieve goals by performing a sequence of actions that change the world state \(from preconditions to postconditions\).  States are generally boolean conditions and actions can have associated costs and the planner will find the cheapest sequence.
 
 For a nice explanation and example, see the blog post "[Goal Oriented Action Planning for a Smarter AI](https://gamedevelopment.tutsplus.com/tutorials/goal-oriented-action-planning-for-a-smarter-ai--cms-20793)."
 
-
-
-### Example
+## Introduction
 
 The best way to introduce the GOAP concepts is by way of an example.  We will use the [OpenAI Gym simulation](../../../product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/) environment [Taxi-v3](../../../product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/taxi-v3-environment.md).  Please familiarize yourself with the scenario, concepts, and goals of this simulation task.
 
@@ -69,13 +69,73 @@ You will need several things for this tutorial:
 * Paste it into the **Agent URI** field of Simulator -&gt; OpenAI Gym -&gt; Control panel.
 * Press the "Run" button and confirm the successful operation.
 
-## maana-ai-goap
+## Services
 
-A standard Maana Q service provides a GOAP-based AI Planner, [maana-ai-goap](https://github.com/maana-io/maana-ai-goap).
+### External: maana-ai-goap
 
-## Functions
+A standard Maana Q service provides a GOAP-based AI Planner written in Python, [maana-ai-goap](https://github.com/maana-io/maana-ai-goap).  This is a generic planning service exposing the following core schema:
 
-### taxiStateToGOAPScenario
+```javascript
+type State {
+  id: ID!
+  val: Boolean!
+}
+type Action {
+  id: ID!
+  pre: [State!]!
+  post: [State!]!
+}
+type Scenario {
+  id: ID!
+  goal: [State!]!
+  state: [State!]!
+  actions: [Action!]!
+}
+type Query {
+  plan(scenario: ScenarioInput!): [ID!]!
+}
+```
+
+As this is a generic algorithm usable by any domain, it is our responsibility to map our taxi environment to this model in order to use its planning functionality.  This is a common pattern, [Model Mapping](../../basics/design-patterns/model-mapping.md), found in Q solutions.
+
+### Workspace: GOAP Taxi-v3 Agent
+
+As with any Gym environment, the top-level Knowledge Graph has the familiar agent protocol:
+
+![Top-level Knowledge Graph for the GOAP Taxi-v3 Agent](../../../.gitbook/assets/goap-taxi-top-level-kg.png)
+
+#### onReset
+
+At the beginning of a simulation run, the simulator host will ask the simulator to reset itself for a new simulation.  In turn, the simulator will ask its agent\(s\) to prepare themselves for a new simulation, including some configuration information:
+
+* `stateSpace`: how many possible states \(500\)
+* `actionSpace`: how many possible actions \(6\)
+* `modelId`: the ID of the model \(if any\) to create/use
+* `isTraining`: indicates whether the simulation is training or performance
+
+This function is expected to return optional state it wishes to be returned to it during the simulation run, i.e., `context`.
+
+What state do we wish to maintain?  Do we have initial conditions that need to be established?  Do we know enough about our solution to answer these questions?
+
+#### onStep
+
+This is really the heart of the agent.  It takes the current observation:
+
+* `state`: corresponds to one of the 500 possible states the taxi environment can be in
+* `lastReward`: one of -1, -10, or 20 based on the appropriateness of the last action in the world in its state
+* `lastAction`: what action was previously taken by the agent
+* `step`: current step within the current episode
+* `context`: our internal state \(if any\) 
+
+It is expected to return the `Action` the simulator should perform along with any updated internal state, `context`, the agent needs in subsequent calls.
+
+![The onStep Function Graph](../../../.gitbook/assets/goap-on-step.png)
+
+The first thing to notice is our reliance on the Taxi-v3 Domain service.
+
+#### onDone
+
+#### taxiStateToGOAPScenario
 
 ```javascript
   const { taxiState } = input

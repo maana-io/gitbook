@@ -23,5 +23,5 @@ The Maana Knowledge Platform organizes industrial data and human expertise into 
 * An easy-to-use, visual authoring environment to support business decision makers, subject matter experts, and data scientists and developers, in the development of use cases
 * Integrated Azure services to accelerate development and deployment of models
 
-Learn more about the platform features [here](platform-features/).
+Learn more about the platform features [here](product-guide/platform-features/).
 

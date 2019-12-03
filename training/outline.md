@@ -174,7 +174,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         decision and learning functions?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/design-patterns.md">Design Patterns</a>
+      <td style="text-align:left"><a href="basics/design-patterns/">Design Patterns</a>
       </td>
       <td style="text-align:left">Learn how to recognize and capture common patterns, such as concept specialization,
         enumeration</td>
