@@ -71,7 +71,11 @@ There is a reward of -1 for each action and an additional reward of +20 for deli
 
 There are 500 discrete states since there are 25 taxi positions, 5 possible locations of the passenger \(including the case when the passenger is in the taxi\), and 4 destination locations.
 
-### Decoding the Domain
+### Representing the Domain
+
+To help interact with this world, we have created a workspace to provide various Kinds and Functions: "[Taxi-v3 Domain](https://lastknowngood.knowledge.maana.io/workspace/83159cfb-21b5-4609-9429-d4486afb1085)".
+
+![](../../../../../.gitbook/assets/taxi-v3-domain.png)
 
 ```javascript
 const ts = new Date().toISOString()
