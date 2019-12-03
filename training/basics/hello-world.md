@@ -1,48 +1,48 @@
 ---
-description: Build your first Maana Q case
+description: Build your first Maana Q service
 ---
 
 # Hello, world!
 
-**Case Description:**
+In this hands-on tutorial, you will learn the fundamental operations and user interface elements of building Maana Q solutions. 
 
-This is a hands-on example that will get you started with Maana Q. In this case, learn how to create your own sayHello function, add a function field, and import a service from the inventory to your workspace. Get Maana Q to greet you!
+### **Step-by-Step Instructions**
 
-Before you start, please refer to [Workspace](../../product-guide/getting-started-with-maana/workspaces/#what-is-a-workspace) if you do not what this is... 
+1. Create a new [Workspace](../../product-guide/getting-started-with-maana/workspaces/#what-is-a-workspace) from the dashboard or the Workspaces tab bar
 
-**Step by Step Instructions:**
+2. Rename the workspace to `<your name> Hello World`
 
-1. Once inside your newly created Workspace, create a Knowledge Graph\`
+3. Save the workspace settings
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step1.mov)
+4. Select the default `New Knowledge Graph`
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step1.gif)
-
-2. In the Knowledge Graph you created, create a function
+5. Create a new Function
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step2.mov)
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step2.gif)
 
-3. Name the function, "sayHello"
+6. Name the Function, `sayHello`
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step3.mov)
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step3.gif)
 
-4. Inside the function, create a field called "input" of type string and click save
+7. In the Function node, create a Field called `input` of type `STRING` and click save
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step4.mov)
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step4.gif)
 
-5. Expand the sayHello function. We will use a pre-existing service called "Greetings" to create a sub function. Go to the search bar and type in Greetings. Drag and drop "Greetings" to Inventory
+8. Expand the `sayHello` Function
+
+9. Search for the `Greetings` Service and drag-and-drop it to Workspace Inventory.
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step5.mov)
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step5.gif)
 
-6. Expand "Greetings" in Inventory to locate the "helloWorld" function. Drag and drop "helloWorld" from Inventory to the Canvas. Wire input and output. sayHello function is now complete.
+10. Expand "Greetings" in Inventory to locate the "helloWorld" function. Drag and drop "helloWorld" from Inventory to the Canvas. Wire input and output. sayHello function is now complete.
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorld_Step6.mov) 
 

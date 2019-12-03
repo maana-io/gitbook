@@ -56,5 +56,13 @@ Print this one pager to aid in learning as you go through the training
 
 ### [GraphQL Basics](https://app.gitbook.com/@maana/s/q/~/drafts/-LvBiGsXaXQBWDeU0s6k/v/3.2.1/product-guide/reference-guide/graphql)
 
+## Developer and Data Scientist Setup
+
+{% embed url="https://code.visualstudio.com/docs/remote/containers" %}
+
+{% embed url="https://code.visualstudio.com/docs/remote/remote-overview" %}
+
+
+
 
 
