@@ -1,8 +1,4 @@
----
-description: Execute functions efficiently using Maana Q
----
-
-# Working with Lists
+# Combining and Adding Example
 
 **Case Description :** While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. A group of multiple items is called a list or an array. In this exercise we take you through two examples that use Maana Q Scalars in built service to help demonstrate:  1. Combining \(concatenating\) two lists  2. Adding '2' to list a.  Let's get started!
 
@@ -86,30 +82,6 @@ description: Execute functions efficiently using Maana Q
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step10.mov)
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step10.gif)
-
-
-
-
-
-## 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

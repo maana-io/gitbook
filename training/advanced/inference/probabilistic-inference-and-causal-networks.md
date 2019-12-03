@@ -40,5 +40,23 @@ $$
 P( Action = Move | Location = atOther ) = 100\%
 $$
 
-For more information, please see "[Update rules for parameter estimation in Bayesian networks](https://arxiv.org/pdf/1302.1519.pdf)" and "[Parameter Estimation in Bayesian Networks](https://courses.cs.ut.ee/2009/bayesian-networks/orasmaa-liin-chapter-6.pdf)."
+What we are interested in is an update rule that we can apply to the network as our agents explores the state-action space.  There is good research and information on this problem in "[Update rules for parameter estimation in Bayesian networks](https://arxiv.org/pdf/1302.1519.pdf)" and "[Parameter Estimation in Bayesian Networks](https://courses.cs.ut.ee/2009/bayesian-networks/orasmaa-liin-chapter-6.pdf)."  The general update rule for the parameters is:
+
+![The general update rule for the parameters of a Bayesian network](../../../.gitbook/assets/screen-shot-2019-12-03-at-9.52.28-am.png)
+
+However due the specifics of our problem, each new evidence vector provides us with an observation of all variables \( e.g. the state and the action taken\). The update rule in this case becomes very simple, with equation 5 reducing to:
+
+$$
+P\hat(pa^j_i) = 1\ if\ yT\ provides\ evidence\ of\ the\ parents\ pa_i^j\ otherwise\ 0.
+$$
+
+and the top line for equation 4 becomes:
+
+$$
+theta^T = theta^{T-1} + eta * (  (1\ if\ yT\ provides\ evidence\ of\ z\ otherwise\ 0) - theta^{T-1})
+$$
+
+These equations are simple enough to implement in a lambda.
+
+The learning rate, eta, needs to be kept sufficiently small to ensure convergence, and will diverge when it is greater than 1.
 
