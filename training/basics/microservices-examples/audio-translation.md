@@ -2,7 +2,7 @@
 description: Learn how to compose functions from multiple microservices
 ---
 
-# Audio Translation
+# Video Translation
 
 **Use Case Description:**  
 

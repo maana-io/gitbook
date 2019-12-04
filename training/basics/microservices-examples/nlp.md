@@ -2,7 +2,7 @@
 description: Natural Language Processing
 ---
 
-# NLP
+# Natural Language Processing \(NLP\)
 
 **Use Case Description:**  
 

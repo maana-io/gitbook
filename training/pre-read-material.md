@@ -10,9 +10,9 @@ Before you attend training, please go through this material \(**Estimated Time: 
 
 ### Graph 101
 
-![](../.gitbook/assets/image%20%2885%29.png)
+![](../.gitbook/assets/image%20%2886%29.png)
 
-![](../.gitbook/assets/image%20%2894%29.png)
+![](../.gitbook/assets/image%20%2895%29.png)
 
 ### Familiarize with Maana concepts and terminology
 
