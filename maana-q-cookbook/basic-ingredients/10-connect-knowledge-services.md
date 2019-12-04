@@ -44,7 +44,7 @@ The goal here is to add the Service’s capabilities to my KG. For example, give
 
 From within the Admin Action Panel, select the "Test" button for a workspace as a service.
 
-![Admin Action Panel Test Service Schema Mode](../../.gitbook/assets/image%20%289%29.png)
+![Admin Action Panel Test Service Schema Mode](../../.gitbook/assets/image%20%2810%29.png)
 
 Copy the definition the service from the GraphQL SDL panel which one can then paste into the micro-service implementation.
 
