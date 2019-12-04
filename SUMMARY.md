@@ -128,7 +128,6 @@
     * [Model Mapping](training/basics/design-patterns/model-mapping.md)
 * [Methodology](training/methodology/README.md)
   * [Problem Decomposition](training/methodology/problem-questions-and-decomposition/README.md)
-    * [Car Advisor](training/methodology/problem-questions-and-decomposition/car-advisor.md)
     * [Car Selection Example](training/methodology/problem-questions-and-decomposition/car-selection-example.md)
   * [Use Case Selection](training/methodology/use-case-selection.md)
   * [Project Execution](training/methodology/kickoff-session.md)
