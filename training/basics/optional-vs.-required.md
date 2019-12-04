@@ -8,11 +8,11 @@
 
 1. Workspace named "Optional vs. Required" is created
 2. Knowledge Graph named "What Happens?" is created
-3. Optional vs. Required Service has been added to the Inventory Panel. _To do this, search for Optional Vs. Required in the search bar, scroll to Services &gt; Optional vs. Required. Drag this to Inventory Panel. You should be able to see a suite of functions that we will use for this exercise._
+3. Optional vs. Required Service has been added to the Inventory Panel. _To do this, search for Optional Vs. Required in the search bar, scroll to Services &gt; Optional vs. Required. Drag this to Inventory Panel. You should be able to see a suite of functions  as shown below  which we will use for this exercise._
 
 ![](../../.gitbook/assets/image%20%286%29.png)
 
-**Step by Step Instructions**
+**Step by Step Instructions:**
 
 **Step 1:** Create a function called optional with field named optional of `String` type. 
 
