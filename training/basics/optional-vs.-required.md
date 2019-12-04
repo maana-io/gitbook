@@ -50,7 +50,7 @@
 
 [MOV Recording](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_lessons/OptionalVsRequired/videos/OptionalVsRequired_Step6.mov)
 
-**Step 7**: Test each one of these functions by clicking on the desired function and clicking  the `Run` icon in the context panel. The results can be viewed in the Assistant Panel. _**Tip:** Make sure you have Function Result selected in the Assistant Panel to view the test results,_
+**Step 7**: Test each one of the top level functions by clicking on the desired function and clicking  the `Run` icon in the context panel. The results can be viewed in the Assistant Panel. _**Tip:** Make sure you have Function Result selected in the Assistant Panel to view the test results,_
 
 
 
