@@ -14,9 +14,13 @@
 
 **Step by Step Instructions**
 
-**Step 1:** Create a function called Optional with field named optional of `String` type. Expand this function using the four square arrows in the right.
+**Step 1:** Create a function called optional with field named optional of `String` type. 
 
-**Step 2:** In the Search bar, look for 
+**Step 2:** In the same Workspace, create a function called optionalRequired with field named optional of `String` type. make the output of type `String` mandatory by clicking on the !
+
+Step 3: Create another fucnti
+
+Expand the Optional function using the four square arrows in the right. From the Inventory Panel, drag the function called "Optional" to the canvas. Wire Inputs and Outputs
 
 \*\*\*\*
 
