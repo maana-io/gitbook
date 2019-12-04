@@ -56,7 +56,7 @@ In this hands-on tutorial, you will learn the fundamental operations and user in
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorld_Step7.gif)
 
-
+## Custom Function using a JavaScript Lambda
 
 To recreate and test this example using your own code, replace Steps 4-7 above with the following:
 
@@ -90,4 +90,8 @@ Step 6:  Test the function using  the Context Panel just like Step 7 above or us
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_gifs/HelloWorldExtended_Step6.gif)
 
 [MOV Recording](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/HelloWorld_movc/HelloWorldExtended_Step6.mov)
+
+## Workspaces Are Services
+
+In the first exercise, you searched for and composed the `Greeting` service in your workspace.  This service is, in fact, just another workspace implemented just like you implemented yours.  Every workspace is itself really just a cloud microservice being hosted by the Maana Q's [Computational Knowledge Graph.]()
 

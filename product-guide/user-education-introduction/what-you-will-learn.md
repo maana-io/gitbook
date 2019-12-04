@@ -20,7 +20,7 @@ By working recursively through the problem-question decomposition process, you w
 
 ## After reading this User Education documentation, you will be
 
-* Familiar with the [GraphQL concepts](../reference-guide/graphql/) underlying Maana’s platform;
+* Familiar with the [GraphQL concepts](../graphql/) underlying Maana’s platform;
 * Able to implement the [solutions development process](../getting-started-with-maana/building-knowledge-layers/) as intended for your role;
 * Able to use both UI and Programmatic methods of engaging with the Platform features;
 * Able to [create Knowledge Microservices](../getting-started-with-maana/building-knowledge-layers/about-knowledge-microservices.md) that interact with and enhance your solution’s Knowledge Graph;

@@ -134,5 +134,3 @@ One popular framework in Systems Engineering is: C - Conceive, D - Design, I - I
       1. The relationship between an Employer and Employee is one of Employment
       2. It is insufficient to model this situation as Employer has Employees \(and the reciprocal Employee has Employers\), since we likely wish to capture job title/position, start/end dates, department, manager, salary, etc.
 
-\*\*\*\*
-

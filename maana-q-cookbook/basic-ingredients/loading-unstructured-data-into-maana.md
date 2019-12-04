@@ -28,5 +28,5 @@ When unstructured data files are loaded, there are additional bots/microservices
   * Values
   * Facts
 
-For more information on Entity Extraction, visit the [Entity Extractor service page](../../product-guide/reference-guide/q-platform-and-microservices/maana-platform-services/entity-extractor.md) or [tutorial](../advanced-recipes/entity-extractor-tutorial.md). Also, check out the [Fact Recognition service page](../../product-guide/reference-guide/q-platform-and-microservices/maana-platform-services/fact-recognition-and-fr-bot.md) and  [tutorial](../advanced-recipes/fact-recognition-tutorials/)
+For more information on Entity Extraction, visit the [Entity Extractor service page]() or [tutorial](../advanced-recipes/entity-extractor-tutorial.md). Also, check out the [Fact Recognition service page]() and  [tutorial](../advanced-recipes/fact-recognition-tutorials/)
 

@@ -32,7 +32,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/basic-orientation.md">Orientation</a>
+      <td style="text-align:left"><a href>Orientation</a>
       </td>
       <td style="text-align:left">
         <p>Basic product orientation</p>

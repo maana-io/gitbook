@@ -2,7 +2,7 @@
 
 ## About this Tutorial <a id="about-this-tutorial"></a>
 
-This tutorial specifically reviews the major uses of Fact Recognition Service. This services is a "[Logic Service](../../../product-guide/reference-guide/q-platform-and-microservices/service-types/logic-services.md)," which means that it has no interaction with platform storage or Kinds; it only deals with explicit text inputs \(as opposed to looking up platform Kinds by their ID and performing fact extraction on the corresponding fields. For this functionality please see the [next tutorial](creating-a-fact-recognition-bot.md)\). Therefore, while fact recognition is not a stand-alone service, it can be an important part of an information extraction pipeline. 
+This tutorial specifically reviews the major uses of Fact Recognition Service. This services is a "[Logic Service]()," which means that it has no interaction with platform storage or Kinds; it only deals with explicit text inputs \(as opposed to looking up platform Kinds by their ID and performing fact extraction on the corresponding fields. For this functionality please see the [next tutorial](creating-a-fact-recognition-bot.md)\). Therefore, while fact recognition is not a stand-alone service, it can be an important part of an information extraction pipeline. 
 
 The various queries can be used as part of function composition, so the output of one query can be used as the input of another. The examples below show basic use inside the function graph. In each case:
 
