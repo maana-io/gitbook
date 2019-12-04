@@ -16,9 +16,9 @@ Before you attend training, please go through this material \(**Estimated Time: 
 
 \[Power point pending\]
 
-![](../.gitbook/assets/image%20%2886%29.png)
+![](../.gitbook/assets/image%20%2888%29.png)
 
-![](../.gitbook/assets/image%20%2895%29.png)
+![](../.gitbook/assets/image%20%2897%29.png)
 
 ### Familiarize with Maana terminology
 

@@ -23,13 +23,13 @@ The UI default search has a limited timeframe that can be changed with the selec
 
 Viewing messages by log level can be cumbersome, in that log level is represented by a number rather than name \(i.e.ERROR/WARN/INFO\).This number may not be consistent across services due to different logging frameworks. It is possible to search based on log level. For example 'level: 3' as shown here:
 
-![Example &apos;level 3&apos;](../../../.gitbook/assets/image%20%2817%29.png)
+![Example &apos;level 3&apos;](../../../.gitbook/assets/image%20%2818%29.png)
 
 ### Search Tag \(Service Name\) <a id="search-tag-service-name"></a>
 
 All services include a tag that can be used as a filter. For example tag:maana−admin as shown here:
 
-![Example Tag](../../../.gitbook/assets/image%20%2870%29.png)
+![Example Tag](../../../.gitbook/assets/image%20%2871%29.png)
 
 ## Reporting Issues <a id="reporting-issues"></a>
 
