@@ -4,9 +4,15 @@ description: >-
   Simulator framework.
 ---
 
-# Reinforcement Learning: Q-Learning with Open AI Taxi
+# Reinforcement Learning: Q-Learning
+
+## Overview
 
 This example is based on [this blog post](https://tiewkh.github.io/blog/qlearning-openaitaxi/).
+
+## Introduction
+
+## Setup
 
 ## makeModel
 

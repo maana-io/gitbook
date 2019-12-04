@@ -6,6 +6,12 @@ description: >-
 
 # Probabilistic Inference and Causal Networks
 
+## Overview
+
+## Introduction
+
+## Setup
+
 ### Initial Network
 
 The structure of our taxicab network might initially look something like this. This says that `Location`, `hasPassenger` and `Action` are all discrete distributions, and that we believe _a priori_ that probabilities location and action may be conditional upon the value fo `hasPassenger`.

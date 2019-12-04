@@ -53,17 +53,17 @@ Let's implement this scenario using the Maana Q AI Simulator framework.
 
 You will need several things for this tutorial:
 
-#### Install the AI Simulator Framework
+### Install the AI Simulator Framework
 
 * Please take a few minutes to familiarize yourself with the purpose and operation of the [Maana Q AI Simulator framework](../../../product-guide/reference-guide/ai-simulator-framework/).
 * Follow the installation instructions and confirm that you can login to the Q instance.
 
-#### Clone the GOAP Agent Workspace
+### Clone the GOAP Agent Workspace
 
 * Login to Q and find and clone the "**GOAP Taxi-v3 Agent**" workspace.
 * Rename it to "&lt;your name&gt; GOAP Taxi-v3 Agent".
 
-#### Test your agent
+### Test your agent
 
 * Copy the workspace's **service id** from the Workspace -&gt; Context Panel -&gt; Info.
 * Paste it into the **Agent URI** field of Simulator -&gt; OpenAI Gym -&gt; Control panel.

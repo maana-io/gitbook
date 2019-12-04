@@ -131,6 +131,7 @@
     * [Unions](training/basics/design-patterns/unions.md)
     * [Model Mapping](training/basics/design-patterns/model-mapping.md)
 * [Methodology](training/methodology/README.md)
+  * [Solution Project Lifecycle](training/methodology/solution-project-lifecycle.md)
   * [Problem Decomposition](training/methodology/problem-questions-and-decomposition/README.md)
     * [Car Selection Example](training/methodology/problem-questions-and-decomposition/car-selection-example.md)
   * [Use Case Selection](training/methodology/use-case-selection.md)
@@ -145,8 +146,8 @@
     * [Learning as part of ORDL](training/advanced/learning/part-1-learning-context-in-ordl.md)
     * [Passive Learning](training/advanced/learning/part-2-passive-learning.md)
     * [Active Learning](training/advanced/learning/part-3-active-learning.md)
-    * [Reinforcement Learning: Q-Learning with Open AI Taxi](training/advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md)
-    * [Reinforcement Learning: Deep Q-Network \(DQN\) with Open AI Taxi](training/advanced/learning/reinforcement-learning-deep-q-network-dqn-with-open-ai-taxi.md)
+    * [Reinforcement Learning: Q-Learning](training/advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md)
+    * [Reinforcement Learning: Deep Q-Network \(DQN\)](training/advanced/learning/reinforcement-learning-deep-q-network-dqn-with-open-ai-taxi.md)
     * [Challenge](training/advanced/learning/challenge.md)
 
 ## MAANA Q COOKBOOK
