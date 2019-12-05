@@ -28,6 +28,8 @@ MAP = [
 ]
 ```
 
+### Locations
+
 Player location is encoded by:
 
 ```text
