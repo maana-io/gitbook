@@ -1,6 +1,6 @@
 # About the Cookbook
 
-In the pages that following you will find the following series of exercises that aid you in getting more versed in practically applying more intermediate and advanced actions on your own Maana Q instance.
+In the pages that follow you will find the following series of exercises that aid you in getting more versed in practically applying more intermediate and advanced actions on your own Maana Q instance.
 
 ### Basic Ingredients
 

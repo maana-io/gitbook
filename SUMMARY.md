@@ -59,7 +59,7 @@
   * [System Information Page](product-guide/getting-started-with-maana/system-information-page.md)
 * [Reference Guide](product-guide/reference-guide/README.md)
   * [Platform Architecture and Capabilities](product-guide/reference-guide/technical-design-and-architecture/README.md)
-    * [Domain Modeling with Kinds](product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/README.md)
+    * [Knowledge Graphs](product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/README.md)
       * [Kind Queries](product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/kind-queries.md)
       * [Kind Approaches](product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/kind-approaches.md)
       * [Loading Data into Maana](product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/loading-data-into-maana.md)
@@ -67,7 +67,7 @@
       * [Editing Existing Kinds](product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/editing-existing-kinds.md)
       * [Visualizing Kinds](product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/visualizing-kinds.md)
       * [Adding Interpreted Kinds to the Knowledge Graph](product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/adding-interpreted-kinds-to-the-knowledge-graph.md)
-    * [Function Modeling](product-guide/reference-guide/technical-design-and-architecture/function-modeling/README.md)
+    * [Function Graphs](product-guide/reference-guide/technical-design-and-architecture/function-modeling/README.md)
       * [Create a New Function](product-guide/reference-guide/technical-design-and-architecture/function-modeling/create-a-new-function.md)
       * [Implementation of a Function](product-guide/reference-guide/technical-design-and-architecture/function-modeling/implementation-of-a-function.md)
       * [Complex Function Composition](product-guide/reference-guide/technical-design-and-architecture/function-modeling/complex-function-composition.md)
@@ -105,6 +105,12 @@
     * [Knowledge Microservices](product-guide/graphql/graphql-schema-language/knowledge-microservices.md)
     * [Graph Mutations](product-guide/graphql/graphql-schema-language/graph-mutations.md)
 * [Glossary](product-guide/glossary.md)
+
+## Catalog
+
+* [Assistants](catalog/assistants.md)
+* [Bots](catalog/bots.md)
+* [Services](catalog/services.md)
 
 ## Training
 

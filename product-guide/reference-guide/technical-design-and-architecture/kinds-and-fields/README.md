@@ -1,4 +1,4 @@
-# Domain Modeling with Kinds
+# Knowledge Graphs
 
 Read an overview of Maana kinds:[Maana Kinds/product-guide/knowledge-portal-user-guide/maana-kinds](https://maana-ue.gitbook.io/product/~/drafts/-LZph7cZfruBt7FBiKE8/primary/product-guide/knowledge-portal-user-guide/maana-kinds)
 

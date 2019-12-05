@@ -36,7 +36,7 @@ Knowledge is the answer to a question
 
 ## Lesson Goals
 
-* Create a **Workspace** using the "Intelligence Designer" \(aka _portal_\) - workspaces are the visual, interactive representation of microservices
+* Create a [**Workspace**](../../../product-guide/getting-started-with-maana/workspaces/) using the [Intelligence Designer](../../../product-guide/platform-features/knowledge-portal/) \(aka _portal_\) - workspaces are the visual, interactive representation of microservices
 * Create a Function that takes some text as input and produces a custom greeting using an **imported service**
 * Create a custom implementation of the Function using a JavaScript **lambda**
 * Use your service as a cloud-based GraphQL endpoint

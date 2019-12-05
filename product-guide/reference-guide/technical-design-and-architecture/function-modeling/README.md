@@ -1,4 +1,4 @@
-# Function Modeling
+# Function Graphs
 
 \[TBD\] @Bryan 
 
