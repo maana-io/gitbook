@@ -1,53 +1,51 @@
 # Car Selection Example
 
-**Case Description:**
-
 This is a hands-on example that will teach principle of Top Down approach. In this case, learn how to create and application that will rank car makers based on reliability and brand image.
 
-**Step by Step Instructions:**
+### **Step-by-Step Instructions**
 
 **Step 1.** Create a new workspace. 
 
-Search for following kinds and bring them onto your workspace:
+Search for following Kinds and bring them onto your workspace:
 
-* Vehicle
-* ScoredVehicle
-* BrandWords
+* **`Vehicle`**
+* **`ScoredVehicle`**
+* **`BrandWords`**
 
-Note: Vehicle and BranWords kinds are already preloaded with the data
+Note: Vehicle and BranWords Kinds are already preloaded with the data
 
-* [ ] Explore content of Vehicle kind
-* [ ] Explore content of BrandWords kind
+* [ ] Explore content of **`Vehicle`** Kind
+* [ ] Explore content of **`BrandWords`** Kind
 
 **Step 2.** Create a top-level problem question
 
 Say we have a list of carmakers and we want to know what are the top 5 best-ranked cars are. 
 
-Our top level question will be **givenCarMakersWhatAreTheTopNBestRankedCars**
+Our top level question will be **`givenCarMakersWhatAreTheTopNBestRankedCars`**
 
-By phrasing it this way its is clear what the inputs and the outputs should be for this function. \(E.g. inputs are carMakers and topN and the output is RankedCars\)
+By phrasing it this way its is clear what the inputs and the outputs should be for this function. \(E.g. inputs are `carMakers` and `TopN` `Best` and the output is `RankedCars`\)
 
-Add following fields to **givenCarMakersWhatAreTheTopNBestRankedCars** function : 
+Add following fields to **`givenCarMakersWhatAreTheTopNBestRankedCars`** function : 
 
-1. **carMaker** and specify a value to be a list of type Vehicle, 
-2. **topN** and specify the value to be required parameter and of type INT
-3. Specify the output to be a list of type **ScoreVehicle**
+1. **`carMaker`** and specify a value to be a list of type Vehicle, 
+2. **`topN`** and specify the value to be required parameter and of type INT
+3. Specify the output to be a list of type **`ScoreVehicle`**
 
-Go inside of **givenCarMakersWhatAreTheTopNBestRankedCars** function
+Go inside of **`givenCarMakersWhatAreTheTopNBestRankedCars`** function
 
-To know what are the topNbestRankedCars we need to know what is the score for each car maker. And then rank the desired amount of cars \( topN\) based on that score.
+To know what are the `TopNBestRankedCars` we need to know what is the score for each car maker. And then rank the desired amount of cars \( topN\) based on that score.
 
-Step 3. Create function **scoreVehicle**:
+Step 3. Create function **`scoreVehicle`**:
 
-* Input parameters: **vehicle** of type Vehicle. Required parameter
-* Output: **ScoreVehicle**. Required parameter
+* Input parameters: **`vehicle`** of type Vehicle. Required parameter
+* Output: **`ScoreVehicle`**. Required parameter
 
 Let's go inside of **scoreVehicle** function.  To calculate the score for each vehicle brand we will be using two scores: recall score and Brand Image score of that car maker from the news.
 
 Let's create 2 functions to do exactly that:
 
 1. Create function **getRecallScore**
-   1. Input: **Vehicle**  of type vehicle kind. Required parameter
+   1. Input: **Vehicle**  of type vehicle Kind. Required parameter
    2. Output: float. Required parameter
 2. Create function **getBrandImageScore**
 
@@ -58,19 +56,19 @@ To calculate the Recall score we need a number of recalls and a number of sales.
 Let's create functions for that:
 
 1. Create function **getNumberOfRecalls**
-   1. Input: **Vehicle** of type vehicle kind. Required parameter
+   1. Input: **Vehicle** of type vehicle Kind. Required parameter
    2. Output: INT. Required parameter
 2. Create function **getVehicleSales**
-   1. Input: **Vehicle** of type vehicle kind. Required parameter
+   1. Input: **Vehicle** of type vehicle Kind. Required parameter
    2. Output: INT. Required parameter
 
 Once we know those two scores  we then need to normalize them by sales and by scale. 
 
 Let's create those two functions as well.
 
-1. Create function **normalizerecallScoreBySales**
+1. Create function **normalizeRecallScoreBySales**
    1. Input :
-      1. **numberofRecalls**. Type: INT Required parameter
+      1. **numberOfRecalls**. Type: INT Required parameter
       2. **vehicleSales**. Type: INT Required parameter
    2. Output: Float. Required parameter
 2. Create function **normalizeRecallScoreByScale**
@@ -81,9 +79,9 @@ Step 4. Wire those functions up as:
 
 * Input: Vehicle -&gt; **getNumberOfRecalls**: input
 * Input: Vehicle -&gt; **getVehicleSales**: input
-* **getNumberOfRecalls**: output -&gt; **normalizerecallScoreBySales**: input **numberofRecalls**
-* **getVehicleSales**: output -&gt; **normalizerecallScoreBySales**: input **vehicleSales**
-* **normalizerecallScoreBySales**: output -&gt; **normalizeRecallScoreByScale**: input **score**
+* **getNumberOfRecalls**: output -&gt; **normalizeRecallScoreBySales**: input **numberOfRecalls**
+* **getVehicleSales**: output -&gt; **normalizeRecallScoreBySales**: input **vehicleSales**
+* **normalizeRecallScoreBySales**: output -&gt; **normalizeRecallScoreByScale**: input **score**
 * **normalizeRecallScoreByScale**: output -&gt; Output 
 
 Now that the functions are wired, let's go inside of getNumberOfRecalls
@@ -118,7 +116,7 @@ Now we need to decompose **getBrandImageScore** function. Let's go inside this f
 
 Let's create function: **EntityAnalysis**
 
-* Input: **Vehicle** of type vehicle kind. Required parameter
+* Input: **Vehicle** of type vehicle Kind. Required parameter
 * Output: Float. Required parameter
 
 Lets wire input and output.
@@ -133,7 +131,7 @@ First, let's extract brand names.
 
 For that create function **getVehicleMake**
 
-* Input: **Vehicle** of type vehicle kind. Required parameter
+* Input: **Vehicle** of type vehicle Kind. Required parameter
 * Output: String, required parameter
 
 Let's go inside of this function
@@ -165,7 +163,7 @@ Let's extract positive and negative words:
 
 For that create function **getPositiveWords**
 
-* Input: **allKeyWords** of type BrandWords kind, list, Required parameter
+* Input: **allKeyWords** of type BrandWords Kind, list, Required parameter
 * Output: String, list, required parameter
 
 1. Let's go inside of this function
@@ -175,7 +173,7 @@ For that create function **getPositiveWords**
 
 Create function **getNegativeWords**
 
-* Input: **allKeyWords** of type BrandWords kind, list, Required parameter
+* Input: **allKeyWords** of type BrandWords Kind, list, Required parameter
 * Output: String, list, required parameter
 
 1. Let's go inside of this function
@@ -237,7 +235,7 @@ Create function **updateCompoundScore**
   * **vehicle** of type vehicle, Required parameter
   * **recallScore** of type float, Required parameter
   * **brandImageScore** of type float, Required parameter
-* Output: of type **ScoredVehicle** kind, required parameter
+* Output: of type **ScoredVehicle** Kind, required parameter
 
 Let's go inside of this function
 
@@ -256,7 +254,7 @@ Create function **rankCarsByCompoundScores**
 * Input: 
   * **scoredCars** of type ScoredVehicle, Required parameter
   * **nCars** of type int
-* Output: of type **ScoredVehicle** kind, list, required parameter
+* Output: of type **ScoredVehicle** Kind, list, required parameter
 
 1. Let's go inside this function
 2. Let's search for **rankCarsByCompoundScore** service and bring it first to inventory and then onto the workspace.

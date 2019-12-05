@@ -1,2 +1,0 @@
-# Maana Organization Example
-

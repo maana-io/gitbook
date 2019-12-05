@@ -32,18 +32,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href>Orientation</a>
-      </td>
-      <td style="text-align:left">
-        <p>Basic product orientation</p>
-        <p></p>
-        <p><em>This lesson will teach you about Maana, it&apos;s terminology and how to navigate through the software platform</em>
-        </p>
-      </td>
-      <td style="text-align:left">&#x2022; Q Familiarization &#x2022; Logging in, creating a workspace</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="basics/hello-world.md">Hello, World</a>!</td>
+      <td style="text-align:left"><a href="basics/hello-world/">Hello, World</a>!</td>
       <td style="text-align:left">
         <p>Introduction to Microservices</p>
         <p></p>

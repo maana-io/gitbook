@@ -15,13 +15,13 @@ Pre requisites
 **Step 1:** Create Kinds  
 
 1. Above the canvas click on the create kind button, a blue box will appear 
-2. Create a GeoCoordinate kind with properties; 
-   * lat  FLOAT 
-   * long FLOAT 
+2. Create a `GeoCoordinate` kind with properties; 
+   * lat  `FLOAT` 
+   * long `FLOAT` 
 3. Repeat to create a Distance kind with properties; 
 
-   * value FLOAT 
-   * distanceUnit STRING 
+   * value `FLOAT` 
+   * distanceUnit `STRING` 
 
    [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step1_addKinds.mov)
 
@@ -32,7 +32,7 @@ Pre requisites
 **Step 2:** Create “top level” function 
 
 1. Above the canvas click on the create function button, a green function box will appear.  
-2. Give the function a name e.g “distanceBetweenCoordinates”.  
+2. Give the function a name e.g “`distanceBetweenCoordinate`s”.  
 3. Add an inputs by clicking on the line below the “field” heading  
    * origin GEOCOORDINATE 
    * target GEOCOORDINATE 
@@ -43,10 +43,10 @@ Pre requisites
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%202%20top%20level%20func.gif)
 
-**Step 3:** Create Function Calculation for distanceBetweenCoordinates  
+**Step 3:** Create Function Calculation for `distanceBetweenCoordinates`  
 
 1. Click on the 4 arrows located in the top right hand corner of the function box. This will take us to a canvas where we can begin to “wire up” our function 
-2. From the inventory locate the distanceBetweeenCoordinates Function from the lambda-distance-demo service 
+2. From the inventory locate the `distanceBetweeenCoordinates` Function from the lambda-distance-demo service 
 3. Drag the function onto the canvas 
 4. Connect the inputs and output 
 
@@ -54,7 +54,7 @@ Pre requisites
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%203%20-%20wire%20up%20func.gif)
 
-**Step 4:** Test the distanceBetweenCoordinates Function 
+**Step 4:** Test the `distanceBetweenCoordinates` Function 
 
 1. Click on Top Level PQ and select the distanceBetweenGeoCoordinates Function 
 2. In the right hand panel add an origin and target \(be sure to add the ID field\) 
@@ -65,12 +65,12 @@ Pre requisites
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%204%20test%20distance%20calc.gif)
 
-**Step 5:** Add distanceBetweenAddresses Function 
+**Step 5:** Add `distanceBetweenAddresses` Function 
 
 1. Click on Top Level PQ and add the function, distanceBetweenAddresses 
 2. Inputs:  
-   * origin STRING 
-   * target STRING 
+   * origin `STRING` 
+   * target `STRING` 
 3. Output: 
    * Distance  
 
@@ -78,14 +78,14 @@ Pre requisites
 
 ![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/gifs%205/lesson%202%20step%205%20distance%20by%20addess%20func.gif)
 
-**Step 6:** Add getGeoCoordinatesByName function to distanceBetweenAddresses Function 
+**Step 6:** Add `getGeoCoordinatesByName` function to distanceBetweenAddresses Function 
 
-1. Open the distanceBetweenAddresses function and add a new function, getGeoCoordinatesByName 
+1. Open the `distanceBetweenAddresse`s function and add a new function, `getGeoCoordinatesByName` 
 2. Inputs: 
-   * name STRING  
+   * name `STRING`  
 3. Output: 
-   * GEOCOORDINATE 
-4. Open this function and add getGeoCoordinatesByName function from the lambda-distance-demo service 
+   * `GEOCOORDINATE` 
+4. Open this function and add `getGeoCoordinatesByName` function from the lambda-distance-demo service 
 5. Wire the inputs and output 
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/IntroToKinds/videos%202/IntroToKindsAndFunctions_step6_createFirstStepFunction.mov)
