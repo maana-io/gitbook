@@ -108,7 +108,8 @@
 
 ## Catalog
 
-* [Assistants](catalog/assistants.md)
+* [Assistants](catalog/assistants/README.md)
+  * [Lambda Assistant](catalog/assistants/lambda-assistant.md)
 * [Bots](catalog/bots.md)
 * [Services](catalog/services.md)
 
