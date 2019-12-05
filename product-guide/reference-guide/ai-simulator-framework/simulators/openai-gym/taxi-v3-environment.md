@@ -39,8 +39,6 @@ Passenger locations:
     - 4: in taxi
 ```
 
-### Actions
-
 The destinations are the same colors:
 
 ```text
@@ -50,6 +48,8 @@ Destinations:
     - 2: Y(ellow)
     - 3: B(lue)
 ```
+
+### Actions
 
 There are six discrete, deterministic actions:
 
