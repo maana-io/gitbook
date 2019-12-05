@@ -82,11 +82,13 @@ Types can be _primitive_, computer data types, called **scalars** \(denoted in a
 * **DATE/DATETIME/TIME**: temporal quantities in ISO standard form
 * **JSON**: a common hierarchical [data format](https://www.json.org)
 
-**Step 7a.** Create an input field called `name` of type `STRING` and click save
+**Step 7a.** Create an input field called `name` of type `STRING!` \(required\)
 
-{% hint style="warning" %}
-**TODO: screenshot**
-{% endhint %}
+**Step 7b.** Ensure the return type is `STRING!` \(required\)
+
+**Step 7c.** Click **Save**
+
+![](../../../.gitbook/assets/type-signature.png)
 
 Nodes on the Canvas can be in one of several states:
 
@@ -95,13 +97,15 @@ Nodes on the Canvas can be in one of several states:
 
 A node can be expanded or collapsed by clicking the up/down arrow button beneath the title bar.  Try it now.
 
-{% hint style="warning" %}
-**TODO: screenshot**
-{% endhint %}
+To enter node editing, double-click anywhere on the node or use the _pen_ button on the title bar.  Try it now.
 
-**Step 8.** Expand the `sayHello` Function
+**Step 8.** Implement the `sayHello` Function
 
-_Expanding_ a Function means to edit its **composition**. 
+Functions _do_ things - they transform data, calculate numbers, predict outcomes, classify text, etc.  A function, therefore, must have an _implementation_.  We can give our new function an implementation by **composing** \(i.e., combining\) it with an existing function provided by another service.  We compose functions on **Function Graphs** that constitute the function _body._
+
+Enter your function's Function Graph using the _compose_ button in the title bar of the function node.
+
+![](../../../.gitbook/assets/create-fg%20%281%29.png)
 
 {% hint style="warning" %}
 **TODO: screenshot**

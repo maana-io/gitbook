@@ -14,9 +14,10 @@ Step 4: Create a function called sayHelloCoded. Create a field called "name" of 
 
 Step 5: Go to the Assistants panel and switch to Maana Lambda Assistant. In the Assistant Panel, enter the following code:
 
-```text
-const {name} = input
-return "hello " + name
+```javascript
+const { name } = input
+
+return `Hello, ${name}`
 ```
 
 \_\_
