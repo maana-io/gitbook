@@ -10,7 +10,7 @@ In Systems Engineering, the most generic definition of a System is simply: _'the
 
 Similarly, Maana's Computational Knowledge Graph \(CKG\) Technology is conducive for representing highly complex 'systems' with an orientation towards problem-solving and improved decision making. Taking this comparison further, we identify 4 areas of overlap between Systems Engineering and CKG Technology. These are summarized in the figure below.
 
-![](../../../.gitbook/assets/image%20%28132%29.png)
+![](../../../.gitbook/assets/image%20%28133%29.png)
 
 ### **Top-Down Approach**
 
