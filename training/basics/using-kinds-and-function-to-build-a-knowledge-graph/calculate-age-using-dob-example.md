@@ -1,4 +1,4 @@
-# People
+# Your First Kind
 
 In this lesson, you will create a custom Kind, `Person` and add several properties to it.  You will use then the automatically generated boilerplate function to create a few people instances.
 

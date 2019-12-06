@@ -2,7 +2,7 @@
 description: A journey of a thousand miles begins with a single step
 ---
 
-# Creating Your First Service
+# Your First Service
 
 ## **Step-by-Step Instructions**
 

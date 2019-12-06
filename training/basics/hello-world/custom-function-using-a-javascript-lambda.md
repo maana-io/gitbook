@@ -1,4 +1,4 @@
-# Custom Function using a JavaScript Lambda
+# Custom Lambda Function
 
 It is often desirable to use a small code snippet to implement a function, rather than use function composition or building and deploying a full-blown Java, .NET, or other Dockerized microservice.  Maana enables you to attach short code snippets to a function for execution through the use of [**Lambda** functions](https://en.wikipedia.org/wiki/Anonymous_function).
 

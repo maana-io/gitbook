@@ -1,8 +1,10 @@
-# Age
+# Functions on Kinds
 
 Using functions with Kind instances is not much different from using them with scalars.  In this lesson, you will create a lambda function to calculate the age of a Person from their date of birth.
 
 ## Step-by-Step Instructions
+
+This lesson continues from the [Your First Kind](calculate-age-using-dob-example.md) lesson, using the same workspace.
 
 **Step 1.** Create a new function `age`.
 
