@@ -1,8 +1,6 @@
-# Geo-distance Example
+# Geo-Distance
 
-**Use Case Description:**  
-
-The aim of this lesson is to introduce Kinds and Functions by creating a means by which to calculate the distance between to Geo Coordinates.  Additionally we will extend the example to accommodate names of places.  In order to carry out the computations we will leverage a service already part of our Maana Q deployment.   
+In this lesson, we will create our first Kind: GeoCoordinate.  The aim of this lesson is to introduce Kinds and Functions by creating a means by which to calculate the distance between to Geo Coordinates.  Additionally we will extend the example to accommodate names of places.  In order to carry out the computations we will leverage a service already part of our Maana Q deployment.   
 
 **Step by Step Instructions**
 

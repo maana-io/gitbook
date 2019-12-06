@@ -4,11 +4,19 @@ description: The essence of the Computational Knowledge Graph
 
 # Introduction to Kinds and Functions
 
-## [Kinds](https://app.gitbook.com/@maana/s/q/v/3.2.1/product-guide/reference-guide/technical-design-and-architecture/kinds-and-fields/~/settings/share)
+## Overview
 
-**Kinds** represent a specific interpretation of a concept which have a collection of fields used to describe their attributes. Ex: a kind called ‘City’ may consist of name, latitude, longitude 
+Representing and reasoning about knowledge is a big, well-researched [topic](https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning).  Maana Q has a specific approach that takes brings together **property graphs** \(i.e., [TBox](https://en.wikipedia.org/wiki/Tbox)\), with **instance graphs** \(i.e., [ABox](https://en.wikipedia.org/wiki/Abox)\), with arbitrary computations \(calculations, transformations, inferences, simulations, etc.\) in a distributed, programming language and technology neutral environment.
 
-Understand more about kinds [here](https://app.gitbook.com/@maana/s/q/v/3.2.1/product-guide/getting-started-with-maana/building-knowledge-layers/kinds-and-functions).
+## Introduction
+
+We describe more thoroughly the concepts of Kinds and functions, along with the some of the support the platform provides, such as boilerplate operations for managed persistence \(i.e., Maana Q's graph database, [**KindDB**](../../../product-guide/platform-features/data-and-domain-models.md)\).
+
+### Kinds
+
+**Kinds** represent a specific interpretation of a concept, which have a collection of fields used to describe their attributes \(scalars\) and relationships to other Kinds.  For example, a kind called `City` may consist of simple properties, like `name`, and `population`, and relationships to other Kinds, like `County`, `Mayor`, etc. 
+
+You can read more about kinds [here](https://app.gitbook.com/@maana/s/q/v/3.2.1/product-guide/getting-started-with-maana/building-knowledge-layers/kinds-and-functions).
 
 ### Managed Kinds
 
@@ -16,7 +24,7 @@ Managed Kinds are user-defined Kinds that KindDB provides persistence for. They 
 
 Alternatively, a user can "override” Maana Q's persistence for certain Kinds and let Q handle the rest.  This is useful when the instances of the Kinds can be synthesized \(see the [Logical Inference and Semantic Graphs](../../advanced/inference/logical-inference-and-semantic-graphs.md) tutorial for an example of this\).
 
-## [Functions](https://app.gitbook.com/@maana/s/q/~/drafts/-LvBRj60Zf4rtd8JrBE7/v/3.2.1/product-guide/reference-guide/technical-design-and-architecture/function-modeling/create-a-new-function/~/settings/share)
+### Functions
 
 **Functions**  are used to represent problem-questions in Q. Consider, "Given x, what is y?" Functions allow you to define x and y and break the problem down further \(decompose it\) into smaller pieces. The Q UI allows connecting Functions together in meaningful ways to form the computational portion of your solutions. Functions are representations of GraphQL queries and mutations.
 
@@ -32,11 +40,11 @@ A **Mutation** is done when it is required to change some information in the gra
 
 More about a graph mutation can be found [here](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/graphql/graphql-schema-language/graph-mutations)
 
-## [Auto-Generated Kinds and Functions](https://maana.gitbook.io/q/v/3.2.1/product-guide/getting-started-with-maana/building-knowledge-layers/kinds-and-functions/auto-generated-kinds-and-functions) \(aka "Boilerplate"\)
+### Auto-Generated Kinds and Functions \(aka "Boilerplate"\)
 
 Learn more [here](https://maana.gitbook.io/q/v/3.2.1/product-guide/getting-started-with-maana/building-knowledge-layers/kinds-and-functions/auto-generated-kinds-and-functions)
 
-### CRUD Operations
+#### CRUD Operations
 
 The common set of data operations are: Create, Read, Update, and Delete, or CRUD.  For Managed Kinds, Maana Q automatically generates a set of queries and mutations.  Let's use the example Kind `Person`:
 
@@ -47,7 +55,7 @@ The common set of data operations are: Create, Read, Update, and Delete, or CRUD
 * `updatePerson(input: AddPersonInput!): ID` - this _update_ mutation does what it advertises: updates an existing instance of `Person`.
 * `deletePerson(id: ID!): Person` - this _delete_ mutation will delete the `Person` instance, if it exists, returning the full instance to the caller.
 
-### Query and Filter Boilerplate
+#### Query and Filter Boilerplate
 
 In addition to the standard CRUD operations, Maana Q also generates several queries that are useful for, well, querying the KindDB graph database.
 
@@ -57,4 +65,10 @@ Search, advanced query, and filter operations are only available for KindDB-base
 
 * `Query` - this function allows you to specify complex join, conditional operators, and result shaping to produce an arbitrary set of result data.  While powerful, it does not produce native GraphQL datatypes, but rather JSON.
 * `Filter` - each Kind also has a strongly-typed function that can be used to efficiently apply to instances of a Kind using the same powerful conditional operators as full-blown `Query`.
+
+## **Lesson Goals**
+
+* Create custom Kinds and use them in functions
+* Use persistent storage with Managed Kinds
+* Understand various tradeoff and nuances with Kinds and functions
 

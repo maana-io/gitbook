@@ -24,7 +24,7 @@ The form of reasoning in Q, unlike [other knowledge systems](https://en.wikipedi
 Use the right tool for the job
 {% endhint %}
 
-If your problem involves video analysis, then you should use video storage \(not a JSON document store\), video services from a cloud provider, custom TensorFlow models, etc.  You should be free to choose the best technologies for your problem \(storage or functionality\), but be able to easily integrate with the rest of the solution being developed developed.
+If your problem involves video analysis, then you should use video storage \(not a JSON document store\), video services from a cloud provider, custom TensorFlow models, etc.  You should be free to choose the best technologies for your problem \(storage or functionality\), but be able to easily integrate with the rest of the solution being developed.
 
 ### Knowledge
 
