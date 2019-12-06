@@ -18,6 +18,8 @@ For a nice introduction to Bayesian networks, check out this blog post [https://
 
 Bayesian networks are a compact graphical representation of the probabilistic relationship between variables. Baysian networks can be visualized as a directed graph where each node is a probability density function for a random variable. Each arrow of the network represents a conditional dependency of the probability of the variable at the head of the arrow on the value of the variable at the tail of the arrow.
 
+In this tutorial, we will use the ![OpenAI Gym simulation](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym)
+
 ## Setup
 
 ### Initial Network
