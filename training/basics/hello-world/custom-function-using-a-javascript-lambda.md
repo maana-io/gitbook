@@ -8,6 +8,7 @@ In the last example, you created a sayHello service based on a third-party servi
 
 * Familiarity with basic programming concepts
 * Very light JavaScript \(cut-and-paste\)
+* **Dependencies**: Lambda Assistant
 
 ## Step-by-Step Instructions
 

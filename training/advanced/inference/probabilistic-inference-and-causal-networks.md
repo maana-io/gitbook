@@ -7,17 +7,16 @@ description: >-
 # Probabilistic Inference and Causal Networks
 
 ## Overview
-Bayesian networks (belief networks, decision networks) are compact graphical representations of the observables of a system and the probabilistic relationships between them.    Bayesian networks, and can be used to answer stochastic questions about  unobserved variables ( e.g. Given that it is January, and without knowledge of whether the sprinklers ran or if it rained, what is the liklihood that the grass is wet?" ).   This process is called prediction.
 
-Prediction over Bayesian networks can be used to simulate more realistic random behavior by conditionally predicting the action to take in response to observed variables.   This can be coupled with either batch or inline machine learning to provide predictions that improve over time.
+Bayesian networks \(belief networks, decision networks\) are compact graphical representations of the observables of a system and the probabilistic relationships between them. Bayesian networks, and can be used to answer stochastic questions about unobserved variables \( e.g. Given that it is January, and without knowledge of whether the sprinklers ran or if it rained, what is the liklihood that the grass is wet?" \). This process is called inference.
 
-The same Bayesian network can be retrospected to explain why a decision.   This 
+Inference over Bayesian networks can be used to simulate more realistic random behavior by conditionally predicting the action to take in response to observed variables. This can be coupled with either batch or inline machine learning to provide predictions that improve over time.
 
-For a nice introduction to Bayesian networks, check out this blog post 
-https://www.probabilisticworld.com/bayesian-belief-networks-part-1/
+For a nice introduction to Bayesian networks, check out this blog post [https://www.probabilisticworld.com/bayesian-belief-networks-part-1/](https://www.probabilisticworld.com/bayesian-belief-networks-part-1/)
 
 ## Introduction
-Bayesian networks are a compact graphical representation of the probabilistic relationship between variables.   Baysian networks can be visualized as a directed graph where each node is a probability density function for a random variable.  Each arrow of the network represents a conditional dependency of the probability of the variable at the head of the arrow on the value of the variable at the tail of the arrow.   
+
+Bayesian networks are a compact graphical representation of the probabilistic relationship between variables. Baysian networks can be visualized as a directed graph where each node is a probability density function for a random variable. Each arrow of the network represents a conditional dependency of the probability of the variable at the head of the arrow on the value of the variable at the tail of the arrow.
 
 ## Setup
 
@@ -31,7 +30,7 @@ The structure of our taxicab network might initially look something like this. T
 
 Updates of Bayesian networks is an online learning rather than batch training/update method. The agent has prior distributions for the conditional probabilities of states and actions and can learn incrementally as it observes actual behavior of the simulation \(i.e., consequences of taking actions in various states\).
 
-Imagine at each time step you are presented with a new collection of observations for what the correct action to be taken is. This knowledge can be used to incrementally adapt the network structure or of the conditional probabilities \(via MLE or Bayesian arithmetic\), \([https://arxiv.org/pdf/1302.1538.pdf](https://arxiv.org/pdf/1302.1538.pdf)\).  This is referred to as _structural learning_ vs _parameter learning_, respectively, and will be discussed below.
+Imagine at each time step you are presented with a new collection of observations for what the correct action to be taken is. This knowledge can be used to incrementally adapt the network structure or of the conditional probabilities \(via MLE or Bayesian arithmetic\), \([https://arxiv.org/pdf/1302.1538.pdf](https://arxiv.org/pdf/1302.1538.pdf)\). This is referred to as _structural learning_ vs _parameter learning_, respectively, and will be discussed below.
 
 ### Structural Learning
 
@@ -55,7 +54,7 @@ $$
 P( Action = Move | Location = atOther ) = 100\%
 $$
 
-What we are interested in is an update rule that we can apply to the network as our agents explores the state-action space.  There is good research and information on this problem in "[Update rules for parameter estimation in Bayesian networks](https://arxiv.org/pdf/1302.1519.pdf)" and "[Parameter Estimation in Bayesian Networks](https://courses.cs.ut.ee/2009/bayesian-networks/orasmaa-liin-chapter-6.pdf)."  The general update rule for the parameters is:
+What we are interested in is an update rule that we can apply to the network as our agents explores the state-action space. There is good research and information on this problem in "[Update rules for parameter estimation in Bayesian networks](https://arxiv.org/pdf/1302.1519.pdf)" and "[Parameter Estimation in Bayesian Networks](https://courses.cs.ut.ee/2009/bayesian-networks/orasmaa-liin-chapter-6.pdf)." The general update rule for the parameters is:
 
 ![The general update rule for the parameters of a Bayesian network](../../../.gitbook/assets/screen-shot-2019-12-03-at-9.52.28-am.png)
 
