@@ -8,7 +8,7 @@ description: >-
 
 ## Overview
 
-Bayesian networks \(belief networks, decision networks\) are compact graphical representations of the observables of a system and the probabilistic relationships between them. Bayesian networks, and can be used to answer stochastic questions about unobserved variables \( e.g. Given that it is January, and without knowledge of whether the sprinklers ran or if it rained, what is the liklihood that the grass is wet?" \).
+Bayesian networks \(belief networks, decision networks\) are compact graphical representations of the observables of a system and the probabilistic relationships between them. Bayesian networks, and can be used to answer stochastic questions about unobserved variables \( e.g. Given that it is January, and without knowledge of whether the sprinklers ran or if it rained, what is the likelihood that the grass is wet?" \).
 
 Inference over Bayesian networks can be used to simulate more realistic random behavior by conditionally predicting the action to take in response to observed variables. This can be coupled with either batch or inline machine learning to provide predictions that improve over time.
 
@@ -16,13 +16,13 @@ For a nice introduction to Bayesian networks, check out this blog post [https://
 
 ## Introduction
 
-Bayesian networks are a compact graphical representation of the probabilistic relationship between variables. Baysian networks can be visualized as a directed graph where each node is a probability density function for a random variable. Each arrow of the network represents a conditional dependency of the probability of the variable at the head of the arrow on the value of the variable at the tail of the arrow.
+Bayesian networks are a compact graphical representation of the probabilistic relationship between variables. Bayesian networks can be visualized as a directed graph where each node is a probability density function for a random variable. Each arrow of the network represents a conditional dependency of the probability of the variable at the head of the arrow on the value of the variable at the tail of the arrow.
 
 In this tutorial, we will use the [OpenAI Gym simulation](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym) environment [Taxi-v3](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/taxi-v3-environment) to train a Bayesian network model and use it to answer stochastic problem questions.
 
 ![Taxi Agent](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LYmLcKZqkPDaczox0i1%2F-LvA4tIQf0sbY5ijjAM4%2F-LvA6FA2bcTJ6q0Ug7th%2Ftaxi.png?alt=media&token=5be76a7f-3615-4690-9919-cd5fd4e5049f)
 
-Bayesian networks are an artificial intelligence tool that are used visualize the conditional probabilities between observables of a system. As a taxicab driver in Gridland, our world has three observables: `LOCATION`, `HAS_PASSENGER`, adn `ACTION`.
+Bayesian networks are an artificial intelligence tool that are used visualize the conditional probabilities between observables of a system. As a taxicab driver in Gridland, our world has three observables: `LOCATION`, `HAS_PASSENGER`, and `ACTION`.
 
 The `HAS_PASSENGER` observable can take on two values, `HAS_PASSENGER=T` and `HAS_PASSENGER=F` which denote whether there is a passenger \(presumably the correct one\) in the cab.
 
@@ -32,11 +32,66 @@ The `ACTION` observable represents an action that the cabby took, and can be one
 
 We will model each of these observables as a discrete probability distribution with the initial Bayesian network structure below.
 
-![](../../../.gitbook/assets/taxi-bayes-network.png)
+![Bayesian Network For Taxi v-3](../../../.gitbook/assets/taxi-bayes-network.png)
 
-At each step of the simulation, we will be provided with a single observation for the `LOCATION` and `HAS_PASSENGER` variables and predict the conditional probability distribution for `ACTION`. We will then use that conditonal probability distribution to generate a random action for the agent to take.
+This means that the observed `LOCATIONS` are conditional upon the values of `HAS_PASSENGER`, and the observed `ACTION`are conditional upon both the other observables.     
+  
+At each step of the simulation, we will be provided with a single observation for the `LOCATION` and `HAS_PASSENGER` variables and predict the conditional probability distribution for `ACTION`.   We will then use that conditional probability distribution to generate a random action for the agent to take.
 
 ## Setup
+
+You will need several things for this tutorial:
+
+### Install the AI Simulator Framework
+
+* Please take a few minutes to familiarize yourself with the purpose and operation of the [Maana Q AI Simulator framework](../../../product-guide/reference-guide/ai-simulator-framework/).
+* Follow the installation instructions and confirm that you can login to the Q instance.
+
+### Clone the Bayes Agent Workspace
+
+* Login to Q and find and clone the "**Bayes Taxi-v3 Agent**" workspace.
+* Rename it to "&lt;your name&gt; Bayes Taxi-v3 Agent".
+
+### Test your Agent
+
+* Copy the workspace's **service id** from the Workspace -&gt; Context Panel -&gt; Info.
+* Paste it into the **Agent URI** field of Simulator -&gt; OpenAI Gym -&gt; Control panel.
+* Press the "Run" button and confirm the successful operation.
+
+## Services
+
+### External: maana-ai-bayes-net
+
+A standard Maana Q service for performing inference \(predictions\) over Bayesian networks.   This is a generic service that could be used for multiple stochastic modeling applications, and across any domain.    This service exposes the following core schema:
+
+![Partial Schema for maana-ai-bayes-net](../../../.gitbook/assets/screen-shot-2019-12-06-at-2.59.56-pm.png)
+
+Where the user must provide a network in the form of a serialized JSON object with the following lexical structure:
+
+```text
+network := { nodes }
+nodes := node | node "," nodes
+node := observablename ": {" idspec "," statespec "," parentspec "," cptspec "}"
+idspec := "id :" identifier
+statespec := "[" possiblevalue "]"
+parentspec := "parents: [" parentidentifier* "]"
+cpt := "cpt : [" cptrows "]"
+cptrows := cptrow | cptrow "," cptrows
+cptrow := [ whenspec, "," ]  thenspec
+whenspec := "when : {" whenvalue* "}"
+thenspec := "then : {" thenvalues "}"
+whenvalue := parentidentifier ":" possiblevalue
+thenvalues := thenvalue | thenvalue "," thenvalues
+thenvalue := possiblevalue ":" float  
+```
+
+The CombinationInput type is used to represent both a conditional/constraint \(givens\) and unknown values for which the probabilities should be predicted.    Future versions of the maana-ai-bayes-net service will feature improvements for constructing, inspecting and inferring values from Bayes network structures.
+
+### External: GOAP Taxi-v3 Agent
+
+### Workspace: Bayes Taxi-v3 Agent
+
+
 
 ### Initial Network
 
