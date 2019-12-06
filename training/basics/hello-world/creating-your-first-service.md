@@ -14,7 +14,9 @@ Workspaces are where you design a sub-graph within the CKG.  These take the form
 
 ![Create a new workspace from within the Workspaces tab](../../../.gitbook/assets/create-workspace.png)
 
-**Step 2.** Name the workspace to `<your name> Hello World`
+**Step 2.** Name the workspace `<your name> Hello World`and id `<your name>-hello-world`
+
+![](../../../.gitbook/assets/hello-world-create-workspace.png)
 
 When you create a workspace, you are asked to give it a name.  The name does **not** need to be unique.  You can also optionally give your workspace's _associated_ service a **unique** identifier.  If you leave this field blank, the system will create a unique identifier.  Giving your service a unique name allows it to be easily recognized and migrated between Q instances.
 
@@ -22,7 +24,9 @@ When you create a workspace, you are asked to give it a name.  The name does **n
 Workspace service identifiers can only be assigned once **at time of creation**
 {% endhint %}
 
-![](../../../.gitbook/assets/name-workspace.png)
+It is common practice across Maana Q that the **names** of things are for human consumption and are not unique, while the **identities** of things are for our systems and are intended to be unique \(within some context\).
+
+By convention, the two relate, in that we seek human-readable identities, where possible.  We use _snake-casing_ \(i.e., separating all lowercase words with hyphens\) in a _taxonomy_-like scheme of: `owner-category-subcategory-...-individual`\(, e.g., `maana-ai-simulator-openai-gym`\).  You will occasionally also see _dot-_separated style, common in the Java community, e.g.,`io.maana.ai.simulator.openai.gym`.
 
 **Step 3.** Familiarize yourself with the Workspace layout
 

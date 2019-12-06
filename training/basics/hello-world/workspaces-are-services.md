@@ -20,11 +20,11 @@ Use the Documentation Explorer to inspect the queries and mutations, along with 
 
 Issue a query to the `sayHello` function.
 
-**Step 2**.  Create a new workspace `<your name> Hello Localized`
+**Step 2**.  Create a new workspace `<your name> Hello Localized`with a unique id of `<your name>-hello-localized`
 
 Use the _add workspace_ button on the tab bar and fill-in the modal dialog with the name.  Leave the workspace ID blank.
 
-**Step 3.** Search for and import your `<your name> Hello World` workspace as a service
+**Step 3.** Search for and import your workspace **service**`<your name>-hello-world` workspace as a service
 
 {% hint style="info" %}
 Be careful not to drag-and-drop the workspace itself, rather you want the service category of results.
