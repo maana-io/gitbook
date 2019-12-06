@@ -2,7 +2,7 @@
 
 It is often desirable to use a small code snippet to implement a function, rather than use function composition or building and deploying a full-blown Java, .NET, or other Dockerized microservice.  Maana enables you to attach short code snippets to a function for execution through the use of [**Lambda** functions](https://en.wikipedia.org/wiki/Anonymous_function).
 
-In the last example, you created a sayHello service based on a third-party service.  In this follow-up lesson, we will replace the third-party service with a simple JavaScript function using the [**Maana Lambda Assistant**](../../../catalog/assistants/lambda-assistant.md).
+In the last example, you created a sayHello service based on a third-party service.  In this follow-up lesson, we will replace the third-party service with a simple JavaScript function using the [**Maana Lambda Assistant**]().
 
 ## Step-by-Step Instructions
 

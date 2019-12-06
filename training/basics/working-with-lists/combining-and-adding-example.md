@@ -1,12 +1,12 @@
 # Combining Lists
 
-**Case Description :** While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. A group of multiple items is called a list or an array. In this exercise we take you through two examples that use Maana Q Scalars in built service to help demonstrate:  1. Combining \(concatenating\) two lists  2. Adding '2' to list a.  Let's get started!
+While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. A group of multiple items is called a list or an array. In this exercise we take you through two examples that use Maana Q Scalars in built service to help demonstrate:  1. Combining \(concatenating\) two lists  2. Adding '2' to list a.  Let's get started!
 
 **Link to Workspace:**
 
 \*\*\*\*[**https://cstrainingstable.knowledge.maana.io/workspace/a1de4fe9-2b69-4108-921c-68b964d53628**](https://cstrainingstable.knowledge.maana.io/workspace/a1de4fe9-2b69-4108-921c-68b964d53628)\*\*\*\*
 
-**Step by Step Instructions:**
+## Step-by-Step Instructions
 
 **Step1:** Create a function called  'combineTwoLists' with inputs 'a' of type String list and 'b' of type String list . Make both mandatory by clicking on '!' icon. To create a list, click on 'list' icon. Output is of type String list. Click Save.
 

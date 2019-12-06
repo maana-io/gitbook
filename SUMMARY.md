@@ -108,8 +108,7 @@
 
 ## Catalog
 
-* [Assistants](catalog/assistants/README.md)
-  * [Lambda Assistant](catalog/assistants/lambda-assistant.md)
+* [Assistants](catalog/assistants.md)
 * [Bots](catalog/bots.md)
 * [Services](catalog/services.md)
 
@@ -130,8 +129,8 @@
     * [Relations Between Kinds](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/relations.md)
     * [Geo-Distance](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/geo-distance-example.md)
   * [Working with Lists](training/basics/working-with-lists/README.md)
-    * [Combining Lists](training/basics/working-with-lists/combining-and-adding-example.md)
     * [Localized Greetings](training/basics/working-with-lists/localized-greetings.md)
+    * [Combining Lists](training/basics/working-with-lists/combining-and-adding-example.md)
     * [Filtering](training/basics/working-with-lists/filtering.md)
   * [Design Patterns](training/basics/design-patterns/README.md)
     * [Identity](training/basics/design-patterns/identity.md)
