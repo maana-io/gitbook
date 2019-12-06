@@ -11,7 +11,7 @@
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step1_TopPQ.mov)
 
-![](../../.gitbook/assets/workingwithlists_step1_toppq.gif)
+![](../../../.gitbook/assets/workingwithlists_step1_toppq.gif)
 
 **Step2:** Decompose top level function
 
@@ -21,7 +21,7 @@ _Note: This function has two inputs "take" and "offset", both INT type. Take is 
 
 [MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Step%20by%20Step/WorkingWithLists_Step2.1_allPersons.mov)
 
-![](../../.gitbook/assets/workingwithlists_step2.1_allpersons.gif)
+![](../../../.gitbook/assets/workingwithlists_step2.1_allpersons.gif)
 
 _2._  Next create a function called "getPeopleWithAgeFromPeople". Create an input field called people of type Person and make it a list. The output is a list of type PersonWithAge. Wire the input and output.
 
