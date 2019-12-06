@@ -8,6 +8,11 @@ Every workspace is a cloud microservice being hosted by Maana Q's [Computational
 
 In this lesson, you will explore your workspace as a service.
 
+### Prerequisites
+
+* Previously completed `<your name>-hello-world` service
+* **Dependencies:** `maana-azure-ai-translation-helper`
+
 ## Step-by-Step Instructions
 
 **Step 1.** Use GraphiQL to query your service

@@ -2,9 +2,13 @@
 
 In this lesson, you will create a custom Kind, `Person` and add several properties to it.  You will use then the automatically generated boilerplate function to create a few people instances.
 
+### Prerequisites
+
+* None
+
 ## Step-by-Step Instructions
 
-**Step 1.** Create a new workspace `<your name>  People`
+**Step 1.** Create a new workspace `<your name>  People` with unique id of `<your name>-people`
 
 We begin with a clean workspace in which to define a small domain for reasoning about people.
 

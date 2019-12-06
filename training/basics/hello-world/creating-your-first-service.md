@@ -4,6 +4,12 @@ description: A journey of a thousand miles begins with a single step
 
 # Your First Service
 
+In this first, hands-on lesson, you will create your first service that we will build upon throughout this course.  It lays important foundations for working with Maana Q and the Computational Knowledge Graph.
+
+### Prerequisites
+
+* None
+
 ## **Step-by-Step Instructions**
 
 **Step 1.** Create a new [workspace](../../../product-guide/getting-started-with-maana/workspaces/#what-is-a-workspace) from the dashboard or the Workspaces tab bar
