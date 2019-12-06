@@ -34,7 +34,7 @@ The `ACTION` observable represents an action that the cabby took, and can be one
 
 We will model each of these observables as a discrete probability distribution with the initial Bayesian network structure below.
 
-![Taxi Bayes Network](../../../.gitbook/assets/Taxi Bayes Network.png)
+![](../../../.gitbook/assets/Taxi Bayes Network.png)
 
 At each step of the simulation, we will be provided with a single observation for the `LOCATION` and `HAS_PASSENGER` variables and predict the conditional probability distribution for `ACTION`.  We will then use that conditonal probability distribution to generate a random action for the agent to take.    
 
