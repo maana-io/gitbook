@@ -8,7 +8,7 @@ description: >-
 
 ## Overview
 
-Bayesian networks \(belief networks, decision networks\) are compact graphical representations of the observables of a system and the probabilistic relationships between them. Bayesian networks, and can be used to answer stochastic questions about unobserved variables \( e.g. Given that it is January, and without knowledge of whether the sprinklers ran or if it rained, what is the liklihood that the grass is wet?" \). 
+Bayesian networks \(belief networks, decision networks\) are compact graphical representations of the observables of a system and the probabilistic relationships between them. Bayesian networks, and can be used to answer stochastic questions about unobserved variables \( e.g. Given that it is January, and without knowledge of whether the sprinklers ran or if it rained, what is the liklihood that the grass is wet?" \).
 
 Inference over Bayesian networks can be used to simulate more realistic random behavior by conditionally predicting the action to take in response to observed variables. This can be coupled with either batch or inline machine learning to provide predictions that improve over time.
 
@@ -18,28 +18,25 @@ For a nice introduction to Bayesian networks, check out this blog post [https://
 
 Bayesian networks are a compact graphical representation of the probabilistic relationship between variables. Baysian networks can be visualized as a directed graph where each node is a probability density function for a random variable. Each arrow of the network represents a conditional dependency of the probability of the variable at the head of the arrow on the value of the variable at the tail of the arrow.
 
-In this tutorial, we will use the [OpenAI Gym simulation](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym) environment [Taxi-v3](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/taxi-v3-environment) to train a Bayesian network model and use it to answer 
-stochastic problem questions.   
+In this tutorial, we will use the [OpenAI Gym simulation](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym) environment [Taxi-v3](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/taxi-v3-environment) to train a Bayesian network model and use it to answer stochastic problem questions.
 
 ![Taxi Agent](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LYmLcKZqkPDaczox0i1%2F-LvA4tIQf0sbY5ijjAM4%2F-LvA6FA2bcTJ6q0Ug7th%2Ftaxi.png?alt=media&token=5be76a7f-3615-4690-9919-cd5fd4e5049f)
 
-Bayesian networks are an artificial intelligence tool that are used visualize the conditional probabilities between
-observables of a system.     As a taxicab driver in Gridland, our world has three observables: `LOCATION`, `HAS_PASSENGER`, adn `ACTION`.  
+Bayesian networks are an artificial intelligence tool that are used visualize the conditional probabilities between observables of a system. As a taxicab driver in Gridland, our world has three observables: `LOCATION`, `HAS_PASSENGER`, adn `ACTION`.
 
-The `HAS_PASSENGER` observable can take on two values, `HAS_PASSENGER=T` and `HAS_PASSENGER=F` which denote whether there is a passenger (presumably the correct one) in the cab.
+The `HAS_PASSENGER` observable can take on two values, `HAS_PASSENGER=T` and `HAS_PASSENGER=F` which denote whether there is a passenger \(presumably the correct one\) in the cab.
 
 When we observe the taxi's `LOCATION` it can have three possible values: `AT_PICKUP_LOCATION`, `AT_DROPOFF_LOCATION`, `AT_OTHER_LOCATION`
 
-The `ACTION` observable represents an action that the cabby took, and can be one of the following: `MOVE_TO_PICKUP`, `MOVE_TO_DROPOFF`, `DROPOFF_PASSENGER` and `PICKUP_PASSENGER`.   
+The `ACTION` observable represents an action that the cabby took, and can be one of the following: `MOVE_TO_PICKUP`, `MOVE_TO_DROPOFF`, `DROPOFF_PASSENGER` and `PICKUP_PASSENGER`.
 
 We will model each of these observables as a discrete probability distribution with the initial Bayesian network structure below.
 
-![](../../../.gitbook/assets/Taxi Bayes Network.png)
+![](../../../.gitbook/assets/taxi-bayes-network.png)
 
-At each step of the simulation, we will be provided with a single observation for the `LOCATION` and `HAS_PASSENGER` variables and predict the conditional probability distribution for `ACTION`.  We will then use that conditonal probability distribution to generate a random action for the agent to take.    
+At each step of the simulation, we will be provided with a single observation for the `LOCATION` and `HAS_PASSENGER` variables and predict the conditional probability distribution for `ACTION`. We will then use that conditonal probability distribution to generate a random action for the agent to take.
 
 ## Setup
-
 
 ### Initial Network
 
