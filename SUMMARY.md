@@ -125,6 +125,7 @@
     * [Workspaces Are Services](training/basics/hello-world/workspaces-are-services.md)
   * [Introduction to Kinds and Functions](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/README.md)
     * [People](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/calculate-age-using-dob-example.md)
+    * [Age](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/age.md)
     * [Geo-Distance](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/geo-distance-example.md)
     * [Optional vs. Required](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/optional-vs.-required.md)
   * [Working with Lists](training/basics/working-with-lists/README.md)
