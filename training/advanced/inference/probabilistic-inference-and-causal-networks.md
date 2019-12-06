@@ -32,7 +32,9 @@ When we observe the taxi's `LOCATION` it can have three possible values: `AT_PIC
 
 The `ACTION` observable represents an action that the cabby took, and can be one of the following: `MOVE_TO_PICKUP`, `MOVE_TO_DROPOFF`, `DROPOFF_PASSENGER` and `PICKUP_PASSENGER`.   
 
-We will model each of these observables as a discrete probability distribution.  At each step of the simulation, we will be provided with a single observation for the `LOCATION` and `HAS_PASSENGER` variables and predict the conditional probability distribution for `ACTION`.  We will then use that conditonal probability distribution to generate a random action for the agent to take.    
+We will model each of these observables as a discrete probability distribution with the initial Bayesian network structure below.
+
+At each step of the simulation, we will be provided with a single observation for the `LOCATION` and `HAS_PASSENGER` variables and predict the conditional probability distribution for `ACTION`.  We will then use that conditonal probability distribution to generate a random action for the agent to take.    
 
 ## Setup
 
