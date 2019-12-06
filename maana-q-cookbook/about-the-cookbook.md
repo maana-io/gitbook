@@ -2,7 +2,11 @@
 
 In the pages that follow you will find the following series of exercises that aid you in getting more versed in practically applying more intermediate and advanced actions on your own Maana Q instance.
 
-### Basic Ingredients
+### Design Patterns
+
+A collection of best practices and idioms for solving various problems you are likely to encounter when developing real-world solutions.
+
+### Basic Recipes
 
 These are a series of Step-by-Step instructions for learning how to use some of the most foundational actions within the Development Stages of the Solution Lifecycle on the Maana Q Platform.  These walkthroughs include topics like: 
 

@@ -32,7 +32,7 @@ Notice that every Kind **must** have an identity field of signature `id: ID!`.  
 Every Kind must have a unique identity for its instances
 {% endhint %}
 
-We'll cover identity in more detail in a [future lesson](../design-patterns/identity.md).
+We'll cover identity in more detail in a [future lesson](../../../maana-q-cookbook/design-patterns/identity.md).
 
 **Step 5.** Add a few people
 

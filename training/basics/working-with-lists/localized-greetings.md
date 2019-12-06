@@ -67,7 +67,7 @@ To apply the function to every element of the list, simply wire it to the _outbo
 
 `[Person] -> func(person: Person): String -> [String]`
 
-This will apply `func` to every person and create a corresponding collection of strings. Note that it is not possible to pass additional arguments to this mapping function. This discussed more in the [Implicit Mapping with Arguments](../design-patterns/implicit-mapping-with-arguments.md) design pattern.
+This will apply `func` to every person and create a corresponding collection of strings. Note that it is not possible to pass additional arguments to this mapping function. This discussed more in the [Implicit Mapping with Arguments](../../../maana-q-cookbook/design-patterns/implicit-mapping-with-arguments.md) design pattern.
 
 {% hint style="warning" %}
 An implicit mapping function can only take a single parameter

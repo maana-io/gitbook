@@ -96,7 +96,7 @@ type Query {
 }
 ```
 
-As this is a generic algorithm usable by any domain, it is our responsibility to map our taxi environment to this model in order to use its planning functionality.  This is a common pattern, [Model Mapping](../../basics/design-patterns/model-mapping.md), found in Q solutions.
+As this is a generic algorithm usable by any domain, it is our responsibility to map our taxi environment to this model in order to use its planning functionality.  This is a common pattern, [Model Mapping](../../../maana-q-cookbook/design-patterns/model-mapping.md), found in Q solutions.
 
 ### Workspace: GOAP Taxi-v3 Agent
 
