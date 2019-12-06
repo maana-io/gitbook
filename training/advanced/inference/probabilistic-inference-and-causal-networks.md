@@ -7,11 +7,12 @@ description: >-
 # Probabilistic Inference and Causal Networks
 
 ## Overview
-Bayesian networks are a compact graphical representation of the probabilistic relationship between variables.   Baysian networks can be visualized as a directed graph where each node is a probability density function for a random variable.  Each arrow of the network represents a conditional dependency of the probability of the variable at the head of the arrow on the value of the variable at the tail of the arrow.    
+Bayesian networks (belief networks, decision networks) are compact graphical representations of the observables of a system and the probabilistic relationships between them.    Bayesian networks, and can be used to answer stochastic questions about  unobserved variables ( e.g. Given that it is January, and without knowledge of whether the sprinklers ran or if it rained, what is the liklihood that the grass is wet?" ).   This process is called inference.
 
-Bayesian networks can be used to    
+Inference over Bayesian networks can be used to simulate more realistic random behavior by conditionally predicting the action to take in response to observed variables.   This can be coupled with either batch or inline machine learning to provide predictions that improve over time.
 
 ## Introduction
+Bayesian networks are a compact graphical representation of the probabilistic relationship between variables.   Baysian networks can be visualized as a directed graph where each node is a probability density function for a random variable.  Each arrow of the network represents a conditional dependency of the probability of the variable at the head of the arrow on the value of the variable at the tail of the arrow.   
 
 ## Setup
 
