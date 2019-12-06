@@ -1,6 +1,6 @@
 # Geo-Distance
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **UNDER CONSTRUCTION**
 {% endhint %}
 

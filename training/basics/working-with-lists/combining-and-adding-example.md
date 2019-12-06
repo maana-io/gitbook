@@ -1,87 +1,101 @@
-# Combining Lists
+# Synthesizing Kind Instances
 
-While developing solutions, many times we have to perform certain operations such as adding, removing, merging, finding, filtering, reversing, on multiple items. A group of multiple items is called a list or an array. In this exercise we take you through two examples that use Maana Q Scalars in built service to help demonstrate:  1. Combining \(concatenating\) two lists  2. Adding '2' to list a.  Let's get started!
+In this lesson, we will learn how to generate a list of Kind instances derived from iterating over the instances of another Kind.  The example is a little contrived, but it allows us to introduce other important Maana Q concepts, which is the true focus of the exercise.
 
-**Link to Workspace:**
+### Prerequisites
 
-\*\*\*\*[**https://cstrainingstable.knowledge.maana.io/workspace/a1de4fe9-2b69-4108-921c-68b964d53628**](https://cstrainingstable.knowledge.maana.io/workspace/a1de4fe9-2b69-4108-921c-68b964d53628)\*\*\*\*
+* Your previous workspace `<your name> Hello Everyone`
+* **Dependencies**: Lambda Assistant
 
 ## Step-by-Step Instructions
 
-**Step1:** Create a function called  'combineTwoLists' with inputs 'a' of type String list and 'b' of type String list . Make both mandatory by clicking on '!' icon. To create a list, click on 'list' icon. Output is of type String list. Click Save.
+**Step 1.** Open your `<your name> Hello Everyone` workspace
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step1.mov)
+**Step 2.** Create a new Kind `LocalizedGreetingWithAge`
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step1.gif)
+Our goal is have both the localized greeting and the age of the person together in a single Kind.  We can start by defining the Kind we wish to produce instance for.  Use your knowledge of the type previously defined.
 
-**Step2:** Expand on the 'combineTwoLists'  function. Next we will use Maana Q Scalars, a maana pre-built service suite. Search for Maana Q Scalars in the search bar. Drag and drop it to the Inventory. In the Inventory panel, expand Services -&gt;Maana Q Scalars and look for  'StringListConcat'. Drag this to the canvas. Wire the inputs and outputs. 
+![](../../../.gitbook/assets/localized-greeting-age.png)
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step2.mov)  
-[https://maanaimages.blob.core.windows.net/maana-q- Zx](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step2.gif)Adding, removing, merging, finding, filtering, reversing, map/reducing, ...[documentation/QTraining\_videos/working\_with\_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists\_Intro\_Step2.gif](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step2.gif) 
+**Step 3.** Duplicate the `sayHelloEveryoneLocalized`
 
+In the previous lesson, we created a function that iterated over each person and created a greeting.  Now, we'd like to do that but also calculate the person's age, then combine the results into an instance for a new Kind.  We can begin by taking advantage of the previous function that already does some of what we need.
 
+![](../../../.gitbook/assets/duplicate.png)
 
-**Step 3:** Test the function by going to the top level function i.e. 'combineTwoLists'. In the explorer panel, enter in two strings. Click on run. View the function results in the Assistant Panel.
+**Step 4.** Edit the cloned function
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step3.mov)
+Recall that every Kind we create in a workspace is automatically _managed_ by KindDB, i.e., the Maana Q graph database is preconfigured to persist your graph instances.  In general, this is extremely convenient and productive.  However, there are times where you'd like to take over management of Kind persistence \(or _virtualization_\) your self.  In the current example, we are synthesizing the LocalizedGreetingsWithAge Kind.  We can **override** a boilerplate function by simply using the same name.
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step3.gif)
+**Step 4a.** Rename the cloned function to `allLocalizedGreetingWithAges`
 
+**Step 4b.** Change the output type to be a required list of `LocalizedGreetingWithAge`
 
+![](../../../.gitbook/assets/cloned-overrided.png)
 
-**Step 4:** In the same knowledge graph, create a new function called 'addTwoToAListOfNumbers' with input called 'listOfNumbers' of type INT list and make it mandatory. The output is a list of type INT. Make it mandatory. Click Save.
+The CKG will now prefer your function to its own.  This could provide an inconsistent experience for your service consumers, if you leave things in a mixed state of some overrides and others not for the same Kind.
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step4.mov)
+**Step 5.**  Edit the cloned function graph
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step4.gif)
+We wish to modify the flow of the original function by having it generate a `LocalizedGreetingWithAge` for each person.  To do this, we can replace the existing `sayHelloPersonalized` function with another function, with the same signature, `createLocalizedGreetingWithAge`.
 
+**Step 5a.** Open the `allLocalizedGreetingWithAges` function graph
 
+**Step 5b.** Remove \(not delete\) the `sayHelloPersonLocalized` from this function graph
 
-**Step 5:** Expand 'addTwoToAListOfNumbers'.  We will use Manna prebuilt services called Constants and Math. So locate these in the search bar. Drag them to the inventory.
+**Step 5c.** Create a new `createLocalizedGreetingWithAge` function and wire it
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step5.mov)
+![](../../../.gitbook/assets/create-localized-greetings-with-age.png)
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step5.gif)
+**Step 6.** Open the `createLocalizedGreetingWithAge` function graph
 
+**Step 7.** Add the `sayHelloPersonLocalized` function and wire it to the `Input` node
 
+After having just removed this function from outer function graph, we can add it back, since it is still useful toward our goal.
 
-**Step 6:** Create a new function under expansion of 'addTwoToAListOfNumbers' called 'addTwoToNumber' with input called 'number' of type INT. Output is of type INT. Make these mandatory, Click Save. Wire the input and output. 
+**Step 8.** Add the `age` function an wire it to the `Input` node
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step6.mov)
+{% hint style="info" %}
+The same value can flow **from** a node slot, but multiple values can't flow **into** a node slot.
+{% endhint %}
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step6.gif)
+![](../../../.gitbook/assets/create-age.png)
 
+**Step 9.** Create a constructor function `makeLocalizedGreetingWithAge`
 
+Previously, we learned about and created Kind field projectors, which extracts individual fields from a Kind.  The inverse concept is a Kind **constructor**, which accepts a number of arguments needed populate a particular Kind instance.  There is typically one constructor per Kind.  By convention, constructor function names follow the form: `"make" + Kind name`.  Since the Kind, `LocalizedGreetingWithAge`, is in this workspace, then its constructor belongs in this workspace, too.  \(Technically, we should also create projector functions, too, to be thorough.\)
 
-**Step 7:** Expand the function 'addTwoToNumber'. In the inventory panel, under Services, locate Constants. Expand it and locate the function 'two'. Drag 'two' to the canvas.
+![](../../../.gitbook/assets/constructor.png)
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step7.mov)
+**Step 10.** Implement `makeLocalizedGreetingWithAge` with a lambda
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step7.gif)
+Because the inputs are sent to our JavaScript function in a single JSON object that also matches our output type, we can return it.  However, we also need to synthesize a unique id, which is required for all Kind instances.  We can create a unique id using the values of the fields, since, if the fields are all the same, then the entity is the same.
 
+```javascript
+const { localizedGreeting, age } = input
 
+return { id: `${localizedGreeting}+${age}`, ...input }
+```
 
-**Step 8:** In the inventory panel, under Services, locate Math. Expand it and locate   the function 'intAddition'. Drag 'intAddition' to the canvas.
+**Step 11.** Test the function graph
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step8.mov)
+Click on the Input node of the function graph, select a person instance, and run the function.
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step8.gif)
+![](../../../.gitbook/assets/create-one.png)
 
+**Step 12.** Test the top-level function 
 
+![](../../../.gitbook/assets/create-all.png)
 
-**Step 9:** Wire inputs and outputs.  There are three wirings - 1. 'Input' function's 'INT' to 'Math:intAddition' function's 'a' 2. 'Constant:two' function's INT to 'Math:intAddition' function's 'b' 3. 'Math:intAddition' function's output INT to the function 'Output'
+## Conclusion
 
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step9.mov)
+In this lesson, we covered the following topics:
 
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step9.gif)
-
-
-
-**Step 10:** Test the function by going to the top level function called 'addTwoToNumber'. In the explorer panel, enter in a list of numbers. Click on run. View the function results in the Assistant Panel.
-
-[MOV](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Videos/WorkingWithLists_Intro_Step10.mov)
-
-![](https://maanaimages.blob.core.windows.net/maana-q-documentation/QTraining_videos/working_with_lists/Working%20With%20Lists%20Intro/Gifs/WorkingWithLists_Intro_Step10.gif)
+* Duplicating a \(function\) node on the graph
+* Overriding an auto-generated boilerplate function
+* Modifying a function graph
+* Reusing functions deeper in the graph
+* Constructor function
 
 
 

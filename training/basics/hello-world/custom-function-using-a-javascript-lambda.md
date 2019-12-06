@@ -1,8 +1,8 @@
 # Custom Lambda Function
 
-It is often desirable to use a small code snippet to implement a function, rather than use function composition or building and deploying a full-blown Java, .NET, or other Dockerized microservice.  Maana enables you to attach short code snippets to a function for execution through the use of [**Lambda** functions](https://en.wikipedia.org/wiki/Anonymous_function).
+It is often desirable to use a small code snippet to implement a function, rather than use function composition or building and deploying a full-blown Java, .NET, or other Dockerized microservice. Maana enables you to attach short code snippets to a function for execution through the use of [**Lambda** functions](https://en.wikipedia.org/wiki/Anonymous_function).
 
-In the last example, you created a sayHello service based on a third-party service.  In this follow-up lesson, we will replace the third-party service with a simple JavaScript function using the [**Maana Lambda Assistant**](https://maana.gitbook.io/q/v/3.2.1/catalog/assistants#lambda-assistant).
+In the last example, you created a sayHello service based on a third-party service. In this follow-up lesson, we will replace the third-party service with a simple JavaScript function using the [**Maana Lambda Assistant**](https://maana.gitbook.io/q/v/3.2.1/catalog/assistants#lambda-assistant).
 
 ### Prerequisites
 
@@ -12,9 +12,9 @@ In the last example, you created a sayHello service based on a third-party servi
 
 ## Step-by-Step Instructions
 
-**Step 1.**  Delete the sayHello service composition
+**Step 1.** Delete the sayHello service composition
 
-We need to first undo what we just did.  We can remove the function from the graph using the the _remove_ button on the canvas button bar.  This will disconnect the function, while keeping it in the workspace inventory.
+We need to first undo what we just did. We can remove the function from the graph using the the _remove_ button on the canvas button bar. This will disconnect the function, while keeping it in the workspace inventory.
 
 ![](../../../.gitbook/assets/remove-hello.png)
 
@@ -22,9 +22,9 @@ Since we don't need the service, we can also completely remove it from the works
 
 ![](../../../.gitbook/assets/delete-service.png)
 
-**Step 2.**  Add the Lambda Assistant to the workspace
+**Step 2.** Add the Lambda Assistant to the workspace
 
-In the last lesson, we searched for and imported a third-party service.  We can also do the same for **Assistants**.  Search for "lambda," find it in the Assistant category, and drag-and-drop it into the workspace inventory.
+In the last lesson, we searched for and imported a third-party service. We can also do the same for **Assistants**. Search for "lambda," find it in the Assistant category, and drag-and-drop it into the workspace inventory.
 
 ![](../../../.gitbook/assets/lambda-search.png)
 
@@ -44,7 +44,7 @@ const { name } = input
 return `Hello, ${name}`
 ```
 
-**Step 4.** Test the function using  the Context Panel
+**Step 4.** Test the function using the Context Panel
 
 Now that we have implemented the function using a JavaScript Lambda function, we can run it just like any function.
 

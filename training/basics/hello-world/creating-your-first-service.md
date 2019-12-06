@@ -46,6 +46,8 @@ The portal workspace user interface consists of various _panels_, such as:
 
 ![Your newly-created Hello World workspace](../../../.gitbook/assets/workspace-layout.png)
 
+Let's take a few minutes to **activate** the panels, **resize** them, **expand**/**collapse**, **zoom** in/out, and **reset** the workspace layout.
+
 **Step 4.** Rename the default `New Knowledge Graph`node in the Explorer panel
 
 A workspace can contain multiple Knowledge Graphs, which are simply _views_ on the Kinds, functions, and instances from the inventory.  The same Kind and Function can be on multiple Knowledge Graphs at the same time.  There is only a single copy of any element within the workspace and all elements must have unique names.
