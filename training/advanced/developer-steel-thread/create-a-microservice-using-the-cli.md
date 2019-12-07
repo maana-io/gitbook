@@ -1,6 +1,6 @@
 # Create a Microservice using the CLI
 
-In this lesson, you will use the Maana Command Line Interface \(CLI\) to create scaffolding for a Python-based Knowledge microservice.  You will then build and test it locally.
+In this lesson, you will use the Maana Command Line Interface \(CLI\) to create scaffolding for a [Python-based Knowledge microservice](https://github.com/maana-io/q-template-service-python-ariadne).  You will then build and test it locally.
 
 ### Prerequisites
 
@@ -21,6 +21,8 @@ Open your preferred terminal \(e.g., Bash\) and `cd` to your source code root fo
 * **Boilerplate**: `service-python-ariadne`
 
 ![](../../../.gitbook/assets/donald-goap.png)
+
+Note that this template \(along with the others\) are available via [Maana's GitHub.](https://github.com/maana-io/q-template-service-python-ariadne)
 
 **Step 2.** Open the folder in VS Code
 
@@ -73,5 +75,63 @@ Note the presence of the `x` attributes on the left.  These files **are** execut
 
 ![](../../../.gitbook/assets/goap-start1.png)
 
+**Step 6.**  Test your new service
 
+With the dependencies installed and the service running, we can test it right in the browser.
+
+**Step 6a.** Open the endpoint URL
+
+![](../../../.gitbook/assets/goap-test1.png)
+
+**Step 6b.** Issue a GraphQL query  ****
+
+![](../../../.gitbook/assets/image%20%28129%29.png)
+
+**Step 7.** Familiarize yourself with the project structure
+
+Now that we know it runs, let's take a moment to understand how it works.  Open the `app/main.py` file.
+
+**Step 7a.**  Examine the imports
+
+![](../../../.gitbook/assets/image%20%28141%29.png)
+
+This Python 3.7 project uses the excellent [Ariadne](https://ariadnegraphql.org/) GraphQL library, which provides "schema-first" \(i.e., allows you to focus on GraphQL SDL\), and has support for the  standard [Asynchronous Server Gateway Interface \(ASGI\)](https://asgi.readthedocs.io/en/latest/) to provide high-performance HTTP serving.  [ASGI Lifespan](https://pypi.org/project/asgi-lifespan/) middleware has also been included for you to hook startup and shutdown events for special processing.
+
+**Step 7b.**  Examine the GraphQL SDL
+
+Ariadne's `gql` function provides schema validation.
+
+![](../../../.gitbook/assets/image%20%28142%29.png)
+
+**Step 7c.**  Examine the GraphQL resolvers
+
+As you know, GraphQL requires _resolvers_ for at least the root `QueryType` object.  If your service exposes mutations, then it defines a `MutationType` object.
+
+![](../../../.gitbook/assets/image%20%2846%29.png)
+
+If your service provides resolvers for types you define, then they require their own `ObjectType` objects.
+
+![](../../../.gitbook/assets/image%20%28136%29.png)
+
+**Step 7d.** Examine creating the executable GraphQL schema
+
+Include any Query, Mutation, or Object type definitions in the collection passed to the function.
+
+![](../../../.gitbook/assets/image%20%2818%29.png)
+
+**Step 7e.** Examine the application server lifecycle
+
+Your GraphQL schema is served from an HTTP server provided by a Python application server.  The remaining code creates this server and provide hooks for the startup/shutdown lifecycle events.
+
+![](../../../.gitbook/assets/image%20%28147%29.png)
+
+## Conclusion
+
+We covered the following concepts in this lesson:
+
+* Using the Maana CLI to create the scaffolding for a Knowledge microservice
+* Installing dependencies
+* Running the microservice
+* Testing the microservice
+* The structure of the Ariadne-based Python template
 
