@@ -207,10 +207,8 @@ In this exercise we will Simulate your taxi agent using the AI Simulator framewo
 Begin by copying your workspace's **service id** from the Workspace -&gt; context panel -&gt; info.  Then open the Maana AI Simulator framework in your browser.   Paste the copied service id into the `agent URI` field of the Simulator -&gt; OpenAI Gym -&gt; Control Panel.  
   
 When you are ready, press the run button to begin the simulation.   You should see something like the animation below:  
-  
-  
 
-![The Taxi v-3 Agent Running](../../../.gitbook/assets/animation.gif)
+![Bayes Taxi Agent Simulation](../../../.gitbook/assets/animation%20%281%29.gif)
 
 ### EXERCISE 4: Learning 
 
