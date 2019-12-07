@@ -108,9 +108,24 @@ This function is expected to return optional state it wishes to be returned to i
 
 ![The Knowledge Graph For Bayes Taxi Models](../../../.gitbook/assets/screen-shot-2019-12-06-at-4.04.11-pm.png)
 
-onStep
+#### onStep
 
-onDone
+This function is the brains of our agent.   It takes the current observations of 
+
+* `state`: corresponds to one of the 500 possible states in the [Taxi-v3](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/taxi-v3-environment) environment,
+* `context`: our bayesian network
+
+and returns a random `Action` that the simulator should perform.   The `decide` function contains makes this decision by calling the `maana-ai-bayes-net` service with the current observation and then choosing at random from the returned conditional probability distribution.     
+  
+The `onStep` function also implements online learning based on Bayesian updates.   At each step, it observes the behavior of an exemplar.   Ideally this would be one or more human taxi cab drivers.   For this tutorial we utilize the GOAP taxi-v3 service to provide exemplary behavior.    The logic for performing the parameter updates is contained in the `learn` function.  
+  
+Upon completion, the `onStep` function also returns the posterior Bayesian network, which reflects the learnings from the current step.    The `lastReward` and `lastAction` inputs are not used this agent.
+
+![The Function Graph for the onStep Method](../../../.gitbook/assets/screen-shot-2019-12-06-at-4.21.37-pm.png)
+
+#### onDone
+
+
 
 ### Initial Network
 
