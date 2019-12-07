@@ -127,6 +127,32 @@ Upon completion, the `onStep` function also returns the posterior Bayesian netwo
 
 The `onDone` can be used to perform actions each time that the agent completes a simulation.   This might be used, for example, to store performance metrics.   The Bayes taxi-v3 Agent template does not make use of this capability. 
 
+## Exercises
+
+### Creating A Prior Network
+
+The probability density functions associated with the Bayesian network control how often the simulation will predict each action in response to observed conditions.   The `makeModel` function is used to create the Bayesian network used by the Agent.     Although the agent is capable of learning the correct \(conditional\) probability density functions for each observable, using some common sense may help it get converge faster.
+
+The default implementation of the `makeModel` function encodes the following probability density functions:
+
+![Default Probability Density functions.](../../../.gitbook/assets/screen-shot-2019-12-06-at-4.51.08-pm.png)
+
+Although for some observables these seem reasonable \( 50% of the time the taxi has a passenger \), others of these assumptions seem dubious \(e.g. 25% of the time the taxi will be at the drop-off location when they have no passengers, etc.\).
+
+Take a moment to decide on what more reasonable values for the \(conditional\) probabilities should be.   Once you have decided, you will need to modify the `makeModel` function in your workspace.   This function has been implemented in javascript using the Maana lambda service.        
+  
+Search for the `makeModel` function in the inventory panel and then select the "Maana Lambda Assistant" from the dropdown menu in the assistant panel.   
+
+![Filtering the Inventory for the makeModel Function](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.00.49-pm.png)
+
+Once you have selected the Maana Lambda assistant, you should see the code below:
+
+![The default implementation of the makeModel function](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.05.03-pm.png)
+
+Edit the `network` variable to encode your probability density functions.    If you are having difficulty choosing values, there are some helpful hints in the code.   When you are done making your changes, press the save button.  
+  
+
+
 ### Initial Network
 
 The structure of our taxicab network might initially look something like this. This says that `Location`, `hasPassenger` and `Action` are all discrete distributions, and that we believe _a priori_ that probabilities location and action may be conditional upon the value fo `hasPassenger`.
