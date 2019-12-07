@@ -4,8 +4,6 @@ description: Execute functions efficiently using Maana Q
 
 # Working with Lists
 
-## Overview
-
 So far, we have only worked with single-instance types \(scalars or Kinds\), such as a `name: STRING`, `dob: DATE`, `ceo: PERSON`. It is often necessary to also model collections of types, such as the set of `employees: [Employee]` at a `Company`, the set of a `departments: [Department]` within the `Company`, `availabilityDates: [DATE]`. In these tutorials, you will learn how to effectively use **lists** \(_aka_ collections, arrays\) in both modeling and computation.
 
 ## Introduction

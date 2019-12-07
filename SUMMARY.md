@@ -125,7 +125,6 @@
     * [Your First Kind](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/calculate-age-using-dob-example.md)
     * [Functions on Kinds](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/age.md)
     * [Relations Between Kinds](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/relations.md)
-    * [Geo-Distance](training/basics/using-kinds-and-function-to-build-a-knowledge-graph/geo-distance-example.md)
   * [Working with Lists](training/basics/working-with-lists/README.md)
     * [Localized Greetings](training/basics/working-with-lists/localized-greetings.md)
     * [Synthesizing Kind Instances](training/basics/working-with-lists/combining-and-adding-example.md)

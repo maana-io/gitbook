@@ -4,8 +4,6 @@ description: The essence of the Computational Knowledge Graph
 
 # Introduction to Kinds and Functions
 
-## Overview
-
 Representing and reasoning about knowledge is a big, well-researched [topic](https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning).  Maana Q has a specific approach that takes brings together **property graphs** \(i.e., [TBox](https://en.wikipedia.org/wiki/Tbox)\), with **instance graphs** \(i.e., [ABox](https://en.wikipedia.org/wiki/Abox)\), with arbitrary computations \(calculations, transformations, inferences, simulations, etc.\) in a distributed, programming language and technology neutral environment.
 
 ## Introduction

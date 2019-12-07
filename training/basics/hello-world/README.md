@@ -4,8 +4,6 @@ description: Build your first Maana Q service
 
 # Hello, world!
 
-## Overview
-
 In this hands-on tutorial, you will learn the fundamental operations and user interface elements of building Maana Q solutions.  We introduce Q with the traditional "Hello, world!" example and build some interesting capabilities quickly.
 
 ## Introduction
