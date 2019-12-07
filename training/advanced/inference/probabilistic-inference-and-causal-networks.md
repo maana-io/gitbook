@@ -210,7 +210,7 @@ When you are ready, press the run button to begin the simulation.   You should s
   
   
 
-{% file src="../../../.gitbook/assets/screen-recording-2019-12-06-at-7.41.01-pm.mov" %}
+![The Taxi v-3 Agent Running](../../../.gitbook/assets/animation.gif)
 
 ### EXERCISE 4: Learning 
 
@@ -246,9 +246,20 @@ The learn function is the composite of the `updatePriors` function as defined ab
   
 Parameter updating is applied by default with a learning rate of $$\eta = 0.01$$.      
   
-Take a moment to use the function that you created in example 2 to inspect the results of parameter updating.   For comparison, here are the results of applying parameter updates to the default network after 10 and 100 episodes.  
-  
+Because the simulation agent saves the posterior network after each episode, we can modify the function that you used in exmple 2 to inspect the results.    Update your function graph so that it looks like the graph below:
 
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-10.37.59-pm.png)
+
+Here we are passing in the id of the model that you have updated.    The identifier will usually be the user name that you used to log into the system \(e.g. jdoe@acme.com\).   The `model` function is an auto generated function that reads the stored model instance from KindDB.   When you have completed these changes, you can run the function from the context panel.  
+
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-10.38.22-pm.png)
+
+When your function has finished executing, you can view the results in the Function Results assistant in the Assistant panel.   
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-10.38.36-pm.png)
+
+Your results may look different depending upon the initial network that you created in example 1, and the number of episodes that you have run your simulation.    Take a moment to compare your results to those obtained from simulating the default Bayesian network from template for 10 and 100 episodes.
 
 ![Default Bayesian Network After 10 Episodes of Simulation](../../../.gitbook/assets/episode-10-results.png)
 
@@ -258,5 +269,44 @@ After only 10 episodes of simulation, the model has learned with a high degree o
 
 After 100 episodes, it has learned the correct action to take with a high degree of certainty for all but the least frequently occurring states.   The one row that has not changed corresponds to the state where the taxi is at the pickup location and the passenger is in the cab; however, since this state cannot occur during normal simulation, these values are of no consequence to making inferences.   
   
-How did your results compare?   Do you expect that those differences will change the behavior of the simulation?
+How did your results compare?   Do you expect that those differences will change the behavior of the your simulation?  Why or why not?
+
+### EXERCISE 5 - Answer a problem question
+
+Now that we have trained our Bayesian network, lets put it all together to answer the following question: 
+
+> How many simulation steps do passengers usually spend in the cab?
+
+If p is the probability that, given there is a passenger in the cab, the probability that they will be dropped off, the chance that they will be dropped of on the $$i^{th}$$step after being picked up is given by 
+
+$$ P(\text{dropoff on turn i} ) = p ( 1 - p ) ^{i-1 }$$
+
+The answer to our problem question is the inverse of the cumulative probability density function for some confidence level:    
+  
+$$ ANSWER = \text{minimum n such that } \Sigma_{i=1}^n P(\text{dropoff on turn i}) > \alpha $$
+
+This function is easy enough to implement as a lambda:
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-11.36.06-pm.png)
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-11.36.16-pm.png)
+
+To finish the implementation of this solution, you will need the `example4` function that you created previously, and two constant functions:
+
+* `givenHasPassenger` - a function that returns a list of givens that represents the condition that `HAS_PASSENGER` is `T`
+* `combinationDropoff` - a function that returns a list of combinations that represents the case where the `ACTION` is `DROPOFF_PASSENGER`.
+
+When you have completed constructing all the functions, they can be composed as shown below:
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-11.43.43-pm.png)
+
+You can run your function from the Run dialog on the context panel.   For example the input below will find the median number of steps that a passenger spends in the cab.     When your function has finished running, you will be able to see the results in the Function Results assistant in the Assistant panel.     
+
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-11.54.50-pm%20%283%29.png)
+
+  
+Because of parameter learning, these results may change as you continue to simulate your model.   For comparison, the predicted cumulative probability of a passenger being dropped  by the default model after 100 episodes of simulation are plotted in the chart below:
+
+![](../../../.gitbook/assets/screen-shot-2019-12-07-at-12.01.56-am.png)
 
