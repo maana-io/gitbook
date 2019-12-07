@@ -9,7 +9,7 @@ Check your Junk folder if you don't see it in your inbox.
 
 It will look like this:
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%284%29.png)
 
 Click on **“Verify Your Account”**
 

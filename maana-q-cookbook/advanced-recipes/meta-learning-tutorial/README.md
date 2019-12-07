@@ -63,11 +63,11 @@ mutation smallcensus {
 
 11. Following the link of features, pre-processor and labels you can see the kind that stores the detailed information:
 
-![Figure 6: Detailed information in Kinds](../../../.gitbook/assets/image%20%28121%29.png)
+![Figure 6: Detailed information in Kinds](../../../.gitbook/assets/image%20%28126%29.png)
 
-![Figure 7: Preprocessor information in Kind](../../../.gitbook/assets/image%20%2832%29.png)
+![Figure 7: Preprocessor information in Kind](../../../.gitbook/assets/image%20%2833%29.png)
 
-![Figure 8: Featurizer information in Kind](../../../.gitbook/assets/image%20%2868%29.png)
+![Figure 8: Featurizer information in Kind](../../../.gitbook/assets/image%20%2869%29.png)
 
 ### Classify Instance <a id="classify-instance"></a>
 
