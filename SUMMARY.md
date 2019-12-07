@@ -163,7 +163,6 @@
   * [Enumerations](maana-q-cookbook/design-patterns/enumerations.md)
   * [Unions](maana-q-cookbook/design-patterns/unions.md)
   * [Specialization and Enrichment](maana-q-cookbook/design-patterns/specialization-and-enrichment.md)
-  * [Implicit Mapping with Arguments](maana-q-cookbook/design-patterns/implicit-mapping-with-arguments.md)
   * [Lists of Lists](maana-q-cookbook/design-patterns/lists-of-lists.md)
   * [Model Mapping](maana-q-cookbook/design-patterns/model-mapping.md)
 * [Basic Recipes](maana-q-cookbook/basic-ingredients/README.md)
