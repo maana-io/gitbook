@@ -129,7 +129,7 @@ The `onDone` can be used to perform actions each time that the agent completes a
 
 ## Exercises
 
-### Creating A Prior Network
+### EXERCISE 1: Creating A Prior Network
 
 The probability density functions associated with the Bayesian network control how often the simulation will predict each action in response to observed conditions.   The `makeModel` function is used to create the Bayesian network used by the Agent.     Although the agent is capable of learning the correct \(conditional\) probability density functions for each observable, using some common sense may help it get converge faster.
 
@@ -150,14 +150,51 @@ Once you have selected the Maana Lambda assistant, you should see the code below
 ![The default implementation of the makeModel function](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.05.03-pm.png)
 
 Edit the `network` variable to encode your probability density functions.    If you are having difficulty choosing values, there are some helpful hints in the code.   When you are done making your changes, press the save button.  
-  
 
 
-### Initial Network
+You can test your work by running the `makeModel` function in the context panel.  
 
-The structure of our taxicab network might initially look something like this. This says that `Location`, `hasPassenger` and `Action` are all discrete distributions, and that we believe _a priori_ that probabilities location and action may be conditional upon the value fo `hasPassenger`.
 
-![](../../../.gitbook/assets/screen-shot-2019-12-03-at-7.17.59-am.png)
+![Testing the Function](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.15.38-pm.png)
+
+If you were successful, you should be able to view your results with graphQL output in the `Function Results` assistant in the assistants panel.    Your results should look something like this:
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.19.12-pm.png)
+
+### EXERCISE 2: Make A Prediction with your network
+
+In this exercise we will answer the problem question:
+
+> Given that a passenger is in the cab, how likely are they to be dropped off this step?
+
+We will do this using function composition, to take the output from the `makeModel` function and send it to the the `maana-ai-bayes-net` service to perform the prediction.   To make the function more useful, we will expose the `given` and `combinations` arguments from the `infer` function so that we can answer additional \(conditional\) probability questions from our network.
+
+We will start by creating a new Knowledge Graph called `Excercise-2` and creating a new function `excercise2` on it.    This `exercise2` function should have the type indicated below:
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.43.42-pm.png)
+
+Open the Function Graph for `excersise2`and drag the following functions from the inventory onto it:
+
+* `defaultHyperparameters` this is a lambda that returns the identifier for the default hyperparameter instance.   It has been implemented using the Maana lambda assistant and returns the value "0".
+* `hyperparameters` is an auto-generated function that given a identifier, reads an instance of hyperparameters from KindDB.
+* `makeModel` creates a new model instance for use with the simulator.   We modified it in exercise 1.
+* `maana-ai-bayes-net:infer` This is the function the performs inference over a Bayesian network.
+
+Also create a new function on the canvas called `projectSerializedNetwork`.   The purpose of this function is to return the network field of a model kind.   Connect the inputs and outputs as shown below:
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.42.16-pm.png)
+
+Before we can run our function, we need to create an implementation for the `projectSerializedNetwork` function using the Maana Lambda assistant.   Select the Maana Lambda Assistant from the dropdown in the Assistants panel, and then select the `projectSerializedNetwork`function.  Then use the Lambda assistant to implement the projection function and then press save.
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.41.51-pm.png)
+
+When you are done saving, you can run `exercise2` from the context panel.   You can answer the problem question by providing the following inputs:
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.43.33-pm.png)
+
+When your function is done executing you should be able to view your results in the `Function Results` assistant of the Assistant panel.  Your results may differ from those shown below depending upon the values you chose for your probability density functions in exercise 1.
+
+![](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.44.06-pm.png)
 
 ## Learning
 
