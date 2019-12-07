@@ -196,9 +196,24 @@ When your function is done executing you should be able to view your results in 
 
 ![](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.44.06-pm.png)
 
-## Learning
+### EXERCISE 3: Simulation
 
-Updates of Bayesian networks is an online learning rather than batch training/update method. The agent has prior distributions for the conditional probabilities of states and actions and can learn incrementally as it observes actual behavior of the simulation \(i.e., consequences of taking actions in various states\).
+As we saw in exercise 2,  provided any set of givens \(conditions\), we can use inference over our Bayesian network to compute the conditional probabilities of any of the other observables.   Using this knowledge, we our inference engine to predict the likelihood of each possible `Action` given the observed `LOCATION` and `HAS_PASSENGER` values.     
+  
+The implementation of the `onStep` function uses exactly this technique to construct the conditional probability density function for a the current state, and then randomly selects a `ACTION` from that distribution.    This allows us to easily deploy our Bayesian network as a simulation using the AI Simulator Framework.  
+  
+In this exercise we will Simulate your taxi agent using the AI Simulator framework.
+
+Begin by copying your workspace's **service id** from the Workspace -&gt; context panel -&gt; info.  Then open the Maana AI Simulator framework in your browser.   Paste the copied service id into the `agent URI` field of the Simulator -&gt; OpenAI Gym -&gt; Control Panel.  
+  
+When you are ready, press the run button to begin the simulation.   You should see something like the animation below:  
+  
+  
+
+{% file src="../../../.gitbook/assets/screen-recording-2019-12-06-at-7.41.01-pm.mov" %}
+
+EXERCISE 4: Learning  
+
 
 Imagine at each time step you are presented with a new collection of observations for what the correct action to be taken is. This knowledge can be used to incrementally adapt the network structure or of the conditional probabilities \(via MLE or Bayesian arithmetic\), \([https://arxiv.org/pdf/1302.1538.pdf](https://arxiv.org/pdf/1302.1538.pdf)\). This is referred to as _structural learning_ vs _parameter learning_, respectively, and will be discussed below.
 
