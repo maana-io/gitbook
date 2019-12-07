@@ -6,7 +6,7 @@ This tutorial goes through some sample sequences of events to recognize an entit
 
 Create a new Workspace. Import NER Service \(by searching for service name and dragging to Inventory\) and expand 'Inventory' \(bottom left\)
 
-![Figure 1: Expend &apos;Inventory&apos;: &apos;Services&apos; -&amp;gt; &apos;Maana Named Entity Recognition&apos;](../../.gitbook/assets/image%20%289%29.png)
+![Figure 1: Expend &apos;Inventory&apos;: &apos;Services&apos; -&amp;gt; &apos;Maana Named Entity Recognition&apos;](../../.gitbook/assets/image%20%2810%29.png)
 
 Then you can drag & drop any service function to you workspace canvas:
 
