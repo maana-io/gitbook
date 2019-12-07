@@ -165,7 +165,7 @@ From the Inventory, we can see an outline of the functions and Kinds that import
 
 Note that the `hello` function has the same type signature as the `sayHello` function: both take a required `STRING!`and return a required `STRING!`.
 
-Since this is a full GraphQL service, we can also use the standard Graph_i_QL interactive development environment \(IDE\), which Q provides as default **Assistant** in every workspace.
+Since this is a full GraphQL service, we can also use the [standard Graph_i_QL interactive development environment \(IDE\),](https://github.com/graphql/graphiql) which Q provides as default **Assistant** in every workspace.
 
 Here, you can explore the service documentation and issue live queries.
 

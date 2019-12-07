@@ -560,5 +560,15 @@ Can you extend the initial model above to the complete example scenario?
 
 As mentioned at the beginning, the GOAP algorithm can also incorporate the costs of various actions, leading to an optimization opportunity to find the least costly plans.  Can you extend the ontology and implement the changes to support this feature?
 
-## Conclusion
+## Conclusions
+
+In this lesson, you:
+
+* Ripped some open source code from GitHub
+* Designed a mini-ontology for the domain of GOAP-based AI planning
+* Implemented a GraphQL schema and resolvers in Python
+* Crafted a GOAP scenario using your domain model
+* Tested your Python GraphQL microservice locally
+
+In the next lesson, we take your service to the cloud...
 
