@@ -138,7 +138,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="advanced/developer-steel-thread.md">Developing Custom Microservices</a>
+      <td style="text-align:left"><a href="advanced/developer-steel-thread/">Developing Custom Microservices</a>
       </td>
       <td style="text-align:left">
         <p>Get started with Maana Command Line Interface (CLI) for advanced development.</p>

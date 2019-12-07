@@ -114,8 +114,7 @@
 
 ## Training
 
-* [Pre-Read Material](training/pre-read-material.md)
-* [Connecting to Maana](training/connecting-to-maana.md)
+* [Connecting to Maana Q](training/connecting-to-maana.md)
 * [Outline](training/outline.md)
 * [Basics](training/basics/README.md)
   * [Hello, world!](training/basics/hello-world/README.md)
@@ -141,7 +140,10 @@
   * [Use Case Selection](training/methodology/use-case-selection.md)
   * [Project Execution](training/methodology/kickoff-session.md)
 * [Advanced](training/advanced/README.md)
-  * [Developing a Custom Microservice](training/advanced/developer-steel-thread.md)
+  * [Developing a Custom Microservice](training/advanced/developer-steel-thread/README.md)
+    * [Create a Microservice using the CLI](training/advanced/developer-steel-thread/create-a-microservice-using-the-cli.md)
+    * [Wrap-and-Map a Library](training/advanced/developer-steel-thread/wrap-and-map-a-library.md)
+    * [Deploy and Use Your Service](training/advanced/developer-steel-thread/deploy-and-use-your-service.md)
   * [Inference](training/advanced/inference/README.md)
     * [Logical Inference and Semantic Graphs](training/advanced/inference/logical-inference-and-semantic-graphs.md)
     * [Logical Inference and AI Planning with GOAP](training/advanced/inference/logical-inference-and-ai-planning.md)

@@ -2,7 +2,7 @@
 description: Getting Access to cstrainingstable.knowledge.maana.io
 ---
 
-# Connecting to Maana
+# Connecting to Maana Q
 
 You will get an email from **"maana-sales"**, asking you to "**Verify your email**".  
 Check your Junk folder if you don't see it in your inbox.
