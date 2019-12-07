@@ -125,7 +125,7 @@ Upon completion, the `onStep` function also returns the posterior Bayesian netwo
 
 #### onDone
 
-
+The `onDone` can be used to perform actions each time that the agent completes a simulation.   This might be used, for example, to store performance metrics.   The Bayes taxi-v3 Agent template does not make use of this capability. 
 
 ### Initial Network
 
