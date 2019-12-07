@@ -224,7 +224,10 @@ $$
 \theta^T_{ijk} = \left\{ \begin{array}{ll} \theta_{ijk}^{T-1} + \eta\left( \frac{P^{T-1}(z_i^k,p_i^j|y_T)}{P^{T-1}(p_i^j|y_T)} -  \theta_{ijk}^{T-1}\right) & when\ P^{T-1}(p_i^j|y_T) \neq 0\\ \theta_{ijk}^{T-1} \end{array}\right.
 $$
 
-where $$y_T$$is the evidence vector, $$p_i$$denotes the set of parents of i, $$p_i^j$$ to be a configuration values for the parent observables, and $$z_i^k$$is one of the values for the observable.    $$\theta_{ijk}$$ is an entry in a cumulative probability table for observable i having value k and parent values j.    The parameter $$\eta$$is the learning rate and controls how much the new evidence impacts the posterior distributions.
+where $$y_T$$is the evidence vector, $$p_i$$denotes the set of parents of i, $$p_i^j$$ to be a configuration values for the parent observables, and $$z_i^k$$is one of the values for the observable.    $$\theta_{ijk}$$ is an entry in a cumulative probability table for observable i having value k and parent values j.      
+
+
+The parameter $$\eta$$is the learning rate and controls how much the new evidence impacts the posterior distributions.  It needs to be kept small needs to ensure convergence, and will diverge when it is greater than 1
 
 Due the specifics of our problem, each new evidence vector provides us with an observation of all observables \( e.g. the state and the action taken\). The update rule in this case becomes very simple, with the above equation reducing to:
 
@@ -235,7 +238,25 @@ $$
  \end{array}\right.
 $$
 
-These equations are simple enough to implement in a lambda. and have been implemented in the `learn` function of the 
+These equations are simple enough to implement in a lambda. and have been implemented in the `learn` function of the Bayes Taxi v3 template.   
 
-The learning rate, eta, needs to be kept sufficiently small to ensure convergence, and will diverge when it is greater than 1.
+![The implementation of the learn function](../../../.gitbook/assets/screen-shot-2019-12-06-at-9.43.15-pm.png)
+
+The learn function is the composite of the `updatePriors` function as defined above, and the `getEvidenceVector` function.   In real life, evidence would be collected through observation of the actual system;   for this tutorial we are using the GOAP simulator as a surrogate  exemplar.  
+  
+Parameter updating is applied by default with a learning rate of $$\eta = 0.01$$.      
+  
+Take a moment to use the function that you created in example 2 to inspect the results of parameter updating.   For comparison, here are the results of applying parameter updates to the default network after 10 and 100 episodes.  
+  
+
+
+![Default Bayesian Network After 10 Episodes of Simulation](../../../.gitbook/assets/episode-10-results.png)
+
+After only 10 episodes of simulation, the model has learned with a high degree of certainty the correct action to take when the taxi is at some other location.   These are the most frequently occurring states, comprising about 80% of all those observed.    It has also started to learn that there is a strong negative correlation between being at the drop-off location without a passenger and pickup location with a passenger.
+
+![Default Bayesian Network After 100 Episodes of Learning](../../../.gitbook/assets/episode-100-results.png)
+
+After 100 episodes, it has learned the correct action to take with a high degree of certainty for all but the least frequently occurring states.   The one row that has not changed corresponds to the state where the taxi is at the pickup location and the passenger is in the cab; however, since this state cannot occur during normal simulation, these values are of no consequence to making inferences.   
+  
+How did your results compare?   Do you expect that those differences will change the behavior of the simulation?
 
