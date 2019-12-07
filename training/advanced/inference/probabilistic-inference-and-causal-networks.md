@@ -87,11 +87,30 @@ thenvalue := possiblevalue ":" float
 
 The CombinationInput type is used to represent both a conditional/constraint \(givens\) and unknown values for which the probabilities should be predicted.    Future versions of the maana-ai-bayes-net service will feature improvements for constructing, inspecting and inferring values from Bayes network structures.
 
-### External: GOAP Taxi-v3 Agent
+### Workspace: GOAP Taxi-v3 Agent
+
+A Maana service which utilizes Goal-Oriented Action Planning to simulate the behavior of a taxi in the  [Taxi-v3](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/taxi-v3-environment) environment.   We will be using this service to produce evidence vectors in the learning portion of our tutorial.
 
 ### Workspace: Bayes Taxi-v3 Agent
 
+The Bayes Taxi-v3 Agent is a template for creating your own Bayesian network agent for the  [Taxi-v3](https://maana.gitbook.io/q/v/3.2.1/product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/taxi-v3-environment) environment.   As with any Gym agent, the top-level KnowledgeGraph has has the familiar agent protocol.
 
+![Top Level Knowledge Graph for the Bayes Taxi Agent](../../../.gitbook/assets/screen-shot-2019-12-06-at-3.53.42-pm.png)
+
+#### onReset
+
+At the beginning of a simulation run, the simulator host will ask the simulator to reset itself for a new simulation.  In turn, the simulator will ask its agent\(s\) to prepare themselves for a new simulation, including some configuration information:
+
+* `modelId`: the ID of the model \(if any\) to create/use
+* `isTraining`: indicates whether the simulation is training or performance
+
+This function is expected to return optional state it wishes to be returned to it during the simulation run, i.e., `context`.   For the Bayes Taxi Agent, we return a serialized `Model`, which includes the number of steps taken, and the serialized Bayesian network.   The function `makeModel` can be used to create a new instance of a model kind.  The `deserializeModel` and `serializeModel` functions provide type safe methods for parsing and string encoding model instances.
+
+![The Knowledge Graph For Bayes Taxi Models](../../../.gitbook/assets/screen-shot-2019-12-06-at-4.04.11-pm.png)
+
+onStep
+
+onDone
 
 ### Initial Network
 
