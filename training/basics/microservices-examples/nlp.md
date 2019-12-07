@@ -8,9 +8,13 @@ Much of our knowledge is locked away in unstructured content, such as documents,
 
 ## Step-by-Step Instructions
 
-**Step 1.**  Clone the `NLP Challenge` template workspace
+**Step 1.**  Clone the `Challenge: NLP` template workspace
 
-Remember to name it `<your name> NLP Challenge`.
+Use the main Workspaces tab of the portal and scroll the page to very bottom to locate the workspace templates.
+
+Remember to name your workspace `<your name> NLP Challenge`.
+
+![](../../../.gitbook/assets/challenge-clone.png)
 
 **Step 2.** Implement the function graph for the top-level `extractHeadlineEntities`
 
@@ -20,5 +24,5 @@ Your workspace has been preconfigured with a single function, `extractHeadlineEn
 
 Several services have also been added to your workspace inventory, which you may find useful:
 
-![](../../../.gitbook/assets/headline-services.png)
+![](../../../.gitbook/assets/headline-services%20%281%29.png)
 

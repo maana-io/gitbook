@@ -4,11 +4,47 @@ description: Learn how to compose functions from multiple microservices
 
 # Video Translation
 
-**Use Case Description:**  
-
 This example demonstrates how the Maana Q platform can be leveraged to extract and transcribe \(and translate\) audio from a video.  In this case we use YouTube as our video source.   With video content being more wide spread the ability to extract knowledge from them could prove vitally important.  Imagine a set of Dr, Patient video consultation or a set of video lectures and what knowledge would be contained in them. 
 
-**Step by Step Instructions:** 
+## Step-by-Step Instructions
+
+**Step 1.**  Clone the `Challenge: Video Translation` template workspace
+
+Use the main Workspaces tab of the portal and scroll the page to very bottom to locate the workspace templates.
+
+Remember to name your workspace `<your name> Challenge: Video Translation`.
+
+![](../../../.gitbook/assets/challenge-clone.png)
+
+**Step 2.** Implement the function graph for the top-level `transcribeVideo`
+
+Your workspace has been preconfigured with a top-level function, `transcribeVideo`, that you are expected to implement..
+
+![](../../../.gitbook/assets/translate-youtube%20%281%29.png)
+
+To help, several additional functions you may need have been defined, but not implemented:
+
+![](../../../.gitbook/assets/translate-helpers.png)
+
+Several services have also been added to your workspace inventory, which you may find useful:
+
+![](../../../.gitbook/assets/translate-services.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **Step 1: Examine the function \`translateYouTube\`**
 
