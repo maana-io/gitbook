@@ -212,50 +212,30 @@ When you are ready, press the run button to begin the simulation.   You should s
 
 {% file src="../../../.gitbook/assets/screen-recording-2019-12-06-at-7.41.01-pm.mov" %}
 
-EXERCISE 4: Learning  
+### EXERCISE 4: Learning 
 
-
-Imagine at each time step you are presented with a new collection of observations for what the correct action to be taken is. This knowledge can be used to incrementally adapt the network structure or of the conditional probabilities \(via MLE or Bayesian arithmetic\), \([https://arxiv.org/pdf/1302.1538.pdf](https://arxiv.org/pdf/1302.1538.pdf)\). This is referred to as _structural learning_ vs _parameter learning_, respectively, and will be discussed below.
-
-### Structural Learning
-
-For _structural learning_, we expect that over time, we learn that `Location` and `hasPassenger` are independent \(i.e., not connected\):
-
-![](../../../.gitbook/assets/screen-shot-2019-12-03-at-7.35.03-am.png)
-
-### Parameter Learning
-
-For _parameter learning_, we would expect that we would eventually learn that:
+Machine learning can be applied to Bayesian networks both to discover the structure of the directed graph and for learning the optimal values of \(conditional\) probability density functions to describe the observed behavior.    In this example we will use online supervised learning to continuously improve the predictions from our network.     
+  
+`Online machine learning` is a ML technique which can be used when data arrives in incrementally over time,  and it is infeasible to obtain the entire dataset.    As each observation arrives, it is used to update the previous best model.    This differs from batch learning techniques which generate the best model by training on the entire data set all at once.      
+  
+What we are interested in is an update rule that we can apply to the network as our agents explore the state-action space. There is good research and information on this problem in "[Update rules for parameter estimation in Bayesian networks](https://arxiv.org/pdf/1302.1519.pdf)" and "[Parameter Estimation in Bayesian Networks](https://courses.cs.ut.ee/2009/bayesian-networks/orasmaa-liin-chapter-6.pdf)." The From \[Bauer, et al. 1997\], the general update rule for the parameters is:
 
 $$
-P( Action = DropOff | Location = atDropOff, hasPassenger = T ) = 100\%
+\theta^T_{ijk} = \left\{ \begin{array}{ll} \theta_{ijk}^{T-1} + \eta\left( \frac{P^{T-1}(z_i^k,p_i^j|y_T)}{P^{T-1}(p_i^j|y_T)} -  \theta_{ijk}^{T-1}\right) & when\ P^{T-1}(p_i^j|y_T) \neq 0\\ \theta_{ijk}^{T-1} \end{array}\right.
 $$
 
-$$
-P( Action = Pickup  | Location = atPickup, hasPassenger = F ) = 100\%
-$$
+where $$y_T$$is the evidence vector, $$p_i$$denotes the set of parents of i, $$p_i^j$$ to be a configuration values for the parent observables, and $$z_i^k$$is one of the values for the observable.    $$\theta_{ijk}$$ is an entry in a cumulative probability table for observable i having value k and parent values j.    The parameter $$\eta$$is the learning rate and controls how much the new evidence impacts the posterior distributions.
+
+Due the specifics of our problem, each new evidence vector provides us with an observation of all observables \( e.g. the state and the action taken\). The update rule in this case becomes very simple, with the above equation reducing to:
 
 $$
-P( Action = Move | Location = atOther ) = 100\%
+\theta^T_{ijk} = \left\{ \begin{array}{ll} \theta_{ijk}^{T-1} + \eta\left( 1 -  \theta_{ijk}^{T-1}\right) & when\ z^k_i \in y_T\ and\ p_i^j \subseteq y_T\\
+\theta_{ijk}^{T-1}\left(1-\eta\right) & when\ p_i^j\subseteq y_T\\
+\theta_{ijk}^{T-1}
+ \end{array}\right.
 $$
 
-What we are interested in is an update rule that we can apply to the network as our agents explores the state-action space. There is good research and information on this problem in "[Update rules for parameter estimation in Bayesian networks](https://arxiv.org/pdf/1302.1519.pdf)" and "[Parameter Estimation in Bayesian Networks](https://courses.cs.ut.ee/2009/bayesian-networks/orasmaa-liin-chapter-6.pdf)." The general update rule for the parameters is:
-
-![The general update rule for the parameters of a Bayesian network](../../../.gitbook/assets/screen-shot-2019-12-03-at-9.52.28-am.png)
-
-However due the specifics of our problem, each new evidence vector provides us with an observation of all variables \( e.g. the state and the action taken\). The update rule in this case becomes very simple, with equation 5 reducing to:
-
-$$
-P\hat(pa^j_i) = 1\ if\ yT\ provides\ evidence\ of\ the\ parents\ pa_i^j\ otherwise\ 0.
-$$
-
-and the top line for equation 4 becomes:
-
-$$
-theta^T = theta^{T-1} + eta * (  (1\ if\ yT\ provides\ evidence\ of\ z\ otherwise\ 0) - theta^{T-1})
-$$
-
-These equations are simple enough to implement in a lambda.
+These equations are simple enough to implement in a lambda. and have been implemented in the `learn` function of the 
 
 The learning rate, eta, needs to be kept sufficiently small to ensure convergence, and will diverge when it is greater than 1.
 
