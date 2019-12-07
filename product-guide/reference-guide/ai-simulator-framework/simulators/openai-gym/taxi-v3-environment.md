@@ -166,7 +166,7 @@ A number of tutorial agents have been created to illustrate different AI styles 
 * [GOAP Agent](../../../../../training/advanced/inference/logical-inference-and-ai-planning.md) - uses a simple but effective AI planning technique to solve the taxi reasoning task
 * [Bayes Agent](../../../../../training/advanced/inference/probabilistic-inference-and-causal-networks.md) - uses probabilistic inference \(causal/belief\) to learn the probability distributions for taking favorable actions
 * [Q Learning Agent](../../../../../training/advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md) - uses the classic Bellman equation for updating a state/action table
-* [Deep-Q Learning Agent](../../../../../training/advanced/learning/reinforcement-learning-deep-q-network-dqn-with-open-ai-taxi.md) - uses TensorFlow to create a deep neural network for solving the taxi problem
+* [Deep-Q Learning Agent]() - uses TensorFlow to create a deep neural network for solving the taxi problem
 
 
 

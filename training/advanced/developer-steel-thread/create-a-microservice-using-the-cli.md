@@ -85,7 +85,7 @@ With the dependencies installed and the service running, we can test it right in
 
 **Step 6b.** Issue a GraphQL query  ****
 
-![](../../../.gitbook/assets/image%20%28129%29.png)
+![](../../../.gitbook/assets/image%20%28134%29.png)
 
 **Step 7.** Familiarize yourself with the project structure
 
@@ -93,7 +93,7 @@ Now that we know it runs, let's take a moment to understand how it works.  Open 
 
 **Step 7a.**  Examine the imports
 
-![](../../../.gitbook/assets/image%20%28141%29.png)
+![](../../../.gitbook/assets/image%20%28146%29.png)
 
 This Python 3.7 project uses the excellent [Ariadne](https://ariadnegraphql.org/) GraphQL library, which provides "schema-first" \(i.e., allows you to focus on GraphQL SDL\), and has support for the  standard [Asynchronous Server Gateway Interface \(ASGI\)](https://asgi.readthedocs.io/en/latest/) to provide high-performance HTTP serving.  [ASGI Lifespan](https://pypi.org/project/asgi-lifespan/) middleware has also been included for you to hook startup and shutdown events for special processing.
 
@@ -101,29 +101,33 @@ This Python 3.7 project uses the excellent [Ariadne](https://ariadnegraphql.org/
 
 Ariadne's `gql` function provides schema validation.
 
-![](../../../.gitbook/assets/image%20%28142%29.png)
+![](../../../.gitbook/assets/image%20%28147%29.png)
 
 **Step 7c.**  Examine the GraphQL resolvers
 
 As you know, GraphQL requires _resolvers_ for at least the root `QueryType` object.  If your service exposes mutations, then it defines a `MutationType` object.
 
-![](../../../.gitbook/assets/image%20%2846%29.png)
+![](../../../.gitbook/assets/image%20%2847%29.png)
 
 If your service provides resolvers for types you define, then they require their own `ObjectType` objects.
 
-![](../../../.gitbook/assets/image%20%28136%29.png)
+![](../../../.gitbook/assets/image%20%28141%29.png)
 
 **Step 7d.** Examine creating the executable GraphQL schema
 
 Include any Query, Mutation, or Object type definitions in the collection passed to the function.
 
-![](../../../.gitbook/assets/image%20%2818%29.png)
+![](../../../.gitbook/assets/image%20%2819%29.png)
 
 **Step 7e.** Examine the application server lifecycle
 
 Your GraphQL schema is served from an HTTP server provided by a Python application server.  The remaining code creates this server and provide hooks for the startup/shutdown lifecycle events.
 
-![](../../../.gitbook/assets/image%20%28147%29.png)
+![](../../../.gitbook/assets/image%20%28152%29.png)
+
+**Challenge**: extend the schema by adding a mutation to add a new `Person`
+
+This project is configured for hot-reloading, which means that anytime you change one of the project files, the running service will restart automatically.  This is extremely convenient when developing your service.  Try it now by changing your schema to include a mutation and corresponding resolver to add additional people instances to the in-memory collection.
 
 ## Conclusion
 

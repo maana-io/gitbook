@@ -148,12 +148,11 @@
     * [Logical Inference and AI Planning with GOAP](training/advanced/inference/logical-inference-and-ai-planning.md)
     * [Probabilistic Inference and Causal Networks](training/advanced/inference/probabilistic-inference-and-causal-networks.md)
   * [Learning](training/advanced/learning/README.md)
+    * [Reinforcement Learning: Q-Learning](training/advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md)
     * [Learning as part of ORDL](training/advanced/learning/part-1-learning-context-in-ordl.md)
     * [Passive Learning](training/advanced/learning/part-2-passive-learning.md)
     * [Active Learning](training/advanced/learning/part-3-active-learning.md)
-    * [Reinforcement Learning: Q-Learning](training/advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md)
-    * [Reinforcement Learning: Deep Q-Network \(DQN\)](training/advanced/learning/reinforcement-learning-deep-q-network-dqn-with-open-ai-taxi.md)
-    * [Challenge](training/advanced/learning/challenge.md)
+  * [Challenge](training/advanced/challenge.md)
 
 ## MAANA Q COOKBOOK
 
