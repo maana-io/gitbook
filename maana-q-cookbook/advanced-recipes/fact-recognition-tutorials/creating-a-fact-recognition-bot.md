@@ -41,7 +41,7 @@ The Pattern kind \(which can have any name\) can be created manually.
 1. Add a new kind to the workspace \(name it "Pattern"\), edit the schema to include "predicateLemmas" of type String with modifier LIST, "object" of type String with modifier LIST and "subject" of type String with modifier LIST.
 2. Once the kind is created, functions for the kind should be visible in the service inventory. Your workspace should look like that below:
 
-![](../../../.gitbook/assets/image%20%28136%29.png)
+![](../../../.gitbook/assets/image%20%28137%29.png)
 
 There will be a set of functions for every Kind in your workspace. These functions can be used to manipulate the Kinds.
 
@@ -156,7 +156,7 @@ Result after the extractByExampleKind function is run.
 
 4. The result will be several entries in the "PurchaseEvent" kind. These can be viewed as below:
 
-![](../../../.gitbook/assets/image%20%28145%29.png)
+![](../../../.gitbook/assets/image%20%28146%29.png)
 
 Result shown in the PurchaseEvent kind.
 
