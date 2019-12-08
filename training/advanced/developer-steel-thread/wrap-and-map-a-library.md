@@ -113,7 +113,7 @@ Click the **RAW** button to gain access to the raw file contents.
 
 Create the file in the app folder next to `main.py`.  Paste the raw file contents from GitHub.  Save the file.
 
-![](../../../.gitbook/assets/image%20%28118%29.png)
+![](../../../.gitbook/assets/image%20%28119%29.png)
 
 **Step 1f.** Add support for `numpy`
 
@@ -503,7 +503,7 @@ With our schema defined and our service implemented, we can try it by giving it 
 
 We have found it helpful to create a `playground.gql` file with your service that illustrates basic usage and can be used to [smoke test](https://en.wikipedia.org/wiki/Smoke_testing_%28software%29) your service for someone just getting familiar with it.
 
-![](../../../.gitbook/assets/image%20%28138%29.png)
+![](../../../.gitbook/assets/image%20%28139%29.png)
 
 **Step 4b.** Create a GOAP Scenario instance for planning
 

@@ -89,7 +89,7 @@ Each Knowledge-based microservice from a Maana template includes the GraphQL IDE
 
 This Python template project includes the [GraphQL Playground IDE](https://github.com/prisma-labs/graphql-playground), which is a slightly nicer \(or at least darker\) version of the official [Graph_i_QL](https://github.com/graphql/graphiql).
 
-![](../../../.gitbook/assets/image%20%28135%29.png)
+![](../../../.gitbook/assets/image%20%28136%29.png)
 
 **Step 7.** Familiarize yourself with the project structure
 
@@ -97,7 +97,7 @@ Now that we know it runs, let's take a moment to understand how it works.  Open 
 
 **Step 7a.**  Examine the imports
 
-![](../../../.gitbook/assets/image%20%28148%29.png)
+![](../../../.gitbook/assets/image%20%28149%29.png)
 
 This Python 3.7 project uses the excellent [Ariadne](https://ariadnegraphql.org/) GraphQL library, which provides "schema-first" \(i.e., allows you to focus on GraphQL SDL\), and has support for the  standard [Asynchronous Server Gateway Interface \(ASGI\)](https://asgi.readthedocs.io/en/latest/) to provide high-performance HTTP serving.  [ASGI Lifespan](https://pypi.org/project/asgi-lifespan/) middleware has also been included for you to hook startup and shutdown events for special processing.
 
@@ -105,7 +105,7 @@ This Python 3.7 project uses the excellent [Ariadne](https://ariadnegraphql.org/
 
 Ariadne's `gql` function provides schema validation.
 
-![](../../../.gitbook/assets/image%20%28149%29.png)
+![](../../../.gitbook/assets/image%20%28150%29.png)
 
 **Step 7c.**  Examine the GraphQL resolvers
 
@@ -115,7 +115,7 @@ As you know, GraphQL requires _resolvers_ for at least the root `QueryType` obje
 
 If your service provides resolvers for types you define, then they require their own `ObjectType` objects.
 
-![](../../../.gitbook/assets/image%20%28143%29.png)
+![](../../../.gitbook/assets/image%20%28144%29.png)
 
 **Step 7d.** Examine creating the executable GraphQL schema
 
@@ -127,7 +127,7 @@ Include any Query, Mutation, or Object type definitions in the collection passed
 
 Your GraphQL schema is served from an HTTP server provided by a Python application server.  The remaining code creates this server and provide hooks for the startup/shutdown lifecycle events.
 
-![](../../../.gitbook/assets/image%20%28155%29.png)
+![](../../../.gitbook/assets/image%20%28156%29.png)
 
 **Challenge**: extend the schema by adding a mutation to add a new `Person`
 
