@@ -26,7 +26,7 @@ While Gordon is not necessarily interested in this particular function, Ana tell
 
 Ana told Gordon, the next step is to run her Machine Learning model with the Test Dataset, which was not used for training. For that, she created the **evaluate** function which she ran to show the results to Gordon. Most of the results looked as expected \(image below\), but the Test Dataset was fairly small, so Gordon was not convinced this model could work accurately for a large number of comments. 
 
-![](../../../.gitbook/assets/image%20%28152%29.png)
+![](../../../.gitbook/assets/image%20%28154%29.png)
 
 ### Predicting the Sentiment of a New Comment
 
@@ -48,7 +48,7 @@ After that, she asked Gordon to come back to the **predictOne** function, and en
 
 Through these steps, Gordon gained an understanding of how he can evaluate the accuracy of the model Ana created for him, and how he can improve its accuracy by providing feedback. Ana went to summarize the feedback loop mechanism in the figure below. 
 
-![](../../../.gitbook/assets/image%20%28138%29.png)
+![](../../../.gitbook/assets/image%20%28139%29.png)
 
 Can you think of any limitations of this Feedback Loop architecture?
 
