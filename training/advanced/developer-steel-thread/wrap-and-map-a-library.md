@@ -113,7 +113,13 @@ Click the **RAW** button to gain access to the raw file contents.
 
 Create the file in the app folder next to `main.py`.  Paste the raw file contents from GitHub.  Save the file.
 
-![](../../../.gitbook/assets/image%20%28117%29.png)
+![](../../../.gitbook/assets/image%20%28118%29.png)
+
+**Step 1f.** Add support for `numpy`
+
+This algorithm has a dependency on the common `numpy` library, which is not included in the project template \(for size reasons\).  You will need to install it locally in order to run locally.
+
+Stop your service and `pip install numpy`, then restart your service `./start-reload.sh`.
 
 **Step 2.** Create a GraphQL Knowledge model for the service
 
@@ -497,7 +503,7 @@ With our schema defined and our service implemented, we can try it by giving it 
 
 We have found it helpful to create a `playground.gql` file with your service that illustrates basic usage and can be used to [smoke test](https://en.wikipedia.org/wiki/Smoke_testing_%28software%29) your service for someone just getting familiar with it.
 
-![](../../../.gitbook/assets/image%20%28137%29.png)
+![](../../../.gitbook/assets/image%20%28138%29.png)
 
 **Step 4b.** Create a GOAP Scenario instance for planning
 
@@ -565,10 +571,11 @@ As mentioned at the beginning, the GOAP algorithm can also incorporate the costs
 In this lesson, you:
 
 * Ripped some open source code from GitHub
+* Install Python packages locally
 * Designed a mini-ontology for the domain of GOAP-based AI planning
 * Implemented a GraphQL schema and resolvers in Python
 * Crafted a GOAP scenario using your domain model
-* Tested your Python GraphQL microservice locally
+* Tested your Python GraphQL microservice locally using GraphQL Playground
 
 In the next lesson, we take your service to the cloud...
 
