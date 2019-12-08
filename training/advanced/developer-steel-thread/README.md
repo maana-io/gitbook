@@ -2,7 +2,7 @@
 description: Beyond Lambdas
 ---
 
-# Developing a Custom Microservice
+# Knowledge Microservices
 
 ## Overview
 
@@ -20,7 +20,7 @@ Each of the functions being composed on a CKG **function graph** can either them
 
 Microservices allow big \(monolithic\) domains to broken down into smaller domains and solved incrementally, providing reusable building blocks.  Who doesn't love playing with blocks?
 
-{% hint style="info" %}
+{% hint style="success" %}
 Make fun building blocks for people to play with
 {% endhint %}
 

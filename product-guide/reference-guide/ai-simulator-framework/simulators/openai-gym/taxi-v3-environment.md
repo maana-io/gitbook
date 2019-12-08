@@ -162,7 +162,7 @@ return [i]
 
 A number of tutorial agents have been created to illustrate different AI styles \(e.g., planning, causal inference, reinforcement learning\):
 
-* Random Agent - a [workspace](https://lastknowngood.knowledge.maana.io/workspace/46661294-c682-4cbd-8e05-78e1db2a1229) designed to get you started developing your own Taxi-v3 agent, derived from the [Base Agent](../../agents/base-agent.md), and simply takes random actions on each step.
+* Random Agent - a [workspace](https://lastknowngood.knowledge.maana.io/workspace/46661294-c682-4cbd-8e05-78e1db2a1229) designed to get you started developing your own Taxi-v3 agent, derived from the [Base Agent](../../base-agent.md), and simply takes random actions on each step.
 * [GOAP Agent](../../../../../training/advanced/inference/logical-inference-and-ai-planning.md) - uses a simple but effective AI planning technique to solve the taxi reasoning task
 * [Bayes Agent](../../../../../training/advanced/inference/probabilistic-inference-and-causal-networks.md) - uses probabilistic inference \(causal/belief\) to learn the probability distributions for taking favorable actions
 * [Q Learning Agent](../../../../../training/advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md) - uses the classic Bellman equation for updating a state/action table

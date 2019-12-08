@@ -60,7 +60,7 @@ Use the Maana Q CLI's `mdeploy` command to bootstrap a Knowledge Service, Bot, o
 
 ## New Training Material
 
-To help you get started or advance your skills in becoming productive with Q, we have completely revamped our [training material](../training/outline.md#q-training-experience-at-a-glance), in conjunction with the new Lesson Assistant.
+To help you get started or advance your skills in becoming productive with Q, we have completely revamped our [training material](../training/courses/outline.md#q-training-experience-at-a-glance), in conjunction with the new Lesson Assistant.
 
 ## The Rest
 

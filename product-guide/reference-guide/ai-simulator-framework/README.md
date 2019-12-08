@@ -20,7 +20,7 @@ There are currently several supported simulators:
 
 * [CARLA](simulators/carla.md) - autonomous driving simulator
 * [OpenAI Gym](simulators/openai-gym/) - an easy to set up, general-intelligence [benchmark](https://en.wikipedia.org/wiki/Benchmark_%28computing%29) with a wide variety of different environments
-* [StarCraft II](simulators/starcraft-ii.md) - a collaboration between Google's DeepMind and Blizzard to develop the StarCraft II game into a rich environment for reinforcement learning research
+* [StarCraft II](simulators/starcraft-ii/) - a collaboration between Google's DeepMind and Blizzard to develop the StarCraft II game into a rich environment for reinforcement learning research
 
 Please see the official [GitHub repository](https://github.com/maana-io/maana-ai-simulator-app) and feel free to contribute!
 

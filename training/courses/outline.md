@@ -2,13 +2,13 @@
 description: Maana Training and Use Case Kickoff
 ---
 
-# Outline
+# SME, Analyst, Business Owner
 
 ## Q Training Experience at a Glance
 
 _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/maana-q-documentation/Maana%20Training%20Teaser.mov) _where Donald Thompson \(Founder, President & CTO, MAANA\), provides an overview of what to expect at training..._
 
-![](../.gitbook/assets/image%20%2855%29.png)
+![](../../.gitbook/assets/image%20%2855%29.png)
 
 ## Training Modules
 
@@ -32,7 +32,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/hello-world/">Hello, World</a>!</td>
+      <td style="text-align:left"><a href="../basics/hello-world/">Hello, World</a>!</td>
       <td style="text-align:left">
         <p>Introduction to Microservices</p>
         <p></p>
@@ -43,7 +43,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         Importing a microservice to a workspace</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/using-kinds-and-function-to-build-a-knowledge-graph/">Introduction to Kinds and Functions</a>
+      <td style="text-align:left"><a href="../basics/using-kinds-and-function-to-build-a-knowledge-graph/">Introduction to Kinds and Functions</a>
       </td>
       <td style="text-align:left">
         <p>Create Kinds and Functions</p>
@@ -55,7 +55,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         inputs and outputs &#x2022; Side effects and pure functions &#x2022; Compositionality</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="basics/working-with-lists/">Working with Lists</a>
+      <td style="text-align:left"><a href="../basics/working-with-lists/">Working with Lists</a>
       </td>
       <td style="text-align:left">Execute functions efficiently using Q.
         <br /><em><br />This lesson will teach you concepts and skills to work with lists minimizing development effort and maximizing software performance</em>
@@ -66,7 +66,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
     <tr>
       <td style="text-align:left">
         <p>Function Composition Example 1:</p>
-        <p><a href="basics/microservices-examples/nlp.md">NLP</a>
+        <p><a href="../basics/microservices-examples/nlp.md">NLP</a>
         </p>
       </td>
       <td style="text-align:left">
@@ -78,7 +78,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Using helper utility functions such as word counting</td>
     </tr>
     <tr>
-      <td style="text-align:left">Function Composition Example 2: <a href="basics/microservices-examples/audio-translation.md">Audio translation</a>
+      <td style="text-align:left">Function Composition Example 2: <a href="../basics/microservices-examples/audio-translation.md">Audio translation</a>
       </td>
       <td style="text-align:left">
         <p>Learn how to compose functions from multiple microservices.</p>
@@ -97,7 +97,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="methodology/problem-questions-and-decomposition/">Problem Decomposition</a>
+      <td style="text-align:left"><a href="../methodology/problem-questions-and-decomposition/">Problem Decomposition</a>
       </td>
       <td style="text-align:left">
         <p>Familiarize with Maana&apos;s methodology to decompose problems</p>
@@ -109,7 +109,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         and Interconnectedness</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="methodology/use-case-selection.md">Use Case Selection</a>
+      <td style="text-align:left"><a href="../methodology/use-case-selection.md">Use Case Selection</a>
       </td>
       <td style="text-align:left">
         <p>Familiarize with a methodology to rank and select Maana Q Use Cases.</p>
@@ -120,7 +120,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&#x2022; Use Case ranking spreadsheet and &apos;Fit 4 Maana&apos; workspace</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="methodology/kickoff-session.md">Project Execution</a>
+      <td style="text-align:left"><a href="../methodology/kickoff-session.md">Project Execution</a>
       </td>
       <td style="text-align:left">
         <p>Project execution approach and stages</p>
@@ -138,7 +138,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
       <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="advanced/developer-steel-thread/">Developing Custom Microservices</a>
+      <td style="text-align:left"><a href="../advanced/developer-steel-thread/">Developing Custom Microservices</a>
       </td>
       <td style="text-align:left">
         <p>Get started with Maana Command Line Interface (CLI) for advanced development.</p>
@@ -151,7 +151,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         existing libraries</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="advanced/learning/">Learning</a>
+      <td style="text-align:left"><a href="../advanced/learning/">Learning</a>
       </td>
       <td style="text-align:left">
         <p>Build an ORDL model<em><br /></em>
@@ -163,7 +163,7 @@ _See a_ [_short \(2:40 min\) video_](https://maanaimages.blob.core.windows.net/m
         decision and learning functions?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="../maana-q-cookbook/design-patterns/">Design Patterns</a>
+      <td style="text-align:left"><a href="../../maana-q-cookbook/design-patterns/">Design Patterns</a>
       </td>
       <td style="text-align:left">Learn how to recognize and capture common patterns, such as concept specialization,
         enumeration</td>

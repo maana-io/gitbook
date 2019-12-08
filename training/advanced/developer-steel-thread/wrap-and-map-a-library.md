@@ -1,4 +1,4 @@
-# Wrap-and-Map a Library
+# Wrap-and-Map a Python Library
 
 In this lesson, you will take an [open source implementation](https://github.com/flags/GOAPy) of an AI planning algorithm, Goal-Oriented Action Planning \(GOAP\), and learn the process of _wrap-and-map._  The purpose of wrapping and mapping digital resources is to surface them to the rest of the **Digital Knowledge Layer**, making them easy to integrate into solutions in ways you control \(i.e., what is exposed and how\).
 
