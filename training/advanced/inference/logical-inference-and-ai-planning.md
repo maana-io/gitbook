@@ -6,8 +6,6 @@ description: >-
 
 # Logical Inference and AI Planning with GOAP
 
-## Overview
-
 [Goal-Oriented Action Planning \(GOAP\)](http://alumni.media.mit.edu/~jorkin/goap.html) is a simple, but effective AI planner that uses logical chaining to achieve goals by performing a sequence of actions that change the world state \(from preconditions to postconditions\).  States are generally boolean conditions and actions can have associated costs and the planner will find the cheapest sequence.
 
 For a nice explanation and example, see the blog post "[Goal Oriented Action Planning for a Smarter AI](https://gamedevelopment.tutsplus.com/tutorials/goal-oriented-action-planning-for-a-smarter-ai--cms-20793)."
@@ -49,23 +47,34 @@ In more realistic examples, many different agents might be acting with possibly 
 
 Let's implement this scenario using the Maana Q AI Simulator framework.
 
-## Setup
+### Prerequisites
 
-You will need several things for this tutorial:
+* Basic familiarity with Maana Q AI Simulator Framework
+* Dependencies
+  * `GOAP Taxi-v3 Agent` workspace
+  * `Taxi-v3 Domain` workspace
+  * `maana-goap` service
 
-### Install the AI Simulator Framework
+## Step-by-Step Instructions
 
-* Please take a few minutes to familiarize yourself with the purpose and operation of the [Maana Q AI Simulator framework](../../../product-guide/reference-guide/ai-simulator-framework/).
-* Follow the installation instructions and confirm that you can login to the Q instance.
+**Step 1.**   Access the AI Simulator Framework
 
-### Clone the GOAP Agent Workspace
+Please take a few minutes to familiarize yourself with the purpose and operation of the [Maana Q AI Simulator framework](../../../product-guide/reference-guide/ai-simulator-framework/).
 
-* Login to Q and find and clone the "**GOAP Taxi-v3 Agent**" workspace.
-* Rename it to "&lt;your name&gt; GOAP Taxi-v3 Agent".
+Follow the installation instructions and confirm that you can login to the Q instance.
 
-### Test your agent
+**Step 2.**  Clone the GOAP agent workspace
 
-* Copy the workspace's **service id** from the Workspace -&gt; Context Panel -&gt; Info.
+Login to Q your Q instance, find, then clone the `GOAP Taxi-v3 Agent` workspace.
+
+Rename it to `<your name> GOAP Taxi-v3 Agent`with id `<your name>-goap-taxi-v3-agent`.
+
+**Step 3.**  Test your agent
+
+**Step 3a.**  Copy the workspace's service id
+
+from the Workspace -&gt; Context Panel -&gt; Info.
+
 * Paste it into the **Agent URI** field of Simulator -&gt; OpenAI Gym -&gt; Control panel.
 * Press the "Run" button and confirm the successful operation.
 

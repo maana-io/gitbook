@@ -79,6 +79,17 @@ To help interact with this world, we have created a workspace to provide various
 
 ![](../../../../../.gitbook/assets/taxi-v3-domain.png)
 
+### Decoding the Domain
+
+The simulator will send its current state as a single integer.  Recall that this represents 500 potential states.  We can decode this state value into:
+
+* Taxi location
+* Passenger location \(might be same as taxi\)
+* Drop-off location
+* `isAtPickupLocation`
+* `isAtDropoffLocaton`
+* `isWithPassenger`
+
 ```javascript
 const ts = new Date().toISOString()
 
@@ -157,6 +168,10 @@ i += location_idx[state.dropoffLocation.id]
 
 return [i]
 ```
+
+#### moveToward
+
+Our agent can perform one action per step, such as moving one cell north.  When attempting to navigate from one side of the map to the other, the moveToward function will determine the next cell to move, given the map \(which includes wall locations\).  This function uses the [A-star pathfinding algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to find the optimal route.
 
 ### Agents
 
