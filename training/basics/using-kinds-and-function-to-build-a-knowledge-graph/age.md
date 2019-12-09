@@ -18,6 +18,17 @@ This lesson continues from the [Your First Kind](calculate-age-using-dob-example
 
 ![](../../../.gitbook/assets/age-lambda.png)
 
+```javascript
+const { person } = input
+const { dob } = person
+
+const thisYear = new Date().getFullYear()
+const birthYear = new Date(dob).getFullYear()
+const age = thisYear - birthYear
+
+return age
+```
+
 Notice that the input object contains all the input arguments to the functions.  In this case, there is only one: `person: Person!`.  We can _destructure_ the input arguments into their individual values, then access them directly.
 
 **Step 3.** Run the function
