@@ -8,7 +8,7 @@ The simplest action an agent can take is to randomly select an action from the a
 
 Find the "Random AI Agent" workspace and clone it.  On LKG, the link is: [https://lastknowngood.knowledge.maana.io/workspace/46661294-c682-4cbd-8e05-78e1db2a1229](https://lastknowngood.knowledge.maana.io/workspace/46661294-c682-4cbd-8e05-78e1db2a1229).
 
-![](../../../../../.gitbook/assets/image%20%28115%29.png)
+![](../../../../../.gitbook/assets/image%20%28126%29.png)
 
 ## onReset
 

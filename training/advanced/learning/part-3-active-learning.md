@@ -16,7 +16,7 @@ Refer to the same workspace as Part 2:
 
 On the Main Functions Knowledge Graph, look at the 2 functions: **askSmartQuestions** and **answerSmartQuestions**. 
 
-![](../../../.gitbook/assets/image%20%2884%29.png)
+![](../../../.gitbook/assets/image%20%2889%29.png)
 
 In this architecture, the model predicts not only sentiments \(negative or positive given a written comment\), nut also provides an indication of its prediction confidence. This parameter is often related to how close the new observation is to the training set. If the confidence is low, the model will pass the comment to the **askSmartQuestions** function. This function will in turn pass the comment in form of a question to the SME, so that he/she can validate or correct the prediction. 
 

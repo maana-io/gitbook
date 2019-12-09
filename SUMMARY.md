@@ -115,6 +115,7 @@
 ## Training
 
 * [Connecting to Maana Q](training/connecting-to-maana.md)
+* [Introduction](training/introduction.md)
 * [Courses](training/courses/README.md)
   * [SME, Analyst, Business Owner](training/courses/outline.md)
   * [Software Developer, Data Scientist](training/courses/software-developer-data-scientist.md)
