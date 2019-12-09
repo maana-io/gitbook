@@ -15,15 +15,15 @@ The entity extractor calls the [NER service](../../product-guide/reference-guide
 5. Select the extractAndLink function and click on the arrow button on the right hand side panel. 
 6. Fill in kindId with the kind id for "DrillingReportscsv" in the fieldName set the value to "comment" and press the run button. The results are shown below:
 
-![](../../.gitbook/assets/image%20%2853%29.png)
+![](../../.gitbook/assets/image%20%2856%29.png)
 
 1. After the BotAction has completed, the kind will now have several "hasEntity" links that link to the kinds where the entities are stored:
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2835%29.png)
 
 1. Clicking on the PhysicalQuantity link to produce the Physical Quantity kind, and then making sure the Physical Quantity kind is selected, the following view should be visible - showing the extracted Physical Quantity data.
 
-![](../../.gitbook/assets/image%20%2842%29.png)
+![](../../.gitbook/assets/image%20%2844%29.png)
 
 Many other entities are extracted based on the entities defined in the maana-ner service include Person, Location and Organization. The extracted data can now be used as part of a larger pipeline.
 
