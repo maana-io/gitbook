@@ -15,7 +15,7 @@ The entity extractor calls the [NER service](), but allows the user to specify a
 5. Select the extractAndLink function and click on the arrow button on the right hand side panel. 
 6. Fill in kindId with the kind id for "DrillingReportscsv" in the fieldName set the value to "comment" and press the run button. The results are shown below:
 
-![](../../.gitbook/assets/image%20%2873%29.png)
+![](../../.gitbook/assets/image%20%2874%29.png)
 
 7. After the BotAction has completed, the kind will now have several "hasEntity" links that link to the kinds where the entities are stored:
 

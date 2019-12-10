@@ -146,7 +146,6 @@ Search for the `makeModel` function in the inventory panel and then select the "
 Once you have selected the Maana Lambda assistant, paste in the code below.   It creates a new model with a default Bayesian network::
 
 ```text
-const { hyperparameters } = input
 const network = {
     "LOCATION": {
       "id": "LOCATION", 
@@ -336,9 +335,11 @@ When your function is done executing you should be able to view your results in 
 
 As we saw in exercise 2,  provided any set of givens \(conditions\), we can use inference over our Bayesian network to compute the conditional probabilities of any of the other observables.   Using this knowledge, we our inference engine to predict the likelihood of each possible `Action` given the observed `LOCATION` and `HAS_PASSENGER` values.     
   
-The implementation of the `onStep` function uses exactly this technique to construct the conditional probability density function for a the current state, and then randomly selects a `ACTION` from that distribution.    This allows us to easily deploy our Bayesian network as a simulation using the AI Simulator Framework.   Open up the implementation of the onStep method and wire up the function composites.     
-  
-Once you are done, you can simulate your taxi agent using the AI Simulator framework.
+The implementation of the `onStep` function uses exactly this technique to construct the conditional probability density function for a the current state, and then randomly selects a `ACTION` from that distribution.    This allows us to easily deploy our Bayesian network as a simulation using the AI Simulator Framework.   Open up the implementation of the onStep method and wire up the function composites.
+
+![](../../../.gitbook/assets/screen-shot-2019-12-10-at-8.22.00-am.png)
+
+Once you are done, you can simulate your taxi agent using the AI Simulator framework
 
 Begin by copying your workspace's **service id** from the Workspace -&gt; context panel -&gt; info.  Then open the Maana AI Simulator framework in your browser.   Paste the copied service id into the `agent URI` field of the Simulator -&gt; OpenAI Gym -&gt; Control Panel.  
   
@@ -376,11 +377,15 @@ These equations are simple enough to implement in a lambda. and have been implem
 
 ![The implementation of the learn function](../../../.gitbook/assets/screen-shot-2019-12-06-at-9.43.15-pm.png)
 
-The learn function is the composite of the `updatePriors` function as defined above, and the `getEvidenceVector` function.   In real life, evidence would be collected through observation of the actual system;   for this tutorial we are using the GOAP simulator as a surrogate  exemplar.  
+The learn function is the composite of the `updatePriors` function as defined above, and the `getEvidenceVector` function.   In real life, evidence would be collected through observation of the actual system;   for this tutorial we are using the GOAP simulator as a surrogate  exemplar..   To add inline learning and parameter updating to your model, open up your implementation of the onStep function and modify it as shown below:
+
+![](../../../.gitbook/assets/image%20%2879%29.png)
+
   
-Parameter updating is applied by default with a learning rate of $$\eta = 0.01$$.      
   
-Because the simulation agent saves the posterior network after each episode, we can modify the function that you used in exmple 2 to inspect the results.    Update your function graph so that it looks like the graph below:
+Parameter updating will now be applied by default with a learning rate of $$\eta = 0.01$$.      
+  
+Because the simulation agent saves the posterior network after each episode, we can modify the function that you used in example 2 to inspect the results.    Update your function graph so that it looks like the graph below:
 
 ![](../../../.gitbook/assets/screen-shot-2019-12-06-at-10.37.59-pm.png)
 
