@@ -6,15 +6,19 @@ description: >-
 
 # Reinforcement Learning: Q-Learning
 
-## Overview
+This example is based on this [blog post](https://tiewkh.github.io/blog/qlearning-openaitaxi/).
 
-This example is based on [this blog post](https://tiewkh.github.io/blog/qlearning-openaitaxi/).
+## Agent Protocol, Model, and Algorithm Hyperparameters
 
-## Introduction
+![](../../../.gitbook/assets/image%20%28158%29.png)
 
-## Setup
+## onReset
+
+![](../../../.gitbook/assets/image%20%2835%29.png)
 
 ## makeModel
+
+![](../../../.gitbook/assets/image%20%28166%29.png)
 
 ```javascript
 const { hyperparameters } = input
@@ -37,6 +41,10 @@ const model = {
 
 return model
 ```
+
+## onStep
+
+![](../../../.gitbook/assets/image%20%28130%29.png)
 
 ## learn
 
