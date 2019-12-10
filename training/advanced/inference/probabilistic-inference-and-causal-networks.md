@@ -428,7 +428,23 @@ This function is easy enough to implement as a lambda:
 
 ![](../../../.gitbook/assets/screen-shot-2019-12-06-at-11.36.06-pm.png)
 
-![](../../../.gitbook/assets/screen-shot-2019-12-06-at-11.36.16-pm.png)
+```text
+const { alpha, p } = input
+
+let c = 0
+let i = 0
+
+if ( p > 1 || p <= 0 ) throw `invalid probability ${p}`
+if ( alpha >= 1  || alpha <= 0) throw `invalid confidence level ${alpha}`
+
+while(c< alpha) {
+  c = c + p*Math.pow(1-p,i)
+  i = i+1
+}
+return i
+```
+
+
 
 To finish the implementation of this solution, you will need the `example4` function that you created previously, and two constant functions:
 
