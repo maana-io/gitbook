@@ -23,7 +23,7 @@ description: A learning path for coders
 |  |  | [OpenAI Gym](../../product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/) and [Taxi-v3](../../product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/taxi-v3-environment.md) |
 |  |  | Agents: [Base](../../product-guide/reference-guide/ai-simulator-framework/base-agent.md) and [Random](../../product-guide/reference-guide/ai-simulator-framework/simulators/openai-gym/random-agent.md) |
 |  | Inference and Learning | [Logical Inference in AI Planning](../advanced/inference/logical-inference-and-ai-planning.md) |
-|  |  | [Reinforcement Q-Learning](../advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md) |
 |  |  | [Probabilistic Inference](../advanced/inference/probabilistic-inference-and-causal-networks.md) |
+|  |  | [Reinforcement Q-Learning](../advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md) |
 | Group Challenge |  - | - |
 
