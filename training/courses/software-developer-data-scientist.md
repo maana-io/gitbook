@@ -25,7 +25,5 @@ description: A learning path for coders
 |  | Inference and Learning | [Logical Inference in AI Planning](../advanced/inference/logical-inference-and-ai-planning.md) |
 |  |  | [Reinforcement Q-Learning](../advanced/learning/reinforcement-learning-q-learning-with-open-ai-taxi.md) |
 |  |  | [Probabilistic Inference](../advanced/inference/probabilistic-inference-and-causal-networks.md) |
-|  |  | Group Challenge \(TBA\) |
-
-
+| Group Challenge |  - | - |
 
