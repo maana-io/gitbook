@@ -143,12 +143,150 @@ Search for the `makeModel` function in the inventory panel and then select the "
 
 ![Filtering the Inventory for the makeModel Function](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.00.49-pm.png)
 
-Once you have selected the Maana Lambda assistant, you should see the code below:
+Once you have selected the Maana Lambda assistant, paste in the code below.   It creates a new model with a default Bayesian network::
 
-![The default implementation of the makeModel function](../../../.gitbook/assets/screen-shot-2019-12-06-at-5.05.03-pm.png)
+```text
+const { hyperparameters } = input
+const network = {
+    "LOCATION": {
+      "id": "LOCATION", 
+      "states": [
+        "AT_PICKUP_LOCATION",
+        "AT_DROPOFF_LOCATION",
+        "AT_OTHER_LOCATION"
+      ],
+      "parents": ["HAS_PASSENGER"],
+      "cpt": [{
+        "when":{
+          "HAS_PASSENGER":"T" 
+        },
+        "then":{
+        "AT_PICKUP_LOCATION": 0.25, // 1 out of 25 squares is the pickup location
+        "AT_DROPOFF_LOCATION": 0.25, // 1 out of 25 squares is the dropof location
+        "AT_OTHER_LOCATION": 0.5
+      }},
+      {
+        "when":{
+          "HAS_PASSENGER":"F"
+        },
+        "then":{
+        "AT_PICKUP_LOCATION": 0.25, // 1 out of 25 squares is the pickup location
+        "AT_DROPOFF_LOCATION": 0.25, // 1 out of 25 squares is the dropof location
+        "AT_OTHER_LOCATION": 0.5
+      }}]
+    },
+    "HAS_PASSENGER": {
+      "id": "HAS_PASSENGER",
+      "states": [
+        "T",
+        "F"
+      ],
+      "parents": [],
+      "cpt": {
+        "T": 0.5, // on average the taxi driver will have a passenger half the time
+        "F": 0.5
+      }
+    },
+    "ACTION": {
+      "id": "ACTION",
+      "states": [
+        "MOVE_TO_PICKUP",
+        "MOVE_TO_DROPOFF",
+        "PICKUP_PASSENGER",
+        "DROPOFF_PASSENGER"
+      ],
+      "parents": [
+        "LOCATION",
+        "HAS_PASSENGER"
+      ],
+      "cpt": [
+        {
+          "when": {
+            "LOCATION": "AT_DROPOFF_LOCATION",
+            "HAS_PASSENGER": "T"
+          },
+          "then": {
+            "DROPOFF_PASSENGER": 0.5,  // should learn that this is 100%
+            "PICKUP_PASSENGER": 0.5,
+            "MOVE_TO_DROPOFF": 0,
+            "MOVE_TO_PICKUP": 0
+          }
+        },
+        {
+          "when": {
+            "LOCATION": "AT_DROPOFF_LOCATION",
+            "HAS_PASSENGER": "F"
+          },
+          "then": {
+            "DROPOFF_PASSENGER": 0.0,
+            "PICKUP_PASSENGER": 0.5,
+            "MOVE_TO_DROPOFF": 0,
+            "MOVE_TO_PICKUP": 0.5 // should learn that this is 100%
+          }
+        },
+        {
+          "when": {
+            "LOCATION": "AT_PICKUP_LOCATION",
+            "HAS_PASSENGER": "T"
+          },
+          "then": {
+            "DROPOFF_PASSENGER": 0.5,
+            "PICKUP_PASSENGER": 0,
+            "MOVE_TO_DROPOFF": 0.5, // should learn that this is 100%
+            "MOVE_TO_PICKUP": 0
+          }
+        },
+        {
+          "when": {
+            "LOCATION": "AT_PICKUP_LOCATION",
+            "HAS_PASSENGER": "F"
+          },
+          "then": {
+            "DROPOFF_PASSENGER": 0,
+            "PICKUP_PASSENGER": 0.5, // should learn that this is 100%
+            "MOVE_TO_DROPOFF": 0.5,
+            "MOVE_TO_PICKUP": 0
+          }
+        },
+        {
+          "when": {
+            "LOCATION": "AT_OTHER_LOCATION",
+            "HAS_PASSENGER": "T"
+          },
+          "then": {
+            "DROPOFF_PASSENGER": 0.5,
+            "PICKUP_PASSENGER": 0.0,
+            "MOVE_TO_DROPOFF": 0.5, // should learn this is 100%
+            "MOVE_TO_PICKUP": 0.0
+          }
+        },
+        {
+          "when": {
+            "LOCATION": "AT_OTHER_LOCATION",
+            "HAS_PASSENGER": "F"
+          },
+          "then": {
+            "DROPOFF_PASSENGER": 0,
+            "PICKUP_PASSENGER": 0.33,
+            "MOVE_TO_DROPOFF": 0.33,
+            "MOVE_TO_PICKUP": 0.34 // should learn this is 100% 
+          }
+        }
+      ]
+    }
+}
+  
 
-Edit the `network` variable to encode your probability density functions.    If you are having difficulty choosing values, there are some helpful hints in the code.   When you are done making your changes, press the save button.  
+const model = {
+  id:  input.id || new Date(),
+  network: JSON.stringify(network),
+  steps: 0
+}
 
+return model
+```
+
+Edit the `network` variable to encode your probability density functions.    If you are having difficulty choosing values, there are some helpful hints in the code.   When you are done making your changes, press the save button. 
 
 You can test your work by running the `makeModel` function in the context panel.  
 
@@ -198,9 +336,9 @@ When your function is done executing you should be able to view your results in 
 
 As we saw in exercise 2,  provided any set of givens \(conditions\), we can use inference over our Bayesian network to compute the conditional probabilities of any of the other observables.   Using this knowledge, we our inference engine to predict the likelihood of each possible `Action` given the observed `LOCATION` and `HAS_PASSENGER` values.     
   
-The implementation of the `onStep` function uses exactly this technique to construct the conditional probability density function for a the current state, and then randomly selects a `ACTION` from that distribution.    This allows us to easily deploy our Bayesian network as a simulation using the AI Simulator Framework.  
+The implementation of the `onStep` function uses exactly this technique to construct the conditional probability density function for a the current state, and then randomly selects a `ACTION` from that distribution.    This allows us to easily deploy our Bayesian network as a simulation using the AI Simulator Framework.   Open up the implementation of the onStep method and wire up the function composites.     
   
-In this exercise we will Simulate your taxi agent using the AI Simulator framework.
+Once you are done, you can simulate your taxi agent using the AI Simulator framework.
 
 Begin by copying your workspace's **service id** from the Workspace -&gt; context panel -&gt; info.  Then open the Maana AI Simulator framework in your browser.   Paste the copied service id into the `agent URI` field of the Simulator -&gt; OpenAI Gym -&gt; Control Panel.  
   

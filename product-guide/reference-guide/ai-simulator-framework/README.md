@@ -24,7 +24,7 @@ There are currently several supported simulators:
 
 Please see the official [GitHub repository](https://github.com/maana-io/maana-ai-simulator-app) and feel free to contribute!
 
-## Install
+## Instances
 
-TODO: Docker [https://hub.docker.com/repository/docker/maanainc/maana-ai-simulator-app](https://hub.docker.com/repository/docker/maanainc/maana-ai-simulator-app)
+* [CS Training](http://52.242.228.15/login)
 

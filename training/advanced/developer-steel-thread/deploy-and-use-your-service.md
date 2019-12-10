@@ -114,7 +114,7 @@ If your deployment was successful, then you will receive the IP address for your
 
 Fill in the form using the appropriate values.
 
-![](../../../.gitbook/assets/image%20%28175%29.png)
+![](../../../.gitbook/assets/image%20%28177%29.png)
 
 You can click **TEST** to have it _introspect_ your service and populate the text editor with its schema.
 
