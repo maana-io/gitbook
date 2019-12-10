@@ -26,7 +26,7 @@ It is also common for Piping Subject Matter Experts to spend significant effort 
 
 The diagram below shows a representation of the architecture of a Knowledge Model of Piping Consolidation, drawing from the ORDL methodology. 
 
-![Piping Consolidation  Knowledge Model Architecture](../../../.gitbook/assets/image%20%2863%29.png)
+![Piping Consolidation  Knowledge Model Architecture](../../../.gitbook/assets/image%20%2865%29.png)
 
 ### Now, looking at this Knowledge Model in Maana... 
 
@@ -42,19 +42,19 @@ Workspace found at:
 
 **Step 3:** Now concentrate on the Function: **RemoveRedundantClasses** \(one level down from the Top PQ\). This function is further decomposed on sequential steps which Generate Pairs of Piping Classes \(generateClassesPairs\), calculates Similarity \(calculateSimilarity\) and remove highly similar classes \(removeHighlySimilarClasses\). See figures below to get an understanding of this decomposition.  
 
-![removeRedundantClasses inside of consolidateClassesinOperatingAsset](../../../.gitbook/assets/image%20%2842%29.png)
+![removeRedundantClasses inside of consolidateClassesinOperatingAsset](../../../.gitbook/assets/image%20%2844%29.png)
 
-![removeRedundantClasses Decomposition](../../../.gitbook/assets/image%20%2814%29.png)
+![removeRedundantClasses Decomposition](../../../.gitbook/assets/image%20%2816%29.png)
 
 **Step 4:** Now, concentrate on the function **calculateSimilarity**. Compare the structure of this function to the Architecture Diagram at the beginning of this section. 
 
-![](../../../.gitbook/assets/image%20%28104%29.png)
+![](../../../.gitbook/assets/image%20%28107%29.png)
 
 **Step 5:** Note that the function **calculateCompoundSimilarity** includes an algorithm to merge the resulting similarity scores of the 3 methods used into one single result. The more feedback a given pair of Piping Classes receives, the more prevalent active learning would be in the compound score. 
 
 **Step 6:** Now, look inside the function **incorporateActiveLearningSimilarity** \(figure below\). This function weighs the Seniority Level of the SME who provides feedback, and his/her Level of Engagement with the application. This is, the more feedback a given user provides, the more weigh his/her opinion would carry. Discuss the benefits and drawbacks of this feedback architecture.  
 
-![](../../../.gitbook/assets/image%20%2839%29.png)
+![](../../../.gitbook/assets/image%20%2841%29.png)
 
 Note that this exercise is meant to provide an example of how Learning can be an integral component of a Knowledge Application. The architecture here demonstrated is not the only one, or not even the best approach for all circumstances. For instance, a group of people might consider a consensus-type of feedback, or a hierarchical-one in which an approver is the gate-keeper for transmitting feedback onto the model. These 2 mechanisms could also be represented by different function decomposition architectures. 
 

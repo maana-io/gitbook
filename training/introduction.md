@@ -6,33 +6,33 @@ description: What is Maana Q?
 
 ## Toward Digital Transformation
 
-![](../.gitbook/assets/image%20%28165%29.png)
+![](../.gitbook/assets/image%20%28169%29.png)
 
 ## Smart Enterprise Applications
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 ## Digital Knowledge Layer
 
-![](../.gitbook/assets/image%20%2859%29.png)
+![](../.gitbook/assets/image%20%2861%29.png)
 
 ## Computational Knowledge Graph
 
-![](../.gitbook/assets/image%20%2875%29.png)
+![](../.gitbook/assets/image%20%2877%29.png)
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](../.gitbook/assets/image%20%2849%29.png)
 
 ## What is Maana Q?
 
-![](../.gitbook/assets/image%20%28117%29.png)
+![](../.gitbook/assets/image%20%28120%29.png)
 
-![](../.gitbook/assets/image%20%2895%29.png)
+![](../.gitbook/assets/image%20%2898%29.png)
 
-![](../.gitbook/assets/image%20%2897%29.png)
+![](../.gitbook/assets/image%20%28100%29.png)
 
 ## Sample Maana Solutions
 
-![](../.gitbook/assets/image%20%28114%29.png)
+![](../.gitbook/assets/image%20%28117%29.png)
 
 ## Topics
 

@@ -6,8 +6,6 @@ description: >-
 
 # Probabilistic Inference and Causal Networks
 
-## Overview
-
 Bayesian networks \(belief networks, decision networks\) are compact graphical representations of the observables of a system and the probabilistic relationships between them. Bayesian networks can be used to answer stochastic questions about unobserved variables \( e.g. Given that it is January, and without knowledge of whether the sprinklers ran or if it rained, what is the likelihood that the grass is wet?" \).
 
 Inference over Bayesian networks can be used to simulate more realistic random behavior by conditionally predicting the action to take in response to observed variables. This can be coupled with either batch or inline machine learning to provide predictions that improve over time.
@@ -42,21 +40,21 @@ At each step of the simulation, we will be provided with a single observation fo
 
 You will need several things for this tutorial:
 
-### Install the AI Simulator Framework
+### Access the AI Simulator Framework
 
 * Please take a few minutes to familiarize yourself with the purpose and operation of the [Maana Q AI Simulator framework](../../../product-guide/reference-guide/ai-simulator-framework/).
 * Follow the installation instructions and confirm that you can login to the Q instance.
 
 ### Clone the Bayes Agent Workspace
 
-* Login to Q and find and clone the "**Bayes Taxi-v3 Agent**" workspace.
-* Rename it to "&lt;your name&gt; Bayes Taxi-v3 Agent".
+* Login to Q and find and clone the `Bayes Taxi-v3 Agent Template` workspace
+* Rename it to `<your name> Bayes Taxi-v3 Agent`
 
 ### Test your Agent
 
-* Copy the workspace's **service id** from the Workspace -&gt; Context Panel -&gt; Info.
-* Paste it into the **Agent URI** field of Simulator -&gt; OpenAI Gym -&gt; Control panel.
-* Press the "Run" button and confirm the successful operation.
+* Copy the workspace's **service id** from the Workspace -&gt; Context Panel -&gt; Info
+* Paste it into the **Agent URI** field of Simulator -&gt; OpenAI Gym -&gt; Control panel
+* Press the "Run" button and confirm the successful operation
 
 ## Services
 

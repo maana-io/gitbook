@@ -18,7 +18,94 @@ The best way to introduce the GOAP concepts is by way of an example.  We will us
 
 Goal-Oriented Action Planning is an artificial intelligence system for agents that allows them to plan a sequence of actions to satisfy a particular goal. The particular sequence of actions depends not only on the goal but also on the current state of the world and the agent. This means that if the same goal is supplied for different agents or world states, you can get a completely different sequence of actions., which makes the AI more dynamic and realistic.
 
-We have an agent, a **taxi,** that moves around the city \(N,S,E,W\) and picks-up and drops-off passengers.  We can model this situation as the following boolean \(true/false\) states:
+Let's implement this scenario using the Maana Q AI Simulator framework.
+
+### Prerequisites
+
+* Basic familiarity with Maana Q AI Simulator Framework
+* Dependencies
+  * `GOAP Taxi-v3 Agent Template` workspace
+  * `Taxi-v3 Domain` service
+  * `maana-ai-goap` service
+
+## Step-by-Step Instructions
+
+**Step 1.**   Access the AI Simulator Framework
+
+Please take a few minutes to familiarize yourself with the purpose and operation of the [Maana Q AI Simulator framework](../../../product-guide/reference-guide/ai-simulator-framework/).
+
+Follow the installation instructions and confirm that you can login to the Q instance.
+
+**Step 2.**  Clone the GOAP agent workspace
+
+Login to Q your Q instance, find, then clone the `GOAP Taxi-v3 Agent Template` workspace.
+
+Rename it to `<your name> GOAP Taxi-v3 Agent`with id `<your name>-goap-taxi-v3-agent`.
+
+**Step 3a.**  Copy the workspace's service id
+
+`Workspace -> Context Panel -> Info -> Workspace Service URL`.
+
+**Step 3b.** Paste it into the **Agent URI** field of `Simulator -> OpenAI Gym -> Control panel`.
+
+**Step 3c.** Press the **RUN** button
+
+This expected to fail with:
+
+![](../../../.gitbook/assets/image%20%2883%29.png)
+
+**Step 4.**  Implement the agent protocol
+
+As with any Gym environment, the top-level Knowledge Graph has the familiar agent protocol:
+
+![Top-level Knowledge Graph for the GOAP Taxi-v3 Agent](../../../.gitbook/assets/goap-taxi-top-level-kg.png)
+
+**Step 4a.**  Implement `onReset`
+
+At the beginning of a simulation run, the simulator host will ask the simulator to reset itself for a new simulation.  In turn, the simulator will ask its agent\(s\) to prepare themselves for a new simulation, including some configuration information:
+
+* `stateSpace`: how many possible states \(500\)
+* `actionSpace`: how many possible actions \(6\)
+* `modelId`: the ID of the model \(if any\) to create/use
+* `isTraining`: indicates whether the simulation is training or performance
+
+This function is expected to return optional state it wishes to be returned to it during the simulation run, i.e., `context`.
+
+What state do we wish to maintain?  Do we have initial conditions that need to be established?  Do we know enough about our solution to answer these questions?
+
+**Step 4b.** Understand `onStep`
+
+This is really the heart of the agent.  It takes the current observation:
+
+* `state`: corresponds to one of the 500 possible states the taxi environment can be in
+* `lastReward`: one of -1, -10, or 20 based on the appropriateness of the last action in the world in its state
+* `lastAction`: what action was previously taken by the agent
+* `step`: current step within the current episode
+* `context`: our internal state \(if any\) 
+
+It is expected to return the `Action` the simulator should perform along with any updated internal state, `context`, the agent needs in subsequent calls.
+
+![](../../../.gitbook/assets/image%20%286%29.png)
+
+The first thing to notice is our reliance on the Taxi-v3 Domain service.  We use `defaultMap` to get the Taxi's map, then `decodeObservation` from the encoded state to get rich `Observation`.
+
+**Step 4d.** Wire `decide`
+
+We have provided you with all the right pieces.  Can you assemble them correctly?
+
+![](../../../.gitbook/assets/image.png)
+
+**Step 4c.** Design the GOAP model
+
+We have a taxi that moves around the city \(N,S,E,W\) and picks-up and drops-off passengers.  How do we model this using GOAP?
+
+* What are the states?
+* What are the actions?
+* What are the goals?
+
+**Discuss**.
+
+We can model this situation as the following boolean \(true/false\) states:
 
 * `AT_PICKUP_LOCATION`
 * `AT_DROPOFF_LOCATION`
@@ -44,107 +131,6 @@ When we give the _goal_ as `IS_DONE=T`, the GOAP planner will consider the seque
 4. `DROPOFF`
 
 In more realistic examples, many different agents might be acting with possibly conflicting goals, each action might have an associated cost, making it possible to find the least cost path sequence.
-
-Let's implement this scenario using the Maana Q AI Simulator framework.
-
-### Prerequisites
-
-* Basic familiarity with Maana Q AI Simulator Framework
-* Dependencies
-  * `GOAP Taxi-v3 Agent` workspace
-  * `Taxi-v3 Domain` workspace
-  * `maana-goap` service
-
-## Step-by-Step Instructions
-
-**Step 1.**   Access the AI Simulator Framework
-
-Please take a few minutes to familiarize yourself with the purpose and operation of the [Maana Q AI Simulator framework](../../../product-guide/reference-guide/ai-simulator-framework/).
-
-Follow the installation instructions and confirm that you can login to the Q instance.
-
-**Step 2.**  Clone the GOAP agent workspace
-
-Login to Q your Q instance, find, then clone the `GOAP Taxi-v3 Agent` workspace.
-
-Rename it to `<your name> GOAP Taxi-v3 Agent`with id `<your name>-goap-taxi-v3-agent`.
-
-**Step 3.**  Test your agent
-
-**Step 3a.**  Copy the workspace's service id
-
-from the Workspace -&gt; Context Panel -&gt; Info.
-
-* Paste it into the **Agent URI** field of Simulator -&gt; OpenAI Gym -&gt; Control panel.
-* Press the "Run" button and confirm the successful operation.
-
-## Services
-
-### External: maana-ai-goap
-
-A standard Maana Q service provides a GOAP-based AI Planner written in Python, [maana-ai-goap](https://github.com/maana-io/maana-ai-goap).  This is a generic planning service exposing the following core schema:
-
-```javascript
-type State {
-  id: ID!
-  val: Boolean!
-}
-type Action {
-  id: ID!
-  pre: [State!]!
-  post: [State!]!
-}
-type Scenario {
-  id: ID!
-  goal: [State!]!
-  state: [State!]!
-  actions: [Action!]!
-}
-type Query {
-  plan(scenario: ScenarioInput!): [ID!]!
-}
-```
-
-As this is a generic algorithm usable by any domain, it is our responsibility to map our taxi environment to this model in order to use its planning functionality.  This is a common pattern, [Model Mapping](../../../maana-q-cookbook/design-patterns/model-mapping.md), found in Q solutions.
-
-### Workspace: GOAP Taxi-v3 Agent
-
-As with any Gym environment, the top-level Knowledge Graph has the familiar agent protocol:
-
-![Top-level Knowledge Graph for the GOAP Taxi-v3 Agent](../../../.gitbook/assets/goap-taxi-top-level-kg.png)
-
-#### onReset
-
-At the beginning of a simulation run, the simulator host will ask the simulator to reset itself for a new simulation.  In turn, the simulator will ask its agent\(s\) to prepare themselves for a new simulation, including some configuration information:
-
-* `stateSpace`: how many possible states \(500\)
-* `actionSpace`: how many possible actions \(6\)
-* `modelId`: the ID of the model \(if any\) to create/use
-* `isTraining`: indicates whether the simulation is training or performance
-
-This function is expected to return optional state it wishes to be returned to it during the simulation run, i.e., `context`.
-
-What state do we wish to maintain?  Do we have initial conditions that need to be established?  Do we know enough about our solution to answer these questions?
-
-#### onStep
-
-This is really the heart of the agent.  It takes the current observation:
-
-* `state`: corresponds to one of the 500 possible states the taxi environment can be in
-* `lastReward`: one of -1, -10, or 20 based on the appropriateness of the last action in the world in its state
-* `lastAction`: what action was previously taken by the agent
-* `step`: current step within the current episode
-* `context`: our internal state \(if any\) 
-
-It is expected to return the `Action` the simulator should perform along with any updated internal state, `context`, the agent needs in subsequent calls.
-
-![The onStep Function Graph](../../../.gitbook/assets/goap-on-step.png)
-
-The first thing to notice is our reliance on the Taxi-v3 Domain service.
-
-#### onDone
-
-#### taxiStateToGOAPScenario
 
 ```javascript
   const { taxiState } = input
@@ -259,8 +245,18 @@ The first thing to notice is our reliance on the Taxi-v3 Domain service.
       }
     ]
   }
-
-
-
 ```
+
+**Step 6.** Test again
+
+This time, if everything is correct, your agent should run the course perfectly!
+
+## Conclusion
+
+In this session, you learned how to:
+
+* Map a domain-specific problem into a domain-agnostic service
+* Resolve a _conditional branching_ problem in function graphs
+
+\*\*\*\*
 

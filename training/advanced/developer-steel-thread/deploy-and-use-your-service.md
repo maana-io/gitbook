@@ -114,7 +114,7 @@ If your deployment was successful, then you will receive the IP address for your
 
 Fill in the form using the appropriate values.
 
-![](../../../.gitbook/assets/image%20%28167%29.png)
+![](../../../.gitbook/assets/image%20%28171%29.png)
 
 You can click **TEST** to have it _introspect_ your service and populate the text editor with its schema.
 
@@ -130,7 +130,7 @@ With your custom microservice deployed and registered with Q, people can now use
 
 **Step 6c.** Activate it in inventory and try a query in GraphiQL
 
-![](../../../.gitbook/assets/image%20%28119%29.png)
+![](../../../.gitbook/assets/image%20%28122%29.png)
 
 ## Conclusions
 
