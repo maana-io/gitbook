@@ -8,7 +8,7 @@ The Bot Control Panel is there to give you a status update of what each bot is d
 * Navigation to the Assistant for the Bot.
 * Interact/Invoke the Field Classifier Assistant
 
-![Example of Bot Field Classifier Screen](../../../../.gitbook/assets/image%20%28154%29.png)
+![Example of Bot Field Classifier Screen](../../../../.gitbook/assets/image%20%28156%29.png)
 
-![Example Screen](../../../../.gitbook/assets/image%20%28119%29.png)
+![Example Screen](../../../../.gitbook/assets/image%20%28120%29.png)
 
