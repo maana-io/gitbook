@@ -6,9 +6,11 @@ Assistants now have an official API complete with a sample project for getting s
 
 The Assistant API allows interacting with a Workspace and the entities within the Workspace, providing the ability for custom UIs to be created that can extend the functionality provided by Q. Some of the things it allows include adding, deleting, or modifying Kinds and Functions; listening for changes made to the Workspace; and accessing details about entities within the Workspace. 
 
-![The Lambda Assistant allows writing a Function implementation in JavaScript](https://maanaimages.blob.core.windows.net/maana-q-documentation/What%27s%20New%203.2.1/lambda_assistant.gif)
-
 ## Lambda Assistant and Service
+
+The [Lambda Assistant](../catalog/assistants/lambda.md) and backing service allows code snippets to be attached to Q functions instead of needing to write full-blown microservices.  This is often convenient for returning constants, _projectors_ and _constructors_, transformations, calculations, etc.
+
+![The Lambda Assistant allows writing a Function implementation in JavaScript](https://maanaimages.blob.core.windows.net/maana-q-documentation/What%27s%20New%203.2.1/lambda_assistant.gif)
 
 ## Lesson Assistant and Service
 
@@ -60,7 +62,7 @@ Use the Maana Q CLI's `mdeploy` command to bootstrap a Knowledge Service, Bot, o
 
 ## New Training Material
 
-To help you get started or advance your skills in becoming productive with Q, we have completely revamped our [training material](../training/courses/outline.md#q-training-experience-at-a-glance), in conjunction with the new Lesson Assistant.
+To help you get started or advance your skills in becoming productive with Q, we have completely revamped our [training material](../training/introduction.md), in conjunction with the new Lesson Assistant.
 
 ## The Rest
 

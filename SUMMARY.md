@@ -108,7 +108,10 @@
 
 ## Catalog
 
-* [Assistants](catalog/assistants.md)
+* [Assistants](catalog/assistants/README.md)
+  * [Export/Import](catalog/assistants/export-import.md)
+  * [Lambda](catalog/assistants/lambda.md)
+  * [Lessons](catalog/assistants/lessons.md)
 * [Bots](catalog/bots.md)
 * [Services](catalog/services.md)
 
