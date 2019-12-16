@@ -379,7 +379,7 @@ These equations are simple enough to implement in a lambda. and have been implem
 
 The learn function is the composite of the `updatePriors` function as defined above, and the `getEvidenceVector` function.   In real life, evidence would be collected through observation of the actual system;   for this tutorial we are using the GOAP simulator as a surrogate  exemplar..   To add inline learning and parameter updating to your model, open up your implementation of the onStep function and modify it as shown below:
 
-![](../../../.gitbook/assets/image%20%2879%29.png)
+![](../../../.gitbook/assets/image%20%2883%29.png)
 
   
   

@@ -12,7 +12,7 @@ The goal of the agent is to maximize its total \(future\) reward. It does this b
 
 The goal of Q-learning is to learn a policy, which tells an agent what action to take under what circumstances. It does not require a model of the environment \(hence the connotation "model-free"\), and it can handle problems with stochastic transitions and rewards, without requiring adaptations.
 
-![](../../../.gitbook/assets/image%20%28148%29.png)
+![](../../../.gitbook/assets/image%20%28153%29.png)
 
 This example is based on this [blog post](https://tiewkh.github.io/blog/qlearning-openaitaxi/).
 
@@ -26,17 +26,17 @@ For Q-learning, in addition to the standard agent protocol, we introduce two new
   * exploitation vs exploration \(epsilon\)
 * `Model` represents our state that is serialized/deserialized between invocations by the simulator
 
-![](../../../.gitbook/assets/image%20%28164%29.png)
+![](../../../.gitbook/assets/image%20%28170%29.png)
 
 ## onReset
 
 
 
-![](../../../.gitbook/assets/image%20%2835%29.png)
+![](../../../.gitbook/assets/image%20%2838%29.png)
 
 ## makeModel
 
-![](../../../.gitbook/assets/image%20%28172%29.png)
+![](../../../.gitbook/assets/image%20%28178%29.png)
 
 ```javascript
 const { hyperparameters } = input
@@ -62,7 +62,7 @@ return model
 
 ## onStep
 
-![](../../../.gitbook/assets/image%20%28133%29.png)
+![](../../../.gitbook/assets/image%20%28138%29.png)
 
 ## learn
 

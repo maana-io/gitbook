@@ -99,13 +99,13 @@ The library is hosted publicly on GitHub: [https://github.com/flags/GOAPy](https
 
 Since this is a single-file Python implementation, we can easily incorporate it into our service by copying the file: [https://github.com/flags/GOAPy/blob/master/goapy.py](https://github.com/flags/GOAPy/blob/master/goapy.py).
 
-![](../../../.gitbook/assets/image%20%2893%29.png)
+![](../../../.gitbook/assets/image%20%2897%29.png)
 
 **Step 1c.** View the raw contents
 
 Click the **RAW** button to gain access to the raw file contents.
 
-![](../../../.gitbook/assets/image%20%28115%29.png)
+![](../../../.gitbook/assets/image%20%28119%29.png)
 
 **Step 1d.** Select all of the content and copy it to the clipboard
 
@@ -113,7 +113,7 @@ Click the **RAW** button to gain access to the raw file contents.
 
 Create the file in the app folder next to `main.py`.  Paste the raw file contents from GitHub.  Save the file.
 
-![](../../../.gitbook/assets/image%20%28139%29.png)
+![](../../../.gitbook/assets/image%20%28144%29.png)
 
 **Step 1f.** Add support for `numpy`
 
@@ -503,7 +503,7 @@ With our schema defined and our service implemented, we can try it by giving it 
 
 We have found it helpful to create a `playground.gql` file with your service that illustrates basic usage and can be used to [smoke test](https://en.wikipedia.org/wiki/Smoke_testing_%28software%29) your service for someone just getting familiar with it.
 
-![](../../../.gitbook/assets/image%20%28163%29.png)
+![](../../../.gitbook/assets/image%20%28169%29.png)
 
 **Step 4b.** Create a GOAP Scenario instance for planning
 
@@ -532,7 +532,7 @@ query SimplePlan {
 
 Assuming your service is still running \(`./start-reload.sh`\), open the browser session with GraphQL Playground and paste your query into the IDE.
 
-![](../../../.gitbook/assets/image%20%2892%29.png)
+![](../../../.gitbook/assets/image%20%2896%29.png)
 
 **Challenge:** Complete the example scenario
 

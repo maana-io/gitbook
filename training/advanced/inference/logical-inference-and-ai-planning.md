@@ -52,7 +52,7 @@ Rename it to `<your name> GOAP Taxi-v3 Agent`with id `<your name>-goap-taxi-v3-a
 
 This expected to fail with:
 
-![](../../../.gitbook/assets/image%20%28158%29.png)
+![](../../../.gitbook/assets/image%20%28163%29.png)
 
 **Step 4.**  Implement the agent protocol
 
