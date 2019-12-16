@@ -117,7 +117,10 @@
 
 ## Training
 
-* [Connecting to Maana Q](training/connecting-to-maana.md)
+* [Setting Up](training/setting-up/README.md)
+  * [Connecting to Maana Q](training/setting-up/connecting-to-maana.md)
+  * [Developing inside a Dev-Tools Container](training/setting-up/developing-inside-a-dev-tools-container.md)
+  * [Deploying inside a Dev-Tools Container](training/setting-up/deploying-inside-a-dev-tools-container.md)
 * [Introduction](training/introduction.md)
 * [Courses](training/courses/README.md)
   * [SME, Analyst, Business Owner](training/courses/outline.md)
