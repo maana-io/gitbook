@@ -503,7 +503,7 @@ With our schema defined and our service implemented, we can try it by giving it 
 
 We have found it helpful to create a `playground.gql` file with your service that illustrates basic usage and can be used to [smoke test](https://en.wikipedia.org/wiki/Smoke_testing_%28software%29) your service for someone just getting familiar with it.
 
-![](../../../.gitbook/assets/image%20%28162%29.png)
+![](../../../.gitbook/assets/image%20%28163%29.png)
 
 **Step 4b.** Create a GOAP Scenario instance for planning
 

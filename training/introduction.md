@@ -6,7 +6,7 @@ description: What is Maana Q?
 
 ## Toward Digital Transformation
 
-![](../.gitbook/assets/image%20%28178%29.png)
+![](../.gitbook/assets/image%20%28179%29.png)
 
 ## Smart Enterprise Applications
 
