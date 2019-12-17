@@ -22,19 +22,19 @@ The **Visual Studio Code Remote - Containers** extension lets you use a [Docker 
 3. Select 'Yes' when prompted to continue with the installation
 4. Select 'OK' to add a shortcut to your desktop
 
-   ![](../../.gitbook/assets/image%20%28137%29.png)
-
 5. Select 'Close' on the 'Installation Succeeded' dialog window
 
    ![](../../.gitbook/assets/image%20%2834%29.png)
 
 6. Wait until the VSCode front page appears 
 
+![](../../.gitbook/assets/image%20%28137%29.png)
+
 ![](../../.gitbook/assets/image%20%2815%29.png)
 
+Test Link
 
-
-
+[https://maanainc.box.com/s/ry9bpv0tzj1f6t9npa18tgj4dd4d2t46](https://maanainc.box.com/s/ry9bpv0tzj1f6t9npa18tgj4dd4d2t46)
 
 
 
