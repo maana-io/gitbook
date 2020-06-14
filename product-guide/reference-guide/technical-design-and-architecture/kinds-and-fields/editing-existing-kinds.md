@@ -1,6 +1,6 @@
 # Editing Existing Kinds
 
-Follow these steps to create a edit an existing kind: 
+Follow these steps to edit an existing kind: 
 
 1. Select the Kind desired from the Knowledge Graph.
 
